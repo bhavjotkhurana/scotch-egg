@@ -1,0 +1,328 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 5: Exponents, Roots, and Rational Expressions} \\[6pt]
+    \Large \textbf{Topic 2: Negative and Fractional Exponents}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+Exponents can be extended beyond positive integers.  
+A \textbf{negative exponent} represents the reciprocal of a base raised to a positive power:
+\[
+a^{-n} = \frac{1}{a^n}, \quad a \ne 0.
+\]
+A \textbf{fractional exponent} represents a root:
+\[
+a^{\frac{1}{n}} = \sqrt[n]{a}, \quad a^{\frac{m}{n}} = \sqrt[n]{a^m} = (\sqrt[n]{a})^m.
+\]
+These definitions make the laws of exponents consistent for all rational exponents.
+
+Understanding why these work helps connect exponent and root operations.  
+For example, \(a^{\frac{1}{2}}\) must mean “the number that, when squared, gives \(a\)” so that \(a^{\frac{1}{2}\cdot 2} = a^1\).  
+Similarly, \(a^{-n}\) keeps the multiplication rule valid because \(a^m \cdot a^{-m} = a^{m-m} = a^0 = 1.\)
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Rewrite negative exponents as reciprocals.
+  \item Rewrite fractional exponents as roots.
+  \item Simplify expressions combining integer, negative, and fractional exponents.
+  \item Convert between radical and exponential forms.
+  \item Apply exponent laws consistently across all exponent types.
+\end{itemize}
+
+\section*{Example 1: Negative Exponent as Reciprocal}
+
+Simplify \(x^{-3}\).
+
+\[
+x^{-3} = \frac{1}{x^3}
+\]
+
+\textbf{Interpretation:} A negative exponent inverts the base.  
+\textbf{Final Answer:} \(\boxed{\dfrac{1}{x^3}}\)
+
+\section*{Example 2: Fractional Exponent as Root}
+
+Simplify \(16^{\frac{1}{2}}\).
+
+\[
+16^{\frac{1}{2}} = \sqrt{16} = 4
+\]
+
+\textbf{Interpretation:} The denominator 2 indicates a square root.  
+\textbf{Final Answer:} \(\boxed{4}\)
+
+\section*{Example 3: Mixed Fractional Exponent}
+
+Simplify \(27^{\frac{2}{3}}\).
+
+\[
+27^{\frac{2}{3}} = (\sqrt[3]{27})^2 = 3^2 = 9
+\]
+
+\textbf{Interpretation:} Cube root first, then square.  
+\textbf{Final Answer:} \(\boxed{9}\)
+
+\section*{Example 4: Negative and Fractional Combined}
+
+Simplify \(8^{-\frac{2}{3}}\).
+
+\[
+8^{-\frac{2}{3}} = \frac{1}{8^{\frac{2}{3}}} = \frac{1}{(\sqrt[3]{8})^2} = \frac{1}{4}
+\]
+
+\textbf{Final Answer:} \(\boxed{\dfrac{1}{4}}\)
+
+\section*{Example 5: Algebraic Expression with Mixed Exponents}
+
+Simplify \(\dfrac{x^{\frac{3}{2}}}{x^{\frac{1}{2}}}\).
+
+\[
+x^{\frac{3}{2} - \frac{1}{2}} = x^{1} = x
+\]
+
+\textbf{Final Answer:} \(\boxed{x}\)
+
+\section*{Example 6: Converting Between Radical and Exponential Form}
+
+Rewrite \(\sqrt[4]{x^3}\) using exponents.
+
+\[
+\sqrt[4]{x^3} = x^{\frac{3}{4}}
+\]
+
+\textbf{Final Answer:} \(\boxed{x^{\frac{3}{4}}}\)
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item \(a^{-n} = \frac{1}{a^n}\) and \(a^{\frac{1}{n}} = \sqrt[n]{a}\).
+  \item Exponent rules (\(a^m \cdot a^n = a^{m+n}\), etc.) hold for all rational exponents.
+  \item Negative means “reciprocal”; fractional means “root.”
+  \item Simplify by rewriting all terms with positive exponents before combining.
+  \item When in doubt, rewrite radicals as fractional powers for consistency.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — UNIT 5, TOPIC 2: NEGATIVE AND FRACTIONAL EXPONENTS
+% ============================================================
+
+\section*{Practice Questions: Negative and Fractional Exponents}
+
+\subsection*{Part A: Core Skills (One-Step Simplifications)}
+\begin{enumerate}
+  \item Simplify \(x^{-4}\)
+  \item Simplify \(\dfrac{1}{a^{-3}}\)
+  \item Simplify \(25^{\frac{1}{2}}\)
+  \item Simplify \(8^{\frac{1}{3}}\)
+  \item Simplify \(\left(\dfrac{1}{16}\right)^{-\frac{1}{2}}\)
+\end{enumerate}
+
+\subsection*{Part B: Two-Step Simplifications}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Simplify \(27^{\frac{2}{3}}\)
+  \item Simplify \(81^{-\frac{3}{4}}\)
+  \item Simplify \(\dfrac{a^{\frac{5}{2}}}{a^{\frac{3}{2}}}\)
+  \item Simplify \((x^{-2})^{\frac{3}{2}}\)
+  \item Simplify \(\dfrac{1}{b^{-\frac{1}{3}}}\)
+\end{enumerate}
+
+\subsection*{Part C: Mixed Variables and Exponent Operations}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Simplify \(a^{-\frac{3}{2}}b^{\frac{1}{2}}\)
+  \item Simplify \(\dfrac{x^{\frac{3}{4}}}{x^{-\frac{1}{2}}}\)
+  \item Simplify \(\left(\dfrac{y^{-2}}{y^3}\right)^{\frac{1}{2}}\)
+  \item Simplify \((m^{\frac{2}{3}}n^{-\frac{1}{3}})^3\)
+  \item Simplify \(\dfrac{(a^{-1}b^{2})^{\frac{1}{2}}}{b^{-\frac{1}{2}}}\)
+\end{enumerate}
+
+\subsection*{Part D: Parentheses, Fractions, and Edge Cases}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Simplify \(\left(\dfrac{1}{x^2}\right)^{-\frac{1}{2}}\)
+  \item Simplify \((a^{-3}b^2)^0\)
+  \item Simplify \((4x^{-1})^{\frac{1}{2}}\)
+  \item Simplify \(\left(\dfrac{p^{-2}}{q}\right)^{-\frac{1}{2}}\)
+  \item Simplify \((9a^{-4})^{-\frac{1}{2}}\)
+\end{enumerate}
+
+\subsection*{Part E: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item The side length of a cube is \(s\). Its surface area is proportional to \(s^2\) and volume to \(s^3\). Write the ratio of surface area to volume as a single expression using exponents.
+  \item The intensity of light is proportional to \(d^{-2}\), where \(d\) is the distance. If the distance is tripled, by what factor does intensity change?
+  \item A bacteria population grows according to \(P = P_0 \cdot 2^{t/3}\). What is the meaning of the exponent \(\frac{t}{3}\)?
+  \item The time for a planet to orbit the sun is proportional to \(r^{\frac{3}{2}}\), where \(r\) is its average distance. If \(r\) is doubled, how does the orbital time change?
+  \item The volume of a shape is \(V = kx^{-\frac{1}{2}}\). What happens to \(V\) when \(x\) becomes 4 times larger?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 5, TOPIC 2: NEGATIVE AND FRACTIONAL EXPONENTS
+% ============================================================
+
+\section*{Answer Key and Solutions: Negative and Fractional Exponents}
+
+\subsection*{Part A Solutions: Core Skills (One-Step Simplifications)}
+\begin{enumerate}
+  \item \(x^{-4} = \dfrac{1}{x^4}\). A negative exponent means take the reciprocal. \(\boxed{\dfrac{1}{x^4}}\)
+
+  \item \(\dfrac{1}{a^{-3}} = \dfrac{1}{\frac{1}{a^3}} = a^3\). \(\boxed{a^3}\)
+
+  \item \(25^{\frac{1}{2}} = \sqrt{25} = \boxed{5}\)
+
+  \item \(8^{\frac{1}{3}} = \sqrt[3]{8} = 2\). \(\boxed{2}\)
+
+  \item \(\left(\dfrac{1}{16}\right)^{-\frac{1}{2}} = \dfrac{1}{\left(\dfrac{1}{16}\right)^{\frac{1}{2}}}
+  = \dfrac{1}{\dfrac{1}{4}} = \boxed{4}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Two-Step Simplifications}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(27^{\frac{2}{3}} = \left(\sqrt[3]{27}\right)^2 = 3^2 = \boxed{9}\)
+
+  \item \(81^{-\frac{3}{4}} = \dfrac{1}{81^{\frac{3}{4}}}
+  = \dfrac{1}{\left(81^{\frac{1}{4}}\right)^3}
+  = \dfrac{1}{3^3}
+  = \boxed{\dfrac{1}{27}}\)
+
+  \item \(\dfrac{a^{\frac{5}{2}}}{a^{\frac{3}{2}}}
+  = a^{\frac{5}{2} - \frac{3}{2}}
+  = a^{\frac{2}{2}}
+  = a^1
+  = \boxed{a}\)
+
+  \item \((x^{-2})^{\frac{3}{2}}
+  = x^{-2 \cdot \frac{3}{2}}
+  = x^{-3}
+  = \dfrac{1}{x^3}
+  = \boxed{\dfrac{1}{x^3}}\)
+
+  \item \(\dfrac{1}{b^{-\frac{1}{3}}}
+  = \dfrac{1}{\frac{1}{b^{\frac{1}{3}}}}
+  = b^{\frac{1}{3}}
+  = \boxed{b^{\frac{1}{3}}}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Mixed Variables and Exponent Operations}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(a^{-\frac{3}{2}} b^{\frac{1}{2}}
+  = \dfrac{b^{\frac{1}{2}}}{a^{\frac{3}{2}}}
+  = \boxed{\dfrac{b^{1/2}}{a^{3/2}}}\)
+
+  \item \(\dfrac{x^{\frac{3}{4}}}{x^{-\frac{1}{2}}}
+  = x^{\frac{3}{4} - \left(-\frac{1}{2}\right)}
+  = x^{\frac{3}{4} + \frac{1}{2}}
+  = x^{\frac{3}{4} + \frac{2}{4}}
+  = x^{\frac{5}{4}}
+  = \boxed{x^{5/4}}\)
+
+  \item \(\left(\dfrac{y^{-2}}{y^3}\right)^{\frac{1}{2}}
+  = \left(y^{-2-3}\right)^{\frac{1}{2}}
+  = (y^{-5})^{\frac{1}{2}}
+  = y^{-\frac{5}{2}}
+  = \dfrac{1}{y^{5/2}}
+  = \boxed{\dfrac{1}{y^{5/2}}}\)
+
+  \item \((m^{\frac{2}{3}} n^{-\frac{1}{3}})^3
+  = m^{\frac{2}{3} \cdot 3} n^{-\frac{1}{3} \cdot 3}
+  = m^{2} n^{-1}
+  = \dfrac{m^2}{n}
+  = \boxed{\dfrac{m^2}{n}}\)
+
+  \item \(\dfrac{(a^{-1} b^{2})^{\frac{1}{2}}}{b^{-\frac{1}{2}}}
+  = \dfrac{a^{-\frac{1}{2}} b^{1}}{b^{-\frac{1}{2}}}
+  = a^{-\frac{1}{2}} b^{1 - \left(-\frac{1}{2}\right)}
+  = a^{-\frac{1}{2}} b^{\frac{3}{2}}
+  = \dfrac{b^{3/2}}{a^{1/2}}
+  = \boxed{\dfrac{b^{3/2}}{a^{1/2}}}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Parentheses, Fractions, and Edge Cases}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item \(\left(\dfrac{1}{x^2}\right)^{-\frac{1}{2}}
+  = (x^{-2})^{-\frac{1}{2}}
+  = x^{-2 \cdot \left(-\frac{1}{2}\right)}
+  = x^{1}
+  = \boxed{x}\)
+
+  \item \((a^{-3} b^2)^0 = \boxed{1}\)  
+  Any nonzero base to the zero power is 1.
+
+  \item \((4x^{-1})^{\frac{1}{2}}
+  = 4^{\frac{1}{2}} (x^{-1})^{\frac{1}{2}}
+  = 2 x^{-\frac{1}{2}}
+  = \dfrac{2}{x^{1/2}}
+  = \boxed{\dfrac{2}{\sqrt{x}}}\)
+
+  \item \(\left(\dfrac{p^{-2}}{q}\right)^{-\frac{1}{2}}
+  = (p^{-2} q^{-1})^{-\frac{1}{2}}
+  = p^{-2 \cdot \left(-\frac{1}{2}\right)} q^{-1 \cdot \left(-\frac{1}{2}\right)}
+  = p^{1} q^{\frac{1}{2}}
+  = p \sqrt{q}
+  = \boxed{p\sqrt{q}}\)
+
+  \item \((9a^{-4})^{-\frac{1}{2}}
+  = 9^{-\frac{1}{2}} a^{-4 \cdot \left(-\frac{1}{2}\right)}
+  = 9^{-\frac{1}{2}} a^{2}
+  = \dfrac{1}{\sqrt{9}} a^{2}
+  = \dfrac{1}{3} a^{2}
+  = \boxed{\dfrac{a^2}{3}}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item Surface area \(\propto s^2\), volume \(\propto s^3\).  
+  Ratio \(= \dfrac{s^2}{s^3} = s^{-1} = \boxed{\dfrac{1}{s}}\)
+
+  \item Intensity \(\propto d^{-2}\).  
+  If \(d\) becomes \(3d\): \((3d)^{-2} = 3^{-2} d^{-2} = \dfrac{1}{9} d^{-2}\).  
+  So intensity becomes \(\boxed{\dfrac{1}{9}\text{ of the original}}\)
+
+  \item \(P = P_0 \cdot 2^{t/3}\).  
+  The exponent \(\frac{t}{3}\) means the population doubles once every 3 units of time.  
+  After time \(t\), there have been \(\frac{t}{3}\) doublings.  
+  \(\boxed{\text{Doubles every 3 time units}}\)
+
+  \item Time \(\propto r^{\frac{3}{2}}\).  
+  If \(r\) becomes \(2r\): \((2r)^{\frac{3}{2}} = 2^{\frac{3}{2}} r^{\frac{3}{2}}\).  
+  \(2^{\frac{3}{2}} = 2 \sqrt{2}\).  
+  So orbital time is multiplied by \(\boxed{2\sqrt{2}}\)
+
+  \item \(V = kx^{-\frac{1}{2}}\).  
+  If \(x\) becomes \(4x\):  
+  \(V_{\text{new}} = k(4x)^{-\frac{1}{2}} = k \cdot 4^{-\frac{1}{2}} \cdot x^{-\frac{1}{2}}
+  = k \cdot \dfrac{1}{2} \cdot x^{-\frac{1}{2}}
+  = \dfrac{1}{2} (kx^{-\frac{1}{2}})\).  
+  So volume is \(\boxed{\text{half as large}}\)
+\end{enumerate}
+
+
+\end{document}

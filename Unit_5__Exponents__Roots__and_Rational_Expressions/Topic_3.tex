@@ -1,0 +1,329 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 5: Exponents, Roots, and Rational Expressions} \\[6pt]
+    \Large \textbf{Topic 3: Simplifying Rational Expressions}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+A \textbf{rational expression} is a fraction in which the numerator and denominator are polynomials.  
+Simplifying a rational expression follows the same logic as simplifying numerical fractions — divide out common factors, not terms.
+
+For example:
+\[
+\frac{x^2 + 3x}{x} \ne x + 3
+\]
+because \(x^2 + 3x\) can be factored, while \(x\) in the denominator only cancels with matching factors:
+\[
+\frac{x^2 + 3x}{x} = \frac{x(x + 3)}{x} = x + 3.
+\]
+Here, cancellation was valid because both numerator and denominator shared a factor of \(x\).
+
+Always factor completely before simplifying, and remember that any value making the denominator zero must be excluded from the domain.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Factor numerators and denominators completely.
+  \item Identify and cancel common factors (not terms).
+  \item Simplify using exponent laws where possible.
+  \item Rewrite complex fractions into single rational expressions.
+  \item Recognize and note restrictions where denominators are zero.
+\end{itemize}
+
+\section*{Example 1: Basic Common Factor Cancellation}
+
+Simplify \(\dfrac{6x^2}{3x}\).
+
+\[
+\dfrac{6x^2}{3x} = \dfrac{6}{3} \cdot \dfrac{x^2}{x} = 2x
+\]
+
+\textbf{Final Answer:} \(\boxed{2x}\), where \(x \ne 0.\)
+
+\section*{Example 2: Factoring Before Cancelling}
+
+Simplify \(\dfrac{x^2 + 5x}{x}\).
+
+\[
+\dfrac{x^2 + 5x}{x} = \dfrac{x(x + 5)}{x} = x + 5
+\]
+
+\textbf{Final Answer:} \(\boxed{x + 5}\), where \(x \ne 0.\)
+
+\section*{Example 3: Polynomial with Common Binomial Factor}
+
+Simplify \(\dfrac{(x + 2)(x - 3)}{(x - 3)}\).
+
+\[
+(x - 3)\text{ cancels out.} \quad \boxed{x + 2}
+\]
+
+\textbf{Restriction:} \(x \ne 3.\)
+
+\section*{Example 4: Quadratic Factorization}
+
+Simplify \(\dfrac{x^2 - 9}{x^2 - 3x}\).
+
+\[
+\dfrac{(x - 3)(x + 3)}{x(x - 3)} = \dfrac{x + 3}{x}
+\]
+
+\textbf{Final Answer:} \(\boxed{\dfrac{x + 3}{x}}\), where \(x \ne 0, 3.\)
+
+\section*{Example 5: Simplifying with Exponents}
+
+Simplify \(\dfrac{x^5}{x^2}\).
+
+\[
+x^{5 - 2} = x^3
+\]
+
+\textbf{Final Answer:} \(\boxed{x^3}\), where \(x \ne 0.\)
+
+\section*{Example 6: Complex Rational Expression}
+
+Simplify \(\dfrac{\frac{x}{x+1}}{\frac{x^2}{x+1}}\).
+
+\[
+\dfrac{\frac{x}{x+1}}{\frac{x^2}{x+1}} = \frac{x}{x+1} \cdot \frac{x+1}{x^2} = \frac{1}{x}
+\]
+
+\textbf{Final Answer:} \(\boxed{\dfrac{1}{x}}\), where \(x \ne 0, -1.\)
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Always factor completely before cancelling.
+  \item Cancel only common factors, never terms connected by addition or subtraction.
+  \item Record any values that make the denominator zero as restrictions.
+  \item Simplifying rational expressions mirrors numerical fraction simplification.
+  \item Use exponent rules to handle variable powers efficiently.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — UNIT 5, TOPIC 3: SIMPLIFYING RATIONAL EXPRESSIONS
+% ============================================================
+
+\section*{Practice Questions: Simplifying Rational Expressions}
+
+\subsection*{Part A: Core Skills (Direct Simplification)}
+\begin{enumerate}
+  \item Simplify \(\dfrac{6x^3}{3x}\)
+  \item Simplify \(\dfrac{10y^2}{5y}\)
+  \item Simplify \(\dfrac{x^4}{x^2}\)
+  \item Simplify \(\dfrac{12a^5b}{4a^2b}\)
+  \item Simplify \(\dfrac{9m^3n^2}{3mn}\)
+\end{enumerate}
+
+\subsection*{Part B: Factoring Before Simplifying}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Simplify \(\dfrac{x^2 + 2x}{x}\)
+  \item Simplify \(\dfrac{y^2 + 3y}{y}\)
+  \item Simplify \(\dfrac{a^2 - 9}{a - 3}\)
+  \item Simplify \(\dfrac{x^2 + 4x + 4}{x + 2}\)
+  \item Simplify \(\dfrac{p^2 + 5p}{p}\)
+\end{enumerate}
+
+\subsection*{Part C: Common Factors and Structure Recognition}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Simplify \(\dfrac{(x + 3)(x - 2)}{(x - 2)}\)
+  \item Simplify \(\dfrac{(y - 4)(y + 1)}{y - 4}\)
+  \item Simplify \(\dfrac{(a + 5)(a - 1)}{(a + 5)}\)
+  \item Simplify \(\dfrac{(b^2 - 16)}{(b - 4)}\)
+  \item Simplify \(\dfrac{(x + 7)(x + 2)}{(x + 2)(x - 1)}\)
+\end{enumerate}
+
+\subsection*{Part D: Complex and Multi-Term Rational Expressions}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Simplify \(\dfrac{x^2 - 9}{x^2 - 3x}\)
+  \item Simplify \(\dfrac{x^2 + 5x + 6}{x + 3}\)
+  \item Simplify \(\dfrac{a^2 - 4a + 4}{a - 2}\)
+  \item Simplify \(\dfrac{b^3 - b^2}{b^2}\)
+  \item Simplify \(\dfrac{x^2 - 1}{x^2 + 2x + 1}\)
+\end{enumerate}
+
+\subsection*{Part E: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A rectangle has length \(x + 3\) and width \(x\). Write the ratio of length to width as a simplified rational expression.
+  \item The speed of an object is given by \(v = \dfrac{d}{t}\). If both distance and time are doubled, simplify the new expression for \(v\) relative to the original.
+  \item The volume of a cylinder is \(V = \pi r^2h\). Write \(\dfrac{V}{\pi r h}\) as a simplified expression.
+  \item The efficiency of a machine is \(E = \dfrac{\text{output}}{\text{input}}\). If both output and input are multiplied by \(k\), simplify the new expression for \(E\).
+  \item A formula gives \(y = \dfrac{x^2 + 3x}{x}\). Simplify and state any restrictions.
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 5, TOPIC 3: SIMPLIFYING RATIONAL EXPRESSIONS
+% ============================================================
+
+\section*{Answer Key and Solutions: Simplifying Rational Expressions}
+
+\subsection*{Part A Solutions: Core Skills (Direct Simplification)}
+\begin{enumerate}
+  \item \(\dfrac{6x^3}{3x}
+  = \dfrac{6}{3} \cdot \dfrac{x^3}{x}
+  = 2x^{2}
+  = \boxed{2x^2}, \; x \ne 0\)
+
+  \item \(\dfrac{10y^2}{5y}
+  = \dfrac{10}{5} \cdot \dfrac{y^2}{y}
+  = 2y
+  = \boxed{2y}, \; y \ne 0\)
+
+  \item \(\dfrac{x^4}{x^2}
+  = x^{4-2}
+  = x^2
+  = \boxed{x^2}, \; x \ne 0\)
+
+  \item \(\dfrac{12a^5 b}{4a^2 b}
+  = \dfrac{12}{4} \cdot \dfrac{a^5}{a^2} \cdot \dfrac{b}{b}
+  = 3a^{3}
+  = \boxed{3a^3}, \; a \ne 0,\; b \ne 0\)
+
+  \item \(\dfrac{9m^3 n^2}{3mn}
+  = \dfrac{9}{3} \cdot \dfrac{m^3}{m} \cdot \dfrac{n^2}{n}
+  = 3m^{2} n
+  = \boxed{3m^2 n}, \; m \ne 0,\; n \ne 0\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Factoring Before Simplifying}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(\dfrac{x^2 + 2x}{x}
+  = \dfrac{x(x+2)}{x}
+  = x+2
+  = \boxed{x+2}, \; x \ne 0\)
+
+  \item \(\dfrac{y^2 + 3y}{y}
+  = \dfrac{y(y+3)}{y}
+  = y+3
+  = \boxed{y+3}, \; y \ne 0\)
+
+  \item \(\dfrac{a^2 - 9}{a - 3}
+  = \dfrac{(a-3)(a+3)}{a-3}
+  = a+3
+  = \boxed{a+3}, \; a \ne 3\)
+
+  \item \(\dfrac{x^2 + 4x + 4}{x + 2}
+  = \dfrac{(x+2)(x+2)}{x+2}
+  = x+2
+  = \boxed{x+2}, \; x \ne -2\)
+
+  \item \(\dfrac{p^2 + 5p}{p}
+  = \dfrac{p(p+5)}{p}
+  = p+5
+  = \boxed{p+5}, \; p \ne 0\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Common Factors and Structure Recognition}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(\dfrac{(x+3)(x-2)}{(x-2)}
+  = x+3
+  = \boxed{x+3}, \; x \ne 2\)
+
+  \item \(\dfrac{(y-4)(y+1)}{y-4}
+  = y+1
+  = \boxed{y+1}, \; y \ne 4\)
+
+  \item \(\dfrac{(a+5)(a-1)}{(a+5)}
+  = a-1
+  = \boxed{a-1}, \; a \ne -5\)
+
+  \item \(\dfrac{b^2 - 16}{b - 4}
+  = \dfrac{(b-4)(b+4)}{b-4}
+  = b+4
+  = \boxed{b+4}, \; b \ne 4\)
+
+  \item \(\dfrac{(x+7)(x+2)}{(x+2)(x-1)}
+  = \dfrac{x+7}{x-1}
+  = \boxed{\dfrac{x+7}{x-1}}, \; x \ne -2,\; x \ne 1\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Complex and Multi-Term Rational Expressions}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item \(\dfrac{x^2 - 9}{x^2 - 3x}
+  = \dfrac{(x-3)(x+3)}{x(x-3)}
+  = \dfrac{x+3}{x}
+  = \boxed{\dfrac{x+3}{x}}, \; x \ne 0,\; x \ne 3\)
+
+  \item \(\dfrac{x^2 + 5x + 6}{x + 3}
+  = \dfrac{(x+2)(x+3)}{x+3}
+  = x+2
+  = \boxed{x+2}, \; x \ne -3\)
+
+  \item \(\dfrac{a^2 - 4a + 4}{a - 2}
+  = \dfrac{(a-2)(a-2)}{a-2}
+  = a-2
+  = \boxed{a-2}, \; a \ne 2\)
+
+  \item \(\dfrac{b^3 - b^2}{b^2}
+  = \dfrac{b^2(b-1)}{b^2}
+  = b-1
+  = \boxed{b-1}, \; b \ne 0\)
+
+  \item \(\dfrac{x^2 - 1}{x^2 + 2x + 1}
+  = \dfrac{(x-1)(x+1)}{(x+1)(x+1)}
+  = \dfrac{x-1}{x+1}
+  = \boxed{\dfrac{x-1}{x+1}}, \; x \ne -1\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item Length \(= x+3\), width \(= x\).  
+  Ratio \(= \dfrac{x+3}{x}
+  = \boxed{\dfrac{x+3}{x}}, \; x \ne 0\)
+
+  \item Original speed \(v = \dfrac{d}{t}\).  
+  If both distance and time are doubled: new speed \(= \dfrac{2d}{2t} = \dfrac{d}{t} = v\).  
+  So \(\boxed{\text{speed stays the same}}\)
+
+  \item \(V = \pi r^2 h\).  
+  \(\dfrac{V}{\pi r h}
+  = \dfrac{\pi r^2 h}{\pi r h}
+  = r
+  = \boxed{r}, \; r \ne 0,\; h \ne 0\)
+
+  \item \(E = \dfrac{\text{output}}{\text{input}}\).  
+  If both output and input are multiplied by \(k\):  
+  New \(E = \dfrac{k \cdot \text{output}}{k \cdot \text{input}}
+  = \dfrac{\text{output}}{\text{input}}
+  = E\).  
+  So \(\boxed{\text{efficiency stays the same}}\)
+
+  \item \(y = \dfrac{x^2 + 3x}{x}
+  = \dfrac{x(x+3)}{x}
+  = x+3\).  
+  So \(y = \boxed{x+3}, \; x \ne 0\)
+\end{enumerate}
+
+
+
+\end{document}

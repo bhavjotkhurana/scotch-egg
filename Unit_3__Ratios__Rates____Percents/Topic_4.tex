@@ -1,0 +1,218 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 3: Ratios, Rates, and Percents} \\[6pt]
+    \Large \textbf{Topic 4: Successive Percent Changes (Compound Percentage)}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+Successive percent changes multiply factors.  
+If an amount \(A\) changes by \(p_1\%\) then by \(p_2\%\), the final value is
+\[
+A\cdot (1\pm p_1)\cdot (1\pm p_2),
+\]
+where each \(p_i\) is written as a decimal and the sign is plus for increase, minus for decrease.
+
+Key facts:
+\begin{itemize}
+  \item Percent changes are not additive. A 20\% increase then a 20\% decrease does not return to the original.
+  \item Order does not matter for multiplication of factors. \(A(1+p)(1-q) = A(1-q)(1+p)\).
+  \item Repeated changes by the same percent use exponents: \(A(1+p)^n\) or \(A(1-p)^n\).
+  \item To undo a single change by \(p\%\), divide by the factor: original \(=\dfrac{\text{new}}{1\pm p}\). To undo multiple, divide by the product of factors.
+\end{itemize}
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Convert each percent to a multiplier \(1\pm p\) before computing.
+  \item Multiply factors in sequence to get the net factor.
+  \item For repeated yearly or stepwise changes, write a compact exponential model.
+  \item Distinguish percent points from percent change when reading contexts.
+\end{itemize}
+
+\section*{Example 1: Increase then Decrease}
+
+A price increases 25\% then decreases 20\%. Net factor
+\[
+(1+0.25)(1-0.20)=1.25\cdot0.80=1.00.
+\]
+Final equals original in this special case.
+
+\section*{Example 2: Decrease then Decrease}
+
+An item is discounted 30\% and then an extra 10\%.  
+\[
+\text{Final factor}=(1-0.30)(1-0.10)=0.70\cdot0.90=0.63.
+\]
+Final price is 63\% of the original.
+
+\section*{Example 3: Two Increases}
+
+Population grows by 8\% one year and 5\% the next.
+\[
+\text{Net factor}=(1.08)(1.05)=1.134.
+\]
+Overall increase is 13.4\%.
+
+\section*{Example 4: Repeated Change Model}
+
+A device loses 12\% of its value each year. Initial value \(V_0\). After \(n\) years
+\[
+V_n=V_0(1-0.12)^n=V_0(0.88)^n.
+\]
+
+\section*{Example 5: Reverse After Two Changes}
+
+After a 10\% increase and then a 15\% decrease the final price is \$306.  
+Original \(=\dfrac{306}{(1.10)(0.85)}=\dfrac{306}{0.935}\approx \$327.27\).
+
+\section*{Example 6: Not Additive}
+
+A 20\% increase then a 20\% decrease: factor \(1.2\cdot0.8=0.96\).  
+Net change is a 4\% decrease, not zero.
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Translate every change into a multiplier and multiply.
+  \item Use powers for repeated identical changes.
+  \item To recover an original, divide by the product of all change factors.
+  \item Do not add percent changes. Work with factors to avoid errors.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — TOPIC 4: SUCCESSIVE PERCENT CHANGES (COMPOUND PERCENTAGE)
+% ============================================================
+
+\section*{Practice Questions: Successive Percent Changes}
+
+\subsection*{Part A: Two-Step Percent Changes}
+Find the final value or total percent change.
+\begin{enumerate}
+  \item An item increases 20\% and then increases another 10\%.
+  \item A phone’s price decreases 25\% and then increases 10\%.
+  \item A stock rises 15\% one month and falls 10\% the next.
+  \item A computer’s cost decreases 40\% and then 20\%.
+  \item A shirt’s price increases 5\% and then decreases 5\%.
+\end{enumerate}
+
+\subsection*{Part B: Repeated Changes}
+Use exponential form where applicable.
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item A car’s value drops 15\% per year. If the original price is \$24,000, find its value after 2 years.
+  \item A town’s population grows 4\% per year. Starting at 50,000, what will it be after 3 years?
+  \item A company’s revenue increases 10\% per quarter for 2 years. What is the growth factor after 8 quarters?
+  \item A laptop’s value decreases 18\% per year. Express its value after \(n\) years.
+  \item A population decreases 5\% per year. Write a formula for the population after \(t\) years if it starts at 80,000.
+\end{enumerate}
+
+\subsection*{Part C: Reverse Problems}
+Find the original amount before the successive changes.
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item After an increase of 20\% and another increase of 10\%, the price is \$145.20. Find the original.
+  \item A stock falls 10\% and then 5\% to a final price of \$171. Find the original price.
+  \item A phone decreases 15\% and then increases 20\%, ending at \$138. Find the starting price.
+  \item A population increases 12\% each of two years and ends at 125,440. Find the original population.
+  \item After a 10\% tax and a 15\% discount, the final cost is \$153. Find the pre-tax original price.
+\end{enumerate}
+
+\subsection*{Part D: Comparing Percent Changes}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Which has a greater overall increase: 10\% then 20\%, or 15\% then 15\%?
+  \item A decrease of 20\% followed by an increase of 20\% — net increase or decrease?
+  \item A store raises prices by 25\% and then offers a 25\% discount. What is the net effect?
+  \item An item is discounted twice: first 30\%, then 30\%. What single discount gives the same final price?
+  \item An investment increases 8\% annually. How many years to grow by at least 25\%?
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A car loses 20\% of its value each year. If it is worth \$16,000 now, what was it worth two years ago?
+  \item An item is marked up by 30\% and then discounted by 10\%. What is the overall percent change?
+  \item A stock decreases 25\% one year and then increases 40\% the next. What is the overall percent change?
+  \item A company’s sales grow by 5\% per year. What is the total percent growth after 3 years?
+  \item A machine’s value decreases 12\% per year. If it’s now worth \$6,912 after 3 years, what was the original value?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 3, TOPIC 4: SUCCESSIVE PERCENT CHANGES (COMPOUND PERCENTAGE)
+% ============================================================
+
+\section*{Answer Key and Solutions: Successive Percent Changes}
+
+\subsection*{Part A Solutions: Two-Step Percent Changes}
+\begin{enumerate}
+  \item Factor \(1.20\cdot1.10=1.32\). \(\boxed{32\%\ \text{increase}}\)
+  \item Factor \(0.75\cdot1.10=0.825\). \(\boxed{17.5\%\ \text{decrease}}\)
+  \item Factor \(1.15\cdot0.90=1.035\). \(\boxed{3.5\%\ \text{increase}}\)
+  \item Factor \(0.60\cdot0.80=0.48\). \(\boxed{52\%\ \text{decrease}}\)
+  \item Factor \(1.05\cdot0.95=0.9975\). \(\boxed{0.25\%\ \text{decrease}}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Repeated Changes}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(24000(0.85)^2=24000(0.7225)=\boxed{17340}\)
+  \item \(50000(1.04)^3=50000(1.124864)=\boxed{56{,}243.2}\) \(\approx \boxed{56{,}243}\)
+  \item Growth factor \((1.10)^8=\boxed{\approx 2.1436}\)
+  \item \(V(n)=V_0(1-0.18)^n=\boxed{V_0(0.82)^n}\)
+  \item \(P(t)=80000(1-0.05)^t=\boxed{80000(0.95)^t}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Reverse Problems}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(145.20=(1.20)(1.10)\cdot \text{orig}=1.32\cdot \text{orig}\Rightarrow \text{orig}=\boxed{110}\)
+  \item \(171=(0.90)(0.95)\cdot \text{orig}=0.855\cdot \text{orig}\Rightarrow \text{orig}=\boxed{200}\)
+  \item \(138=(0.85)(1.20)\cdot \text{orig}=1.02\cdot \text{orig}\Rightarrow \text{orig}=\boxed{135.29}\) (approx)
+  \item \(125{,}440=(1.12)^2\cdot \text{orig}=1.2544\cdot \text{orig}\Rightarrow \text{orig}=\boxed{100{,}000}\)
+  \item \(153=(1.10)(0.85)\cdot \text{orig}=0.935\cdot \text{orig}\Rightarrow \text{orig}=\boxed{163.69}\) (approx). Note: order mentioned does not affect the product.
+\end{enumerate}
+
+\subsection*{Part D Solutions: Comparing Percent Changes}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item \(1.10\cdot1.20=1.32\) vs \(1.15^2=1.3225\). Greater is \(15\%\) then \(15\%\) by \(0.25\%\).
+  \item \(0.80\cdot1.20=0.96\). \(\boxed{4\%\ \text{decrease}}\)
+  \item \(1.25\cdot0.75=0.9375\). \(\boxed{6.25\%\ \text{decrease}}\)
+  \item \(0.70\cdot0.70=0.49\). Single discount \(=1-0.49=\boxed{51\%}\).
+  \item Solve \(1.08^n\ge1.25\Rightarrow n\ge \dfrac{\ln 1.25}{\ln 1.08}\approx 2.90\). Smallest integer \(n=\boxed{3}\).
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item Now \(= \text{past}\cdot(0.80)^2\Rightarrow \text{past}=\dfrac{16000}{0.64}=\boxed{25{,}000}\)
+  \item \(1.30\cdot0.90=1.17\). \(\boxed{17\%\ \text{increase}}\)
+  \item \(0.75\cdot1.40=1.05\). \(\boxed{5\%\ \text{increase}}\)
+  \item \(1.05^3=1.157625\). \(\boxed{15.7625\%\ \text{increase}}\approx \boxed{15.8\%}\)
+  \item Now \(= V_0(0.88)^3\Rightarrow V_0=\dfrac{6912}{0.681472}\approx \boxed{10{,}143}\)
+\end{enumerate}
+
+
+\end{document}

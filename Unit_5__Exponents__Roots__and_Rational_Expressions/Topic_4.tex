@@ -1,0 +1,356 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 5: Exponents, Roots, and Rational Expressions} \\[6pt]
+    \Large \textbf{Topic 4: Domain Restrictions and Undefined Values}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+A \textbf{domain} is the set of all input values (\(x\)) for which an expression or function is defined.  
+When working with rational expressions, radicals, or denominators, certain values must be excluded from the domain because they make the expression undefined.
+
+1. **Division by zero is undefined:**  
+   Any value that makes a denominator equal to zero must be excluded.
+   \[
+   \frac{1}{x-2} \text{ is undefined at } x = 2.
+   \]
+
+2. **Even roots of negative numbers are undefined for real values:**  
+   For example, \(\sqrt{x-3}\) is defined only when \(x - 3 \ge 0\).
+
+3. **Numerators do not affect the domain**, only denominators and even roots do.
+
+The SAT often tests whether you can identify these restrictions when simplifying or interpreting rational or radical expressions.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Identify values that make denominators zero.
+  \item Determine where expressions under even roots are nonnegative.
+  \item Express domain restrictions in set notation or interval notation.
+  \item Retain restrictions even after simplification.
+  \item Check all variable conditions before evaluating or graphing.
+\end{itemize}
+
+\section*{Example 1: Denominator Restriction}
+
+Find the domain of \(\dfrac{3x + 1}{x - 4}\).
+
+\[
+x - 4 = 0 \Rightarrow x = 4
+\]
+The expression is undefined at \(x = 4\).
+
+\textbf{Domain:} all real numbers except 4  
+\[
+\boxed{x \ne 4}
+\]
+
+\section*{Example 2: Multiple Denominators}
+
+Find the domain of \(\dfrac{x + 2}{x^2 - 9}\).
+
+\[
+x^2 - 9 = (x - 3)(x + 3)
+\]
+Undefined when \(x = 3\) or \(x = -3\).
+
+\textbf{Domain:} all real \(x\) except \(x = \pm 3\).  
+\[
+\boxed{x \ne 3, -3}
+\]
+
+\section*{Example 3: Even Root Restriction}
+
+Find the domain of \(\sqrt{x - 5}\).
+
+\[
+x - 5 \ge 0 \Rightarrow x \ge 5
+\]
+
+\textbf{Domain:} \([5, \infty)\)
+
+\section*{Example 4: Radical in a Denominator}
+
+Find the domain of \(\dfrac{1}{\sqrt{x - 2}}\).
+
+\[
+x - 2 > 0 \Rightarrow x > 2
+\]
+The denominator cannot be zero or negative.
+
+\textbf{Domain:} \((2, \infty)\)
+
+\section*{Example 5: Rational Expression After Simplification}
+
+Simplify and find the domain of \(\dfrac{x^2 - 9}{x - 3}\).
+
+\[
+\dfrac{(x - 3)(x + 3)}{x - 3} = x + 3
+\]
+Even though the simplified form is \(x + 3\), the restriction \(x \ne 3\) remains because the original denominator was zero at \(x = 3\).
+
+\textbf{Final Answer:} \(\boxed{x + 3, \; x \ne 3}\)
+
+\section*{Example 6: Combined Root and Denominator}
+
+Find the domain of \(\dfrac{\sqrt{x + 4}}{x - 2}\).
+
+\[
+x + 4 \ge 0 \Rightarrow x \ge -4, \quad x - 2 \ne 0 \Rightarrow x \ne 2
+\]
+\textbf{Domain:} all \(x \ge -4\) except \(x = 2.\)
+
+\[
+\boxed{x \ge -4, \; x \ne 2}
+\]
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Denominators cannot be zero; exclude those \(x\)-values.
+  \item Even roots require nonnegative radicands (\(x \ge 0\)).
+  \item Simplifying does not remove restrictions from the original expression.
+  \item Odd roots and numerators impose no restrictions.
+  \item Always check both radicals and denominators together for valid domains.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — UNIT 5, TOPIC 4: DOMAIN RESTRICTIONS AND UNDEFINED VALUES
+% ============================================================
+
+\section*{Practice Questions: Domain Restrictions and Undefined Values}
+
+\subsection*{Part A: Identifying Denominator Restrictions}
+\begin{enumerate}
+  \item State the value of \(x\) that makes \(\dfrac{1}{x - 5}\) undefined.
+  \item Find the domain of \(\dfrac{2x + 3}{x + 4}\).
+  \item Determine where \(\dfrac{x^2 + 1}{x^2 - 16}\) is undefined.
+  \item Find all \(x\)-values excluded from \(\dfrac{5x}{x(x - 3)}\).
+  \item Identify the restriction in \(\dfrac{7x + 2}{3x - 6}\).
+\end{enumerate}
+
+\subsection*{Part B: Even Root and Denominator Conditions}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Find the domain of \(\sqrt{x - 8}\).
+  \item Determine where \(\sqrt{2x + 6}\) is defined.
+  \item Find the domain of \(\dfrac{1}{\sqrt{x}}\).
+  \item Find the domain of \(\dfrac{1}{\sqrt{x - 3}}\).
+  \item Determine all real \(x\) that satisfy \(\sqrt{x^2 - 9}\) being real.
+\end{enumerate}
+
+\subsection*{Part C: Mixed Rational and Radical Expressions}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Find the domain of \(\dfrac{\sqrt{x + 5}}{x}\).
+  \item Find the domain of \(\dfrac{\sqrt{x - 1}}{x - 4}\).
+  \item Determine the domain of \(\dfrac{1}{x^2 - 9}\).
+  \item Find the domain of \(\dfrac{\sqrt{x + 2}}{x + 7}\).
+  \item Find the domain of \(\dfrac{\sqrt{x^2 - 4}}{x - 2}\).
+\end{enumerate}
+
+\subsection*{Part D: Simplified Expressions with Hidden Restrictions}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Simplify \(\dfrac{x^2 - 9}{x - 3}\) and state the domain.
+  \item Simplify \(\dfrac{x^2 - 4x}{x}\) and state the domain.
+  \item Simplify \(\dfrac{x^2 + 3x}{x}\) and state the domain.
+  \item Simplify \(\dfrac{x^2 - 16}{x + 4}\) and state the domain.
+  \item Simplify \(\dfrac{x^3 - 8}{x - 2}\) and state the domain.
+\end{enumerate}
+
+\subsection*{Part E: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A function is defined by \(f(x) = \dfrac{3x + 1}{x - 2}\). What is the domain of \(f(x)\)?
+  \item The period of a pendulum is \(T = 2\pi \sqrt{\dfrac{L}{g}}\). For which values of \(L\) is \(T\) defined?
+  \item The formula for current in a circuit is \(I = \dfrac{V}{R}\). What restriction must be placed on \(R\)?
+  \item A function is defined by \(g(x) = \dfrac{1}{\sqrt{x - 4}}\). Find the domain of \(g(x)\).
+  \item The height of a projectile is modeled by \(h(t) = -16t^2 + 64t + 80\). Does this function have any domain restrictions in real numbers?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 5, TOPIC 4: DOMAIN RESTRICTIONS AND UNDEFINED VALUES
+% ============================================================
+
+\section*{Answer Key and Solutions: Domain Restrictions and Undefined Values}
+
+\subsection*{Part A Solutions: Identifying Denominator Restrictions}
+\begin{enumerate}
+  \item \(\dfrac{1}{x - 5}\) is undefined when the denominator is 0.  
+  \(x - 5 = 0 \Rightarrow x = 5.\)  
+  \(\boxed{x \ne 5}\)
+
+  \item Domain of \(\dfrac{2x + 3}{x + 4}\): denominator cannot be 0.  
+  \(x + 4 = 0 \Rightarrow x = -4.\)  
+  \(\boxed{x \ne -4}\)
+
+  \item \(\dfrac{x^2 + 1}{x^2 - 16}\) is undefined when \(x^2 - 16 = 0\).  
+  \(x^2 - 16 = (x - 4)(x + 4).\)  
+  So \(x = 4\) or \(x = -4.\)  
+  \(\boxed{x \ne 4,\; x \ne -4}\)
+
+  \item \(\dfrac{5x}{x(x - 3)}\): denominator is \(x(x-3)\).  
+  Denominator is 0 when \(x = 0\) or \(x = 3.\)  
+  \(\boxed{x \ne 0,\; x \ne 3}\)
+
+  \item \(\dfrac{7x + 2}{3x - 6}\): denominator cannot be 0.  
+  \(3x - 6 = 0 \Rightarrow x = 2.\)  
+  \(\boxed{x \ne 2}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Even Root and Denominator Conditions}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(\sqrt{x - 8}\) is defined when the radicand is \(\ge 0\).  
+  \(x - 8 \ge 0 \Rightarrow x \ge 8.\)  
+  \(\boxed{x \ge 8}\)
+
+  \item \(\sqrt{2x + 6}\) is defined when \(2x + 6 \ge 0.\)  
+  \(2x + 6 \ge 0 \Rightarrow 2x \ge -6 \Rightarrow x \ge -3.\)  
+  \(\boxed{x \ge -3}\)
+
+  \item \(\dfrac{1}{\sqrt{x}}\):  
+  For \(\sqrt{x}\), need \(x \ge 0\).  
+  Also, denominator \(\sqrt{x} \ne 0\), so \(x > 0.\)  
+  \(\boxed{x > 0}\)
+
+  \item \(\dfrac{1}{\sqrt{x - 3}}\):  
+  Need \(x - 3 \ge 0 \Rightarrow x \ge 3.\)  
+  Also denominator cannot be 0, so \(x > 3.\)  
+  \(\boxed{x > 3}\)
+
+  \item \(\sqrt{x^2 - 9}\) is defined when \(x^2 - 9 \ge 0.\)  
+  \(x^2 - 9 \ge 0 \Rightarrow (x - 3)(x + 3) \ge 0.\)  
+  This holds for \(x \le -3\) or \(x \ge 3.\)  
+  \(\boxed{x \le -3 \text{ or } x \ge 3}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Mixed Rational and Radical Expressions}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(\dfrac{\sqrt{x + 5}}{x}\):  
+  For \(\sqrt{x+5}\), need \(x + 5 \ge 0 \Rightarrow x \ge -5.\)  
+  Also denominator \(x \ne 0.\)  
+  \(\boxed{x \ge -5,\; x \ne 0}\)
+
+  \item \(\dfrac{\sqrt{x - 1}}{x - 4}\):  
+  For \(\sqrt{x-1}\), need \(x - 1 \ge 0 \Rightarrow x \ge 1.\)  
+  Also denominator \(x - 4 \ne 0 \Rightarrow x \ne 4.\)  
+  \(\boxed{x \ge 1,\; x \ne 4}\)
+
+  \item \(\dfrac{1}{x^2 - 9}\):  
+  Denominator cannot be 0.  
+  \(x^2 - 9 = 0 \Rightarrow x = \pm 3.\)  
+  \(\boxed{x \ne 3,\; x \ne -3}\)
+
+  \item \(\dfrac{\sqrt{x + 2}}{x + 7}\):  
+  Need \(x + 2 \ge 0 \Rightarrow x \ge -2.\)  
+  Also \(x + 7 \ne 0 \Rightarrow x \ne -7.\)  
+  Since \(-7 < -2\), both matter.  
+  \(\boxed{x \ge -2,\; x \ne -7}\)
+
+  \item \(\dfrac{\sqrt{x^2 - 4}}{x - 2}\):  
+  For \(\sqrt{x^2 - 4}\), need \(x^2 - 4 \ge 0 \Rightarrow (x-2)(x+2) \ge 0.\)  
+  That holds when \(x \le -2\) or \(x \ge 2.\)  
+  Also denominator \(x - 2 \ne 0 \Rightarrow x \ne 2.\)  
+  Combine: \(x \le -2\) or \(x > 2.\)  
+  \(\boxed{x \le -2 \text{ or } x > 2}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Simplified Expressions with Hidden Restrictions}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item \(\dfrac{x^2 - 9}{x - 3}
+  = \dfrac{(x-3)(x+3)}{x-3}
+  = x + 3.\)
+  
+  Domain restriction comes from the original denominator \(x - 3 \ne 0\).  
+  \(\boxed{x + 3,\; x \ne 3}\)
+
+  \item \(\dfrac{x^2 - 4x}{x}
+  = \dfrac{x(x - 4)}{x}
+  = x - 4.\)
+  
+  Original denominator \(x \ne 0.\)  
+  \(\boxed{x - 4,\; x \ne 0}\)
+
+  \item \(\dfrac{x^2 + 3x}{x}
+  = \dfrac{x(x + 3)}{x}
+  = x + 3.\)
+  
+  Original denominator \(x \ne 0.\)  
+  \(\boxed{x + 3,\; x \ne 0}\)
+
+  \item \(\dfrac{x^2 - 16}{x + 4}
+  = \dfrac{(x - 4)(x + 4)}{x + 4}
+  = x - 4.\)
+  
+  Original denominator \(x + 4 \ne 0 \Rightarrow x \ne -4.\)  
+  \(\boxed{x - 4,\; x \ne -4}\)
+
+  \item \(\dfrac{x^3 - 8}{x - 2}\).  
+  Factor numerator as difference of cubes:  
+  \(x^3 - 8 = (x - 2)(x^2 + 2x + 4).\)
+
+  \[
+  \dfrac{(x - 2)(x^2 + 2x + 4)}{x - 2} = x^2 + 2x + 4.
+  \]
+
+  Original denominator requires \(x \ne 2.\)  
+  \(\boxed{x^2 + 2x + 4,\; x \ne 2}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item \(f(x) = \dfrac{3x + 1}{x - 2}\).  
+  Denominator cannot be 0.  
+  \(x - 2 = 0 \Rightarrow x = 2.\)  
+  \(\boxed{x \ne 2}\)
+
+  \item \(T = 2\pi \sqrt{\dfrac{L}{g}}\).  
+  Inside the square root, \(\dfrac{L}{g}\) must be nonnegative.  
+  \(L \ge 0.\)  
+  Physically length cannot be 0 or negative, but mathematically \(L = 0\) gives \(T = 0\).  
+  \(\boxed{L \ge 0}\)
+
+  \item \(I = \dfrac{V}{R}\).  
+  Denominator cannot be 0.  
+  \(\boxed{R \ne 0}\)
+
+  \item \(g(x) = \dfrac{1}{\sqrt{x - 4}}\).  
+  Need \(x - 4 > 0\) because the radicand must be positive and cannot be 0 in the denominator.  
+  \(x > 4.\)  
+  \(\boxed{x > 4}\)
+
+  \item \(h(t) = -16t^2 + 64t + 80\).  
+  This is a polynomial. Polynomials are defined for all real inputs.  
+  \(\boxed{\text{All real } t}\)
+\end{enumerate}
+
+
+
+\end{document}

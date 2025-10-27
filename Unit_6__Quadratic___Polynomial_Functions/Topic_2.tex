@@ -1,0 +1,360 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 6: Quadratic and Polynomial Functions} \\[6pt]
+    \Large \textbf{Topic 2: Factoring and Solving Quadratics}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+A \textbf{quadratic equation} is an equation of the form
+\[
+ax^2 + bx + c = 0, \quad a \ne 0.
+\]
+One of the most efficient ways to solve quadratics is by \textbf{factoring}—rewriting the equation as a product of linear factors set equal to zero.
+
+Factoring relies on the \textbf{Zero Product Property:}  
+If \(A \cdot B = 0\), then \(A = 0\) or \(B = 0.\)
+
+For example:
+\[
+x^2 - 5x + 6 = 0 \quad \Rightarrow \quad (x - 2)(x - 3) = 0 \quad \Rightarrow \quad x = 2 \text{ or } x = 3.
+\]
+
+Not all quadratics factor neatly, but recognizing common structures makes factoring fast:
+\begin{itemize}
+  \item Difference of squares: \(a^2 - b^2 = (a - b)(a + b)\)
+  \item Perfect square trinomials: \(a^2 \pm 2ab + b^2 = (a \pm b)^2\)
+  \item Common factors: factor out the greatest common factor (GCF) first.
+\end{itemize}
+
+Factoring is most useful when the coefficients are integers and the quadratic can be decomposed into two binomials easily.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Factor out any GCF before proceeding.
+  \item Recognize patterns: difference of squares and perfect square trinomials.
+  \item Use the zero product property to find roots.
+  \item Check solutions by substituting back into the original equation.
+  \item Identify when factoring is not possible (then use quadratic formula).
+\end{itemize}
+
+\section*{Example 1: Simple Factoring}
+
+Solve \(x^2 - 7x + 10 = 0.\)
+
+Find two numbers that multiply to \(10\) and add to \(-7\): \(-5\) and \(-2.\)
+\[
+x^2 - 7x + 10 = (x - 5)(x - 2) = 0
+\]
+\textbf{Solutions:} \(x = 5, 2.\)
+
+\section*{Example 2: Leading Coefficient Not 1}
+
+Solve \(2x^2 + 7x + 3 = 0.\)
+
+Multiply \(a \cdot c = 2 \times 3 = 6.\)  
+Find two numbers that multiply to 6 and add to 7: \(6\) and \(1.\)
+\[
+2x^2 + 6x + x + 3 = 0
+\]
+Group:
+\[
+(2x^2 + 6x) + (x + 3) = 0 \Rightarrow 2x(x + 3) + 1(x + 3) = 0
+\]
+\[
+(2x + 1)(x + 3) = 0
+\]
+\textbf{Solutions:} \(x = -\tfrac{1}{2}, -3.\)
+
+\section*{Example 3: Difference of Squares}
+
+Solve \(x^2 - 49 = 0.\)
+\[
+(x - 7)(x + 7) = 0
+\]
+\textbf{Solutions:} \(x = 7, -7.\)
+
+\section*{Example 4: Perfect Square Trinomial}
+
+Solve \(x^2 + 10x + 25 = 0.\)
+\[
+(x + 5)^2 = 0
+\]
+\textbf{Solution:} \(x = -5\) (double root).
+
+\section*{Example 5: Factoring Out a Common Factor}
+
+Solve \(3x^2 - 9x = 0.\)
+\[
+3x(x - 3) = 0
+\]
+\textbf{Solutions:} \(x = 0, 3.\)
+
+\section*{Example 6: Application Problem}
+
+The product of two consecutive integers is 72.  
+Let the smaller integer be \(x\), so:
+\[
+x(x + 1) = 72
+\]
+\[
+x^2 + x - 72 = 0
+\]
+\[
+(x + 9)(x - 8) = 0
+\]
+\textbf{Solutions:} \(x = -9\) or \(x = 8.\)  
+The integers are \((-9, -8)\) or \((8, 9).\)
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Always factor out the GCF first.
+  \item Use pattern recognition to save time: difference of squares and perfect square trinomials.
+  \item Apply the zero product property after factoring.
+  \item When factoring fails, use the quadratic formula.
+  \item Verify by substitution to ensure no extraneous solutions.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — UNIT 6, TOPIC 2: FACTORING AND SOLVING QUADRATICS
+% ============================================================
+
+\section*{Practice Questions: Factoring and Solving Quadratics}
+
+\subsection*{Part A: Factoring Simple Quadratics}
+\begin{enumerate}
+  \item Solve \(x^2 - 5x + 6 = 0.\)
+  \item Solve \(x^2 - 9x + 20 = 0.\)
+  \item Solve \(x^2 + 3x - 10 = 0.\)
+  \item Solve \(x^2 - x - 6 = 0.\)
+  \item Solve \(x^2 + 2x - 15 = 0.\)
+\end{enumerate}
+
+\subsection*{Part B: Factoring with Leading Coefficients}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Solve \(2x^2 + 5x + 3 = 0.\)
+  \item Solve \(3x^2 - 8x + 4 = 0.\)
+  \item Solve \(4x^2 + 4x - 8 = 0.\)
+  \item Solve \(5x^2 - 10x = 0.\)
+  \item Solve \(6x^2 + 11x + 3 = 0.\)
+\end{enumerate}
+
+\subsection*{Part C: Special Factoring Patterns}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Solve \(x^2 - 36 = 0.\)
+  \item Solve \(9x^2 - 25 = 0.\)
+  \item Solve \(x^2 + 8x + 16 = 0.\)
+  \item Solve \(x^2 - 12x + 36 = 0.\)
+  \item Solve \(x^2 - 4x = 0.\)
+\end{enumerate}
+
+\subsection*{Part D: Common Factors and Mixed Structure}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Solve \(3x^2 - 6x = 0.\)
+  \item Solve \(x^2 - 2x - 8 = 0.\)
+  \item Solve \(2x^2 - 18 = 0.\)
+  \item Solve \(x^3 - 9x = 0.\)
+  \item Solve \(2x^2 - 10x + 12 = 0.\)
+\end{enumerate}
+
+\subsection*{Part E: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item The product of two consecutive positive integers is 42. Find the integers.
+  \item The area of a rectangle is 60. If the length is \(x + 5\) and the width is \(x - 3\), find \(x.\)
+  \item A projectile’s height is given by \(h = -5t^2 + 20t.\) When does it hit the ground?
+  \item The square of a number is 9 more than twice the number. Find the number.
+  \item The product of two consecutive even integers is 48. Find the integers.
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 6, TOPIC 2: FACTORING AND SOLVING QUADRATICS
+% ============================================================
+
+\section*{Answer Key and Solutions: Factoring and Solving Quadratics}
+
+\subsection*{Part A Solutions: Factoring Simple Quadratics}
+\begin{enumerate}
+  \item \(x^2 - 5x + 6 = 0\)  
+  \((x - 2)(x - 3) = 0 \Rightarrow x = 2, 3.\)  
+  \(\boxed{x = 2 \text{ or } x = 3}\)
+
+  \item \(x^2 - 9x + 20 = 0\)  
+  \((x - 4)(x - 5) = 0 \Rightarrow x = 4, 5.\)  
+  \(\boxed{x = 4 \text{ or } x = 5}\)
+
+  \item \(x^2 + 3x - 10 = 0\)  
+  \((x + 5)(x - 2) = 0 \Rightarrow x = -5, 2.\)  
+  \(\boxed{x = -5 \text{ or } x = 2}\)
+
+  \item \(x^2 - x - 6 = 0\)  
+  \((x - 3)(x + 2) = 0 \Rightarrow x = 3, -2.\)  
+  \(\boxed{x = 3 \text{ or } x = -2}\)
+
+  \item \(x^2 + 2x - 15 = 0\)  
+  \((x + 5)(x - 3) = 0 \Rightarrow x = -5, 3.\)  
+  \(\boxed{x = -5 \text{ or } x = 3}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Factoring with Leading Coefficients}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(2x^2 + 5x + 3 = 0\)  
+  Factor: \((2x + 3)(x + 1) = 0.\)  
+  Solutions: \(2x + 3 = 0 \Rightarrow x = -\tfrac{3}{2}\) and \(x + 1 = 0 \Rightarrow x = -1.\)  
+  \(\boxed{x = -\tfrac{3}{2} \text{ or } x = -1}\)
+
+  \item \(3x^2 - 8x + 4 = 0\)  
+  Factor: \((3x - 2)(x - 2) = 0.\)  
+  Solutions: \(3x - 2 = 0 \Rightarrow x = \tfrac{2}{3}\) and \(x - 2 = 0 \Rightarrow x = 2.\)  
+  \(\boxed{x = \tfrac{2}{3} \text{ or } x = 2}\)
+
+  \item \(4x^2 + 4x - 8 = 0\)  
+  First factor out 4: \(4(x^2 + x - 2) = 0.\)  
+  Then \((x + 2)(x - 1) = 0.\)  
+  So \(x = -2, 1.\)  
+  \(\boxed{x = -2 \text{ or } x = 1}\)
+
+  \item \(5x^2 - 10x = 0\)  
+  Factor out \(5x\): \(5x(x - 2) = 0.\)  
+  So \(5x = 0 \Rightarrow x = 0\) or \(x - 2 = 0 \Rightarrow x = 2.\)  
+  \(\boxed{x = 0 \text{ or } x = 2}\)
+
+  \item \(6x^2 + 11x + 3 = 0\)  
+  Factor: \((3x + 1)(2x + 3) = 0.\)  
+  Solutions: \(3x + 1 = 0 \Rightarrow x = -\tfrac{1}{3}\) and \(2x + 3 = 0 \Rightarrow x = -\tfrac{3}{2}.\)  
+  \(\boxed{x = -\tfrac{1}{3} \text{ or } x = -\tfrac{3}{2}}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Special Factoring Patterns}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(x^2 - 36 = 0\)  
+  Difference of squares: \((x - 6)(x + 6) = 0.\)  
+  \(\boxed{x = 6 \text{ or } x = -6}\)
+
+  \item \(9x^2 - 25 = 0\)  
+  Difference of squares: \((3x - 5)(3x + 5) = 0.\)  
+  \(3x - 5 = 0 \Rightarrow x = \tfrac{5}{3}\)  
+  \(3x + 5 = 0 \Rightarrow x = -\tfrac{5}{3}.\)  
+  \(\boxed{x = \tfrac{5}{3} \text{ or } x = -\tfrac{5}{3}}\)
+
+  \item \(x^2 + 8x + 16 = 0\)  
+  Perfect square: \((x + 4)^2 = 0.\)  
+  \(\boxed{x = -4}\) (double root)
+
+  \item \(x^2 - 12x + 36 = 0\)  
+  Perfect square: \((x - 6)^2 = 0.\)  
+  \(\boxed{x = 6}\) (double root)
+
+  \item \(x^2 - 4x = 0\)  
+  Factor out \(x\): \(x(x - 4) = 0.\)  
+  \(\boxed{x = 0 \text{ or } x = 4}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Common Factors and Mixed Structure}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item \(3x^2 - 6x = 0\)  
+  Factor out \(3x\): \(3x(x - 2) = 0.\)  
+  \(\boxed{x = 0 \text{ or } x = 2}\)
+
+  \item \(x^2 - 2x - 8 = 0\)  
+  \((x - 4)(x + 2) = 0.\)  
+  \(\boxed{x = 4 \text{ or } x = -2}\)
+
+  \item \(2x^2 - 18 = 0\)  
+  Factor out 2: \(2(x^2 - 9) = 0 \Rightarrow x^2 - 9 = 0.\)  
+  Difference of squares: \((x - 3)(x + 3) = 0.\)  
+  \(\boxed{x = 3 \text{ or } x = -3}\)
+
+  \item \(x^3 - 9x = 0\)  
+  Factor out \(x\):  
+  \(x(x^2 - 9) = x(x - 3)(x + 3) = 0.\)  
+  \(\boxed{x = 0,\; x = 3,\; x = -3}\)
+
+  \item \(2x^2 - 10x + 12 = 0\)  
+  Factor out 2: \(2(x^2 - 5x + 6) = 0.\)  
+  Then \(x^2 - 5x + 6 = (x - 2)(x - 3) = 0.\)  
+  \(\boxed{x = 2 \text{ or } x = 3}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item Product of two consecutive positive integers is 42.  
+  Let the smaller be \(n\).  
+  \(n(n+1) = 42 \Rightarrow n^2 + n - 42 = 0.\)  
+  \((n - 6)(n + 7) = 0 \Rightarrow n = 6 \text{ or } n = -7.\)  
+  Positive pair: \(\boxed{6 \text{ and } 7}\)
+
+  \item Rectangle area: \((x + 5)(x - 3) = 60.\)  
+  Expand: \(x^2 + 2x - 15 = 60 \Rightarrow x^2 + 2x - 75 = 0.\)  
+  Quadratic formula:
+  \[
+  x = \frac{-2 \pm \sqrt{2^2 - 4(1)(-75)}}{2}
+  = \frac{-2 \pm \sqrt{304}}{2}
+  = \frac{-2 \pm 4\sqrt{19}}{2}
+  = -1 \pm 2\sqrt{19}.
+  \]
+  For a physical rectangle, we need \(x > 3\).  
+  \(-1 + 2\sqrt{19} \approx 7.7\) is valid.  
+  \(\boxed{x = -1 + 2\sqrt{19}}\)
+
+  \item Height: \(h = -5t^2 + 20t.\)  
+  Hits the ground when \(h = 0\):  
+  \(-5t^2 + 20t = 0 \Rightarrow -5t(t - 4) = 0.\)  
+  \(t = 0\) or \(t = 4.\)  
+  \(\boxed{t = 0 \text{ or } t = 4}\)
+
+  \item Square of a number is 9 more than twice the number.  
+  Let the number be \(n\).  
+  \(n^2 = 2n + 9 \Rightarrow n^2 - 2n - 9 = 0.\)  
+  Quadratic formula:
+  \[
+  n = \frac{2 \pm \sqrt{(-2)^2 - 4(1)(-9)}}{2}
+  = \frac{2 \pm \sqrt{4 + 36}}{2}
+  = \frac{2 \pm \sqrt{40}}{2}
+  = \frac{2 \pm 2\sqrt{10}}{2}
+  = 1 \pm \sqrt{10}.
+  \]
+  \(\boxed{n = 1 + \sqrt{10} \text{ or } n = 1 - \sqrt{10}}\)
+
+  \item Product of two consecutive even integers is 48.  
+  Let the smaller be \(k\), next is \(k + 2.\)  
+  \(k(k+2) = 48 \Rightarrow k^2 + 2k - 48 = 0.\)  
+  \((k + 8)(k - 6) = 0 \Rightarrow k = -8 \text{ or } k = 6.\)  
+  Pairs: \((-8, -6)\) or \((6, 8).\)  
+  \(\boxed{6 \text{ and } 8 \quad \text{(also } -8 \text{ and } -6\text{)}}\)
+\end{enumerate}
+
+
+
+
+\end{document}

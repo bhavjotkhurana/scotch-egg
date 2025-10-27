@@ -1,0 +1,517 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 7: Exponential and General Functions} \\[6pt]
+    \Large \textbf{Topic 4: Domain, Range, and Restrictions}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+Every function has a \textbf{domain} (the set of all valid inputs \(x\)) and a \textbf{range} (the set of resulting outputs \(y\)).
+
+- The \textbf{domain} includes all \(x\)-values that make the function defined (no division by zero, no square roots of negatives for real numbers).
+- The \textbf{range} includes all possible \(y\)-values the function can produce.
+
+SAT questions often test your ability to find where a function is \emph{undefined} or identify valid intervals of input.
+
+\[
+f(x) = \frac{1}{x - 2} \quad \text{is undefined at } x = 2,
+\]
+so its domain is \(x \neq 2.\)
+
+For square roots:
+\[
+f(x) = \sqrt{x - 3} \quad \text{requires } x - 3 \ge 0,
+\]
+so domain is \(x \ge 3.\)
+
+The range depends on the resulting values of \(f(x)\):
+\[
+\text{If } f(x) = \sqrt{x - 3}, \text{ then } f(x) \ge 0.
+\]
+
+(Insert sample graphs: one for a rational function with a vertical asymptote, one for a square root starting at a point.)
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Determine domain restrictions from denominators and even roots.
+  \item Identify the range based on the output behavior.
+  \item Describe domain/range in set notation or inequality form.
+  \item Recognize asymptotes or endpoints in graphs.
+  \item Apply restrictions when combining functions.
+\end{itemize}
+
+\section*{Example 1: Rational Function Restriction}
+
+\[
+f(x) = \frac{2x + 1}{x - 3}
+\]
+
+Denominator \(x - 3 = 0\) when \(x = 3.\)  
+So \(x = 3\) is not allowed.
+
+\[
+\boxed{\text{Domain: } x \neq 3}
+\]
+
+\textbf{Range:} All real \(y\) except \(y = 2\) (horizontal asymptote).
+
+\section*{Example 2: Square Root Function}
+
+\[
+f(x) = \sqrt{x + 4}
+\]
+
+Inside the root must be nonnegative:
+\[
+x + 4 \ge 0 \Rightarrow x \ge -4.
+\]
+
+\[
+\boxed{\text{Domain: } x \ge -4, \quad \text{Range: } y \ge 0}
+\]
+
+\section*{Example 3: Combined Function Restriction}
+
+\[
+f(x) = \frac{\sqrt{x - 2}}{x - 5}
+\]
+
+Root requires \(x - 2 \ge 0 \Rightarrow x \ge 2\).  
+Denominator requires \(x \neq 5\).
+
+\[
+\boxed{\text{Domain: } x \ge 2, \; x \neq 5}
+\]
+
+\section*{Example 4: Absolute Value Function}
+
+\[
+f(x) = |x - 3|
+\]
+
+Absolute value is always defined, so:
+\[
+\boxed{\text{Domain: all real numbers, Range: } y \ge 0.}
+\]
+
+Graphically, it forms a “V” shape with vertex at \((3,0)\).
+
+(Insert graph note: vertex at (3,0), symmetric V opening upward.)
+
+\section*{Example 5: Quadratic Function}
+
+\[
+f(x) = (x - 1)^2 + 2
+\]
+
+This is always defined (domain: all real).  
+The smallest value occurs when \(x = 1\):
+\[
+f(1) = (1 - 1)^2 + 2 = 2.
+\]
+
+\[
+\boxed{\text{Domain: all real } x, \; \text{Range: } y \ge 2.}
+\]
+
+Graph has vertex at \((1, 2)\) and opens upward.
+
+(Insert graph note: parabola with vertex (1,2), opens upward.)
+
+\section*{Example 6: Piecewise Function}
+
+\[
+f(x) =
+\begin{cases}
+x + 2, & x < 0 \\
+x^2, & x \ge 0
+\end{cases}
+\]
+
+Domain: all real (each piece covers all \(x\)).  
+Range: \(y \ge 0\) because \(x^2 \ge 0\) and \(x+2\) can go below zero when \(x < -2.\)
+
+\[
+\boxed{\text{Domain: all real, Range: } y \ge -2.}
+\]
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Denominators cannot equal zero.
+  \item Even roots (square roots) must have nonnegative insides.
+  \item Domains tell where the function exists; ranges tell possible outputs.
+  \item Graph endpoints and asymptotes reveal domain/range visually.
+  \item Always check both when simplifying or combining functions.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — UNIT 7, TOPIC 4: DOMAIN, RANGE, AND RESTRICTIONS
+% ============================================================
+
+\section*{Practice Questions: Domain, Range, and Restrictions}
+
+\subsection*{Part A: Identifying Domain Restrictions}
+\begin{enumerate}
+  \item Find the domain of \(f(x) = \dfrac{3x + 1}{x - 4}.\)
+  \item Find the domain of \(f(x) = \dfrac{2}{x^2 - 9}.\)
+  \item Determine where \(f(x) = \dfrac{1}{x(x - 5)}\) is undefined.
+  \item Find the domain of \(f(x) = \dfrac{x + 2}{x^2 + x - 6}.\)
+  \item For \(f(x) = \dfrac{5}{(x + 1)(x - 2)},\) state all excluded \(x\)-values.
+\end{enumerate}
+
+\subsection*{Part B: Square Roots and Even Roots}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Find the domain of \(f(x) = \sqrt{x - 3}.\)
+  \item Find the domain of \(f(x) = \sqrt{5 - x}.\)
+  \item Determine the domain of \(f(x) = \sqrt{2x + 4}.\)
+  \item Find the domain of \(f(x) = \sqrt{x^2 - 9}.\)
+  \item For \(f(x) = \sqrt{\dfrac{x - 2}{x + 1}},\) state all \(x\)-values that make it valid.
+\end{enumerate}
+
+\subsection*{Part C: Range and Output Behavior}
+(Include small graph sketches later as needed.)
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Determine the range of \(f(x) = x^2.\)
+  \item Find the range of \(f(x) = (x - 1)^2 + 3.\)
+  \item Find the range of \(f(x) = |x - 4|.\)
+  \item Determine the range of \(f(x) = -x^2 + 5.\)
+  \item Find the range of \(f(x) = \sqrt{x + 2}.\)
+\end{enumerate}
+
+\subsection*{Part D: Combining Restrictions}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Determine the domain of \(f(x) = \dfrac{\sqrt{x - 1}}{x - 3}.\)
+  \item Determine the domain of \(f(x) = \dfrac{1}{\sqrt{x - 5}}.\)
+  \item Determine the domain of \(f(x) = \sqrt{x + 2} + \dfrac{1}{x - 4}.\)
+  \item For \(f(x) = \dfrac{\sqrt{x - 2}}{x^2 - 4},\) list all valid \(x\)-values.
+  \item Find all \(x\) where \(f(x) = \dfrac{1}{\sqrt{x(x - 3)}}\) is defined.
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+(Insert sketches or descriptions for reference:  
+– a rational function with vertical asymptote,  
+– a square root starting at a point.)
+
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A function \(f(x) = \dfrac{10}{x - 5}\) is undefined for what value of \(x?\)
+  \item The graph of \(f(x) = \sqrt{x - 4}\) begins at which point?
+  \item The function \(f(x) = (x - 3)^2 + 2\) has what range?
+  \item The function \(f(x) = \dfrac{x + 1}{x^2 - 16}\) is undefined for which values of \(x?\)
+  \item On the SAT, if a rational expression has both a numerator and denominator that contain \((x - 2)\), what must be done before identifying domain restrictions?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 7, TOPIC 4: DOMAIN, RANGE, AND RESTRICTIONS
+% ============================================================
+
+\section*{Answer Key and Solutions: Domain, Range, and Restrictions}
+
+\subsection*{Part A Solutions: Identifying Domain Restrictions}
+\begin{enumerate}
+  \item \(f(x) = \dfrac{3x + 1}{x - 4}\)
+
+  Denominator cannot be 0:
+  \[
+  x - 4 \ne 0 \Rightarrow x \ne 4.
+  \]
+
+  \(\boxed{\text{Domain: all real } x \ne 4}\)
+
+  \item \(f(x) = \dfrac{2}{x^2 - 9}\)
+
+  Denominator cannot be 0:
+  \[
+  x^2 - 9 = 0 \Rightarrow x = \pm 3.
+  \]
+
+  \(\boxed{\text{Domain: all real } x \ne -3, 3}\)
+
+  \item \(f(x) = \dfrac{1}{x(x - 5)}\)
+
+  Denominator zero at \(x = 0\) or \(x = 5.\)
+
+  \(\boxed{\text{Undefined at } x = 0 \text{ and } x = 5;\; \text{domain: } x \ne 0, 5}\)
+
+  \item \(f(x) = \dfrac{x + 2}{x^2 + x - 6}\)
+
+  Denominator cannot be 0. Factor:
+  \[
+  x^2 + x - 6 = (x + 3)(x - 2).
+  \]
+  So \(x \ne -3\) and \(x \ne 2.\)
+
+  \(\boxed{\text{Domain: } x \ne -3, 2}\)
+
+  \item \(f(x) = \dfrac{5}{(x + 1)(x - 2)}\)
+
+  Denominator zero at \(x = -1\) or \(x = 2.\)
+
+  \(\boxed{\text{Excluded: } x = -1,\; x = 2}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Square Roots and Even Roots}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(f(x) = \sqrt{x - 3}\)
+
+  Inside the square root must be \(\ge 0\):
+  \[
+  x - 3 \ge 0 \Rightarrow x \ge 3.
+  \]
+
+  \(\boxed{\text{Domain: } x \ge 3}\)
+
+  \item \(f(x) = \sqrt{5 - x}\)
+
+  \[
+  5 - x \ge 0 \Rightarrow x \le 5.
+  \]
+
+  \(\boxed{\text{Domain: } x \le 5}\)
+
+  \item \(f(x) = \sqrt{2x + 4}\)
+
+  \[
+  2x + 4 \ge 0 \Rightarrow 2x \ge -4 \Rightarrow x \ge -2.
+  \]
+
+  \(\boxed{\text{Domain: } x \ge -2}\)
+
+  \item \(f(x) = \sqrt{x^2 - 9}\)
+
+  Need \(x^2 - 9 \ge 0\):
+  \[
+  x^2 \ge 9 \Rightarrow x \le -3 \text{ or } x \ge 3.
+  \]
+
+  \(\boxed{\text{Domain: } x \le -3 \text{ or } x \ge 3}\)
+
+  \item \(f(x) = \sqrt{\dfrac{x - 2}{x + 1}}\)
+
+  Two conditions:
+  \begin{itemize}
+    \item Denominator \(x + 1 \ne 0 \Rightarrow x \ne -1.\)
+    \item The fraction under the root must be \(\ge 0.\)
+  \end{itemize}
+
+  \(\dfrac{x - 2}{x + 1} \ge 0\) is nonnegative when numerator and denominator have the same sign or numerator is 0.
+
+  Sign chart:
+  \[
+  \begin{cases}
+  x - 2 \ge 0 \text{ and } x + 1 > 0 \Rightarrow x \ge 2 \\
+  x - 2 \le 0 \text{ and } x + 1 < 0 \Rightarrow x \le -1
+  \end{cases}
+  \]
+
+  But \(x = -1\) is not allowed (division by 0).  
+  Also \(x = 2\) gives 0 inside the root, which is allowed.
+
+  \(\boxed{\text{Domain: } x \le -1 \text{ (not } -1\text{ itself)} \text{ or } x \ge 2}\)
+
+  More precisely:
+  \(\boxed{(-\infty, -1) \cup [2, \infty)}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Range and Output Behavior}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(f(x) = x^2\)
+
+  A square is never negative. Minimum is 0 at \(x = 0.\)
+
+  \(\boxed{\text{Range: } y \ge 0}\)
+
+  \item \(f(x) = (x - 1)^2 + 3\)
+
+  \((x - 1)^2 \ge 0\). Smallest value is 0 at \(x = 1.\)
+
+  \[
+  f(1) = 0 + 3 = 3.
+  \]
+
+  \(\boxed{\text{Range: } y \ge 3}\)
+
+  \item \(f(x) = |x - 4|\)
+
+  Absolute value is never negative. Smallest value is 0 at \(x = 4.\)
+
+  \(\boxed{\text{Range: } y \ge 0}\)
+
+  \item \(f(x) = -x^2 + 5\)
+
+  This is an upside-down parabola. Maximum occurs at \(x = 0\):
+  \[
+  f(0) = 5.
+  \]
+  As \(|x|\) grows, \(-x^2\) goes to \(-\infty.\)
+
+  \(\boxed{\text{Range: } y \le 5}\)
+
+  \item \(f(x) = \sqrt{x + 2}\)
+
+  Domain requires \(x + 2 \ge 0 \Rightarrow x \ge -2.\)
+
+  Square roots are never negative, so:
+  \[
+  \sqrt{x + 2} \ge 0.
+  \]
+
+  \(\boxed{\text{Range: } y \ge 0}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Combining Restrictions}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item \(f(x) = \dfrac{\sqrt{x - 1}}{x - 3}\)
+
+  Conditions:
+  \begin{itemize}
+    \item Inside the root: \(x - 1 \ge 0 \Rightarrow x \ge 1.\)
+    \item Denominator: \(x - 3 \ne 0 \Rightarrow x \ne 3.\)
+  \end{itemize}
+
+  \(\boxed{\text{Domain: } x \ge 1,\; x \ne 3}\)
+
+  \item \(f(x) = \dfrac{1}{\sqrt{x - 5}}\)
+
+  Conditions:
+  \begin{itemize}
+    \item Inside the root: \(x - 5 > 0\) (must be strictly \(>\) 0, not \(\ge 0\), because the root is in the denominator and cannot be 0).
+    \[
+    x > 5.
+    \]
+  \end{itemize}
+
+  \(\boxed{\text{Domain: } x > 5}\)
+
+  \item \(f(x) = \sqrt{x + 2} + \dfrac{1}{x - 4}\)
+
+  Conditions:
+  \begin{itemize}
+    \item \(\sqrt{x + 2}\) requires \(x + 2 \ge 0 \Rightarrow x \ge -2.\)
+    \item Denominator \(x - 4 \ne 0 \Rightarrow x \ne 4.\)
+  \end{itemize}
+
+  \(\boxed{\text{Domain: } x \ge -2,\; x \ne 4}\)
+
+  \item \(f(x) = \dfrac{\sqrt{x - 2}}{x^2 - 4}\)
+
+  Conditions:
+  \begin{itemize}
+    \item \(\sqrt{x - 2}\) needs \(x - 2 \ge 0 \Rightarrow x \ge 2.\)
+    \item Denominator \(x^2 - 4 = (x - 2)(x + 2) \ne 0.\)
+    \[
+    x \ne 2,\; x \ne -2.
+    \]
+  \end{itemize}
+
+  Combine:
+  \[
+  x \ge 2 \text{ and } x \ne 2 \Rightarrow x > 2.
+  \]
+  (Note: \(x = -2\) is already not in \(x \ge 2\), so we only need \(x > 2.\))
+
+  \(\boxed{\text{Domain: } x > 2}\)
+
+  \item \(f(x) = \dfrac{1}{\sqrt{x(x - 3)}}\)
+
+  Conditions:
+  \begin{itemize}
+    \item Inside the square root must be \(> 0\) (cannot be 0 because it is in the denominator):
+    \[
+    x(x - 3) > 0.
+    \]
+  \end{itemize}
+
+  Solve \(x(x - 3) > 0\). This is positive when both factors are positive or both negative:
+  \[
+  \begin{cases}
+  x > 0 \text{ and } x - 3 > 0 \Rightarrow x > 3 \\
+  x < 0 \text{ and } x - 3 < 0 \Rightarrow x < 0
+  \end{cases}
+  \]
+
+  So valid intervals are \(x < 0\) or \(x > 3.\)
+
+  \(\boxed{\text{Domain: } (-\infty,0) \cup (3,\infty)}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item \(f(x) = \dfrac{10}{x - 5}\)
+
+  Denominator cannot be 0:
+  \[
+  x - 5 \ne 0 \Rightarrow x \ne 5.
+  \]
+
+  \(\boxed{x = 5 \text{ is not allowed}}\)
+
+  \item \(f(x) = \sqrt{x - 4}\)
+
+  The smallest allowed \(x\) is 4 (so that inside is 0).  
+  At \(x = 4:\; f(4) = \sqrt{0} = 0.\)
+
+  \(\boxed{\text{The graph begins at } (4,0)}\)
+
+  \item \(f(x) = (x - 3)^2 + 2\)
+
+  \((x - 3)^2 \ge 0\), minimum value is 0 at \(x = 3\).  
+  So minimum output is 2.
+
+  \(\boxed{\text{Range: } y \ge 2}\)
+
+  \item \(f(x) = \dfrac{x + 1}{x^2 - 16}\)
+
+  Denominator cannot be 0:
+  \[
+  x^2 - 16 = (x - 4)(x + 4) = 0
+  \Rightarrow x = \pm 4.
+  \]
+
+  \(\boxed{\text{Undefined at } x = -4 \text{ and } x = 4}\)
+
+  \item If both numerator and denominator share \((x - 2)\), you must \textbf{simplify first} before describing range or behavior, but \textbf{for domain you still exclude} the \(x\)-value that made the original denominator 0.
+
+  Example:
+  \[
+  f(x) = \frac{x - 2}{(x - 2)(x + 5)} = \frac{1}{x + 5}, \quad x \ne 2.
+  \]
+
+  On SAT: you simplify for algebra, but you \emph{must still} say \(x \ne 2\).
+
+  \(\boxed{\text{Cancel common factors, but still exclude values that made the denominator 0 originally}}\)
+\end{enumerate}
+
+
+
+\end{document}

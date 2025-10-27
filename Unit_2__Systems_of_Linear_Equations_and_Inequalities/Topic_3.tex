@@ -1,0 +1,167 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 2: Systems of Linear Equations and Inequalities} \\[6pt]
+    \Large \textbf{Topic 3: Interpreting Intersections and Solution Types}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+A system of two linear equations in two variables can have exactly one solution, no solution, or infinitely many solutions.
+
+\begin{itemize}
+    \item \textbf{One solution}: lines intersect at exactly one point. Slopes are different.
+    \item \textbf{No solution}: lines are parallel and distinct. Slopes are equal, intercepts differ.
+    \item \textbf{Infinitely many solutions}: lines are the same line. Both slope and intercept match after simplification.
+\end{itemize}
+
+Algebraic tests:
+\[
+\begin{aligned}
+\text{If } &a_1x + b_1y = c_1,\quad a_2x + b_2y = c_2,\\
+\text{compare ratios } &\frac{a_1}{a_2},\ \frac{b_1}{b_2},\ \frac{c_1}{c_2}.\\
+&\text{One solution if ratios of }a\text{ and }b\text{ are not equal.}\\
+&\text{No solution if } \frac{a_1}{a_2}=\frac{b_1}{b_2}\neq \frac{c_1}{c_2}.\\
+&\text{Infinitely many if } \frac{a_1}{a_2}=\frac{b_1}{b_2}=\frac{c_1}{c_2}.
+\end{aligned}
+\]
+
+Graph meaning:
+\begin{itemize}
+    \item Intersection point \((x,y)\) satisfies both equations.
+    \item In contexts, \(x\) and \(y\) carry units. The coordinates answer the question in those units.
+\end{itemize}
+
+\section*{Core Skills}
+\begin{itemize}
+    \item Convert to slope intercept form to compare slopes and intercepts.
+    \item Use elimination or substitution to detect contradictions like \(0=5\) or identities like \(0=0\).
+    \item Interpret the ordered pair in context with correct units.
+\end{itemize}
+
+\section*{Example 1: One Solution}
+
+\[
+\begin{cases}
+y = 2x + 1\\
+y = -x + 10
+\end{cases}
+\]
+Set equal: \(2x + 1 = -x + 10 \Rightarrow 3x = 9 \Rightarrow x = 3\). Then \(y = 2(3) + 1 = 7\).  
+The lines have different slopes, so they meet once at \(\boxed{(3,7)}\).
+
+\section*{Example 2: No Solution}
+
+\[
+\begin{cases}
+2x - 3y = 6\\
+4x - 6y = 10
+\end{cases}
+\]
+Multiply the first equation by 2 to compare: \(4x - 6y = 12\). The second is \(4x - 6y = 10\).  
+Same left side, different constants. This gives \(12 = 10\), a contradiction.  
+Slopes match and intercepts differ, so \textbf{no solution}. Lines are parallel.
+
+\section*{Example 3: Infinitely Many Solutions}
+
+\[
+\begin{cases}
+3x + 6y = 12\\
+x + 2y = 4
+\end{cases}
+\]
+Multiply the second by 3: \(3x + 6y = 12\). The equations are identical.  
+Every point on the line is a solution, so \textbf{infinitely many solutions}.
+
+\section*{Example 4: Interpreting the Intersection in Context}
+
+Two plans for streaming:
+\[
+\begin{cases}
+\text{Plan A cost } C = 8 + 2m\\
+\text{Plan B cost } C = 2 + 3m
+\end{cases}
+\]
+where \(m\) is the number of movies and \(C\) is dollars.  
+Set equal: \(8 + 2m = 2 + 3m \Rightarrow m = 6\). Then \(C = 8 + 2(6) = 20\).  
+At \(m=6\) movies, both plans cost \(20\) dollars. The intersection \((6, 20)\) means 6 movies and 20 dollars.
+
+\section*{Key Takeaways}
+\begin{itemize}
+    \item Different slopes gives one intersection and one solution.
+    \item Equal slopes with different intercepts gives no solution.
+    \item Proportional equations describe the same line and give infinitely many solutions.
+    \item In word problems, attach units to the coordinates and state what the point means.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — TOPIC 3: INTERPRETING INTERSECTIONS AND SOLUTION TYPES
+% ============================================================
+
+\section*{Practice Questions: Interpreting Intersections and Solution Types}
+
+\subsection*{Part A: Identify Solution Type by Inspection}
+\begin{enumerate}
+    \item \(\begin{cases} y = 2x + 1 \\ y = -x + 4 \end{cases}\)
+    \item \(\begin{cases} y = 3x + 5 \\ y = 3x - 2 \end{cases}\)
+    \item \(\begin{cases} 2x + 4y = 8 \\ x + 2y = 4 \end{cases}\)
+    \item \(\begin{cases} y = -\tfrac{1}{2}x + 3 \\ y = 2x + 1 \end{cases}\)
+    \item \(\begin{cases} 3x - 2y = 6 \\ 6x - 4y = 12 \end{cases}\)
+\end{enumerate}
+
+\subsection*{Part B: Determine Solution Type Algebraically}
+\begin{enumerate}
+    \setcounter{enumi}{5}
+    \item \(\begin{cases} 2x + y = 10 \\ 4x + 2y = 20 \end{cases}\)
+    \item \(\begin{cases} 3x - 2y = 5 \\ 6x - 4y = 9 \end{cases}\)
+    \item \(\begin{cases} x + y = 8 \\ 2x + 2y = 18 \end{cases}\)
+    \item \(\begin{cases} 4x + y = 12 \\ 8x + 2y = 26 \end{cases}\)
+    \item \(\begin{cases} 5x - 3y = 7 \\ 10x - 6y = 14 \end{cases}\)
+\end{enumerate}
+
+\subsection*{Part C: Solve and Interpret the Intersection Point}
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \item \(\begin{cases} y = 2x + 5 \\ y = -x + 8 \end{cases}\)
+    \item \(\begin{cases} 3x + y = 12 \\ 2x - y = 3 \end{cases}\)
+    \item \(\begin{cases} 4x - y = 11 \\ x + y = 4 \end{cases}\)
+    \item \(\begin{cases} y = -2x + 6 \\ y = x - 3 \end{cases}\)
+    \item \(\begin{cases} 2x + 3y = 12 \\ 3x + 2y = 12 \end{cases}\)
+\end{enumerate}
+
+\subsection*{Part D: Word Problems and Interpretation}
+\begin{enumerate}
+    \setcounter{enumi}{15}
+    \item A gym charges \$30 per month plus \$5 per class. Another gym charges \$10 per month plus \$8 per class. At what number of classes will the cost be the same, and what will the cost be?
+    \item One phone plan charges \$50 plus \$0.10 per minute, while another charges \$20 plus \$0.25 per minute. Find the number of minutes where both cost the same and what the total cost is.
+    \item Two taxi services charge as follows:  
+    Service A: \$3 plus \$1.50 per mile  
+    Service B: \$6 plus \$1.00 per mile  
+    After how many miles will both cost the same?
+    \item The total cost of 3 pens and 2 notebooks is \$11. The total cost of 6 pens and 4 notebooks is \$22. How many solutions does this system have, and why?
+    \item Two linear equations represent the same budget line in an economics problem. What kind of system is this, and what does that mean about the feasible combinations?
+\end{enumerate}
+
+
+
+\end{document}

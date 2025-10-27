@@ -1,0 +1,246 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 4: Data, Statistics, and Probability} \\[6pt]
+    \Large \textbf{Topic 2: Mean, Median, Mode, and Range}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+For a data set \(x_1,x_2,\dots,x_n\):
+\begin{itemize}
+  \item \textbf{Mean (average):} \(\displaystyle \bar{x}=\frac{x_1+\cdots+x_n}{n}\).
+  \item \textbf{Median:} middle value after sorting. If \(n\) is even, average of the two middle values.
+  \item \textbf{Mode:} most frequent value(s).
+  \item \textbf{Range:} max minus min.
+\end{itemize}
+
+Outliers pull the \textbf{mean} more than the \textbf{median}. Median is more resistant to extreme values.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Sort the data before finding the median and range.
+  \item Compute mean quickly using totals or by using balance reasoning.
+  \item Identify modes from a list or simple frequency table.
+  \item Decide which measure best represents the center given outliers or skew.
+\end{itemize}
+
+\section*{Example 1: All Four Measures}
+
+Data: \(7, 9, 4, 6, 9\). Sorted: \(4,6,7,9,9\).
+\[
+\bar{x}=\frac{35}{5}=7,\quad \text{median}=7,\quad \text{mode}=9,\quad \text{range}=9-4=5.
+\]
+
+\section*{Example 2: Even Count Median}
+
+Data: \(12, 15, 18, 20\). Sorted already.  
+Median \(=\frac{15+18}{2}=16.5\).  
+Mean \(=\frac{65}{4}=16.25\). Range \(=20-12=8\). No mode.
+
+\section*{Example 3: Effect of an Outlier}
+
+Test scores: \(70, 74, 76, 78, 80, 82, 100\).  
+Mean \(=\frac{560}{7}=80\). Median is the 4th value \(=78\).  
+The 100 raises the mean above the median. Median better represents the typical score.
+
+\section*{Example 4: From a Frequency Table}
+
+\[
+\begin{array}{c|cccc}
+\text{Value} & 2 & 3 & 4 & 5\\ \hline
+\text{Frequency} & 1 & 2 & 3 & 2
+\end{array}
+\]
+Total count \(n=8\). Sum \(=2(1)+3(2)+4(3)+5(2)=2+6+12+10=30\).  
+Mean \(=30/8=3.75\). Mode \(=4\) (highest frequency).  
+Sorted positions 4th and 5th are both 4, so median \(=4\). Range \(=5-2=3\).
+
+\section*{Example 5: Shifts and Scales}
+
+If each data value increases by \(k\), mean and median increase by \(k\), range unchanged.  
+If each data value is multiplied by \(c>0\), mean, median, and range are multiplied by \(c\).
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Use the median when data are skewed or have outliers.
+  \item Mean equals total divided by count. Keep track of \(n\).
+  \item Mode describes most common value. There can be more than one or none.
+  \item Range measures spread but is sensitive to extremes.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — TOPIC 2: MEAN, MEDIAN, MODE, AND RANGE
+% ============================================================
+
+\section*{Practice Questions: Mean, Median, Mode, and Range}
+
+\subsection*{Part A: Basic Computation}
+Find the mean, median, mode, and range for each data set.
+\begin{enumerate}
+  \item \(4, 7, 9, 3, 6\)
+  \item \(10, 12, 14, 16, 18, 20\)
+  \item \(2, 5, 8, 8, 10, 12\)
+  \item \(15, 20, 25, 30, 35\)
+  \item \(9, 9, 9, 12, 15, 18\)
+\end{enumerate}
+
+\subsection*{Part B: Interpreting Data}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item The ages of employees in a small company are: 22, 25, 25, 26, 27, 29, 60.  
+  Which measure (mean or median) better represents the typical age? Explain.
+  \item A dataset has mean 50 and median 48. Is the distribution likely skewed left, right, or symmetric?
+  \item A dataset of scores: 75, 80, 82, 83, 85, 90, 100. Identify the outlier and describe its effect on the mean.
+  \item If 5 is added to every number in a dataset, how do the mean and median change?
+  \item If every value in a dataset is doubled, what happens to the mean, median, and range?
+\end{enumerate}
+
+\subsection*{Part C: Frequency Tables}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item 
+  \[
+  \begin{array}{c|cccc}
+  \text{Value} & 2 & 3 & 4 & 5\\ \hline
+  \text{Frequency} & 1 & 2 & 4 & 3
+  \end{array}
+  \]
+  Find mean, median, and mode.
+
+  \item 
+  \[
+  \begin{array}{c|ccc}
+  \text{Value} & 10 & 20 & 30\\ \hline
+  \text{Frequency} & 2 & 5 & 3
+  \end{array}
+  \]
+  Find the mean and identify the mode.
+
+  \item 
+  \[
+  \begin{array}{c|cccc}
+  \text{Value} & 1 & 2 & 3 & 4\\ \hline
+  \text{Frequency} & 3 & 2 & 2 & 1
+  \end{array}
+  \]
+  Find mean, median, and range.
+
+  \item 
+  \[
+  \begin{array}{c|ccccc}
+  \text{Score} & 60 & 70 & 80 & 90 & 100\\ \hline
+  \text{Frequency} & 2 & 4 & 6 & 4 & 2
+  \end{array}
+  \]
+  Find mean and median.
+
+  \item 
+  \[
+  \begin{array}{c|cccc}
+  \text{Number of pets} & 0 & 1 & 2 & 3\\ \hline
+  \text{Frequency} & 3 & 6 & 4 & 2
+  \end{array}
+  \]
+  Find the most common number of pets (mode) and the mean.
+\end{enumerate}
+
+\subsection*{Part D: Word Problems}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item The mean of five numbers is 12. Four of the numbers are 8, 10, 14, and 18. Find the fifth number.
+  \item The average of 6 test scores is 80. If one score (60) is dropped, what is the average of the remaining 5 scores?
+  \item A class of 10 students has an average height of 160 cm. If one new student with height 180 cm joins, what is the new mean height?
+  \item The median of 7 numbers is 10. If the largest number increases by 20, what happens to the median?
+  \item A dataset has mean 40 and range 12. If each value increases by 3, what are the new mean and range?
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A student’s five quiz scores are 85, 90, 80, 100, and 75. If the lowest score is dropped, what is the mean of the remaining scores?
+  \item The mean of four numbers is 25. When a fifth number is added, the new mean becomes 30. What is the fifth number?
+  \item The median of a set of 9 numbers is 50. If the largest value increases by 10, what happens to the median?
+  \item In a dataset, the mode is 8 and the range is 12. If all values are doubled, what are the new mode and range?
+  \item The mean of three numbers is 20. Two of the numbers are 15 and 25. Find the third number.
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 4, TOPIC 2: MEAN, MEDIAN, MODE, AND RANGE
+% ============================================================
+
+\section*{Answer Key and Solutions: Mean, Median, Mode, and Range}
+
+\subsection*{Part A Solutions: Basic Computation}
+\begin{enumerate}
+  \item Data \(4,7,9,3,6\). Sum \(=29\Rightarrow \text{mean}=29/5=5.8\). Sorted \(3,4,6,7,9\Rightarrow \text{median}=6\). \(\text{Mode}=\) none. \(\text{Range}=9-3=6\).
+  \item Sum \(=90\Rightarrow \text{mean}=90/6=15\). Median \(=(14+16)/2=15\). Mode none. Range \(=20-10=10\).
+  \item Sum \(=45\Rightarrow \text{mean}=45/6=7.5\). Median \(=(8+8)/2=8\). Mode \(=8\). Range \(=12-2=10\).
+  \item Sum \(=125\Rightarrow \text{mean}=25\). Median \(=25\). Mode none. Range \(=35-15=20\).
+  \item Sum \(=72\Rightarrow \text{mean}=12\). Median \(=(9+12)/2=10.5\). Mode \(=9\). Range \(=18-9=9\).
+\end{enumerate}
+
+\subsection*{Part B Solutions: Interpreting Data}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Median better. The 60 is an outlier that pulls the mean up.
+  \item Mean \(>\) median suggests right skew.
+  \item Outlier \(=100\). It increases the mean more than the median.
+  \item Mean increases by 5. Median increases by 5.
+  \item Mean and median both double. Range doubles.
+\end{enumerate}
+
+\subsection*{Part C Solutions: Frequency Tables}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(n=1+2+4+3=10\). Sum \(=2(1)+3(2)+4(4)+5(3)=39\Rightarrow \text{mean}=3.9\). Mode \(=4\). Median is average of 5th and 6th values, both 4, so median \(=4\).
+  \item \(n=10\). Sum \(=10(2)+20(5)+30(3)=210\Rightarrow \text{mean}=21\). Mode \(=20\) (highest frequency 5).
+  \item \(n=8\). Sum \(=1(3)+2(2)+3(2)+4(1)=17\Rightarrow \text{mean}=17/8=2.125\). Median is average of 4th and 5th values, both 2, so median \(=2\). Range \(=4-1=3\).
+  \item \(n=18\). Sum \(=60(2)+70(4)+80(6)+90(4)+100(2)=1440\Rightarrow \text{mean}=1440/18=80\). Median is between 9th and 10th values; both are 80, so median \(=80\).
+  \item \(n=15\). Mode \(=1\) (freq 6). Mean \(=\dfrac{0(3)+1(6)+2(4)+3(2)}{15}=\dfrac{20}{15}=\dfrac{4}{3}\approx1.33\).
+\end{enumerate}
+
+\subsection*{Part D Solutions: Word Problems}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Total \(=5\cdot12=60\). Known sum \(=8+10+14+18=50\). Fifth \(=60-50=\boxed{10}\).
+  \item Total \(=6\cdot80=480\). Remove 60 gives \(420\) over 5 scores. New mean \(=420/5=\boxed{84}\).
+  \item Old total \(=10\cdot160=1600\). New total \(=1600+180=1780\). New mean \(=1780/11\approx\boxed{161.8\text{ cm}}\).
+  \item The median is the 4th of 7 numbers. Changing the largest leaves the median \(\boxed{\text{unchanged at }10}\).
+  \item New mean \(=40+3=\boxed{43}\). Range unchanged \(\boxed{12}\).
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item Sum \(=85+90+80+100+75=430\). Drop 75 \(\Rightarrow\) \(355/4=\boxed{88.75}\).
+  \item Four-number total \(=4\cdot25=100\). Five-number total \(=5\cdot30=150\). Fifth \(=150-100=\boxed{50}\).
+  \item Median is the 5th value. Increasing largest does not change it. \(\boxed{\text{Unchanged at }50}\).
+  \item Mode doubles to \(\boxed{16}\). Range doubles to \(\boxed{24}\).
+  \item Total \(=3\cdot20=60\). Known \(=15+25=40\). Third \(=60-40=\boxed{20}\).
+\end{enumerate}
+
+
+\end{document}

@@ -1,0 +1,203 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 4: Data, Statistics, and Probability} \\[6pt]
+    \Large \textbf{Topic 4: Basic and Compound Probability}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+\textbf{Probability} measures how likely an event is to occur:
+\[
+P(\text{event}) = \frac{\text{number of favorable outcomes}}{\text{total possible outcomes}}.
+\]
+
+Probabilities range from \(0\) (impossible) to \(1\) (certain).  
+For independent events, probabilities multiply.  
+For mutually exclusive events, probabilities add.
+
+\subsection*{Basic Rules}
+\begin{itemize}
+  \item \(P(A') = 1 - P(A)\)
+  \item \(P(A\text{ or }B) = P(A) + P(B) - P(A\text{ and }B)\)
+  \item \(P(A\text{ and }B) = P(A)\cdot P(B)\) if \(A\) and \(B\) are independent
+\end{itemize}
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Compute simple probabilities for dice, cards, and spinners.
+  \item Distinguish between “or” (addition) and “and” (multiplication).
+  \item Identify whether events are independent or dependent.
+  \item Use complementary probability for “at least one” problems.
+\end{itemize}
+
+\section*{Example 1: Basic Probability}
+
+A fair die is rolled.  
+\(P(\text{even}) = \dfrac{3}{6} = \boxed{\tfrac{1}{2}}\).
+
+\section*{Example 2: Independent Events}
+
+Flip a coin and roll a die.  
+\(P(\text{heads and 4}) = \tfrac{1}{2}\times\tfrac{1}{6}=\boxed{\tfrac{1}{12}}\).
+
+\section*{Example 3: Dependent Events}
+
+A box has 3 red and 2 blue balls. Draw 2 without replacement.  
+\(P(\text{both red})=\tfrac{3}{5}\times\tfrac{2}{4}=\boxed{\tfrac{3}{10}}\).
+
+\section*{Example 4: “At Least One”}
+
+Two coin flips. \(P(\text{at least one head})=1-P(\text{no heads})=1-(\tfrac{1}{2})^2=\boxed{\tfrac{3}{4}}\).
+
+\section*{Example 5: “Or” Probabilities}
+
+In a standard deck, \(P(\text{heart or king})=\tfrac{13}{52}+\tfrac{4}{52}-\tfrac{1}{52}=\boxed{\tfrac{16}{52}=\tfrac{4}{13}}\).
+
+\section*{Example 6: Compound Probability (Tree Diagram Idea)}
+
+A coin is flipped twice. The possible outcomes are HH, HT, TH, TT.  
+\(P(\text{exactly one head})=\tfrac{2}{4}=\boxed{\tfrac{1}{2}}\).
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Add probabilities for “or,” multiply for “and” (independent).
+  \item Use complements for “at least” or “none” types.
+  \item For dependent events, adjust denominators as items are removed.
+  \item All probabilities must sum to 1 for the entire sample space.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — TOPIC 4: BASIC AND COMPOUND PROBABILITY
+% ============================================================
+
+\section*{Practice Questions: Basic and Compound Probability}
+
+\subsection*{Part A: Basic Probability}
+\begin{enumerate}
+  \item A coin is flipped once. What is \(P(\text{heads})\)?
+  \item A die is rolled. What is \(P(\text{rolling a 5})\)?
+  \item A spinner has 8 equal sections labeled 1–8. What is \(P(\text{even number})\)?
+  \item From a deck of 52 cards, what is \(P(\text{drawing a heart})\)?
+  \item A bag contains 4 red, 3 blue, and 3 green marbles. What is \(P(\text{green})\)?
+\end{enumerate}
+
+\subsection*{Part B: “And” and “Or” Events}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item A die is rolled twice. What is \(P(\text{rolling a 3 and then a 5})\)?
+  \item A card is drawn from a deck. What is \(P(\text{heart or queen})\)?
+  \item A coin is flipped twice. What is \(P(\text{two heads})\)?
+  \item A coin is flipped twice. What is \(P(\text{head or tail on first flip})\)?
+  \item A jar contains 5 red and 5 blue chips. Two are drawn without replacement. What is \(P(\text{both red})\)?
+\end{enumerate}
+
+\subsection*{Part C: Complement and “At Least” Problems}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item A die is rolled once. What is \(P(\text{not rolling a 6})\)?
+  \item Two coins are flipped. What is \(P(\text{at least one head})\)?
+  \item A student guesses on a 4-option multiple-choice question. What is \(P(\text{wrong answer})\)?
+  \item A bag contains 6 white and 4 black marbles. One is drawn. What is \(P(\text{not black})\)?
+  \item A coin is flipped three times. What is \(P(\text{at least one tail})\)?
+\end{enumerate}
+
+\subsection*{Part D: Dependent and Independent Events}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Two cards are drawn from a deck \textbf{without replacement}. What is \(P(\text{both aces})\)?
+  \item Two cards are drawn \textbf{with replacement}. What is \(P(\text{both aces})\)?
+  \item A bag contains 3 red and 2 blue balls. Two are drawn without replacement. Find \(P(\text{red then blue})\).
+  \item A coin is flipped and a die is rolled. What is \(P(\text{head and even number})\)?
+  \item In a class, 60\% of students are female and 40\% male. If one student is selected, what is \(P(\text{female})\)?
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A jar contains 10 marbles: 4 red, 3 blue, 3 green. Two marbles are drawn without replacement. What is \(P(\text{both blue})\)?
+  \item A student randomly guesses on two true/false questions. What is \(P(\text{both correct})\)?
+  \item A fair die is rolled twice. What is \(P(\text{sum of 7})\)?
+  \item A computer password has two randomly chosen digits (0–9). What is \(P(\text{both digits are even})\)?
+  \item The probability of rain today is 0.3 and tomorrow 0.4 (independent). What is \(P(\text{rains both days})\)?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 4, TOPIC 4: BASIC AND COMPOUND PROBABILITY
+% ============================================================
+
+\section*{Answer Key and Solutions: Basic and Compound Probability}
+
+\subsection*{Part A Solutions: Basic Probability}
+\begin{enumerate}
+  \item \(P(\text{heads})=\tfrac{1}{2}\).
+  \item \(P(5)=\tfrac{1}{6}\).
+  \item Even outcomes \(\{2,4,6,8\}\): \(4/8=\tfrac{1}{2}\).
+  \item Hearts \(=13/52=\tfrac{1}{4}\).
+  \item Green \(=3/(4+3+3)=\tfrac{3}{10}\).
+\end{enumerate}
+
+\subsection*{Part B Solutions: “And” and “Or”}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Independent: \(\tfrac{1}{6}\cdot\tfrac{1}{6}=\tfrac{1}{36}\).
+  \item \(P(\heartsuit \text{ or Q})=\tfrac{13}{52}+\tfrac{4}{52}-\tfrac{1}{52}=\tfrac{16}{52}=\tfrac{4}{13}\).
+  \item \((\tfrac{1}{2})^2=\tfrac{1}{4}\).
+  \item First flip is head or tail with certainty: \(1\).
+  \item Without replacement: \(\tfrac{5}{10}\cdot\tfrac{4}{9}=\tfrac{20}{90}=\tfrac{2}{9}\).
+\end{enumerate}
+
+\subsection*{Part C Solutions: Complement and “At Least”}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(1-\tfrac{1}{6}=\tfrac{5}{6}\).
+  \item \(1-(\tfrac{1}{2})^2=\tfrac{3}{4}\).
+  \item \(1-\tfrac{1}{4}=\tfrac{3}{4}\).
+  \item Not black \(=\) white \(= \tfrac{6}{10}=\tfrac{3}{5}\).
+  \item \(1-(\tfrac{1}{2})^3=1-\tfrac{1}{8}=\tfrac{7}{8}\).
+\end{enumerate}
+
+\subsection*{Part D Solutions: Dependent and Independent}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Without replacement: \(\tfrac{4}{52}\cdot\tfrac{3}{51}=\tfrac{12}{2652}=\boxed{\tfrac{1}{221}}\).
+  \item With replacement: \((\tfrac{4}{52})^2=(\tfrac{1}{13})^2=\tfrac{1}{169}\).
+  \item \(\tfrac{3}{5}\cdot\tfrac{2}{4}=\tfrac{6}{20}=\tfrac{3}{10}\).
+  \item Independent: \(\tfrac{1}{2}\cdot\tfrac{3}{6}=\tfrac{1}{4}\).
+  \item \(0.60\).
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item \(\tfrac{3}{10}\cdot\tfrac{2}{9}=\tfrac{6}{90}=\tfrac{1}{15}\).
+  \item \((\tfrac{1}{2})^2=\tfrac{1}{4}\).
+  \item Favorable sums of 7: 6 outcomes of 36 \(\Rightarrow \tfrac{6}{36}=\tfrac{1}{6}\).
+  \item Even digits \(\{0,2,4,6,8\}\): \((\tfrac{5}{10})^2=(\tfrac{1}{2})^2=\tfrac{1}{4}\).
+  \item Independent: \(0.3\cdot0.4=0.12\).
+\end{enumerate}
+
+
+\end{document}

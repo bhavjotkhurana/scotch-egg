@@ -1,0 +1,294 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 2: Systems of Linear Equations and Inequalities} \\[6pt]
+    \Large \textbf{Topic 2: Solving Systems by Elimination}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+The \textbf{elimination method} is a way to solve a system of equations by adding or subtracting the equations so that one variable is removed (eliminated). This allows us to solve for the remaining variable.
+
+For example:
+\[
+\begin{cases}
+2x + y = 10 \\
+x - y = 4
+\end{cases}
+\]
+
+If we add these two equations, \(y\) is eliminated:
+\[
+(2x + y) + (x - y) = 10 + 4 \Rightarrow 3x = 14 \Rightarrow x = \tfrac{14}{3}.
+\]
+
+Then substitute \(x = \tfrac{14}{3}\) back into one equation to find \(y\).
+
+\section*{Core Skills}
+\begin{itemize}
+    \item Line up equations vertically by variables and equal signs.
+    \item Decide whether to add or subtract to eliminate a variable.
+    \item Multiply one or both equations if coefficients need adjustment.
+    \item Always simplify and substitute back to check the solution.
+\end{itemize}
+
+\section*{Example 1: Direct Elimination}
+
+Solve the system:
+\[
+\begin{cases}
+x + y = 9 \\
+x - y = 3
+\end{cases}
+\]
+
+\textbf{Step 1:} Add the two equations to eliminate \(y\):
+\[
+(x + y) + (x - y) = 9 + 3 \Rightarrow 2x = 12 \Rightarrow x = 6.
+\]
+
+\textbf{Step 2:} Substitute \(x = 6\) into \(x + y = 9\):
+\[
+6 + y = 9 \Rightarrow y = 3.
+\]
+
+\textbf{Final Answer:} \(\boxed{(6, 3)}\)
+
+\section*{Example 2: Multiplying to Eliminate}
+
+Solve the system:
+\[
+\begin{cases}
+3x + 2y = 16 \\
+x - 2y = 4
+\end{cases}
+\]
+
+\textbf{Step 1:} Add the two equations to eliminate \(y\):
+\[
+(3x + 2y) + (x - 2y) = 16 + 4 \Rightarrow 4x = 20 \Rightarrow x = 5.
+\]
+
+\textbf{Step 2:} Substitute \(x = 5\) into \(x - 2y = 4\):
+\[
+5 - 2y = 4 \Rightarrow -2y = -1 \Rightarrow y = \tfrac{1}{2}.
+\]
+
+\textbf{Final Answer:} \(\boxed{(5, \tfrac{1}{2})}\)
+
+\section*{Example 3: Multiplying Both Equations}
+
+Solve the system:
+\[
+\begin{cases}
+2x + 3y = 12 \\
+3x + 4y = 17
+\end{cases}
+\]
+
+\textbf{Step 1:} Multiply the first equation by 3 and the second by 2 to make the \(x\)-coefficients match:
+\[
+\begin{cases}
+6x + 9y = 36 \\
+6x + 8y = 34
+\end{cases}
+\]
+
+\textbf{Step 2:} Subtract the second equation from the first:
+\[
+(6x + 9y) - (6x + 8y) = 36 - 34 \Rightarrow y = 2.
+\]
+
+\textbf{Step 3:} Substitute \(y = 2\) into \(2x + 3y = 12\):
+\[
+2x + 6 = 12 \Rightarrow 2x = 6 \Rightarrow x = 3.
+\]
+
+\textbf{Final Answer:} \(\boxed{(3, 2)}\)
+
+\section*{Key Takeaways}
+\begin{itemize}
+    \item Use elimination when variables are already aligned or easy to match.
+    \item Multiply equations to create equal and opposite coefficients if needed.
+    \item Always check the solution in both equations.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — TOPIC 2: SOLVING SYSTEMS BY ELIMINATION
+% ============================================================
+
+\section*{Practice Questions: Solving Systems by Elimination}
+
+\subsection*{Part A: Direct Elimination}
+\begin{enumerate}
+    \item \(\begin{cases} x + y = 10 \\ x - y = 2 \end{cases}\)
+    \item \(\begin{cases} 3x + y = 11 \\ 3x - y = 7 \end{cases}\)
+    \item \(\begin{cases} 2x + y = 8 \\ 2x - y = 4 \end{cases}\)
+    \item \(\begin{cases} x + 2y = 9 \\ x - 2y = 3 \end{cases}\)
+    \item \(\begin{cases} 4x + y = 15 \\ 4x - y = 5 \end{cases}\)
+\end{enumerate}
+
+\subsection*{Part B: Multiplying One Equation}
+\begin{enumerate}
+    \setcounter{enumi}{5}
+    \item \(\begin{cases} 2x + y = 10 \\ 3x + 2y = 16 \end{cases}\)
+    \item \(\begin{cases} x + 3y = 12 \\ 2x - 3y = 6 \end{cases}\)
+    \item \(\begin{cases} 5x - 2y = 8 \\ 3x + 4y = 20 \end{cases}\)
+    \item \(\begin{cases} 2x + 5y = 19 \\ 4x - 5y = 1 \end{cases}\)
+    \item \(\begin{cases} 6x + y = 14 \\ 4x - y = 10 \end{cases}\)
+\end{enumerate}
+
+\subsection*{Part C: Multiplying Both Equations}
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \item \(\begin{cases} 2x + 3y = 12 \\ 3x + 4y = 17 \end{cases}\)
+    \item \(\begin{cases} 4x - 3y = 5 \\ 3x - 2y = 4 \end{cases}\)
+    \item \(\begin{cases} 5x + 2y = 18 \\ 3x + 4y = 14 \end{cases}\)
+    \item \(\begin{cases} 2x - y = 7 \\ 3x + 2y = 13 \end{cases}\)
+    \item \(\begin{cases} 4x + 5y = 23 \\ 6x - 5y = 7 \end{cases}\)
+\end{enumerate}
+
+\subsection*{Part D: Word Problems}
+\begin{enumerate}
+    \setcounter{enumi}{15}
+    \item The sum of two numbers is 20. Their difference is 6. Find the two numbers.
+    \item A rectangle has a perimeter of 50 cm. The length is 5 cm more than the width. Find its dimensions.
+    \item The sum of the ages of a father and his son is 60. The father is 24 years older than his son. Find their ages.
+    \item A movie ticket and a snack together cost \$22. Two movie tickets and one snack cost \$35. Find the price of each item.
+    \item The total value of 5-dollar and 10-dollar bills is \$120. There are 16 bills in all. How many of each type are there?
+\end{enumerate}
+
+% ============================================================
+% SOLUTIONS — TOPIC 2: SOLVING SYSTEMS BY ELIMINATION
+% ============================================================
+
+\section*{Answer Key and Solutions: Solving Systems by Elimination}
+
+\subsection*{Part A Solutions: Direct Elimination}
+\begin{enumerate}
+  \item \(\begin{cases} x + y = 10 \\ x - y = 2 \end{cases}\)  
+  Add equations: \(2x = 12 \Rightarrow x = 6\). Then \(6 + y = 10 \Rightarrow y = 4\).  
+  \(\boxed{(6, 4)}\)
+
+  \item \(\begin{cases} 3x + y = 11 \\ 3x - y = 7 \end{cases}\)  
+  Add: \(6x = 18 \Rightarrow x = 3\). Then \(3x + y = 11 \Rightarrow 9 + y = 11 \Rightarrow y = 2\).  
+  \(\boxed{(3, 2)}\)
+
+  \item \(\begin{cases} 2x + y = 8 \\ 2x - y = 4 \end{cases}\)  
+  Add: \(4x = 12 \Rightarrow x = 3\). Then \(2x + y = 8 \Rightarrow 6 + y = 8 \Rightarrow y = 2\).  
+  \(\boxed{(3, 2)}\)
+
+  \item \(\begin{cases} x + 2y = 9 \\ x - 2y = 3 \end{cases}\)  
+  Add: \(2x = 12 \Rightarrow x = 6\). Then \(6 + 2y = 9 \Rightarrow 2y = 3 \Rightarrow y = \tfrac{3}{2}\).  
+  \(\boxed{(6, \tfrac{3}{2})}\)
+
+  \item \(\begin{cases} 4x + y = 15 \\ 4x - y = 5 \end{cases}\)  
+  Add: \(8x = 20 \Rightarrow x = \tfrac{5}{2}\). Then \(4x + y = 15 \Rightarrow 10 + y = 15 \Rightarrow y = 5\).  
+  \(\boxed{(\tfrac{5}{2}, 5)}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Multiplying One Equation}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(\begin{cases} 2x + y = 10 \\ 3x + 2y = 16 \end{cases}\)  
+  Multiply first by \(-2\): \(-4x - 2y = -20\). Add to second: \(-x = -4 \Rightarrow x = 4\). Then \(2x + y = 10 \Rightarrow 8 + y = 10 \Rightarrow y = 2\).  
+  \(\boxed{(4, 2)}\)
+
+  \item \(\begin{cases} x + 3y = 12 \\ 2x - 3y = 6 \end{cases}\)  
+  Add: \(3x = 18 \Rightarrow x = 6\). Then \(6 + 3y = 12 \Rightarrow 3y = 6 \Rightarrow y = 2\).  
+  \(\boxed{(6, 2)}\)
+
+  \item \(\begin{cases} 5x - 2y = 8 \\ 3x + 4y = 20 \end{cases}\)  
+  Multiply first by \(2\): \(10x - 4y = 16\). Add to second: \(13x = 36 \Rightarrow x = \tfrac{36}{13}\).  
+  Then \(5x - 2y = 8 \Rightarrow 5(\tfrac{36}{13}) - 2y = 8 \Rightarrow \tfrac{180}{13} - 2y = 8\).  
+  So \(-2y = 8 - \tfrac{180}{13} = -\tfrac{76}{13} \Rightarrow y = \tfrac{38}{13}\).  
+  \(\boxed{(\tfrac{36}{13}, \tfrac{38}{13})}\)
+
+  \item \(\begin{cases} 2x + 5y = 19 \\ 4x - 5y = 1 \end{cases}\)  
+  Add: \(6x = 20 \Rightarrow x = \tfrac{10}{3}\). Then \(2x + 5y = 19 \Rightarrow \tfrac{20}{3} + 5y = 19 \Rightarrow 5y = \tfrac{37}{3} \Rightarrow y = \tfrac{37}{15}\).  
+  \(\boxed{(\tfrac{10}{3}, \tfrac{37}{15})}\)
+
+  \item \(\begin{cases} 6x + y = 14 \\ 4x - y = 10 \end{cases}\)  
+  Add: \(10x = 24 \Rightarrow x = \tfrac{12}{5}\). Then \(6x + y = 14 \Rightarrow \tfrac{72}{5} + y = 14 \Rightarrow y = -\tfrac{2}{5}\).  
+  \(\boxed{(\tfrac{12}{5}, -\tfrac{2}{5})}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Multiplying Both Equations}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(\begin{cases} 2x + 3y = 12 \\ 3x + 4y = 17 \end{cases}\)  
+  Multiply first by \(3\): \(6x + 9y = 36\). Multiply second by \(2\): \(6x + 8y = 34\). Subtract: \(y = 2\).  
+  Then \(2x + 3(2) = 12 \Rightarrow 2x = 6 \Rightarrow x = 3\).  
+  \(\boxed{(3, 2)}\)
+
+  \item \(\begin{cases} 4x - 3y = 5 \\ 3x - 2y = 4 \end{cases}\)  
+  Multiply first by \(2\): \(8x - 6y = 10\). Multiply second by \(-3\): \(-9x + 6y = -12\). Add: \(-x = -2 \Rightarrow x = 2\).  
+  Then \(3x - 2y = 4 \Rightarrow 6 - 2y = 4 \Rightarrow y = 1\).  
+  \(\boxed{(2, 1)}\)
+
+  \item \(\begin{cases} 5x + 2y = 18 \\ 3x + 4y = 14 \end{cases}\)  
+  Multiply first by \(2\): \(10x + 4y = 36\). Subtract second: \(7x = 22 \Rightarrow x = \tfrac{22}{7}\).  
+  Then \(5x + 2y = 18 \Rightarrow 5(\tfrac{22}{7}) + 2y = 18 \Rightarrow \tfrac{110}{7} + 2y = 18\).  
+  So \(2y = \tfrac{16}{7} \Rightarrow y = \tfrac{8}{7}\).  
+  \(\boxed{(\tfrac{22}{7}, \tfrac{8}{7})}\)
+
+  \item \(\begin{cases} 2x - y = 7 \\ 3x + 2y = 13 \end{cases}\)  
+  Multiply first by \(2\): \(4x - 2y = 14\). Add to second: \(7x = 27 \Rightarrow x = \tfrac{27}{7}\).  
+  Then \(2x - y = 7 \Rightarrow 2(\tfrac{27}{7}) - y = 7 \Rightarrow \tfrac{54}{7} - y = 7\).  
+  So \(y = \tfrac{54}{7} - 7 = \tfrac{5}{7}\).  
+  \(\boxed{(\tfrac{27}{7}, \tfrac{5}{7})}\)
+
+  \item \(\begin{cases} 4x + 5y = 23 \\ 6x - 5y = 7 \end{cases}\)  
+  Add: \(10x = 30 \Rightarrow x = 3\). Then \(4(3) + 5y = 23 \Rightarrow 12 + 5y = 23 \Rightarrow y = \tfrac{11}{5}\).  
+  \(\boxed{(3, \tfrac{11}{5})}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Word Problems}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Let the numbers be \(a\) and \(b\).  
+  \(a + b = 20\), \(a - b = 6\). Add: \(2a = 26 \Rightarrow a = 13\). Then \(b = 7\).  
+  \(\boxed{13 \text{ and } 7}\)
+
+  \item Let length \(L\), width \(W\).  
+  Perimeter: \(2L + 2W = 50 \Rightarrow L + W = 25\). Also \(L = W + 5\).  
+  Substitute: \(W + 5 + W = 25 \Rightarrow 2W = 20 \Rightarrow W = 10\). Then \(L = 15\).  
+  \(\boxed{L = 15 \text{ cm},\ W = 10 \text{ cm}}\)
+
+  \item Let son \(s\), father \(f\).  
+  \(s + f = 60\), \(f = s + 24\). Substitute: \(s + (s + 24) = 60 \Rightarrow 2s = 36 \Rightarrow s = 18\). Then \(f = 42\).  
+  \(\boxed{18 \text{ and } 42}\)
+
+  \item Let movie \(M\), snack \(S\).  
+  \(M + S = 22\), \(2M + S = 35\). Subtract first from second: \(M = 13\). Then \(S = 9\).  
+  \(\boxed{M = \$13,\ S = \$9}\)
+
+  \item Let number of 5-dollar bills be \(x\), 10-dollar bills be \(y\).  
+  \(x + y = 16\), \(5x + 10y = 120\). Substitute \(x = 16 - y\):  
+  \(5(16 - y) + 10y = 120 \Rightarrow 80 - 5y + 10y = 120 \Rightarrow 5y = 40 \Rightarrow y = 8\).  
+  Then \(x = 8\).  
+  \(\boxed{8 \text{ five-dollar bills and } 8 \text{ ten-dollar bills}}\)
+\end{enumerate}
+
+
+\end{document}

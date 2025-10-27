@@ -1,0 +1,570 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 7: Exponential and General Functions} \\[6pt]
+    \Large \textbf{Topic 2: Comparing Linear and Exponential Growth}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+Linear and exponential functions both model change over time, but in very different ways:
+
+\[
+\text{Linear: } y = mx + b \qquad \text{Exponential: } y = a b^x
+\]
+
+A \textbf{linear function} increases (or decreases) by a constant \emph{amount} with each step in \(x\).  
+An \textbf{exponential function} increases (or decreases) by a constant \emph{factor} (percentage) with each step in \(x\).
+
+\[
+\begin{cases}
+\text{Linear: } \Delta y = \text{constant} \\
+\text{Exponential: } \dfrac{y_2}{y_1} = \text{constant ratio}
+\end{cases}
+\]
+
+Early on, a linear function might appear to grow faster, but eventually an exponential function surpasses it because it compounds multiplicatively.
+
+\subsection*{When to Use Each Model}
+\begin{itemize}
+  \item Use a \textbf{linear model} when a fixed amount is added or subtracted (e.g., salary increases by \$1000 each year).
+  \item Use an \textbf{exponential model} when change is proportional to the current value (e.g., population grows 5\% per year).
+\end{itemize}
+
+Graphically:
+\begin{itemize}
+  \item Linear graphs are straight lines.
+  \item Exponential graphs curve upward (growth) or downward (decay).
+\end{itemize}
+
+(Insert graph: one straight line showing constant slope, one exponential curve crossing it and rising faster.)
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Identify whether change is additive (linear) or multiplicative (exponential).
+  \item Write equations for both models given a situation or data.
+  \item Compare values over time to see when exponential overtakes linear.
+  \item Interpret meaning of slope (\(m\)) and growth factor (\(b\)).
+  \item Recognize patterns in tables and graphs that distinguish the two.
+\end{itemize}
+
+\section*{Example 1: Distinguishing Linear vs. Exponential}
+
+A quantity increases by 10 each year.
+
+\[
+y = 50 + 10x
+\]
+Constant difference → linear.
+
+Another quantity increases by 10\% each year.
+
+\[
+y = 50(1.10)^x
+\]
+Constant ratio → exponential.
+
+\textbf{Answer:} First is linear, second is exponential.
+
+\section*{Example 2: Comparing Growth Over Time}
+
+Compare \(L(x) = 100 + 20x\) and \(E(x) = 100(1.15)^x.\)
+
+Compute a few values:
+
+\[
+\begin{array}{c|ccccc}
+x & 0 & 2 & 4 & 6 & 8 \\ \hline
+L(x) & 100 & 140 & 180 & 220 & 260 \\
+E(x) & 100 & 132 & 174 & 229 & 301
+\end{array}
+\]
+
+At first, linear grows faster, but around \(x = 5\), exponential surpasses it.
+
+\textbf{Interpretation:} Exponential growth dominates over time.
+
+\section*{Example 3: Real-World Comparison}
+
+A worker earns \$30,000 and gets a \$2,000 raise yearly (linear):
+\[
+S_L(t) = 30{,}000 + 2000t
+\]
+
+A startup grows revenue by 10\% annually (exponential):
+\[
+S_E(t) = 30{,}000(1.10)^t
+\]
+
+After 5 years:
+\[
+S_L(5) = 40{,}000, \quad S_E(5) = 30{,}000(1.10)^5 = 48{,}315.
+\]
+The exponential model surpasses the linear one.
+
+\textbf{Answer:} Exponential wins in the long term.
+
+\section*{Example 4: Identifying Model Type from Data}
+
+\[
+\begin{array}{c|ccccc}
+x & 0 & 1 & 2 & 3 & 4 \\ \hline
+y & 10 & 20 & 30 & 40 & 50
+\end{array}
+\]
+Constant difference of +10 → linear.
+
+\[
+\begin{array}{c|ccccc}
+x & 0 & 1 & 2 & 3 & 4 \\ \hline
+y & 10 & 15 & 22.5 & 33.75 & 50.6
+\end{array}
+\]
+Constant ratio (multiply by 1.5) → exponential.
+
+\section*{Example 5: Crossover Point (When They Are Equal)}
+
+Solve \(L(x) = E(x)\) for \(100 + 20x = 100(1.15)^x.\)
+
+This cannot be solved algebraically without a calculator, but graphically they intersect near \(x \approx 5.2.\)
+
+Beyond that point, exponential dominates.
+
+(Insert graph showing line and curve intersecting near \(x = 5\).)
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Linear: constant difference; Exponential: constant ratio.
+  \item Linear growth is steady; exponential growth accelerates.
+  \item On a graph, exponential curves eventually overtake linear lines.
+  \item In data, check differences vs. ratios to identify the model.
+  \item On the SAT, expect comparison questions between linear and exponential models.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — UNIT 7, TOPIC 2: COMPARING LINEAR AND EXPONENTIAL GROWTH
+% ============================================================
+
+\section*{Practice Questions: Comparing Linear and Exponential Growth}
+
+\subsection*{Part A: Identifying the Type of Growth}
+\begin{enumerate}
+  \item Determine whether \(y = 50 + 4x\) is linear or exponential.
+  \item Determine whether \(y = 200(1.05)^x\) is linear or exponential.
+  \item Classify \(y = 300 - 25x\) and \(y = 300(0.9)^x\) as linear or exponential.
+  \item Explain why \(y = 100(1.1)^x\) is exponential, not linear.
+  \item Explain how you can tell from a table if a function is linear or exponential.
+\end{enumerate}
+
+\subsection*{Part B: Comparing Equations}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Compare \(L(x) = 100 + 15x\) and \(E(x) = 100(1.15)^x\).  
+  Which grows faster at first? Which grows faster later?
+  \item For \(L(x) = 50 + 10x\) and \(E(x) = 50(1.2)^x\), find \(L(4)\) and \(E(4)\) and compare.
+  \item Write one example of a linear model and one of an exponential model that both start at 200.
+  \item A savings account grows by \$200 per year. Another account grows by 6\% per year from \$1000.  
+  Write both models and describe which will be greater after 10 years.
+  \item A car’s value decreases linearly by \$1500 per year starting at \$20,000, while another model decreases by 10\% each year.  
+  Write both equations and describe which loses value faster over time.
+\end{enumerate}
+
+\subsection*{Part C: Evaluating and Comparing Values}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Find \(L(5)\) for \(L(x) = 300 + 25x\) and \(E(5)\) for \(E(x) = 300(1.07)^x.\)
+  \item For \(L(x) = 100 + 30x\) and \(E(x) = 100(1.25)^x,\) find when \(E(x)\) first exceeds \(L(x)\) (estimate).
+  \item Compute and compare:  
+  \(L(8) = 50 + 8(10)\) and \(E(8) = 50(1.15)^8.\)
+  \item Use \(L(x) = 500 + 50x\) and \(E(x) = 500(1.08)^x.\)  
+  Find both values at \(x = 0, 5, 10.\)
+  \item The quantity \(Q(t) = 100 + 10t\) and \(R(t) = 100(1.1)^t.\)  
+  At what \(t\) does \(R(t)\) become larger than \(Q(t)\)? (Estimate numerically.)
+\end{enumerate}
+
+\subsection*{Part D: Graph and Table Interpretation}
+(Insert graphs showing a line and an exponential curve intersecting around \(x=5\).)
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Which graph shows a constant rate of change: the line or the curve?
+  \item Which graph represents a constant percent change?
+  \item Where does the exponential curve overtake the linear line?
+  \item In the table below, determine whether data is linear or exponential.  
+
+  \[
+  \begin{array}{c|cccc}
+  x & 0 & 1 & 2 & 3 \\ \hline
+  y & 20 & 25 & 30 & 35
+  \end{array}
+  \]
+  \[
+  \begin{array}{c|cccc}
+  x & 0 & 1 & 2 & 3 \\ \hline
+  y & 10 & 15 & 22.5 & 33.75
+  \end{array}
+  \]
+  Identify which is linear and which is exponential.
+  \item Describe how the slopes or ratios appear different in graphs of linear vs exponential functions.
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+(Insert two graphs: one straight line showing linear salary growth, one curved line showing exponential revenue growth.)
+
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A salary increases by \$2500 each year, starting at \$40,000. Write the linear model.
+  \item A different salary starts at \$40,000 and increases by 5\% per year. Write the exponential model.
+  \item After 5 years, which salary is higher?
+  \item Approximately how many years will it take for the exponential salary to exceed the linear salary?
+  \item On the SAT, which clue in a word problem signals exponential growth rather than linear growth?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 7, TOPIC 2: COMPARING LINEAR AND EXPONENTIAL GROWTH
+% ============================================================
+
+\section*{Answer Key and Solutions: Comparing Linear and Exponential Growth}
+
+\subsection*{Part A Solutions: Identifying the Type of Growth}
+\begin{enumerate}
+  \item \(y = 50 + 4x\)
+
+  Of the form \(mx + b\). Change is +4 each 1 unit in \(x\).  
+  \(\boxed{\text{Linear}}\)
+
+  \item \(y = 200(1.05)^x\)
+
+  Of the form \(a b^x\). Change is by multiplying by 1.05 each step.  
+  \(\boxed{\text{Exponential}}\)
+
+  \item
+  \[
+  y = 300 - 25x \quad \rightarrow \quad \text{Linear (constant decrease of 25)}
+  \]
+  \[
+  y = 300(0.9)^x \quad \rightarrow \quad \text{Exponential (keeps 90\% each step)}
+  \]
+
+  \(\boxed{\text{First is linear, second is exponential}}\)
+
+  \item \(y = 100(1.1)^x\)
+
+  The output is repeatedly multiplied by 1.1, which is a constant percent increase of 10\%.  
+  Linear would add the same amount each step, not multiply.  \newline
+  \(\boxed{\text{Exponential because it grows by 10\% each step}}\)
+
+  \item In a table:
+  \begin{itemize}
+    \item Linear: \(y\) goes up by the same difference each step.
+    \item Exponential: the ratio \(\frac{y_{\text{next}}}{y_{\text{current}}}\) is the same.
+  \end{itemize}
+
+  \(\boxed{\text{Check differences for linear, ratios for exponential}}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Comparing Equations}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(L(x) = 100 + 15x,\; E(x) = 100(1.15)^x\)
+
+  At first (small \(x\)), \(L\) adds 15 per step, which is big compared to early exponential growth.  
+  Later, \(E\) compounds by 15\% each step and overtakes.
+
+  \(\boxed{\text{Linear is faster first, exponential is faster later}}\)
+
+  \item \(L(x) = 50 + 10x,\; E(x) = 50(1.2)^x\)
+
+  At \(x = 4\):
+  \[
+  L(4) = 50 + 10(4) = 90
+  \]
+  \[
+  E(4) = 50(1.2)^4 = 50(2.0736) \approx 103.68
+  \]
+
+  \(\boxed{E(4) \approx 103.7 \text{ is larger than } L(4)=90}\)
+
+  \item Linear example starting at 200:  
+  \[
+  L(x) = 200 + 5x
+  \]
+
+    
+  Exponential example starting at 200:  
+  \[
+  E(x) = 200(1.03)^x
+  \]
+
+
+  \(\boxed{L(x)=200+5x,\; E(x)=200(1.03)^x}\)
+
+  \item Savings account 1: grows by \$200/year from \$1000. Linear.
+  \[
+  A(t) = 1000 + 200t
+  \]
+
+  Savings account 2: grows 6\% per year from \$1000. Exponential.
+  \[
+  B(t) = 1000(1.06)^t
+  \]
+
+  After 10 years:
+  \[
+  A(10) = 1000 + 200(10) = 3000
+  \]
+  \[
+  B(10) = 1000(1.06)^{10} \approx 1000(1.7908) \approx 1790.8
+  \]
+
+  \(\boxed{\text{After 10 years, linear is larger}}\)
+
+  \item Car model 1: loses \$1500 per year, starting \$20{,}000. Linear.
+  \[
+  V_L(t) = 20{,}000 - 1500t
+  \]
+
+  Car model 2: loses 10\% per year. Keeps 90\%.
+  \[
+  V_E(t) = 20{,}000(0.9)^t
+  \]
+
+  Over time:
+  \begin{itemize}
+    \item Early: 10\% of 20{,}000 is 2000, which is more than 1500. So exponential decay drops faster at first.
+    \item Later: As value shrinks, 10\% of the remaining amount becomes smaller than 1500, so linear eventually loses value faster.
+  \end{itemize}
+
+  \(\boxed{\text{Exponential loses faster first, linear loses faster later}}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Evaluating and Comparing Values}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(L(x) = 300 + 25x,\; E(x) = 300(1.07)^x\)
+
+  At \(x = 5\):
+  \[
+  L(5) = 300 + 25(5) = 425
+  \]
+  \[
+  E(5) = 300(1.07)^5 \approx 300(1.4026) \approx 420.8
+  \]
+
+  \(\boxed{L(5)=425 \text{ is slightly greater than } E(5)\approx 420.8}\)
+
+  \item \(L(x) = 100 + 30x,\; E(x) = 100(1.25)^x\)
+
+  We check a few \(x\):
+
+  \[
+  x=2: L=160,\; E=100(1.25)^2=156.25
+  \]
+  \[
+  x=3: L=190,\; E=100(1.25)^3=195.31
+  \]
+
+  \(E\) first exceeds \(L\) between \(x=2\) and \(x=3\). At \(x=3,\; E > L.\)
+
+  \(\boxed{\text{Around } x=3}\)
+
+  \item
+  \[
+  L(8) = 50 + 8(10) = 130
+  \]
+  \[
+  E(8) = 50(1.15)^8
+  \]
+  \((1.15)^8 \approx 3.0590.\)
+  \[
+  E(8) \approx 50 \times 3.0590 \approx 152.95
+  \]
+
+  \(\boxed{L(8)=130,\; E(8)\approx 153;\; \text{exponential is larger}}\)
+
+  \item Use \(L(x)=500+50x,\; E(x)=500(1.08)^x\).
+
+  \(x=0:\)
+  \[
+  L(0)=500,\quad E(0)=500(1)^0=500.
+  \]
+
+  \(x=5:\)
+  \[
+  L(5)=500+50(5)=750
+  \]
+  \[
+  E(5)=500(1.08)^5 \approx 500(1.4693)\approx 734.65
+  \]
+
+  \(x=10:\)
+  \[
+  L(10)=500+50(10)=1000
+  \]
+  \[
+  E(10)=500(1.08)^{10} \approx 500(2.1589)\approx 1079.45
+  \]
+
+  Summary:
+  \[
+  x=0:\; \text{tie at 500}
+  \]
+  \[
+  x=5:\; L > E
+  \]
+  \[
+  x=10:\; E > L
+  \]
+
+  \(\boxed{\text{Linear wins early, exponential wins later}}\)
+
+  \item \(Q(t) = 100 + 10t,\; R(t) = 100(1.1)^t\)
+
+  Check values:
+
+  \(t=2:\)
+  \[
+  Q=120,\quad R=100(1.1)^2=121
+  \Rightarrow R>Q
+  \]
+
+  \(t=1:\)
+  \[
+  Q=110,\quad R=110
+  \Rightarrow \text{tie}
+  \]
+
+  So they are equal at \(t=1\), and exponential becomes larger just after that.
+
+  \(\boxed{\text{After } t=1,\; R>Q}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Graph and Table Interpretation}
+(Reference: line with constant slope, exponential curve crossing and then rising faster.)
+
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Constant rate of change means constant slope. That is the line.
+
+  \(\boxed{\text{The line has constant rate of change}}\)
+
+  \item Constant percent change means multiply by same factor repeatedly. That is the exponential curve.
+
+  \(\boxed{\text{The curve has constant percent change}}\)
+
+  \item The exponential curve overtakes the line at the intersection point. From the prompt, this is around \(x = 5\).
+
+  \(\boxed{\text{Near } x \approx 5}\)
+
+  \item First table:
+  \[
+  \begin{array}{c|cccc}
+  x & 0 & 1 & 2 & 3 \\ \hline
+  y & 20 & 25 & 30 & 35
+  \end{array}
+  \]
+  Differences are +5 each step → linear.
+
+  Second table:
+  \[
+  \begin{array}{c|cccc}
+  x & 0 & 1 & 2 & 3 \\ \hline
+  y & 10 & 15 & 22.5 & 33.75
+  \end{array}
+  \]
+  Ratios are \(\times 1.5\) each step → exponential.
+
+  \(\boxed{\text{First is linear, second is exponential}}\)
+
+  \item In a linear graph, slope is constant and the line is straight.  
+  In an exponential graph, the slope keeps increasing (for growth), so the curve gets steeper.
+
+  \(\boxed{\text{Linear: constant slope. Exponential: slope keeps changing}}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item Salary with constant \$2500 yearly raise, starting \$40{,}000.
+
+  This is linear:
+  \[
+  S_L(t) = 40{,}000 + 2500t.
+  \]
+
+  \(\boxed{S_L(t)=40{,}000+2500t}\)
+
+  \item Salary starting \$40{,}000, grows 5\% per year.
+
+  Growth factor 1.05:
+  \[
+  S_E(t) = 40{,}000(1.05)^t.
+  \]
+
+  \(\boxed{S_E(t)=40{,}000(1.05)^t}\)
+
+  \item After 5 years:
+
+  Linear:
+  \[
+  S_L(5)=40{,}000+2500(5)=52{,}500.
+  \]
+
+  Exponential:
+  \[
+  S_E(5)=40{,}000(1.05)^5 \approx 40{,}000(1.2763)\approx 51{,}052.
+  \]
+
+  \(\boxed{After 5 years, linear salary is higher}\)
+
+  \item When does exponential exceed linear?
+
+  We compare \(40{,}000 + 2500t\) and \(40{,}000(1.05)^t\).
+
+  Check:
+  \[
+  t=5:\; 52{,}500 \text{ vs } 51{,}052 \quad (\text{linear bigger})
+  \]
+  \[
+  t=10:\; S_L(10)=40{,}000+25{,}000=65{,}000
+  \]
+  \[
+  S_E(10)=40{,}000(1.05)^{10}\approx 40{,}000(1.6289)\approx 65{,}156
+  \]
+
+  Around \(t \approx 10\) years, exponential passes linear.
+
+  \(\boxed{\text{About 10 years}}\)
+
+  \item SAT clue for exponential:
+
+  Words like \(\%\) per year, doubles every 6 days, loses 12\% each cycle, or "multiplied by the same factor each period" indicate exponential.  
+  Words like "increases by 400 each month" indicate linear.
+
+  \(\boxed{\text{Percent growth/decay or repeated multiply = exponential}}\)
+\end{enumerate}
+
+
+
+\end{document}

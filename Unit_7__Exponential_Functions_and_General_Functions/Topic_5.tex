@@ -1,0 +1,521 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 7: Exponential and General Functions} \\[6pt]
+    \Large \textbf{Topic 5: Composition and Inverses of Functions}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+Functions can be \textbf{combined} to form new ones, or \textbf{reversed} to find inverses.  
+Composition means applying one function to the output of another:
+\[
+(f \circ g)(x) = f(g(x)).
+\]
+
+The order matters — generally \(f(g(x)) \ne g(f(x))\).
+
+An \textbf{inverse function}, written \(f^{-1}(x)\), reverses the action of \(f\).  
+It “undoes” \(f(x)\), so:
+\[
+f^{-1}(f(x)) = x \quad \text{and} \quad f(f^{-1}(x)) = x.
+\]
+
+To find an inverse algebraically:
+\begin{enumerate}
+  \item Replace \(f(x)\) with \(y\).
+  \item Swap \(x\) and \(y\).
+  \item Solve for \(y\).
+  \item Replace \(y\) with \(f^{-1}(x)\).
+\end{enumerate}
+
+A function has an inverse only if it is \textbf{one-to-one} (each input gives a unique output).  
+Graphically, a function and its inverse are reflections across the line \(y = x\).
+
+(Insert graph notes: show \(f(x)\) and \(f^{-1}(x)\) as mirror images across \(y = x\).)
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Evaluate compositions like \(f(g(x))\) and \(g(f(x))\).
+  \item Understand order in function composition.
+  \item Find inverses algebraically using variable swap and solve.
+  \item Recognize inverse pairs in tables or graphs.
+  \item Test if two functions are inverses using \(f(g(x)) = x\).
+\end{itemize}
+
+\section*{Example 1: Function Composition}
+
+If \(f(x) = 2x + 3\) and \(g(x) = x - 1,\) find:
+\[
+(f \circ g)(x) = f(g(x)) = f(x - 1) = 2(x - 1) + 3 = 2x + 1.
+\]
+
+\[
+(g \circ f)(x) = g(f(x)) = g(2x + 3) = (2x + 3) - 1 = 2x + 2.
+\]
+
+\(\boxed{f(g(x)) = 2x + 1,\; g(f(x)) = 2x + 2}\)
+
+\section*{Example 2: Composition with Quadratic Function}
+
+If \(f(x) = x^2\) and \(g(x) = 3x + 2,\)
+\[
+(f \circ g)(x) = f(3x + 2) = (3x + 2)^2 = 9x^2 + 12x + 4.
+\]
+\[
+(g \circ f)(x) = g(x^2) = 3x^2 + 2.
+\]
+\(\boxed{f(g(x)) = 9x^2 + 12x + 4,\; g(f(x)) = 3x^2 + 2}\)
+
+\section*{Example 3: Finding an Inverse}
+
+Find the inverse of \(f(x) = 3x - 5.\)
+
+Step 1: Replace \(f(x)\) with \(y\): \(y = 3x - 5.\)
+
+Step 2: Swap \(x\) and \(y\):
+\[
+x = 3y - 5.
+\]
+
+Step 3: Solve for \(y\):
+\[
+3y = x + 5 \Rightarrow y = \frac{x + 5}{3}.
+\]
+
+\(\boxed{f^{-1}(x) = \frac{x + 5}{3}}\)
+
+\section*{Example 4: Verifying Inverses}
+
+Given \(f(x) = 2x + 7\) and \(g(x) = \frac{x - 7}{2},\)
+check if they are inverses.
+
+Compute \(f(g(x))\):
+\[
+f(g(x)) = 2\left(\frac{x - 7}{2}\right) + 7 = x - 7 + 7 = x.
+\]
+and \(g(f(x))\):
+\[
+g(f(x)) = \frac{(2x + 7) - 7}{2} = \frac{2x}{2} = x.
+\]
+
+\(\boxed{f \text{ and } g \text{ are inverses}}\)
+
+\section*{Example 5: Nonlinear Inverse}
+
+Find the inverse of \(f(x) = \dfrac{x + 4}{3}.\)
+
+\[
+y = \frac{x + 4}{3} \quad \Rightarrow \quad x = \frac{y + 4}{3}.
+\]
+Multiply both sides by 3:
+\[
+3x = y + 4 \Rightarrow y = 3x - 4.
+\]
+
+\(\boxed{f^{-1}(x) = 3x - 4}\)
+
+\section*{Example 6: Graphical Idea (description only)}
+
+Graph \(f(x) = 2x + 1\) and its inverse \(f^{-1}(x) = \frac{x - 1}{2}\).  
+They intersect at the point where \(x = y\).  
+(Insert note: Graph shows both lines reflecting across \(y = x\).)
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Composition means applying one function to another.
+  \item Order matters: \(f(g(x)) \neq g(f(x))\) in general.
+  \item To find an inverse, swap \(x\) and \(y\) and solve for \(y\).
+  \item The graph of an inverse reflects across \(y = x\).
+  \item Verify inverses using composition: \(f(g(x)) = g(f(x)) = x.\)
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — UNIT 7, TOPIC 5: COMPOSITION AND INVERSES OF FUNCTIONS
+% ============================================================
+
+\section*{Practice Questions: Composition and Inverses of Functions}
+
+\subsection*{Part A: Evaluating Function Compositions}
+\begin{enumerate}
+  \item If \(f(x) = 2x + 3\) and \(g(x) = x - 1,\) find \(f(g(x))\).
+  \item If \(f(x) = x^2\) and \(g(x) = 4x,\) find \(f(g(x))\) and \(g(f(x))\).
+  \item If \(f(x) = 3x - 2\) and \(g(x) = x^2 + 1,\) find \(f(g(x))\).
+  \item If \(f(x) = x + 5\) and \(g(x) = \dfrac{x}{2},\) find \(g(f(x))\).
+  \item If \(f(x) = x^2 + 1\) and \(g(x) = 2x - 3,\) find \(f(g(x))\).
+\end{enumerate}
+
+\subsection*{Part B: Mixed Compositions (numeric and symbolic)}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Given \(f(x) = 3x + 2\) and \(g(x) = x^2,\) find \(f(g(2))\).
+  \item For the same functions, find \(g(f(2))\).
+  \item If \(f(x) = x - 4\) and \(g(x) = 5x,\) find \(f(g(x))\).
+  \item If \(f(x) = \sqrt{x}\) and \(g(x) = x + 3,\) find \(f(g(x))\).
+  \item If \(f(x) = x^2 - 2\) and \(g(x) = x + 1,\) find \(f(g(x))\).
+\end{enumerate}
+
+\subsection*{Part C: Finding Inverse Functions}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Find the inverse of \(f(x) = 2x + 5.\)
+  \item Find the inverse of \(f(x) = \dfrac{x - 4}{3}.\)
+  \item Find the inverse of \(f(x) = 5x - 7.\)
+  \item Find the inverse of \(f(x) = \dfrac{x + 6}{2}.\)
+  \item Find the inverse of \(f(x) = 3x + 1.\)
+\end{enumerate}
+
+\subsection*{Part D: Checking and Applying Inverses}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item \(f(x) = 4x - 3,\; g(x) = \dfrac{x + 3}{4}\). Verify that \(f\) and \(g\) are inverses.
+  \item \(f(x) = 2x + 1,\; g(x) = \dfrac{x - 1}{2}\). Compute \(f(g(x))\) to confirm.
+  \item \(f(x) = 5x - 10.\) Find \(f^{-1}(x)\), then check \(f(f^{-1}(x)) = x.\)
+  \item If \(f(x) = 3x + 2,\) what is \(f^{-1}(10)\)?
+  \item If \(f(x) = \dfrac{x - 4}{2},\) find \(f^{-1}(8)\).
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+(Insert sketch later: line \(y = f(x)\) and its inverse reflected across \(y = x\).)
+
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A function \(f(t) = 4t + 7\) gives the cost in dollars for \(t\) tickets.  
+  What does \(f^{-1}(50)\) represent in context?
+  \item The temperature in °C relates to °F by \(F(C) = \dfrac{9}{5}C + 32.\)  
+  Find the inverse function \(C(F)\).
+  \item The function \(f(x) = 2x - 5\) is graphed. What line is its inverse symmetric about?
+  \item A function \(g(x)\) doubles a number and then subtracts 1.  
+  Write \(g(x)\) and find its inverse.
+  \item On a graph, \(f(x)\) and \(f^{-1}(x)\) intersect at what kind of point?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 7, TOPIC 5: COMPOSITION AND INVERSES OF FUNCTIONS
+% ============================================================
+
+\section*{Answer Key and Solutions: Composition and Inverses of Functions}
+
+\subsection*{Part A Solutions: Evaluating Function Compositions}
+\begin{enumerate}
+  \item \(f(x) = 2x + 3,\; g(x) = x - 1\)
+
+  \[
+  f(g(x)) = f(x - 1) = 2(x - 1) + 3 = 2x - 2 + 3 = 2x + 1.
+  \]
+
+  \(\boxed{f(g(x)) = 2x + 1}\)
+
+  \item \(f(x) = x^2,\; g(x) = 4x\)
+
+  \[
+  f(g(x)) = f(4x) = (4x)^2 = 16x^2.
+  \]
+  \[
+  g(f(x)) = g(x^2) = 4(x^2) = 4x^2.
+  \]
+
+  \(\boxed{f(g(x)) = 16x^2,\; g(f(x)) = 4x^2}\)
+
+  \item \(f(x) = 3x - 2,\; g(x) = x^2 + 1\)
+
+  \[
+  f(g(x)) = f(x^2 + 1) = 3(x^2 + 1) - 2 = 3x^2 + 3 - 2 = 3x^2 + 1.
+  \]
+
+  \(\boxed{f(g(x)) = 3x^2 + 1}\)
+
+  \item \(f(x) = x + 5,\; g(x) = \dfrac{x}{2}\)
+
+  \[
+  g(f(x)) = g(x + 5) = \dfrac{x + 5}{2}.
+  \]
+
+  \(\boxed{g(f(x)) = \dfrac{x + 5}{2}}\)
+
+  \item \(f(x) = x^2 + 1,\; g(x) = 2x - 3\)
+
+  \[
+  f(g(x)) = f(2x - 3) = (2x - 3)^2 + 1 = 4x^2 - 12x + 9 + 1 = 4x^2 - 12x + 10.
+  \]
+
+  \(\boxed{f(g(x)) = 4x^2 - 12x + 10}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Mixed Compositions (numeric and symbolic)}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(f(x) = 3x + 2,\; g(x) = x^2\)
+
+  First find \(g(2)\):
+  \[
+  g(2) = 2^2 = 4.
+  \]
+
+  Then:
+  \[
+  f(g(2)) = f(4) = 3(4) + 2 = 12 + 2 = 14.
+  \]
+
+  \(\boxed{f(g(2)) = 14}\)
+
+  \item Same functions. Find \(g(f(2))\).
+
+  First:
+  \[
+  f(2) = 3(2) + 2 = 8.
+  \]
+
+  Then:
+  \[
+  g(f(2)) = g(8) = 8^2 = 64.
+  \]
+
+  \(\boxed{g(f(2)) = 64}\)
+
+  \item \(f(x) = x - 4,\; g(x) = 5x\)
+
+  \[
+  f(g(x)) = f(5x) = 5x - 4.
+  \]
+
+  \(\boxed{f(g(x)) = 5x - 4}\)
+
+  \item \(f(x) = \sqrt{x},\; g(x) = x + 3\)
+
+  \[
+  f(g(x)) = f(x + 3) = \sqrt{x + 3}.
+  \]
+
+  \(\boxed{f(g(x)) = \sqrt{x + 3}}\)
+
+  \item \(f(x) = x^2 - 2,\; g(x) = x + 1\)
+
+  \[
+  f(g(x)) = f(x + 1) = (x + 1)^2 - 2 = x^2 + 2x + 1 - 2 = x^2 + 2x - 1.
+  \]
+
+  \(\boxed{f(g(x)) = x^2 + 2x - 1}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Finding Inverse Functions}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(f(x) = 2x + 5\)
+
+  Let \(y = 2x + 5.\) Swap \(x\) and \(y\):
+  \[
+  x = 2y + 5 \Rightarrow 2y = x - 5 \Rightarrow y = \frac{x - 5}{2}.
+  \]
+
+  \(\boxed{f^{-1}(x) = \dfrac{x - 5}{2}}\)
+
+  \item \(f(x) = \dfrac{x - 4}{3}\)
+
+  Let \(y = \dfrac{x - 4}{3}.\) Swap:
+  \[
+  x = \dfrac{y - 4}{3}.
+  \]
+  Multiply by 3:
+  \[
+  3x = y - 4 \Rightarrow y = 3x + 4.
+  \]
+
+  \(\boxed{f^{-1}(x) = 3x + 4}\)
+
+  Note: a cleaner start is \(y = (x - 4)/3,\) then switch \(x\) and \(y\): \(x = (y - 4)/3.\)
+
+  \item \(f(x) = 5x - 7\)
+
+  Let \(y = 5x - 7.\) Swap:
+  \[
+  x = 5y - 7 \Rightarrow 5y = x + 7 \Rightarrow y = \frac{x + 7}{5}.
+  \]
+
+  \(\boxed{f^{-1}(x) = \dfrac{x + 7}{5}}\)
+
+  \item \(f(x) = \dfrac{x + 6}{2}\)
+
+  Let \(y = \dfrac{x + 6}{2}.\) Swap:
+  \[
+  x = \dfrac{y + 6}{2}.
+  \]
+  Multiply by 2:
+  \[
+  2x = y + 6 \Rightarrow y = 2x - 6.
+  \]
+
+  \(\boxed{f^{-1}(x) = 2x - 6}\)
+
+  \item \(f(x) = 3x + 1\)
+
+  Let \(y = 3x + 1.\) Swap:
+  \[
+  x = 3y + 1 \Rightarrow 3y = x - 1 \Rightarrow y = \frac{x - 1}{3}.
+  \]
+
+  \(\boxed{f^{-1}(x) = \dfrac{x - 1}{3}}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Checking and Applying Inverses}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item \(f(x) = 4x - 3,\; g(x) = \dfrac{x + 3}{4}\)
+
+  Check \(f(g(x))\):
+  \[
+  f(g(x)) = 4\left(\frac{x + 3}{4}\right) - 3 = x + 3 - 3 = x.
+  \]
+
+  Check \(g(f(x))\):
+  \[
+  g(f(x)) = \frac{(4x - 3) + 3}{4} = \frac{4x}{4} = x.
+  \]
+
+  Since both compositions give \(x\), they are inverses.
+
+  \(\boxed{f \text{ and } g \text{ are inverses}}\)
+
+  \item \(f(x) = 2x + 1,\; g(x) = \dfrac{x - 1}{2}\)
+
+  Compute \(f(g(x))\):
+  \[
+  f\bigg(\frac{x - 1}{2}\bigg) = 2\left(\frac{x - 1}{2}\right) + 1 = (x - 1) + 1 = x.
+  \]
+
+  \(\boxed{f(g(x)) = x \Rightarrow \text{yes, they are inverses}}\)
+
+  \item \(f(x) = 5x - 10\)
+
+  First, find inverse.
+
+  Let \(y = 5x - 10.\) Swap:
+  \[
+  x = 5y - 10 \Rightarrow 5y = x + 10 \Rightarrow y = \frac{x + 10}{5}.
+  \]
+
+  So
+  \[
+  f^{-1}(x) = \frac{x + 10}{5}.
+  \]
+
+  Now check:
+  \[
+  f(f^{-1}(x)) = 5\left(\frac{x + 10}{5}\right) - 10 = (x + 10) - 10 = x.
+  \]
+
+  \(\boxed{f^{-1}(x) = \dfrac{x + 10}{5} \text{ and } f(f^{-1}(x)) = x}\)
+
+  \item \(f(x) = 3x + 2.\) Find \(f^{-1}(10)\).
+
+  First find inverse:
+  \[
+  y = 3x + 2 \Rightarrow x = 3y + 2 \Rightarrow 3y = x - 2 \Rightarrow y = \frac{x - 2}{3}.
+  \]
+  \[
+  f^{-1}(x) = \frac{x - 2}{3}.
+  \]
+
+  Then:
+  \[
+  f^{-1}(10) = \frac{10 - 2}{3} = \frac{8}{3}.
+  \]
+
+  \(\boxed{f^{-1}(10) = \dfrac{8}{3}}\)
+
+  \item \(f(x) = \dfrac{x - 4}{2}\)
+
+  Solve for the inverse:
+  \[
+  y = \frac{x - 4}{2} \Rightarrow x = \frac{y - 4}{2}.
+  \]
+  Multiply:
+  \[
+  2x = y - 4 \Rightarrow y = 2x + 4.
+  \]
+
+  \[
+  f^{-1}(x) = 2x + 4.
+  \]
+
+  Now evaluate:
+  \[
+  f^{-1}(8) = 2(8) + 4 = 16 + 4 = 20.
+  \]
+
+  \(\boxed{f^{-1}(8) = 20}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item \(f(t) = 4t + 7\)
+
+  \(f(t)\) is cost in dollars for \(t\) tickets.  
+  \(f^{-1}(50)\) asks: for a total cost of \$50, how many tickets were bought.
+
+  \(\boxed{\text{Number of tickets that cost \$50 total}}\)
+
+  \item \(F(C) = \dfrac{9}{5}C + 32\)
+
+  To find \(C(F)\), solve for \(C\) in terms of \(F\):
+  \[
+  F = \frac{9}{5}C + 32 \Rightarrow F - 32 = \frac{9}{5}C
+  \Rightarrow C = \frac{5}{9}(F - 32).
+  \]
+
+  \(\boxed{C(F) = \dfrac{5}{9}(F - 32)}\)
+
+  \item The line is always the same for a function and its inverse: \(y = x.\)
+
+  \(\boxed{\text{They are symmetric across } y = x}\)
+
+  \item "Doubles a number then subtracts 1"
+
+  That gives:
+  \[
+  g(x) = 2x - 1.
+  \]
+
+  Find inverse:
+
+  Let \(y = 2x - 1.\) Swap:
+  \[
+  x = 2y - 1 \Rightarrow 2y = x + 1 \Rightarrow y = \frac{x + 1}{2}.
+  \]
+
+  \(\boxed{g(x) = 2x - 1,\; g^{-1}(x) = \dfrac{x + 1}{2}}\)
+
+  \item A function and its inverse intersect where \(f(x) = x.\)
+
+  That means the input equals the output.  
+  On the graph, these intersection points are on the line \(y = x.\)
+
+  \(\boxed{\text{They intersect on the line } y = x \text{ where } f(x)=x}\)
+\end{enumerate}
+
+
+
+\end{document}

@@ -1,0 +1,274 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 2: Systems of Linear Equations and Inequalities} \\[6pt]
+    \Large \textbf{Topic 5: Modeling Real World Problems with Systems}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+Many word problems translate to two linear equations in two variables. Typical contexts include:
+\begin{itemize}
+  \item Cost and revenue with a fixed fee plus a per unit rate.
+  \item Mixtures that combine amounts and concentrations.
+  \item Motion with rate, time, and distance.
+\end{itemize}
+
+Modeling steps:
+\begin{enumerate}
+  \item Define variables with units.
+  \item Write equations from relationships in the text.
+  \item Solve the system by substitution or elimination.
+  \item State the answer with units and interpret the coordinates.
+  \item Check that values are realistic for the context.
+\end{enumerate}
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Translate fixed fee and per unit into \(C = F + r\cdot q\).
+  \item For mixtures, write one equation for total amount and one for total of the substance.
+  \item For motion, use \(d = rt\) and align times or distances across objects.
+  \item Decide substitution or elimination based on the simplest path.
+\end{itemize}
+
+\section*{Example 1: Cost and Revenue Break Even}
+
+A gym offers Plan A with a \$40 sign up fee plus \$15 per class, and Plan B with a \$10 sign up fee plus \$20 per class. For how many classes do they cost the same and what is that common cost?
+
+\textbf{Variables} \(c\) classes, \(C\) dollars.  
+Plan A: \(C = 40 + 15c\). Plan B: \(C = 10 + 20c\).  
+Set equal: \(40 + 15c = 10 + 20c \Rightarrow 30 = 5c \Rightarrow c = 6\).  
+Cost: \(C = 40 + 15(6) = 130\).  
+\textbf{Answer} \((c, C) = (6, 130)\). Same cost after 6 classes.
+
+\section*{Example 2: Ticket Sales}
+
+At a fundraiser, student tickets cost \$6 and adult tickets cost \$10. In total 120 tickets were sold for \$960. How many of each were sold?
+
+\textbf{Variables} \(s\) students, \(a\) adults.  
+Amount: \(s + a = 120\). Money: \(6s + 10a = 960\).  
+Eliminate \(s\): multiply the first by 6 and subtract.  
+\(6s + 6a = 720\). Subtract from money: \((6s + 10a) - (6s + 6a) = 960 - 720\).  
+\(4a = 240 \Rightarrow a = 60\). Then \(s = 60\).  
+\textbf{Answer} 60 students and 60 adults.
+
+\section*{Example 3: Mixture by Concentration}
+
+How many liters of a 30 percent acid solution must be mixed with a 10 percent acid solution to get 20 liters of a 25 percent solution?
+
+\textbf{Variables} \(x\) liters of 30 percent, \(y\) liters of 10 percent.  
+Total volume: \(x + y = 20\).  
+Total acid: \(0.30x + 0.10y = 0.25(20) = 5\).  
+Substitute \(y = 20 - x\): \(0.30x + 0.10(20 - x) = 5\).  
+\(0.30x + 2 - 0.10x = 5 \Rightarrow 0.20x = 3 \Rightarrow x = 15\).  
+Then \(y = 5\).  
+\textbf{Answer} 15 L of 30 percent with 5 L of 10 percent.
+
+\section*{Example 4: Motion Toward Each Other}
+
+Two cyclists start 45 miles apart on a straight road and ride toward each other. One rides at 12 mph and the other at 15 mph. How long until they meet and how far did each travel?
+
+\textbf{Variables} \(t\) hours until meeting.  
+Distances: \(12t\) and \(15t\). Together they cover 45 miles.  
+\(12t + 15t = 45 \Rightarrow 27t = 45 \Rightarrow t = \tfrac{45}{27} = \tfrac{5}{3}\) hours.  
+Distances: \(12 \cdot \tfrac{5}{3} = 20\) miles and \(15 \cdot \tfrac{5}{3} = 25\) miles.  
+\textbf{Answer} Meet after \(1\tfrac{2}{3}\) hours. Distances 20 miles and 25 miles.
+
+\section*{Example 5: Two trains with different departure times}
+
+Train A leaves a station at 8:00 a.m. at 50 mph. Train B leaves the same station on the same track at 9:00 a.m. at 70 mph in the same direction. At what clock time does Train B catch Train A?
+
+\textbf{Variables} Let \(t\) be hours after 9:00 a.m.  
+Distances from station at time \(t\) after 9:00 a.m.:  
+Train A time is \(t + 1\) hours, distance \(50(t + 1)\).  
+Train B time is \(t\) hours, distance \(70t\).  
+Catch up when \(70t = 50(t + 1)\Rightarrow 70t = 50t + 50 \Rightarrow 20t = 50 \Rightarrow t = 2.5\).  
+Clock time \(= 9{:}00 + 2.5\text{ h} = 11{:}30\) a.m.  
+\textbf{Answer} 11:30 a.m.
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Define variables first and attach units.
+  \item Align equations to the structure of the context. For mixtures use amount and substance equations. For motion use distance equals rate times time.
+  \item Solve, interpret, and check that answers match the language of the question.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — TOPIC 5: MODELING REAL WORLD PROBLEMS WITH SYSTEMS
+% ============================================================
+
+\section*{Practice Questions: Modeling Real World Problems with Systems}
+
+\subsection*{Part A: Cost and Revenue Models}
+\begin{enumerate}
+  \item A streaming plan costs \$5 per month plus \$2 per movie. Another plan costs \$9 per month plus \$1 per movie. For how many movies per month do the two plans cost the same, and what is the cost at that point?
+  \item A club charges a \$20 entry fee plus \$4 per visit, while another gym charges a \$10 entry fee plus \$5 per visit. Find the break-even number of visits.
+  \item A ride-sharing app charges \$3 plus \$1.25 per mile. Another service charges \$6 plus \$1.00 per mile. Find the number of miles at which the cost is the same.
+  \item A phone plan costs \$50 per month plus \$0.10 per text message. Another plan costs \$25 per month plus \$0.25 per text message. Find the break-even number of texts and the total cost.
+  \item A company has revenue \(R = 15x\) and cost \(C = 5x + 200\). Find the break-even number of units and the revenue at that point.
+\end{enumerate}
+
+\subsection*{Part B: Ticket and Sales Problems}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Concert tickets cost \$25 for adults and \$15 for students. 300 tickets were sold for \$6,000. How many of each type were sold?
+  \item A movie theater sold 180 tickets for a total of \$1,260. Adult tickets cost \$8 and child tickets cost \$6. Find the number of adult and child tickets sold.
+  \item A zoo charges \$12 for adults and \$8 for children. On one day, 250 people entered and the total collected was \$2,460. Find how many adults and children attended.
+  \item A school sold 500 tickets to a fundraiser. Student tickets cost \$4 and teacher tickets cost \$6, raising \$2,400 total. Find the number of each sold.
+  \item A concert sold 800 tickets for \$9,200 total. Regular tickets were \$10 and VIP tickets were \$20. How many of each were sold?
+\end{enumerate}
+
+\subsection*{Part C: Mixture Problems}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item How many liters of a 40 percent sugar solution must be mixed with a 20 percent sugar solution to make 30 liters of a 30 percent solution?
+  \item A jeweler combines gold that is 60 percent pure with gold that is 90 percent pure to create 100 grams of 75 percent pure gold. How many grams of each type does the jeweler use?
+  \item A chemist mixes a 10 percent acid solution with a 50 percent acid solution to get 40 liters of a 25 percent solution. Find how many liters of each solution are needed.
+  \item A 20 percent salt solution is mixed with a 50 percent solution to obtain 100 grams of a 30 percent solution. How many grams of each solution should be used?
+  \item A nutritionist wants to mix peanuts costing \$3 per pound with almonds costing \$7 per pound to make 20 pounds of a mixture costing \$5 per pound. How many pounds of each are used?
+\end{enumerate}
+
+\subsection*{Part D: Motion Problems}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Two cars start 300 miles apart and drive toward each other. One travels at 60 mph and the other at 50 mph. How long until they meet, and how far does each travel?
+  \item Two cyclists leave the same point. One rides east at 12 mph and the other south at 16 mph. How long until they are 100 miles apart? (Hint: use Pythagoras.)
+  \item A plane travels 400 miles with a tailwind and 400 miles against it. The plane’s airspeed is 200 mph and the wind speed is \(w\). The total time is 4.2 hours. Find \(w\).
+  \item A motorboat travels 24 miles downstream in 2 hours and the same distance upstream in 3 hours. Find the speed of the boat in still water and the speed of the current.
+  \item Two trains leave different cities 250 miles apart and travel toward each other. The faster train’s speed is 10 mph greater than the slower one. They meet in 2.5 hours. Find both speeds.
+\end{enumerate}
+
+\subsection*{Part E: Mixed Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A school carnival made \$540 from 150 tickets. Child tickets were \$3 and adult tickets were \$5. How many of each were sold?
+  \item The sum of two numbers is 24. One number is twice the other. Find both numbers using a system of equations.
+  \item The total perimeter of two rectangles is 80. One rectangle has length twice its width; the other has equal sides (a square). Their perimeters are equal. Find the dimensions of both.
+  \item A company rents trucks and vans. Each truck costs \$90 per day, each van \$60 per day. If 8 vehicles are rented for \$600, how many are trucks and how many are vans?
+  \item A coffee shop blends coffee beans costing \$8 per pound with beans costing \$12 per pound to make 40 pounds of a blend worth \$10 per pound. How many pounds of each are needed?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — TOPIC 5: MODELING REAL WORLD PROBLEMS WITH SYSTEMS
+% ============================================================
+
+\section*{Answer Key and Solutions: Modeling Real World Problems with Systems}
+
+\subsection*{Part A Solutions: Cost and Revenue Models}
+\begin{enumerate}
+  \item Plan 1: \(C=5+2m\). Plan 2: \(C=9+m\).  
+  Set equal: \(5+2m=9+m \Rightarrow m=4\). Cost \(=5+2(4)=13\). \(\boxed{4\text{ movies},\ \$13}\)
+
+  \item \(20+4v=10+5v \Rightarrow v=10\). \(\boxed{10\text{ visits}}\)
+
+  \item \(3+1.25x=6+1.00x \Rightarrow 0.25x=3 \Rightarrow x=12\). \(\boxed{12\text{ miles}}\)
+
+  \item \(50+0.10t=25+0.25t \Rightarrow 25=0.15t \Rightarrow t=\frac{500}{3}\approx166.7\).  
+  Cost \(=50+0.10\cdot\frac{500}{3}=\frac{200}{3}\approx66.7\). \(\boxed{t=\frac{500}{3},\ C=\frac{200}{3}}\)  
+  Note: non-integer texts.
+
+  \item Break even \(15x=5x+200 \Rightarrow 10x=200 \Rightarrow x=20\). Revenue \(=15\cdot20=300\). \(\boxed{x=20,\ R=300}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Ticket and Sales}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(\begin{cases} a+s=300 \\ 25a+15s=6000 \end{cases}\).  
+  \(15a+15s=4500\). Subtract: \(10a=1500 \Rightarrow a=150,\ s=150\). \(\boxed{150,150}\)
+
+  \item \(\begin{cases} a+c=180 \\ 8a+6c=1260 \end{cases}\).  
+  \(6a+6c=1080\). Subtract: \(2a=180 \Rightarrow a=90,\ c=90\). \(\boxed{90,90}\)
+
+  \item \(\begin{cases} a+c=250 \\ 12a+8c=2460 \end{cases}\).  
+  \(8a+8c=2000\). Subtract: \(4a=460 \Rightarrow a=115,\ c=135\). \(\boxed{115,135}\)
+
+  \item \(\begin{cases} s+t=500 \\ 4s+6t=2400 \end{cases}\).  
+  \(4s+4t=2000\). Subtract: \(2t=400 \Rightarrow t=200,\ s=300\). \(\boxed{300,200}\)
+
+  \item \(\begin{cases} r+v=800 \\ 10r+20v=9200 \end{cases}\Rightarrow r+2v=920\).  
+  Subtract: \(v=120,\ r=680\). \(\boxed{680,120}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Mixtures}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(\begin{cases} x+y=30 \\ 0.40x+0.20y=9 \end{cases}\).  
+  Substitute \(y=30-x\): \(0.40x+0.20(30-x)=9 \Rightarrow 0.20x=3 \Rightarrow x=15,\ y=15\). \(\boxed{15\text{ L},15\text{ L}}\)
+
+  \item \(\begin{cases} x+y=100 \\ 0.60x+0.90y=75 \end{cases}\).  
+  \(y=100-x\). Then \(0.60x+0.90(100-x)=75 \Rightarrow -0.30x=-15 \Rightarrow x=50,\ y=50\). \(\boxed{50\text{ g},50\text{ g}}\)
+
+  \item \(\begin{cases} x+y=40 \\ 0.10x+0.50y=10 \end{cases}\).  
+  \(y=40-x\). Then \(0.10x+0.50(40-x)=10 \Rightarrow -0.40x=-10 \Rightarrow x=25,\ y=15\). \(\boxed{25\text{ L},15\text{ L}}\)
+
+  \item \(\begin{cases} x+y=100 \\ 0.20x+0.50y=30 \end{cases}\).  
+  \(y=100-x\). Then \(0.20x+0.50(100-x)=30 \Rightarrow -0.30x=-20 \Rightarrow x=\frac{200}{3},\ y=\frac{100}{3}\).  
+  \(\boxed{\tfrac{200}{3}\text{ g},\ \tfrac{100}{3}\text{ g}}\)
+
+  \item \(\begin{cases} p+a=20 \\ 3p+7a=100 \end{cases}\).  
+  \(p=20-a\). Then \(3(20-a)+7a=100 \Rightarrow 4a=40 \Rightarrow a=10,\ p=10\). \(\boxed{10\text{ lb},10\text{ lb}}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Motion}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Relative speed \(=60+50=110\). Time \(t=\frac{300}{110}=\frac{30}{11}\) h.  
+  Distances: \(60t=\frac{1800}{11}\), \(50t=\frac{1500}{11}\). \(\boxed{t=\tfrac{30}{11}\text{ h}}\)
+
+  \item Distance apart \(= \sqrt{(12t)^2+(16t)^2}=20t\).  
+  \(20t=100 \Rightarrow t=5\) h. \(\boxed{5\text{ h}}\)
+
+  \item \( \frac{400}{200+w}+\frac{400}{200-w}=4.2\).  
+  Multiply out: \(160000=4.2(40000-w^2)\). So \(4.2w^2=8000 \Rightarrow w^2=\frac{8000}{4.2}\).  
+  \(w\approx 43.6\) mph. \(\boxed{w\approx43.6}\)
+
+  \item Downstream speed \(b+c= \frac{24}{2}=12\). Upstream speed \(b-c= \frac{24}{3}=8\).  
+  Solve: \(2b=20 \Rightarrow b=10\). Then \(c=2\). \(\boxed{b=10,\ c=2}\)
+
+  \item Let slower speed \(s\), faster \(s+10\).  
+  \(2.5s+2.5(s+10)=250 \Rightarrow 2s+10=100 \Rightarrow s=45,\ s+10=55\). \(\boxed{45,\ 55}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: Mixed Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item \(\begin{cases} c+a=150 \\ 3c+5a=540 \end{cases}\).  
+  \(3c+3a=450\). Subtract: \(2a=90 \Rightarrow a=45,\ c=105\). \(\boxed{105,45}\)
+
+  \item \(\begin{cases} x+y=24 \\ x=2y \end{cases}\Rightarrow 3y=24 \Rightarrow y=8,\ x=16\). \(\boxed{16,8}\)
+
+  \item Let rectangle width \(w\), length \(2w\). Square side \(s\).  
+  Perimeters equal: \(6w=4s \Rightarrow s=\tfrac{3}{2}w\). Sum is 80: \(6w+4s=80 \Rightarrow 6w+6w=80 \Rightarrow w=\tfrac{20}{3}\).  
+  Then \(s=10\), length \(=\tfrac{40}{3}\). \(\boxed{w=\tfrac{20}{3},\ \ell=\tfrac{40}{3},\ s=10}\)
+
+  \item \(\begin{cases} t+v=8 \\ 90t+60v=600 \end{cases}\).  
+  \(60t+60v=480\). Subtract: \(30t=120 \Rightarrow t=4,\ v=4\). \(\boxed{4,4}\)
+
+  \item \(\begin{cases} p+a=40 \\ 8p+12a=400 \end{cases}\).  
+  \(p=40-a\). Then \(8(40-a)+12a=400 \Rightarrow 4a=80 \Rightarrow a=20,\ p=20\). \(\boxed{20,20}\)
+\end{enumerate}
+
+
+\end{document}

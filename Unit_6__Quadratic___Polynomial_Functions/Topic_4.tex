@@ -1,0 +1,516 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 6: Quadratic and Polynomial Functions} \\[6pt]
+    \Large \textbf{Topic 4: Graphing Parabolas (Vertex and Intercepts)}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+A \textbf{parabola} is the graph of a quadratic function:
+\[
+y = ax^2 + bx + c.
+\]
+It is a U-shaped curve that opens upward when \(a > 0\) and downward when \(a < 0.\)
+
+Key features of a parabola include its:
+\begin{itemize}
+  \item \textbf{Vertex:} the highest or lowest point.
+  \item \textbf{Axis of symmetry:} the vertical line that passes through the vertex.
+  \item \textbf{Y-intercept:} where the graph crosses the y-axis.
+  \item \textbf{X-intercepts (zeros):} where the graph crosses the x-axis, found by solving \(ax^2 + bx + c = 0.\)
+\end{itemize}
+
+The vertex can be found from the formula:
+\[
+x = -\frac{b}{2a}, \quad y = f\!\left(-\frac{b}{2a}\right).
+\]
+
+In vertex form, \(y = a(x - h)^2 + k,\) the vertex is \((h, k)\).  
+The axis of symmetry is \(x = h.\)
+
+\subsection*{Why It Works}
+Completing the square converts \(y = ax^2 + bx + c\) into vertex form, revealing how the graph shifts horizontally and vertically from the parent function \(y = x^2.\)
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Identify vertex, axis of symmetry, and intercepts from any form.
+  \item Convert between standard and vertex forms.
+  \item Determine whether the parabola opens up or down.
+  \item Sketch parabolas accurately by plotting key points.
+  \item Interpret graphs in real-world contexts (maximums/minimums).
+\end{itemize}
+
+\section*{Example 1: Finding Vertex and Intercepts}
+
+Graph \(y = x^2 - 4x + 3.\)
+
+\textbf{Step 1:} Find the vertex.  
+\[
+x = -\frac{b}{2a} = \frac{4}{2} = 2, \quad y = (2)^2 - 4(2) + 3 = 4 - 8 + 3 = -1.
+\]
+Vertex: \((2, -1)\).
+
+\textbf{Step 2:} Find the intercepts.  
+Y-intercept: when \(x = 0,\; y = 3.\)  
+X-intercepts: solve \(x^2 - 4x + 3 = 0 \Rightarrow (x - 3)(x - 1) = 0 \Rightarrow x = 1, 3.\)
+
+\textbf{Step 3:} Direction: \(a = 1 > 0\), so the parabola opens upward.
+
+\textbf{Graph:} (Insert graph showing vertex at (2, –1), x-intercepts at 1 and 3, y-intercept at 3, symmetric about \(x = 2\).)
+
+\section*{Example 2: Vertex Form and Transformations}
+
+Graph \(y = 2(x + 1)^2 - 3.\)
+
+\textbf{Vertex:} \((-1, -3)\).  
+\textbf{Axis of symmetry:} \(x = -1.\)  
+\textbf{Opening:} Upward (\(a = 2 > 0\)).  
+\textbf{Stretch:} Narrower than \(y = x^2.\)
+
+\textbf{Graph:} (Insert graph with vertex at (–1, –3), axis of symmetry \(x = -1\), opens upward, narrower.)
+
+\section*{Example 3: Downward Opening Parabola}
+
+Graph \(y = -x^2 + 2x + 3.\)
+
+\textbf{Step 1:} Vertex: \(x = -\frac{b}{2a} = -\frac{2}{-2} = 1.\)  
+\(y = -(1)^2 + 2(1) + 3 = -1 + 2 + 3 = 4.\)  
+Vertex: \((1, 4)\).
+
+\textbf{Step 2:} Intercepts:  
+Y-intercept: when \(x = 0,\; y = 3.\)  
+X-intercepts: solve \(-x^2 + 2x + 3 = 0\).  
+Multiply by –1: \(x^2 - 2x - 3 = 0 \Rightarrow (x - 3)(x + 1) = 0.\)  
+\(\boxed{x = 3, -1}\).
+
+\textbf{Graph:} (Insert graph showing vertex at (1, 4), x-intercepts at –1 and 3, y-intercept at 3, opens downward.)
+
+\section*{Example 4: Finding the Equation from a Graph}
+
+A parabola has vertex \((2, -4)\) and passes through the point \((0, 4)\).  
+Find its equation.
+
+Use vertex form \(y = a(x - h)^2 + k.\)
+\[
+y = a(x - 2)^2 - 4.
+\]
+Substitute \((x, y) = (0, 4):\)
+\[
+4 = a(0 - 2)^2 - 4 \Rightarrow 4 = 4a - 4 \Rightarrow 8 = 4a \Rightarrow a = 2.
+\]
+\textbf{Equation:} \(\boxed{y = 2(x - 2)^2 - 4.}\)
+
+\textbf{Graph:} (Insert graph showing vertex (2, –4), upward opening, passes through (0, 4).)
+
+\section*{Example 5: Real-World Interpretation}
+
+A rocket’s height is given by \(h = -16t^2 + 64t + 80.\)  
+Find its vertex and interpret.
+
+\[
+t = -\frac{b}{2a} = -\frac{64}{-32} = 2.
+\]
+\(h(2) = -16(4) + 64(2) + 80 = -64 + 128 + 80 = 144.\)
+\textbf{Vertex:} \((2, 144)\).
+
+Interpretation: The rocket reaches a maximum height of 144 ft at 2 seconds.
+
+\textbf{Graph:} (Insert graph of height vs. time showing vertex (2, 144), opens downward, intercepts at \(t = 0\) and \(t \approx 5.\))
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Use \(x = -\frac{b}{2a}\) to find the vertex in standard form.
+  \item The sign of \(a\) determines if the parabola opens up or down.
+  \item The axis of symmetry passes through the vertex.
+  \item The vertex represents a minimum if \(a > 0\), or a maximum if \(a < 0.\)
+  \item Plot vertex, intercepts, and symmetry to sketch accurate graphs.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — UNIT 6, TOPIC 4: GRAPHING PARABOLAS (VERTEX AND INTERCEPTS)
+% ============================================================
+
+\section*{Practice Questions: Graphing Parabolas (Vertex and Intercepts)}
+
+\subsection*{Part A: Finding Vertex and Axis of Symmetry}
+\begin{enumerate}
+  \item Find the vertex of \(y = x^2 + 6x + 5.\)
+  \item Find the vertex of \(y = 2x^2 - 4x + 1.\)
+  \item Find the vertex and axis of symmetry for \(y = -x^2 + 8x - 7.\)
+  \item Find the vertex and determine whether the parabola opens upward or downward: \(y = -2x^2 - 4x + 3.\)
+  \item Find the vertex and minimum or maximum value of \(y = x^2 - 2x + 4.\)
+\end{enumerate}
+
+\subsection*{Part B: Intercepts and Shape}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Find the y-intercept and x-intercepts of \(y = x^2 - 5x + 6.\)
+  \item Find the y-intercept and x-intercepts of \(y = -x^2 + 4x.\)
+  \item Find the intercepts of \(y = 2x^2 + 3x - 5.\)
+  \item Determine whether \(y = -3x^2 + 6x - 2\) opens up or down, and find its y-intercept.
+  \item Find the intercepts and axis of symmetry of \(y = x^2 - 9.\)
+\end{enumerate}
+
+\subsection*{Part C: Vertex Form and Transformations}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Identify the vertex, axis of symmetry, and direction of opening for \(y = (x - 3)^2 - 2.\)
+  \item Identify the vertex and direction for \(y = -2(x + 4)^2 + 1.\)
+  \item Write the equation of a parabola with vertex \((2, -3)\) that opens upward and passes through \((4, 5)\).
+  \item Write the equation of a parabola with vertex \((-1, 2)\) that opens downward and passes through \((1, -6)\).
+  \item Rewrite \(y = x^2 + 6x + 10\) in vertex form.
+\end{enumerate}
+
+\subsection*{Part D: Graph-Based Reasoning}
+(Insert labeled graph of \(y = x^2 - 4x + 3\) showing a U-shaped curve with vertex at (2, –1), x-intercepts at 1 and 3, y-intercept at 3.)
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item What is the vertex of the parabola shown?
+  \item What is the axis of symmetry?
+  \item What are the x-intercepts?
+  \item What is the y-intercept?
+  \item Does the parabola open upward or downward?
+\end{enumerate}
+
+\subsection*{Part E: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item The height of a ball is modeled by \(h = -16t^2 + 32t + 48.\) Find the time at which the ball reaches its maximum height and the height itself.
+  \item A parabola modeling profit is \(P = -2x^2 + 12x + 18.\) What is the maximum profit and at what value of \(x\) does it occur?
+  \item A satellite dish is shaped like a parabola defined by \(y = 2x^2.\) How does the shape compare to \(y = x^2\)?
+  \item A parabola has vertex \((3, 5)\) and opens downward. Write its equation if it passes through \((5, 1).\)
+  \item A quadratic function models the path of a thrown object as \(h(t) = -5t^2 + 20t + 30.\) When will it hit the ground?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 6, TOPIC 4: GRAPHING PARABOLAS (VERTEX AND INTERCEPTS)
+% ============================================================
+
+\section*{Answer Key and Solutions: Graphing Parabolas (Vertex and Intercepts)}
+
+\subsection*{Part A Solutions: Finding Vertex and Axis of Symmetry}
+\begin{enumerate}
+  \item \(y = x^2 + 6x + 5\)
+
+  For \(y = ax^2 + bx + c\), vertex \(x = -\frac{b}{2a}.\)
+
+  Here \(a = 1,\; b = 6.\)
+
+  \[
+  x = -\frac{6}{2 \cdot 1} = -3.
+  \]
+  \[
+  y(-3) = (-3)^2 + 6(-3) + 5 = 9 - 18 + 5 = -4.
+  \]
+
+  \(\boxed{\text{Vertex } (-3, -4)}\)
+
+  \item \(y = 2x^2 - 4x + 1\)
+
+  \(a = 2,\; b = -4.\)
+
+  \[
+  x = -\frac{-4}{2 \cdot 2} = \frac{4}{4} = 1.
+  \]
+  \[
+  y(1) = 2(1)^2 - 4(1) + 1 = 2 - 4 + 1 = -1.
+  \]
+
+  \(\boxed{\text{Vertex } (1, -1)}\)
+
+  \item \(y = -x^2 + 8x - 7\)
+
+  \(a = -1,\; b = 8.\)
+
+  \[
+  x = -\frac{8}{2(-1)} = -\frac{8}{-2} = 4.
+  \]
+  \[
+  y(4) = -(4)^2 + 8(4) - 7 = -16 + 32 - 7 = 9.
+  \]
+
+  \(\boxed{\text{Vertex } (4, 9), \text{ axis } x = 4}\)
+
+  \item \(y = -2x^2 - 4x + 3\)
+
+  \(a = -2,\; b = -4.\)
+
+  \[
+  x = -\frac{-4}{2(-2)} = \frac{4}{-4} = -1.
+  \]
+  \[
+  y(-1) = -2(-1)^2 - 4(-1) + 3 = -2 + 4 + 3 = 5.
+  \]
+
+  Vertex is \((-1, 5)\). Since \(a = -2 < 0,\) it opens downward.
+
+  \(\boxed{\text{Vertex } (-1, 5), \text{ opens down}}\)
+
+  \item \(y = x^2 - 2x + 4\)
+
+  \(a = 1,\; b = -2.\)
+
+  \[
+  x = -\frac{-2}{2 \cdot 1} = \frac{2}{2} = 1.
+  \]
+  \[
+  y(1) = (1)^2 - 2(1) + 4 = 1 - 2 + 4 = 3.
+  \]
+
+  Vertex is \((1, 3).\) Because \(a = 1 > 0,\) this is a minimum, and the minimum value is 3.
+
+  \(\boxed{\text{Vertex } (1, 3), \text{ min value } 3}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Intercepts and Shape}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(y = x^2 - 5x + 6\)
+
+  Y-intercept: set \(x = 0\).  
+  \(y = 6 \Rightarrow (0, 6).\)
+
+  X-intercepts: solve \(x^2 - 5x + 6 = 0.\)  
+  \((x - 2)(x - 3) = 0 \Rightarrow x = 2, 3.\)  
+  Intercepts: \((2, 0)\) and \((3, 0).\)
+
+  \(\boxed{\text{Y-int } (0, 6), \text{ X-ints } (2, 0), (3, 0)}\)
+
+  \item \(y = -x^2 + 4x\)
+
+  Y-intercept: \(x = 0 \Rightarrow y = 0 \Rightarrow (0, 0).\)
+
+  X-intercepts: solve \(-x^2 + 4x = 0.\)  
+  Factor: \(-x(x - 4) = 0 \Rightarrow x = 0, 4.\)  
+  Intercepts: \((0, 0)\) and \((4, 0).\)
+
+  \(\boxed{\text{Y-int } (0, 0), \text{ X-ints } (0, 0), (4, 0)}\)
+
+  \item \(y = 2x^2 + 3x - 5\)
+
+  Y-intercept: \(x = 0 \Rightarrow y = -5 \Rightarrow (0, -5).\)
+
+  X-intercepts: solve \(2x^2 + 3x - 5 = 0.\)
+
+  Quadratic formula with \(a = 2,\; b = 3,\; c = -5.\)
+
+  \[
+  x = \frac{-3 \pm \sqrt{3^2 - 4(2)(-5)}}{2 \cdot 2}
+  = \frac{-3 \pm \sqrt{9 + 40}}{4}
+  = \frac{-3 \pm \sqrt{49}}{4}
+  = \frac{-3 \pm 7}{4}.
+  \]
+
+  So \(x = 1\) or \(x = -\tfrac{5}{2}.\)
+
+  Intercepts: \((1, 0)\) and \(\left(-\tfrac{5}{2}, 0\right).\)
+
+  \(\boxed{\text{Y-int } (0, -5), \text{ X-ints } (1, 0), (-\tfrac{5}{2}, 0)}\)
+
+  \item \(y = -3x^2 + 6x - 2\)
+
+  Opens up or down? The leading coefficient is \(-3 < 0.\)  
+  So it opens downward.
+
+  Y-intercept: \(x = 0 \Rightarrow y = -2 \Rightarrow (0, -2).\)
+
+  \(\boxed{\text{Opens down, Y-int } (0, -2)}\)
+
+  \item \(y = x^2 - 9\)
+
+  Y-intercept: \(x = 0 \Rightarrow y = -9 \Rightarrow (0, -9).\)
+
+  X-intercepts: solve \(x^2 - 9 = 0 \Rightarrow (x - 3)(x + 3) = 0.\)  
+  So \(x = 3\) or \(-3.\)  
+  Intercepts: \((3, 0)\) and \((-3, 0).\)
+
+  Axis of symmetry: midpoint between \(-3\) and \(3\) is \(x = 0.\)
+
+  \(\boxed{\text{Y-int } (0, -9), \text{ X-ints } (-3, 0), (3, 0), \text{ axis } x = 0}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Vertex Form and Transformations}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(y = (x - 3)^2 - 2\)
+
+  Vertex form \(y = a(x - h)^2 + k.\)
+
+  Here \(h = 3,\; k = -2,\; a = 1.\)
+
+  Vertex: \((3, -2)\).  
+  Axis of symmetry: \(x = 3.\)  
+  Since \(a = 1 > 0\), it opens upward.
+
+  \(\boxed{\text{Vertex } (3, -2), \text{ axis } x = 3, \text{ opens up}}\)
+
+  \item \(y = -2(x + 4)^2 + 1\)
+
+  Here \(h = -4,\; k = 1,\; a = -2.\)
+
+  Vertex: \((-4, 1).\)  
+  Since \(a < 0,\) it opens downward (narrower than \(y = x^2\) because \(|a| > 1\)).
+
+  \(\boxed{\text{Vertex } (-4, 1), \text{ opens down}}\)
+
+  \item Parabola with vertex \((2, -3)\), opens upward, passes through \((4, 5)\)
+
+  Start with vertex form:
+  \[
+  y = a(x - 2)^2 - 3.
+  \]
+  Use \((4, 5)\):
+  \[
+  5 = a(4 - 2)^2 - 3 \Rightarrow 5 = 4a - 3 \Rightarrow 8 = 4a \Rightarrow a = 2.
+  \]
+
+  \(\boxed{y = 2(x - 2)^2 - 3}\)
+
+  \item Parabola with vertex \((-1, 2)\), opens downward, passes through \((1, -6)\)
+
+  Vertex form:
+  \[
+  y = a(x + 1)^2 + 2.
+  \]
+  Use \((1, -6)\):
+  \[
+  -6 = a(1 + 1)^2 + 2 \Rightarrow -6 = 4a + 2 \Rightarrow -8 = 4a \Rightarrow a = -2.
+  \]
+
+  \(\boxed{y = -2(x + 1)^2 + 2}\)
+
+  \item Rewrite \(y = x^2 + 6x + 10\) in vertex form.
+
+  Complete the square:
+  \[
+  x^2 + 6x + 10 = (x^2 + 6x + 9) + 1 = (x + 3)^2 + 1.
+  \]
+
+  \(\boxed{y = (x + 3)^2 + 1}\)
+
+  Vertex: \((-3, 1)\).
+\end{enumerate}
+
+\subsection*{Part D Solutions: Graph-Based Reasoning}
+(Reference: graph of \(y = x^2 - 4x + 3\), with vertex at (2, –1), x-intercepts at 1 and 3, y-intercept at 3, opens up.)
+
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Vertex: \(\boxed{(2, -1)}\)
+
+  \item Axis of symmetry: vertical line through the vertex.  
+  \(\boxed{x = 2}\)
+
+  \item X-intercepts: where the graph crosses the x-axis.  
+  \(\boxed{(1, 0) \text{ and } (3, 0)}\)
+
+  \item Y-intercept: where the graph crosses the y-axis.  
+  From the given graph description, \(\boxed{(0, 3)}\)
+
+  \item The parabola opens upward (U-shaped opening up).  
+  \(\boxed{\text{Opens up}}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item \(h = -16t^2 + 32t + 48\)
+
+  Maximum height occurs at the vertex.  
+  \(t = -\frac{b}{2a} = -\frac{32}{2(-16)} = -\frac{32}{-32} = 1.\)
+
+  Height at \(t = 1\):  
+  \[
+  h(1) = -16(1)^2 + 32(1) + 48 = -16 + 32 + 48 = 64.
+  \]
+
+  \(\boxed{\text{Max height } 64 \text{ at } t = 1\text{ s}}\)
+
+  \item \(P = -2x^2 + 12x + 18\)
+
+  Vertex \(x\)-value:  
+  \[
+  x = -\frac{b}{2a} = -\frac{12}{2(-2)} = -\frac{12}{-4} = 3.
+  \]
+
+  Profit at \(x = 3\):  
+  \[
+  P(3) = -2(3)^2 + 12(3) + 18 = -18 + 36 + 18 = 36.
+  \]
+
+  \(\boxed{\text{Max profit } 36 \text{ at } x = 3}\)
+
+  \item \(y = 2x^2\) vs \(y = x^2\)
+
+  The coefficient \(a = 2\) is larger in absolute value than 1.  
+  Larger \(|a|\) makes the parabola narrower.
+
+  \(\boxed{y = 2x^2 \text{ is narrower (steeper)}}\)
+
+  \item Vertex \((3, 5)\), opens down, passes through \((5, 1)\)
+
+  Vertex form:
+  \[
+  y = a(x - 3)^2 + 5.
+  \]
+  Use point \((5, 1)\):
+  \[
+  1 = a(5 - 3)^2 + 5 \Rightarrow 1 = 4a + 5 \Rightarrow -4 = 4a \Rightarrow a = -1.
+  \]
+
+  \(\boxed{y = -(x - 3)^2 + 5}\)
+
+  \item \(h(t) = -5t^2 + 20t + 30\). When does it hit the ground?
+
+  Set \(h = 0\):
+  \[
+  -5t^2 + 20t + 30 = 0.
+  \]
+
+  Solve using quadratic formula with \(a = -5,\; b = 20,\; c = 30.\)
+
+  \[
+  t = \frac{-20 \pm \sqrt{20^2 - 4(-5)(30)}}{2(-5)}
+  = \frac{-20 \pm \sqrt{400 + 600}}{-10}
+  = \frac{-20 \pm \sqrt{1000}}{-10}
+  \]
+  \[
+  = \frac{-20 \pm 10\sqrt{10}}{-10}
+  = \frac{20 \pm 10\sqrt{10}}{10}
+  = 2 \pm \sqrt{10}.
+  \]
+
+  So \(t = 2 + \sqrt{10}\) or \(t = 2 - \sqrt{10}.\)
+
+  \(2 - \sqrt{10} < 0\) so it is not physical.
+
+  \(\boxed{t = 2 + \sqrt{10} \text{ seconds}}\)
+\end{enumerate}
+
+
+
+
+\end{document}

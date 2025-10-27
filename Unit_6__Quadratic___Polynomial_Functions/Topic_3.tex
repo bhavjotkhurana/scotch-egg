@@ -1,0 +1,487 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 6: Quadratic and Polynomial Functions} \\[6pt]
+    \Large \textbf{Topic 3: Quadratic Formula and Discriminant}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+When a quadratic equation cannot be easily factored, we use the \textbf{quadratic formula}:
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.
+\]
+It gives the exact solutions to any quadratic equation \(ax^2 + bx + c = 0\) where \(a \ne 0\).
+
+The expression under the square root,
+\[
+\Delta = b^2 - 4ac,
+\]
+is called the \textbf{discriminant}. It determines the nature and number of the roots.
+
+\subsection*{Meaning of the Discriminant}
+\begin{itemize}
+  \item \(\Delta > 0:\) two distinct real roots
+  \item \(\Delta = 0:\) one real root (a repeated or double root)
+  \item \(\Delta < 0:\) no real roots (two complex solutions)
+\end{itemize}
+
+On the SAT, problems often test whether you can use the discriminant to reason about the number or type of solutions without computing them.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Identify \(a, b, c\) in standard form.
+  \item Substitute into the quadratic formula correctly.
+  \item Simplify radicals accurately.
+  \item Interpret the discriminant to determine the number of real solutions.
+  \item Apply the formula to both exact and approximate contexts.
+\end{itemize}
+
+\section*{Example 1: Using the Formula Directly}
+
+Solve \(x^2 - 5x + 6 = 0.\)
+
+Here \(a = 1,\; b = -5,\; c = 6.\)
+
+\[
+x = \frac{-(-5) \pm \sqrt{(-5)^2 - 4(1)(6)}}{2(1)} 
+= \frac{5 \pm \sqrt{25 - 24}}{2} 
+= \frac{5 \pm 1}{2}.
+\]
+\[
+x = 3 \text{ or } 2.
+\]
+\textbf{Solutions:} \(\boxed{x = 2, 3}\)
+
+\section*{Example 2: No Real Roots}
+
+Solve \(x^2 + 4x + 8 = 0.\)
+
+\(a = 1,\; b = 4,\; c = 8.\)
+\[
+x = \frac{-4 \pm \sqrt{4^2 - 4(1)(8)}}{2(1)} 
+= \frac{-4 \pm \sqrt{16 - 32}}{2} 
+= \frac{-4 \pm \sqrt{-16}}{2}.
+\]
+Since the discriminant is negative, no real roots exist.  
+\textbf{Answer:} \(\boxed{\text{No real solutions.}}\)
+
+\section*{Example 3: One Double Root}
+
+Solve \(x^2 - 6x + 9 = 0.\)
+
+\(a = 1,\; b = -6,\; c = 9.\)
+\[
+\Delta = (-6)^2 - 4(1)(9) = 36 - 36 = 0.
+\]
+\[
+x = \frac{-(-6)}{2(1)} = \frac{6}{2} = 3.
+\]
+\textbf{One double root:} \(\boxed{x = 3}\)
+
+\section*{Example 4: Simplifying with Square Roots}
+
+Solve \(2x^2 - 3x - 2 = 0.\)
+
+\(a = 2,\; b = -3,\; c = -2.\)
+\[
+x = \frac{-(-3) \pm \sqrt{(-3)^2 - 4(2)(-2)}}{2(2)} 
+= \frac{3 \pm \sqrt{9 + 16}}{4}
+= \frac{3 \pm \sqrt{25}}{4}
+= \frac{3 \pm 5}{4}.
+\]
+\[
+x = 2 \text{ or } -\tfrac{1}{2}.
+\]
+\textbf{Solutions:} \(\boxed{x = 2, -\tfrac{1}{2}}\)
+
+\section*{Example 5: Interpreting the Discriminant}
+
+For \(4x^2 + 4x + 1 = 0,\)
+\[
+\Delta = 4^2 - 4(4)(1) = 16 - 16 = 0.
+\]
+So there is one repeated real solution.  
+\textbf{Root:} \(x = \frac{-4}{8} = -\tfrac{1}{2}.\)
+
+\section*{Example 6: SAT Application}
+
+A projectile’s height is given by \(h = -16t^2 + 32t + 48.\)  
+When does it hit the ground (\(h = 0\))?
+
+\[
+-16t^2 + 32t + 48 = 0 \Rightarrow t = \frac{-32 \pm \sqrt{32^2 - 4(-16)(48)}}{2(-16)}.
+\]
+\[
+t = \frac{-32 \pm \sqrt{1024 + 3072}}{-32}
+= \frac{-32 \pm \sqrt{4096}}{-32}
+= \frac{-32 \pm 64}{-32}.
+\]
+\[
+t = 3 \text{ or } -1.5.
+\]
+Time cannot be negative, so \(\boxed{t = 3\text{ seconds}}\).
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item The quadratic formula works for all quadratics—factorable or not.
+  \item The discriminant \(b^2 - 4ac\) determines the number and type of roots.
+  \item Always simplify radicals carefully and reduce fractions.
+  \item If \(\Delta = 0\), expect one double root.
+  \item If \(\Delta < 0\), the solutions are complex (no real roots on SAT).
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — UNIT 6, TOPIC 3: QUADRATIC FORMULA AND DISCRIMINANT
+% ============================================================
+
+\section*{Practice Questions: Quadratic Formula and Discriminant}
+
+\subsection*{Part A: Direct Application of the Quadratic Formula}
+\begin{enumerate}
+  \item Solve \(x^2 - 3x - 4 = 0\) using the quadratic formula.
+  \item Solve \(x^2 - 2x - 8 = 0.\)
+  \item Solve \(2x^2 - 5x + 2 = 0.\)
+  \item Solve \(x^2 + 7x + 12 = 0.\)
+  \item Solve \(3x^2 + 2x - 1 = 0.\)
+\end{enumerate}
+
+\subsection*{Part B: Working with the Discriminant}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Find the discriminant of \(x^2 + 4x + 3 = 0\) and describe the number of real solutions.
+  \item Find the discriminant of \(x^2 + 2x + 1 = 0.\)
+  \item Find the discriminant of \(x^2 + 6x + 10 = 0.\)
+  \item Find the discriminant of \(4x^2 + 4x + 1 = 0.\)
+  \item Find the discriminant of \(5x^2 - 2x + 7 = 0.\)
+\end{enumerate}
+
+\subsection*{Part C: Simplifying with Radicals}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Solve \(x^2 - 8x + 7 = 0.\)
+  \item Solve \(2x^2 - 3x - 2 = 0.\)
+  \item Solve \(x^2 - 2x - 3 = 0.\)
+  \item Solve \(x^2 + x - 6 = 0.\)
+  \item Solve \(x^2 - 4x + 1 = 0.\)
+\end{enumerate}
+
+\subsection*{Part D: Interpreting and Comparing Discriminants}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Compare the discriminants of \(x^2 - 4x + 4 = 0\) and \(x^2 - 4x + 5 = 0.\)
+  \item For which value of \(k\) will \(x^2 + 4x + k = 0\) have exactly one real root?
+  \item For which value of \(k\) will \(x^2 + 4x + k = 0\) have no real roots?
+  \item A quadratic has one real solution if its discriminant equals 0. Find \(b\) if \(4x^2 + bx + 9 = 0\) has one solution.
+  \item Determine the number of real roots for \(x^2 - 6x + 10 = 0.\)
+\end{enumerate}
+
+\subsection*{Part E: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A ball is thrown upward with height \(h = -16t^2 + 64t + 80.\) When does it hit the ground?
+  \item The area of a garden is modeled by \(A = x^2 + 5x + 6.\) For what values of \(x\) is \(A = 0\)?
+  \item A parabola crosses the x-axis at only one point. What must be true about its discriminant?
+  \item A quadratic has two distinct real roots. What must be true about its discriminant?
+  \item The equation \(2x^2 + kx + 8 = 0\) has no real solutions. What values of \(k\) satisfy this condition?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 6, TOPIC 3: QUADRATIC FORMULA AND DISCRIMINANT
+% ============================================================
+
+\section*{Answer Key and Solutions: Quadratic Formula and Discriminant}
+
+\subsection*{Part A Solutions: Direct Application of the Quadratic Formula}
+\begin{enumerate}
+  \item Solve \(x^2 - 3x - 4 = 0.\)
+
+  \(a = 1,\; b = -3,\; c = -4.\)
+
+  \[
+  x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+  = \frac{-(-3) \pm \sqrt{(-3)^2 - 4(1)(-4)}}{2(1)}
+  = \frac{3 \pm \sqrt{9 + 16}}{2}
+  = \frac{3 \pm \sqrt{25}}{2}
+  = \frac{3 \pm 5}{2}.
+  \]
+
+  \(\boxed{x = 4 \text{ or } x = -1}\)
+
+  \item Solve \(x^2 - 2x - 8 = 0.\)
+
+  \(a = 1,\; b = -2,\; c = -8.\)
+
+  \[
+  x = \frac{2 \pm \sqrt{(-2)^2 - 4(1)(-8)}}{2}
+  = \frac{2 \pm \sqrt{4 + 32}}{2}
+  = \frac{2 \pm \sqrt{36}}{2}
+  = \frac{2 \pm 6}{2}.
+  \]
+
+  \(\boxed{x = 4 \text{ or } x = -2}\)
+
+  \item Solve \(2x^2 - 5x + 2 = 0.\)
+
+  \(a = 2,\; b = -5,\; c = 2.\)
+
+  \[
+  x = \frac{5 \pm \sqrt{(-5)^2 - 4(2)(2)}}{4}
+  = \frac{5 \pm \sqrt{25 - 16}}{4}
+  = \frac{5 \pm \sqrt{9}}{4}
+  = \frac{5 \pm 3}{4}.
+  \]
+
+  \(\boxed{x = 2 \text{ or } x = \tfrac{1}{2}}\)
+
+  \item Solve \(x^2 + 7x + 12 = 0.\)
+
+  \(a = 1,\; b = 7,\; c = 12.\)
+
+  \[
+  x = \frac{-7 \pm \sqrt{7^2 - 4(1)(12)}}{2}
+  = \frac{-7 \pm \sqrt{49 - 48}}{2}
+  = \frac{-7 \pm \sqrt{1}}{2}
+  = \frac{-7 \pm 1}{2}.
+  \]
+
+  \(\boxed{x = -3 \text{ or } x = -4}\)
+
+  \item Solve \(3x^2 + 2x - 1 = 0.\)
+
+  \(a = 3,\; b = 2,\; c = -1.\)
+
+  \[
+  x = \frac{-2 \pm \sqrt{2^2 - 4(3)(-1)}}{2 \cdot 3}
+  = \frac{-2 \pm \sqrt{4 + 12}}{6}
+  = \frac{-2 \pm \sqrt{16}}{6}
+  = \frac{-2 \pm 4}{6}.
+  \]
+
+  \(\boxed{x = \tfrac{1}{3} \text{ or } x = -1}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Working with the Discriminant}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item For \(x^2 + 4x + 3 = 0\):  
+  \(\Delta = b^2 - 4ac = 4^2 - 4(1)(3) = 16 - 12 = 4 > 0.\)  
+  \(\boxed{\text{Two distinct real solutions}}\)
+
+  \item For \(x^2 + 2x + 1 = 0\):  
+  \(\Delta = 2^2 - 4(1)(1) = 4 - 4 = 0.\)  
+  \(\boxed{\text{One real solution (double root)}}\)
+
+  \item For \(x^2 + 6x + 10 = 0\):  
+  \(\Delta = 6^2 - 4(1)(10) = 36 - 40 = -4 < 0.\)  
+  \(\boxed{\text{No real solutions}}\)
+
+  \item For \(4x^2 + 4x + 1 = 0\):  
+  \(\Delta = 4^2 - 4(4)(1) = 16 - 16 = 0.\)  
+  \(\boxed{\text{One real solution (double root)}}\)
+
+  \item For \(5x^2 - 2x + 7 = 0\):  
+  \(\Delta = (-2)^2 - 4(5)(7) = 4 - 140 = -136 < 0.\)  
+  \(\boxed{\text{No real solutions}}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Simplifying with Radicals}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Solve \(x^2 - 8x + 7 = 0.\)
+
+  \(a = 1,\; b = -8,\; c = 7.\)
+
+  \[
+  x = \frac{8 \pm \sqrt{64 - 28}}{2}
+  = \frac{8 \pm \sqrt{36}}{2}
+  = \frac{8 \pm 6}{2}.
+  \]
+
+  \(\boxed{x = 7 \text{ or } x = 1}\)
+
+  \item Solve \(2x^2 - 3x - 2 = 0.\)
+
+  \(a = 2,\; b = -3,\; c = -2.\)
+
+  \[
+  x = \frac{3 \pm \sqrt{(-3)^2 - 4(2)(-2)}}{4}
+  = \frac{3 \pm \sqrt{9 + 16}}{4}
+  = \frac{3 \pm \sqrt{25}}{4}
+  = \frac{3 \pm 5}{4}.
+  \]
+
+  \(\boxed{x = 2 \text{ or } x = -\tfrac{1}{2}}\)
+
+  \item Solve \(x^2 - 2x - 3 = 0.\)
+
+  \(a = 1,\; b = -2,\; c = -3.\)
+
+  \[
+  x = \frac{2 \pm \sqrt{4 - 4(1)(-3)}}{2}
+  = \frac{2 \pm \sqrt{4 + 12}}{2}
+  = \frac{2 \pm \sqrt{16}}{2}
+  = \frac{2 \pm 4}{2}.
+  \]
+
+  \(\boxed{x = 3 \text{ or } x = -1}\)
+
+  \item Solve \(x^2 + x - 6 = 0.\)
+
+  \(a = 1,\; b = 1,\; c = -6.\)
+
+  \[
+  x = \frac{-1 \pm \sqrt{1^2 - 4(1)(-6)}}{2}
+  = \frac{-1 \pm \sqrt{1 + 24}}{2}
+  = \frac{-1 \pm \sqrt{25}}{2}
+  = \frac{-1 \pm 5}{2}.
+  \]
+
+  \(\boxed{x = 2 \text{ or } x = -3}\)
+
+  \item Solve \(x^2 - 4x + 1 = 0.\)
+
+  \(a = 1,\; b = -4,\; c = 1.\)
+
+  \[
+  x = \frac{4 \pm \sqrt{(-4)^2 - 4(1)(1)}}{2}
+  = \frac{4 \pm \sqrt{16 - 4}}{2}
+  = \frac{4 \pm \sqrt{12}}{2}
+  = \frac{4 \pm 2\sqrt{3}}{2}
+  = 2 \pm \sqrt{3}.
+  \]
+
+  \(\boxed{x = 2 + \sqrt{3} \text{ or } x = 2 - \sqrt{3}}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Interpreting and Comparing Discriminants}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Compare \(x^2 - 4x + 4 = 0\) and \(x^2 - 4x + 5 = 0.\)
+
+  For \(x^2 - 4x + 4\):  
+  \(\Delta = (-4)^2 - 4(1)(4) = 16 - 16 = 0\) → one real (double) root.
+
+  For \(x^2 - 4x + 5\):  
+  \(\Delta = (-4)^2 - 4(1)(5) = 16 - 20 = -4 < 0\) → no real roots.
+
+  \(\boxed{\text{First: one real root. Second: no real roots.}}\)
+
+  \item For what value of \(k\) does \(x^2 + 4x + k = 0\) have exactly one real root?
+
+  Need \(\Delta = 0.\)  
+  \(\Delta = 4^2 - 4(1)(k) = 16 - 4k = 0.\)  
+  \(16 = 4k \Rightarrow k = 4.\)  
+  \(\boxed{k = 4}\)
+
+  \item For what value of \(k\) does \(x^2 + 4x + k = 0\) have no real roots?
+
+  Need \(\Delta < 0.\)  
+  \(16 - 4k < 0 \Rightarrow 16 < 4k \Rightarrow k > 4.\)  
+  \(\boxed{k > 4}\)
+
+  \item A quadratic \(4x^2 + bx + 9 = 0\) has one real solution. Find \(b.\)
+
+  One real solution means \(\Delta = 0.\)
+
+  \[
+  \Delta = b^2 - 4(4)(9) = b^2 - 144 = 0
+  \Rightarrow b^2 = 144
+  \Rightarrow b = \pm 12.
+  \]
+
+  \(\boxed{b = 12 \text{ or } b = -12}\)
+
+  \item Determine the number of real roots for \(x^2 - 6x + 10 = 0.\)
+
+  \[
+  \Delta = (-6)^2 - 4(1)(10) = 36 - 40 = -4 < 0.
+  \]
+
+  \(\boxed{\text{No real roots}}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A ball is thrown upward with height \(h = -16t^2 + 64t + 80.\) When does it hit the ground?
+
+  Set \(h = 0\):  
+  \(-16t^2 + 64t + 80 = 0.\)
+
+  \(a = -16,\; b = 64,\; c = 80.\)
+
+  \[
+  t = \frac{-64 \pm \sqrt{64^2 - 4(-16)(80)}}{2(-16)}
+  = \frac{-64 \pm \sqrt{4096 + 5120}}{-32}
+  = \frac{-64 \pm \sqrt{9216}}{-32}
+  = \frac{-64 \pm 96}{-32}.
+  \]
+
+  Two solutions: \(t = -1\) and \(t = 5.\)
+
+  Negative time is not physical, so \(\boxed{t = 5 \text{ seconds}}\)
+
+  \item The area of a garden is modeled by \(A = x^2 + 5x + 6.\) For what values of \(x\) is \(A = 0\)?
+
+  Solve \(x^2 + 5x + 6 = 0.\)
+
+  \(a = 1,\; b = 5,\; c = 6.\)
+
+  \[
+  x = \frac{-5 \pm \sqrt{25 - 24}}{2}
+  = \frac{-5 \pm 1}{2}.
+  \]
+
+  \(\boxed{x = -2 \text{ or } x = -3}\)
+
+  (In context, negative \(x\) might be nonphysical, but algebraically both are solutions.)
+
+  \item A parabola crosses the x-axis at only one point. What must be true about its discriminant?
+
+  Crossing at only one x-value means a double root.  
+  \(\boxed{\Delta = 0}\)
+
+  \item A quadratic has two distinct real roots. What must be true about its discriminant?
+
+  Two different real roots means square root is positive.  
+  \(\boxed{\Delta > 0}\)
+
+  \item The equation \(2x^2 + kx + 8 = 0\) has no real solutions. What values of \(k\) satisfy this condition?
+
+  Need \(\Delta < 0.\)
+
+  \[
+  \Delta = k^2 - 4(2)(8) = k^2 - 64 < 0
+  \Rightarrow k^2 < 64
+  \Rightarrow -8 < k < 8.
+  \]
+
+  \(\boxed{-8 < k < 8}\)
+\end{enumerate}
+
+
+
+\end{document}

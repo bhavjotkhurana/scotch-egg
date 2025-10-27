@@ -1,0 +1,245 @@
+% =========================
+% SAT Resources Topic Template
+% =========================
+\documentclass[12pt]{article}
+
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{ifthen}
+
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\setlist[enumerate]{label=\textbf{(\arabic*)}, itemsep=4pt, topsep=4pt}
+\setlist[itemize]{itemsep=2pt, topsep=4pt}
+\pagenumbering{gobble}
+
+% ---------- TOGGLES ----------
+\newboolean{showsolutions}
+\setboolean{showsolutions}{true}
+
+% ---------- LIGHTWEIGHT MACROS ----------
+\newcommand{\UnitTitle}{Unit 5: Exponents, Roots, and Rational Expressions}
+\newcommand{\TopicTitle}{Topic 1: Laws of Exponents}
+
+\newcommand{\TopicMeta}[3]{%
+  \textcolor{gray}{\footnotesize \textbf{SAT Domain:} #1 \quad \textbf{Calculator:} #2 \quad \textbf{Progression:} #3}
+}
+\newcommand{\qtag}[1]{\textcolor{gray}{\footnotesize [#1]}}
+
+\newenvironment{Example}[1]{%
+  \subsection*{Example #1}%
+}{\vspace{0.25em}}
+
+% ---------- DOCUMENT ----------
+\begin{document}
+
+\begin{center}
+  \LARGE \textbf{\UnitTitle}\\[6pt]
+  \Large \textbf{\TopicTitle}\\[4pt]
+\end{center}
+
+\vspace{0.75em}
+
+% =========================
+% MINI-LESSON
+% =========================
+\section*{Concept Summary}
+Exponents represent repeated multiplication of the same base. For any real number \(a\) and integer \(n > 0\),
+\[
+a^n = \underbrace{a \times a \times \cdots \times a}_{n \text{ times}}.
+\]
+The properties of exponents allow us to simplify and compare exponential expressions efficiently. These laws apply when the bases are the same or when the exponents follow specific relationships.
+
+Each law stems from basic multiplication and division principles. Understanding *why* they work helps prevent common errors—especially when simplifying or solving equations that include exponential terms.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Apply the product rule: \(a^m \cdot a^n = a^{m+n}\)
+  \item Apply the quotient rule: \(\dfrac{a^m}{a^n} = a^{m-n}\)
+  \item Apply the power rule: \((a^m)^n = a^{mn}\)
+  \item Apply the power of a product rule: \((ab)^n = a^n b^n\)
+  \item Apply the power of a quotient rule: \(\left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}\)
+\end{itemize}
+
+\begin{Example}{1}
+Simplify \(x^3 \cdot x^5\) \qtag{Core rule, product}
+\[
+x^3 \cdot x^5 = x^{3+5} = x^8
+\]
+\textbf{Check:} Multiplying \(x^3 = x \times x \times x\) by \(x^5\) gives eight total factors of \(x\). \(\checkmark\)
+
+\textbf{Final Answer:} \(\boxed{x^8}\)
+\end{Example}
+
+\begin{Example}{2}
+Simplify \(\dfrac{y^7}{y^2}\) \qtag{Quotient rule}
+\[
+\dfrac{y^7}{y^2} = y^{7-2} = y^5
+\]
+\textbf{Check:} Cancelling two factors of \(y\) from numerator and denominator leaves five. \(\checkmark\)
+
+\textbf{Final Answer:} \(\boxed{y^5}\)
+\end{Example}
+
+\begin{Example}{3}
+Simplify \((2a^3)^4\) \qtag{Power rule, power of product}
+\[
+(2a^3)^4 = 2^4 \cdot (a^3)^4 = 16a^{12}
+\]
+\textbf{Check:} Each factor of \(2a^3\) multiplies four times, so the exponents multiply. \(\checkmark\)
+
+\textbf{Final Answer:} \(\boxed{16a^{12}}\)
+\end{Example}
+
+\begin{Example}{4}
+Simplify \(\left(\dfrac{x^2y^3}{z}\right)^2\) \qtag{Power of quotient}
+\[
+\left(\dfrac{x^2y^3}{z}\right)^2 = \dfrac{(x^2)^2 (y^3)^2}{z^2} = \dfrac{x^4y^6}{z^2}
+\]
+\textbf{Final Answer:} \(\boxed{\dfrac{x^4y^6}{z^2}}\)
+\end{Example}
+
+\begin{Example}{5}
+Simplify \(m^4n^3 \cdot m^2n^5\) \qtag{Multiple bases}
+\[
+m^4n^3 \cdot m^2n^5 = m^{4+2}n^{3+5} = m^6n^8
+\]
+\textbf{Final Answer:} \(\boxed{m^6n^8}\)
+\end{Example}
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Combine exponents only when the bases match.
+  \item Subtract exponents when dividing like bases.
+  \item Multiply exponents when taking a power of a power.
+  \item Distribute exponents across products or quotients, not sums.
+  \item Always check that no bases equal zero when dividing. 
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — UNIT 5, TOPIC 1: LAWS OF EXPONENTS
+% ============================================================
+
+\section*{Practice Questions: Laws of Exponents}
+
+\subsection*{Part A: Core Skills (One-Step Simplifications)}
+\begin{enumerate}
+  \item Simplify \(x^3 \cdot x^4\)
+  \item Simplify \(\dfrac{y^8}{y^3}\)
+  \item Simplify \((a^2)^4\)
+  \item Simplify \((2b)^3\)
+  \item Simplify \(\left(\dfrac{p}{q}\right)^2\)
+\end{enumerate}
+
+\subsection*{Part B: Two-Step Simplifications}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Simplify \((m^2n^3)^2\)
+  \item Simplify \(\dfrac{(x^5)^3}{x^2}\)
+  \item Simplify \(\left(\dfrac{3a^2}{b}\right)^2\)
+  \item Simplify \(4x^2 \cdot (2x^3)^2\)
+  \item Simplify \((r^3s)^2 \cdot s^4\)
+\end{enumerate}
+
+\subsection*{Part C: Multiple Variables and Structure Recognition}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Simplify \(\dfrac{x^6y^3}{x^2y}\)
+  \item Simplify \(\dfrac{(a^3b)^2}{a^2b^4}\)
+  \item Simplify \((x^2y^3)^2 \cdot (x^4y)^3\)
+  \item Simplify \(\dfrac{(2a^2b^3)^2}{(4ab)^3}\)
+  \item Simplify \(\dfrac{(3x^2y^4)^2}{(9xy^2)^2}\)
+\end{enumerate}
+
+\subsection*{Part D: Parentheses, Fractions, and Edge Cases}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Simplify \(\dfrac{(x^2)^3}{x^5}\)
+  \item Simplify \((ab^2)^0\)
+  \item Simplify \((2x^3y^2)^1\)
+  \item Simplify \((a^4b^{-2})^2\) \textit{(introduces negative exponents, preview for next topic)}
+  \item Simplify \(\dfrac{(3x^2)^3}{(3x^4)^2}\)
+\end{enumerate}
+
+\subsection*{Part E: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item The area of a square is \(s^2\). If each side is doubled, write an expression for the new area in terms of \(s\).
+  \item The population of a city doubles every decade. If the current population is \(p\), write an expression for the population after 3 decades.
+  \item The volume of a cube is given by \(V = s^3\). If each side is multiplied by \(k\), express the new volume in terms of \(V\) and \(k\).
+  \item The intensity of light varies inversely with the square of the distance \(d\). If the distance doubles, how does the intensity change?
+  \item The kinetic energy of an object is proportional to the square of its velocity. If the velocity is multiplied by 3, by what factor does the energy change?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 5, TOPIC 1: LAWS OF EXPONENTS
+% ============================================================
+
+\section*{Answer Key and Solutions: Laws of Exponents}
+
+\subsection*{Part A Solutions: Core Skills (One-Step Simplifications)}
+\begin{enumerate}
+  \item \(x^3 \cdot x^4 = x^{3+4} = \boxed{x^7}\)
+  \item \(\dfrac{y^8}{y^3} = y^{8-3} = \boxed{y^5}\)
+  \item \((a^2)^4 = a^{2 \cdot 4} = \boxed{a^8}\)
+  \item \((2b)^3 = 2^3 b^3 = \boxed{8b^3}\)
+  \item \(\left(\dfrac{p}{q}\right)^2 = \dfrac{p^2}{q^2} = \boxed{\dfrac{p^2}{q^2}}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Two-Step Simplifications}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \((m^2 n^3)^2 = m^{2 \cdot 2} n^{3 \cdot 2} = \boxed{m^4 n^6}\)
+  \item \(\dfrac{(x^5)^3}{x^2} = \dfrac{x^{15}}{x^2} = x^{15-2} = \boxed{x^{13}}\)
+  \item \(\left(\dfrac{3a^2}{b}\right)^2 = \dfrac{(3a^2)^2}{b^2} = \dfrac{9a^4}{b^2} = \boxed{\dfrac{9a^4}{b^2}}\)
+  \item \(4x^2 \cdot (2x^3)^2 = 4x^2 \cdot (4x^6) = 16x^8 = \boxed{16x^8}\)
+  \item \((r^3 s)^2 \cdot s^4 = r^{6} s^{2} \cdot s^4 = r^6 s^{2+4} = \boxed{r^6 s^6}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Multiple Variables and Structure Recognition}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(\dfrac{x^6 y^3}{x^2 y} = x^{6-2} y^{3-1} = \boxed{x^4 y^2}\)
+  \item \(\dfrac{(a^3 b)^2}{a^2 b^4} = \dfrac{a^6 b^2}{a^2 b^4} = a^{6-2} b^{2-4} = a^4 b^{-2} = \boxed{\dfrac{a^4}{b^2}}\)
+  \item \((x^2 y^3)^2 \cdot (x^4 y)^3 = (x^4 y^6) \cdot (x^{12} y^3) = x^{4+12} y^{6+3} = \boxed{x^{16} y^9}\)
+  \item \(\dfrac{(2a^2 b^3)^2}{(4ab)^3} = \dfrac{4a^4 b^6}{64a^3 b^3} = \dfrac{1}{16} a^{4-3} b^{6-3} = \boxed{\dfrac{ab^3}{16}}\)
+  \item \(\dfrac{(3x^2 y^4)^2}{(9xy^2)^2} = \dfrac{9x^4 y^8}{81x^2 y^4} = \dfrac{1}{9} x^{4-2} y^{8-4} = \boxed{\dfrac{x^2 y^4}{9}}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Parentheses, Fractions, and Edge Cases}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item \(\dfrac{(x^2)^3}{x^5} = \dfrac{x^6}{x^5} = x^{6-5} = \boxed{x}\)
+  \item \((ab^2)^0 = \boxed{1}\) \quad (any nonzero base to the zero power is 1)
+  \item \((2x^3 y^2)^1 = \boxed{2x^3 y^2}\)
+  \item \((a^4 b^{-2})^2 = a^{8} b^{-4} = \boxed{\dfrac{a^8}{b^4}}\)
+  \item \(\dfrac{(3x^2)^3}{(3x^4)^2} = \dfrac{27x^6}{9x^8} = 3x^{6-8} = 3x^{-2} = \boxed{\dfrac{3}{x^2}}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item Side doubled: new side is \(2s\). New area \(=(2s)^2 = 4s^2 = \boxed{4s^2}\)
+  \item Population doubles every decade. After 3 decades: \(p \cdot 2^3 = \boxed{8p}\)
+  \item Original \(V = s^3\). New side is \(ks\), so new volume \(=(ks)^3 = k^3 s^3 = \boxed{k^3 V}\)
+  \item Intensity \(\propto \dfrac{1}{d^2}\). If distance becomes \(2d\), intensity \(\propto \dfrac{1}{(2d)^2} = \dfrac{1}{4d^2}\). New intensity is \(\boxed{\tfrac{1}{4}\text{ of the original}}\)
+  \item Energy \(\propto v^2\). If velocity becomes \(3v\), energy \(\propto (3v)^2 = 9v^2\). So energy is multiplied by \(\boxed{9}\)
+\end{enumerate}
+
+
+
+
+\end{document}

@@ -1,0 +1,193 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 4: Data, Statistics, and Probability} \\[6pt]
+    \Large \textbf{Topic 6: Understanding Variability and Standard Deviation (Conceptual)}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+\textbf{Variability} measures how spread out data values are. Two data sets can have the same mean but very different variability.
+
+\begin{itemize}
+  \item The \textbf{range} (max–min) is a simple measure of spread.
+  \item The \textbf{standard deviation (SD)} measures the average distance of data points from the mean.
+  \item A small SD means data are close to the mean; a large SD means they are widely spread.
+\end{itemize}
+
+The formula for the population standard deviation is:
+\[
+\sigma = \sqrt{\frac{\sum (x - \mu)^2}{N}}
+\]
+and for a sample:
+\[
+s = \sqrt{\frac{\sum (x - \bar{x})^2}{n-1}}.
+\]
+In this unit, focus on interpreting—not calculating—standard deviation.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Recognize what larger or smaller standard deviation indicates.
+  \item Compare two data sets to decide which has greater spread.
+  \item Understand that adding or multiplying all data values affects the standard deviation:
+  \begin{itemize}
+    \item Adding a constant \(k\) does not change SD.
+    \item Multiplying by \(c\) multiplies SD by \(|c|\).
+  \end{itemize}
+  \item Interpret SD in the context of SAT word problems and graphs.
+\end{itemize}
+
+\section*{Example 1: Comparing Variability}
+
+Set A: \(2, 4, 6, 8, 10\)  
+Set B: \(4, 5, 6, 7, 8\)  
+Both have mean 6, but Set A is more spread out. So Set A has a larger SD.
+
+\section*{Example 2: Effect of Outliers}
+
+Set X: \(5, 6, 7, 8, 9\)  
+Set Y: \(5, 6, 7, 8, 20\)  
+Set Y’s mean is higher and its SD much larger because of the outlier 20.
+
+\section*{Example 3: Graph Interpretation}
+
+\textit{Insert placeholder graph: two bell-shaped curves centered at the same mean; one narrow, one wide.}
+
+The wider curve has greater SD because its values are more spread from the mean.
+
+\section*{Example 4: Scaling and Shifting}
+
+If every test score increases by 5 points, SD is unchanged.  
+If every score doubles, SD doubles.
+
+\section*{Example 5: Real-World Context}
+
+Set A: daily high temperatures (degrees F) over one week in a tropical climate.  
+Set B: daily highs in a northern climate with big changes.  
+Set B has higher SD because of greater temperature variation.
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item SD measures spread, not center.
+  \item Larger SD → more variability.
+  \item Adding constants shifts data, not spread.
+  \item Multiplying constants changes the spread proportionally.
+  \item Outliers increase SD significantly.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — TOPIC 6: UNDERSTANDING VARIABILITY AND STANDARD DEVIATION (CONCEPTUAL)
+% ============================================================
+
+\section*{Practice Questions: Understanding Variability and Standard Deviation}
+
+\subsection*{Part A: Conceptual Understanding}
+\begin{enumerate}
+  \item What does the standard deviation of a data set measure?
+  \item If two data sets have the same mean but different standard deviations, what does that tell you?
+  \item How does adding a constant (like +5) to all values affect the SD?
+  \item How does multiplying all data values by 3 affect the SD?
+  \item What effect does an outlier have on SD?
+\end{enumerate}
+
+\subsection*{Part B: Comparing Data Sets}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Set A: \(1, 3, 5, 7, 9\); Set B: \(4, 5, 6, 5, 6\). Which has the larger SD?
+  \item Set X: \(10, 10, 10, 10, 10\); Set Y: \(8, 9, 10, 11, 12\). Which has greater variability?
+  \item Set P: \(2, 4, 6, 8\); Set Q: \(20, 40, 60, 80\). How does SD of Q compare to SD of P?
+  \item Two classes took the same quiz. Class 1’s scores are tightly grouped around the mean; Class 2’s are spread widely. Which class has a higher SD?
+  \item Which of these is likely to have the smallest SD:  
+  (a) Heights of adult men, (b) Daily temperatures in one city over a week, (c) Scores on a random guessing quiz?
+\end{enumerate}
+
+\subsection*{Part C: Interpreting Graphs and Scenarios}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \textit{Insert placeholder: two bell curves with same mean; Curve A is narrower, Curve B is wider.}  
+  Which has the larger SD, and why?
+  \item A histogram shows that most data values are close to the mean. What does that say about SD?
+  \item Two data sets each have mean 50. One has SD = 2, the other SD = 10. Which is more consistent?
+  \item If the SD of a sample is 0, what does that mean about the data?
+  \item Why does the presence of an extreme value (outlier) increase the SD?
+\end{enumerate}
+
+\subsection*{Part D: Real-World and SAT-Style Problems}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Test A: scores clustered around 75; Test B: scores from 40 to 100. Which test shows more consistency?
+  \item A class’s quiz scores have mean 80, SD 5. Another class’s scores have mean 80, SD 15. Which class’s performance was more consistent?
+  \item The mean weekly income for two towns is the same, but Town A’s SD is higher. What does that imply?
+  \item Two SAT math sections have similar averages, but one has a much larger SD. What does that say about the range of student abilities?
+  \item If all students’ SAT scores increase by 100 points next year, what happens to the SD of scores?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 4, TOPIC 6: UNDERSTANDING VARIABILITY AND STANDARD DEVIATION (CONCEPTUAL)
+% ============================================================
+
+\section*{Answer Key and Solutions: Variability and Standard Deviation}
+
+\subsection*{Part A Solutions: Conceptual Understanding}
+\begin{enumerate}
+  \item SD measures typical distance of data values from the mean; it quantifies spread.
+  \item Same mean, different SD means one set is more spread out than the other.
+  \item Adding a constant shifts all values equally, SD is unchanged.
+  \item Multiplying by 3 scales all distances from the mean by 3, SD triples.
+  \item An outlier increases SD because it adds large squared deviations from the mean.
+\end{enumerate}
+
+\subsection*{Part B Solutions: Comparing Data Sets}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Set A has larger SD. Its values are farther from the mean than B’s clustered values.
+  \item Set Y has greater variability. X has SD 0, Y has positive SD.
+  \item SD of Q is 10 times SD of P, since Q is P multiplied by 10.
+  \item Class 2 has higher SD due to wider spread.
+  \item Smallest SD: heights of adult men. The other contexts vary more from trial to trial.
+\end{enumerate}
+
+\subsection*{Part C Solutions: Interpreting Graphs and Scenarios}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Curve B (wider) has larger SD because values are more dispersed from the mean.
+  \item Most values near the mean implies a small SD.
+  \item The set with SD 2 is more consistent; values cluster tightly around 50.
+  \item SD 0 means all data values are identical.
+  \item Because SD uses squared deviations, a single extreme value contributes a large term, raising SD.
+\end{enumerate}
+
+\subsection*{Part D Solutions: Real-World and SAT-Style}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Test A shows more consistency; scores cluster around 75, so smaller SD.
+  \item The class with SD 5 is more consistent; the class with SD 15 is more variable.
+  \item Higher SD in Town A implies incomes are more spread out around the mean in Town A.
+  \item Larger SD indicates a wider range of abilities or performance on that section.
+  \item Adding the same 100 to all scores shifts the mean up by 100 but leaves SD unchanged.
+\end{enumerate}
+
+
+\end{document}

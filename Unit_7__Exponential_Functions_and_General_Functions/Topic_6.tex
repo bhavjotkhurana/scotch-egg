@@ -1,0 +1,443 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 7: Exponential and General Functions} \\[6pt]
+    \Large \textbf{Topic 6: Transformations — Shifts, Reflections, and Stretches}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+Function transformations describe how the graph of a base function changes when certain values are added, subtracted, or multiplied.  
+The general form of a transformed function is:
+\[
+f(x) \rightarrow a\,f(b(x - h)) + k
+\]
+
+Each parameter affects the graph in a specific way:
+
+\[
+\begin{array}{c|l}
+\text{Parameter} & \text{Effect on Graph} \\ \hline
+h & \text{Horizontal shift: } +h \text{ right, } -h \text{ left} \\
+k & \text{Vertical shift: } +k \text{ up, } -k \text{ down} \\
+a & \text{Vertical stretch/shrink: } |a|>1 \text{ stretches, } |a|<1 \text{ shrinks} \\
+a<0 & \text{Reflection over the } x\text{-axis} \\
+b & \text{Horizontal stretch/shrink or reflection if negative}
+\end{array}
+\]
+
+SAT questions often present transformations in function notation, e.g. \\
+“If \(g(x) = f(x - 3) + 2\), how does the graph of \(f\) move?”
+
+(Insert graph notes: show one original \(f(x)\), one shifted right and up, and one reflected across the x-axis.)
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Identify transformations from function equations.
+  \item Describe shifts, reflections, and stretches verbally or graphically.
+  \item Write new function equations after a given transformation.
+  \item Match equations to transformed graphs.
+  \item Understand the difference between horizontal and vertical changes.
+\end{itemize}
+
+\section*{Example 1: Horizontal and Vertical Shifts}
+
+Let \(f(x) = x^2.\)
+
+\[
+g(x) = f(x - 2) + 3 = (x - 2)^2 + 3
+\]
+
+This means the parabola moves **right 2 units** and **up 3 units.**
+
+\textbf{New vertex:} from \((0,0)\) to \((2,3)\).
+
+(Insert graph note: original \(x^2\), shifted right and up.)
+
+\section*{Example 2: Reflection}
+
+\[
+f(x) = x^2 \quad \Rightarrow \quad g(x) = -f(x) = -x^2
+\]
+
+The negative sign reflects the graph across the **x-axis** — opening downward.
+
+\section*{Example 3: Vertical Stretch}
+
+\[
+f(x) = x^2, \quad g(x) = 3f(x) = 3x^2
+\]
+
+The graph is \textbf{stretched vertically} by a factor of 3 — it becomes narrower.
+
+\section*{Example 4: Horizontal Stretch}
+
+\[
+f(x) = x^2, \quad g(x) = f\left(\frac{x}{2}\right) = \left(\frac{x}{2}\right)^2 = \frac{1}{4}x^2
+\]
+
+The graph is stretched horizontally by a factor of 2 — points move farther from the y-axis.
+
+\section*{Example 5: Combined Transformation}
+
+If \(f(x) = |x|\), find and describe:
+\[
+g(x) = -2f(x + 1) + 3 = -2|x + 1| + 3
+\]
+
+Transformations:
+\begin{itemize}
+  \item Shift left 1 (inside \(x + 1\))
+  \item Reflect across x-axis (negative sign)
+  \item Vertical stretch by 2
+  \item Shift up 3
+\end{itemize}
+
+(Insert graph note: base V-shape, moved left, flipped, stretched, raised.)
+
+\section*{Example 6: SAT Context Example}
+
+If \(f(x)\) represents the height of a ball over time,  
+then \(f(x - 2)\) represents the same motion **2 seconds later**,  
+and \(f(x) + 3\) means the ball starts **3 meters higher.**
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item \(f(x - h)\) shifts right, \(f(x + h)\) shifts left.
+  \item \(f(x) + k\) moves up, \(f(x) - k\) moves down.
+  \item Multiply by \(a\) to stretch/shrink vertically; negative \(a\) reflects.
+  \item Multiply inside argument by \(b\) to stretch/shrink horizontally; negative \(b\) reflects over y-axis.
+  \item Combine multiple transformations carefully, applying inside changes first.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — UNIT 7, TOPIC 6: TRANSFORMATIONS — SHIFTS, REFLECTIONS, AND STRETCHES
+% ============================================================
+
+\section*{Practice Questions: Transformations — Shifts, Reflections, and Stretches}
+
+\subsection*{Part A: Identifying Shifts}
+\begin{enumerate}
+  \item If \(f(x) = x^2,\) describe the transformation to get \(g(x) = f(x - 4).\)
+  \item If \(f(x) = |x|,\) describe the transformation for \(g(x) = f(x + 3).\)
+  \item Given \(f(x) = x^3,\) write the equation for a function shifted up 5 units.
+  \item Write the equation of a function shifted down 2 units if \(f(x) = \sqrt{x}.\)
+  \item Describe how the graph of \(g(x) = f(x - 1) - 6\) compares to \(f(x).\)
+\end{enumerate}
+
+\subsection*{Part B: Reflections and Vertical Changes}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item If \(f(x) = x^2,\) describe the transformation for \(g(x) = -f(x).\)
+  \item If \(f(x) = |x|,\) describe \(g(x) = -f(x) + 4.\)
+  \item Write the equation of the reflection of \(f(x) = x^3\) over the x-axis.
+  \item Write the equation for a vertical stretch by 3 of \(f(x) = x^2.\)
+  \item Write the equation for a vertical shrink by ½ of \(f(x) = |x|.\)
+\end{enumerate}
+
+\subsection*{Part C: Horizontal Stretches and Reflections}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Describe the transformation for \(g(x) = f(2x)\).
+  \item Describe the transformation for \(g(x) = f\left(\frac{x}{3}\right)\).
+  \item If \(f(x) = x^2,\) what does \(g(x) = f(-x)\) do to the graph?
+  \item If \(f(x) = \sqrt{x},\) what is the effect of \(g(x) = f(-x)\)?
+  \item Given \(f(x) = |x|,\) describe the transformation for \(g(x) = f(-x + 2)\).
+\end{enumerate}
+
+\subsection*{Part D: Combined Transformations}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Describe all transformations for \(g(x) = -f(x - 2) + 1.\)
+  \item Write the equation for a function that reflects \(f(x) = x^2\) over the x-axis and shifts right 3 units.
+  \item Write the equation for \(f(x) = |x|\) shifted left 2 and up 5.
+  \item Describe the transformations for \(g(x) = 3f(-x + 1) - 4.\)
+  \item If \(f(x) = \sqrt{x},\) write \(g(x)\) that reflects over x-axis, shifts right 2, up 1.
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+(Insert graph notes later: show original parabola and transformed versions.)
+
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item The graph of \(y = f(x)\) is shown with vertex at \((0,0)\).  
+  The vertex of \(y = f(x - 5) + 2\) is where?
+  \item A parabola \(y = f(x)\) opens upward.  
+  What happens to its graph for \(y = -f(x) + 3\)?
+  \item The graph of \(f(x)\) passes through \((2, 4)\).  
+  What point will be on \(g(x) = f(x - 3) + 1\)?
+  \item If \(f(x)\) models height over time, what does \(f(x - 2)\) represent physically?
+  \item The graph of \(y = 2f(x + 1) - 4\) can be obtained from \(f(x)\) by what sequence of transformations?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 7, TOPIC 6: TRANSFORMATIONS — SHIFTS, REFLECTIONS, AND STRETCHES
+% ============================================================
+
+\section*{Answer Key and Solutions: Transformations — Shifts, Reflections, and Stretches}
+
+\subsection*{Part A Solutions: Identifying Shifts}
+\begin{enumerate}
+  \item \(f(x) = x^2,\; g(x) = f(x - 4) = (x - 4)^2\)
+
+  \(x - 4\) means shift the graph \textbf{right 4 units}.
+
+  \(\boxed{\text{Right 4}}\)
+
+  \item \(f(x) = |x|,\; g(x) = f(x + 3) = |x + 3|\)
+
+  \(x + 3\) means shift the graph \textbf{left 3 units}.
+
+  \(\boxed{\text{Left 3}}\)
+
+  \item \(f(x) = x^3\). Shift up 5 units:
+
+  Add 5 outside:
+  \[
+  g(x) = f(x) + 5 = x^3 + 5.
+  \]
+
+  \(\boxed{g(x) = x^3 + 5}\)
+
+  \item \(f(x) = \sqrt{x}\). Shift down 2 units:
+
+  Subtract 2 outside:
+  \[
+  g(x) = f(x) - 2 = \sqrt{x} - 2.
+  \]
+
+  \(\boxed{g(x) = \sqrt{x} - 2}\)
+
+  \item \(g(x) = f(x - 1) - 6\)
+
+  \(x - 1\): shift \textbf{right 1}.  
+  \(-6\): shift \textbf{down 6}.
+
+  \(\boxed{\text{Right 1, down 6}}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Reflections and Vertical Changes}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(f(x) = x^2,\; g(x) = -f(x) = -x^2\)
+
+  The negative sign reflects across the \textbf{x-axis}. Parabola now opens down.
+
+  \(\boxed{\text{Reflection over x-axis}}\)
+
+  \item \(f(x) = |x|,\; g(x) = -f(x) + 4 = -|x| + 4\)
+
+  Steps:
+  \begin{itemize}
+    \item \(-|x|\): reflect over x-axis.
+    \item \(+4\): shift up 4.
+  \end{itemize}
+
+  \(\boxed{\text{Reflect over x-axis, then up 4}}\)
+
+  \item Reflection of \(f(x) = x^3\) over x-axis:
+
+  Multiply by \(-1\):
+  \[
+  g(x) = -x^3.
+  \]
+
+  \(\boxed{g(x) = -x^3}\)
+
+  \item Vertical stretch by 3 of \(f(x) = x^2\):
+
+  Multiply output by 3:
+  \[
+  g(x) = 3x^2.
+  \]
+
+  \(\boxed{g(x) = 3x^2}\)
+
+  \item Vertical shrink by \(1/2\) of \(f(x) = |x|\):
+
+  Multiply output by \(1/2\):
+  \[
+  g(x) = \frac{1}{2}|x|.
+  \]
+
+  \(\boxed{g(x) = \tfrac{1}{2}|x|}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Horizontal Stretches and Reflections}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(g(x) = f(2x)\)
+
+  Replacing \(x\) with \(2x\) \textbf{compresses horizontally} by factor 2. Points move closer to the y-axis.
+
+  \(\boxed{\text{Horizontal shrink by factor 2}}\)
+
+  \item \(g(x) = f\left(\frac{x}{3}\right)\)
+
+  Replacing \(x\) with \(x/3\) \textbf{stretches horizontally} by factor 3. Points move farther from the y-axis.
+
+  \(\boxed{\text{Horizontal stretch by factor 3}}\)
+
+  \item \(f(x) = x^2,\; g(x) = f(-x) = (-x)^2 = x^2\)
+
+  For \(x^2\), reflecting over the y-axis gives the same graph (it is symmetric). No visible change.
+
+  \(\boxed{\text{Reflection over y-axis, but looks the same}}\)
+
+  \item \(f(x) = \sqrt{x},\; g(x) = f(-x) = \sqrt{-x}\)
+
+  \(\sqrt{-x}\) is only defined when \(-x \ge 0 \Rightarrow x \le 0.\)  
+  This is a reflection of the right-hand square root across the \textbf{y-axis} into the negative \(x\) side.
+
+  \(\boxed{\text{Reflect over y-axis, keeps only } x \le 0}\)
+
+  \item \(f(x) = |x|,\; g(x) = f(-x + 2) = |-x + 2|\)
+
+  Inside transformation: \(-x + 2 = -(x - 2)\).  
+  This is a reflection across the y-axis (because of the negative on \(x\)) and then a shift right 2.
+
+  In words:
+  \[
+  \text{Reflect over y-axis, then shift right 2.}
+  \]
+
+  \(\boxed{\text{Reflect over y-axis, then right 2}}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Combined Transformations}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item \(g(x) = -f(x - 2) + 1\)
+
+  \begin{itemize}
+    \item \(x - 2\): shift right 2.
+    \item Negative sign in front: reflect over x-axis.
+    \item \(+1\): shift up 1.
+  \end{itemize}
+
+  \(\boxed{\text{Right 2, reflect over x-axis, up 1}}\)
+
+  \item Reflect \(f(x) = x^2\) over x-axis and shift right 3.
+
+  Reflection over x-axis: \(-x^2.\)  
+  Shift right 3: replace \(x\) with \(x - 3\).
+
+  \[
+  g(x) = -(x - 3)^2.
+  \]
+
+  \(\boxed{g(x) = -(x - 3)^2}\)
+
+  \item \(f(x) = |x|\). Shift left 2 and up 5.
+
+  Left 2: \(|x + 2|\).  
+  Up 5: add 5.
+
+  \[
+  g(x) = |x + 2| + 5.
+  \]
+
+  \(\boxed{g(x) = |x + 2| + 5}\)
+
+  \item \(g(x) = 3f(-x + 1) - 4\)
+
+  Read inside-out:
+  \begin{itemize}
+    \item \(-x + 1 = -(x - 1)\): reflect over y-axis, then shift right 1.
+    \item \(3f(\cdot)\): vertical stretch by factor 3.
+    \item \(-4\): shift down 4.
+  \end{itemize}
+
+  \(\boxed{\text{Reflect over y-axis, shift right 1, vertical stretch by 3, down 4}}\)
+
+  \item \(f(x) = \sqrt{x}\). We want: reflect over x-axis, shift right 2, up 1.
+
+  Start with \(f(x) = \sqrt{x}\).
+
+  Shift right 2: replace \(x\) with \(x - 2\):
+  \[
+  \sqrt{x - 2}.
+  \]
+
+  Reflect over x-axis: multiply by \(-1\):
+  \[
+  -\sqrt{x - 2}.
+  \]
+
+  Shift up 1: add 1:
+  \[
+  g(x) = -\sqrt{x - 2} + 1.
+  \]
+
+  \(\boxed{g(x) = -\sqrt{x - 2} + 1}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item Original vertex at \((0,0)\). For \(f(x - 5) + 2\):
+
+  \(x - 5\) shifts right 5. \(+2\) shifts up 2.
+
+  New vertex: \(\boxed{(5, 2)}\)
+
+  \item \(y = -f(x) + 3\)
+
+  \(-f(x)\): reflect over x-axis.  
+  \(+3\): shift up 3.
+
+  The parabola will now open downward and be moved up 3.
+
+  \(\boxed{\text{Reflected over x-axis, then shifted up 3}}\)
+
+  \item If \((2,4)\) is on \(f(x)\), then for \(g(x) = f(x - 3) + 1\):
+
+  We need \(x - 3 = 2 \Rightarrow x = 5.\)  
+  Output becomes \(4 + 1 = 5.\)
+
+  So the point moves to \((5,5)\).
+
+  \(\boxed{(5, 5)}\)
+
+  \item \(f(x - 2)\) means the same motion happens 2 units later in \(x\).  
+  In time language: the event is delayed by 2 units of time.
+
+  \(\boxed{\text{The same behavior, but starting 2 seconds later}}\)
+
+  \item \(y = 2f(x + 1) - 4\)
+
+  Step by step:
+  \begin{itemize}
+    \item \(x + 1\): shift left 1.
+    \item Multiply by 2: vertical stretch by factor 2.
+    \item \(-4\): shift down 4.
+  \end{itemize}
+
+  \(\boxed{\text{Left 1, vertical stretch by 2, down 4}}\)
+\end{enumerate}
+
+
+
+\end{document}

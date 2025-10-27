@@ -1,0 +1,227 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 4: Data, Statistics, and Probability} \\[6pt]
+    \Large \textbf{Topic 7: Interpreting Trend Lines and Regression (Conceptual)}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+A \textbf{trend line} (or line of best fit) shows the general direction of data in a scatterplot.  
+It helps predict values and understand the relationship between two variables.
+
+\begin{itemize}
+  \item \textbf{Positive correlation:} as one variable increases, the other tends to increase.
+  \item \textbf{Negative correlation:} as one variable increases, the other tends to decrease.
+  \item \textbf{No correlation:} points show no clear pattern.
+\end{itemize}
+
+A line of best fit is often written as:
+\[
+\hat{y} = mx + b
+\]
+where \(m\) is the slope (rate of change) and \(b\) is the \(y\)-intercept (predicted \(y\) when \(x=0\)).
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Identify direction (positive, negative, none) of correlation.
+  \item Interpret slope and intercept in real-world context.
+  \item Use the line to make predictions or estimates.
+  \item Recognize that correlation does not imply causation.
+\end{itemize}
+
+\section*{Example 1: Positive Correlation}
+
+\textit{Insert placeholder: scatterplot showing upward trend between hours studied and test score.}  
+As study hours increase, scores increase.  
+The trend line shows a positive slope.
+
+\section*{Example 2: Negative Correlation}
+
+\textit{Insert placeholder: scatterplot showing downward trend between absences and GPA.}  
+As absences increase, GPA decreases.  
+Negative slope, negative correlation.
+
+\section*{Example 3: No Correlation}
+
+\textit{Insert placeholder: random scatter with no clear pattern.}  
+No consistent relationship between the two variables.
+
+\section*{Example 4: Interpreting the Equation of a Trend Line}
+
+For the trend line \(\hat{y} = 5x + 60\):  
+\begin{itemize}
+  \item \(m = 5\): each additional study hour increases score by about 5 points.  
+  \item \(b = 60\): if 0 hours studied, predicted score is 60.
+\end{itemize}
+
+\section*{Example 5: Making Predictions}
+
+If \(x = 4\) hours, predicted score \(= 5(4)+60=80\).
+
+\section*{Example 6: Correlation Coefficient \(r\) (Conceptual)}
+
+The correlation coefficient \(r\) measures strength and direction of a linear relationship:  
+\[
+-1 \le r \le 1
+\]
+\begin{itemize}
+  \item \(r \approx 1\): strong positive correlation  
+  \item \(r \approx -1\): strong negative correlation  
+  \item \(r \approx 0\): little or no linear relationship
+\end{itemize}
+
+\section*{Example 7: Causation Reminder}
+
+Even with strong correlation, one variable may not cause the other.  
+Example: Ice cream sales and drownings both rise in summer—correlated due to a third factor (temperature).
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Trend lines describe relationships and allow prediction.
+  \item The slope shows rate of change; the intercept gives baseline prediction.
+  \item \(r\) measures strength of linear correlation.
+  \item Correlation $\neq$ causation; always interpret context carefully.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — TOPIC 7: INTERPRETING TREND LINES AND REGRESSION (CONCEPTUAL)
+% ============================================================
+
+\section*{Practice Questions: Interpreting Trend Lines and Regression}
+
+\subsection*{Part A: Understanding Correlation}
+\begin{enumerate}
+  \item What does a positive correlation between two variables mean?
+  \item What does a negative correlation mean?
+  \item What does it mean if there is no correlation?
+  \item Can two variables be strongly correlated without one causing the other? Explain.
+  \item Which value of \(r\) shows the strongest relationship: 0.2, -0.7, or 0.9?
+\end{enumerate}
+
+\subsection*{Part B: Interpreting Scatterplots}
+\textit{For each question, imagine a scatterplot (insert placeholder where needed).}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \textit{Insert placeholder: scatterplot sloping upward.}  
+  What type of correlation is shown?
+  \item \textit{Insert placeholder: scatterplot sloping downward.}  
+  What type of correlation is shown?
+  \item \textit{Insert placeholder: random scatter of points.}  
+  What type of correlation is shown?
+  \item Which scatterplot would have the correlation coefficient \(r = -0.95\)?
+  \item Which scatterplot would have \(r = 0\)?
+\end{enumerate}
+
+\subsection*{Part C: Interpreting Equations of Trend Lines}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item The trend line is \(\hat{y} = 4x + 20\). Interpret the slope.
+  \item Interpret the intercept in that same line.
+  \item If \(x = 5\), predict \(\hat{y}\).
+  \item The line \(\hat{y} = -2x + 100\) models GPA vs. absences. What does the slope mean here?
+  \item For \(\hat{y} = 6x + 50\), what happens to \(y\) when \(x\) increases by 3?
+\end{enumerate}
+
+\subsection*{Part D: Correlation Coefficient and Strength}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Which of the following shows the weakest linear relationship: \(r = 0.1, r = -0.3, r = 0.8\)?
+  \item If \(r = -1\), what does that tell you about the data?
+  \item If \(r = 0\), what does that tell you?
+  \item Which of the following is most likely for the relationship between height and weight: \(r = 0.8\), \(r = -0.5\), \(r = 0\)?
+  \item Which is more strongly correlated: \(r = 0.6\) or \(r = -0.9\)?
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A trend line for the relationship between hours studied (\(x\)) and test score (\(y\)) is \(\hat{y} = 10x + 50\). Predict the score for a student who studies 4 hours.
+  \item A regression line \(\hat{y} = -3x + 90\) represents the relationship between number of absences and test score. Interpret the slope.
+  \item Two scatterplots have \(r = 0.9\) and \(r = -0.9\). How do the relationships differ?
+  \item Which situation is likely to have a negative correlation?  
+  (a) Hours of sleep vs. alertness  
+  (b) Distance driven vs. gas left  
+  (c) Hours studied vs. test score
+  \item Why does a strong correlation not always mean one variable causes the other?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 4, TOPIC 7: INTERPRETING TREND LINES AND REGRESSION (CONCEPTUAL)
+% ============================================================
+
+\section*{Answer Key and Solutions: Trend Lines and Regression}
+
+\subsection*{Part A Solutions: Understanding Correlation}
+\begin{enumerate}
+  \item As \(x\) increases, \(y\) tends to increase.
+  \item As \(x\) increases, \(y\) tends to decrease.
+  \item No consistent linear relationship between \(x\) and \(y\).
+  \item Yes. A third variable can drive both or it can be coincidence. Correlation does not imply causation.
+  \item \(0.9\) is strongest in magnitude.
+\end{enumerate}
+
+\subsection*{Part B Solutions: Interpreting Scatterplots}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Positive correlation.
+  \item Negative correlation.
+  \item No correlation.
+  \item The strong downward plot.
+  \item The random scatter plot.
+\end{enumerate}
+
+\subsection*{Part C Solutions: Interpreting Equations}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Slope 4 means each 1 unit increase in \(x\) raises predicted \(y\) by 4.
+  \item Intercept 20 means when \(x=0\), predicted \(y=20\).
+  \item \(\hat{y}=4(5)+20=40\).
+  \item Each additional absence decreases predicted GPA by 2 points.
+  \item Increase in \(x\) by 3 raises \(y\) by \(6\cdot3=18\).
+\end{enumerate}
+
+\subsection*{Part D Solutions: \(r\) and Strength}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item \(r=0.1\) is weakest by magnitude.
+  \item Perfect negative linear relationship. All points on a line with negative slope.
+  \item No linear association.
+  \item \(r=0.8\) is most plausible. Height and weight are positively related.
+  \item \(|-0.9|>|0.6|\) so \(r=-0.9\) is stronger.
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item \(\hat{y}=10(4)+50=90\).
+  \item Each additional absence lowers predicted score by 3 points.
+  \item Both are strong. \(0.9\) is strong positive, \(-0.9\) is strong negative.
+  \item \(\boxed{\text{b}}\) Distance driven vs gas left.
+  \item There may be lurking variables or coincidence. Direction and strength do not establish cause.
+\end{enumerate}
+
+
+\end{document}

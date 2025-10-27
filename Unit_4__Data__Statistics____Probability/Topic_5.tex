@@ -1,0 +1,255 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 4: Data, Statistics, and Probability} \\[6pt]
+    \Large \textbf{Topic 5: Conditional Probability}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+\textbf{Conditional probability} measures the chance of an event given that another event has occurred.  
+\[
+P(A\mid B)=\frac{P(A\cap B)}{P(B)},\quad \text{provided } P(B)>0.
+\]
+
+Key relationships:
+\begin{itemize}
+  \item \textbf{Multiplication rule:} \(P(A\cap B)=P(A\mid B)\,P(B)=P(B\mid A)\,P(A)\).
+  \item \textbf{Independence:} \(A\) and \(B\) are independent if \(P(A\mid B)=P(A)\) which is equivalent to \(P(A\cap B)=P(A)P(B)\).
+  \item \textbf{Law of Total Probability:} If \(B_1,\dots,B_k\) partition the sample space, then \(P(A)=\sum_i P(A\mid B_i)P(B_i)\).
+\end{itemize}
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Translate word statements into \(P(\cdot)\) notation with the correct condition.
+  \item Use two way tables to compute conditional probabilities by dividing the appropriate cell by the given row or column total.
+  \item Use tree diagrams with branch probabilities to track multi step processes.
+  \item Test independence by checking \(P(A\mid B)=P(A)\) or \(P(A\cap B)=P(A)P(B)\).
+\end{itemize}
+
+\section*{Example 1: From a Two Way Table}
+
+A survey records whether students prefer tea or coffee and whether they are juniors or seniors.
+
+\[
+\begin{array}{c|ccc}
+ & \text{Tea} & \text{Coffee} & \text{Total}\\ \hline
+\text{Junior} & 24 & 16 & 40\\
+\text{Senior} & 21 & 39 & 60\\ \hline
+\text{Total} & 45 & 55 & 100
+\end{array}
+\]
+
+(a) \(P(\text{Tea}\mid \text{Senior})=\dfrac{21}{60}=\dfrac{7}{20}\).  
+(b) \(P(\text{Senior}\mid \text{Coffee})=\dfrac{39}{55}\).  
+(c) \(P(\text{Tea and Junior})=\dfrac{24}{100}=0.24\).
+
+\section*{Example 2: Independence Check}
+
+Using the table above, \(P(\text{Tea})=45/100=0.45\).  
+\(P(\text{Tea}\mid \text{Senior})=21/60=0.35 \ne 0.45\).  
+Not equal, so Tea preference and Senior status are not independent.
+
+\section*{Example 3: Tree Diagram for a Multi Step Process}
+\textit{Insert a small two level tree diagram here: first branch is rain vs no rain with probabilities 0.3 and 0.7. From each, a branch for traffic jam with conditional probabilities 0.5 if rain and 0.2 if no rain.}
+
+Compute \(P(\text{Jam})\):  
+\[
+P(\text{Jam})=P(\text{Jam}\mid \text{Rain})P(\text{Rain})+P(\text{Jam}\mid \text{NoRain})P(\text{NoRain})
+=0.5(0.3)+0.2(0.7)=0.15+0.14=0.29.
+\]
+
+\section*{Example 4: Using the Multiplication Rule}
+
+A bag has 5 red and 7 blue marbles. Draw 2 without replacement.  
+\[
+P(\text{both red})=P(\text{R}_1)\,P(\text{R}_2\mid \text{R}_1)=\frac{5}{12}\cdot\frac{4}{11}=\frac{20}{132}=\frac{5}{33}.
+\]
+
+\section*{Example 5: Bayes Type Update}
+
+A test is positive with probability 0.9 if a person has a condition and 0.1 if not. Prevalence is 5\%.  
+\[
+P(\text{Has}\mid +)=\frac{0.9\cdot0.05}{0.9\cdot0.05+0.1\cdot0.95}
+=\frac{0.045}{0.045+0.095}=\frac{0.045}{0.14}\approx 0.321.
+\]
+Interpretation: despite a high true positive rate, the low prevalence means a positive result is only about 32.1\% likely to indicate the condition.
+
+\section*{Example 6: SAT Style Card Context}
+
+From a standard deck, one card is drawn and observed to be a face card. What is the probability it is a heart?  
+There are 12 face cards total and 3 are hearts.  
+\[
+P(\text{Heart}\mid \text{Face})=\frac{3}{12}=\frac{1}{4}.
+\]
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Read \(P(A\mid B)\) as “probability of \(A\) within the world where \(B\) is known to have occurred.”
+  \item For tables, divide the intersection cell by the given condition total.
+  \item For sequential processes, multiply along branches and add across paths.
+  \item Independence means conditioning does not change the probability.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — TOPIC 5: CONDITIONAL PROBABILITY
+% ============================================================
+
+\section*{Practice Questions: Conditional Probability}
+
+\subsection*{Part A: Understanding Conditional Probability}
+\begin{enumerate}
+  \item Define \(P(A\mid B)\) in words.
+  \item In a class, 60\% of students play sports and 40\% do not. Of those who play sports, 70\% have a GPA above 3.0. Find \(P(\text{GPA}>3.0\mid \text{Sports})\).
+  \item A bag contains 4 red and 6 blue marbles. One marble is drawn at random. If a blue marble is drawn, what is \(P(\text{Blue})\)?
+  \item A coin is flipped twice. Find \(P(\text{2nd flip is heads}\mid \text{1st flip is heads})\).
+  \item A box contains 3 green and 2 yellow balls. If one ball is drawn without replacement and is green, find \(P(\text{next ball is green}\mid \text{first green})\).
+\end{enumerate}
+
+\subsection*{Part B: Two-Way Table Problems}
+\textit{Use the following table for Questions 6–10.}
+
+\[
+\begin{array}{c|ccc}
+ & \text{Male} & \text{Female} & \text{Total} \\ \hline
+\text{Left-handed} & 8 & 12 & 20\\
+\text{Right-handed} & 32 & 48 & 80\\ \hline
+\text{Total} & 40 & 60 & 100
+\end{array}
+\]
+
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Find \(P(\text{Left-handed})\).
+  \item Find \(P(\text{Left-handed}\mid \text{Female})\).
+  \item Find \(P(\text{Female}\mid \text{Left-handed})\).
+  \item Find \(P(\text{Right-handed and Male})\).
+  \item Are gender and handedness independent? Explain using probabilities.
+\end{enumerate}
+
+\subsection*{Part C: Tree Diagram Problems}
+\textit{Use this description: A machine produces 90\% good items and 10\% defective. A test identifies 95\% of good items as “pass” and 80\% of defective items as “fail.”}
+
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Draw a tree diagram to represent the situation. (Insert placeholder: "Tree diagram showing good/defective → pass/fail branches.")
+  \item Find \(P(\text{Pass})\).
+  \item Find \(P(\text{Good}\mid \text{Pass})\).
+  \item Find \(P(\text{Defective}\mid \text{Fail})\).
+  \item Is a failed test more likely to be defective or good? Support with probabilities.
+\end{enumerate}
+
+\subsection*{Part D: Word Problems}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item In a city, 30\% of people own dogs, and 60\% of dog owners own cats. Find \(P(\text{Owns cat}\mid \text{Owns dog})\).
+  \item A card is drawn from a deck. Given that it’s a red card, what is \(P(\text{Heart})\)?
+  \item A student passes math with probability 0.8, and passes English with probability 0.7. If the events are independent, what is \(P(\text{Pass both})\)?
+  \item A student passes English with probability 0.7. If 90\% of math passers also pass English, find \(P(\text{English}\mid \text{Math pass})\).
+  \item 10\% of light bulbs are defective. If 95\% of non-defective bulbs and 60\% of defective bulbs pass inspection, find \(P(\text{Defective}\mid \text{Pass})\).
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A student answers a question correctly 80\% of the time when they study, and 30\% of the time when they do not. If they study 70\% of the time, what is \(P(\text{Correct})\)?
+  \item From a deck, given that a card is a face card, what is \(P(\text{Spade})\)?
+  \item A box has 4 red and 6 blue balls. One is drawn, not replaced, and another drawn. Find \(P(\text{2nd red}\mid \text{1st red})\).
+  \item If \(P(A)=0.4\), \(P(B)=0.5\), and \(P(A\cap B)=0.2\), find \(P(A\mid B)\).
+  \item A test for a disease is 95\% accurate, and 2\% of the population has the disease. Find \(P(\text{Disease}\mid \text{Positive})\).
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 4, TOPIC 5: CONDITIONAL PROBABILITY
+% ============================================================
+
+\section*{Answer Key and Solutions: Conditional Probability}
+
+\subsection*{Part A Solutions: Understanding Conditional Probability}
+\begin{enumerate}
+  \item \(P(A\mid B)\): the probability that \(A\) occurs given that \(B\) is known to have occurred.
+  \item \(P(\text{GPA}>3.0\mid \text{Sports})=\boxed{0.70}\).
+  \item Given the draw is blue, \(P(\text{Blue})=\boxed{1}\).
+  \item Coin flips are independent: \(P(\text{2nd H}\mid \text{1st H})=\boxed{\tfrac{1}{2}}\).
+  \item After first green: remaining \(=2\) green out of \(4\) total \(\Rightarrow \boxed{\tfrac{1}{2}}\).
+\end{enumerate}
+
+\subsection*{Part B Solutions: Two-Way Table}
+\[
+\begin{array}{c|ccc}
+ & \text{Male} & \text{Female} & \text{Total} \\ \hline
+\text{Left} & 8 & 12 & 20\\
+\text{Right} & 32 & 48 & 80\\ \hline
+\text{Total} & 40 & 60 & 100
+\end{array}
+\]
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(P(\text{Left})=20/100=\boxed{0.20}\).
+  \item \(P(\text{Left}\mid \text{Female})=12/60=\boxed{0.20}\).
+  \item \(P(\text{Female}\mid \text{Left})=12/20=\boxed{0.60}\).
+  \item \(P(\text{Right and Male})=32/100=\boxed{0.32}\).
+  \item Check independence: \(P(\text{Left})=0.20\), \(P(\text{Left}\mid \text{Female})=0.20\), \(P(\text{Left}\mid \text{Male})=8/40=0.20\). Equal, so \(\boxed{\text{independent}}\).
+\end{enumerate}
+
+\subsection*{Part C Solutions: Tree Diagram Setting}
+Given: \(P(G)=0.9,\ P(D)=0.1\), \(P(\text{Pass}\mid G)=0.95\), \(P(\text{Fail}\mid D)=0.80\Rightarrow P(\text{Pass}\mid D)=0.20\).
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Tree description provided in the question prompt.
+  \item \(P(\text{Pass})=0.95(0.9)+0.20(0.1)=0.855+0.02=\boxed{0.875}\).
+  \item \(P(G\mid \text{Pass})=\dfrac{0.95\cdot0.9}{0.875}=\dfrac{0.855}{0.875}\approx\boxed{0.977}\).
+  \item \(P(D\mid \text{Fail})=\dfrac{0.80\cdot0.10}{0.05\cdot0.90+0.80\cdot0.10}=\dfrac{0.08}{0.125}=\boxed{0.64}\).
+  \item A fail is more likely defective: \(P(D\mid \text{Fail})=0.64 > P(G\mid \text{Fail})=0.36\). \(\boxed{\text{Defective}}\).
+\end{enumerate}
+
+\subsection*{Part D Solutions: Word Problems}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item \(P(\text{Cat}\mid \text{Dog})=\boxed{0.60}\).
+  \item Given red, hearts among red cards \(=13/26=\boxed{\tfrac{1}{2}}\).
+  \item Independent: \(0.8\cdot0.7=\boxed{0.56}\).
+  \item Given: \(P(\text{English}\mid \text{Math})=\boxed{0.90}\).
+  \item \(P(\text{Def}\mid \text{Pass})=\dfrac{0.10\cdot0.60}{0.10\cdot0.60+0.90\cdot0.95}
+  =\dfrac{0.06}{0.915}\approx\boxed{0.0656}\ (\text{about }6.6\%)\).
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item \(P(\text{Correct})=0.8(0.7)+0.3(0.3)=0.56+0.09=\boxed{0.65}\).
+  \item Face cards total \(=12\). Spade faces \(=3\Rightarrow 3/12=\boxed{\tfrac{1}{4}}\).
+  \item After first red, remaining red \(=3\) of \(9\Rightarrow \boxed{\tfrac{1}{3}}\).
+  \item \(P(A\mid B)=\dfrac{P(A\cap B)}{P(B)}=\dfrac{0.2}{0.5}=\boxed{0.4}\).
+  \item Assume 95\% sensitivity and 95\% specificity. Then
+  \[
+  P(D\mid +)=\frac{0.95\cdot0.02}{0.95\cdot0.02+0.05\cdot0.98}
+  =\frac{0.019}{0.068}\approx\boxed{0.279}\ (\text{about }27.9\%).
+  \]
+\end{enumerate}
+
+
+
+\end{document}

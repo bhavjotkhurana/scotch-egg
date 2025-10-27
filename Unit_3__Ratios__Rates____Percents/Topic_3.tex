@@ -1,0 +1,230 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 3: Ratios, Rates, and Percents} \\[6pt]
+    \Large \textbf{Topic 3: Percent Increase, Percent Decrease, and Percent Error}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+Percent compares a change to an original amount.  
+\[
+\text{percent change}=\frac{\text{new} - \text{original}}{\text{original}}\times 100\%
+\]
+If the result is positive it is a percent increase. If negative it is a percent decrease.
+
+Forward change models:
+\[
+\text{increase by }p\%:\ \ \text{new}=(1+p)\cdot \text{original}
+\]
+\[
+\text{decrease by }p\%:\ \ \text{new}=(1-p)\cdot \text{original}
+\]
+Here \(p\) is written as a decimal. For example 12\% means \(p=0.12\).
+
+Reverse change models (find the original):
+\[
+\text{original}=\frac{\text{new}}{1+p}\quad \text{after an increase}
+\qquad
+\text{original}=\frac{\text{new}}{1-p}\quad \text{after a decrease}
+\]
+
+Percent error measures accuracy of an approximation.
+\[
+\text{percent error}=\frac{|\text{approx} - \text{actual}|}{\text{actual}}\times 100\%
+\]
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Translate words to the correct formula and identify the original amount.
+  \item Convert percent to decimal before multiplying.
+  \item Use growth factor \(1\pm p\) for one step changes.
+  \item For reverse problems, divide by the factor \(1\pm p\).
+  \item Distinguish percent of a number from percentage points.
+\end{itemize}
+
+\section*{Example 1: Percent Increase}
+
+A jacket price rises from \$60 to \$75.  
+\[
+\frac{75-60}{60}\times 100\%=\frac{15}{60}\times 100\%=25\%
+\]
+\textbf{Answer:} 25 percent increase.
+
+\section*{Example 2: Percent Decrease}
+
+A population drops from 1{,}250 to 1{,}100.  
+\[
+\frac{1100-1250}{1250}\times 100\%=\frac{-150}{1250}\times 100\%=-12\%
+\]
+\textbf{Answer:} 12 percent decrease.
+
+\section*{Example 3: Forward Calculation With Factor}
+
+An item is discounted 30\% off the original price \$80.  
+Factor \(=1-0.30=0.70\). New price \(=0.70\cdot 80=\$56\).
+
+\section*{Example 4: Reverse Calculation After Decrease}
+
+After a 20\% discount, the sale price is \$72. Find the original price.  
+Sale price \(=\) \((1-0.20)\cdot \text{original}=0.80\cdot \text{original}\).  
+\(\text{original}=\dfrac{72}{0.80}=\$90\).
+
+\section*{Example 5: Tax or Markup}
+
+A store marks up cost by 15\%. If the cost is \$120, the price is  
+\((1+0.15)\cdot 120=1.15\cdot 120=\$138\).
+
+\section*{Example 6: Percent Error}
+
+A measurement is reported as 9.7 cm, but the actual length is 10.0 cm.
+\[
+\frac{|9.7-10.0|}{10.0}\times 100\%=\frac{0.3}{10}\times 100\%=3\%
+\]
+\textbf{Answer:} 3 percent error.
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Change divided by original times 100\% gives percent change.
+  \item Use \(1+p\) for increases and \(1-p\) for decreases.
+  \item To undo a percent change, divide by the same factor.
+  \item Percent error uses actual in the denominator and absolute difference in the numerator.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — TOPIC 3: PERCENT INCREASE, DECREASE, AND ERROR
+% ============================================================
+
+\section*{Practice Questions: Percent Increase, Decrease, and Error}
+
+\subsection*{Part A: Basic Percent Change}
+Find the percent increase or decrease. Round to the nearest tenth of a percent if needed.
+\begin{enumerate}
+  \item From 40 to 50
+  \item From 120 to 96
+  \item From 75 to 90
+  \item From 480 to 420
+  \item From 20 to 25
+\end{enumerate}
+
+\subsection*{Part B: Using Growth or Decay Factors}
+Compute the new amount using the given percent change.
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Increase 15\% on \$240
+  \item Decrease 30\% on \$80
+  \item Increase 8\% on 500
+  \item Decrease 12\% on 250
+  \item Increase 6.5\% on 1,200
+\end{enumerate}
+
+\subsection*{Part C: Reverse Percent Problems}
+Find the original amount before the percent change.
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Sale price \$72 after 20\% discount
+  \item Final price \$460 after 15\% tax
+  \item Population 8,400 after a 12\% increase
+  \item Sale price \$45 after 25\% discount
+  \item Investment grew to \$3,150 after a 5\% increase
+\end{enumerate}
+
+\subsection*{Part D: Percent Error}
+Find the percent error, rounding to one decimal place.
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Measured 9 cm, actual 10 cm
+  \item Measured 2.4 kg, actual 2.5 kg
+  \item Estimated 480 miles, actual 500 miles
+  \item Predicted 35 students, actual 32 students
+  \item Measured 19.6 m, actual 20.0 m
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A laptop originally priced at \$1,200 is discounted by 25\% and then increased by 10\%. Find the final price.
+  \item A coat’s price increases from \$90 to \$108. By what percent did it increase?
+  \item After a 40\% decrease, the value of a stock is \$180. What was its original value?
+  \item A scientist’s measurement is 18.7 cm, while the accepted value is 19.0 cm. Find the percent error.
+  \item The population of a town grew by 12\% one year and then decreased by 5\% the next. Find the overall percent change relative to the original population.
+\end{enumerate}
+
+\newpage
+% ============================================================
+% SOLUTIONS — UNIT 3, TOPIC 3: PERCENT INCREASE, DECREASE, AND ERROR
+% ============================================================
+
+\section*{Answer Key and Solutions: Percent Increase, Decrease, and Error}
+
+\subsection*{Part A Solutions: Basic Percent Change}
+\begin{enumerate}
+  \item \(\dfrac{50-40}{40}\cdot100\% = \boxed{25\%\ \text{increase}}\)
+  \item \(\dfrac{96-120}{120}\cdot100\% = \boxed{20\%\ \text{decrease}}\)
+  \item \(\dfrac{90-75}{75}\cdot100\% = \boxed{20\%\ \text{increase}}\)
+  \item \(\dfrac{420-480}{480}\cdot100\% = \boxed{12.5\%\ \text{decrease}}\)
+  \item \(\dfrac{25-20}{20}\cdot100\% = \boxed{25\%\ \text{increase}}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Using Growth or Decay Factors}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(240(1+0.15)=\boxed{276}\)
+  \item \(80(1-0.30)=\boxed{56}\)
+  \item \(500(1+0.08)=\boxed{540}\)
+  \item \(250(1-0.12)=\boxed{220}\)
+  \item \(1200(1+0.065)=\boxed{1278}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Reverse Percent Problems}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Sale price \(=0.80\cdot \text{original}\Rightarrow \text{original}=\dfrac{72}{0.80}=\boxed{90}\)
+  \item Final \(=1.15\cdot \text{original}\Rightarrow \text{original}=\dfrac{460}{1.15}=\boxed{400}\)
+  \item Final \(=1.12\cdot \text{original}\Rightarrow \text{original}=\dfrac{8400}{1.12}=\boxed{7500}\)
+  \item Sale price \(=0.75\cdot \text{original}\Rightarrow \text{original}=\dfrac{45}{0.75}=\boxed{60}\)
+  \item Final \(=1.05\cdot \text{original}\Rightarrow \text{original}=\dfrac{3150}{1.05}=\boxed{3000}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Percent Error}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item \(\dfrac{|9-10|}{10}\cdot100\%=\boxed{10.0\%}\)
+  \item \(\dfrac{|2.4-2.5|}{2.5}\cdot100\%=\boxed{4.0\%}\)
+  \item \(\dfrac{|480-500|}{500}\cdot100\%=\boxed{4.0\%}\)
+  \item \(\dfrac{|35-32|}{32}\cdot100\%=9.375\%\approx\boxed{9.4\%}\)
+  \item \(\dfrac{|19.6-20.0|}{20.0}\cdot100\%=\boxed{2.0\%}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item \(1200\cdot0.75=900\). Then \(900\cdot1.10=\boxed{990}\)
+  \item \(\dfrac{108-90}{90}\cdot100\%=\boxed{20\%}\)
+  \item After 40\% decrease: final \(=0.60\cdot \text{original}\Rightarrow \text{original}=\dfrac{180}{0.60}=\boxed{300}\)
+  \item \(\dfrac{|18.7-19.0|}{19.0}\cdot100\%=1.5789\%\approx\boxed{1.6\%}\)
+  \item Net factor \(=1.12\cdot0.95=1.064\Rightarrow \boxed{6.4\%\ \text{increase}}\)
+\end{enumerate}
+
+
+\end{document}

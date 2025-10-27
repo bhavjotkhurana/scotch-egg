@@ -1,0 +1,367 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 6: Quadratic and Polynomial Functions} \\[6pt]
+    \Large \textbf{Topic 1: Forms of Quadratic Equations}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+A \textbf{quadratic equation} is any equation that can be written in the form:
+\[
+ax^2 + bx + c = 0, \quad a \ne 0.
+\]
+Quadratics describe parabolic relationships and appear throughout the SAT in both algebraic and graphical contexts.
+
+There are three main forms of quadratic equations, each revealing different information:
+
+1. \textbf{Standard Form:} \(y = ax^2 + bx + c\)  
+   — easiest for identifying \(a, b, c\) and using the quadratic formula.
+
+2. \textbf{Factored Form:} \(y = a(x - r_1)(x - r_2)\)  
+   — shows the \textbf{zeros} (x-intercepts) directly: \(x = r_1, r_2.\)
+
+3. \textbf{Vertex Form:} \(y = a(x - h)^2 + k\)  
+   — shows the vertex \((h, k)\) and direction of opening (up if \(a > 0\), down if \(a < 0\)).
+
+The three forms are algebraically equivalent, but each highlights different features of the same parabola. Converting between forms is a key SAT skill.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Identify \(a\), \(b\), and \(c\) in the standard form.
+  \item Factor quadratics to find zeros (convert to factored form).
+  \item Complete the square to convert to vertex form.
+  \item Recognize how \(a\) affects the parabola’s width and direction.
+  \item Interpret graphs and equations interchangeably between forms.
+\end{itemize}
+
+\section*{Example 1: Recognizing Forms}
+
+Given \(y = 2x^2 - 8x + 6\):
+\begin{itemize}
+  \item Standard form: \(y = 2x^2 - 8x + 6\)
+  \item Factored form: \(y = 2(x - 1)(x - 3)\)
+  \item Vertex form: \(y = 2(x - 2)^2 - 2\)
+\end{itemize}
+
+Each form reveals something different:  
+• Zeros: \(x = 1, 3\)• Vertex: \((2, -2)\)• Opens upward since \(a = 2 > 0\).
+
+\section*{Example 2: Converting to Vertex Form}
+
+Convert \(y = x^2 - 6x + 8\) to vertex form.
+
+\[
+y = (x^2 - 6x) + 8
+\]
+Complete the square:
+\[
+(x^2 - 6x + 9) - 9 + 8 = (x - 3)^2 - 1
+\]
+So:
+\[
+y = (x - 3)^2 - 1
+\]
+
+\textbf{Vertex:} \((3, -1)\), \textbf{opens upward.}
+
+\section*{Example 3: Converting to Factored Form}
+
+Convert \(y = x^2 - 5x + 6\) to factored form.
+
+\[
+x^2 - 5x + 6 = (x - 2)(x - 3)
+\]
+\textbf{Zeros:} \(x = 2, 3.\)
+
+\textbf{Factored form:} \(\boxed{y = (x - 2)(x - 3)}\)
+
+\section*{Example 4: Interpreting a Factored Equation}
+
+Given \(y = -2(x + 1)(x - 4)\):
+\begin{itemize}
+  \item Zeros: \(x = -1, 4\)
+  \item Opens downward (\(a = -2\))
+  \item Axis of symmetry halfway between zeros: \(x = \dfrac{-1 + 4}{2} = 1.5\)
+\end{itemize}
+
+\textbf{Vertex:} occurs at \(x = 1.5\).
+
+\section*{Example 5: Understanding Coefficient Effects}
+
+Compare \(y = x^2\), \(y = 2x^2\), and \(y = \frac{1}{2}x^2\):
+\begin{itemize}
+  \item \(a > 1\): narrower parabola.
+  \item \(0 < a < 1\): wider parabola.
+  \item \(a < 0\): opens downward.
+\end{itemize}
+
+\textbf{Key insight:} \(a\) controls vertical stretch and direction.
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Standard form gives coefficients for the quadratic formula.
+  \item Factored form gives zeros quickly.
+  \item Vertex form gives vertex and direction directly.
+  \item All forms describe the same parabola, just from different perspectives.
+  \item Practice converting among forms to move fluidly between algebra and graphs.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — UNIT 6, TOPIC 1: FORMS OF QUADRATIC EQUATIONS
+% ============================================================
+
+\section*{Practice Questions: Forms of Quadratic Equations}
+
+\subsection*{Part A: Identifying Forms and Coefficients}
+\begin{enumerate}
+  \item Identify \(a\), \(b\), and \(c\) in \(y = 3x^2 - 5x + 2.\)
+  \item Identify \(a\), \(b\), and \(c\) in \(y = -2x^2 + 7x - 4.\)
+  \item Which form is \(y = (x - 4)(x + 1)\)? Standard, vertex, or factored?
+  \item Which form is \(y = 2(x + 3)^2 - 5\)? Standard, vertex, or factored?
+  \item For \(y = x^2 + 6x + 5\), what is the leading coefficient?
+\end{enumerate}
+
+\subsection*{Part B: Converting Between Forms}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Expand \(y = (x - 2)(x - 5)\) into standard form.
+  \item Convert \(y = x^2 - 8x + 16\) into vertex form.
+  \item Factor \(y = x^2 - 7x + 10\).
+  \item Convert \(y = (x + 2)^2 - 9\) into standard form.
+  \item Convert \(y = x^2 - 10x + 21\) into factored form.
+\end{enumerate}
+
+\subsection*{Part C: Identifying Features from Each Form}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item For \(y = 2(x - 1)(x - 5)\), find the zeros.
+  \item For \(y = -3(x + 4)^2 + 2\), state the vertex and direction of opening.
+  \item For \(y = x^2 - 6x + 9\), identify the vertex.
+  \item For \(y = (x - 3)(x - 7)\), find the axis of symmetry.
+  \item For \(y = 4(x + 2)^2 - 8\), identify the vertex and whether it is a minimum or maximum.
+\end{enumerate}
+
+\subsection*{Part D: Structural Reasoning and Graph Relationships}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item The equation \(y = -x^2 + 6x - 5\) opens in which direction?
+  \item Compare \(y = x^2\) and \(y = 3x^2\). Which is narrower?
+  \item Compare \(y = x^2\) and \(y = \tfrac{1}{2}x^2\). Which is wider?
+  \item Write the vertex form of \(y = x^2 + 4x + 1\).
+  \item Rewrite \(y = (x - 1)(x - 4)\) in standard form, then find its axis of symmetry.
+\end{enumerate}
+
+\subsection*{Part E: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A ball is thrown upward with height \(h = -16t^2 + 32t + 48\). Identify \(a\), \(b\), and \(c\).
+  \item The path of a rocket is modeled by \(h = -2(x - 5)^2 + 50\). What is the vertex, and what does it represent?
+  \item A parabola has zeros at \(x = 2\) and \(x = 6\). Write an equation in factored form if \(a = 1.\)
+  \item A parabola has vertex \((3, -4)\) and opens upward with \(a = 2\). Write its equation in vertex form.
+  \item A quadratic in standard form has \(a = 1, b = -6, c = 8.\) Find its zeros by factoring.
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 6, TOPIC 1: FORMS OF QUADRATIC EQUATIONS
+% ============================================================
+
+\section*{Answer Key and Solutions: Forms of Quadratic Equations}
+
+\subsection*{Part A Solutions: Identifying Forms and Coefficients}
+\begin{enumerate}
+  \item In \(y = 3x^2 - 5x + 2\):  
+  \(a = 3,\; b = -5,\; c = 2.\)  
+  \(\boxed{a=3,\; b=-5,\; c=2}\)
+
+  \item In \(y = -2x^2 + 7x - 4\):  
+  \(a = -2,\; b = 7,\; c = -4.\)  
+  \(\boxed{a=-2,\; b=7,\; c=-4}\)
+
+  \item \(y = (x - 4)(x + 1)\) is written as a product of linear factors.  
+  \(\boxed{\text{Factored form}}\)
+
+  \item \(y = 2(x + 3)^2 - 5\) matches \(y = a(x - h)^2 + k.\)  
+  \(\boxed{\text{Vertex form}}\)
+
+  \item For \(y = x^2 + 6x + 5\), the leading coefficient is the coefficient of \(x^2\), which is 1.  
+  \(\boxed{1}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Converting Between Forms}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Expand \(y = (x - 2)(x - 5)\):
+  \[
+  y = x^2 - 5x - 2x + 10 = x^2 - 7x + 10.
+  \]
+  \(\boxed{y = x^2 - 7x + 10}\)
+
+  \item Convert \(y = x^2 - 8x + 16\) to vertex form.  
+  Notice \(x^2 - 8x + 16 = (x - 4)^2.\)  
+  \(\boxed{y = (x - 4)^2}\)  
+  Vertex: \((4, 0)\).
+
+  \item Factor \(y = x^2 - 7x + 10\).  
+  We want two numbers that multiply to 10 and add to -7: \(-5\) and \(-2.\)  
+  \[
+  y = (x - 5)(x - 2).
+  \]
+  \(\boxed{y = (x - 5)(x - 2)}\)
+
+  \item Convert \(y = (x + 2)^2 - 9\) to standard form.  
+  First expand \((x + 2)^2 = x^2 + 4x + 4.\)  
+  Then subtract 9:
+  \[
+  y = x^2 + 4x + 4 - 9 = x^2 + 4x - 5.
+  \]
+  \(\boxed{y = x^2 + 4x - 5}\)
+
+  \item Convert \(y = x^2 - 10x + 21\) into factored form.  
+  Two numbers that multiply to 21 and add to -10: \(-3\) and \(-7.\)  
+  \[
+  y = (x - 3)(x - 7).
+  \]
+  \(\boxed{y = (x - 3)(x - 7)}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Identifying Features from Each Form}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item For \(y = 2(x - 1)(x - 5)\):  
+  Zeros occur when each factor is 0.  
+  \(x - 1 = 0 \Rightarrow x = 1,\)  
+  \(x - 5 = 0 \Rightarrow x = 5.\)  
+  \(\boxed{x = 1 \text{ and } x = 5}\)
+
+  \item For \(y = -3(x + 4)^2 + 2\):  
+  Vertex form is \(y = a(x - h)^2 + k\). Here \(x + 4 = x - (-4)\).  
+  So vertex is \((-4, 2)\).  
+  Since \(a = -3 < 0\), it opens downward.  
+  \(\boxed{\text{Vertex } (-4, 2), \text{ opens down}}\)
+
+  \item For \(y = x^2 - 6x + 9\):  
+  Recognize \((x^2 - 6x + 9) = (x - 3)^2.\)  
+  Vertex form is \((x - 3)^2 + 0.\)  
+  Vertex is \((3, 0)\).  
+  \(\boxed{(3, 0)}\)
+
+  \item For \(y = (x - 3)(x - 7)\):  
+  Zeros are \(x = 3\) and \(x = 7.\)  
+  Axis of symmetry is the midpoint between the zeros:  
+  \[
+  x = \frac{3 + 7}{2} = \frac{10}{2} = 5.
+  \]
+  \(\boxed{x = 5}\)
+
+  \item For \(y = 4(x + 2)^2 - 8\):  
+  Vertex form is \(a(x - h)^2 + k\). Here \(x + 2 = x - (-2)\).  
+  Vertex is \((-2, -8)\).  
+  Since \(a = 4 > 0\), it opens up, so the vertex is a minimum.  
+  \(\boxed{\text{Vertex } (-2, -8), \text{ minimum}}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Structural Reasoning and Graph Relationships}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item For \(y = -x^2 + 6x - 5\):  
+  The leading coefficient \(a = -1 < 0\).  
+  A negative \(a\) means it opens downward.  
+  \(\boxed{\text{Opens down}}\)
+
+  \item Compare \(y = x^2\) and \(y = 3x^2\).  
+  Larger \(|a|\) makes the parabola narrower.  
+  \(3x^2\) is narrower.  
+  \(\boxed{y = 3x^2 \text{ is narrower}}\)
+
+  \item Compare \(y = x^2\) and \(y = \tfrac{1}{2}x^2\).  
+  Smaller \(|a|\) between 0 and 1 makes it wider.  
+  \(\tfrac{1}{2}x^2\) is wider.  
+  \(\boxed{y = \tfrac{1}{2}x^2 \text{ is wider}}\)
+
+  \item Write the vertex form of \(y = x^2 + 4x + 1\).  
+  Complete the square:  
+  \[
+  x^2 + 4x + 1 = (x^2 + 4x + 4) - 4 + 1 = (x + 2)^2 - 3.
+  \]
+  \(\boxed{y = (x + 2)^2 - 3}\)  
+  Vertex: \((-2, -3)\).
+
+  \item Rewrite \(y = (x - 1)(x - 4)\) in standard form, then find its axis of symmetry.
+
+  Expand:  
+  \[
+  y = (x - 1)(x - 4) = x^2 - 4x - x + 4 = x^2 - 5x + 4.
+  \]
+
+  Zeros are \(x = 1\) and \(x = 4\).  
+  Axis of symmetry is the midpoint between 1 and 4:  
+  \[
+  x = \frac{1 + 4}{2} = \frac{5}{2} = 2.5.
+  \]
+
+  \(\boxed{y = x^2 - 5x + 4,\; \text{axis } x = \frac{5}{2}}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: Word Problems and SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item \(h = -16t^2 + 32t + 48.\)  
+  This is standard form \(at^2 + bt + c.\)  
+  \(\boxed{a = -16,\; b = 32,\; c = 48}\)
+
+  \item \(h = -2(x - 5)^2 + 50.\)  
+  This is vertex form \(a(x - h)^2 + k.\)  
+  Vertex is \((5, 50)\).  
+  Since \(a = -2 < 0\), it opens downward, so \((5, 50)\) is the maximum height/location.  
+  \(\boxed{\text{Vertex } (5, 50), \text{ maximum point}}\)
+
+  \item Zeros at \(x = 2\) and \(x = 6\), with \(a = 1.\)  
+  Factored form uses zeros \(r_1, r_2\):  
+  \[
+  y = (x - 2)(x - 6).
+  \]
+  \(\boxed{y = (x - 2)(x - 6)}\)
+
+  \item Vertex \((3, -4)\), opens up with \(a = 2.\)  
+  Vertex form:  
+  \[
+  y = a(x - h)^2 + k = 2(x - 3)^2 - 4.
+  \]
+  \(\boxed{y = 2(x - 3)^2 - 4}\)
+
+  \item Standard form has \(a = 1,\; b = -6,\; c = 8.\)  
+  Solve \(x^2 - 6x + 8 = 0\) by factoring.  
+  Numbers that multiply to 8 and add to -6: \(-2\) and \(-4.\)  
+  \[
+  x^2 - 6x + 8 = (x - 2)(x - 4) = 0.
+  \]
+  So \(x = 2,\; x = 4.\)  
+  \(\boxed{x = 2 \text{ and } x = 4}\)
+\end{enumerate}
+
+
+
+\end{document}

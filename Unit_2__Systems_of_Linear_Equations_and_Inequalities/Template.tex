@@ -1,0 +1,233 @@
+% =========================
+% SAT Resources Topic Template
+% =========================
+\documentclass[12pt]{article}
+
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}   % for clean enumerate labels
+\usepackage{ifthen}     % for simple toggles
+
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\setlist[enumerate]{label=\textbf{(\arabic*)}, itemsep=4pt, topsep=4pt}
+\setlist[itemize]{itemsep=2pt, topsep=4pt}
+\pagenumbering{gobble}
+
+% ---------- TOGGLES ----------
+% Set to true to print solutions at the end; false to hide.
+\newboolean{showsolutions}
+\setboolean{showsolutions}{true} % change to false for student version
+
+% ---------- LIGHTWEIGHT MACROS ----------
+\newcommand{\UnitTitle}{Unit X: <<Unit Title>>}
+\newcommand{\TopicTitle}{Topic Y: <<Topic Title>>}
+
+% Metadata (purely informational, helps future automation)
+% Example: \TopicMeta{Heart of Algebra}{No-Calculator}{Core → Mixed → Challenge}
+\newcommand{\TopicMeta}[3]{%
+  \textcolor{gray}{\footnotesize \textbf{SAT Domain:} #1 \quad \textbf{Calculator:} #2 \quad \textbf{Progression:} #3}
+}
+
+% Inline problem tags (optional; shows small gray tag)
+% Example: \qtag{HoA, no-calc, medium}
+\newcommand{\qtag}[1]{\textcolor{gray}{\footnotesize [#1]}}
+
+% Example block (keeps your voice + formatting)
+\newenvironment{Example}[1]{%
+  \subsection*{Example #1}%
+}{\vspace{0.25em}}
+
+% Practice part block (Parts A, B, C…)
+\newenvironment{PracticePart}[1]{%
+  \subsection*{Part #1}%
+  \begin{enumerate}
+}{%
+  \end{enumerate}
+}
+
+% “Speed Check” (optional quick 3 problems, no-calc warmup)
+\newenvironment{SpeedCheck}{%
+  \subsection*{Speed Check (3 quick items)}
+  \begin{enumerate}
+}{%
+  \end{enumerate}
+}
+
+% Solution item macro (keeps solution formatting uniform)
+% Usage inside solutions: \sol{1}{x = 5}
+\newcommand{\sol}[2]{\item[\textbf{(#1)}] #2}
+
+% ---------- DOCUMENT ----------
+\begin{document}
+
+\begin{center}
+  \LARGE \textbf{\UnitTitle}\\[6pt]
+  \Large \textbf{\TopicTitle}\\[4pt]
+  \TopicMeta{<<Domain>>}{<<Calc/No-Calc>>}{Core \textrightarrow\ Mixed \textrightarrow\ Challenge}
+\end{center}
+
+\vspace{0.75em}
+
+% =========================
+% MINI-LESSON
+% =========================
+\section*{Concept Summary}
+<<2–5 tight paragraphs that define the central idea. Keep formal notation and 1 “why it works” note.>>
+\[
+\text{(Include one canonical form here, e.g., } ax+b=c \text{ or system } \begin{cases} \cdot \\ \cdot \end{cases})
+\]
+
+\section*{Core Skills}
+\begin{itemize}
+  \item <<Skill 1: action verb + precise behavior>>
+  \item <<Skill 2>>
+  \item <<Skill 3>>
+\end{itemize}
+
+\begin{Example}{1}
+Solve for \(x\): \(\;<<expression>>\) \qtag{<<tags>>}
+
+\textbf{Step 1:} <<What and why>> \\
+\textbf{Step 2:} <<What and why>>
+\[
+<<clean working>>
+\]
+\textbf{Check:} <<Substitute/interpretation>> \quad \(\checkmark\)
+
+\textbf{Final Answer:} \(\boxed{<<value/statement>>}\)
+\end{Example}
+
+\begin{Example}{2}
+<<Second example with a different twist (fractions, parentheses, or interpretation).>>
+\end{Example}
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item <<Principle 1 (actionable)>>
+  \item <<Principle 2 (pitfall to avoid)>>
+  \item <<Principle 3 (verification habit)>>
+\end{itemize}
+
+\newpage
+
+% =========================
+% PRACTICE SET
+% =========================
+\section*{Practice Questions: <<Topic Title>>}
+
+% Optional: quick warmup
+% \begin{SpeedCheck}
+%   \item <<No-calc, 15–30 sec>>
+%   \item <<No-calc, 15–30 sec>>
+%   \item <<No-calc, 15–30 sec>>
+% \end{SpeedCheck}
+
+\begin{PracticePart}{A: Core (one-step / direct use)}
+  \item <<problem>> \qtag{<<tags>>}
+  \item <<problem>> \qtag{<<tags>>}
+  \item <<problem>>
+  \item <<problem>>
+  \item <<problem>>
+\end{PracticePart}
+
+\begin{PracticePart}{B: Two-Step / Structured Reasoning}
+  \setcounter{enumi}{5}
+  \item <<problem>>
+  \item <<problem>>
+  \item <<problem>>
+  \item <<problem>>
+  \item <<problem>>
+\end{PracticePart}
+
+\begin{PracticePart}{C: Variables on Both Sides / Structure Recognition}
+  \setcounter{enumi}{10}
+  \item <<problem>>
+  \item <<problem>>
+  \item <<problem>>
+  \item <<problem>>
+  \item <<problem>>
+\end{PracticePart}
+
+\begin{PracticePart}{D: Parentheses / Fractions / Edge Cases}
+  \setcounter{enumi}{15}
+  \item <<problem>>
+  \item <<problem>>
+  \item <<problem>>
+  \item <<problem>>
+  \item <<problem>>
+\end{PracticePart}
+
+\begin{PracticePart}{E: Word Problems / SAT Context}
+  \setcounter{enumi}{20}
+  \item <<contextual prompt>>
+  \item <<contextual prompt>>
+  \item <<contextual prompt>>
+  \item <<contextual prompt>>
+  \item <<contextual prompt>>
+\end{PracticePart}
+
+\newpage
+
+% =========================
+% SOLUTIONS (auto-hide with toggle)
+% =========================
+\ifthenelse{\boolean{showsolutions}}{%
+  \section*{Answer Key and Solutions: <<Topic Title>>}
+
+  \subsection*{Part A Solutions}
+  \begin{enumerate}
+    \sol{1}{<<brief solution or final boxed value>>}
+    \sol{2}{<<...>>}
+    \sol{3}{<<...>>}
+    \sol{4}{<<...>>}
+    \sol{5}{<<...>>}
+  \end{enumerate}
+
+  \subsection*{Part B Solutions}
+  \begin{enumerate}\setcounter{enumi}{5}
+    \sol{6}{<<...>>}
+    \sol{7}{<<...>>}
+    \sol{8}{<<...>>}
+    \sol{9}{<<...>>}
+    \sol{10}{<<...>>}
+  \end{enumerate}
+
+  \subsection*{Part C Solutions}
+  \begin{enumerate}\setcounter{enumi}{10}
+    \sol{11}{<<...>>}
+    \sol{12}{<<...>>}
+    \sol{13}{<<...>>}
+    \sol{14}{<<...>>}
+    \sol{15}{<<...>>}
+  \end{enumerate}
+
+  \subsection*{Part D Solutions}
+  \begin{enumerate}\setcounter{enumi}{15}
+    \sol{16}{<<...>>}
+    \sol{17}{<<...>>}
+    \sol{18}{<<...>>}
+    \sol{19}{<<...>>}
+    \sol{20}{<<...>>}
+  \end{enumerate}
+
+  \subsection*{Part E Solutions}
+  \begin{enumerate}\setcounter{enumi}{20}
+    \sol{21}{<<...>>}
+    \sol{22}{<<...>>}
+    \sol{23}{<<...>>}
+    \sol{24}{<<...>>}
+    \sol{25}{<<...>>}
+  \end{enumerate}
+}{}
+% (End solutions toggle)
+
+\end{document}

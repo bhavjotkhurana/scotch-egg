@@ -1,0 +1,520 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 6: Quadratic and Polynomial Functions} \\[6pt]
+    \Large \textbf{Topic 6: Zeros, Factors, and Graphs of Polynomials}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+A \textbf{zero} (or \textbf{root}) of a polynomial function is an \(x\)-value that makes the function equal to zero:
+\[
+f(x) = 0.
+\]
+Each zero corresponds to an \textbf{x-intercept} on the graph of the polynomial.
+
+A \textbf{factor} is a binomial or term that divides the polynomial evenly.  
+If \((x - r)\) is a factor of \(f(x)\), then \(r\) is a zero of the function.  
+This is known as the **Factor Theorem**.
+
+\[
+f(r) = 0 \quad \Leftrightarrow \quad (x - r) \text{ is a factor of } f(x).
+\]
+
+The graph of a polynomial touches or crosses the x-axis at its zeros, depending on their multiplicity:
+\begin{itemize}
+  \item If a zero has \textbf{odd multiplicity}, the graph crosses the x-axis.
+  \item If a zero has \textbf{even multiplicity}, the graph touches the x-axis and turns around.
+\end{itemize}
+
+\subsection*{End Behavior}
+The leading term (the term with the highest power of \(x\)) determines how the graph behaves at the ends:
+\[
+f(x) = a_nx^n + \dots
+\]
+\[
+\begin{cases}
+a_n > 0, n \text{ even: both ends up} \\
+a_n < 0, n \text{ even: both ends down} \\
+a_n > 0, n \text{ odd: left down, right up} \\
+a_n < 0, n \text{ odd: left up, right down}
+\end{cases}
+\]
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Identify zeros from factored forms of polynomials.
+  \item Determine multiplicity and predict graph behavior at each zero.
+  \item Use the Factor Theorem to test if a given value is a zero.
+  \item Sketch graphs based on zeros, multiplicities, and end behavior.
+  \item Connect factored form, standard form, and graphical interpretations.
+\end{itemize}
+
+\section*{Example 1: Identifying Zeros from Factored Form}
+
+Let \(f(x) = (x - 2)(x + 1)(x - 4)\).
+
+\textbf{Step 1:} Set each factor equal to zero:
+\[
+x - 2 = 0 \Rightarrow x = 2, \quad x + 1 = 0 \Rightarrow x = -1, \quad x - 4 = 0 \Rightarrow x = 4.
+\]
+
+\textbf{Zeros:} \(-1, 2, 4.\)
+
+\textbf{Graph:} (Insert graph showing intercepts at –1, 2, 4 and right end rising, left end falling since \(a > 0, n = 3.\))
+
+\section*{Example 2: Multiplicity of Zeros}
+
+Let \(f(x) = (x - 3)^2(x + 1).\)
+
+\textbf{Zeros:} \(x = 3\) (multiplicity 2), \(x = -1\) (multiplicity 1).  
+At \(x = 3\), the graph \textbf{touches} and turns around (even multiplicity).  
+At \(x = -1\), the graph \textbf{crosses} (odd multiplicity).
+
+\textbf{Graph:} (Insert graph showing touch at 3, cross at –1, both ends upward since leading coefficient positive and degree 3.)
+
+\section*{Example 3: Testing for Factors (Factor Theorem)}
+
+Let \(f(x) = x^3 - 6x^2 + 11x - 6.\)
+
+Test if \(x - 1\) is a factor. Substitute \(x = 1\):
+\[
+f(1) = 1 - 6 + 11 - 6 = 0.
+\]
+Since \(f(1) = 0,\) \((x - 1)\) is a factor.
+
+Similarly, test \(x = 2\):  
+\(f(2) = 8 - 24 + 22 - 6 = 0.\)
+Also a factor.  
+\(x = 3:\; f(3) = 27 - 54 + 33 - 6 = 0.\)
+All three are zeros.
+
+\textbf{Factored form:} \(\boxed{f(x) = (x - 1)(x - 2)(x - 3)}\)
+
+\textbf{Graph:} (Insert cubic graph crossing x-axis at 1, 2, 3, left down, right up.)
+
+\section*{Example 4: End Behavior and Degree}
+
+Determine the end behavior of:
+\[
+f(x) = -2x^4 + 5x^3 - x + 7.
+\]
+Leading term is \(-2x^4.\)
+
+Since \(a = -2 < 0\) and degree is even,  
+both ends point \textbf{downward.}
+
+\section*{Example 5: Building a Polynomial from Given Zeros}
+
+Find the polynomial with zeros \(x = -2, 1, 3.\)
+
+\[
+f(x) = (x + 2)(x - 1)(x - 3).
+\]
+Expand:
+\[
+(x + 2)(x^2 - 4x + 3) = x^3 - 4x^2 + 3x + 2x^2 - 8x + 6 = x^3 - 2x^2 - 5x + 6.
+\]
+
+\(\boxed{f(x) = x^3 - 2x^2 - 5x + 6}\)
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Zeros are x-values where \(f(x) = 0.\)
+  \item If \((x - r)\) is a factor, then \(r\) is a zero (Factor Theorem).
+  \item Even multiplicity → graph touches; odd multiplicity → graph crosses.
+  \item Leading term determines end behavior.
+  \item Factored form reveals zeros and structure quickly for sketching.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — UNIT 6, TOPIC 6: ZEROS, FACTORS, AND GRAPHS OF POLYNOMIALS
+% ============================================================
+
+\section*{Practice Questions: Zeros, Factors, and Graphs of Polynomials}
+
+\subsection*{Part A: Identifying Zeros from Factored Form}
+\begin{enumerate}
+  \item Find the zeros of \(f(x) = (x - 3)(x + 2)(x - 1)\).
+  \item Find the zeros of \(f(x) = (x + 4)(x - 5)\).
+  \item Find the zeros of \(f(x) = (x - 1)(x - 1)(x + 3)\).
+  \item Find the zeros and their multiplicities for \(f(x) = (x - 2)^3(x + 1)^2\).
+  \item Find the zeros of \(f(x) = 2(x - 6)(x + 2)(x + 1)\).
+\end{enumerate}
+
+\subsection*{Part B: Using the Factor Theorem}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item For \(f(x) = x^3 - 2x^2 - 5x + 6\), test whether \(x - 1\) is a factor.
+  \item For \(f(x) = 2x^3 + 3x^2 - 8x - 12\), test whether \(x + 2\) is a factor.
+  \item For \(f(x) = x^3 - 4x^2 + 4x\), test whether \(x = 0\) is a zero.
+  \item For \(f(x) = x^3 - 3x^2 - 4x + 12\), determine if \(x = 3\) is a zero.
+  \item For \(f(x) = 4x^3 - 12x^2 + 9x - 3\), test if \(x = \tfrac{3}{2}\) is a zero.
+\end{enumerate}
+
+\subsection*{Part C: Multiplicity and Graph Behavior}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Describe the behavior of the graph at \(x = 2\) for \(f(x) = (x - 2)^2(x + 1)\).
+  \item Describe the behavior of the graph at \(x = -3\) for \(f(x) = (x + 3)^3(x - 1)\).
+  \item Determine whether the graph crosses or touches the x-axis at each zero: \(f(x) = (x - 4)^4(x + 2)^2(x - 1)\).
+  \item Identify zeros and multiplicities: \(f(x) = (x + 2)^2(x - 5)^3\).
+  \item Explain how multiplicity affects the shape of a polynomial near a zero.
+\end{enumerate}
+
+\subsection*{Part D: End Behavior and Leading Terms}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Determine the end behavior of \(f(x) = 2x^5 + 3x^4 - x + 1.\)
+  \item Determine the end behavior of \(f(x) = -x^6 + 4x^3 - 7.\)
+  \item Describe the end behavior of \(f(x) = -3x^3 + 5x^2 - x.\)
+  \item Describe the end behavior of \(f(x) = 4x^4 - 9x^2 + 7.\)
+  \item For \(f(x) = -2x^5 + 8x^3 - x\), describe how the graph behaves as \(x \to \infty\) and \(x \to -\infty.\)
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+(Insert graphs for visual interpretation where noted below.)
+
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A cubic function has zeros at \(x = -1, 2,\) and \(4.\) Write a possible factored form of the function.
+  \item The graph of a polynomial touches the x-axis at \(x = 3\) and crosses at \(x = -1.\) Write a possible factored form.
+  \item A quartic polynomial has end behavior with both ends up and zeros at \(x = -2\) (multiplicity 2) and \(x = 4\) (multiplicity 2). Write a possible equation.
+  \item (Insert graph: quartic with x-intercepts at –2, 0, and 3, both ends up.) List all zeros and describe the end behavior.
+  \item The graph of \(f(x)\) crosses the x-axis at \(x = -1\) and \(x = 4\), and touches at \(x = 2.\) Which of the following could be its factored form?  
+  A) \((x + 1)(x - 2)(x - 4)\)  
+  B) \((x + 1)(x - 2)^2(x - 4)\)  
+  C) \((x + 1)^2(x - 2)(x - 4)\)  
+  D) \((x + 1)(x - 4)^2(x - 2)\)
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 6, TOPIC 6: ZEROS, FACTORS, AND GRAPHS OF POLYNOMIALS
+% ============================================================
+
+\section*{Answer Key and Solutions: Zeros, Factors, and Graphs of Polynomials}
+
+\subsection*{Part A Solutions: Identifying Zeros from Factored Form}
+\begin{enumerate}
+  \item \(f(x) = (x - 3)(x + 2)(x - 1)\)
+
+  Set each factor to 0:
+  \[
+  x - 3 = 0 \Rightarrow x = 3,\quad
+  x + 2 = 0 \Rightarrow x = -2,\quad
+  x - 1 = 0 \Rightarrow x = 1.
+  \]
+
+  \(\boxed{x = -2,\; 1,\; 3}\)
+
+  \item \(f(x) = (x + 4)(x - 5)\)
+
+  \[
+  x + 4 = 0 \Rightarrow x = -4,\quad
+  x - 5 = 0 \Rightarrow x = 5.
+  \]
+
+  \(\boxed{x = -4,\; 5}\)
+
+  \item \(f(x) = (x - 1)(x - 1)(x + 3) = (x - 1)^2(x + 3)\)
+
+  \[
+  x - 1 = 0 \Rightarrow x = 1 \text{ (multiplicity 2)}, \quad
+  x + 3 = 0 \Rightarrow x = -3 \text{ (multiplicity 1)}.
+  \]
+
+  \(\boxed{x = 1 \text{ (double root)},\; x = -3}\)
+
+  \item \(f(x) = (x - 2)^3(x + 1)^2\)
+
+  \[
+  x - 2 = 0 \Rightarrow x = 2 \text{ (mult 3)},\quad
+  x + 1 = 0 \Rightarrow x = -1 \text{ (mult 2)}.
+  \]
+
+  \(\boxed{x = 2 \text{ (mult 3)},\; x = -1 \text{ (mult 2)}}\)
+
+  \item \(f(x) = 2(x - 6)(x + 2)(x + 1)\)
+
+  Constant 2 does not affect zeros.
+
+  \[
+  x - 6 = 0 \Rightarrow x = 6,\quad
+  x + 2 = 0 \Rightarrow x = -2,\quad
+  x + 1 = 0 \Rightarrow x = -1.
+  \]
+
+  \(\boxed{x = -2,\; -1,\; 6}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Using the Factor Theorem}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(f(x) = x^3 - 2x^2 - 5x + 6\). Test \(x - 1\).
+
+  Factor Theorem: plug in \(x = 1.\)
+
+  \[
+  f(1) = 1 - 2 - 5 + 6 = 0.
+  \]
+
+  Since \(f(1) = 0\), \((x - 1)\) is a factor.
+
+  \(\boxed{\text{Yes, } x - 1 \text{ is a factor}}\)
+
+  \item \(f(x) = 2x^3 + 3x^2 - 8x - 12\). Test \(x + 2\).
+
+  \(x + 2\) is a factor if \(f(-2) = 0.\)
+
+  \[
+  f(-2) = 2(-8) + 3(4) - 8(-2) - 12 = -16 + 12 + 16 - 12 = 0.
+  \]
+
+  \(\boxed{\text{Yes, } x + 2 \text{ is a factor}}\)
+
+  \item \(f(x) = x^3 - 4x^2 + 4x\). Test \(x = 0\).
+
+  \[
+  f(0) = 0 - 0 + 0 = 0.
+  \]
+
+  So \(x = 0\) is a zero, and \(x\) is a factor.
+
+  \(\boxed{x = 0 \text{ is a zero}}\)
+
+  \item \(f(x) = x^3 - 3x^2 - 4x + 12\). Test \(x = 3\).
+
+  \[
+  f(3) = 27 - 27 - 12 + 12 = 0.
+  \]
+
+  So \(x = 3\) is a zero, and \((x - 3)\) is a factor.
+
+  \(\boxed{x = 3 \text{ is a zero}}\)
+
+  \item \(f(x) = 4x^3 - 12x^2 + 9x - 3\). Test \(x = \tfrac{3}{2}\).
+
+  Substitute \(x = \tfrac{3}{2}\):
+
+  First compute step by step:
+
+  \[
+  4\left(\tfrac{3}{2}\right)^3
+  = 4 \cdot \tfrac{27}{8}
+  = \tfrac{108}{8}
+  = \tfrac{27}{2}.
+  \]
+
+  \[
+  -12\left(\tfrac{3}{2}\right)^2
+  = -12 \cdot \tfrac{9}{4}
+  = -27.
+  \]
+
+  \[
+  9\left(\tfrac{3}{2}\right)
+  = \tfrac{27}{2}.
+  \]
+
+  Then minus 3:
+
+  Add them:
+  \[
+  \tfrac{27}{2} - 27 + \tfrac{27}{2} - 3
+  = \left(\tfrac{27}{2} + \tfrac{27}{2}\right) + (-27 - 3)
+  = \tfrac{54}{2} - 30
+  = 27 - 30
+  = -3 \ne 0.
+  \]
+
+  \(\boxed{\text{No, } x = \tfrac{3}{2} \text{ is not a zero}}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Multiplicity and Graph Behavior}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(f(x) = (x - 2)^2(x + 1)\)
+
+  At \(x = 2\), multiplicity is 2 (even).  
+  The graph \textbf{touches} the x-axis at \(x = 2\) and turns around.
+
+  \(\boxed{\text{Touches and turns at } x = 2}\)
+
+  \item \(f(x) = (x + 3)^3(x - 1)\)
+
+  At \(x = -3\), multiplicity is 3 (odd).  
+  The graph \textbf{crosses} the x-axis at \(x = -3\), but flattens slightly there.
+
+  \(\boxed{\text{Crosses at } x = -3 \text{ with flattening}}\)
+
+  \item \(f(x) = (x - 4)^4(x + 2)^2(x - 1)\)
+
+  Zeros:
+  \[
+  x = 4 \text{ (mult 4, even)},\quad
+  x = -2 \text{ (mult 2, even)},\quad
+  x = 1 \text{ (mult 1, odd)}.
+  \]
+
+  At even multiplicity zeros (4 and -2), the graph \textbf{touches} the axis.  
+  At odd multiplicity zeros (1), the graph \textbf{crosses}.
+
+  \(\boxed{\text{Touches at } x = 4, -2;\; crosses at } x = 1}\)
+
+  \item \(f(x) = (x + 2)^2(x - 5)^3\)
+
+  Zeros and multiplicities:
+  \[
+  x = -2 \text{ (mult 2, even)},\quad
+  x = 5 \text{ (mult 3, odd)}.
+  \]
+
+  \(\boxed{x = -2 \text{ (touch)},\; x = 5 \text{ (cross)}}\)
+
+  \item Multiplicity effect:
+
+  If the multiplicity is even, the graph touches the x-axis and bounces.  
+  If the multiplicity is odd, the graph crosses the x-axis.
+
+  Higher multiplicity makes the graph flatter near that zero.
+
+  \(\boxed{\text{Even mult = touch; odd mult = cross; larger mult = flatter}}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: End Behavior and Leading Terms}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item \(f(x) = 2x^5 + 3x^4 - x + 1\)
+
+  Leading term: \(2x^5.\)  
+  Degree is odd, leading coefficient positive.
+
+  As \(x \to \infty,\; f(x) \to \infty.\)  
+  As \(x \to -\infty,\; f(x) \to -\infty.\)
+
+  \(\boxed{\text{Left down, right up}}\)
+
+  \item \(f(x) = -x^6 + 4x^3 - 7\)
+
+  Leading term: \(-x^6.\)  
+  Degree is even, leading coefficient negative.
+
+  As \(x \to \infty,\; f(x) \to -\infty.\)  
+  As \(x \to -\infty,\; f(x) \to -\infty.\)
+
+  \(\boxed{\text{Both ends down}}\)
+
+  \item \(f(x) = -3x^3 + 5x^2 - x\)
+
+  Leading term: \(-3x^3.\)  
+  Degree is odd, leading coefficient negative.
+
+  As \(x \to \infty,\; f(x) \to -\infty.\)  
+  As \(x \to -\infty,\; f(x) \to \infty.\)
+
+  \(\boxed{\text{Left up, right down}}\)
+
+  \item \(f(x) = 4x^4 - 9x^2 + 7\)
+
+  Leading term: \(4x^4.\)  
+  Degree is even, leading coefficient positive.
+
+  As \(x \to \infty,\; f(x) \to \infty.\)  
+  As \(x \to -\infty,\; f(x) \to \infty.\)
+
+  \(\boxed{\text{Both ends up}}\)
+
+  \item \(f(x) = -2x^5 + 8x^3 - x\)
+
+  Leading term: \(-2x^5.\)  
+  Degree 5 (odd), leading coefficient negative.
+
+  As \(x \to \infty,\; f(x) \to -\infty.\)  
+  As \(x \to -\infty,\; f(x) \to \infty.\)
+
+  \(\boxed{\text{Left up, right down}}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A cubic has zeros at \(x = -1, 2, 4.\)
+
+  A possible factored form (set leading coefficient to 1):
+  \[
+  f(x) = (x + 1)(x - 2)(x - 4).
+  \]
+
+  \(\boxed{f(x) = (x + 1)(x - 2)(x - 4)}\)
+
+  \item Graph touches at \(x = 3\) and crosses at \(x = -1\).
+
+  Touch at \(x = 3\) means even multiplicity, so \((x - 3)^2.\)  
+  Cross at \(x = -1\) means odd multiplicity, so \((x + 1).\)
+
+  \(\boxed{f(x) = (x - 3)^2(x + 1)}\)
+
+  \item Quartic, both ends up, zeros at \(-2\) (mult 2) and \(4\) (mult 2)
+
+  Even degree with positive leading coefficient gives both ends up.
+
+  A possible equation:
+  \[
+  f(x) = (x + 2)^2(x - 4)^2.
+  \]
+
+  \(\boxed{f(x) = (x + 2)^2(x - 4)^2}\)
+
+  \item (Graph described: quartic with x-intercepts at \(-2, 0, 3,\) both ends up.)
+
+  Zeros: \(-2, 0, 3.\)
+
+  If both ends are up, degree is even and leading coefficient positive.  
+  To get an even degree with those three distinct zeros, at least one zero must have even multiplicity.  
+  We cannot see multiplicities from text alone, so one valid possibility is:
+  \[
+  f(x) = x(x + 2)(x - 3)^2
+  \]
+  where \((x - 3)^2\) gives even degree overall and both ends up.
+
+  \(\boxed{\text{Zeros: } x = -2,\; 0,\; 3 \text{ (3 with even multiplicity). End behavior: both ends up}}\)
+
+  \item Crosses at \(x = -1\) and \(x = 4\), touches at \(x = 2\)
+
+  Cross means odd multiplicity 1. Touch means even multiplicity (like squared).  
+  So we want factors:
+  \[
+  (x + 1)(x - 4)(x - 2)^2.
+  \]
+
+  Option B is \((x + 1)(x - 2)^2(x - 4)\). This matches.
+
+  \(\boxed{\text{Correct choice: B}}\)
+\end{enumerate}
+
+
+
+\end{document}
+

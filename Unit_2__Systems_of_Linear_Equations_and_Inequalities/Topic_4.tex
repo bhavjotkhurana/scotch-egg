@@ -1,0 +1,255 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 2: Systems of Linear Equations and Inequalities} \\[6pt]
+    \Large \textbf{Topic 4: Graphing Systems of Inequalities and Solution Regions}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+A linear inequality in two variables describes a half plane. Its boundary is the corresponding line.  
+\[
+ax + by \le c,\quad ax + by < c,\quad ax + by \ge c,\quad ax + by > c.
+\]
+
+Boundary style:
+\begin{itemize}
+    \item Use a solid line for \(\le\) or \(\ge\) because points on the line satisfy the inequality.
+    \item Use a dashed line for \(<\) or \(>\) because boundary points are not included.
+\end{itemize}
+
+Shading rule:
+\begin{itemize}
+    \item Convert to \(y = mx + b\) if convenient. For \(y \ge mx + b\), shade above the line. For \(y \le mx + b\), shade below.
+    \item Or use a test point that is not on the boundary, often \((0,0)\). If it makes the inequality true, shade the side containing the test point.
+\end{itemize}
+
+A \textbf{system} of inequalities is satisfied by points that make every inequality true. The solution region is the intersection of the shaded half planes.
+
+\section*{Core Skills}
+\begin{itemize}
+    \item Rearrange each inequality to identify the boundary and inequality direction.
+    \item Draw the boundary with correct style, then use a test point to decide shading.
+    \item Find the intersection region. State whether it is bounded or unbounded and list vertices if needed.
+\end{itemize}
+
+\section*{Example 1: Single Inequality}
+
+Graph \(y \le -2x + 5\).  
+Boundary: \(y = -2x + 5\) with solid line since \(\le\).  
+Shading: for \(y \le\) shade below the line.  
+Check with \((0,0)\): \(0 \le 5\) is true, so the origin side is shaded.
+
+\section*{Example 2: Two Inequalities}
+
+Graph the system
+\[
+\begin{cases}
+y > x - 2\\
+y \le -\tfrac{1}{2}x + 4
+\end{cases}
+\]
+First boundary: \(y = x - 2\) dashed, shade above.  
+Second boundary: \(y = -\tfrac{1}{2}x + 4\) solid, shade below.  
+The solution region is where the two shadings overlap.  
+Find intersection by solving the equalities:
+\[
+x - 2 = -\tfrac{1}{2}x + 4 \Rightarrow \tfrac{3}{2}x = 6 \Rightarrow x = 4,\quad y = 2.
+\]
+The corner point is \((4,2)\). It is on the second boundary and above the first. Since the first is strict \(>\), \((4,2)\) is not included in the solution set.
+
+\section*{Example 3: With a Vertical or Horizontal Boundary}
+
+Graph
+\[
+\begin{cases}
+x \ge 1\\
+y < 3
+\end{cases}
+\]
+Boundary \(x=1\) is a vertical solid line. Shade to the right.  
+Boundary \(y=3\) is a horizontal dashed line. Shade below.  
+The solution region is the unbounded rectangle corner with vertex \((1,3)\) but that point is excluded because \(y<3\).
+
+\section*{Key Takeaways}
+\begin{itemize}
+    \item Solid for inclusive \(\le,\ \ge\), dashed for strict \(<,\ >\).
+    \item Use slope intercept form or a test point to choose the correct side.
+    \item The solution to a system is the intersection of shadings. State whether boundary points are included.
+    \item Vertical lines use \(x=\text{constant}\). Horizontal lines use \(y=\text{constant}\).
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — TOPIC 4: GRAPHING SYSTEMS OF INEQUALITIES AND SOLUTION REGIONS
+% ============================================================
+
+\section*{Practice Questions: Graphing Systems of Inequalities and Solution Regions}
+
+\subsection*{Part A: Single Inequality Graphs}
+Graph each inequality on the coordinate plane. State whether the boundary is solid or dashed, and indicate whether you shade above or below the line.
+\begin{enumerate}
+  \item \(y \le -2x + 5\)
+  \item \(y > \tfrac{1}{2}x - 3\)
+  \item \(y \ge -\tfrac{3}{4}x + 1\)
+  \item \(x < -2\)
+  \item \(y \le 4\)
+\end{enumerate}
+
+\subsection*{Part B: Two Inequalities}
+For each system, graph the solution region and determine whether the point given is included in the solution set.
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(\begin{cases} y \ge x - 1 \\ y < -x + 5 \end{cases}\), test point \((2,2)\)
+  \item \(\begin{cases} y > -\tfrac{1}{2}x + 3 \\ y \le \tfrac{3}{2}x - 1 \end{cases}\), test point \((0,0)\)
+  \item \(\begin{cases} x \ge -1 \\ y > 2x + 1 \end{cases}\), test point \((1,4)\)
+  \item \(\begin{cases} y \le -x + 6 \\ y \ge \tfrac{1}{3}x - 2 \end{cases}\), test point \((3,1)\)
+  \item \(\begin{cases} x > 2 \\ y \le -2x + 10 \end{cases}\), test point \((2,6)\)
+\end{enumerate}
+
+\subsection*{Part C: Find the Feasible Region Vertices}
+Graph each system and list the coordinates of all vertices of the feasible region. State whether the region is bounded or unbounded.
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(\begin{cases} y \ge x + 1 \\ y \le -x + 5 \\ x \ge 0 \end{cases}\)
+  \item \(\begin{cases} y \ge \tfrac{1}{2}x - 1 \\ y \ge -x + 2 \\ y \le 4 \end{cases}\)
+  \item \(\begin{cases} y \le 3x + 6 \\ y \ge -x \\ x \le 5 \end{cases}\)
+  \item \(\begin{cases} x \ge 1 \\ y \ge 0 \\ y \le -x + 7 \end{cases}\)
+  \item \(\begin{cases} y \ge -2x + 2 \\ y \le x + 5 \\ x \ge -1 \end{cases}\)
+\end{enumerate}
+
+\subsection*{Part D: Write the Inequalities from a Verbal Description}
+For each description, write a system of inequalities that matches it. Do not solve.
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item All points on or above the line through \((0,2)\) with slope \(-1\).
+  \item All points to the right of \(x = -3\) and strictly below the line with slope \(2\) through \((0,1)\).
+  \item All points on or below the line \(y = \tfrac{3}{4}x + 6\) and above the \(x\)-axis.
+  \item The closed half plane at or to the left of \(x = 4\) that is also at or above \(y = -1\).
+  \item The region between the parallel lines \(y = 2x + 1\) and \(y = 2x - 5\), including both boundaries.
+\end{enumerate}
+
+\subsection*{Part E: Context Problems}
+Define variables, model with inequalities, and sketch or describe the feasible region.
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item A school club sells T-shirts for \$12 and hats for \$8. They can stock at most 60 items in total. Revenue must be at least \$400. Let \(t\) be shirts and \(h\) be hats. Write the system and describe the feasible region.
+  \item A baker can make loaves and muffins. Each loaf requires 2 cups of flour and each muffin requires 1 cup. The baker has at most 80 cups of flour. Orders require at least 10 loaves and at least 20 muffins. Let \(L\) be loaves and \(M\) be muffins. Write the system and identify whether the feasible region is bounded.
+  \item A contractor must schedule small jobs \(s\) and large jobs \(l\). Each small job takes 2 hours and each large job takes 5 hours. There are at most 60 labor hours available. At least 6 jobs total must be scheduled. Write the system and explain the shading.
+  \item A cyclist rides on flat and uphill segments. On flat segments the speed is at most 18 mph, uphill at most 10 mph. If the total time is at most 3 hours, and at least 24 miles must be completed in total, let \(f\) be flat miles and \(u\) be uphill miles. Write the inequalities relating \(f\) and \(u\).
+  \item A company produces basic and premium units. Demand limits are \(b \le 300\) and \(p \le 200\). Assembly capacity requires \(b + 2p \le 500\). Nonnegativity applies. Write the full system and state the vertices of the feasible set.
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — TOPIC 4: GRAPHING SYSTEMS OF INEQUALITIES AND SOLUTION REGIONS
+% ============================================================
+
+\section*{Answer Key and Solutions: Graphing Systems of Inequalities and Solution Regions}
+
+\subsection*{Part A Solutions: Single Inequality Graphs}
+\begin{enumerate}
+  \item Boundary \(y=-2x+5\) solid. Shade below.
+  \item Boundary \(y=\tfrac12 x-3\) dashed. Shade above.
+  \item Boundary \(y=-\tfrac34 x+1\) solid. Shade above.
+  \item Boundary \(x=-2\) dashed. Shade to the left.
+  \item Boundary \(y=4\) solid. Shade below.
+\end{enumerate}
+
+\subsection*{Part B Solutions: Two Inequalities and Point Inclusion}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(y\ge x-1\) and \(y<-x+5\). Test \((2,2)\): \(2\ge1\) true and \(2<3\) true. Included.
+  \item \(y>-\tfrac12x+3\) and \(y\le \tfrac32x-1\). Test \((0,0)\): \(0>3\) false, \(0\le-1\) false. Not included.
+  \item \(x\ge -1\) and \(y>2x+1\). Test \((1,4)\): \(1\ge-1\) true and \(4>3\) true. Included.
+  \item \(y\le -x+6\) and \(y\ge \tfrac13 x-2\). Test \((3,1)\): \(1\le3\) true and \(1\ge -1\) true. Included.
+  \item \(x>2\) and \(y\le -2x+10\). Test \((2,6)\): \(2>2\) false, \(6\le6\) true. Not included since first is false.
+\end{enumerate}
+
+\subsection*{Part C Solutions: Feasible Region Vertices}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(\{\,y\ge x+1,\ y\le -x+5,\ x\ge0\,\}\).  
+  Intersections:  
+  \(x=0\) with \(y=x+1 \Rightarrow (0,1)\); \(x=0\) with \(y=-x+5 \Rightarrow (0,5)\);  
+  \(x+1=-x+5 \Rightarrow x=2,\ y=3 \Rightarrow (2,3)\).  
+  Vertices: \((0,1), (0,5), (2,3)\). Bounded (triangle).
+
+  \item \(\{\,y\ge \tfrac12 x-1,\ y\ge -x+2,\ y\le4\,\}\).  
+  Intersections: with \(y=4\): \(4=\tfrac12 x-1 \Rightarrow x=10 \Rightarrow (10,4)\); \(4=-x+2 \Rightarrow x=-2 \Rightarrow (-2,4)\).  
+  Bottom lines: \(\tfrac12 x-1=-x+2 \Rightarrow \tfrac32 x=3 \Rightarrow x=2,\ y=0 \Rightarrow (2,0)\).  
+  Vertices: \((-2,4), (10,4), (2,0)\). Bounded (triangle).
+
+  \item \(\{\,y\le 3x+6,\ y\ge -x,\ x\le5\,\}\).  
+  Line intersection: \(3x+6=-x \Rightarrow 4x=-6 \Rightarrow x=-1.5,\ y=1.5 \Rightarrow (-1.5,1.5)\).  
+  With \(x=5\): \(y=3(5)+6=21 \Rightarrow (5,21)\); \(y=-5 \Rightarrow (5,-5)\).  
+  Vertices: \((-1.5,1.5), (5,-5), (5,21)\). Unbounded to the left.
+
+  \item \(\{\,x\ge1,\ y\ge0,\ y\le -x+7\,\}\).  
+  Intersections: \(x=1\) with \(y=0 \Rightarrow (1,0)\); \(x=1\) with \(y=-x+7 \Rightarrow (1,6)\);  
+  \(y=0\) with \(y=-x+7 \Rightarrow x=7 \Rightarrow (7,0)\).  
+  Vertices: \((1,0), (1,6), (7,0)\). Bounded (triangle).
+
+  \item \(\{\,y\ge -2x+2,\ y\le x+5,\ x\ge -1\,\}\).  
+  Intersection of lines: \(-2x+2=x+5 \Rightarrow -3x=3 \Rightarrow x=-1,\ y=4 \Rightarrow (-1,4)\).  
+  This is also where \(x=-1\) meets both lines. Region opens to the right between the two lines.  
+  Vertex: \((-1,4)\). Unbounded.
+\end{enumerate}
+
+\subsection*{Part D Solutions: Write Systems from Descriptions}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Line through \((0,2)\) with slope \(-1\): \(y=-x+2\). On or above: \(y\ge -x+2\).
+  \item Right of \(x=-3\): \(x>-3\). Strictly below line slope \(2\) through \((0,1)\): \(y<2x+1\).
+  \item On or below \(y=\tfrac34 x+6\) and above the \(x\)-axis: \(y\le \tfrac34 x+6,\ y\ge 0\).
+  \item At or to the left of \(x=4\) and at or above \(y=-1\): \(x\le4,\ y\ge-1\).
+  \item Between \(y=2x+1\) and \(y=2x-5\), including both: \(2x-5 \le y \le 2x+1\).
+\end{enumerate}
+
+\subsection*{Part E Solutions: Context Modeling}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item Variables \(t\) shirts, \(h\) hats.  
+  Item cap: \(t+h\le60\). Revenue: \(12t+8h\ge400\). Nonnegativity: \(t\ge0,\ h\ge0\).  
+  Feasible region is the intersection of the first quadrant triangle \(t+h\le60\) with the half plane \(12t+8h\ge400\). Bounded.
+
+  \item Variables \(L\) loaves, \(M\) muffins.  
+  Flour: \(2L+M\le80\). Order minimums: \(L\ge10,\ M\ge20\).  
+  Nonnegativity implicit. Feasible region is a polygon cut by \(2L+M\le80\) with lower bounds. Bounded.
+
+  \item Variables \(s\) small, \(l\) large.  
+  Hours: \(2s+5l\le60\). Minimum jobs: \(s+l\ge6\). Nonnegativity: \(s\ge0,\ l\ge0\).  
+  Shade at or below \(2s+5l=60\) and at or above \(s+l=6\) in the first quadrant.
+
+  \item Variables \(f\) flat miles, \(u\) uphill miles.  
+  Time limit: \( \frac{f}{18} + \frac{u}{10} \le 3\) since speeds are at most those values.  
+  Distance requirement: \(f+u\ge24\). Nonnegativity: \(f\ge0,\ u\ge0\).
+
+  \item Variables \(b\) basic, \(p\) premium.  
+  Demand: \(b\le300,\ p\le200\). Capacity: \(b+2p\le500\). Nonnegativity: \(b\ge0,\ p\ge0\).  
+  Vertices: \((0,0), (300,0), (300,100), (100,200), (0,200)\).
+\end{enumerate}
+
+
+
+\end{document}

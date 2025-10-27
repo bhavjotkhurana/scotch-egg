@@ -1,0 +1,512 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\setstretch{1.2}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    \LARGE \textbf{Unit 7: Exponential and General Functions} \\[6pt]
+    \Large \textbf{Topic 1: Exponential Growth and Decay}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+Exponential functions model situations where a quantity changes by a constant \textbf{percentage rate} over equal time intervals.  
+They have the general form:
+\[
+y = a \, b^x,
+\]
+where:
+\begin{itemize}
+  \item \(a\) is the initial value (when \(x = 0\)),
+  \item \(b\) is the growth or decay factor,
+  \item \(x\) is the time or independent variable.
+\end{itemize}
+
+\[
+\begin{cases}
+b > 1 & \text{Exponential Growth} \\
+0 < b < 1 & \text{Exponential Decay}
+\end{cases}
+\]
+
+Each increase of 1 unit in \(x\) multiplies the value of \(y\) by \(b\), not adds to it.  
+This is the key difference from linear functions, which change by a constant amount.
+
+The percentage rate of change can be written as:
+\[
+b = 1 + r \quad \text{for growth}, \qquad b = 1 - r \quad \text{for decay},
+\]
+where \(r\) is the rate expressed as a decimal.
+
+\subsection*{Exponential Growth Example}
+Population, compound interest, or bacteria doubling over time follow growth patterns.
+
+\[
+P(t) = P_0 (1 + r)^t
+\]
+
+\subsection*{Exponential Decay Example}
+Radioactive decay or depreciation of value follow decay patterns.
+
+\[
+A(t) = A_0 (1 - r)^t
+\]
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Identify \(a\), \(b\), and the growth/decay rate \(r\).
+  \item Distinguish between linear (additive) and exponential (multiplicative) change.
+  \item Write exponential models from verbal descriptions or data.
+  \item Evaluate exponential expressions for given time intervals.
+  \item Interpret real-world meanings of constants \(a\), \(b\), and \(r\).
+\end{itemize}
+
+\section*{Example 1: Identifying Growth or Decay}
+
+Determine whether each function represents growth or decay:
+\[
+\text{(a) } y = 200(1.05)^x, \quad \text{(b) } y = 500(0.92)^x.
+\]
+
+(a) \(b = 1.05 > 1\) → Growth (5% increase per unit).  
+(b) \(b = 0.92 < 1\) → Decay (8% decrease per unit).
+
+\textbf{Answer:} (a) Growth; (b) Decay.
+
+\section*{Example 2: Writing an Exponential Model}
+
+A population of 1000 bacteria doubles every 4 hours.  
+\[
+P(t) = 1000(2)^{t/4}.
+\]
+Each 4-hour period multiplies the amount by 2.  
+\textbf{Interpretation:} \(a = 1000\), doubling time = 4 hours.
+
+\section*{Example 3: Finding the Growth Rate}
+
+An investment grows according to \(A = 500(1.06)^t.\)  
+Here \(r = 0.06,\) so growth rate = 6% per time unit.  
+After 5 years:
+\[
+A = 500(1.06)^5 = 500(1.3382) = 669.1.
+\]
+\(\boxed{A = \$669.10}\)
+
+\section*{Example 4: Exponential Decay Model}
+
+A car’s value is modeled by \(V = 30{,}000(0.85)^t,\) where \(t\) is years after purchase.  
+Each year, it retains 85% of its previous value → 15% loss annually.  
+After 3 years:
+\[
+V = 30{,}000(0.85)^3 = 30{,}000(0.614) = 18{,}420.
+\]
+\(\boxed{V = \$18{,}420}\)
+
+\section*{Example 5: Comparing Two Models}
+
+Compare \(y = 100(1.03)^x\) and \(y = 100(0.97)^x.\)
+
+The first model grows 3% each period; the second decays 3%.  
+If \(x = 10\):
+\[
+y_1 = 100(1.03)^{10} = 134.4, \quad y_2 = 100(0.97)^{10} = 73.7.
+\]
+
+\textbf{Interpretation:} Growth doubles faster than decay reduces.
+
+\section*{Example 6: Graph Behavior}
+
+(Insert exponential graphs here:  
+— One for growth with \(b > 1\) rising rapidly;  
+— One for decay with \(0 < b < 1\) decreasing toward 0.)
+
+Key features:
+\begin{itemize}
+  \item Both pass through \((0, a)\).
+  \item Growth curves rise to the right.
+  \item Decay curves fall to the right.
+  \item The x-axis (\(y = 0\)) is a horizontal asymptote.
+\end{itemize}
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Exponential growth multiplies by a constant factor \(b > 1\).
+  \item Exponential decay multiplies by \(0 < b < 1\).
+  \item Rate \(r\) links to \(b\) through \(b = 1 \pm r.\)
+  \item Graphs approach but never reach 0 (asymptote at \(y = 0\)).
+  \item Recognizing \(b\) and interpreting context are key SAT skills.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — UNIT 7, TOPIC 1: EXPONENTIAL GROWTH AND DECAY
+% ============================================================
+
+\section*{Practice Questions: Exponential Growth and Decay}
+
+\subsection*{Part A: Identifying Growth or Decay}
+\begin{enumerate}
+  \item Determine whether each represents growth or decay:  
+  \(y = 250(1.08)^x\)
+  \item Determine whether \(y = 600(0.97)^x\) represents growth or decay.
+  \item Classify \(y = 1200(1.02)^x\) and \(y = 500(0.6)^x\) as growth or decay.
+  \item Identify the growth rate \(r\) for \(y = 200(1.15)^x.\)
+  \item Identify the decay rate \(r\) for \(y = 400(0.9)^x.\)
+\end{enumerate}
+
+\subsection*{Part B: Writing and Interpreting Models}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item A population of 500 bacteria triples every 6 hours. Write an exponential model for \(t\) hours.
+  \item A \$1000 investment increases by 5\% per year. Write a model for its value after \(t\) years.
+  \item A new car worth \$25,000 loses 12\% of its value per year. Write the decay model.
+  \item A medicine dose of 200 mg decreases by 30\% every hour. Write the decay formula.
+  \item A culture of 1500 cells doubles every 8 hours. Write a model to represent this growth.
+\end{enumerate}
+
+\subsection*{Part C: Evaluating Exponential Expressions}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item Evaluate \(y = 300(1.04)^5.\)
+  \item Evaluate \(A = 500(0.95)^{10}.\)
+  \item Find the value of \(P = 1000(1.12)^3.\)
+  \item A computer’s value is \(V = 1200(0.8)^t.\) Find \(V\) after 4 years.
+  \item A population grows according to \(P = 200(1.07)^t.\) Find \(P\) when \(t = 6.\)
+\end{enumerate}
+
+\subsection*{Part D: Real-World Context and Reasoning}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item A bank account balance grows from \$500 to \$800 in 10 years. Estimate the growth factor \(b.\)
+  \item A radioactive substance decays by 40\% each hour. What is the decay factor \(b\)?
+  \item A population decreases from 10,000 to 4900 in 5 years. What is the approximate decay rate per year?
+  \item A savings account doubles in value every 9 years. What is the growth factor \(b\)?
+  \item A town’s population follows \(P = 20{,}000(0.98)^t.\) What does 0.98 represent?
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+(Insert appropriate graphs here: one showing growth and one showing decay over time.)
+
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item The graph of \(y = 200(1.03)^x\) passes through which key point?
+  A) \((0, 0)\) \quad B) \((0, 200)\) \quad C) \((1, 200)\) \quad D) \((1, 206)\)
+
+  \item An exponential function models a cooling process: \(T = 70 + 100(0.85)^t.\)  
+  What is the starting temperature?
+
+  \item A town’s population is 10,000 and grows 2\% per year.  
+  Estimate the population after 10 years.
+
+  \item A \$10,000 car depreciates at 15\% per year.  
+  After how many years will it be worth half its original value? (Round to nearest tenth.)
+
+  \item Two investments are modeled by  
+  \(A = 1000(1.05)^t\) and \(B = 1200(1.03)^t.\)  
+  After 5 years, which investment is worth more, and by how much?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — UNIT 7, TOPIC 1: EXPONENTIAL GROWTH AND DECAY
+% ============================================================
+
+\section*{Answer Key and Solutions: Exponential Growth and Decay}
+
+\subsection*{Part A Solutions: Identifying Growth or Decay}
+\begin{enumerate}
+  \item \(y = 250(1.08)^x\)
+
+  Factor \(b = 1.08 > 1\). This is growth at 8\% per time unit.
+
+  \(\boxed{\text{Growth, } r = 8\%}\)
+
+  \item \(y = 600(0.97)^x\)
+
+  Factor \(b = 0.97 < 1\). This is decay at 3\% per time unit (keeps 97\%, loses 3\%).
+
+  \(\boxed{\text{Decay, } r = 3\%}\)
+
+  \item
+  \[
+  y = 1200(1.02)^x \quad \Rightarrow b = 1.02 > 1 \Rightarrow \text{Growth, } 2\% \text{ rate}
+  \]
+  \[
+  y = 500(0.6)^x \quad \Rightarrow b = 0.6 < 1 \Rightarrow \text{Decay, } 40\% \text{ drop each step}
+  \]
+
+  \(\boxed{\text{First is growth, second is decay}}\)
+
+  \item \(y = 200(1.15)^x\)
+
+  \(b = 1.15 = 1 + r \Rightarrow r = 0.15 = 15\%.\)
+
+  \(\boxed{15\% \text{ growth rate}}\)
+
+  \item \(y = 400(0.9)^x\)
+
+  \(b = 0.9 = 1 - r \Rightarrow r = 0.1 = 10\%.\)
+
+  \(\boxed{10\% \text{ decay rate}}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Writing and Interpreting Models}
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item Population 500, triples every 6 hours.
+
+  Every 6 hours multiply by 3. Time \(t\) in hours:
+  \[
+  P(t) = 500 \cdot 3^{t/6}.
+  \]
+
+  \(\boxed{P(t) = 500 \cdot 3^{t/6}}\)
+
+  \item \$1000 investment, 5\% increase per year.
+
+  Growth factor \(1 + 0.05 = 1.05\):
+  \[
+  A(t) = 1000(1.05)^t.
+  \]
+
+  \(\boxed{A(t) = 1000(1.05)^t}\)
+
+  \item Car \$25{,}000, loses 12\% per year.
+
+  Keeps 88\% each year. Decay factor \(0.88\):
+  \[
+  V(t) = 25{,}000(0.88)^t.
+  \]
+
+  \(\boxed{V(t) = 25{,}000(0.88)^t}\)
+
+  \item Medicine 200 mg, decreases 30\% per hour.
+
+  Keeps 70\% each hour. Factor \(0.70\):
+  \[
+  M(t) = 200(0.70)^t.
+  \]
+
+  \(\boxed{M(t) = 200(0.70)^t}\)
+
+  \item 1500 cells, doubles every 8 hours.
+
+  Doubling means factor 2 each 8 hours:
+  \[
+  P(t) = 1500 \cdot 2^{t/8}.
+  \]
+
+  \(\boxed{P(t) = 1500 \cdot 2^{t/8}}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Evaluating Exponential Expressions}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \(y = 300(1.04)^5\)
+
+  \((1.04)^5 \approx 1.2167.\)
+
+  \[
+  y \approx 300 \times 1.2167 \approx 365.0.
+  \]
+
+  \(\boxed{y \approx 365.0}\)
+
+  \item \(A = 500(0.95)^{10}\)
+
+  \((0.95)^{10} \approx 0.5987.\)
+
+  \[
+  A \approx 500 \times 0.5987 \approx 299.4.
+  \]
+
+  \(\boxed{A \approx 299.4}\)
+
+  \item \(P = 1000(1.12)^3\)
+
+  \((1.12)^3 \approx 1.4049.\)
+
+  \[
+  P \approx 1000 \times 1.4049 \approx 1404.9.
+  \]
+
+  \(\boxed{P \approx 1404.9}\)
+
+  \item \(V = 1200(0.8)^t,\; t=4\)
+
+  \((0.8)^4 = 0.4096.\)
+
+  \[
+  V \approx 1200 \times 0.4096 \approx 491.5.
+  \]
+
+  \(\boxed{V \approx 491.5}\)
+
+  \item \(P = 200(1.07)^t,\; t=6\)
+
+  \((1.07)^6 \approx 1.5007.\)
+
+  \[
+  P \approx 200 \times 1.5007 \approx 300.1.
+  \]
+
+  \(\boxed{P \approx 300.1}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Real-World Context and Reasoning}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item Account goes from 500 to 800 in 10 years.
+
+  Model: \(500 \cdot b^{10} = 800.\)
+
+  \[
+  b^{10} = \frac{800}{500} = 1.6
+  \quad \Rightarrow \quad
+  b \approx 1.048.
+  \]
+
+  So about \(4.8\%\) growth per year.
+
+  \(\boxed{b \approx 1.048 \text{ (about 4.8\% growth per year)}}\)
+
+  \item A substance loses 40\% each hour.
+
+  Keeps 60\% each hour. So
+  \[
+  b = 0.60.
+  \]
+
+  \(\boxed{b = 0.60}\)
+
+  \item Population drops from 10{,}000 to 4900 in 5 years.
+
+  Model: \(10{,}000 \cdot b^5 = 4900.\)
+
+  \[
+  b^5 = 0.49 \quad \Rightarrow \quad b \approx 0.867.
+  \]
+
+  This means it keeps about 86.7\% each year, so decay rate is about 13.3\% per year.
+
+  \(\boxed{\text{About } 13\% \text{ decrease per year}}\)
+
+  \item A savings account doubles every 9 years.
+
+  Doubling means factor 2 in 9 years:
+  \[
+  b = 2^{1/9} \approx 1.080.
+  \]
+
+  So about 8\% growth per year.
+
+  \(\boxed{b \approx 1.08 \text{ (about 8\% per year)}}\)
+
+  \item \(P = 20{,}000(0.98)^t\)
+
+  The factor 0.98 means each year the town keeps 98\% of its population.
+
+  That is a 2\% decrease per year.
+
+  \(\boxed{\text{Population drops 2\% per year}}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item \(y = 200(1.03)^x\)
+
+  At \(x = 0\): \(y = 200(1.03)^0 = 200.\)
+
+  The point \((0, 200)\) is always on an exponential \(a b^x\).
+
+  \(\boxed{\text{Choice B } (0, 200)}\)
+
+  \item \(T = 70 + 100(0.85)^t\)
+
+  At \(t = 0\):
+  \[
+  T = 70 + 100(1) = 170.
+  \]
+
+  Starting temperature is 170.
+
+  \(\boxed{170^\circ}\)
+
+  \item Population 10{,}000 grows 2\% per year.
+
+  Model:
+  \[
+  P(t) = 10{,}000(1.02)^t.
+  \]
+
+  After 10 years:
+  \[
+  P(10) = 10{,}000(1.02)^{10} \approx 10{,}000 \times 1.219 \approx 12{,}190.
+  \]
+
+  \(\boxed{\text{About } 12{,}200}\)
+
+  \item Car \$10{,}000 depreciates 15\% per year.
+
+  Value model:
+  \[
+  V = 10{,}000(0.85)^t.
+  \]
+
+  Half value is \$5{,}000:
+  \[
+  10{,}000(0.85)^t = 5{,}000
+  \Rightarrow (0.85)^t = 0.5.
+  \]
+
+  Solve:
+  \[
+  t = \frac{\ln(0.5)}{\ln(0.85)} \approx 4.3 \text{ years}.
+  \]
+
+  \(\boxed{4.3 \text{ years (approx)}}\)
+
+  \item
+  \[
+  A = 1000(1.05)^5, \quad
+  B = 1200(1.03)^5.
+  \]
+
+  Compute:
+  \[
+  A \approx 1276.28,
+  \quad
+  B \approx 1391.13.
+  \]
+
+  \(B\) is larger.
+
+  Difference:
+  \[
+  1391.13 - 1276.28 \approx 114.85.
+  \]
+
+  \(\boxed{\text{Investment B is larger by about \$115}}\)
+\end{enumerate}
+
+
+
+\end{document}
