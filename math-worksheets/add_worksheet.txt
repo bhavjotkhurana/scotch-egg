@@ -1,0 +1,10 @@
+node scripts/uploadWorksheet.js \
+  --title "SAT Algebra Drill" \
+  --description "Linear equations practice" \
+  --category "SAT Math" \
+  --difficulty "Intermediate" \
+  --pdf "./Unit 1/u1_t1.pdf" \
+  --topics "Linear Equations,Systems" \
+  --pages 6 \
+  --preview "./images/u1_t1.png"
+
