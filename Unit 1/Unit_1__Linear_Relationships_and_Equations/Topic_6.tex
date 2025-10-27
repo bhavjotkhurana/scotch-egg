@@ -1,0 +1,226 @@
+\documentclass[14pt]{extarticle}
+
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+% ---------- DOCUMENT ----------
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 1: Linear Relationships and Equations} \\[6pt]
+    \Large \textbf{Topic 6: Equation of a Line}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+A \textbf{linear equation} represents all points \((x, y)\) that form a straight line on the coordinate plane.  
+There are several ways to write the equation of a line, depending on what information is given.
+
+\subsection*{1. Slope–Intercept Form}
+\[
+y = mx + b
+\]
+where:
+\begin{itemize}
+    \item \(m\) is the slope (rate of change)
+    \item \(b\) is the \(y\)-intercept (the point where the line crosses the \(y\)-axis)
+\end{itemize}
+
+\textbf{Example:} \(y = 2x + 3\) has slope \(2\) and \(y\)-intercept \(3\).
+
+\subsection*{2. Point–Slope Form}
+\[
+y - y_1 = m(x - x_1)
+\]
+Used when you know the slope \(m\) and one point \((x_1, y_1)\) on the line.  
+This form is especially useful for building an equation quickly from limited data.
+
+\textbf{Example:} The line through \((2, 5)\) with slope \(3\) is  
+\[
+y - 5 = 3(x - 2)
+\]
+which can be rewritten as \(y = 3x - 1\).
+
+\subsection*{3. Standard Form}
+\[
+Ax + By = C
+\]
+where \(A\), \(B\), and \(C\) are integers, and \(A\) is usually positive.  
+This form is often used to find intercepts easily:
+\[
+x\text{-intercept: set } y = 0 \quad \text{and} \quad y\text{-intercept: set } x = 0
+\]
+
+\subsection*{Example 1: Writing an Equation from a Graph}
+A line passes through \((0, 2)\) and has slope \(4\).  
+\[
+y = 4x + 2
+\]
+Slope = 4, \(y\)-intercept = 2.
+
+\subsection*{Example 2: Writing an Equation from Two Points}
+Find the equation of the line through \((1, 3)\) and \((5, 11)\).
+
+\textbf{Step 1: Find the slope.}
+\[
+m = \frac{11 - 3}{5 - 1} = \frac{8}{4} = 2
+\]
+
+\textbf{Step 2: Use point–slope form with \((1, 3)\).}
+\[
+y - 3 = 2(x - 1)
+\]
+
+\textbf{Step 3: Simplify to slope–intercept form.}
+\[
+y = 2x + 1
+\]
+
+\textbf{Final Answer:} \(\boxed{y = 2x + 1}\)
+
+\section*{Key Takeaways}
+\begin{itemize}
+    \item Use \(y = mx + b\) when slope and intercept are known.
+    \item Use \(y - y_1 = m(x - x_1)\) when you know a slope and one point.
+    \item Use \(Ax + By = C\) for standard form or when working with intercepts.
+    \item All forms describe the same line — they are just written differently.
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — TOPIC 6: EQUATION OF A LINE
+% ============================================================
+
+\section*{Practice Questions: Equation of a Line}
+
+\subsection*{Part A: Slope–Intercept Form}
+\begin{enumerate}
+    \item Identify the slope and \(y\)-intercept of \(y = 2x + 5\).
+    \item Identify the slope and \(y\)-intercept of \(y = -3x + 1\).
+    \item Write the equation of a line with slope \(4\) and \(y\)-intercept \(-2\).
+    \item Write the equation of a line with slope \(-1\) and \(y\)-intercept \(6\).
+    \item Find the slope and \(y\)-intercept of \(y = \tfrac{1}{2}x - 4\).
+\end{enumerate}
+
+\subsection*{Part B: Point–Slope Form}
+\begin{enumerate}
+    \setcounter{enumi}{5}
+    \item Write an equation of a line with slope \(3\) passing through \((2, 5)\).
+    \item Write an equation of a line with slope \(-2\) passing through \((4, -1)\).
+    \item Write an equation of a line with slope \(\tfrac{1}{2}\) passing through \((0, 8)\).
+    \item Find the equation of a line through \((1, 2)\) and \((3, 8)\).
+    \item Find the equation of a line through \((-2, 5)\) and \((4, -7)\).
+\end{enumerate}
+
+\subsection*{Part C: Standard Form and Conversion}
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \item Write \(y = 3x - 6\) in standard form \(Ax + By = C\).
+    \item Write \(2x - y = 4\) in slope–intercept form.
+    \item Write \(3x + 4y = 12\) in slope–intercept form.
+    \item Write the equation of a line with slope \(-\tfrac{3}{2}\) and \(y\)-intercept \(4\) in standard form.
+    \item Find the \(x\)- and \(y\)-intercepts of \(2x + 3y = 12\).
+\end{enumerate}
+
+\subsection*{Part D: Parallel and Perpendicular Lines}
+\begin{enumerate}
+    \setcounter{enumi}{15}
+    \item Write the equation of a line parallel to \(y = 2x + 3\) passing through \((1, 5)\).
+    \item Write the equation of a line perpendicular to \(y = -\tfrac{1}{3}x + 2\) passing through \((3, 4)\).
+    \item Are the lines \(y = 4x + 1\) and \(4x - y = 3\) parallel, perpendicular, or neither?
+    \item Determine whether the lines \(2x + y = 8\) and \(x - 2y = 5\) are parallel, perpendicular, or neither.
+    \item Write the equation of the line perpendicular to \(y = \tfrac{1}{2}x + 7\) that passes through \((2, 3)\).
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Word and Context Problems}
+\begin{enumerate}
+    \setcounter{enumi}{20}
+    \item A taxi ride costs \$4 plus \$2 per mile. Write the linear equation that models the total cost \(C\) for \(m\) miles.
+    \item A company’s revenue is \$500 when 10 units are sold and \$800 when 25 units are sold. Write the equation for revenue \(R\) as a function of units \(x\).
+    \item A line passes through the points \((0, 40)\) and \((5, 25)\). Write its equation and interpret the slope.
+    \item A plumber charges a \$60 service fee plus \$40 per hour. Write the cost equation.
+    \item The temperature is 70°F at noon and 58°F at 4 PM. Write the linear equation modeling temperature \(T\) as a function of time \(t\) (hours after noon).
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — TOPIC 6: EQUATION OF A LINE
+% ============================================================
+
+\section*{Answer Key and Solutions: Equation of a Line}
+
+\subsection*{Part A Solutions: Slope–Intercept Form}
+\begin{enumerate}
+    \item \(y=2x+5\): slope \(m=\boxed{2}\), \(y\)-intercept \(\boxed{5}\).
+    \item \(y=-3x+1\): \(m=\boxed{-3}\), \(y\)-intercept \(\boxed{1}\).
+    \item Slope \(4\), \(y\)-int \(-2\): \(\boxed{y=4x-2}\).
+    \item Slope \(-1\), \(y\)-int \(6\): \(\boxed{y=-x+6}\).
+    \item \(y=\tfrac12 x-4\): \(m=\boxed{\tfrac12}\), \(y\)-intercept \(\boxed{-4}\).
+\end{enumerate}
+
+\subsection*{Part B Solutions: Point–Slope Form}
+\begin{enumerate}
+    \setcounter{enumi}{5}
+    \item Through \((2,5)\), \(m=3\): \(y-5=3(x-2)\Rightarrow \boxed{y=3x-1}\).
+    \item Through \((4,-1)\), \(m=-2\): \(y+1=-2(x-4)\Rightarrow \boxed{y=-2x+7}\).
+    \item Through \((0,8)\), \(m=\tfrac12\): \(y-8=\tfrac12(x-0)\Rightarrow \boxed{y=\tfrac12 x+8}\).
+    \item \((1,2)\), \((3,8)\): \(m=\frac{8-2}{3-1}=3\). \(y-2=3(x-1)\Rightarrow \boxed{y=3x-1}\).
+    \item \((-2,5)\), \((4,-7)\): \(m=\frac{-7-5}{4-(-2)}=-2\). \(y-5=-2(x+2)\Rightarrow \boxed{y=-2x+1}\).
+\end{enumerate}
+
+\subsection*{Part C Solutions: Standard Form and Conversion}
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \item \(y=3x-6 \Rightarrow \boxed{3x - y = 6}\).
+    \item \(2x-y=4 \Rightarrow -y=-2x+4 \Rightarrow \boxed{y=2x-4}\).
+    \item \(3x+4y=12 \Rightarrow 4y=-3x+12 \Rightarrow \boxed{y=-\tfrac34 x + 3}\).
+    \item \(m=-\tfrac32, b=4\Rightarrow y=-\tfrac32 x+4 \Rightarrow 2y=-3x+8 \Rightarrow \boxed{3x+2y=8}\).
+    \item \(2x+3y=12\): \(x\)-int \((6,0)\), \(y\)-int \((0,4)\).
+\end{enumerate}
+
+\subsection*{Part D Solutions: Parallel and Perpendicular Lines}
+\begin{enumerate}
+    \setcounter{enumi}{15}
+    \item Parallel slope \(2\): \(y-5=2(x-1)\Rightarrow \boxed{y=2x+3}\).
+    \item Perpendicular to \(-\tfrac13\) has slope \(3\): \(y-4=3(x-3)\Rightarrow \boxed{y=3x-5}\).
+    \item \(y=4x+1\) and \(4x-y=3\Rightarrow y=4x-3\): same slope \(\Rightarrow\) \boxed{Parallel}.
+    \item \(2x+y=8 \Rightarrow m=-2\); \(x-2y=5 \Rightarrow m=\tfrac12\); product \(-1\Rightarrow\) \boxed{Perpendicular}.
+    \item Perpendicular to \(m=\tfrac12\) has slope \(-2\): \(y-3=-2(x-2)\Rightarrow \boxed{y=-2x+7}\).
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Word and Context Problems}
+\begin{enumerate}
+    \setcounter{enumi}{20}
+    \item Cost model: \(\boxed{C=2m+4}\).
+    \item Through \((10,500)\), \((25,800)\): \(m=\frac{300}{15}=20\). \(500=20(10)+b\Rightarrow b=300\). \(\boxed{R=20x+300}\).
+    \item \((0,40)\), \((5,25)\): \(m=\frac{25-40}{5-0}=-3\). \(\boxed{y=-3x+40}\). Slope means \(y\) decreases by \(3\) per \(1\) increase in \(x\).
+    \item \(\boxed{C=40h+60}\).
+    \item \(t=0\Rightarrow 70,\ t=4\Rightarrow58\): \(m=\frac{58-70}{4}=-3\). \(\boxed{T=-3t+70}\).
+\end{enumerate}
+
+
+
+\end{document}

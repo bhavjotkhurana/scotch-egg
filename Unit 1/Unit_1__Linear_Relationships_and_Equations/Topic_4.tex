@@ -1,0 +1,263 @@
+\documentclass[14pt]{extarticle}
+
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+% ---------- DOCUMENT ----------
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 1: Linear Relationships and Equations} \\[6pt]
+    \Large \textbf{Topic 4: Linear Inequalities (Including Compound and Absolute Value)}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+An \textbf{inequality} shows a relationship where two expressions are not necessarily equal.  
+Instead, one side is greater or less than the other.
+
+\[
+\begin{aligned}
+a < b &\quad \text{means } a \text{ is less than } b \\
+a > b &\quad \text{means } a \text{ is greater than } b \\
+a \leq b &\quad \text{means } a \text{ is less than or equal to } b \\
+a \geq b &\quad \text{means } a \text{ is greater than or equal to } b
+\end{aligned}
+\]
+
+Solving inequalities is very similar to solving equations — the same operations can be performed on both sides.  
+However, there is one key rule to remember:
+
+\[
+\textbf{When you multiply or divide by a negative number, you must flip the inequality sign.}
+\]
+
+\section*{Compound Inequalities}
+
+Sometimes two inequalities are joined by the words \textbf{and} or \textbf{or}.
+
+\begin{itemize}
+    \item “\textbf{and}” means both conditions must be true — the overlap of the solution sets.
+    \item “\textbf{or}” means either condition can be true — the combined solution set.
+\end{itemize}
+
+Example of an “and” compound inequality:
+\[
+-2 < x \leq 5
+\]
+This means \(x\) is greater than \(-2\) \emph{and} less than or equal to \(5\).
+
+\section*{Absolute Value Equations and Inequalities}
+
+The \textbf{absolute value} of a number represents its distance from 0 on the number line.  
+Distance is always positive.
+
+\[
+|x| = 
+\begin{cases}
+x, & x \ge 0 \\
+-x, & x < 0
+\end{cases}
+\]
+
+\begin{itemize}
+    \item If \(|x| = a\), then \(x = a\) or \(x = -a\).
+    \item If \(|x| < a\), then \(-a < x < a\).
+    \item If \(|x| > a\), then \(x < -a\) or \(x > a\).
+\end{itemize}
+
+\section*{Core Skills}
+\begin{itemize}
+    \item Apply the same operations to both sides of an inequality.
+    \item Reverse the inequality symbol when multiplying or dividing by a negative.
+    \item Solve and represent compound inequalities.
+    \item Split absolute value inequalities into two separate linear inequalities.
+\end{itemize}
+
+\section*{Example 1: Solving a Simple Inequality}
+
+Solve for \(x\):
+\[
+2x - 5 < 7
+\]
+
+\textbf{Step 1: Add 5 to both sides.}
+\[
+2x < 12
+\]
+
+\textbf{Step 2: Divide by 2.}
+\[
+x < 6
+\]
+
+\textbf{Final Answer:} \(\boxed{x < 6}\)
+
+\textbf{Graph:} Shade all numbers less than 6 on the number line (open circle at 6).
+
+\section*{Example 2: Absolute Value Inequality}
+
+Solve for \(x\):
+\[
+|x - 3| \le 5
+\]
+
+\textbf{Step 1: Write as a compound inequality.}
+\[
+-5 \le x - 3 \le 5
+\]
+
+\textbf{Step 2: Add 3 to all sides.}
+\[
+-2 \le x \le 8
+\]
+
+\textbf{Final Answer:} \(\boxed{-2 \le x \le 8}\)
+
+\textbf{Interpretation:} All values of \(x\) that are within 5 units of 3 satisfy the inequality.
+
+\section*{Key Takeaways}
+\begin{itemize}
+    \item Solving inequalities follows the same steps as solving equations, except when multiplying or dividing by a negative number - always flip the sign.
+    \item Compound inequalities combine solution sets with “and” or “or”.
+    \item Absolute value inequalities describe distances from a central point on the number line.
+\end{itemize}
+\newpage
+
+% ============================================================
+% QUESTIONS — TOPIC 4: LINEAR INEQUALITIES (INCLUDING COMPOUND AND ABSOLUTE VALUE)
+% ============================================================
+
+\section*{Practice Questions: Linear Inequalities (Including Compound and Absolute Value)}
+
+\subsection*{Part A: Basic Inequalities}
+\begin{enumerate}
+    \item Solve for \(x\): \(x + 5 < 9\)
+    \item Solve for \(x\): \(2x - 3 \ge 7\)
+    \item Solve for \(x\): \(5x + 4 < 19\)
+    \item Solve for \(x\): \(4x - 8 > 0\)
+    \item Solve for \(x\): \(-3x + 2 \le 11\)
+\end{enumerate}
+
+\subsection*{Part B: Inequalities with Negative Coefficients}
+\begin{enumerate}
+    \setcounter{enumi}{5}
+    \item Solve for \(x\): \(-2x + 5 > 9\)
+    \item Solve for \(x\): \(-4x - 8 < 0\)
+    \item Solve for \(x\): \(-3x + 7 \le 1\)
+    \item Solve for \(x\): \(-6x > 12\)
+    \item Solve for \(x\): \(-5x + 4 \ge 9\)
+\end{enumerate}
+
+\subsection*{Part C: Compound Inequalities}
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \item Solve for \(x\): \(2 < x + 5 \le 9\)
+    \item Solve for \(x\): \(-3 \le 2x - 1 < 5\)
+    \item Solve for \(x\): \(x - 4 > 2\) or \(x + 1 < 0\)
+    \item Solve for \(x\): \(3x + 2 \le 8\) and \(x - 1 > 0\)
+    \item Solve for \(x\): \(x + 2 > 6\) or \(x - 3 < -2\)
+\end{enumerate}
+
+\subsection*{Part D: Absolute Value Equations and Inequalities}
+\begin{enumerate}
+    \setcounter{enumi}{15}
+    \item Solve for \(x\): \(|x| = 4\)
+    \item Solve for \(x\): \(|x - 3| = 7\)
+    \item Solve for \(x\): \(|x + 2| < 5\)
+    \item Solve for \(x\): \(|2x - 4| \le 6\)
+    \item Solve for \(x\): \(|3x + 1| > 7\)
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Word and Application Problems}
+\begin{enumerate}
+    \setcounter{enumi}{20}
+    \item A phone plan costs \$20 per month plus \$0.10 per text message.  
+    If a customer’s bill must stay under \$50, write and solve an inequality for the number of messages \(t\).
+    \item The inequality \(5x + 20 \le 70\) represents a budget constraint. What is the greatest possible value of \(x\)?
+    \item The temperature \(T\) (in °F) must stay within 8 degrees of 72°F. Write an absolute value inequality that represents this situation.
+    \item The length \(L\) of a rod must be within 0.5 cm of 10 cm. Write and solve an inequality for \(L\).
+    \item The profit \(P\) from selling \(x\) products is given by \(P = 15x - 120\).  
+    The company wants at least \$60 profit. Write and solve an inequality for \(x\).
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — TOPIC 4: LINEAR INEQUALITIES (INCLUDING COMPOUND AND ABSOLUTE VALUE)
+% ============================================================
+
+\section*{Answer Key and Solutions: Linear Inequalities (Including Compound and Absolute Value)}
+
+\subsection*{Part A Solutions: Basic Inequalities}
+\begin{enumerate}
+    \item \(x + 5 < 9 \Rightarrow x < \boxed{4}\)
+    \item \(2x - 3 \ge 7 \Rightarrow 2x \ge 10 \Rightarrow x \ge \boxed{5}\)
+    \item \(5x + 4 < 19 \Rightarrow 5x < 15 \Rightarrow x < \boxed{3}\)
+    \item \(4x - 8 > 0 \Rightarrow 4x > 8 \Rightarrow x > \boxed{2}\)
+    \item \(-3x + 2 \le 11 \Rightarrow -3x \le 9 \Rightarrow x \ge \boxed{-3}\) \quad (flip sign when dividing by \(-3\))
+\end{enumerate}
+
+\subsection*{Part B Solutions: Inequalities with Negative Coefficients}
+\begin{enumerate}
+    \setcounter{enumi}{5}
+    \item \(-2x + 5 > 9 \Rightarrow -2x > 4 \Rightarrow x < \boxed{-2}\)
+    \item \(-4x - 8 < 0 \Rightarrow -4x < 8 \Rightarrow x > \boxed{-2}\)
+    \item \(-3x + 7 \le 1 \Rightarrow -3x \le -6 \Rightarrow x \ge \boxed{2}\)
+    \item \(-6x > 12 \Rightarrow x < \boxed{-2}\)
+    \item \(-5x + 4 \ge 9 \Rightarrow -5x \ge 5 \Rightarrow x \le \boxed{-1}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Compound Inequalities}
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \item \(2 < x + 5 \le 9 \Rightarrow -3 < x \le \boxed{4}\)
+    \item \(-3 \le 2x - 1 < 5 \Rightarrow -2 \le 2x < 6 \Rightarrow -1 \le x < \boxed{3}\)
+    \item \(x - 4 > 2\) or \(x + 1 < 0 \Rightarrow x > 6\) or \(x < \boxed{-1}\)
+    \item \(3x + 2 \le 8\) and \(x - 1 > 0 \Rightarrow x \le 2\) and \(x > 1\). Combine: \( \boxed{1 < x \le 2}\)
+    \item \(x + 2 > 6\) or \(x - 3 < -2 \Rightarrow x > 4\) or \(x < \boxed{1}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Absolute Value Equations and Inequalities}
+\begin{enumerate}
+    \setcounter{enumi}{15}
+    \item \(|x| = 4 \Rightarrow x = \boxed{4} \text{ or } x = \boxed{-4}\)
+    \item \(|x - 3| = 7 \Rightarrow x - 3 = 7 \text{ or } x - 3 = -7 \Rightarrow x = \boxed{10} \text{ or } x = \boxed{-4}\)
+    \item \(|x + 2| < 5 \Rightarrow -5 < x + 2 < 5 \Rightarrow \boxed{-7 < x < 3}\)
+    \item \(|2x - 4| \le 6 \Rightarrow -6 \le 2x - 4 \le 6 \Rightarrow -2 \le 2x \le 10 \Rightarrow \boxed{-1 \le x \le 5}\)
+    \item \(|3x + 1| > 7 \Rightarrow 3x + 1 > 7 \text{ or } 3x + 1 < -7 \Rightarrow x > 2 \text{ or } x < \boxed{-\tfrac{8}{3}}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Word and Application Problems}
+\begin{enumerate}
+    \setcounter{enumi}{20}
+    \item Cost model: \(20 + 0.10t < 50 \Rightarrow 0.10t < 30 \Rightarrow t < \boxed{300}\). For whole texts, \(t \le 299\).
+    \item \(5x + 20 \le 70 \Rightarrow 5x \le 50 \Rightarrow x \le \boxed{10}\). Greatest possible value is \(10\).
+    \item Temperatures within 8 of 72: \(\boxed{|T - 72| \le 8}\).
+    \item Length within 0.5 of 10: \(|L - 10| \le 0.5 \Rightarrow \boxed{9.5 \le L \le 10.5}\).
+    \item Profit at least 60: \(15x - 120 \ge 60 \Rightarrow 15x \ge 180 \Rightarrow x \ge \boxed{12}\).
+\end{enumerate}
+
+
+\end{document}

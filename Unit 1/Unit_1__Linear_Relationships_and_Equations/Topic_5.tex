@@ -1,0 +1,245 @@
+\documentclass[14pt]{extarticle}
+
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+% ---------- DOCUMENT ----------
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 1: Linear Relationships and Equations} \\[6pt]
+    \Large \textbf{Topic 5: Slope and Rate of Change}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+The \textbf{slope} of a line describes how steep the line is — it measures how much \(y\) changes when \(x\) increases by 1.  
+In other words, slope represents the \textbf{rate of change} between two quantities.
+
+\[
+\text{Slope } (m) = \frac{\text{change in } y}{\text{change in } x} = \frac{y_2 - y_1}{x_2 - x_1}
+\]
+
+If you imagine moving along a line:
+- The numerator \((y_2 - y_1)\) represents the “rise” (vertical change).  
+- The denominator \((x_2 - x_1)\) represents the “run” (horizontal change).  
+
+\textbf{Slope as Rate:}  
+On the SAT, slope often represents a real-world rate such as:
+\[
+\text{miles per hour}, \quad \text{dollars per item}, \quad \text{points per game}, \quad \text{etc.}
+\]
+
+\subsection*{Types of Slope}
+\[
+\begin{aligned}
+m > 0 &\Rightarrow \text{line rises left to right (positive slope)} \\
+m < 0 &\Rightarrow \text{line falls left to right (negative slope)} \\
+m = 0 &\Rightarrow \text{horizontal line} \\
+\text{Undefined slope} &\Rightarrow \text{vertical line}
+\end{aligned}
+\]
+
+\subsection*{Slope Relationships}
+\begin{itemize}
+    \item \textbf{Parallel lines} have the same slope.
+    \item \textbf{Perpendicular lines} have slopes that are negative reciprocals:  
+    \[
+    m_1 \cdot m_2 = -1
+    \]
+\end{itemize}
+
+\section*{Core Skills}
+\begin{itemize}
+    \item Find slope from two points, a graph, or an equation.
+    \item Interpret slope as a rate of change in context.
+    \item Recognize slope patterns for parallel and perpendicular lines.
+    \item Identify slope units in real-world models.
+\end{itemize}
+
+\section*{Example 1: Finding Slope from Two Points}
+
+Find the slope of the line passing through the points \((2, 5)\) and \((6, 13)\).
+
+\textbf{Step 1: Label the points.}  
+\((x_1, y_1) = (2, 5)\), \((x_2, y_2) = (6, 13)\)
+
+\textbf{Step 2: Use the slope formula.}
+\[
+m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{13 - 5}{6 - 2} = \frac{8}{4} = 2
+\]
+
+\textbf{Final Answer:} \(\boxed{m = 2}\)
+
+\textbf{Interpretation:} For every 1 unit increase in \(x\), \(y\) increases by 2 units.
+
+\section*{Example 2: Slope as a Rate of Change}
+
+A car travels 120 miles in 3 hours. What is its average rate of change in miles per hour?
+
+\textbf{Step 1: Identify the change in distance and change in time.}  
+\[
+\text{Change in distance} = 120 \text{ miles}, \quad \text{Change in time} = 3 \text{ hours}
+\]
+
+\textbf{Step 2: Compute the rate.}
+\[
+m = \frac{\text{change in distance}}{\text{change in time}} = \frac{120}{3} = 40
+\]
+
+\textbf{Final Answer:} \(\boxed{40 \text{ miles per hour}}\)
+
+\textbf{Interpretation:} The slope of the line on a distance–time graph would be 40, showing a steady rate of travel.
+
+\section*{Key Takeaways}
+\begin{itemize}
+    \item Slope measures the rate of change between two variables.
+    \item Use \(m = \dfrac{y_2 - y_1}{x_2 - x_1}\) to find slope from points.
+    \item Parallel lines have equal slopes; perpendicular lines have negative reciprocal slopes.
+    \item In word problems, slope often represents a real-world rate such as “cost per item” or “distance per time.”
+\end{itemize}
+
+\newpage
+
+% ============================================================
+% QUESTIONS — TOPIC 5: SLOPE AND RATE OF CHANGE
+% ============================================================
+
+\section*{Practice Questions: Slope and Rate of Change}
+
+\subsection*{Part A: Finding Slope from Points}
+\begin{enumerate}
+    \item Find the slope of the line through \((2, 3)\) and \((6, 11)\).
+    \item Find the slope of the line through \((5, 7)\) and \((9, 15)\).
+    \item Find the slope of the line through \((-3, 4)\) and \((5, 0)\).
+    \item Find the slope of the line through \((0, 8)\) and \((3, -4)\).
+    \item Find the slope of the line through \((-2, -3)\) and \((2, 5)\).
+\end{enumerate}
+
+\subsection*{Part B: Identifying Slope from an Equation}
+\begin{enumerate}
+    \setcounter{enumi}{5}
+    \item Find the slope of \(y = 3x + 7\).
+    \item Find the slope of \(y = -2x + 4\).
+    \item Find the slope of \(2x + 5y = 10\).
+    \item Find the slope of \(4x - y = 12\).
+    \item Find the slope of \(3y + 6x = 9\).
+\end{enumerate}
+
+\subsection*{Part C: Parallel and Perpendicular Lines}
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \item Find the slope of a line parallel to \(y = \tfrac{1}{2}x - 3\).
+    \item Find the slope of a line perpendicular to \(y = -\tfrac{2}{3}x + 4\).
+    \item Determine whether the lines \(y = 2x + 5\) and \(y = -\tfrac{1}{2}x - 3\) are perpendicular.
+    \item Determine whether the lines \(3x - 2y = 6\) and \(y = \tfrac{3}{2}x + 1\) are parallel, perpendicular, or neither.
+    \item The line through \((1, 4)\) and \((3, 8)\) — find the slope of any line perpendicular to it.
+\end{enumerate}
+
+\subsection*{Part D: Rate of Change in Context}
+\begin{enumerate}
+    \setcounter{enumi}{15}
+    \item A runner covers 400 meters in 50 seconds. Find the rate of change (meters per second).
+    \item The price of gas increased from \$3.20 to \$4.00 over 4 months. Find the average rate of change per month.
+    \item The temperature dropped from 68°F to 50°F over 3 hours. Find the rate of change per hour.
+    \item A business earns \$500 for 20 units sold and \$650 for 30 units sold. Find the rate of change in dollars per unit.
+    \item A car travels 150 miles in 3 hours. What is its average speed?
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+    \setcounter{enumi}{20}
+    \item The equation \(y = 25x + 100\) models the total cost \(y\) (in dollars) for renting a car for \(x\) days.  
+    What does the number 25 represent in this context?
+    \item The line passing through \((0, 50)\) and \((10, 80)\) represents a company’s revenue over time.  
+    Find the rate of change and interpret its meaning.
+    \item A student’s test score increased from 70 to 85 over 3 exams.  
+    Find the rate of change per exam.
+    \item The graph of a line has slope \(-4\).  
+    What does this tell you about the relationship between \(x\) and \(y\)?
+    \item Two lines have slopes \(m_1 = 3\) and \(m_2 = -\tfrac{1}{3}\).  
+    Are the lines parallel, perpendicular, or neither?
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+% SOLUTIONS — TOPIC 5: SLOPE AND RATE OF CHANGE
+% ============================================================
+
+\section*{Answer Key and Solutions: Slope and Rate of Change}
+
+\subsection*{Part A Solutions: Finding Slope from Points}
+\begin{enumerate}
+    \item \((2,3)\) to \((6,11)\): \(m=\dfrac{11-3}{6-2}=\dfrac{8}{4}=\boxed{2}\)
+    \item \((5,7)\) to \((9,15)\): \(m=\dfrac{15-7}{9-5}=\dfrac{8}{4}=\boxed{2}\)
+    \item \((-3,4)\) to \((5,0)\): \(m=\dfrac{0-4}{5-(-3)}=\dfrac{-4}{8}=\boxed{-\tfrac{1}{2}}\)
+    \item \((0,8)\) to \((3,-4)\): \(m=\dfrac{-4-8}{3-0}=\dfrac{-12}{3}=\boxed{-4}\)
+    \item \((-2,-3)\) to \((2,5)\): \(m=\dfrac{5-(-3)}{2-(-2)}=\dfrac{8}{4}=\boxed{2}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Identifying Slope from an Equation}
+\begin{enumerate}
+    \setcounter{enumi}{5}
+    \item \(y=3x+7\Rightarrow m=\boxed{3}\)
+    \item \(y=-2x+4\Rightarrow m=\boxed{-2}\)
+    \item \(2x+5y=10\Rightarrow 5y=-2x+10\Rightarrow y=-\tfrac{2}{5}x+2 \Rightarrow m=\boxed{-\tfrac{2}{5}}\)
+    \item \(4x-y=12\Rightarrow -y=-4x+12\Rightarrow y=4x-12 \Rightarrow m=\boxed{4}\)
+    \item \(3y+6x=9\Rightarrow 3y=-6x+9\Rightarrow y=-2x+3 \Rightarrow m=\boxed{-2}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Parallel and Perpendicular Lines}
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \item Parallel line to \(y=\tfrac{1}{2}x-3\): \(m=\boxed{\tfrac{1}{2}}\)
+    \item Perpendicular to \(y=-\tfrac{2}{3}x+4\): \(m=\boxed{\tfrac{3}{2}}\) \quad (negative reciprocal)
+    \item Slopes \(2\) and \(-\tfrac{1}{2}\): \(2\cdot(-\tfrac{1}{2})=-1\Rightarrow\) \boxed{Perpendicular}
+    \item \(3x-2y=6 \Rightarrow y=\tfrac{3}{2}x-3\) and \(y=\tfrac{3}{2}x+1\): same slope \(\tfrac{3}{2}\Rightarrow\) \boxed{Parallel}
+    \item Slope through \((1,4)\) and \((3,8)\): \(m=\dfrac{8-4}{3-1}=\dfrac{4}{2}=2\). Perpendicular slope \(=\boxed{-\tfrac{1}{2}}\).
+\end{enumerate}
+
+\subsection*{Part D Solutions: Rate of Change in Context}
+\begin{enumerate}
+    \setcounter{enumi}{15}
+    \item \(\dfrac{400\text{ m}}{50\text{ s}}=\boxed{8\ \text{m/s}}\)
+    \item \(\dfrac{4.00-3.20}{4}=\dfrac{0.80}{4}=\boxed{\$0.20\ \text{per month}}\)
+    \item \(\dfrac{50-68}{3}=\dfrac{-18}{3}=\boxed{-6^\circ\text{F per hour}}\)
+    \item \(\dfrac{650-500}{30-20}=\dfrac{150}{10}=\boxed{\$15\ \text{per unit}}\)
+    \item \(\dfrac{150\text{ miles}}{3\text{ h}}=\boxed{50\ \text{mph}}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+    \setcounter{enumi}{20}
+    \item In \(y=25x+100\), the slope \(25\) is the \boxed{\text{cost per day}}.
+    \item Slope \(\dfrac{80-50}{10-0}=\dfrac{30}{10}=\boxed{3}\). Interpretation: revenue increases by \(\$3\) per unit of time.
+    \item \(\dfrac{85-70}{3}=\dfrac{15}{3}=\boxed{5\ \text{points per exam}}\)
+    \item Slope \(-4\): as \(x\) increases by 1, \(y\) \boxed{decreases by 4}. Negative linear relationship.
+    \item \(m_1=3,\ m_2=-\tfrac{1}{3}\Rightarrow 3\cdot(-\tfrac{1}{3})=-1\Rightarrow\boxed{\text{Perpendicular}}\)
+\end{enumerate}
+
+
+
+
+\end{document}
