@@ -1,0 +1,122 @@
+\documentclass[12pt]{article}
+
+% ---------- packages ----------
+\usepackage[margin=1in]{geometry}
+\usepackage{array,tabularx}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins} % enables 'enhanced' and other advanced styling keys
+\usepackage{hyperref}
+\usepackage{amsmath} % for \tfrac
+\usepackage{amssymb} % for \Box
+\usepackage{lipsum}  % (for sample filler text; optional)
+
+% ---------- document spacing ----------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6em}
+
+% ---------- tcolorbox theme ----------
+\tcbset{
+  sharp corners,
+  enhanced,
+  boxrule=0.6pt,
+  colback=white,
+  colframe=black!70,
+  colbacktitle=black!8,
+  coltitle=black,
+  fonttitle=\bfseries
+}
+
+% ---------- helpers ----------
+% Likert scale that fills the box width and aligns numbers over boxes
+\newcommand{\LikertScale}{%
+\renewcommand{\arraystretch}{1.6}% vertical breathing room
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}ccccc}
+\textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} \\
+$\Box$ & $\Box$ & $\Box$ & $\Box$ & $\Box$ \\
+\end{tabular*}% 
+}
+
+% Height for the big reflection boxes (relative to page)
+\newlength{\ReflectBoxHeight}
+\setlength{\ReflectBoxHeight}{0.36\textheight}
+
+% ---------- Reflection page macro ----------
+% Usage: \ReflectionPage{Next Resource Name}{https://example.com/next}
+\newcommand{\ReflectionPage}[2]{%
+\clearpage
+{\Large \textbf{Reflection Session}}\vspace{0.4em}\par
+
+% --- Two mini Likert boxes side-by-side ---
+\noindent
+\begin{minipage}[t]{0.49\textwidth}
+\begin{tcolorbox}[title={How confident do I feel with this topic? (1 = low, 5 = high)}]
+\LikertScale
+\end{tcolorbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\begin{tcolorbox}[title={How ready am I to take a \textit{timed} quiz on this topic? (1 = not ready, 5 = ready)}]
+\LikertScale
+\end{tcolorbox}
+\end{minipage}
+
+% --- Two large reflection boxes ---
+\noindent
+\begin{minipage}[t]{0.49\textwidth}
+\begin{tcolorbox}[title={What's solid?},height=\ReflectBoxHeight]
+\textit{Prompts: Which ideas/formulas feel automatic? One move that worked? A mistake I avoided? One problem I could teach a friend.}
+
+\vspace{0.8em}
+
+\vfill % space for writing
+\end{tcolorbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\begin{tcolorbox}[title={What to improve + plan},height=\ReflectBoxHeight]
+\textit{Prompts: Error pattern (careless/setup/algebra/units/graph)? One concept I mix up + 2-step fix. Which question type slowed me down? My plan for the next set.}
+
+\vspace{0.8em}
+
+\vfill % space for writing
+\end{tcolorbox}
+\end{minipage}
+
+% --- Next step section ---
+{\Large \textbf{Try This Next}}\vspace{0.4em}\par
+\begin{tcolorbox}
+\textbf{Next step:} #1
+
+\smallskip
+\if\relax\detokenize{#2}\relax
+  \textit{Link/QR:} \hrulefill
+\else
+  \textit{Open:} \href{#2}{#2}
+\fi
+\end{tcolorbox}
+}
+
+% ---------- example document ----------
+\begin{document}
+
+\begin{center}
+{\LARGE Sample SAT Math Worksheet}\\[0.3em]
+{\large Unit 4 — Linear Equations and Inequalities}
+\end{center}
+
+\section*{Practice Set}
+\begin{enumerate}
+  \item Solve for $x$: $2x-7=11$.
+  \item If a line has slope $-\tfrac{3}{2}$ and passes through $(4,5)$, write its equation in slope-intercept form.
+  \item A system has equations $y=2x+3$ and $y=-x+9$. Find the solution.
+\end{enumerate}
+
+\section*{Answer Key (Preview)}
+\begin{enumerate}
+  \item $x=9$
+  \item $y=-\tfrac{3}{2}x+11$
+  \item Intersection: $x=2$, $y=7$.
+\end{enumerate}
+
+% ---------- reflection page ----------
+\ReflectionPage{Unit 5 — Systems of Equations}{https://your.site/unit5}
+
+\end{document}

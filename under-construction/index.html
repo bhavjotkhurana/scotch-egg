@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScotchEgg — Coming Soon</title>
+  <style>
+    :root {
+      --brown: #8B5E3C;
+      --beige: #F5E6CC;
+      --yolk: #FFD447;
+      --white: #FFFDF9;
+    }
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(160deg, var(--beige) 60%, var(--white));
+      font-family: "Inter", system-ui, sans-serif;
+      color: var(--brown);
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin: 0.4rem 0;
+      color: var(--brown);
+    }
+    .yolk {
+      color: var(--yolk);
+    }
+    p {
+      font-size: 1.1rem;
+      color: #6b4b2e;
+      margin-bottom: 2rem;
+    }
+    .egg {
+      width: 100px;
+      height: 100px;
+      background: var(--white);
+      border: 8px solid var(--brown);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      animation: float 3s ease-in-out infinite;
+    }
+    .egg::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      background: var(--yolk);
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(255, 212, 71, 0.5);
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    footer {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 0.85rem;
+      color: #a0846a;
+    }
+  </style>
+</head>
+<body>
+  <div class="egg"></div>
+  <h1>Scotch<span class="yolk">Egg</span>.co</h1>
+  <p>We’re cooking up something delicious. Check back soon!</p>
+  <footer>© 2025 ScotchEgg</footer>
+</body>
+</html>

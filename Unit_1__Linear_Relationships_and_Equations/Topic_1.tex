@@ -8,6 +8,19 @@
 \usepackage{xcolor}
 \usepackage{helvet}
 \usepackage{enumitem}
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{Topic_1}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
 
 % ---------- PAGE SETUP ----------
 \geometry{margin=1in}
@@ -212,5 +225,9 @@ Substitute \(x = 7\) back into the original equation:
     \item \(\dfrac{x + 2}{4} = \dfrac{x - 1}{2} \Rightarrow 2(x + 2) = 4(x - 1) \Rightarrow 2x + 4 = 4x - 4 \Rightarrow 8 = 2x \Rightarrow x = 4\)
     \item \(7x - 4 = 2x + 11 \Rightarrow 5x = 15 \Rightarrow x = 3\)
 \end{enumerate}
+
+\newpage
+
+\ReflectionPage{Next}{https://www.scotchegg.co}
 
 \end{document}

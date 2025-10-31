@@ -1,0 +1,94 @@
+% ===== reflectionpage.tex (accessibility-aligned, matches your 14pt extarticle setup) =====
+\RequirePackage{array,tabularx}
+\RequirePackage{amssymb} % provides \square
+\RequirePackage{tcolorbox}
+\RequirePackage{hyperref}
+\tcbuselibrary{skins} % unlocks 'enhanced' and other advanced box keys
+
+% Visual defaults: high contrast, simple, consistent with body text
+\tcbset{
+  enhanced,
+  sharp corners,
+  boxrule=0.9pt,
+  colframe=black,
+  colback=white,
+  colbacktitle=black!8,
+  coltitle=black,
+  fonttitle=\bfseries,
+  left=6pt, right=6pt, top=6pt, bottom=6pt
+}
+
+% Likert scale: numbers above large check boxes, stretches to box width
+\newcommand{\LikertScale}{%
+  \renewcommand{\arraystretch}{1.6}%
+  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}ccccc}
+    \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} \\
+    {\Large$\square$} & {\Large$\square$} & {\Large$\square$} & {\Large$\square$} & {\Large$\square$} \\
+  \end{tabular*}%
+}
+
+% Height for the large writing boxes (relative to page, respects your margins/spacing)
+\newlength{\ReflectBoxHeight}
+\setlength{\ReflectBoxHeight}{0.36\textheight}
+
+% ---------- Reflection page macro ----------
+% Usage: \ReflectionPage{Next Resource Name}{https://example.com/next}
+\newcommand{\ReflectionPage}[2]{%
+  \clearpage
+  \section*{Reflection Session}
+
+  % --- Two mini Likert boxes side-by-side ---
+  \noindent
+  \begin{minipage}[t]{0.49\textwidth}
+    \begin{tcolorbox}[title={How confident do I feel with this topic? (1 = low, 5 = high)}]
+      \LikertScale
+    \end{tcolorbox}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.49\textwidth}
+    \begin{tcolorbox}[title={How ready am I to take a \textit{timed} quiz on this topic? (1 = not ready, 5 = ready)}]
+      \LikertScale
+    \end{tcolorbox}
+  \end{minipage}
+
+  % --- Two large reflection boxes (prompts in small italics for low visual noise) ---
+  \noindent
+  \begin{minipage}[t]{0.49\textwidth}
+    \begin{tcolorbox}[title={What did I do well?},height=\ReflectBoxHeight]
+      {\small\itshape
+        Prompts: Which ideas/formulas feel automatic? One move that worked?
+        A mistake I avoided? One problem I could teach a friend.
+      }
+
+      \vspace{0.8em}
+      \vfill % writing space
+    \end{tcolorbox}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.49\textwidth}
+    \begin{tcolorbox}[title={What would I like to improve?},height=\ReflectBoxHeight]
+      {\small\itshape
+        Prompts: Error pattern (careless/setup/algebra/units/graph)?
+        One concept I mix up + 2-step fix. Which question type slowed me down?
+        My plan for the next set.
+      }
+
+      \vspace{0.8em}
+      \vfill % writing space
+    \end{tcolorbox}
+  \end{minipage}
+
+  % --- Next step section (mirrors your section styling) ---
+  \section*{Try This Next}
+  \begin{tcolorbox}
+    \textbf{Next step:}
+    \if\relax\detokenize{#2}\relax
+      \space #1
+    \else
+      \space \href{#2}{#1}
+    \fi
+
+    \if\relax\detokenize{#2}\relax
+      \par\smallskip\textit{Link/QR:} \hrulefill
+    \fi
+  \end{tcolorbox}
+}
+% ===== end reflectionpage.tex =====
