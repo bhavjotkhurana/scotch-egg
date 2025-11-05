@@ -5,7 +5,7 @@ import { base44 } from '@/api/base44Client';
 import WorksheetCard from '@/components/worksheets/WorksheetCard.jsx';
 import WorksheetDetailsDialog from '@/components/worksheets/WorksheetDetailsDialog.jsx';
 
-const categoryFilters = [
+const categories = [
   'all',
   'SAT Math',
   'Algebra',
@@ -31,50 +31,40 @@ export default function HomePage() {
 
   const filteredWorksheets = useMemo(() => {
     return worksheets.filter((worksheet) => {
-      const categories = worksheet.categories?.length
-        ? worksheet.categories
-        : worksheet.category
-          ? [worksheet.category]
-          : [];
-
-      const categoryMatch =
-        categoryFilter === 'all' || categories.includes(categoryFilter);
-
-      const difficultyMatch =
-        difficultyFilter === 'all' || worksheet.difficulty === difficultyFilter;
-
+      const categoryMatch = categoryFilter === 'all' || worksheet.category === categoryFilter;
+      const difficultyMatch = difficultyFilter === 'all' || worksheet.difficulty === difficultyFilter;
       return categoryMatch && difficultyMatch;
     });
   }, [worksheets, categoryFilter, difficultyFilter]);
 
   return (
     <div className="min-h-screen">
-      <section className="relative overflow-hidden bg-gradient-to-br from-brand-primary-dark via-brand-primary to-brand-primary-dark py-20 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-orange-500 via-orange-600 to-orange-700 py-20 text-white">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1200')] bg-cover bg-center opacity-10" />
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/95 to-brand-primary-dark/95" />
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-600/90 to-orange-800/90" />
 
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2 text-sm font-medium backdrop-blur-sm">
             <Sparkles className="h-4 w-4" />
-            <span>Always Free • New Worksheets Regularly</span>
+            <span>100% Free • Pay What You Want</span>
           </div>
 
           <h1 className="mb-6 text-4xl font-bold sm:text-5xl lg:text-6xl">Master Math, One Worksheet at a Time</h1>
 
-          <p className="mx-auto mb-8 max-w-3xl text-xl text-white sm:text-2xl">
-            High-quality practice worksheets for SAT prep and beyond. Download for free and share with classmates.
+          <p className="mx-auto mb-8 max-w-3xl text-xl text-orange-100 sm:text-2xl">
+            High-quality practice worksheets for SAT prep and beyond. Download for free, contribute what you can.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <div className="rounded-lg bg-white/20 px-6 py-3 backdrop-blur-sm">
               <div className="text-2xl font-bold">{worksheets.length}</div>
-              <div className="text-white">Worksheets</div>
+              <div className="text-orange-100">Worksheets</div>
             </div>
             <div className="rounded-lg bg-white/20 px-6 py-3 backdrop-blur-sm">
               <div className="text-2xl font-bold">
                 {worksheets.reduce((sum, worksheet) => sum + (worksheet.download_count || 0), 0)}
               </div>
-              <div className="text-white">Downloads</div>
+              <div className="text-orange-100">Downloads</div>
             </div>
           </div>
         </div>
@@ -91,7 +81,7 @@ export default function HomePage() {
               <select
                 value={difficultyFilter}
                 onChange={(event) => setDifficultyFilter(event.target.value)}
-                className="rounded-md border border-gray-200 bg-white px-2 py-1 text-sm text-gray-700 focus:border-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-secondary/40"
+                className="rounded-md border border-gray-200 bg-white px-2 py-1 text-sm text-gray-700 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-100"
               >
                 {difficulties.map((difficulty) => (
                   <option key={difficulty} value={difficulty}>
@@ -103,7 +93,7 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-wrap gap-2 rounded-xl border border-gray-200 bg-white p-2 shadow-sm">
-            {categoryFilters.map((category) => {
+            {categories.map((category) => {
               const isActive = categoryFilter === category;
               return (
                 <button
@@ -112,8 +102,8 @@ export default function HomePage() {
                   onClick={() => setCategoryFilter(category)}
                   className={`rounded-lg px-4 py-2 text-sm font-medium transition ${
                     isActive
-                      ? 'bg-brand-primary text-white shadow-sm'
-                      : 'text-gray-600 hover:bg-brand-secondary/40 hover:text-brand-primary'
+                      ? 'bg-orange-600 text-white shadow-sm'
+                      : 'text-gray-600 hover:bg-orange-50 hover:text-orange-600'
                   }`}
                 >
                   {category === 'all' ? 'All' : category}

@@ -3,68 +3,19 @@ import { delay } from '@/utils';
 
 const bucketName = import.meta.env.VITE_SUPABASE_BUCKET ?? 'worksheet-files';
 
-const parseCategories = (value) => {
-  if (!value) return [];
-  if (Array.isArray(value)) {
-    return value.filter(Boolean);
-  }
-
-  if (typeof value === 'string') {
-    const trimmed = value.trim();
-    if (!trimmed) return [];
-
-    if (trimmed.startsWith('[')) {
-      try {
-        const parsed = JSON.parse(trimmed);
-        return Array.isArray(parsed) ? parsed.filter(Boolean) : [];
-      } catch {
-        // fall through to comma parsing
-      }
-    }
-
-    if (trimmed.includes(',')) {
-      return trimmed
-        .split(',')
-        .map((item) => item.trim())
-        .filter(Boolean);
-    }
-
-    return [trimmed];
-  }
-
-  return [];
-};
-
-const mapWorksheet = (record) => {
-  const categories = parseCategories(record.category);
-
-  return {
-    id: record.id,
-    title: record.title,
-    description: record.description,
-    category: categories[0] ?? null,
-    categories,
-    difficulty: record.difficulty,
-    file_url: record.file_url,
-    preview_image_url: record.preview_image_url,
-    download_count: record.download_count ?? 0,
-    topics: record.topics ?? [],
-    pages: record.pages ?? null,
-    created_date: record.created_at,
-  };
-};
-
-const serializeCategories = (payload) => {
-  if (Array.isArray(payload?.categories) && payload.categories.length > 0) {
-    return JSON.stringify(payload.categories);
-  }
-
-  if (typeof payload?.category === 'string' && payload.category.trim()) {
-    return JSON.stringify([payload.category.trim()]);
-  }
-
-  return JSON.stringify([]);
-};
+const mapWorksheet = (record) => ({
+  id: record.id,
+  title: record.title,
+  description: record.description,
+  category: record.category,
+  difficulty: record.difficulty,
+  file_url: record.file_url,
+  preview_image_url: record.preview_image_url,
+  download_count: record.download_count ?? 0,
+  topics: record.topics ?? [],
+  pages: record.pages ?? null,
+  created_date: record.created_at,
+});
 
 const handleError = (error, fallbackMessage = 'Unexpected error') => {
   if (error) {
@@ -84,12 +35,6 @@ const listWorksheets = async () => {
 };
 
 const createWorksheet = async (payload) => {
-  const categoryValue = serializeCategories(payload);
-
-  if (categoryValue === '[]') {
-    throw new Error('Please select at least one category');
-  }
-
   await delay(200);
   const { data, error } = await supabase
     .from('worksheets')
@@ -97,7 +42,7 @@ const createWorksheet = async (payload) => {
       {
         title: payload.title,
         description: payload.description,
-        category: categoryValue,
+        category: payload.category,
         difficulty: payload.difficulty,
         file_url: payload.file_url,
         preview_image_url: payload.preview_image_url,
@@ -115,16 +60,9 @@ const createWorksheet = async (payload) => {
 
 const updateWorksheet = async (id, updates) => {
   await delay(120);
-  const preparedUpdates = { ...updates };
-
-  if (Object.prototype.hasOwnProperty.call(preparedUpdates, 'categories')) {
-    preparedUpdates.category = serializeCategories(preparedUpdates);
-    delete preparedUpdates.categories;
-  }
-
   const { data, error } = await supabase
     .from('worksheets')
-    .update(preparedUpdates)
+    .update(updates)
     .eq('id', id)
     .select()
     .single();

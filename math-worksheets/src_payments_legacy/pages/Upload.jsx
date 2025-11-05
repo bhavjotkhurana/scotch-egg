@@ -5,7 +5,7 @@ import { Upload, FileText, Image as ImageIcon, Check, Loader2 } from 'lucide-rea
 import { base44 } from '@/api/base44Client';
 import { createPageUrl } from '@/utils';
 
-const categoryOptions = [
+const categories = [
   'SAT Math',
   'Algebra',
   'Geometry',
@@ -25,7 +25,7 @@ export default function UploadPage() {
   const [formData, setFormData] = useState({
     title: '',
     description: '',
-    categories: [],
+    category: '',
     difficulty: '',
     topics: '',
     pages: '',
@@ -81,17 +81,10 @@ export default function UploadPage() {
       return;
     }
 
-    if (!formData.categories.length) {
-      setError('Please select at least one category');
-      return;
-    }
-
-    const { categories, topics, pages, ...rest } = formData;
     const worksheetData = {
-      ...rest,
-      categories,
-      topics: topics ? topics.split(',').map((topic) => topic.trim()) : [],
-      pages: pages ? parseInt(pages, 10) : undefined,
+      ...formData,
+      topics: formData.topics ? formData.topics.split(',').map((topic) => topic.trim()) : [],
+      pages: formData.pages ? parseInt(formData.pages, 10) : undefined,
     };
 
     uploadWorksheetMutation.mutate(worksheetData);
@@ -99,18 +92,6 @@ export default function UploadPage() {
 
   const handleChange = (field, value) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
-    setError(null);
-  };
-
-  const toggleCategory = (category) => {
-    setFormData((prev) => {
-      const isSelected = prev.categories.includes(category);
-      const categories = isSelected
-        ? prev.categories.filter((item) => item !== category)
-        : [...prev.categories, category];
-
-      return { ...prev, categories };
-    });
     setError(null);
   };
 
@@ -148,17 +129,17 @@ export default function UploadPage() {
               <div className="mt-2">
                 <label
                   htmlFor="file"
-                  className="flex h-32 w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 transition-colors hover:border-brand-primary"
+                  className="flex h-32 w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 transition-colors hover:border-orange-500"
                 >
                   <div className="flex flex-col items-center justify-center px-4 py-6 text-center">
                     {uploadProgress.file ? (
                       <>
-                        <Loader2 className="mb-2 h-10 w-10 animate-spin text-brand-primary" />
+                        <Loader2 className="mb-2 h-10 w-10 animate-spin text-orange-500" />
                         <p className="text-sm text-gray-500">Uploading PDF...</p>
                       </>
                     ) : file ? (
                       <>
-                        <FileText className="mb-2 h-10 w-10 text-brand-primary" />
+                        <FileText className="mb-2 h-10 w-10 text-orange-500" />
                         <p className="text-sm font-medium text-gray-700">{file.name}</p>
                         <p className="text-xs text-gray-500">
                           {(file.size / 1024 / 1024).toFixed(2)} MB
@@ -189,17 +170,17 @@ export default function UploadPage() {
               <div className="mt-2">
                 <label
                   htmlFor="preview"
-                  className="flex h-32 w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 transition-colors hover:border-brand-primary"
+                  className="flex h-32 w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 transition-colors hover:border-blue-500"
                 >
                   <div className="flex flex-col items-center justify-center px-4 py-6 text-center">
                     {uploadProgress.preview ? (
                       <>
-                        <Loader2 className="mb-2 h-10 w-10 animate-spin text-brand-primary" />
+                        <Loader2 className="mb-2 h-10 w-10 animate-spin text-blue-500" />
                         <p className="text-sm text-gray-500">Uploading image...</p>
                       </>
                     ) : previewImage ? (
                       <>
-                        <ImageIcon className="mb-2 h-10 w-10 text-brand-primary" />
+                        <ImageIcon className="mb-2 h-10 w-10 text-blue-500" />
                         <p className="text-sm font-medium text-gray-700">{previewImage.name}</p>
                       </>
                     ) : (
@@ -239,7 +220,7 @@ export default function UploadPage() {
                 required
                 value={formData.title}
                 onChange={(event) => handleChange('title', event.target.value)}
-                className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-secondary/40"
+                className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-100"
                 placeholder="Enter a descriptive title"
               />
             </div>
@@ -254,46 +235,30 @@ export default function UploadPage() {
                 rows={4}
                 value={formData.description}
                 onChange={(event) => handleChange('description', event.target.value)}
-                className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-secondary/40"
+                className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-100"
                 placeholder="Summarize what students will practice or learn"
               />
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="grid gap-2">
-                <span className="text-sm font-medium text-gray-700">Categories *</span>
-                <div className="flex flex-wrap gap-2">
-                  {categoryOptions.map((category) => {
-                    const selected = formData.categories.includes(category);
-                    return (
-                      <button
-                        key={category}
-                        type="button"
-                        onClick={() => toggleCategory(category)}
-                        aria-pressed={selected}
-                        className={`rounded-full border px-3 py-1 text-sm font-semibold transition ${
-                          selected
-                            ? 'bg-brand-primary text-white border-brand-primary-dark shadow-sm'
-                            : 'border-gray-200 text-gray-600 hover:border-brand-primary hover:text-brand-primary'
-                        }`}
-                      >
-                        {category}
-                      </button>
-                    );
-                  })}
-                </div>
-                {formData.categories.length > 0 && (
-                  <div className="flex flex-wrap gap-2">
-                    {formData.categories.map((category) => (
-                      <span
-                        key={`selected-${category}`}
-                        className="rounded-full bg-brand-secondary px-3 py-1 text-xs font-semibold text-brand-primary-dark"
-                      >
-                        {category}
-                      </span>
-                    ))}
-                  </div>
-                )}
+                <label htmlFor="category" className="text-sm font-medium text-gray-700">
+                  Category *
+                </label>
+                <select
+                  id="category"
+                  required
+                  value={formData.category}
+                  onChange={(event) => handleChange('category', event.target.value)}
+                  className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-100"
+                >
+                  <option value="">Select category</option>
+                  {categories.map((category) => (
+                    <option key={category} value={category}>
+                      {category}
+                    </option>
+                  ))}
+                </select>
               </div>
 
               <div className="grid gap-2">
@@ -305,7 +270,7 @@ export default function UploadPage() {
                   required
                   value={formData.difficulty}
                   onChange={(event) => handleChange('difficulty', event.target.value)}
-                  className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-secondary/40"
+                  className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-100"
                 >
                   <option value="">Select difficulty</option>
                   {difficulties.map((difficulty) => (
@@ -326,7 +291,7 @@ export default function UploadPage() {
                 type="text"
                 value={formData.topics}
                 onChange={(event) => handleChange('topics', event.target.value)}
-                className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-secondary/40"
+                className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-100"
                 placeholder="Quadratics, factoring, polynomials"
               />
               {formData.topics && (
@@ -338,7 +303,7 @@ export default function UploadPage() {
                     .map((topic) => (
                       <span
                         key={topic}
-                        className="rounded-full bg-brand-secondary px-3 py-1 text-xs font-semibold text-brand-primary-dark"
+                        className="rounded-full bg-orange-100 px-3 py-1 text-xs font-semibold text-orange-700"
                       >
                         {topic}
                       </span>
@@ -357,7 +322,7 @@ export default function UploadPage() {
                 min={1}
                 value={formData.pages}
                 onChange={(event) => handleChange('pages', event.target.value)}
-                className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-secondary/40"
+                className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-100"
                 placeholder="Optional"
               />
             </div>
@@ -368,7 +333,7 @@ export default function UploadPage() {
           <button
             type="submit"
             disabled={uploadWorksheetMutation.isLoading}
-            className="inline-flex items-center justify-center rounded-lg bg-brand-primary px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-primary-dark disabled:cursor-not-allowed disabled:opacity-70"
+            className="inline-flex items-center justify-center rounded-lg bg-orange-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-orange-700 disabled:cursor-not-allowed disabled:opacity-70"
           >
             {uploadWorksheetMutation.isLoading ? (
               <>

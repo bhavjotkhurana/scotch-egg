@@ -31,6 +31,7 @@ const args = minimist(process.argv.slice(2), {
     'title',
     'description',
     'category',
+    'categories',
     'difficulty',
     'topics',
     'pdf',
@@ -40,6 +41,7 @@ const args = minimist(process.argv.slice(2), {
     title: 't',
     description: 'd',
     category: 'c',
+    categories: 'C',
     difficulty: 'l',
     topics: 'o',
     pdf: 'f',
@@ -48,9 +50,25 @@ const args = minimist(process.argv.slice(2), {
   },
 });
 
-const requiredFields = ['title', 'description', 'category', 'difficulty', 'pdf'];
+const categoryInputs = []
+  .concat(
+    Array.isArray(args.category) ? args.category : args.category ? [args.category] : [],
+  )
+  .concat(
+    Array.isArray(args.categories) ? args.categories : args.categories ? [args.categories] : [],
+  );
+
+const categories = categoryInputs
+  .flatMap((entry) => String(entry).split(','))
+  .map((value) => value.trim())
+  .filter(Boolean);
+
+const requiredFields = ['title', 'description', 'difficulty', 'pdf'];
 const missing = requiredFields.filter((field) => !args[field]);
-if (missing.length) {
+if (missing.length || categories.length === 0) {
+  if (categories.length === 0) {
+    missing.push('category');
+  }
   console.error(`Missing required options: ${missing.join(', ')}`);
   printUsage();
   process.exit(1);
@@ -59,7 +77,7 @@ if (missing.length) {
 const worksheet = {
   title: args.title,
   description: args.description,
-  category: args.category,
+  category: JSON.stringify(categories),
   difficulty: args.difficulty,
   topics: args.topics
     ? args.topics.split(',').map((topic) => topic.trim()).filter(Boolean)
@@ -145,6 +163,8 @@ Usage:
     --title "Algebra Practice" \\
     --description "Focused practice on linear equations" \\
     --category "Algebra" \\
+    --category "SAT Math" \\
+    # or --categories "Algebra,SAT Math" \\
     --difficulty "Intermediate" \\
     --pdf "./files/algebra.pdf" \\
     [--preview "./images/algebra-preview.png"] \\
