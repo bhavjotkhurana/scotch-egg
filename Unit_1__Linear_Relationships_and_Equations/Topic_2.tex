@@ -1,5 +1,4 @@
 \documentclass[14pt]{extarticle}
-
 % ---------- PACKAGES ----------
 \usepackage{amsmath, amssymb}
 \usepackage{geometry}
@@ -8,8 +7,19 @@
 \usepackage{xcolor}
 \usepackage{helvet}
 \usepackage{enumitem}
-
-
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
 % ---------- PAGE SETUP ----------
 \geometry{margin=1in}
 \setstretch{1.5}
@@ -21,8 +31,6 @@
 \renewcommand{\familydefault}{\sfdefault}
 \renewcommand{\emph}[1]{\textbf{#1}}
 
-
-% ---------- DOCUMENT ----------
 \begin{document}
 \raggedright
 \pagenumbering{gobble}
@@ -227,5 +235,9 @@ x = \frac{16}{4}
     \item \(P = 2L + 2W\). With \(P = 30\) and \(W = 5\): \(30 = 2L + 10 \Rightarrow 20 = 2L \Rightarrow L = \boxed{10}\)
 \end{enumerate}
 
+
+
+
+\ReflectionPage{Unit 1, Topic 3: Multi-Step and Fractional Equations}{https://www.scotchegg.co}
 
 \end{document}

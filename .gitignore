@@ -22,3 +22,6 @@ pnpm-debug.log*
 *.log
 *.pdf
 *.synctex.gz
+
+# Local utilities/scripts
+tools/private/

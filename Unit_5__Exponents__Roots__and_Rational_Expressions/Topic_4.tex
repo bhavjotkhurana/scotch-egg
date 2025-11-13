@@ -1,20 +1,40 @@
-\documentclass[12pt]{article}
-
+\documentclass[14pt]{extarticle}
+% ---------- PACKAGES ----------
 \usepackage{amsmath, amssymb}
 \usepackage{geometry}
 \usepackage{setspace}
 \usepackage{titlesec}
-\usepackage{lmodern}
 \usepackage{xcolor}
+\usepackage{helvet}
 \usepackage{enumitem}
-
+\usepackage{lmodern}
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+% ---------- PAGE SETUP ----------
 \geometry{margin=1in}
-\setstretch{1.2}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
-\pagenumbering{gobble}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
 
 \begin{document}
+\raggedright
+\pagenumbering{gobble}
 
 \begin{center}
     \LARGE \textbf{Unit 5: Exponents, Roots, and Rational Expressions} \\[6pt]
@@ -352,5 +372,9 @@ x + 4 \ge 0 \Rightarrow x \ge -4, \quad x - 2 \ne 0 \Rightarrow x \ne 2
 \end{enumerate}
 
 
+
+
+
+\ReflectionPage{Unit 6, Topic 1: Forms of Quadratic Equations}{https://www.scotchegg.co}
 
 \end{document}

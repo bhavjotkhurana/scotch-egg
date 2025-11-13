@@ -1,29 +1,41 @@
-% =========================
-% SAT Resources Topic Template
-% =========================
-\documentclass[12pt]{article}
+\documentclass[14pt]{extarticle}
 
 % ---------- PACKAGES ----------
 \usepackage{amsmath, amssymb}
 \usepackage{geometry}
 \usepackage{setspace}
 \usepackage{titlesec}
-\usepackage{lmodern}
 \usepackage{xcolor}
+\usepackage{helvet}
 \usepackage{enumitem}   % for clean enumerate labels
 \usepackage{ifthen}     % for simple toggles
 
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+
 % ---------- PAGE SETUP ----------
 \geometry{margin=1in}
-\setstretch{1.2}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
-\setlist[enumerate]{label=\textbf{(\arabic*)}, itemsep=4pt, topsep=4pt}
-\setlist[itemize]{itemsep=2pt, topsep=4pt}
-\pagenumbering{gobble}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
 
 % ---------- TOGGLES ----------
-% Set to true to print solutions at the end; false to hide.
 \newboolean{showsolutions}
 \setboolean{showsolutions}{true} % change to false for student version
 
@@ -68,6 +80,8 @@
 
 % ---------- DOCUMENT ----------
 \begin{document}
+\raggedright
+\pagenumbering{gobble}
 
 \begin{center}
   \LARGE \textbf{\UnitTitle}\\[6pt]
@@ -166,68 +180,27 @@ Solve for \(x\): \(\;<<expression>>\) \qtag{<<tags>>}
   \item <<problem>>
 \end{PracticePart}
 
-\begin{PracticePart}{E: Word Problems / SAT Context}
-  \setcounter{enumi}{20}
-  \item <<contextual prompt>>
-  \item <<contextual prompt>>
-  \item <<contextual prompt>>
-  \item <<contextual prompt>>
-  \item <<contextual prompt>>
-\end{PracticePart}
-
 \newpage
 
 % =========================
-% SOLUTIONS (auto-hide with toggle)
+% SOLUTIONS
 % =========================
 \ifthenelse{\boolean{showsolutions}}{%
-  \section*{Answer Key and Solutions: <<Topic Title>>}
-
-  \subsection*{Part A Solutions}
+  \section*{Answer Key and Solutions}
   \begin{enumerate}
-    \sol{1}{<<brief solution or final boxed value>>}
-    \sol{2}{<<...>>}
-    \sol{3}{<<...>>}
-    \sol{4}{<<...>>}
-    \sol{5}{<<...>>}
+    \sol{1}{<<solution>>}
+    \sol{2}{<<solution>>}
+    \sol{3}{<<solution>>}
+    \sol{4}{<<solution>>}
+    \sol{5}{<<solution>>}
+    % Continue numbering or use \setcounter as needed
   \end{enumerate}
+}{%
+  % Leave blank when solutions are hidden
+}
 
-  \subsection*{Part B Solutions}
-  \begin{enumerate}\setcounter{enumi}{5}
-    \sol{6}{<<...>>}
-    \sol{7}{<<...>>}
-    \sol{8}{<<...>>}
-    \sol{9}{<<...>>}
-    \sol{10}{<<...>>}
-  \end{enumerate}
+\newpage
 
-  \subsection*{Part C Solutions}
-  \begin{enumerate}\setcounter{enumi}{10}
-    \sol{11}{<<...>>}
-    \sol{12}{<<...>>}
-    \sol{13}{<<...>>}
-    \sol{14}{<<...>>}
-    \sol{15}{<<...>>}
-  \end{enumerate}
-
-  \subsection*{Part D Solutions}
-  \begin{enumerate}\setcounter{enumi}{15}
-    \sol{16}{<<...>>}
-    \sol{17}{<<...>>}
-    \sol{18}{<<...>>}
-    \sol{19}{<<...>>}
-    \sol{20}{<<...>>}
-  \end{enumerate}
-
-  \subsection*{Part E Solutions}
-  \begin{enumerate}\setcounter{enumi}{20}
-    \sol{21}{<<...>>}
-    \sol{22}{<<...>>}
-    \sol{23}{<<...>>}
-    \sol{24}{<<...>>}
-    \sol{25}{<<...>>}
-  \end{enumerate}
-}{}
-% (End solutions toggle)
+\ReflectionPage{<<Next Topic Title>>}{https://www.scotchegg.co}
 
 \end{document}

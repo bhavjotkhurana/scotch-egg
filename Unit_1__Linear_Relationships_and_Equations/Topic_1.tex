@@ -1,5 +1,4 @@
 \documentclass[14pt]{extarticle}
-
 % ---------- PACKAGES ----------
 \usepackage{amsmath, amssymb}
 \usepackage{geometry}
@@ -15,13 +14,12 @@
   \IfFileExists{common-things/reflectionpage.tex}{%
     \input{common-things/reflectionpage.tex}%
   }{%
-    \PackageError{Topic_1}{Missing reflectionpage.tex file}{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
       Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
     }%
   }%
 }
 \makeatother
-
 % ---------- PAGE SETUP ----------
 \geometry{margin=1in}
 \setstretch{1.5}
@@ -33,7 +31,6 @@
 \renewcommand{\familydefault}{\sfdefault}
 \renewcommand{\emph}[1]{\textbf{#1}}
 
-% ---------- DOCUMENT ----------
 \begin{document}
 \raggedright
 \pagenumbering{gobble}
@@ -228,6 +225,6 @@ Substitute \(x = 7\) back into the original equation:
 
 \newpage
 
-\ReflectionPage{Next}{https://www.scotchegg.co}
+\ReflectionPage{Unit 1, Topic 2: Solving Linear Equations}{https://www.scotchegg.co}
 
 \end{document}

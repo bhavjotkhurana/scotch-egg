@@ -1,46 +1,48 @@
-% =========================
-% SAT Resources Topic Template
-% =========================
-\documentclass[12pt]{article}
-
+\documentclass[14pt]{extarticle}
 % ---------- PACKAGES ----------
 \usepackage{amsmath, amssymb}
 \usepackage{geometry}
 \usepackage{setspace}
 \usepackage{titlesec}
-\usepackage{lmodern}
 \usepackage{xcolor}
+\usepackage{helvet}
 \usepackage{enumitem}
+\usepackage{lmodern}
 \usepackage{ifthen}
-
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
 % ---------- PAGE SETUP ----------
 \geometry{margin=1in}
-\setstretch{1.2}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
-\setlist[enumerate]{label=\textbf{(\arabic*)}, itemsep=4pt, topsep=4pt}
-\setlist[itemize]{itemsep=2pt, topsep=4pt}
-\pagenumbering{gobble}
-
-% ---------- TOGGLES ----------
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
 \newboolean{showsolutions}
 \setboolean{showsolutions}{true}
-
-% ---------- LIGHTWEIGHT MACROS ----------
 \newcommand{\UnitTitle}{Unit 5: Exponents, Roots, and Rational Expressions}
 \newcommand{\TopicTitle}{Topic 1: Laws of Exponents}
-
 \newcommand{\TopicMeta}[3]{%
-  \textcolor{gray}{\footnotesize \textbf{SAT Domain:} #1 \quad \textbf{Calculator:} #2 \quad \textbf{Progression:} #3}
-}
 \newcommand{\qtag}[1]{\textcolor{gray}{\footnotesize [#1]}}
-
 \newenvironment{Example}[1]{%
-  \subsection*{Example #1}%
-}{\vspace{0.25em}}
 
-% ---------- DOCUMENT ----------
 \begin{document}
+\raggedright
+\pagenumbering{gobble}
 
 \begin{center}
   \LARGE \textbf{\UnitTitle}\\[6pt]
@@ -241,5 +243,9 @@ m^4n^3 \cdot m^2n^5 = m^{4+2}n^{3+5} = m^6n^8
 
 
 
+
+
+
+\ReflectionPage{Unit 5, Topic 2: Negative and Fractional Exponents}{https://www.scotchegg.co}
 
 \end{document}

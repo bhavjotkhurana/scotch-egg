@@ -1,5 +1,4 @@
 \documentclass[14pt]{extarticle}
-
 % ---------- PACKAGES ----------
 \usepackage{amsmath, amssymb}
 \usepackage{geometry}
@@ -8,7 +7,19 @@
 \usepackage{xcolor}
 \usepackage{helvet}
 \usepackage{enumitem}
-
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
 % ---------- PAGE SETUP ----------
 \geometry{margin=1in}
 \setstretch{1.5}
@@ -20,7 +31,6 @@
 \renewcommand{\familydefault}{\sfdefault}
 \renewcommand{\emph}[1]{\textbf{#1}}
 
-% ---------- DOCUMENT ----------
 \begin{document}
 \raggedright
 \pagenumbering{gobble}
@@ -238,5 +248,9 @@ x = 9
     \item Cost model: \(C = 2.50 + 0.75m\). Given \(C = 11.75\): \(0.75m = 11.75 - 2.50 = 9.25 \Rightarrow m = \dfrac{9.25}{0.75} = \dfrac{37}{3} \Rightarrow \boxed{\dfrac{37}{3}\text{ miles}}\)
 \end{enumerate}
 
+
+
+
+\ReflectionPage{Unit 1, Topic 4: Linear Inequalities (Including Compound and Absolute Value)}{https://www.scotchegg.co}
 
 \end{document}

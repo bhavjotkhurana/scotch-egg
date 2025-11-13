@@ -1,29 +1,45 @@
-\documentclass[12pt]{article}
-
+\documentclass[14pt]{extarticle}
+% ---------- PACKAGES ----------
 \usepackage{amsmath, amssymb}
 \usepackage{geometry}
 \usepackage{setspace}
 \usepackage{titlesec}
-\usepackage{lmodern}
 \usepackage{xcolor}
+\usepackage{helvet}
 \usepackage{enumitem}
+\usepackage{lmodern}
 \usepackage{ifthen}
-
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+% ---------- PAGE SETUP ----------
 \geometry{margin=1in}
-\setstretch{1.2}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
-\setlist[enumerate]{label=\textbf{(\arabic*)}, itemsep=4pt, topsep=4pt}
-\setlist[itemize]{itemsep=2pt, topsep=4pt}
-\pagenumbering{gobble}
-
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
 \newboolean{showsolutions}
 \setboolean{showsolutions}{true}
-
 \newcommand{\UnitTitle}{Unit 2: Systems of Linear Equations and Inequalities}
 \newcommand{\TopicTitle}{Topic 1: Solving Systems by Substitution}
 
 \begin{document}
+\raggedright
+\pagenumbering{gobble}
 
 \begin{center}
     \LARGE \textbf{\UnitTitle} \\[6pt]
@@ -294,5 +310,9 @@ x = 2(3.8) - 4 = 7.6 - 4 = 3.6
     (Not integer, so reframe problem wording if needed in final edit.)
 \end{enumerate}
 
+
+
+
+\ReflectionPage{Unit 2, Topic 2: Solving Systems by Elimination}{https://www.scotchegg.co}
 
 \end{document}

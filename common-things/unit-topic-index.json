@@ -1,0 +1,298 @@
+[
+  {
+    "unitDirectory": "Unit_10__Review___Test_Strategy",
+    "unitTitle": "Unit_10__Review___Test_Strategy",
+    "topics": [
+      {
+        "file": "Topic_1.tex",
+        "title": "Topic_1"
+      },
+      {
+        "file": "Topic_2.tex",
+        "title": "Topic_2"
+      },
+      {
+        "file": "Topic_3.tex",
+        "title": "Topic_3"
+      },
+      {
+        "file": "Topic_4.tex",
+        "title": "Topic_4"
+      },
+      {
+        "file": "Topic_5.tex",
+        "title": "Topic_5"
+      },
+      {
+        "file": "Topic_6.tex",
+        "title": "Topic_6"
+      }
+    ]
+  },
+  {
+    "unitDirectory": "Unit_1__Linear_Relationships_and_Equations",
+    "unitTitle": "Unit 1: Linear Relationships and Equations",
+    "topics": [
+      {
+        "file": "Topic_1.tex",
+        "title": "Topic 1: Variables, Expressions, and Equations"
+      },
+      {
+        "file": "Topic_2.tex",
+        "title": "Topic 2: Solving Linear Equations"
+      },
+      {
+        "file": "Topic_3.tex",
+        "title": "Topic 3: Multi-Step and Fractional Equations"
+      },
+      {
+        "file": "Topic_4.tex",
+        "title": "Topic 4: Linear Inequalities (Including Compound and Absolute Value)"
+      },
+      {
+        "file": "Topic_5.tex",
+        "title": "Topic 5: Slope and Rate of Change"
+      },
+      {
+        "file": "Topic_6.tex",
+        "title": "Topic 6: Equation of a Line"
+      },
+      {
+        "file": "Topic_7.tex",
+        "title": "Topic 7: Graphing and Interpreting Linear Models"
+      }
+    ]
+  },
+  {
+    "unitDirectory": "Unit_2__Systems_of_Linear_Equations_and_Inequalities",
+    "unitTitle": "Unit 2: Systems of Linear Equations and Inequalities",
+    "topics": [
+      {
+        "file": "Topic_1.tex",
+        "title": "Topic 1: Solving Systems by Substitution"
+      },
+      {
+        "file": "Topic_2.tex",
+        "title": "Topic 2: Solving Systems by Elimination"
+      },
+      {
+        "file": "Topic_3.tex",
+        "title": "Topic 3: Interpreting Intersections and Solution Types"
+      },
+      {
+        "file": "Topic_4.tex",
+        "title": "Topic 4: Graphing Systems of Inequalities and Solution Regions"
+      },
+      {
+        "file": "Topic_5.tex",
+        "title": "Topic 5: Modeling Real World Problems with Systems"
+      }
+    ]
+  },
+  {
+    "unitDirectory": "Unit_3__Ratios__Rates____Percents",
+    "unitTitle": "Unit 3: Ratios, Rates, and Percents",
+    "topics": [
+      {
+        "file": "Topic_1.tex",
+        "title": "Topic 1: Ratios and Equivalent Ratios"
+      },
+      {
+        "file": "Topic_2.tex",
+        "title": "Topic 2: Unit Rate and Proportional Relationships"
+      },
+      {
+        "file": "Topic_3.tex",
+        "title": "Topic 3: Percent Increase, Percent Decrease, and Percent Error"
+      },
+      {
+        "file": "Topic_4.tex",
+        "title": "Topic 4: Successive Percent Changes (Compound Percentage)"
+      },
+      {
+        "file": "Topic_5.tex",
+        "title": "Topic 5: Scale Drawings, Mixtures, and Density Problems"
+      },
+      {
+        "file": "Topic_6.tex",
+        "title": "Topic 6: Direct and Inverse Variation"
+      }
+    ]
+  },
+  {
+    "unitDirectory": "Unit_4__Data__Statistics____Probability",
+    "unitTitle": "Unit 4: Data, Statistics, and Probability",
+    "topics": [
+      {
+        "file": "Topic_1.tex",
+        "title": "Topic 1: Reading Tables, Graphs, and Scatterplots"
+      },
+      {
+        "file": "Topic_2.tex",
+        "title": "Topic 2: Mean, Median, Mode, and Range"
+      },
+      {
+        "file": "Topic_3.tex",
+        "title": "Topic 3: Weighted Averages and Combined Means"
+      },
+      {
+        "file": "Topic_4.tex",
+        "title": "Topic 4: Basic and Compound Probability"
+      },
+      {
+        "file": "Topic_5.tex",
+        "title": "Topic 5: Conditional Probability"
+      },
+      {
+        "file": "Topic_6.tex",
+        "title": "Topic 6: Understanding Variability and Standard Deviation (Conceptual)"
+      },
+      {
+        "file": "Topic_7.tex",
+        "title": "Topic 7: Interpreting Trend Lines and Regression (Conceptual)"
+      }
+    ]
+  },
+  {
+    "unitDirectory": "Unit_5__Exponents__Roots__and_Rational_Expressions",
+    "unitTitle": "Unit 5: Exponents, Roots, and Rational Expressions",
+    "topics": [
+      {
+        "file": "Topic_1.tex",
+        "title": "Topic 1: Laws of Exponents"
+      },
+      {
+        "file": "Topic_2.tex",
+        "title": "Topic 2: Negative and Fractional Exponents"
+      },
+      {
+        "file": "Topic_3.tex",
+        "title": "Topic 3: Simplifying Rational Expressions"
+      },
+      {
+        "file": "Topic_4.tex",
+        "title": "Topic 4: Domain Restrictions and Undefined Values"
+      }
+    ]
+  },
+  {
+    "unitDirectory": "Unit_6__Quadratic___Polynomial_Functions",
+    "unitTitle": "Unit 6: Quadratic and Polynomial Functions",
+    "topics": [
+      {
+        "file": "Topic_1.tex",
+        "title": "Topic 1: Forms of Quadratic Equations"
+      },
+      {
+        "file": "Topic_2.tex",
+        "title": "Topic 2: Factoring and Solving Quadratics"
+      },
+      {
+        "file": "Topic_3.tex",
+        "title": "Topic 3: Quadratic Formula and Discriminant"
+      },
+      {
+        "file": "Topic_4.tex",
+        "title": "Topic 4: Graphing Parabolas (Vertex and Intercepts)"
+      },
+      {
+        "file": "Topic_5.tex",
+        "title": "Topic 5: Adding, Subtracting, and Multiplying Polynomials"
+      },
+      {
+        "file": "Topic_6.tex",
+        "title": "Topic 6: Zeros, Factors, and Graphs of Polynomials"
+      }
+    ]
+  },
+  {
+    "unitDirectory": "Unit_7__Exponential_Functions_and_General_Functions",
+    "unitTitle": "Unit 7: Exponential and General Functions",
+    "topics": [
+      {
+        "file": "Topic_1.tex",
+        "title": "Topic 1: Exponential Growth and Decay"
+      },
+      {
+        "file": "Topic_2.tex",
+        "title": "Topic 2: Comparing Linear and Exponential Growth"
+      },
+      {
+        "file": "Topic_3.tex",
+        "title": "Topic 3: Function Notation and Evaluation"
+      },
+      {
+        "file": "Topic_4.tex",
+        "title": "Topic 4: Domain, Range, and Restrictions"
+      },
+      {
+        "file": "Topic_5.tex",
+        "title": "Topic 5: Composition and Inverses of Functions"
+      },
+      {
+        "file": "Topic_6.tex",
+        "title": "Topic 6: Transformations — Shifts, Reflections, and Stretches"
+      }
+    ]
+  },
+  {
+    "unitDirectory": "Unit_8__Geometry___Trigonometry",
+    "unitTitle": "Unit 8: Geometry and Trigonometry",
+    "topics": [
+      {
+        "file": "Topic_1.tex",
+        "title": "Topic 1: Lines and Angles — Parallel, Perpendicular, and Transversals"
+      },
+      {
+        "file": "Topic_2.tex",
+        "title": "Topic_2"
+      },
+      {
+        "file": "Topic_3.tex",
+        "title": "Topic_3"
+      },
+      {
+        "file": "Topic_4.tex",
+        "title": "Topic_4"
+      },
+      {
+        "file": "Topic_5.tex",
+        "title": "Topic_5"
+      },
+      {
+        "file": "Topic_6.tex",
+        "title": "Topic_6"
+      },
+      {
+        "file": "Topic_7.tex",
+        "title": "Topic_7"
+      }
+    ]
+  },
+  {
+    "unitDirectory": "Unit_9__Multi_Step___Mixed_Problems",
+    "unitTitle": "Unit_9__Multi_Step___Mixed_Problems",
+    "topics": [
+      {
+        "file": "Topic_1.tex",
+        "title": "Topic_1"
+      },
+      {
+        "file": "Topic_2.tex",
+        "title": "Topic_2"
+      },
+      {
+        "file": "Topic_3.tex",
+        "title": "Topic_3"
+      },
+      {
+        "file": "Topic_4.tex",
+        "title": "Topic_4"
+      },
+      {
+        "file": "Topic_5.tex",
+        "title": "Topic_5"
+      }
+    ]
+  }
+]

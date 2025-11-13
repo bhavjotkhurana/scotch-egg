@@ -1,5 +1,4 @@
 \documentclass[14pt]{extarticle}
-
 % ---------- PACKAGES ----------
 \usepackage{amsmath, amssymb}
 \usepackage{geometry}
@@ -8,7 +7,19 @@
 \usepackage{xcolor}
 \usepackage{helvet}
 \usepackage{enumitem}
-
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
 % ---------- PAGE SETUP ----------
 \geometry{margin=1in}
 \setstretch{1.5}
@@ -20,7 +31,6 @@
 \renewcommand{\familydefault}{\sfdefault}
 \renewcommand{\emph}[1]{\textbf{#1}}
 
-% ---------- DOCUMENT ----------
 \begin{document}
 \raggedright
 \pagenumbering{gobble}
@@ -259,5 +269,9 @@ Solve for \(x\):
     \item Profit at least 60: \(15x - 120 \ge 60 \Rightarrow 15x \ge 180 \Rightarrow x \ge \boxed{12}\).
 \end{enumerate}
 
+
+
+
+\ReflectionPage{Unit 1, Topic 5: Slope and Rate of Change}{https://www.scotchegg.co}
 
 \end{document}
