@@ -1,0 +1,7 @@
+# robots.txt for math worksheets site
+User-agent: *
+Allow: /
+
+# Prevent crawlers from indexing build artifacts or scripts directories if accidentally exposed
+Disallow: /scripts/
+Disallow: /dist/
