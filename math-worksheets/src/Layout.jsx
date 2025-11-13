@@ -1,6 +1,6 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import { Upload, Home } from "lucide-react";
+import { Upload, Info } from "lucide-react";
 import { base44 } from "@/api/base44Client";
 import { useQuery } from "@tanstack/react-query";
 import logoImage from "@/assets/logo.png";
@@ -41,15 +41,15 @@ export default function Layout() {
 
             <nav className="flex items-center gap-6">
               <Link 
-                to={createPageUrl("Home")} 
+                to={createPageUrl("About")} 
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-200 ${
-                  location.pathname === createPageUrl("Home")
+                  location.pathname === createPageUrl("About")
                     ? "bg-brand-secondary text-brand-primary-dark font-medium"
                     : "text-gray-600 hover:text-brand-primary hover:bg-brand-secondary/40"
                 }`}
               >
-                <Home className="w-4 h-4" />
-                <span className="hidden sm:inline">Browse</span>
+                <Info className="w-4 h-4" />
+                <span className="hidden sm:inline">About</span>
               </Link>
               
               {user?.role === 'admin' && (

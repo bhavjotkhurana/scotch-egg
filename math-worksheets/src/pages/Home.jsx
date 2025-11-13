@@ -18,10 +18,21 @@ const categoryFilters = [
 ];
 
 const difficulties = ['all', 'Beginner', 'Intermediate', 'Advanced'];
+const sortOptions = [
+  { value: 'a-z', label: 'A → Z' },
+  { value: 'z-a', label: 'Z → A' },
+  { value: 'difficulty', label: 'Difficulty' },
+];
+const difficultyRank = {
+  Beginner: 0,
+  Intermediate: 1,
+  Advanced: 2,
+};
 
 export default function HomePage() {
   const [categoryFilter, setCategoryFilter] = useState('all');
   const [difficultyFilter, setDifficultyFilter] = useState('all');
+  const [sortBy, setSortBy] = useState('a-z');
   const [selectedWorksheet, setSelectedWorksheet] = useState(null);
 
   const { data: worksheets = [], isLoading } = useQuery({
@@ -46,6 +57,23 @@ export default function HomePage() {
       return categoryMatch && difficultyMatch;
     });
   }, [worksheets, categoryFilter, difficultyFilter]);
+
+  const sortedWorksheets = useMemo(() => {
+    return [...filteredWorksheets].sort((a, b) => {
+      if (sortBy === 'z-a') {
+        return b.title.localeCompare(a.title);
+      }
+      if (sortBy === 'difficulty') {
+        const rankA = difficultyRank[a.difficulty] ?? Number.MAX_SAFE_INTEGER;
+        const rankB = difficultyRank[b.difficulty] ?? Number.MAX_SAFE_INTEGER;
+        if (rankA !== rankB) {
+          return rankA - rankB;
+        }
+        return a.title.localeCompare(b.title);
+      }
+      return a.title.localeCompare(b.title);
+    });
+  }, [filteredWorksheets, sortBy]);
 
   return (
     <div className="min-h-screen">
@@ -85,21 +113,38 @@ export default function HomePage() {
           <div className="mb-6 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
             <h2 className="text-2xl font-bold text-gray-900">Browse Worksheets</h2>
 
-            <label className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm shadow-sm">
-              <Filter className="h-4 w-4 text-gray-500" />
-              <span className="text-gray-600">Difficulty</span>
-              <select
-                value={difficultyFilter}
-                onChange={(event) => setDifficultyFilter(event.target.value)}
-                className="rounded-md border border-gray-200 bg-white px-2 py-1 text-sm text-gray-700 focus:border-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-secondary/40"
-              >
-                {difficulties.map((difficulty) => (
-                  <option key={difficulty} value={difficulty}>
-                    {difficulty === 'all' ? 'All Levels' : difficulty}
-                  </option>
-                ))}
-              </select>
-            </label>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <label className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm shadow-sm">
+                <Filter className="h-4 w-4 text-gray-500" />
+                <span className="text-gray-600">Difficulty</span>
+                <select
+                  value={difficultyFilter}
+                  onChange={(event) => setDifficultyFilter(event.target.value)}
+                  className="rounded-md border border-gray-200 bg-white px-2 py-1 text-sm text-gray-700 focus:border-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-secondary/40"
+                >
+                  {difficulties.map((difficulty) => (
+                    <option key={difficulty} value={difficulty}>
+                      {difficulty === 'all' ? 'All Levels' : difficulty}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm shadow-sm">
+                <span className="text-gray-600">Sort</span>
+                <select
+                  value={sortBy}
+                  onChange={(event) => setSortBy(event.target.value)}
+                  className="rounded-md border border-gray-200 bg-white px-2 py-1 text-sm text-gray-700 focus:border-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-secondary/40"
+                >
+                  {sortOptions.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </div>
           </div>
 
           <div className="flex flex-wrap gap-2 rounded-xl border border-gray-200 bg-white p-2 shadow-sm">
@@ -140,7 +185,7 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-        ) : filteredWorksheets.length === 0 ? (
+        ) : sortedWorksheets.length === 0 ? (
           <div className="py-20 text-center">
             <div className="mb-4 text-6xl">📝</div>
             <h3 className="mb-2 text-xl font-semibold text-gray-900">No worksheets found</h3>
@@ -148,7 +193,7 @@ export default function HomePage() {
           </div>
         ) : (
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {filteredWorksheets.map((worksheet) => (
+            {sortedWorksheets.map((worksheet) => (
               <WorksheetCard key={worksheet.id} worksheet={worksheet} onClick={() => setSelectedWorksheet(worksheet)} />
             ))}
           </div>
