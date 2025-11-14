@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Upload, FileText, Image as ImageIcon, Check, Loader2 } from 'lucide-react';
 import { base44 } from '@/api/base44Client';
 import { createPageUrl } from '@/utils';
+import Seo from '@/components/Seo.jsx';
 
 const categoryOptions = [
   'SAT Math',
@@ -115,7 +116,21 @@ export default function UploadPage() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <>
+      <Seo
+        title="Upload a Math Worksheet"
+        description="Share a new Scotch Egg worksheet by uploading your PDF, preview image, and lesson details so students everywhere can download it for free."
+        keywords={['upload worksheet', 'share math worksheet', 'SAT worksheet submission']}
+        structuredData={({ canonicalUrl }) => ({
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'Upload Math Worksheet',
+          url: canonicalUrl,
+          description:
+            'Form that allows contributors to upload original math worksheets including files, preview images, and key lesson metadata for students.',
+        })}
+      />
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Upload New Worksheet</h1>
         <p className="text-gray-600">Add a new math worksheet to your collection</p>
@@ -382,5 +397,6 @@ export default function UploadPage() {
         </div>
       </form>
     </div>
+    </>
   );
 }

@@ -1,15 +1,35 @@
+import Seo from '@/components/Seo.jsx';
 import './About.css';
 
 export default function AboutPage() {
   return (
-    <div className="about-page">
-      <section className="about-wrapper">
-        <div className="about-letter">
-          <header className="about-letter__header">
-            <p className="about-letter__eyebrow">From the desk of Scotch Egg</p>
-            <h1>Why these worksheets exist</h1>
-            <div className="about-letter__divider" />
-          </header>
+    <>
+      <Seo
+        title="About Scotch Egg Math Worksheets"
+        description="Learn why Scotch Egg creates free, high-quality SAT math worksheets with thoughtful practice structures and how the collection is expanding."
+        keywords={[
+          'about scotch egg',
+          'math worksheet creator',
+          'free SAT math resources',
+          'teacher made worksheets',
+        ]}
+        structuredData={({ canonicalUrl }) => ({
+          '@context': 'https://schema.org',
+          '@type': 'AboutPage',
+          name: 'About Scotch Egg Math Worksheets',
+          url: canonicalUrl,
+          description:
+            'Scotch Egg shares how the free SAT math worksheet collection started, who it serves, and what resources are coming next for students and tutors.',
+        })}
+      />
+      <div className="about-page">
+        <section className="about-wrapper">
+          <div className="about-letter">
+            <header className="about-letter__header">
+              <p className="about-letter__eyebrow">From the desk of Scotch Egg</p>
+              <h1>Why these worksheets exist</h1>
+              <div className="about-letter__divider" />
+            </header>
 
           <p>
             Dear students, teachers, and tireless tutors, Scotch Egg is my small commitment to making rigorous SAT math
@@ -54,8 +74,9 @@ export default function AboutPage() {
           <p className="about-letter__contact">
             For any questions or concerns please reach out to <a href="mailto:hello@scotchegg.co">hello@scotchegg.co</a>.
           </p>
-        </div>
-      </section>
-    </div>
+          </div>
+        </section>
+      </div>
+    </>
   );
 }

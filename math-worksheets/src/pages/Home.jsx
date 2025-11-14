@@ -4,6 +4,7 @@ import { Filter, Sparkles } from 'lucide-react';
 import { base44 } from '@/api/base44Client';
 import WorksheetCard from '@/components/worksheets/WorksheetCard.jsx';
 import WorksheetDetailsDialog from '@/components/worksheets/WorksheetDetailsDialog.jsx';
+import Seo from '@/components/Seo.jsx';
 
 const categoryFilters = [
   'all',
@@ -76,7 +77,34 @@ export default function HomePage() {
   }, [filteredWorksheets, sortBy]);
 
   return (
-    <div className="min-h-screen">
+    <>
+      <Seo
+        title="Free Math Worksheets for SAT Prep and Classrooms"
+        description="Browse organized SAT and classroom-ready math worksheets by topic, category, and difficulty. Download every worksheet for free and share with students."
+        keywords={[
+          'free math worksheets',
+          'SAT math practice',
+          'algebra worksheet download',
+          'geometry practice pdf',
+          'statistics practice problems',
+        ]}
+        structuredData={({ canonicalUrl }) => ({
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: 'Scotch Egg Math Worksheets',
+          url: canonicalUrl,
+          description:
+            'Always-free SAT and classroom math worksheets across algebra, geometry, statistics, and more with printable practice sets.',
+          inLanguage: 'en-US',
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: `${canonicalUrl}?q={search_term_string}`,
+            'query-input': 'required name=search_term_string',
+          },
+        })}
+      />
+
+      <div className="min-h-screen">
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-primary-dark via-brand-primary to-brand-primary-dark py-20 text-white">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1200')] bg-cover bg-center opacity-10" />
         <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/95 to-brand-primary-dark/95" />
@@ -202,5 +230,6 @@ export default function HomePage() {
 
       <WorksheetDetailsDialog worksheet={selectedWorksheet} onClose={() => setSelectedWorksheet(null)} />
     </div>
+    </>
   );
 }

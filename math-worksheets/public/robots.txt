@@ -5,3 +5,5 @@ Allow: /
 # Prevent crawlers from indexing build artifacts or scripts directories if accidentally exposed
 Disallow: /scripts/
 Disallow: /dist/
+
+Sitemap: https://scotchegg.co/sitemap.xml
