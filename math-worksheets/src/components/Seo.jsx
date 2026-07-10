@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const SITE_NAME = 'Scotch Egg Math Worksheets';
+const SITE_NAME = 'Scotch Egg';
 const DEFAULT_DESCRIPTION =
-  'Download free SAT and classroom-ready math worksheets covering algebra, geometry, statistics, and more with teacher-friendly guidance.';
+  'Private SAT/ACT Math, AP Calculus & Physics, and College Statistics tutoring with Bhav Khurana, plus a free, interactive SAT Math practice bank.';
 
 const ensureMeta = (selector, attributes) => {
   let element = document.head.querySelector(selector);
@@ -45,7 +45,7 @@ export default function Seo({ title, description = DEFAULT_DESCRIPTION, keywords
     ensureMeta('meta[name="description"]', { name: 'description', content: description });
     ensureMeta('meta[name="keywords"]', {
       name: 'keywords',
-      content: keywords.length ? keywords.join(', ') : 'math worksheets, SAT math practice, algebra worksheets',
+      content: keywords.length ? keywords.join(', ') : 'math tutor, SAT math tutoring, AP calculus tutor',
     });
 
     ensureMeta('meta[property="og:title"]', { property: 'og:title', content: pageTitle });

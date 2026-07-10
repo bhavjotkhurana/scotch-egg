@@ -1,0 +1,3181 @@
+[
+  {
+    "unitSlug": "unit-8",
+    "unitDirectory": "Unit_8__Geometry___Trigonometry",
+    "unitTitle": "Unit 8: Geometry and Trigonometry",
+    "file": "Topic_1.tex",
+    "topicSlug": "topic-1-lines-and-angles-parallel-perpendicular-and-transversals",
+    "topicTitle": "Topic 1: Lines and Angles — Parallel, Perpendicular, and Transversals",
+    "conceptSummary": [
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "Lines and angles are foundational to all geometry problems on the SAT.  \nA ",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "line",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " extends infinitely in both directions, while a ",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "ray",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " has one endpoint and extends in one direction.  \nWhen two lines meet, they form ",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "angles",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " — measured in degrees.",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "A ",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "transversal",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " is a line that cuts across two or more other lines.  \nIf those lines are parallel, several angle relationships form:",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "display-math",
+          "value": "\\begin{array}{c|l}\n\\textbf{Angle Pair} & \\textbf{Relationship} \\\\ \\hline\n\\text{Corresponding Angles} & \\text{Equal (congruent)} \\\\\n\\text{Alternate Interior Angles} & \\text{Equal (congruent)} \\\\\n\\text{Alternate Exterior Angles} & \\text{Equal (congruent)} \\\\\n\\text{Consecutive Interior Angles} & \\text{Supplementary (sum = 180°)}\n\\end{array}"
+        }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "Perpendicular lines",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " intersect to form right angles (90°).  \nIf two lines are perpendicular, their slopes multiply to ",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "inline-math",
+          "value": "-1"
+        },
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": ":  \n",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "display-math",
+          "value": "m_1 \\cdot m_2 = -1."
+        }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "Parallel lines",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " never meet and have the same slope:  \n",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "display-math",
+          "value": "m_1 = m_2."
+        }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "(Insert diagram note: two parallel lines cut by a transversal showing corresponding, alternate interior, and alternate exterior angles.)",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    ],
+    "coreSkills": [
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "Identify angle pairs formed by a transversal.",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "Use properties of parallel and perpendicular lines to find unknown angles.",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "Apply the sum of angles on a line (180°) and at a point (360°).",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "Relate slopes of parallel and perpendicular lines in coordinate geometry.",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "Use logical reasoning to find missing measures in angle diagrams.",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    ],
+    "examples": [
+      {
+        "title": "Example 1: Parallel Lines and Transversal",
+        "body": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\nLines ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "l_1"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": " and ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "l_2"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": " are parallel, and transversal ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "t"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": " crosses them.  \nIf one acute angle measures ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "65^\\circ,"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": " find its alternate interior angle.\n\nAlternate interior angles are congruent:\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "display-math",
+            "value": "\\boxed{65^\\circ.}"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Example 2: Supplementary Angles",
+        "body": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\nWhen two parallel lines are cut by a transversal, a pair of consecutive interior angles are supplementary.\n\nIf one angle is ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "110^\\circ,"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "display-math",
+            "value": "180 - 110 = 70."
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "\\boxed{70^\\circ.}"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Example 3: Perpendicular Lines",
+        "body": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\nTwo lines intersect perpendicularly. One angle measures ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "x + 15^\\circ,"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": " and the adjacent angle measures ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "3x - 45^\\circ."
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\nSet their sum equal to ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "90^\\circ:"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "display-math",
+            "value": "(x + 15) + (3x - 45) = 90 \\Rightarrow 4x - 30 = 90 \\Rightarrow 4x = 120 \\Rightarrow x = 30."
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "\\boxed{x = 30}"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Example 4: Slopes of Parallel and Perpendicular Lines",
+        "body": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\nIf a line has equation ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "y = 2x + 3,"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              [
+                {
+                  "type": "text",
+                  "value": [
+                    {
+                      "text": "A parallel line has slope ",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "type": "inline-math",
+                  "value": "m = 2."
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": [
+                    {
+                      "text": "A perpendicular line has slope ",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "type": "inline-math",
+                  "value": "m = -\\frac{1}{2}."
+                }
+              ]
+            ]
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "\\boxed{\\text{Parallel: } y = 2x + b, \\quad \\text{Perpendicular: } y = -\\tfrac{1}{2}x + b.}"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Example 5: Angle Relationships at a Point",
+        "body": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\nAt a point, four angles form. Two adjacent ones are ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "x"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": " and ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "2x + 30."
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "  \nSince angles around a point sum to 360°:\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "display-math",
+            "value": "2(x + 2x + 30) = 360 \\Rightarrow 6x + 60 = 360 \\Rightarrow 6x = 300 \\Rightarrow x = 50."
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "\\boxed{x = 50^\\circ}"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Example 6: SAT-Style Interpretation",
+        "body": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\nIn the coordinate plane, line ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "k"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": " has slope ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "3."
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "  \nA line perpendicular to ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "k"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": " passes through ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "(1, 4)"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": ".  \nFind its equation.\n\nSlope of perpendicular line = ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "-\\frac{1}{3}"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": ".  \nPoint-slope form:\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "display-math",
+            "value": "y - 4 = -\\tfrac{1}{3}(x - 1) \\Rightarrow y = -\\tfrac{1}{3}x + \\tfrac{1}{3} + 4 = -\\tfrac{1}{3}x + \\tfrac{13}{3}."
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "\\boxed{y = -\\tfrac{1}{3}x + \\tfrac{13}{3}}"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "keyTakeaways": [
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "Parallel lines have equal slopes; perpendicular lines’ slopes multiply to ",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "inline-math",
+          "value": "-1."
+        }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "Corresponding, alternate interior, and alternate exterior angles are congruent for parallel lines.",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "Consecutive interior angles are supplementary.",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "Angles on a straight line sum to 180°; angles around a point sum to 360°.",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "Always mark known relationships on diagrams before solving.",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    ],
+    "practiceParts": [
+      {
+        "partLabel": "A",
+        "partTitle": "Part A: Angle Relationships (Parallel Lines and Transversals)",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Two parallel lines are cut by a transversal. One angle measures ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "65^\\circ."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " Find the measure of each of the other seven angles.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "One angle is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "65^\\circ."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  In a parallel-line transversal setup:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "ordered": false,
+                "items": [
+                  [
+                    {
+                      "type": "text",
+                      "value": [
+                        {
+                          "text": "All acute angles are equal.",
+                          "bold": false,
+                          "italic": false
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "type": "text",
+                      "value": [
+                        {
+                          "text": "All obtuse angles are equal.",
+                          "bold": false,
+                          "italic": false
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "type": "text",
+                      "value": [
+                        {
+                          "text": "Any acute + any obtuse = 180°.",
+                          "bold": false,
+                          "italic": false
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  So all acute angles are ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "65^\\circ."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "  \n  All obtuse angles are ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "180 - 65 = 115^\\circ."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Angles are }65^\\circ \\text{ or }115^\\circ}"
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "If two lines are parallel and a transversal forms one angle of ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "120^\\circ,"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " what is the measure of the alternate interior angle?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "If one angle is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "120^\\circ,"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " then its alternate interior angle is congruent.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{120^\\circ}"
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Lines ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "l_1"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "l_2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " are parallel. If a consecutive interior angle is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x + 20"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and its partner is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2x - 10,"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " find ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x."
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Consecutive interior angles are supplementary:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "(x + 20) + (2x - 10) = 180\n  \\Rightarrow 3x + 10 = 180\n  \\Rightarrow 3x = 170\n  \\Rightarrow x = \\frac{170}{3}."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{x = \\tfrac{170}{3}}"
+              }
+            ]
+          },
+          {
+            "number": 4,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "When a transversal cuts parallel lines, one corresponding angle measures ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "3x + 15,"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and its alternate exterior angle measures ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "6x - 30."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " Find ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x."
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "For parallel lines, corresponding angles = alternate exterior angles.  \n  So:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "3x + 15 = 6x - 30\n  \\Rightarrow 45 = 3x\n  \\Rightarrow x = 15."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{x = 15}"
+              }
+            ]
+          },
+          {
+            "number": 5,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A transversal cuts two parallel lines. If one acute angle is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "55^\\circ,"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " what is the measure of each obtuse angle?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "If an acute angle is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "55^\\circ,"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " each obtuse angle is its supplement:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "180 - 55 = 125^\\circ."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Obtuse angles are }125^\\circ}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "partLabel": "B",
+        "partTitle": "Part B: Angles on a Line and Around a Point",
+        "questions": [
+          {
+            "number": 6,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Two supplementary angles have measures ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2x - 30."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " Find ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x."
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Supplementary angles sum to 180°:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "x + (2x - 30) = 180\n  \\Rightarrow 3x - 30 = 180\n  \\Rightarrow 3x = 210\n  \\Rightarrow x = 70."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{x = 70}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  The angles are ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "70^\\circ"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "110^\\circ."
+              }
+            ]
+          },
+          {
+            "number": 7,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Two vertical angles are given as ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "3x - 20"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x + 10."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " Find the measure of each angle.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Vertical angles are equal:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "3x - 20 = x + 10\n  \\Rightarrow 2x = 30\n  \\Rightarrow x = 15."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Each angle:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "3x - 20 = 3(15) - 20 = 45 - 20 = 25^\\circ."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{25^\\circ}"
+              }
+            ]
+          },
+          {
+            "number": 8,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Angles on a straight line are ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "4x"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2x + 12."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " Find ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x."
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Angles on a straight line sum to 180°:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "4x + (2x + 12) = 180\n  \\Rightarrow 6x + 12 = 180\n  \\Rightarrow 6x = 168\n  \\Rightarrow x = 28."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{x = 28}"
+              }
+            ]
+          },
+          {
+            "number": 9,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Four angles around a point have measures ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x, 2x, 3x,"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "4x."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " Find each angle measure.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Angles around a point sum to 360°:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "x + 2x + 3x + 4x = 360\n  \\Rightarrow 10x = 360\n  \\Rightarrow x = 36."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Then:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "x = 36^\\circ,\\;\n  2x = 72^\\circ,\\;\n  3x = 108^\\circ,\\;\n  4x = 144^\\circ."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{36^\\circ,\\;72^\\circ,\\;108^\\circ,\\;144^\\circ}"
+              }
+            ]
+          },
+          {
+            "number": 10,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "One angle is twice another, and together they form a right angle. Find both angles.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Let the smaller angle be ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "a."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " The larger is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2a."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "  \n  They form a right angle, so:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "a + 2a = 90\n  \\Rightarrow 3a = 90\n  \\Rightarrow a = 30."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  So the angles are ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "30^\\circ"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "60^\\circ."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{30^\\circ \\text{ and } 60^\\circ}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "partLabel": "C",
+        "partTitle": "Part C: Parallel and Perpendicular Slopes (Coordinate Geometry)",
+        "questions": [
+          {
+            "number": 11,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Find the slope of a line parallel to ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = 3x + 5."
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Line parallel to ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = 3x + 5"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " has the same slope.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{m = 3}"
+              }
+            ]
+          },
+          {
+            "number": 12,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Find the slope of a line perpendicular to ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = -\\frac{2}{3}x + 4."
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Perpendicular slope is the negative reciprocal.  \n  Given slope is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "-\\tfrac{2}{3}."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Negative reciprocal of ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "-\\tfrac{2}{3}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\tfrac{3}{2}."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{m = \\tfrac{3}{2}}"
+              }
+            ]
+          },
+          {
+            "number": 13,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Write the equation of a line parallel to ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = 4x - 7"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " that passes through ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(0, 2)."
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A line parallel to ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = 4x - 7"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " has slope 4.  \n  Use point ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(0,2)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". Point-slope or slope-intercept:\n\n  Since it passes through ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(0,2)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "b = 2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". So:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "y = 4x + 2."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{y = 4x + 2}"
+              }
+            ]
+          },
+          {
+            "number": 14,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Write the equation of a line perpendicular to ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = -\\tfrac{1}{2}x + 3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " that passes through ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(4, 1)."
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Line perpendicular to ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = -\\tfrac{1}{2}x + 3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ":\n\n  Given slope is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "-\\tfrac{1}{2}."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "  \n  Perpendicular slope is 2 (negative reciprocal).\n\n  Through ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(4,1)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ":\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "y - 1 = 2(x - 4)\n  \\Rightarrow y - 1 = 2x - 8\n  \\Rightarrow y = 2x - 7."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{y = 2x - 7}"
+              }
+            ]
+          },
+          {
+            "number": 15,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Determine if the lines ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = 2x + 3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2y = 4x - 5"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " are parallel, perpendicular, or neither.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Compare ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = 2x + 3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2y = 4x - 5."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Rewrite the second:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "2y = 4x - 5 \\Rightarrow y = 2x - \\frac{5}{2}."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Both have slope 2. Same slope, different intercepts.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Parallel}}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "partLabel": "D",
+        "partTitle": "Part D: Mixed Reasoning (Angles + Slope Logic)",
+        "questions": [
+          {
+            "number": 16,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Lines ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "l_1"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "l_2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " are parallel. A transversal makes an angle of ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "70^\\circ"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " with ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "l_1."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " What is the alternate exterior angle with ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "l_2?"
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "For parallel lines, alternate exterior angles are congruent.  \n  Given ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "70^\\circ,"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " the alternate exterior angle is also ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "70^\\circ."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{70^\\circ}"
+              }
+            ]
+          },
+          {
+            "number": 17,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Two perpendicular lines intersect. One angle is labeled ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2x + 10."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " Find ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x."
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Two perpendicular lines meet at 90°.  \n  One angle is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2x + 10."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " Set equal to ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "90^\\circ:"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "2x + 10 = 90\n  \\Rightarrow 2x = 80\n  \\Rightarrow x = 40."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{x = 40}"
+              }
+            ]
+          },
+          {
+            "number": 18,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A line has slope ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "m = 3."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " What is the slope of any line perpendicular to it?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "If a line has slope 3, any perpendicular line has slope ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "-\\tfrac{1}{3}."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{-\\tfrac{1}{3}}"
+              }
+            ]
+          },
+          {
+            "number": 19,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "In a diagram, one angle of a triangle formed by two intersecting lines and a transversal is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "40^\\circ,"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and another is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "70^\\circ."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " Find the third angle.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Angles in a triangle sum to 180°.  \n  Given two are ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "40^\\circ"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "70^\\circ:"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "40 + 70 + \\text{(third angle)} = 180\n  \\Rightarrow \\text{third angle} = 70^\\circ."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{70^\\circ}"
+              }
+            ]
+          },
+          {
+            "number": 20,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The line ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "k"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " passes through ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(2, 3)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and has slope 4. Find the equation of a line perpendicular to ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "k"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " passing through the origin.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Line ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "k"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ": slope ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "4"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".  \n  Perpendicular slope: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "-\\tfrac{1}{4}."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "  \n  We want line through origin ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(0,0)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " with slope ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "-\\tfrac{1}{4}."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Equation:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "y = -\\tfrac{1}{4}x."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{y = -\\tfrac{1}{4}x}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "partLabel": "E",
+        "partTitle": "Part E: SAT-Style Applications",
+        "questions": [
+          {
+            "number": 21,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "In the figure, lines ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "a"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "b"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " are parallel, and a transversal ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "t"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " intersects them. If one angle measures ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x + 25"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and the alternate interior angle measures ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "3x - 15,"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " find ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x."
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Alternate interior angles are equal if lines are parallel:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "x + 25 = 3x - 15\n  \\Rightarrow 25 + 15 = 3x - x\n  \\Rightarrow 40 = 2x\n  \\Rightarrow x = 20."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{x = 20}"
+              }
+            ]
+          },
+          {
+            "number": 22,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The lines ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = 2x + 1"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = 2x - 4"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " are parallel. What is the distance between them conceptually dependent on?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The distance between two parallel lines of the form ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = mx + b"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " depends on how far apart the intercepts are, measured ",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "perpendicular",
+                    "bold": false,
+                    "italic": true
+                  },
+                  {
+                    "text": " to the lines.\n\n  Concept: depends on vertical shift (difference in intercepts) when slopes match.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{It depends on how far apart the two lines are along a perpendicular}}"
+              }
+            ]
+          },
+          {
+            "number": 23,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A line perpendicular to ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = \\tfrac{1}{2}x - 6"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " passes through ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(2, 3)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". Find its equation.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Line perpendicular to ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = \\tfrac{1}{2}x - 6"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " has slope ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "-2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " (negative reciprocal).  \n  Through ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(2,3)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ":\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "y - 3 = -2(x - 2)\n  \\Rightarrow y - 3 = -2x + 4\n  \\Rightarrow y = -2x + 7."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{y = -2x + 7}"
+              }
+            ]
+          },
+          {
+            "number": 24,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "If two lines are perpendicular, what is true about the product of their slopes?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "For perpendicular lines:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "m_1 \\cdot m_2 = -1."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Product of slopes is } -1}"
+              }
+            ]
+          },
+          {
+            "number": 25,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Lines ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "l_1"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "l_2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " are parallel. A transversal cuts them creating an angle of ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "110^\\circ."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " What is the measure of the angle supplementary to its corresponding angle?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Angle given is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "110^\\circ."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " The corresponding angle is also ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "110^\\circ"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " (corresponding angles match).  \n  Supplementary to that angle:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "180 - 110 = 70^\\circ."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{70^\\circ}"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "questionCount": 25,
+    "exampleCount": 6
+  }
+]

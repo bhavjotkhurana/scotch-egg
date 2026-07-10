@@ -1,0 +1,310 @@
+[
+  {
+    "unitSlug": "unit-1",
+    "unitDirectory": "Unit_1__Linear_Relationships_and_Equations",
+    "unitTitle": "Unit 1: Linear Relationships and Equations",
+    "topics": [
+      {
+        "topicSlug": "topic-1-variables-expressions-and-equations",
+        "topicTitle": "Topic 1: Variables, Expressions, and Equations",
+        "questionCount": 20,
+        "exampleCount": 2
+      },
+      {
+        "topicSlug": "topic-2-solving-linear-equations",
+        "topicTitle": "Topic 2: Solving Linear Equations",
+        "questionCount": 25,
+        "exampleCount": 2
+      },
+      {
+        "topicSlug": "topic-3-multi-step-and-fractional-equations",
+        "topicTitle": "Topic 3: Multi-Step and Fractional Equations",
+        "questionCount": 25,
+        "exampleCount": 2
+      },
+      {
+        "topicSlug": "topic-4-linear-inequalities-including-compound-and-absolute-value",
+        "topicTitle": "Topic 4: Linear Inequalities (Including Compound and Absolute Value)",
+        "questionCount": 25,
+        "exampleCount": 2
+      },
+      {
+        "topicSlug": "topic-5-slope-and-rate-of-change",
+        "topicTitle": "Topic 5: Slope and Rate of Change",
+        "questionCount": 25,
+        "exampleCount": 2
+      },
+      {
+        "topicSlug": "topic-6-equation-of-a-line",
+        "topicTitle": "Topic 6: Equation of a Line",
+        "questionCount": 25,
+        "exampleCount": 0
+      },
+      {
+        "topicSlug": "topic-7-graphing-and-interpreting-linear-models",
+        "topicTitle": "Topic 7: Graphing and Interpreting Linear Models",
+        "questionCount": 25,
+        "exampleCount": 0
+      }
+    ]
+  },
+  {
+    "unitSlug": "unit-2",
+    "unitDirectory": "Unit_2__Systems_of_Linear_Equations_and_Inequalities",
+    "unitTitle": "Unit 2: Systems of Linear Equations and Inequalities",
+    "topics": [
+      {
+        "topicSlug": "topic-1-solving-systems-by-substitution",
+        "topicTitle": "Topic 1: Solving Systems by Substitution",
+        "questionCount": 20,
+        "exampleCount": 2
+      },
+      {
+        "topicSlug": "topic-2-solving-systems-by-elimination",
+        "topicTitle": "Topic 2: Solving Systems by Elimination",
+        "questionCount": 20,
+        "exampleCount": 3
+      },
+      {
+        "topicSlug": "topic-3-interpreting-intersections-and-solution-types",
+        "topicTitle": "Topic 3: Interpreting Intersections and Solution Types",
+        "questionCount": 0,
+        "exampleCount": 4
+      },
+      {
+        "topicSlug": "topic-4-graphing-systems-of-inequalities-and-solution-regions",
+        "topicTitle": "Topic 4: Graphing Systems of Inequalities and Solution Regions",
+        "questionCount": 25,
+        "exampleCount": 3
+      },
+      {
+        "topicSlug": "topic-5-modeling-real-world-problems-with-systems",
+        "topicTitle": "Topic 5: Modeling Real World Problems with Systems",
+        "questionCount": 25,
+        "exampleCount": 5
+      }
+    ]
+  },
+  {
+    "unitSlug": "unit-3",
+    "unitDirectory": "Unit_3__Ratios__Rates____Percents",
+    "unitTitle": "Unit 3: Ratios, Rates, and Percents",
+    "topics": [
+      {
+        "topicSlug": "topic-1-ratios-and-equivalent-ratios",
+        "topicTitle": "Topic 1: Ratios and Equivalent Ratios",
+        "questionCount": 25,
+        "exampleCount": 4
+      },
+      {
+        "topicSlug": "topic-2-unit-rate-and-proportional-relationships",
+        "topicTitle": "Topic 2: Unit Rate and Proportional Relationships",
+        "questionCount": 25,
+        "exampleCount": 5
+      },
+      {
+        "topicSlug": "topic-3-percent-increase-percent-decrease-and-percent-error",
+        "topicTitle": "Topic 3: Percent Increase, Percent Decrease, and Percent Error",
+        "questionCount": 25,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-4-successive-percent-changes-compound-percentage",
+        "topicTitle": "Topic 4: Successive Percent Changes (Compound Percentage)",
+        "questionCount": 25,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-5-scale-drawings-mixtures-and-density-problems",
+        "topicTitle": "Topic 5: Scale Drawings, Mixtures, and Density Problems",
+        "questionCount": 25,
+        "exampleCount": 5
+      },
+      {
+        "topicSlug": "topic-6-direct-and-inverse-variation",
+        "topicTitle": "Topic 6: Direct and Inverse Variation",
+        "questionCount": 25,
+        "exampleCount": 6
+      }
+    ]
+  },
+  {
+    "unitSlug": "unit-4",
+    "unitDirectory": "Unit_4__Data__Statistics____Probability",
+    "unitTitle": "Unit 4: Data, Statistics, and Probability",
+    "topics": [
+      {
+        "topicSlug": "topic-1-reading-tables-graphs-and-scatterplots",
+        "topicTitle": "Topic 1: Reading Tables, Graphs, and Scatterplots",
+        "questionCount": 5,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-2-mean-median-mode-and-range",
+        "topicTitle": "Topic 2: Mean, Median, Mode, and Range",
+        "questionCount": 25,
+        "exampleCount": 5
+      },
+      {
+        "topicSlug": "topic-3-weighted-averages-and-combined-means",
+        "topicTitle": "Topic 3: Weighted Averages and Combined Means",
+        "questionCount": 20,
+        "exampleCount": 5
+      },
+      {
+        "topicSlug": "topic-4-basic-and-compound-probability",
+        "topicTitle": "Topic 4: Basic and Compound Probability",
+        "questionCount": 25,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-5-conditional-probability",
+        "topicTitle": "Topic 5: Conditional Probability",
+        "questionCount": 24,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-6-understanding-variability-and-standard-deviation-conceptual",
+        "topicTitle": "Topic 6: Understanding Variability and Standard Deviation (Conceptual)",
+        "questionCount": 20,
+        "exampleCount": 5
+      },
+      {
+        "topicSlug": "topic-7-interpreting-trend-lines-and-regression-conceptual",
+        "topicTitle": "Topic 7: Interpreting Trend Lines and Regression (Conceptual)",
+        "questionCount": 20,
+        "exampleCount": 7
+      }
+    ]
+  },
+  {
+    "unitSlug": "unit-5",
+    "unitDirectory": "Unit_5__Exponents__Roots__and_Rational_Expressions",
+    "unitTitle": "Unit 5: Exponents, Roots, and Rational Expressions",
+    "topics": [
+      {
+        "topicSlug": "topic-1-laws-of-exponents",
+        "topicTitle": "Topic 1: Laws of Exponents",
+        "questionCount": 25,
+        "exampleCount": 0
+      },
+      {
+        "topicSlug": "topic-2-negative-and-fractional-exponents",
+        "topicTitle": "Topic 2: Negative and Fractional Exponents",
+        "questionCount": 25,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-3-simplifying-rational-expressions",
+        "topicTitle": "Topic 3: Simplifying Rational Expressions",
+        "questionCount": 25,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-4-domain-restrictions-and-undefined-values",
+        "topicTitle": "Topic 4: Domain Restrictions and Undefined Values",
+        "questionCount": 25,
+        "exampleCount": 6
+      }
+    ]
+  },
+  {
+    "unitSlug": "unit-6",
+    "unitDirectory": "Unit_6__Quadratic___Polynomial_Functions",
+    "unitTitle": "Unit 6: Quadratic and Polynomial Functions",
+    "topics": [
+      {
+        "topicSlug": "topic-1-forms-of-quadratic-equations",
+        "topicTitle": "Topic 1: Forms of Quadratic Equations",
+        "questionCount": 25,
+        "exampleCount": 5
+      },
+      {
+        "topicSlug": "topic-2-factoring-and-solving-quadratics",
+        "topicTitle": "Topic 2: Factoring and Solving Quadratics",
+        "questionCount": 25,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-3-quadratic-formula-and-discriminant",
+        "topicTitle": "Topic 3: Quadratic Formula and Discriminant",
+        "questionCount": 25,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-4-graphing-parabolas-vertex-and-intercepts",
+        "topicTitle": "Topic 4: Graphing Parabolas (Vertex and Intercepts)",
+        "questionCount": 20,
+        "exampleCount": 5
+      },
+      {
+        "topicSlug": "topic-5-adding-subtracting-and-multiplying-polynomials",
+        "topicTitle": "Topic 5: Adding, Subtracting, and Multiplying Polynomials",
+        "questionCount": 25,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-6-zeros-factors-and-graphs-of-polynomials",
+        "topicTitle": "Topic 6: Zeros, Factors, and Graphs of Polynomials",
+        "questionCount": 20,
+        "exampleCount": 5
+      }
+    ]
+  },
+  {
+    "unitSlug": "unit-7",
+    "unitDirectory": "Unit_7__Exponential_Functions_and_General_Functions",
+    "unitTitle": "Unit 7: Exponential and General Functions",
+    "topics": [
+      {
+        "topicSlug": "topic-1-exponential-growth-and-decay",
+        "topicTitle": "Topic 1: Exponential Growth and Decay",
+        "questionCount": 20,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-2-comparing-linear-and-exponential-growth",
+        "topicTitle": "Topic 2: Comparing Linear and Exponential Growth",
+        "questionCount": 15,
+        "exampleCount": 5
+      },
+      {
+        "topicSlug": "topic-3-function-notation-and-evaluation",
+        "topicTitle": "Topic 3: Function Notation and Evaluation",
+        "questionCount": 25,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-4-domain-range-and-restrictions",
+        "topicTitle": "Topic 4: Domain, Range, and Restrictions",
+        "questionCount": 20,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-5-composition-and-inverses-of-functions",
+        "topicTitle": "Topic 5: Composition and Inverses of Functions",
+        "questionCount": 20,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-6-transformations-shifts-reflections-and-stretches",
+        "topicTitle": "Topic 6: Transformations — Shifts, Reflections, and Stretches",
+        "questionCount": 20,
+        "exampleCount": 6
+      }
+    ]
+  },
+  {
+    "unitSlug": "unit-8",
+    "unitDirectory": "Unit_8__Geometry___Trigonometry",
+    "unitTitle": "Unit 8: Geometry and Trigonometry",
+    "topics": [
+      {
+        "topicSlug": "topic-1-lines-and-angles-parallel-perpendicular-and-transversals",
+        "topicTitle": "Topic 1: Lines and Angles — Parallel, Perpendicular, and Transversals",
+        "questionCount": 25,
+        "exampleCount": 6
+      }
+    ]
+  }
+]
