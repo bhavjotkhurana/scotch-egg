@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronLeft, ChevronRight, Eye } from 'lucide-react';
+import { Check, ChevronLeft, ChevronRight, Eye, EyeOff } from 'lucide-react';
 import RichText from '@/components/math/RichText.jsx';
 import { useTopicProgress } from '@/hooks/useTopicProgress.js';
 
@@ -23,7 +23,7 @@ export default function QuestionStepper({ unitSlug, topicSlug, practiceParts }) 
   const total = flatQuestions.length;
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
-  const { isDone, markSeen, markDone } = useTopicProgress(unitSlug, topicSlug);
+  const { isDone, markSeen, toggleDone } = useTopicProgress(unitSlug, topicSlug);
 
   useEffect(() => {
     setRevealed(false);
@@ -43,14 +43,10 @@ export default function QuestionStepper({ unitSlug, topicSlug, practiceParts }) 
   }
 
   const current = flatQuestions[index];
+  const done = isDone(index);
 
   function goTo(nextIndex) {
     setIndex(Math.max(0, Math.min(total - 1, nextIndex)));
-  }
-
-  function handleReveal() {
-    setRevealed(true);
-    markDone(index);
   }
 
   return (
@@ -80,19 +76,21 @@ export default function QuestionStepper({ unitSlug, topicSlug, practiceParts }) 
           <ChevronLeft className="h-4 w-4" /> Prev
         </button>
 
-        {!revealed ? (
-          <button
-            type="button"
-            onClick={handleReveal}
-            className="flex items-center gap-2 rounded-lg bg-brand-primary px-4 py-2 text-sm font-medium text-white hover:bg-brand-primary-dark"
-          >
-            <Eye className="h-4 w-4" /> Show solution
-          </button>
-        ) : (
-          <span className="text-sm font-medium text-brand-primary">
-            {isDone(index) ? 'Marked done' : ''}
-          </span>
-        )}
+        <button
+          type="button"
+          onClick={() => setRevealed((r) => !r)}
+          className="flex items-center gap-2 rounded-lg bg-brand-primary px-4 py-2 text-sm font-medium text-white hover:bg-brand-primary-dark"
+        >
+          {revealed ? (
+            <>
+              <EyeOff className="h-4 w-4" /> Hide solution
+            </>
+          ) : (
+            <>
+              <Eye className="h-4 w-4" /> Show solution
+            </>
+          )}
+        </button>
 
         <button
           type="button"
@@ -112,6 +110,21 @@ export default function QuestionStepper({ unitSlug, topicSlug, practiceParts }) 
           <RichText segments={current.solution} className="text-brand-neutral" />
         </div>
       )}
+
+      <div className="mt-4 flex justify-center">
+        <button
+          type="button"
+          onClick={() => toggleDone(index)}
+          className={`flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
+            done
+              ? 'bg-green-100 text-green-700'
+              : 'border border-gray-300 text-brand-neutral hover:bg-gray-100'
+          }`}
+        >
+          <Check className="h-4 w-4" />
+          {done ? 'Marked done' : 'Mark as done'}
+        </button>
+      </div>
 
       <p className="mt-6 text-center text-sm text-gray-400">
         Stuck on this one?{' '}

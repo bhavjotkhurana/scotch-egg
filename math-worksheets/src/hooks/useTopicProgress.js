@@ -52,11 +52,12 @@ export function useTopicProgress(unitSlug, topicSlug) {
     [unitSlug, topicSlug]
   );
 
-  const markDone = useCallback(
+  const toggleDone = useCallback(
     (index) => {
       setProgress((prev) => {
-        if (prev.done.includes(index)) return prev;
-        const next = { ...prev, done: [...prev.done, index] };
+        const alreadyDone = prev.done.includes(index);
+        const done = alreadyDone ? prev.done.filter((i) => i !== index) : [...prev.done, index];
+        const next = { ...prev, done };
         writeProgress(unitSlug, topicSlug, next);
         return next;
       });
@@ -76,7 +77,7 @@ export function useTopicProgress(unitSlug, topicSlug) {
     isSeen: (index) => progress.seen.includes(index),
     isDone: (index) => progress.done.includes(index),
     markSeen,
-    markDone,
+    toggleDone,
     reset,
   };
 }
