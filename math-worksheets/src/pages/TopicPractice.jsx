@@ -9,8 +9,8 @@ import { getUnitBySlug } from '@/data/questionsIndex.js';
 import { splitTopicTitle } from '@/data/titleFormat.js';
 
 const TABS = [
-  { id: 'practice', label: 'Practice' },
   { id: 'learn', label: 'Learn' },
+  { id: 'practice', label: 'Practice' },
 ];
 
 export default function TopicPractice() {

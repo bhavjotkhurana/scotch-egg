@@ -763,7 +763,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\n(Insert exponential graphs here:  \n— One for growth with ",
+                "text": "\n\nA growth curve (",
                 "bold": false,
                 "italic": false
               }
@@ -777,7 +777,7 @@
             "type": "text",
             "value": [
               {
-                "text": " rising rapidly;  \n— One for decay with ",
+                "text": ") rises rapidly to the right, while a decay curve (",
                 "bold": false,
                 "italic": false
               }
@@ -791,7 +791,7 @@
             "type": "text",
             "value": [
               {
-                "text": " decreasing toward 0.)\n\nKey features:\n",
+                "text": ") decreases toward 0.\n\nKey features:\n",
                 "bold": false,
                 "italic": false
               }
@@ -2392,9 +2392,480 @@
             ]
           }
         ]
+      },
+      {
+        "partLabel": "E",
+        "partTitle": "Part E: SAT-Style Applications",
+        "questions": [
+          {
+            "number": 21,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The graph of ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = 200(1.03)^x"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " passes through which key point?\n  A) ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(0, 0)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "   B) ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(0, 200)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "   C) ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(1, 200)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "   D) ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(1, 206)"
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "y = 200(1.03)^x"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  At ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = 0"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ": ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = 200(1.03)^0 = 200."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  The point ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(0, 200)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " is always on an exponential ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "a b^x"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Choice B } (0, 200)}"
+              }
+            ]
+          },
+          {
+            "number": 22,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "An exponential function models a cooling process: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "T = 70 + 100(0.85)^t."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "  \n  What is the starting temperature?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "T = 70 + 100(0.85)^t"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  At ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "t = 0"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ":\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "T = 70 + 100(1) = 170."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Starting temperature is 170.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{170^\\circ}"
+              }
+            ]
+          },
+          {
+            "number": 23,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A town’s population is 10,000 and grows 2% per year.  \n  Estimate the population after 10 years.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Population 10{,}000 grows 2% per year.\n\n  Model:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "P(t) = 10{,}000(1.02)^t."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  After 10 years:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "P(10) = 10{,}000(1.02)^{10} \\approx 10{,}000 \\times 1.219 \\approx 12{,}190."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{About } 12{,}200}"
+              }
+            ]
+          },
+          {
+            "number": 24,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A $10,000 car depreciates at 15% per year.  \n  After how many years will it be worth half its original value? (Round to nearest tenth.)",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Car $10{,}000 depreciates 15% per year.\n\n  Value model:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "V = 10{,}000(0.85)^t."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Half value is $5{,}000:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "10{,}000(0.85)^t = 5{,}000\n  \\Rightarrow (0.85)^t = 0.5."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Solve:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "t = \\frac{\\ln(0.5)}{\\ln(0.85)} \\approx 4.3 \\text{ years}."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{4.3 \\text{ years (approx)}}"
+              }
+            ]
+          },
+          {
+            "number": 25,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Two investments are modeled by  \n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "A = 1000(1.05)^t"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "B = 1200(1.03)^t."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "  \n  After 5 years, which investment is worth more, and by how much?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "display-math",
+                "value": "A = 1000(1.05)^5, \\quad\n  B = 1200(1.03)^5."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Compute:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "A \\approx 1276.28,\n  \\quad\n  B \\approx 1391.13."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "B"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " is larger.\n\n  Difference:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "1391.13 - 1276.28 \\approx 114.85."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Investment B is larger by about \\$115}}"
+              }
+            ]
+          }
+        ]
       }
     ],
-    "questionCount": 20,
+    "questionCount": 25,
     "exampleCount": 6
   },
   {
@@ -2631,18 +3102,6 @@
                 ]
               }
             ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "text",
-          "value": [
-            {
-              "text": "(Insert graph: one straight line showing constant slope, one exponential curve crossing it and rising faster.)",
-              "bold": false,
-              "italic": false
-            }
           ]
         }
       ]
@@ -3031,21 +3490,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\nBeyond that point, exponential dominates.\n\n(Insert graph showing line and curve intersecting near ",
-                "bold": false,
-                "italic": false
-              }
-            ]
-          },
-          {
-            "type": "inline-math",
-            "value": "x = 5"
-          },
-          {
-            "type": "text",
-            "value": [
-              {
-                "text": ".)\n\n",
+                "text": "\n\nBeyond that point, exponential dominates.\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -4809,9 +5254,595 @@
             ]
           }
         ]
+      },
+      {
+        "partLabel": "D",
+        "partTitle": "Part D: Graph and Table Interpretation",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nA graph shows a straight line with constant slope and an exponential curve that starts below the line but rises faster, overtaking it around ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "x = 5"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": ".\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
+        "questions": [
+          {
+            "number": 16,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Which graph shows a constant rate of change: the line or the curve?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Constant rate of change means constant slope. That is the line.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{The line has constant rate of change}}"
+              }
+            ]
+          },
+          {
+            "number": 17,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Which graph represents a constant percent change?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Constant percent change means multiply by same factor repeatedly. That is the exponential curve.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{The curve has constant percent change}}"
+              }
+            ]
+          },
+          {
+            "number": 18,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Where does the exponential curve overtake the linear line?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The exponential curve overtakes the line at the intersection point, around ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = 5"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Near } x \\approx 5}"
+              }
+            ]
+          },
+          {
+            "number": 19,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "In the table below, determine whether data is linear or exponential.  \n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "\\begin{array}{c|cccc}\n  x & 0 & 1 & 2 & 3 \\\\ \\hline\n  y & 20 & 25 & 30 & 35\n  \\end{array}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "\\begin{array}{c|cccc}\n  x & 0 & 1 & 2 & 3 \\\\ \\hline\n  y & 10 & 15 & 22.5 & 33.75\n  \\end{array}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n  Identify which is linear and which is exponential.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "First table:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "\\begin{array}{c|cccc}\n  x & 0 & 1 & 2 & 3 \\\\ \\hline\n  y & 20 & 25 & 30 & 35\n  \\end{array}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n  Differences are +5 each step → linear.\n\n  Second table:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "\\begin{array}{c|cccc}\n  x & 0 & 1 & 2 & 3 \\\\ \\hline\n  y & 10 & 15 & 22.5 & 33.75\n  \\end{array}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n  Ratios are ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\times 1.5"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " each step → exponential.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{First is linear, second is exponential}}"
+              }
+            ]
+          },
+          {
+            "number": 20,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Describe how the slopes or ratios appear different in graphs of linear vs exponential functions.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "In a linear graph, slope is constant and the line is straight.  \n  In an exponential graph, the slope keeps increasing (for growth), so the curve gets steeper.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Linear: constant slope. Exponential: slope keeps changing}}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "partLabel": "E",
+        "partTitle": "Part E: SAT-Style Applications",
+        "questions": [
+          {
+            "number": 21,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A salary increases by $2500 each year, starting at $40,000. Write the linear model.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Salary with constant $2500 yearly raise, starting $40{,}000.\n\n  This is linear:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "S_L(t) = 40{,}000 + 2500t."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{S_L(t)=40{,}000+2500t}"
+              }
+            ]
+          },
+          {
+            "number": 22,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A different salary starts at $40,000 and increases by 5% per year. Write the exponential model.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Salary starting $40{,}000, grows 5% per year.\n\n  Growth factor 1.05:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "S_E(t) = 40{,}000(1.05)^t."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{S_E(t)=40{,}000(1.05)^t}"
+              }
+            ]
+          },
+          {
+            "number": 23,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "After 5 years, which salary is higher?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "After 5 years:\n\n  Linear:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "S_L(5)=40{,}000+2500(5)=52{,}500."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Exponential:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "S_E(5)=40{,}000(1.05)^5 \\approx 40{,}000(1.2763)\\approx 51{,}052."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{After 5 years, linear salary is higher}"
+              }
+            ]
+          },
+          {
+            "number": 24,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Approximately how many years will it take for the exponential salary to exceed the linear salary?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "When does exponential exceed linear?\n\n  We compare ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "40{,}000 + 2500t"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "40{,}000(1.05)^t"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".\n\n  Check:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "t=5:\\; 52{,}500 \\text{ vs } 51{,}052 \\quad (\\text{linear bigger})"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "t=10:\\; S_L(10)=40{,}000+25{,}000=65{,}000"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "S_E(10)=40{,}000(1.05)^{10}\\approx 40{,}000(1.6289)\\approx 65{,}156"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Around ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "t \\approx 10"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " years, exponential passes linear.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{About 10 years}}"
+              }
+            ]
+          },
+          {
+            "number": 25,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "On the SAT, which clue in a word problem signals exponential growth rather than linear growth?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "SAT clue for exponential:\n\n  Words like ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\%"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " per year, doubles every 6 days, loses 12% each cycle, or \"multiplied by the same factor each period\" indicate exponential.  \n  Words like \"increases by 400 each month\" indicate linear.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Percent growth/decay or repeated multiply = exponential}}"
+              }
+            ]
+          }
+        ]
       }
     ],
-    "questionCount": 15,
+    "questionCount": 25,
     "exampleCount": 5
   },
   {
@@ -8244,18 +9275,6 @@
           "type": "display-math",
           "value": "\\text{If } f(x) = \\sqrt{x - 3}, \\text{ then } f(x) \\ge 0."
         }
-      ],
-      [
-        {
-          "type": "text",
-          "value": [
-            {
-              "text": "(Insert sample graphs: one for a rational function with a vertical asymptote, one for a square root starting at a point.)",
-              "bold": false,
-              "italic": false
-            }
-          ]
-        }
       ]
     ],
     "coreSkills": [
@@ -8621,7 +9640,7 @@
             "type": "text",
             "value": [
               {
-                "text": ".\n\n(Insert graph note: vertex at (3,0), symmetric V opening upward.)\n\n",
+                "text": ".\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -8706,7 +9725,7 @@
             "type": "text",
             "value": [
               {
-                "text": " and opens upward.\n\n(Insert graph note: parabola with vertex (1,2), opens upward.)\n\n",
+                "text": " and opens upward.\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -9682,6 +10701,18 @@
       {
         "partLabel": "C",
         "partTitle": "Part C: Range and Output Behavior",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n(Include small graph sketches later as needed.)\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 11,
@@ -10694,9 +11725,434 @@
             ]
           }
         ]
+      },
+      {
+        "partLabel": "E",
+        "partTitle": "Part E: SAT-Style Applications",
+        "questions": [
+          {
+            "number": 21,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A function ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(x) = \\dfrac{10}{x - 5}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " is undefined for what value of ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x?"
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "f(x) = \\dfrac{10}{x - 5}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Denominator cannot be 0:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "x - 5 \\ne 0 \\Rightarrow x \\ne 5."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{x = 5 \\text{ is not allowed}}"
+              }
+            ]
+          },
+          {
+            "number": 22,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The graph of ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(x) = \\sqrt{x - 4}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " begins at which point?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "f(x) = \\sqrt{x - 4}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  The smallest allowed ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " is 4 (so that inside is 0).  \n  At ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = 4:\\; f(4) = \\sqrt{0} = 0."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{The graph begins at } (4,0)}"
+              }
+            ]
+          },
+          {
+            "number": 23,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The function ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(x) = (x - 3)^2 + 2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " has what range?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "f(x) = (x - 3)^2 + 2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(x - 3)^2 \\ge 0"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", minimum value is 0 at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = 3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".  \n  So minimum output is 2.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Range: } y \\ge 2}"
+              }
+            ]
+          },
+          {
+            "number": 24,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The function ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(x) = \\dfrac{x + 1}{x^2 - 16}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " is undefined for which values of ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x?"
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "f(x) = \\dfrac{x + 1}{x^2 - 16}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Denominator cannot be 0:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "x^2 - 16 = (x - 4)(x + 4) = 0\n  \\Rightarrow x = \\pm 4."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Undefined at } x = -4 \\text{ and } x = 4}"
+              }
+            ]
+          },
+          {
+            "number": 25,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "On the SAT, if a rational expression has both a numerator and denominator that contain ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(x - 2)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", what must be done before identifying domain restrictions?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "If both numerator and denominator share ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(x - 2)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", you must ",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "simplify first",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": " before describing range or behavior, but ",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "for domain you still exclude",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": " the ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "-value that made the original denominator 0.\n\n  Example:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "f(x) = \\frac{x - 2}{(x - 2)(x + 5)} = \\frac{1}{x + 5}, \\quad x \\ne 2."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  On SAT: you simplify for algebra, but you ",
+                    "bold": false,
+                    "italic": false
+                  },
+                  {
+                    "text": "must still",
+                    "bold": true,
+                    "italic": false
+                  },
+                  {
+                    "text": " say ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x \\ne 2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Cancel common factors, but still exclude values that made the denominator 0 originally}}"
+              }
+            ]
+          }
+        ]
       }
     ],
-    "questionCount": 20,
+    "questionCount": 25,
     "exampleCount": 6
   },
   {
@@ -11031,60 +12487,6 @@
           "value": [
             {
               "text": ".",
-              "bold": false,
-              "italic": false
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "text",
-          "value": [
-            {
-              "text": "(Insert graph notes: show ",
-              "bold": false,
-              "italic": false
-            }
-          ]
-        },
-        {
-          "type": "inline-math",
-          "value": "f(x)"
-        },
-        {
-          "type": "text",
-          "value": [
-            {
-              "text": " and ",
-              "bold": false,
-              "italic": false
-            }
-          ]
-        },
-        {
-          "type": "inline-math",
-          "value": "f^{-1}(x)"
-        },
-        {
-          "type": "text",
-          "value": [
-            {
-              "text": " as mirror images across ",
-              "bold": false,
-              "italic": false
-            }
-          ]
-        },
-        {
-          "type": "inline-math",
-          "value": "y = x"
-        },
-        {
-          "type": "text",
-          "value": [
-            {
-              "text": ".)",
               "bold": false,
               "italic": false
             }
@@ -11755,21 +13157,7 @@
             "type": "text",
             "value": [
               {
-                "text": ".  \n(Insert note: Graph shows both lines reflecting across ",
-                "bold": false,
-                "italic": false
-              }
-            ]
-          },
-          {
-            "type": "inline-math",
-            "value": "y = x"
-          },
-          {
-            "type": "text",
-            "value": [
-              {
-                "text": ".)\n\n",
+                "text": ".\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -13916,9 +15304,500 @@
             ]
           }
         ]
+      },
+      {
+        "partLabel": "E",
+        "partTitle": "Part E: SAT-Style Applications",
+        "questions": [
+          {
+            "number": 21,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A function ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(t) = 4t + 7"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " gives the cost in dollars for ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "t"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " tickets.  \n  What does ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f^{-1}(50)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " represent in context?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "f(t) = 4t + 7"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(t)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " is cost in dollars for ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "t"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " tickets.  \n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f^{-1}(50)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " asks: for a total cost of $50, how many tickets were bought.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Number of tickets that cost \\$50 total}}"
+              }
+            ]
+          },
+          {
+            "number": 22,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The temperature in °C relates to °F by ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "F(C) = \\dfrac{9}{5}C + 32."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "  \n  Find the inverse function ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "C(F)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "F(C) = \\dfrac{9}{5}C + 32"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  To find ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "C(F)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", solve for ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "C"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " in terms of ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "F"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ":\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "F = \\frac{9}{5}C + 32 \\Rightarrow F - 32 = \\frac{9}{5}C\n  \\Rightarrow C = \\frac{5}{9}(F - 32)."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{C(F) = \\dfrac{5}{9}(F - 32)}"
+              }
+            ]
+          },
+          {
+            "number": 23,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The function ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(x) = 2x - 5"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " is graphed. What line is its inverse symmetric about?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The line is always the same for a function and its inverse: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = x."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{They are symmetric across } y = x}"
+              }
+            ]
+          },
+          {
+            "number": 24,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A function ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "g(x)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " doubles a number and then subtracts 1.  \n  Write ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "g(x)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and find its inverse.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\"Doubles a number then subtracts 1\"\n\n  That gives:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "g(x) = 2x - 1."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Find inverse:\n\n  Let ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = 2x - 1."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " Swap:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "x = 2y - 1 \\Rightarrow 2y = x + 1 \\Rightarrow y = \\frac{x + 1}{2}."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{g(x) = 2x - 1,\\; g^{-1}(x) = \\dfrac{x + 1}{2}}"
+              }
+            ]
+          },
+          {
+            "number": 25,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "On a graph, ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(x)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f^{-1}(x)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " intersect at what kind of point?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A function and its inverse intersect where ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(x) = x."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  That means the input equals the output.  \n  On the graph, these intersection points are on the line ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = x."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{They intersect on the line } y = x \\text{ where } f(x)=x}"
+              }
+            ]
+          }
+        ]
       }
     ],
-    "questionCount": 20,
+    "questionCount": 25,
     "exampleCount": 6
   },
   {
@@ -13997,32 +15876,6 @@
           "value": [
             {
               "text": " move?”",
-              "bold": false,
-              "italic": false
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "text",
-          "value": [
-            {
-              "text": "(Insert graph notes: show one original ",
-              "bold": false,
-              "italic": false
-            }
-          ]
-        },
-        {
-          "type": "inline-math",
-          "value": "f(x)"
-        },
-        {
-          "type": "text",
-          "value": [
-            {
-              "text": ", one shifted right and up, and one reflected across the x-axis.)",
               "bold": false,
               "italic": false
             }
@@ -14166,21 +16019,7 @@
             "type": "text",
             "value": [
               {
-                "text": ".\n\n(Insert graph note: original ",
-                "bold": false,
-                "italic": false
-              }
-            ]
-          },
-          {
-            "type": "inline-math",
-            "value": "x^2"
-          },
-          {
-            "type": "text",
-            "value": [
-              {
-                "text": ", shifted right and up.)\n\n",
+                "text": ".\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -14398,7 +16237,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\n(Insert graph note: base V-shape, moved left, flipped, stretched, raised.)\n\n",
+                "text": "\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -16444,9 +18283,592 @@
             ]
           }
         ]
+      },
+      {
+        "partLabel": "E",
+        "partTitle": "Part E: SAT-Style Applications",
+        "questions": [
+          {
+            "number": 21,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The graph of ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = f(x)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " is shown with vertex at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(0,0)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".  \n  The vertex of ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = f(x - 5) + 2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " is where?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Original vertex at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(0,0)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". For ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(x - 5) + 2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ":\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x - 5"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " shifts right 5. ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "+2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " shifts up 2.\n\n  New vertex: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{(5, 2)}"
+              }
+            ]
+          },
+          {
+            "number": 22,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A parabola ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = f(x)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " opens upward.  \n  What happens to its graph for ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = -f(x) + 3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "y = -f(x) + 3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "-f(x)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ": reflect over x-axis.  \n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "+3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ": shift up 3.\n\n  The parabola will now open downward and be moved up 3.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Reflected over x-axis, then shifted up 3}}"
+              }
+            ]
+          },
+          {
+            "number": 23,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The graph of ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(x)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " passes through ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(2, 4)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".  \n  What point will be on ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "g(x) = f(x - 3) + 1"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "If ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(2,4)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " is on ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(x)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", then for ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "g(x) = f(x - 3) + 1"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ":\n\n  We need ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x - 3 = 2 \\Rightarrow x = 5."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "  \n  Output becomes ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "4 + 1 = 5."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  So the point moves to ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(5,5)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{(5, 5)}"
+              }
+            ]
+          },
+          {
+            "number": 24,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "If ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(x)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " models height over time, what does ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(x - 2)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " represent physically?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "f(x - 2)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " means the same motion happens 2 units later in ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".  \n  In time language: the event is delayed by 2 units of time.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{The same behavior, but starting 2 seconds later}}"
+              }
+            ]
+          },
+          {
+            "number": 25,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The graph of ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y = 2f(x + 1) - 4"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " can be obtained from ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(x)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " by what sequence of transformations?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "y = 2f(x + 1) - 4"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Step by step:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "ordered": false,
+                "items": [
+                  [
+                    {
+                      "type": "inline-math",
+                      "value": "x + 1"
+                    },
+                    {
+                      "type": "text",
+                      "value": [
+                        {
+                          "text": ": shift left 1.",
+                          "bold": false,
+                          "italic": false
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "type": "text",
+                      "value": [
+                        {
+                          "text": "Multiply by 2: vertical stretch by factor 2.",
+                          "bold": false,
+                          "italic": false
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "type": "inline-math",
+                      "value": "-4"
+                    },
+                    {
+                      "type": "text",
+                      "value": [
+                        {
+                          "text": ": shift down 4.",
+                          "bold": false,
+                          "italic": false
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Left 1, vertical stretch by 2, down 4}}"
+              }
+            ]
+          }
+        ]
       }
     ],
-    "questionCount": 20,
+    "questionCount": 25,
     "exampleCount": 6
   }
 ]

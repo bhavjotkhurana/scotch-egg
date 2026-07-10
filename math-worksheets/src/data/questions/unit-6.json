@@ -9885,30 +9885,6 @@
                 "text": ", so the parabola opens upward.\n\n",
                 "bold": false,
                 "italic": false
-              },
-              {
-                "text": "Graph:",
-                "bold": true,
-                "italic": false
-              },
-              {
-                "text": " (Insert graph showing vertex at (2, –1), x-intercepts at 1 and 3, y-intercept at 3, symmetric about ",
-                "bold": false,
-                "italic": false
-              }
-            ]
-          },
-          {
-            "type": "inline-math",
-            "value": "x = 2"
-          },
-          {
-            "type": "text",
-            "value": [
-              {
-                "text": ".)\n\n",
-                "bold": false,
-                "italic": false
               }
             ]
           }
@@ -10032,30 +10008,6 @@
             "value": [
               {
                 "text": "\n\n",
-                "bold": false,
-                "italic": false
-              },
-              {
-                "text": "Graph:",
-                "bold": true,
-                "italic": false
-              },
-              {
-                "text": " (Insert graph with vertex at (–1, –3), axis of symmetry ",
-                "bold": false,
-                "italic": false
-              }
-            ]
-          },
-          {
-            "type": "inline-math",
-            "value": "x = -1"
-          },
-          {
-            "type": "text",
-            "value": [
-              {
-                "text": ", opens upward, narrower.)\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -10205,16 +10157,6 @@
                 "text": ".\n\n",
                 "bold": false,
                 "italic": false
-              },
-              {
-                "text": "Graph:",
-                "bold": true,
-                "italic": false
-              },
-              {
-                "text": " (Insert graph showing vertex at (1, 4), x-intercepts at –1 and 3, y-intercept at 3, opens downward.)\n\n",
-                "bold": false,
-                "italic": false
               }
             ]
           }
@@ -10338,16 +10280,6 @@
                 "text": "\n\n",
                 "bold": false,
                 "italic": false
-              },
-              {
-                "text": "Graph:",
-                "bold": true,
-                "italic": false
-              },
-              {
-                "text": " (Insert graph showing vertex (2, –4), upward opening, passes through (0, 4).)\n\n",
-                "bold": false,
-                "italic": false
               }
             ]
           }
@@ -10427,44 +10359,6 @@
             "value": [
               {
                 "text": ".\n\nInterpretation: The rocket reaches a maximum height of 144 ft at 2 seconds.\n\n",
-                "bold": false,
-                "italic": false
-              },
-              {
-                "text": "Graph:",
-                "bold": true,
-                "italic": false
-              },
-              {
-                "text": " (Insert graph of height vs. time showing vertex (2, 144), opens downward, intercepts at ",
-                "bold": false,
-                "italic": false
-              }
-            ]
-          },
-          {
-            "type": "inline-math",
-            "value": "t = 0"
-          },
-          {
-            "type": "text",
-            "value": [
-              {
-                "text": " and ",
-                "bold": false,
-                "italic": false
-              }
-            ]
-          },
-          {
-            "type": "inline-math",
-            "value": "t \\approx 5."
-          },
-          {
-            "type": "text",
-            "value": [
-              {
-                "text": ")\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -12288,6 +12182,193 @@
         ]
       },
       {
+        "partLabel": "D",
+        "partTitle": "Part D: Graph-Based Reasoning",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nA parabola is defined by ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "y = x^2 - 4x + 3"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": ".\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
+        "questions": [
+          {
+            "number": 16,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "What is the vertex of this parabola?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Vertex: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{(2, -1)}"
+              }
+            ]
+          },
+          {
+            "number": 17,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "What is the axis of symmetry?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Axis of symmetry: vertical line through the vertex.  \n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{x = 2}"
+              }
+            ]
+          },
+          {
+            "number": 18,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "What are the x-intercepts?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "X-intercepts: where the graph crosses the x-axis.  \n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{(1, 0) \\text{ and } (3, 0)}"
+              }
+            ]
+          },
+          {
+            "number": 19,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "What is the y-intercept?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Y-intercept: where the graph crosses the y-axis.  \n  From the equation, ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{(0, 3)}"
+              }
+            ]
+          },
+          {
+            "number": 20,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Does the parabola open upward or downward?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The parabola opens upward (U-shaped opening up).  \n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Opens up}}"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "partLabel": "E",
         "partTitle": "Part E: Word Problems and SAT-Style Applications",
         "questions": [
@@ -12889,7 +12970,7 @@
         ]
       }
     ],
-    "questionCount": 20,
+    "questionCount": 25,
     "exampleCount": 5
   },
   {
@@ -15541,30 +15622,6 @@
                 "text": "\n\n",
                 "bold": false,
                 "italic": false
-              },
-              {
-                "text": "Graph:",
-                "bold": true,
-                "italic": false
-              },
-              {
-                "text": " (Insert graph showing intercepts at –1, 2, 4 and right end rising, left end falling since ",
-                "bold": false,
-                "italic": false
-              }
-            ]
-          },
-          {
-            "type": "inline-math",
-            "value": "a > 0, n = 3."
-          },
-          {
-            "type": "text",
-            "value": [
-              {
-                "text": ")\n\n",
-                "bold": false,
-                "italic": false
               }
             ]
           }
@@ -15678,16 +15735,6 @@
               },
               {
                 "text": " (odd multiplicity).\n\n",
-                "bold": false,
-                "italic": false
-              },
-              {
-                "text": "Graph:",
-                "bold": true,
-                "italic": false
-              },
-              {
-                "text": " (Insert graph showing touch at 3, cross at –1, both ends upward since leading coefficient positive and degree 3.)\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -15853,16 +15900,6 @@
             "value": [
               {
                 "text": "\n\n",
-                "bold": false,
-                "italic": false
-              },
-              {
-                "text": "Graph:",
-                "bold": true,
-                "italic": false
-              },
-              {
-                "text": " (Insert cubic graph crossing x-axis at 1, 2, 3, left down, right up.)\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -17891,9 +17928,664 @@
             ]
           }
         ]
+      },
+      {
+        "partLabel": "E",
+        "partTitle": "Part E: SAT-Style Applications",
+        "questions": [
+          {
+            "number": 21,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A cubic function has zeros at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = -1, 2,"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "4."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " Write a possible factored form of the function.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A cubic has zeros at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = -1, 2, 4."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  A possible factored form (set leading coefficient to 1):\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "f(x) = (x + 1)(x - 2)(x - 4)."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{f(x) = (x + 1)(x - 2)(x - 4)}"
+              }
+            ]
+          },
+          {
+            "number": 22,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The graph of a polynomial touches the x-axis at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = 3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and crosses at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = -1."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " Write a possible factored form.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Graph touches at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = 3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and crosses at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = -1"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".\n\n  Touch at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = 3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " means even multiplicity, so ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(x - 3)^2."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "  \n  Cross at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = -1"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " means odd multiplicity, so ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(x + 1)."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{f(x) = (x - 3)^2(x + 1)}"
+              }
+            ]
+          },
+          {
+            "number": 23,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A quartic polynomial has end behavior with both ends up and zeros at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = -2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " (multiplicity 2) and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = 4"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " (multiplicity 2). Write a possible equation.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Quartic, both ends up, zeros at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "-2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " (mult 2) and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "4"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " (mult 2)\n\n  Even degree with positive leading coefficient gives both ends up.\n\n  A possible equation:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "f(x) = (x + 2)^2(x - 4)^2."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{f(x) = (x + 2)^2(x - 4)^2}"
+              }
+            ]
+          },
+          {
+            "number": 24,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A quartic graph has x-intercepts at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = -2, 0,"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", with both ends pointing up. List all zeros and describe the end behavior.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "(Graph described: quartic with x-intercepts at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "-2, 0, 3,"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " both ends up.)\n\n  Zeros: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "-2, 0, 3."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  If both ends are up, degree is even and leading coefficient positive.  \n  To get an even degree with those three distinct zeros, at least one zero must have even multiplicity.  \n  We cannot see multiplicities from text alone, so one valid possibility is:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "f(x) = x(x + 2)(x - 3)^2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n  where ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(x - 3)^2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " gives even degree overall and both ends up.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Zeros: } x = -2,\\; 0,\\; 3 \\text{ (3 with even multiplicity). End behavior: both ends up}}"
+              }
+            ]
+          },
+          {
+            "number": 25,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The graph of ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "f(x)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " crosses the x-axis at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = -1"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = 4"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", and touches at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = 2."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " Which of the following could be its factored form?  \n  A) ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(x + 1)(x - 2)(x - 4)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "  \n  B) ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(x + 1)(x - 2)^2(x - 4)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "  \n  C) ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(x + 1)^2(x - 2)(x - 4)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "  \n  D) ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(x + 1)(x - 4)^2(x - 2)"
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Crosses at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = -1"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = 4"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", touches at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = 2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Cross means odd multiplicity 1. Touch means even multiplicity (like squared).  \n  So we want factors:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "(x + 1)(x - 4)(x - 2)^2."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n\n  Option B is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "(x + 1)(x - 2)^2(x - 4)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". This matches.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Correct choice: B}}"
+              }
+            ]
+          }
+        ]
       }
     ],
-    "questionCount": 20,
+    "questionCount": 25,
     "exampleCount": 5
   }
 ]

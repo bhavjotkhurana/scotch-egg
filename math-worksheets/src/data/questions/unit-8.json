@@ -132,18 +132,6 @@
           "type": "display-math",
           "value": "m_1 = m_2."
         }
-      ],
-      [
-        {
-          "type": "text",
-          "value": [
-            {
-              "text": "(Insert diagram note: two parallel lines cut by a transversal showing corresponding, alternate interior, and alternate exterior angles.)",
-              "bold": false,
-              "italic": false
-            }
-          ]
-        }
       ]
     ],
     "coreSkills": [

@@ -254,7 +254,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\nA bar graph (insert here: “bar graph showing the number of students choosing subjects Math, Science, English, History, and Art”)  \nshows the tallest bar at Science with 50 students, and the shortest bar at Art with 20 students.  \n",
+                "text": "\n\nA bar graph shows the tallest bar at Science with 50 students, and the shortest bar at Art with 20 students.\n",
                 "bold": false,
                 "italic": false
               },
@@ -289,7 +289,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\nA line graph (insert here: “line graph showing average temperature over 12 months”)  \nshows a steady rise from January to July, peaking at 85°F, then declining.  \n",
+                "text": "\n\nA line graph shows a steady rise from January to July, peaking at 85°F, then declining.\n",
                 "bold": false,
                 "italic": false
               },
@@ -324,7 +324,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\nA scatterplot (insert here: “scatterplot of hours studied vs. SAT Math score”)  \nshows points roughly following an upward trend.  \n",
+                "text": "\n\nA scatterplot shows points roughly following an upward trend.\n",
                 "bold": false,
                 "italic": false
               },
@@ -640,9 +640,995 @@
             ]
           }
         ]
+      },
+      {
+        "partLabel": "B",
+        "partTitle": "Part B: Reading and Interpreting Graphs",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nThe line graph below shows a company's revenue (in millions of dollars) from 2018 to 2023.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "display-math",
+            "value": "\\begin{array}{c|cccccc}\n\\text{Year} & 2018 & 2019 & 2020 & 2021 & 2022 & 2023\\\\ \\hline\n\\text{Revenue (\\$M)} & 1.2 & 1.35 & 1.5 & 1.4 & 1.8 & 2.1\n\\end{array}"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
+        "questions": [
+          {
+            "number": 6,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "During which year did the company experience a decline in revenue?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Revenue drops from $1.5M in 2020 to $1.4M in 2021. Year of decline: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{2021}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 7,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Between which two years did revenue increase the most?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Year-over-year changes are ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "+0.15, +0.15, -0.1, +0.4, +0.3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " (in millions). The largest is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2021 \\to 2022"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ": ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{2021 \\text{ to } 2022}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 8,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "If revenue in 2018 was $1.2 million and 2023 revenue is $2.1 million, what is the total increase?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Total increase: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2.1-1.2=\\boxed{0.9\\text{ million dollars}}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 9,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "What is the average rate of increase per year?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Average rate per year: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\dfrac{0.9}{5}=\\boxed{0.18\\text{ million per year}}=\\boxed{\\$180{,}000/\\text{yr}}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 10,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "If the trend continues, estimate revenue for 2024.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Linear projection: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2.1+0.18=\\boxed{2.28\\text{ million}}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " (assumes same average rate).",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "partLabel": "C",
+        "partTitle": "Part C: Bar Graphs",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nThe bar graph below shows the number of students choosing each subject.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "display-math",
+            "value": "\\begin{array}{c|ccccc}\n\\text{Subject} & \\text{Math} & \\text{Science} & \\text{English} & \\text{History} & \\text{Art}\\\\ \\hline\n\\text{Students} & 45 & 50 & 35 & 30 & 20\n\\end{array}"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
+        "questions": [
+          {
+            "number": 11,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Which subject is the most popular?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Science}}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " (50).",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 12,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "What is the difference between the number of students in Science and Art?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "50-20=\\boxed{30}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 13,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "What percent of students chose Math?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Total ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "=45+50+35+30+20=180"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". Math percent ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "=45/180= \\boxed{25\\%}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 14,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "If 10 more students choose English next year, what will be the new total for English?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "New English total ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "=35+10=\\boxed{45}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 15,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "What is the average number of students across all five subjects?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Average ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "=180/5=\\boxed{36}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "partLabel": "D",
+        "partTitle": "Part D: Scatterplots",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nA scatterplot shows hours studied on the x-axis and SAT Math score on the y-axis, with a generally upward trend.\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
+        "questions": [
+          {
+            "number": 16,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "What type of correlation is shown between hours studied and SAT score?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Positive correlation}}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 17,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Describe what an outlier would look like on this scatterplot.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "An outlier is a point far from the overall trend, e.g., ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{high hours but low score (or vice versa)}}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 18,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "If one student studied 15 hours and scored 700, what does that suggest about the trend?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "(15,700)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " lies on/near the upward trend ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\Rightarrow"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{consistent with positive association}}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 19,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "If another student studied 5 hours and scored 500, how does this fit with the pattern?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "(5,500)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " is near the cluster for low hours ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\Rightarrow"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{fits the pattern}}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 20,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Does this graph prove that studying more causes higher scores? Why or why not?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{No. Correlation }\\neq\\text{ causation; other factors may influence scores.}}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "partLabel": "E",
+        "partTitle": "Part E: SAT-Style Applications",
+        "questions": [
+          {
+            "number": 21,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A line graph shows monthly temperatures:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "\\begin{array}{c|ccccc}\n  \\text{Month} & \\text{Mar} & \\text{Apr} & \\text{May} & \\text{Jun} & \\text{Jul}\\\\ \\hline\n  \\text{Temp (°F)} & 55 & 62 & 68 & 82 & 90\n  \\end{array}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n  Which month-to-month period had the greatest rate of temperature increase?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Month-to-month changes: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "+7, +6, +14, +8"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " (°F). The greatest increase is May to June: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{May} \\to \\text{June}}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 22,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The scatterplot of hours of sleep vs. productivity shows points clustered around an upward trend. What kind of relationship exists between these variables?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Positive relationship}}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " (productivity tends to rise with sleep).",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 23,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "In a bar graph showing average test scores by class period, the highest bar corresponds to Period 3. What does this indicate about that class?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Period 3 has the highest bar ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\Rightarrow"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{highest average score among periods}}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 24,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A table shows this year's and last year's rainfall (in inches) for four cities:\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "display-math",
+                "value": "\\begin{array}{c|cccc}\n  \\text{City} & A & B & C & D\\\\ \\hline\n  \\text{Last Year} & 40 & 30 & 50 & 25\\\\\n  \\text{This Year} & 35 & 32 & 38 & 20\n  \\end{array}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n  Which city had the largest decrease compared to last year?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Changes (this year minus last year): ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "A: -5,\\; B: +2,\\; C: -12,\\; D: -5"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". Largest decrease: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{City C}}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 25,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "On a scatterplot of study time vs. test scores, one student studied 20 hours but scored very low. What does this point represent?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{An outlier}}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " (studied many hours but scored unusually low).",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
-    "questionCount": 5,
+    "questionCount": 25,
     "exampleCount": 6
   },
   {
@@ -1303,6 +2289,18 @@
       {
         "partLabel": "A",
         "partTitle": "Part A: Basic Computation",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nFind the mean, median, mode, and range for each data set.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 1,
@@ -5872,17 +6870,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n",
-                "bold": false,
-                "italic": false
-              },
-              {
-                "text": "Insert a small two level tree diagram here: first branch is rain vs no rain with probabilities 0.3 and 0.7. From each, a branch for traffic jam with conditional probabilities 0.5 if rain and 0.2 if no rain.",
-                "bold": false,
-                "italic": true
-              },
-              {
-                "text": "\n\nCompute ",
+                "text": "\nA two-level tree diagram: the first branch is rain vs. no rain with probabilities 0.3 and 0.7. From each, a branch for traffic jam with conditional probabilities 0.5 if rain and 0.2 if no rain.\n\nCompute ",
                 "bold": false,
                 "italic": false
               }
@@ -6419,6 +7407,42 @@
       {
         "partLabel": "B",
         "partTitle": "Part B: Two-Way Table Problems",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n",
+                "bold": false,
+                "italic": false
+              },
+              {
+                "text": "Use the following table for Questions 6–10.",
+                "bold": false,
+                "italic": true
+              },
+              {
+                "text": "\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "display-math",
+            "value": "\\begin{array}{c|ccc}\n & \\text{Male} & \\text{Female} & \\text{Total} \\\\ \\hline\n\\text{Left-handed} & 8 & 12 & 20\\\\\n\\text{Right-handed} & 32 & 48 & 80\\\\ \\hline\n\\text{Total} & 40 & 60 & 100\n\\end{array}"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 6,
@@ -6688,6 +7712,28 @@
       {
         "partLabel": "C",
         "partTitle": "Part C: Tree Diagram Problems",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\n",
+                "bold": false,
+                "italic": false
+              },
+              {
+                "text": "Use this description: A machine produces 90% good items and 10% defective. A test identifies 95% of good items as “pass” and 80% of defective items as “fail.”",
+                "bold": false,
+                "italic": true
+              },
+              {
+                "text": "\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 12,
@@ -7813,17 +8859,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\n",
-                "bold": false,
-                "italic": false
-              },
-              {
-                "text": "Insert placeholder graph: two bell-shaped curves centered at the same mean; one narrow, one wide.",
-                "bold": false,
-                "italic": true
-              },
-              {
-                "text": "\n\nThe wider curve has greater SD because its values are more spread from the mean.\n\n",
+                "text": "\n\nTwo bell-shaped curves are centered at the same mean; one is narrow, one is wide.\n\nThe wider curve has greater SD because its values are more spread from the mean.\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -8302,12 +9338,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": "Insert placeholder: two bell curves with same mean; Curve A is narrower, Curve B is wider.",
-                    "bold": false,
-                    "italic": true
-                  },
-                  {
-                    "text": "  \n  Which has the larger SD, and why?",
+                    "text": "Two bell curves have the same mean. Curve A is narrower, and Curve B is wider.\n  Which has the larger SD, and why?",
                     "bold": false,
                     "italic": false
                   }
@@ -8826,17 +9857,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\n",
-                "bold": false,
-                "italic": false
-              },
-              {
-                "text": "Insert placeholder: scatterplot showing upward trend between hours studied and test score.",
-                "bold": false,
-                "italic": true
-              },
-              {
-                "text": "  \nAs study hours increase, scores increase.  \nThe trend line shows a positive slope.\n\n",
+                "text": "\n\nA scatterplot shows an upward trend between hours studied and test score.\nAs study hours increase, scores increase.\nThe trend line shows a positive slope.\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -8851,17 +9872,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\n",
-                "bold": false,
-                "italic": false
-              },
-              {
-                "text": "Insert placeholder: scatterplot showing downward trend between absences and GPA.",
-                "bold": false,
-                "italic": true
-              },
-              {
-                "text": "  \nAs absences increase, GPA decreases.  \nNegative slope, negative correlation.\n\n",
+                "text": "\n\nA scatterplot shows a downward trend between absences and GPA.\nAs absences increase, GPA decreases.\nNegative slope, negative correlation.\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -8876,17 +9887,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\n",
-                "bold": false,
-                "italic": false
-              },
-              {
-                "text": "Insert placeholder: random scatter with no clear pattern.",
-                "bold": false,
-                "italic": true
-              },
-              {
-                "text": "  \nNo consistent relationship between the two variables.\n\n",
+                "text": "\n\nA scatterplot shows a random scatter with no clear pattern.\nNo consistent relationship between the two variables.\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -9440,6 +10441,175 @@
                 "value": [
                   {
                     "text": " is strongest in magnitude.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "partLabel": "B",
+        "partTitle": "Part B: Interpreting Scatterplots",
+        "questions": [
+          {
+            "number": 6,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A scatterplot slopes upward. What type of correlation is shown?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Positive correlation.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 7,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A scatterplot slopes downward. What type of correlation is shown?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Negative correlation.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 8,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A scatterplot shows a random scatter of points, with no clear pattern. What type of correlation is shown?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "No correlation.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 9,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Which of the scatterplots above would have the correlation coefficient ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "r = -0.95"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The strong downward plot.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 10,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Which of the scatterplots above would have ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "r = 0"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The random scatter plot.",
                     "bold": false,
                     "italic": false
                   }
@@ -10331,7 +11501,7 @@
         ]
       }
     ],
-    "questionCount": 20,
+    "questionCount": 25,
     "exampleCount": 7
   }
 ]

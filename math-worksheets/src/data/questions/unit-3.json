@@ -575,6 +575,18 @@
       {
         "partLabel": "A",
         "partTitle": "Part A: Simplifying Ratios",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nSimplify each ratio to its simplest form.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 1,
@@ -656,6 +668,32 @@
       {
         "partLabel": "B",
         "partTitle": "Part B: Finding Missing Terms in Equivalent Ratios",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nFind the missing value ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "x"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": " that makes each pair of ratios equivalent.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 6,
@@ -2491,6 +2529,18 @@
       {
         "partLabel": "A",
         "partTitle": "Part A: Finding Unit Rates",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nFind the unit rate for each situation.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 1,
@@ -2602,6 +2652,18 @@
       {
         "partLabel": "B",
         "partTitle": "Part B: Testing for Proportionality",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nDecide whether each relationship is proportional. Explain briefly.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 6,
@@ -4544,6 +4606,18 @@
       {
         "partLabel": "A",
         "partTitle": "Part A: Basic Percent Change",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nFind the percent increase or decrease. Round to the nearest tenth of a percent if needed.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 1,
@@ -4655,6 +4729,18 @@
       {
         "partLabel": "B",
         "partTitle": "Part B: Using Growth or Decay Factors",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nCompute the new amount using the given percent change.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 6,
@@ -4766,6 +4852,18 @@
       {
         "partLabel": "C",
         "partTitle": "Part C: Reverse Percent Problems",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nFind the original amount before the percent change.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 11,
@@ -4927,6 +5025,18 @@
       {
         "partLabel": "D",
         "partTitle": "Part D: Percent Error",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nFind the percent error, rounding to one decimal place.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 16,
@@ -5733,6 +5843,18 @@
       {
         "partLabel": "A",
         "partTitle": "Part A: Two-Step Percent Changes",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nFind the final value or total percent change.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 1,
@@ -5964,6 +6086,18 @@
       {
         "partLabel": "B",
         "partTitle": "Part B: Repeated Changes",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nUse exponential form where applicable.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 6,
@@ -6127,6 +6261,18 @@
       {
         "partLabel": "C",
         "partTitle": "Part C: Reverse Problems",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nFind the original amount before the successive changes.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 11,
@@ -9229,6 +9375,18 @@
       {
         "partLabel": "A",
         "partTitle": "Part A: Identifying Variation Type",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nDecide whether each equation represents direct variation, inverse variation, or neither.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 1,
@@ -9360,6 +9518,32 @@
       {
         "partLabel": "B",
         "partTitle": "Part B: Finding the Constant of Variation",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nFind the constant ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "k"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": " in each relationship.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 6,

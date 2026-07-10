@@ -134,7 +134,7 @@ function matchSolutionPartLetter(header) {
   return m ? m[1] : null;
 }
 
-const PLACEHOLDER_RE = /\(insert/i;
+const PLACEHOLDER_RE = /\((?:insert|diagram)/i;
 function hasPlaceholder(text) {
   return PLACEHOLDER_RE.test(text);
 }
@@ -331,7 +331,15 @@ function processPracticeAndSolutions(practiceContent, answerKeyContent, label) {
 
     if (questions.length === 0) continue;
 
-    parts.push({ partLabel: letter, partTitle: qSub.header, questions });
+    const partIntroSegments = tokenizeRichText(qPreText, `${partLabel} intro`);
+    const partIntro = isMeaningful(partIntroSegments) ? partIntroSegments : null;
+
+    parts.push({
+      partLabel: letter,
+      partTitle: qSub.header,
+      ...(partIntro ? { partIntro } : {}),
+      questions,
+    });
   }
 
   return parts;

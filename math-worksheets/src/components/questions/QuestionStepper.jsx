@@ -9,7 +9,12 @@ export default function QuestionStepper({ unitSlug, topicSlug, practiceParts }) 
     const flat = [];
     for (const part of practiceParts) {
       for (const question of part.questions) {
-        flat.push({ partLabel: part.partLabel, partTitle: part.partTitle, ...question });
+        flat.push({
+          partLabel: part.partLabel,
+          partTitle: part.partTitle,
+          partIntro: part.partIntro,
+          ...question,
+        });
       }
     }
     return flat;
@@ -58,6 +63,10 @@ export default function QuestionStepper({ unitSlug, topicSlug, practiceParts }) 
           {current.partTitle}
         </span>
       </div>
+
+      {current.partIntro && (
+        <RichText segments={current.partIntro} className="mb-3 text-brand-neutral" />
+      )}
 
       <RichText segments={current.prompt} className="text-brand-neutral" />
 

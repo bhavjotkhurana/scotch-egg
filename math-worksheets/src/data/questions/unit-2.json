@@ -5186,8 +5186,1097 @@
         }
       ]
     ],
-    "practiceParts": [],
-    "questionCount": 0,
+    "practiceParts": [
+      {
+        "partLabel": "A",
+        "partTitle": "Part A: Identify Solution Type by Inspection",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": [
+              {
+                "type": "inline-math",
+                "value": "\\begin{cases} y = 2x + 1 \\\\ y = -x + 4 \\end{cases}"
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Slopes ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "-1"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " differ, so the lines meet once. Setting ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2x+1=-x+4"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " gives ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x=1,\\ y=3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{One solution: } (1,3)}"
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "prompt": [
+              {
+                "type": "inline-math",
+                "value": "\\begin{cases} y = 3x + 5 \\\\ y = 3x - 2 \\end{cases}"
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Both lines have slope ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " but different intercepts (",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "5"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "-2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "). ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{No solution (parallel lines)}}"
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "prompt": [
+              {
+                "type": "inline-math",
+                "value": "\\begin{cases} 2x + 4y = 8 \\\\ x + 2y = 4 \\end{cases}"
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Divide the first equation by 2: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x+2y=4"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", identical to the second equation. ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Infinitely many solutions}}"
+              }
+            ]
+          },
+          {
+            "number": 4,
+            "prompt": [
+              {
+                "type": "inline-math",
+                "value": "\\begin{cases} y = -\\tfrac{1}{2}x + 3 \\\\ y = 2x + 1 \\end{cases}"
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Slopes ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "-\\tfrac12"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " differ, so the lines meet once. Setting ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2x+1=-\\tfrac12x+3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " gives ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x=\\tfrac{4}{5},\\ y=\\tfrac{13}{5}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{One solution: } \\left(\\tfrac{4}{5}, \\tfrac{13}{5}\\right)}"
+              }
+            ]
+          },
+          {
+            "number": 5,
+            "prompt": [
+              {
+                "type": "inline-math",
+                "value": "\\begin{cases} 3x - 2y = 6 \\\\ 6x - 4y = 12 \\end{cases}"
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The second equation is exactly ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2\\times"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " the first. ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Infinitely many solutions}}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "partLabel": "B",
+        "partTitle": "Part B: Determine Solution Type Algebraically",
+        "questions": [
+          {
+            "number": 6,
+            "prompt": [
+              {
+                "type": "inline-math",
+                "value": "\\begin{cases} 2x + y = 10 \\\\ 4x + 2y = 20 \\end{cases}"
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The second equation is exactly ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2\\times"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " the first (",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "4x+2y=20"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " is ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2(2x+y=10)"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "). ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Infinitely many solutions}}"
+              }
+            ]
+          },
+          {
+            "number": 7,
+            "prompt": [
+              {
+                "type": "inline-math",
+                "value": "\\begin{cases} 3x - 2y = 5 \\\\ 6x - 4y = 9 \\end{cases}"
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Ratios: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\dfrac{3}{6}=\\dfrac{-2}{-4}=\\dfrac12"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", but ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\dfrac{5}{9}\\neq\\dfrac12"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". Same slope, different intercept. ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{No solution}}"
+              }
+            ]
+          },
+          {
+            "number": 8,
+            "prompt": [
+              {
+                "type": "inline-math",
+                "value": "\\begin{cases} x + y = 8 \\\\ 2x + 2y = 18 \\end{cases}"
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Ratios: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\dfrac{1}{2}=\\dfrac{1}{2}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", but ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\dfrac{8}{18}=\\dfrac{4}{9}\\neq\\dfrac12"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{No solution}}"
+              }
+            ]
+          },
+          {
+            "number": 9,
+            "prompt": [
+              {
+                "type": "inline-math",
+                "value": "\\begin{cases} 4x + y = 12 \\\\ 8x + 2y = 26 \\end{cases}"
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Ratios: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\dfrac{4}{8}=\\dfrac{1}{2}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", but ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\dfrac{12}{26}=\\dfrac{6}{13}\\neq\\dfrac12"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{No solution}}"
+              }
+            ]
+          },
+          {
+            "number": 10,
+            "prompt": [
+              {
+                "type": "inline-math",
+                "value": "\\begin{cases} 5x - 3y = 7 \\\\ 10x - 6y = 14 \\end{cases}"
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The second equation is exactly ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2\\times"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " the first. ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Infinitely many solutions}}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "partLabel": "C",
+        "partTitle": "Part C: Solve and Interpret the Intersection Point",
+        "questions": [
+          {
+            "number": 11,
+            "prompt": [
+              {
+                "type": "inline-math",
+                "value": "\\begin{cases} y = 2x + 5 \\\\ y = -x + 8 \\end{cases}"
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "2x+5=-x+8 \\Rightarrow 3x=3 \\Rightarrow x=1,\\ y=7"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{(1,7)}"
+              }
+            ]
+          },
+          {
+            "number": 12,
+            "prompt": [
+              {
+                "type": "inline-math",
+                "value": "\\begin{cases} 3x + y = 12 \\\\ 2x - y = 3 \\end{cases}"
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Adding the equations: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "5x=15 \\Rightarrow x=3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". Then ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y=12-3(3)=3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{(3,3)}"
+              }
+            ]
+          },
+          {
+            "number": 13,
+            "prompt": [
+              {
+                "type": "inline-math",
+                "value": "\\begin{cases} 4x - y = 11 \\\\ x + y = 4 \\end{cases}"
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Adding the equations: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "5x=15 \\Rightarrow x=3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". Then ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y=4-3=1"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{(3,1)}"
+              }
+            ]
+          },
+          {
+            "number": 14,
+            "prompt": [
+              {
+                "type": "inline-math",
+                "value": "\\begin{cases} y = -2x + 6 \\\\ y = x - 3 \\end{cases}"
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "-2x+6=x-3 \\Rightarrow 9=3x \\Rightarrow x=3,\\ y=0"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{(3,0)}"
+              }
+            ]
+          },
+          {
+            "number": 15,
+            "prompt": [
+              {
+                "type": "inline-math",
+                "value": "\\begin{cases} 2x + 3y = 12 \\\\ 3x + 2y = 12 \\end{cases}"
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Multiply the first by 3 and the second by 2: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "6x+9y=36"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "6x+4y=24"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". Subtracting: ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "5y=12 \\Rightarrow y=\\tfrac{12}{5}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". Then ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x=\\tfrac{12}{5}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\left(\\tfrac{12}{5}, \\tfrac{12}{5}\\right)}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "partLabel": "D",
+        "partTitle": "Part D: Word Problems and Interpretation",
+        "questions": [
+          {
+            "number": 16,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "A gym charges $30 per month plus $5 per class. Another gym charges $10 per month plus $8 per class. At what number of classes will the cost be the same, and what will the cost be?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "30+5c=10+8c \\Rightarrow 20=3c \\Rightarrow c=\\tfrac{20}{3}\\approx 6.67"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " classes, cost ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "=30+5\\left(\\tfrac{20}{3}\\right)=\\tfrac{190}{3}\\approx\\$63.33"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{c=\\tfrac{20}{3}\\text{ classes, } \\$63.33}"
+              }
+            ]
+          },
+          {
+            "number": 17,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "One phone plan charges $50 plus $0.10 per minute, while another charges $20 plus $0.25 per minute. Find the number of minutes where both cost the same and what the total cost is.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "50+0.10m=20+0.25m \\Rightarrow 30=0.15m \\Rightarrow m=200"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " minutes, cost ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "=50+0.10(200)=\\$70"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ". ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{200\\text{ minutes, } \\$70}"
+              }
+            ]
+          },
+          {
+            "number": 18,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Two taxi services charge as follows:  \n    Service A: $3 plus $1.50 per mile  \n    Service B: $6 plus $1.00 per mile  \n    After how many miles will both cost the same?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "inline-math",
+                "value": "3+1.5m=6+m \\Rightarrow 0.5m=3 \\Rightarrow m=6"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " miles. ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{6\\text{ miles}}"
+              }
+            ]
+          },
+          {
+            "number": 19,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The total cost of 3 pens and 2 notebooks is $11. The total cost of 6 pens and 4 notebooks is $22. How many solutions does this system have, and why?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "The second equation (",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "6p+4n=22"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ") is exactly ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "2\\times"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " the first (",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "3p+2n=11"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "), so it gives no new information. ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Infinitely many solutions, since the equations describe the same line}}"
+              }
+            ]
+          },
+          {
+            "number": 20,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Two linear equations represent the same budget line in an economics problem. What kind of system is this, and what does that mean about the feasible combinations?",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Two equations for the same line describe one system with ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{infinitely many solutions}}"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "; every point on that line is a feasible combination, since the second equation adds no new constraint.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "questionCount": 20,
     "exampleCount": 4
   },
   {
@@ -5880,6 +6969,18 @@
       {
         "partLabel": "A",
         "partTitle": "Part A: Single Inequality Graphs",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nGraph each inequality on the coordinate plane. State whether the boundary is solid or dashed, and indicate whether you shade above or below the line.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 1,
@@ -6061,6 +7162,18 @@
       {
         "partLabel": "B",
         "partTitle": "Part B: Two Inequalities",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nFor each system, graph the solution region and determine whether the point given is included in the solution set.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 6,
@@ -6542,6 +7655,18 @@
       {
         "partLabel": "C",
         "partTitle": "Part C: Find the Feasible Region Vertices",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nGraph each system and list the coordinates of all vertices of the feasible region. State whether the region is bounded or unbounded.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 11,
@@ -7037,6 +8162,18 @@
       {
         "partLabel": "D",
         "partTitle": "Part D: Write the Inequalities from a Verbal Description",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nFor each description, write a system of inequalities that matches it. Do not solve.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 16,
@@ -7584,6 +8721,18 @@
       {
         "partLabel": "E",
         "partTitle": "Part E: Context Problems",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nDefine variables, model with inequalities, and sketch or describe the feasible region.\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "questions": [
           {
             "number": 21,

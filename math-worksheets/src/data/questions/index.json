@@ -68,7 +68,7 @@
       {
         "topicSlug": "topic-3-interpreting-intersections-and-solution-types",
         "topicTitle": "Topic 3: Interpreting Intersections and Solution Types",
-        "questionCount": 0,
+        "questionCount": 20,
         "exampleCount": 4
       },
       {
@@ -136,7 +136,7 @@
       {
         "topicSlug": "topic-1-reading-tables-graphs-and-scatterplots",
         "topicTitle": "Topic 1: Reading Tables, Graphs, and Scatterplots",
-        "questionCount": 5,
+        "questionCount": 25,
         "exampleCount": 6
       },
       {
@@ -172,7 +172,7 @@
       {
         "topicSlug": "topic-7-interpreting-trend-lines-and-regression-conceptual",
         "topicTitle": "Topic 7: Interpreting Trend Lines and Regression (Conceptual)",
-        "questionCount": 20,
+        "questionCount": 25,
         "exampleCount": 7
       }
     ]
@@ -234,7 +234,7 @@
       {
         "topicSlug": "topic-4-graphing-parabolas-vertex-and-intercepts",
         "topicTitle": "Topic 4: Graphing Parabolas (Vertex and Intercepts)",
-        "questionCount": 20,
+        "questionCount": 25,
         "exampleCount": 5
       },
       {
@@ -246,7 +246,7 @@
       {
         "topicSlug": "topic-6-zeros-factors-and-graphs-of-polynomials",
         "topicTitle": "Topic 6: Zeros, Factors, and Graphs of Polynomials",
-        "questionCount": 20,
+        "questionCount": 25,
         "exampleCount": 5
       }
     ]
@@ -259,13 +259,13 @@
       {
         "topicSlug": "topic-1-exponential-growth-and-decay",
         "topicTitle": "Topic 1: Exponential Growth and Decay",
-        "questionCount": 20,
+        "questionCount": 25,
         "exampleCount": 6
       },
       {
         "topicSlug": "topic-2-comparing-linear-and-exponential-growth",
         "topicTitle": "Topic 2: Comparing Linear and Exponential Growth",
-        "questionCount": 15,
+        "questionCount": 25,
         "exampleCount": 5
       },
       {
@@ -277,19 +277,19 @@
       {
         "topicSlug": "topic-4-domain-range-and-restrictions",
         "topicTitle": "Topic 4: Domain, Range, and Restrictions",
-        "questionCount": 20,
+        "questionCount": 25,
         "exampleCount": 6
       },
       {
         "topicSlug": "topic-5-composition-and-inverses-of-functions",
         "topicTitle": "Topic 5: Composition and Inverses of Functions",
-        "questionCount": 20,
+        "questionCount": 25,
         "exampleCount": 6
       },
       {
         "topicSlug": "topic-6-transformations-shifts-reflections-and-stretches",
         "topicTitle": "Topic 6: Transformations — Shifts, Reflections, and Stretches",
-        "questionCount": 20,
+        "questionCount": 25,
         "exampleCount": 6
       }
     ]
