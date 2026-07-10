@@ -30,7 +30,7 @@ export default function UnitList() {
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold sm:text-4xl">Pick a topic. Start practicing.</h1>
           <p className="mx-auto mt-3 max-w-2xl text-brand-cream/90">
-            {totalQuestions}+ questions, organized by topic.
+            {totalQuestions}+ SAT-style Math questions, organized by topic.
           </p>
           <SearchBar className="mx-auto mt-6 max-w-xl" />
         </div>
