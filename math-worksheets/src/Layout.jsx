@@ -64,14 +64,26 @@ export default function Layout() {
 
       {/* Footer */}
       <footer className="bg-white border-t border-gray-200 mt-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="text-center">
-            <p className="text-gray-600 mb-2">Private math &amp; stats tutoring by Bhav Khurana</p>
-            <p className="text-sm text-gray-500">
-              <a href="mailto:bhavjotskhurana@gmail.com" className="hover:text-brand-primary">
-                bhavjotskhurana@gmail.com
-              </a>
-            </p>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
+          <p className="text-brand-neutral">
+            Please feel free to reach out if you have any questions, need tutoring, have
+            suggestions for the website, or more :)
+          </p>
+          <p className="mt-1 text-brand-neutral">- Bhav Khurana</p>
+
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 border-t border-gray-100 pt-6 text-sm text-gray-500">
+            <Link to="/" className="hover:text-brand-primary">
+              Practice
+            </Link>
+            <Link to="/about" className="hover:text-brand-primary">
+              About
+            </Link>
+            <Link to="/book" className="hover:text-brand-primary">
+              Book
+            </Link>
+            <a href="mailto:bhavjotskhurana@gmail.com" className="hover:text-brand-primary">
+              bhavjotskhurana@gmail.com
+            </a>
           </div>
         </div>
       </footer>
