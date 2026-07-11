@@ -1,0 +1,381 @@
+\documentclass[14pt]{extarticle}
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 8: Geometry and Trigonometry} \\[6pt]
+    \Large \textbf{Topic 2: Triangle Fundamentals}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+Every triangle has three interior angles whose measures add up to exactly \(180^\circ\). This is the \textbf{Triangle Angle Sum Theorem}, and it is the single most-used geometry fact on the SAT. If you know two angles in a triangle, you can always find the third by subtracting from \(180^\circ\). Many SAT problems give you two angles (or expressions for two angles) and ask for the third, so practice setting up and solving the equation quickly.
+
+An \textbf{exterior angle} of a triangle is formed when one side of the triangle is extended. The \textbf{Exterior Angle Theorem} says that the measure of an exterior angle equals the sum of the two non-adjacent interior angles (sometimes called the two ``remote interior angles''). This shortcut saves a step compared to finding the third interior angle first and then subtracting from \(180^\circ\). For instance, if two interior angles of a triangle are \(40^\circ\) and \(65^\circ\), the exterior angle adjacent to the third angle is \(40^\circ + 65^\circ = 105^\circ\).
+
+The \textbf{Triangle Inequality Theorem} states that the sum of the lengths of any two sides of a triangle must be strictly greater than the length of the third side. In other words, for sides \(a\), \(b\), and \(c\):
+\[
+a + b > c, \quad a + c > b, \quad b + c > a.
+\]
+This means if you are given two sides of a triangle, the third side must be longer than the absolute difference and shorter than the sum of the other two. For example, if two sides are 5 and 9, the third side must satisfy \(9 - 5 < c < 9 + 5\), i.e.\ \(4 < c < 14\).
+
+One more useful relationship: the longest side of a triangle is always opposite the largest angle, and the shortest side is opposite the smallest angle. If two sides are equal, the angles opposite them are also equal (the triangle is \textbf{isosceles}). If all three sides are equal, all three angles are \(60^\circ\) (the triangle is \textbf{equilateral}).
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Use the Triangle Angle Sum Theorem to find a missing angle when two angles (or algebraic expressions for angles) are known.
+  \item Apply the Exterior Angle Theorem to find an exterior angle or to set up an equation involving remote interior angles.
+  \item Determine whether three given side lengths can form a triangle using the Triangle Inequality Theorem.
+  \item Find the range of possible lengths for a missing side of a triangle.
+  \item Relate side lengths to opposite angle measures to compare or order sides and angles.
+\end{itemize}
+
+\section*{Example 1: Finding a Missing Angle}
+
+In triangle \(PQR\), \(\angle P = 52^\circ\) and \(\angle Q = 73^\circ\). What is the measure of \(\angle R\)?
+
+\textbf{Step 1:} Apply the Triangle Angle Sum Theorem.
+\[
+\angle P + \angle Q + \angle R = 180^\circ
+\]
+
+\textbf{Step 2:} Substitute and solve.
+\[
+52 + 73 + \angle R = 180 \implies \angle R = 180 - 125 = 55^\circ
+\]
+
+The measure of \(\angle R\) is \(\boxed{55}\) degrees.
+
+\section*{Example 2: Algebraic Angle Expressions}
+
+The three angles of a triangle measure \((2x + 10)^\circ\), \((3x - 5)^\circ\), and \((x + 25)^\circ\). Find the value of \(x\).
+
+\textbf{Step 1:} Set the sum equal to \(180^\circ\).
+\[
+(2x + 10) + (3x - 5) + (x + 25) = 180
+\]
+
+\textbf{Step 2:} Combine like terms.
+\[
+6x + 30 = 180
+\]
+
+\textbf{Step 3:} Solve for \(x\).
+\[
+6x = 150 \implies x = 25
+\]
+
+The value of \(x\) is \(\boxed{25}\).
+
+\section*{Example 3: Exterior Angle Theorem}
+
+In a triangle, the two non-adjacent interior angles measure \(48^\circ\) and \(57^\circ\). What is the measure of the exterior angle adjacent to the third interior angle?
+
+\textbf{Step 1:} Apply the Exterior Angle Theorem directly.
+\[
+\text{Exterior angle} = 48 + 57 = 105^\circ
+\]
+
+The exterior angle measures \(\boxed{105}\) degrees.
+
+\section*{Example 4: Algebraic Exterior Angle}
+
+In triangle \(ABC\), \(\angle A = (3x)^\circ\) and \(\angle B = (x + 20)^\circ\). An exterior angle at vertex \(C\) measures \((5x - 10)^\circ\). Find the value of \(x\).
+
+\textbf{Step 1:} By the Exterior Angle Theorem, the exterior angle at \(C\) equals \(\angle A + \angle B\).
+\[
+5x - 10 = 3x + (x + 20)
+\]
+
+\textbf{Step 2:} Simplify and solve.
+\[
+5x - 10 = 4x + 20 \implies x = 30
+\]
+
+The value of \(x\) is \(\boxed{30}\).
+
+\section*{Example 5: Triangle Inequality}
+
+Two sides of a triangle have lengths 7 and 11. If the third side has integer length, how many possible values are there for the third side?
+
+\textbf{Step 1:} Apply the Triangle Inequality. The third side \(c\) must satisfy:
+\[
+11 - 7 < c < 11 + 7 \implies 4 < c < 18
+\]
+
+\textbf{Step 2:} Count the integers in the range \(4 < c < 18\).
+\[
+c \in \{5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17\}
+\]
+
+There are \(\boxed{13}\) possible integer values.
+
+\section*{Example 6: Side-Angle Relationship}
+
+In triangle \(DEF\), \(DE = 8\), \(EF = 12\), and \(DF = 10\). List the angles of the triangle in order from smallest to largest.
+
+\textbf{Step 1:} Identify the shortest and longest sides.
+The shortest side is \(DE = 8\) and the longest side is \(EF = 12\).
+
+\textbf{Step 2:} The smallest angle is opposite the shortest side, and the largest angle is opposite the longest side.
+\begin{itemize}
+  \item \(DE = 8\) is opposite \(\angle F\) (smallest angle)
+  \item \(DF = 10\) is opposite \(\angle E\) (middle angle)
+  \item \(EF = 12\) is opposite \(\angle D\) (largest angle)
+\end{itemize}
+
+From smallest to largest: \(\boxed{\angle F, \angle E, \angle D}\).
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item The three interior angles of any triangle sum to \(180^\circ\). Use this to find missing angles, especially when angles are given as algebraic expressions.
+  \item An exterior angle of a triangle equals the sum of the two remote interior angles. This often saves a step over finding the third interior angle first.
+  \item For the Triangle Inequality, remember the range for the third side: it must be strictly between the difference and the sum of the other two sides.
+  \item The largest angle is always opposite the longest side. This relationship is frequently tested when the SAT asks you to compare or order angles.
+\end{itemize}
+
+\newpage
+
+\section*{Practice Questions: Triangle Fundamentals}
+
+\subsection*{Part A: Angle Sum Basics}
+\begin{enumerate}
+  \item In a triangle, two of the angles measure \(47^\circ\) and \(88^\circ\). What is the measure, in degrees, of the third angle?
+  \item The angles of a triangle measure \((x + 15)^\circ\), \((2x)^\circ\), and \((3x - 15)^\circ\). What is the value of \(x\)?
+  \item In an isosceles triangle, the two equal angles each measure \(54^\circ\). What is the measure, in degrees, of the third angle?
+  \item A right triangle has one acute angle that measures \(37^\circ\). What is the measure, in degrees, of the other acute angle?
+  \item The three angles of a triangle are in the ratio \(2:3:5\). What is the measure, in degrees, of the largest angle?
+\end{enumerate}
+
+\subsection*{Part B: Exterior Angles}
+\begin{enumerate}
+  \item The two remote interior angles of a triangle measure \(35^\circ\) and \(78^\circ\). What is the measure, in degrees, of the exterior angle adjacent to the third interior angle?
+  \item An exterior angle of a triangle measures \(130^\circ\). One of the remote interior angles measures \(55^\circ\). What is the measure, in degrees, of the other remote interior angle?
+  \item In triangle \(JKL\), \(\angle J = (2x + 5)^\circ\) and \(\angle K = (x + 15)^\circ\). An exterior angle at vertex \(L\) measures \((4x - 10)^\circ\). What is the value of \(x\)?
+  \item In a triangle, one interior angle measures \(64^\circ\). The exterior angle adjacent to another interior angle measures \(142^\circ\). What is the measure, in degrees, of the third interior angle?
+  \item The exterior angles at two different vertices of a triangle measure \(115^\circ\) and \(140^\circ\). What is the measure, in degrees, of the interior angle at the third vertex?
+\end{enumerate}
+
+\subsection*{Part C: Triangle Inequality}
+\begin{enumerate}
+  \item Can a triangle have sides of lengths 3, 7, and 12? Answer yes or no, and give the value of the sum that violates or satisfies the inequality.
+  \item Two sides of a triangle have lengths 6 and 10. What is the smallest possible integer length for the third side?
+  \item Two sides of a triangle have lengths 9 and 15. If the third side has integer length, how many possible values are there?
+  \item A triangle has sides of lengths \(x\), \(x + 4\), and 20, where \(x\) is a positive integer. What is the smallest possible value of \(x\)?
+  \item The perimeter of a triangle is 30 and two of its sides have lengths 8 and 13. What is the length of the third side, and does such a triangle exist?
+\end{enumerate}
+
+\subsection*{Part D: Mixed Angle and Side Reasoning}
+\begin{enumerate}
+  \item In triangle \(ABC\), \(\angle A = 50^\circ\) and \(\angle B = 70^\circ\). Which side of the triangle is the longest?
+  \item In triangle \(RST\), \(RS = 5\), \(ST = 9\), and \(RT = 7\). Which angle of the triangle is the smallest?
+  \item Two angles of a triangle are equal. Each of the equal angles is twice the measure of the third angle. What is the measure, in degrees, of each of the equal angles?
+  \item In triangle \(XYZ\), the exterior angle at \(Z\) is \((6x)^\circ\), \(\angle X = (2x + 12)^\circ\), and \(\angle Y = (3x - 7)^\circ\). What is the measure, in degrees, of \(\angle X\)?
+  \item A triangle has angles that measure \((a)^\circ\), \((2a - 30)^\circ\), and \((a + 10)^\circ\). What is the measure, in degrees, of the largest angle?
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \item A triangular garden has a perimeter of 52 meters. Two of the sides measure 18 meters and 20 meters. What is the length, in meters, of the third side? Verify that these three sides can form a triangle.
+  \item An architect designs a triangular window. One angle of the window is twice another angle, and the third angle is \(20^\circ\) more than the smallest angle. What is the measure, in degrees, of the largest angle?
+  \item A surveyor measures two sides of a triangular plot as 40 feet and 65 feet. The surveyor needs the third side to be a whole number of feet. What is the greatest possible length, in feet, of the third side?
+  \item In triangle \(PQR\), the exterior angle at \(R\) measures \(118^\circ\). If \(\angle P\) is \(14^\circ\) greater than \(\angle Q\), what is the measure, in degrees, of \(\angle Q\)?
+  \item A triangular shelf bracket has angles measuring \((3k + 5)^\circ\), \((5k - 15)^\circ\), and \((2k + 10)^\circ\). What is the measure, in degrees, of the largest angle of the bracket?
+\end{enumerate}
+
+\newpage
+
+\section*{Answer Key and Solutions: Triangle Fundamentals}
+
+\subsection*{Part A Solutions: Angle Sum Basics}
+\begin{enumerate}
+  \item The third angle is \(180 - 47 - 88 = 45^\circ\).
+
+  \(\boxed{45}\)
+
+  \item Set the sum equal to \(180\):
+  \[
+  (x + 15) + 2x + (3x - 15) = 180 \implies 6x = 180 \implies x = 30
+  \]
+  \(\boxed{30}\)
+
+  \item The third angle is \(180 - 54 - 54 = 72^\circ\).
+
+  \(\boxed{72}\)
+
+  \item A right triangle has a \(90^\circ\) angle, so the other acute angle is \(180 - 90 - 37 = 53^\circ\).
+
+  \(\boxed{53}\)
+
+  \item Let the angles be \(2k\), \(3k\), and \(5k\). Then \(2k + 3k + 5k = 180\), so \(10k = 180\) and \(k = 18\). The largest angle is \(5(18) = 90^\circ\).
+
+  \(\boxed{90}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Exterior Angles}
+\begin{enumerate}
+  \item By the Exterior Angle Theorem: \(35 + 78 = 113^\circ\).
+
+  \(\boxed{113}\)
+
+  \item The other remote interior angle is \(130 - 55 = 75^\circ\).
+
+  \(\boxed{75}\)
+
+  \item By the Exterior Angle Theorem: \(\angle J + \angle K = \text{exterior angle at } L\).
+  \[
+  (2x + 5) + (x + 15) = 4x - 10 \implies 3x + 20 = 4x - 10 \implies x = 30
+  \]
+  \(\boxed{30}\)
+
+  \item The interior angle adjacent to the \(142^\circ\) exterior angle is \(180 - 142 = 38^\circ\). The third angle is \(180 - 64 - 38 = 78^\circ\).
+
+  \(\boxed{78}\)
+
+  \item The interior angles at those two vertices are \(180 - 115 = 65^\circ\) and \(180 - 140 = 40^\circ\). The third interior angle is \(180 - 65 - 40 = 75^\circ\).
+
+  \(\boxed{75}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Triangle Inequality}
+\begin{enumerate}
+  \item Check whether \(3 + 7 > 12\): \(10 > 12\) is false. A triangle cannot be formed. The sum \(3 + 7 = 10\) does not exceed the third side 12.
+
+  \(\boxed{\text{No}}\)
+
+  \item The third side \(c\) must satisfy \(10 - 6 < c < 10 + 6\), so \(4 < c < 16\). The smallest integer in this range is 5.
+
+  \(\boxed{5}\)
+
+  \item The third side \(c\) satisfies \(15 - 9 < c < 15 + 9\), so \(6 < c < 24\). The integers are \(7, 8, \ldots, 23\), which gives \(23 - 7 + 1 = 17\) values.
+
+  \(\boxed{17}\)
+
+  \item The three inequalities are:
+  \[
+  x + (x + 4) > 20 \implies 2x + 4 > 20 \implies x > 8
+  \]
+  \[
+  x + 20 > x + 4 \implies 20 > 4 \quad \text{(always true)}
+  \]
+  \[
+  (x + 4) + 20 > x \implies 24 > 0 \quad \text{(always true)}
+  \]
+  The binding constraint is \(x > 8\), so the smallest positive integer value is \(x = 9\).
+
+  \(\boxed{9}\)
+
+  \item The third side is \(30 - 8 - 13 = 9\). Check the Triangle Inequality: \(8 + 9 = 17 > 13\), \(8 + 13 = 21 > 9\), and \(9 + 13 = 22 > 8\). All three inequalities hold, so the triangle exists. The third side is 9.
+
+  \(\boxed{9}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Mixed Angle and Side Reasoning}
+\begin{enumerate}
+  \item First find \(\angle C = 180 - 50 - 70 = 60^\circ\). The largest angle is \(\angle B = 70^\circ\), so the longest side is the one opposite \(\angle B\), which is \(AC\).
+
+  \(\boxed{AC}\)
+
+  \item The smallest angle is opposite the shortest side. The shortest side is \(RS = 5\), which is opposite \(\angle T\).
+
+  \(\boxed{\angle T}\)
+
+  \item Let the third angle be \(y\). Each equal angle is \(2y\). Then:
+  \[
+  2y + 2y + y = 180 \implies 5y = 180 \implies y = 36
+  \]
+  Each of the equal angles measures \(2(36) = 72^\circ\).
+
+  \(\boxed{72}\)
+
+  \item By the Exterior Angle Theorem: \(\angle X + \angle Y = \text{exterior angle at } Z\).
+  \[
+  (2x + 12) + (3x - 7) = 6x \implies 5x + 5 = 6x \implies x = 5
+  \]
+  \(\angle X = 2(5) + 12 = 22^\circ\).
+
+  \(\boxed{22}\)
+
+  \item Sum the angles:
+  \[
+  a + (2a - 30) + (a + 10) = 180 \implies 4a - 20 = 180 \implies 4a = 200 \implies a = 50
+  \]
+  The three angles are \(50^\circ\), \(70^\circ\), and \(60^\circ\). The largest is \(2a - 30 = 70^\circ\).
+
+  \(\boxed{70}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \item The third side is \(52 - 18 - 20 = 14\) meters. Check: \(14 + 18 = 32 > 20\), \(14 + 20 = 34 > 18\), \(18 + 20 = 38 > 14\). All inequalities hold, so the triangle is valid. The third side is 14.
+
+  \(\boxed{14}\)
+
+  \item Let the smallest angle be \(x\). Then the angles are \(x\), \(2x\), and \(x + 20\).
+  \[
+  x + 2x + (x + 20) = 180 \implies 4x + 20 = 180 \implies 4x = 160 \implies x = 40
+  \]
+  The angles are \(40^\circ\), \(80^\circ\), and \(60^\circ\). The largest is \(80^\circ\).
+
+  \(\boxed{80}\)
+
+  \item The third side \(c\) satisfies \(65 - 40 < c < 65 + 40\), so \(25 < c < 105\). The greatest whole number in this range is 104.
+
+  \(\boxed{104}\)
+
+  \item By the Exterior Angle Theorem: \(\angle P + \angle Q = 118\). Let \(\angle Q = q\), so \(\angle P = q + 14\).
+  \[
+  (q + 14) + q = 118 \implies 2q + 14 = 118 \implies 2q = 104 \implies q = 52
+  \]
+  \(\angle Q = 52^\circ\).
+
+  \(\boxed{52}\)
+
+  \item Sum the angles:
+  \[
+  (3k + 5) + (5k - 15) + (2k + 10) = 180 \implies 10k = 180 \implies k = 18
+  \]
+  The three angles are \(3(18) + 5 = 59^\circ\), \(5(18) - 15 = 75^\circ\), and \(2(18) + 10 = 46^\circ\). The largest angle is \(75^\circ\).
+
+  \(\boxed{75}\)
+\end{enumerate}
+
+\ReflectionPage{Unit 8, Topic 2}{https://www.scotchegg.co}
+
+\end{document}

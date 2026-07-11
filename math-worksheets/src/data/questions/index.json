@@ -304,6 +304,42 @@
         "topicTitle": "Topic 1: Lines and Angles — Parallel, Perpendicular, and Transversals",
         "questionCount": 25,
         "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-2-triangle-fundamentals",
+        "topicTitle": "Topic 2: Triangle Fundamentals",
+        "questionCount": 25,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-3-similar-triangles-and-congruence",
+        "topicTitle": "Topic 3: Similar Triangles and Congruence",
+        "questionCount": 25,
+        "exampleCount": 5
+      },
+      {
+        "topicSlug": "topic-4-the-pythagorean-theorem-and-special-right-triangles",
+        "topicTitle": "Topic 4: The Pythagorean Theorem and Special Right Triangles",
+        "questionCount": 25,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-5-right-triangle-trigonometry",
+        "topicTitle": "Topic 5: Right Triangle Trigonometry",
+        "questionCount": 25,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-6-circles",
+        "topicTitle": "Topic 6: Circles",
+        "questionCount": 25,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-7-area-perimeter-and-volume",
+        "topicTitle": "Topic 7: Area, Perimeter, and Volume",
+        "questionCount": 25,
+        "exampleCount": 6
       }
     ]
   }

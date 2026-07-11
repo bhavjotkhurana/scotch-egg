@@ -1,0 +1,385 @@
+\documentclass[14pt]{extarticle}
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 8: Geometry and Trigonometry} \\[6pt]
+    \Large \textbf{Topic 5: Right Triangle Trigonometry}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+\textbf{Trigonometry} on the SAT is limited to right triangles and the three basic ratios: sine, cosine, and tangent. These are defined relative to a specific acute angle in a right triangle. If \(\theta\) is one of the acute angles, then:
+\[
+\sin(\theta) = \frac{\text{opposite}}{\text{hypotenuse}}, \quad \cos(\theta) = \frac{\text{adjacent}}{\text{hypotenuse}}, \quad \tan(\theta) = \frac{\text{opposite}}{\text{adjacent}}
+\]
+The mnemonic \textbf{SOH-CAH-TOA} helps you remember these: Sine = Opposite/Hypotenuse, Cosine = Adjacent/Hypotenuse, Tangent = Opposite/Adjacent. ``Opposite'' and ``adjacent'' are always defined relative to the angle you are working with, not the triangle as a whole.
+
+An important relationship connects sine and cosine of \textbf{complementary angles} (two angles that add up to \(90^\circ\)). In a right triangle with acute angles \(\alpha\) and \(\beta\):
+\[
+\sin(\alpha) = \cos(\beta) \quad \text{and} \quad \cos(\alpha) = \sin(\beta)
+\]
+This is because the side opposite \(\alpha\) is the side adjacent to \(\beta\), and vice versa. This means \(\sin(x^\circ) = \cos(90^\circ - x^\circ)\) for any acute angle \(x\). The SAT tests this relationship directly, often by asking you to recognize that \(\sin(32^\circ) = \cos(58^\circ)\) or similar.
+
+The \textbf{Pythagorean identity} states that for any angle \(\theta\):
+\[
+\sin^2(\theta) + \cos^2(\theta) = 1
+\]
+This follows directly from the Pythagorean Theorem applied to the unit definitions: if the sides are \(a\), \(b\), and \(c\) (hypotenuse), then \(\sin(\theta) = \frac{a}{c}\) and \(\cos(\theta) = \frac{b}{c}\), so
+\[
+\sin^2(\theta) + \cos^2(\theta) = \frac{a^2}{c^2} + \frac{b^2}{c^2} = \frac{a^2 + b^2}{c^2} = \frac{c^2}{c^2} = 1.
+\]
+On the SAT, this identity is most often used when you are given \(\sin(\theta)\) or \(\cos(\theta)\) and need to find the other. For example, if \(\sin(\theta) = \frac{3}{5}\), then \(\cos^2(\theta) = 1 - \frac{9}{25} = \frac{16}{25}\), so \(\cos(\theta) = \frac{4}{5}\) (taking the positive root, since \(\theta\) is an acute angle in a right triangle).
+
+To solve for a missing side using trigonometry, pick the trig ratio that involves the side you know and the side you want. To solve for a missing angle, use the inverse trig function on your calculator: if \(\sin(\theta) = 0.6\), then \(\theta = \sin^{-1}(0.6) \approx 36.87^\circ\). However, the SAT usually keeps angles at values you can handle exactly (30, 45, 60) or asks you to leave the answer as a trig expression.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Identify the opposite side, adjacent side, and hypotenuse relative to a given angle and set up the correct trig ratio.
+  \item Use SOH-CAH-TOA to find a missing side length in a right triangle.
+  \item Apply the complementary angle relationship: \(\sin(x^\circ) = \cos(90^\circ - x^\circ)\).
+  \item Use the Pythagorean identity \(\sin^2(\theta) + \cos^2(\theta) = 1\) to find one trig value given the other.
+  \item Solve word problems involving angles of elevation and depression using right triangle trigonometry.
+\end{itemize}
+
+\section*{Example 1: Setting Up a Trig Ratio}
+
+In a right triangle, the side opposite angle \(A\) has length 5 and the hypotenuse has length 13. What is \(\cos(A)\)?
+
+\textbf{Step 1:} We need the adjacent side. Use the Pythagorean Theorem.
+\[
+\text{adjacent}^2 + 5^2 = 13^2 \implies \text{adjacent}^2 = 169 - 25 = 144 \implies \text{adjacent} = 12
+\]
+
+\textbf{Step 2:} Apply the definition.
+\[
+\cos(A) = \frac{\text{adjacent}}{\text{hypotenuse}} = \frac{12}{13}
+\]
+
+\(\boxed{\dfrac{12}{13}}\)
+
+\section*{Example 2: Finding a Missing Side}
+
+In a right triangle, one acute angle measures \(30^\circ\) and the hypotenuse is 20. What is the length of the side opposite the \(30^\circ\) angle?
+
+\textbf{Step 1:} The side we want is opposite the given angle, and we know the hypotenuse. Use sine.
+\[
+\sin(30^\circ) = \frac{\text{opposite}}{20}
+\]
+
+\textbf{Step 2:} Since \(\sin(30^\circ) = \frac{1}{2}\):
+\[
+\frac{1}{2} = \frac{\text{opposite}}{20} \implies \text{opposite} = 10
+\]
+
+The side opposite the \(30^\circ\) angle is \(\boxed{10}\).
+
+\section*{Example 3: Complementary Angle Relationship}
+
+If \(\sin(3x + 10)^\circ = \cos(2x + 30)^\circ\), what is the value of \(x\)?
+
+\textbf{Step 1:} Since \(\sin(\alpha) = \cos(\beta)\) when \(\alpha + \beta = 90^\circ\):
+\[
+(3x + 10) + (2x + 30) = 90
+\]
+
+\textbf{Step 2:} Solve.
+\[
+5x + 40 = 90 \implies 5x = 50 \implies x = 10
+\]
+
+The value of \(x\) is \(\boxed{10}\).
+
+\section*{Example 4: Pythagorean Identity}
+
+If \(\sin(\theta) = \dfrac{7}{25}\) and \(\theta\) is an acute angle, what is \(\cos(\theta)\)?
+
+\textbf{Step 1:} Apply the Pythagorean identity.
+\[
+\sin^2(\theta) + \cos^2(\theta) = 1 \implies \left(\frac{7}{25}\right)^2 + \cos^2(\theta) = 1
+\]
+\[
+\frac{49}{625} + \cos^2(\theta) = 1 \implies \cos^2(\theta) = \frac{576}{625}
+\]
+
+\textbf{Step 2:} Since \(\theta\) is acute, \(\cos(\theta)\) is positive.
+\[
+\cos(\theta) = \frac{24}{25}
+\]
+
+\(\boxed{\dfrac{24}{25}}\)
+
+\section*{Example 5: Angle of Elevation Word Problem}
+
+A person stands 50 feet from the base of a building and looks up at the top of the building at an angle of elevation of \(60^\circ\). What is the height of the building, in feet?
+
+\textbf{Step 1:} The horizontal distance (50 feet) is the side adjacent to the angle. The height of the building is the side opposite the angle. Use tangent.
+\[
+\tan(60^\circ) = \frac{h}{50}
+\]
+
+\textbf{Step 2:} Since \(\tan(60^\circ) = \sqrt{3}\):
+\[
+\sqrt{3} = \frac{h}{50} \implies h = 50\sqrt{3}
+\]
+
+The building is \(\boxed{50\sqrt{3}}\) feet tall.
+
+\section*{Example 6: Finding \(\tan(\theta)\) from \(\sin(\theta)\)}
+
+If \(\sin(\theta) = \dfrac{3}{5}\) and \(\theta\) is acute, what is \(\tan(\theta)\)?
+
+\textbf{Step 1:} Find \(\cos(\theta)\) using the Pythagorean identity.
+\[
+\cos^2(\theta) = 1 - \sin^2(\theta) = 1 - \frac{9}{25} = \frac{16}{25} \implies \cos(\theta) = \frac{4}{5}
+\]
+
+\textbf{Step 2:} Use \(\tan(\theta) = \dfrac{\sin(\theta)}{\cos(\theta)}\).
+\[
+\tan(\theta) = \frac{3/5}{4/5} = \frac{3}{4}
+\]
+
+\(\boxed{\dfrac{3}{4}}\)
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Always identify ``opposite'' and ``adjacent'' relative to the specific angle in the problem, not relative to the triangle in general. Drawing a quick mental picture of which sides are which prevents mix-ups.
+  \item The complementary angle relationship \(\sin(x) = \cos(90 - x)\) is one of the most commonly tested trig facts on the SAT. If you see a question with \(\sin\) and \(\cos\) of two different angles, check whether those angles add to \(90^\circ\).
+  \item The Pythagorean identity \(\sin^2(\theta) + \cos^2(\theta) = 1\) turns one known trig ratio into another. You can also think of it as reconstructing the right triangle: given \(\sin(\theta) = \frac{a}{c}\), the missing side is \(b = \sqrt{c^2 - a^2}\).
+  \item For angle of elevation and depression problems, the horizontal distance is always adjacent, the vertical distance is always opposite, and the line of sight is the hypotenuse.
+\end{itemize}
+
+\newpage
+
+\section*{Practice Questions: Right Triangle Trigonometry}
+
+\subsection*{Part A: Setting Up Trig Ratios}
+\begin{enumerate}
+  \item In a right triangle, the side opposite angle \(B\) has length 8 and the hypotenuse has length 17. What is \(\sin(B)\)?
+  \item In a right triangle, the side adjacent to angle \(A\) has length 5 and the hypotenuse has length 13. What is \(\cos(A)\)?
+  \item In a right triangle with legs 9 and 40 and hypotenuse 41, angle \(P\) is opposite the side of length 9. What is \(\tan(P)\)?
+  \item In a right triangle, \(\sin(C) = \dfrac{3}{5}\). What is \(\cos(C)\)?
+  \item In a right triangle, \(\tan(D) = \dfrac{7}{24}\). What is \(\sin(D)\)?
+\end{enumerate}
+
+\subsection*{Part B: Complementary Angles}
+\begin{enumerate}
+  \item If \(\sin(25^\circ) = k\), what is \(\cos(65^\circ)\)?
+  \item If \(\cos(x^\circ) = \sin(40^\circ)\), what is the value of \(x\)?
+  \item If \(\sin(2x + 5)^\circ = \cos(3x)^\circ\), what is the value of \(x\)?
+  \item If \(\cos(\theta) = 0.6\) for an acute angle \(\theta\), what is \(\sin(90^\circ - \theta)\)?
+  \item If \(\sin(4x - 8)^\circ = \cos(x + 13)^\circ\), what is the value of \(x\)?
+\end{enumerate}
+
+\subsection*{Part C: Pythagorean Identity}
+\begin{enumerate}
+  \item If \(\sin(\theta) = \dfrac{5}{13}\) and \(\theta\) is acute, what is \(\cos(\theta)\)?
+  \item If \(\cos(\theta) = \dfrac{8}{17}\) and \(\theta\) is acute, what is \(\sin(\theta)\)?
+  \item If \(\sin^2(\theta) = \dfrac{9}{16}\) and \(\theta\) is acute, what is \(\cos(\theta)\)?
+  \item If \(\cos(\theta) = \dfrac{1}{3}\) and \(\theta\) is acute, what is \(\sin^2(\theta)\)? Express your answer as a fraction.
+  \item If \(\sin(\theta) = \dfrac{a}{c}\) where \(a\) and \(c\) are positive integers with \(a < c\), express \(\tan(\theta)\) in terms of \(a\) and \(c\).
+\end{enumerate}
+
+\subsection*{Part D: Solving for Missing Sides and Angles}
+\begin{enumerate}
+  \item In a right triangle, one acute angle measures \(45^\circ\) and the side opposite that angle has length 7. What is the length of the hypotenuse? Express your answer in simplified radical form.
+  \item In a right triangle, one acute angle measures \(60^\circ\) and the hypotenuse has length 16. What is the length of the side adjacent to the \(60^\circ\) angle?
+  \item In a right triangle, \(\tan(A) = \dfrac{3}{4}\) and the side adjacent to angle \(A\) has length 20. What is the length of the side opposite angle \(A\)?
+  \item In a right triangle, \(\sin(B) = \dfrac{5}{13}\) and the hypotenuse has length 39. What is the length of the side opposite angle \(B\)?
+  \item In a right triangle, one leg has length 10 and the hypotenuse has length 20. What is the measure, in degrees, of the angle opposite the leg of length 10?
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \item A kite string is 100 feet long and makes an angle of \(30^\circ\) with the ground. What is the height, in feet, of the kite above the ground?
+  \item A road rises at an angle of \(60^\circ\) from the horizontal. If a car travels 200 meters along the road, what is the car's gain in elevation, in meters? Express your answer in simplified radical form.
+  \item If \(\sin(x^\circ) = \cos(x^\circ)\), what is the value of \(x\)?
+  \item For an acute angle \(\theta\), \(\sin(\theta) = \dfrac{a}{b}\) where \(a\) and \(b\) are positive and \(a < b\). If \(\sin^2(\theta) + \cos^2(\theta) = 1\) and \(\tan(\theta) = \dfrac{a}{\sqrt{b^2 - a^2}}\), find \(\tan(\theta)\) when \(a = 5\) and \(b = 13\).
+  \item A 20-meter cell tower casts a shadow. At the moment when the angle of elevation from the tip of the shadow to the top of the tower is \(45^\circ\), what is the length of the shadow, in meters?
+\end{enumerate}
+
+\newpage
+
+\section*{Answer Key and Solutions: Right Triangle Trigonometry}
+
+\subsection*{Part A Solutions: Setting Up Trig Ratios}
+\begin{enumerate}
+  \item \(\sin(B) = \dfrac{\text{opposite}}{\text{hypotenuse}} = \dfrac{8}{17}\).
+
+  \(\boxed{\dfrac{8}{17}}\)
+
+  \item \(\cos(A) = \dfrac{\text{adjacent}}{\text{hypotenuse}} = \dfrac{5}{13}\).
+
+  \(\boxed{\dfrac{5}{13}}\)
+
+  \item \(\tan(P) = \dfrac{\text{opposite}}{\text{adjacent}} = \dfrac{9}{40}\).
+
+  \(\boxed{\dfrac{9}{40}}\)
+
+  \item Use the Pythagorean identity: \(\cos^2(C) = 1 - \sin^2(C) = 1 - \dfrac{9}{25} = \dfrac{16}{25}\). Since \(C\) is acute, \(\cos(C) = \dfrac{4}{5}\).
+
+  \(\boxed{\dfrac{4}{5}}\)
+
+  \item Since \(\tan(D) = \dfrac{7}{24}\), the opposite side is 7 and the adjacent side is 24. The hypotenuse is \(\sqrt{7^2 + 24^2} = \sqrt{49 + 576} = \sqrt{625} = 25\). So \(\sin(D) = \dfrac{7}{25}\).
+
+  \(\boxed{\dfrac{7}{25}}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Complementary Angles}
+\begin{enumerate}
+  \item Since \(25 + 65 = 90\), we have \(\cos(65^\circ) = \sin(25^\circ) = k\).
+
+  \(\boxed{k}\)
+
+  \item \(\cos(x^\circ) = \sin(40^\circ)\) means \(x + 40 = 90\), so \(x = 50\).
+
+  \(\boxed{50}\)
+
+  \item Set the angles' sum equal to 90:
+  \[
+  (2x + 5) + 3x = 90 \implies 5x + 5 = 90 \implies 5x = 85 \implies x = 17
+  \]
+
+  \(\boxed{17}\)
+
+  \item \(\sin(90^\circ - \theta) = \cos(\theta) = 0.6\).
+
+  \(\boxed{0.6}\)
+
+  \item Set the angles' sum equal to 90:
+  \[
+  (4x - 8) + (x + 13) = 90 \implies 5x + 5 = 90 \implies 5x = 85 \implies x = 17
+  \]
+
+  \(\boxed{17}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Pythagorean Identity}
+\begin{enumerate}
+  \item \(\cos^2(\theta) = 1 - \dfrac{25}{169} = \dfrac{144}{169}\). Since \(\theta\) is acute, \(\cos(\theta) = \dfrac{12}{13}\).
+
+  \(\boxed{\dfrac{12}{13}}\)
+
+  \item \(\sin^2(\theta) = 1 - \dfrac{64}{289} = \dfrac{225}{289}\). Since \(\theta\) is acute, \(\sin(\theta) = \dfrac{15}{17}\).
+
+  \(\boxed{\dfrac{15}{17}}\)
+
+  \item \(\cos^2(\theta) = 1 - \dfrac{9}{16} = \dfrac{7}{16}\). Since \(\theta\) is acute, \(\cos(\theta) = \dfrac{\sqrt{7}}{4}\).
+
+  \(\boxed{\dfrac{\sqrt{7}}{4}}\)
+
+  \item \(\sin^2(\theta) = 1 - \cos^2(\theta) = 1 - \dfrac{1}{9} = \dfrac{8}{9}\).
+
+  \(\boxed{\dfrac{8}{9}}\)
+
+  \item From \(\sin(\theta) = \dfrac{a}{c}\), we get \(\cos(\theta) = \dfrac{\sqrt{c^2 - a^2}}{c}\). Then:
+  \[
+  \tan(\theta) = \frac{\sin(\theta)}{\cos(\theta)} = \frac{a/c}{\sqrt{c^2 - a^2}/c} = \frac{a}{\sqrt{c^2 - a^2}}
+  \]
+
+  \(\boxed{\dfrac{a}{\sqrt{c^2 - a^2}}}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Solving for Missing Sides and Angles}
+\begin{enumerate}
+  \item In a 45-45-90 triangle with legs of length 7, the hypotenuse is \(7\sqrt{2}\). Alternatively, \(\sin(45^\circ) = \dfrac{7}{h}\) gives \(\dfrac{\sqrt{2}}{2} = \dfrac{7}{h}\), so \(h = \dfrac{14}{\sqrt{2}} = 7\sqrt{2}\).
+
+  \(\boxed{7\sqrt{2}}\)
+
+  \item The side adjacent to the \(60^\circ\) angle: \(\cos(60^\circ) = \dfrac{\text{adjacent}}{16}\). Since \(\cos(60^\circ) = \dfrac{1}{2}\):
+  \[
+  \frac{1}{2} = \frac{\text{adjacent}}{16} \implies \text{adjacent} = 8
+  \]
+
+  \(\boxed{8}\)
+
+  \item \(\tan(A) = \dfrac{\text{opposite}}{\text{adjacent}} = \dfrac{3}{4}\). If the adjacent side is 20:
+  \[
+  \frac{\text{opposite}}{20} = \frac{3}{4} \implies \text{opposite} = 15
+  \]
+
+  \(\boxed{15}\)
+
+  \item \(\sin(B) = \dfrac{\text{opposite}}{39} = \dfrac{5}{13}\). Cross-multiply:
+  \[
+  13 \cdot \text{opposite} = 5 \cdot 39 = 195 \implies \text{opposite} = 15
+  \]
+
+  \(\boxed{15}\)
+
+  \item \(\sin(\theta) = \dfrac{10}{20} = \dfrac{1}{2}\). The angle whose sine is \(\dfrac{1}{2}\) is \(30^\circ\).
+
+  \(\boxed{30}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \item The height is opposite the \(30^\circ\) angle, and the string is the hypotenuse.
+  \[
+  \sin(30^\circ) = \frac{h}{100} \implies \frac{1}{2} = \frac{h}{100} \implies h = 50
+  \]
+
+  \(\boxed{50}\)
+
+  \item The elevation gain is opposite the \(60^\circ\) angle, and the road distance is the hypotenuse.
+  \[
+  \sin(60^\circ) = \frac{h}{200} \implies \frac{\sqrt{3}}{2} = \frac{h}{200} \implies h = 100\sqrt{3}
+  \]
+
+  \(\boxed{100\sqrt{3}}\)
+
+  \item \(\sin(x^\circ) = \cos(x^\circ)\) means \(\tan(x^\circ) = 1\), so \(x = 45\). Alternatively, using the complementary relationship: \(\sin(x) = \cos(x)\) implies \(x = 90 - x\), so \(2x = 90\) and \(x = 45\).
+
+  \(\boxed{45}\)
+
+  \item With \(a = 5\) and \(b = 13\): \(\sqrt{b^2 - a^2} = \sqrt{169 - 25} = \sqrt{144} = 12\). So \(\tan(\theta) = \dfrac{5}{12}\).
+
+  \(\boxed{\dfrac{5}{12}}\)
+
+  \item The tower is opposite the \(45^\circ\) angle and the shadow is adjacent. Since \(\tan(45^\circ) = 1\):
+  \[
+  \frac{20}{\text{shadow}} = 1 \implies \text{shadow} = 20
+  \]
+
+  \(\boxed{20}\)
+\end{enumerate}
+
+\ReflectionPage{Unit 8, Topic 5}{https://www.scotchegg.co}
+
+\end{document}

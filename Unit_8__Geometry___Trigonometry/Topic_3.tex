@@ -1,0 +1,401 @@
+\documentclass[14pt]{extarticle}
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 8: Geometry and Trigonometry} \\[6pt]
+    \Large \textbf{Topic 3: Similar Triangles and Congruence}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+Two triangles are \textbf{similar} if they have the same shape but not necessarily the same size. Formally, similar triangles have all three pairs of corresponding angles equal, and all three pairs of corresponding sides in the same ratio (called the \textbf{scale factor}). On the SAT, similar triangles almost always show up through one of two shortcuts for proving similarity:
+
+\begin{itemize}
+  \item \textbf{AA (Angle-Angle):} If two angles of one triangle equal two angles of another triangle, the triangles are similar. (The third pair of angles must also be equal, since all three add to \(180^\circ\).)
+  \item \textbf{Parallel lines cutting a transversal:} When a line parallel to one side of a triangle intersects the other two sides, it creates a smaller triangle that is similar to the original. This is the most common SAT setup.
+\end{itemize}
+
+Once you know two triangles are similar, you can set up a \textbf{proportion} to find unknown side lengths. If triangle \(ABC\) is similar to triangle \(DEF\) (written \(\triangle ABC \sim \triangle DEF\)), then:
+\[
+\frac{AB}{DE} = \frac{BC}{EF} = \frac{AC}{DF}
+\]
+The key skill is matching corresponding sides correctly. Corresponding sides are opposite the equal angles. Writing the similarity statement with vertices in the correct order keeps things straight: the first vertex of each triangle corresponds, the second corresponds, and so on.
+
+When similar triangles appear in word problems, the most common pattern is a shadow or height problem: two objects and their shadows form similar right triangles because sunlight arrives at the same angle.
+
+Two triangles are \textbf{congruent} if they have the same shape and the same size. Congruence is a special case of similarity where the scale factor is 1. The SAT occasionally tests congruence criteria:
+
+\begin{itemize}
+  \item \textbf{SSS (Side-Side-Side):} All three pairs of sides are equal.
+  \item \textbf{SAS (Side-Angle-Side):} Two pairs of sides and the included angle are equal.
+  \item \textbf{ASA (Angle-Side-Angle):} Two pairs of angles and the included side are equal.
+  \item \textbf{AAS (Angle-Angle-Side):} Two pairs of angles and a non-included side are equal.
+\end{itemize}
+
+Note that \textbf{SSA} (two sides and a non-included angle) does \textit{not} guarantee congruence. Also, \textbf{AAA} proves similarity but not congruence, since the triangles could be different sizes.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Identify similar triangles using the AA criterion, especially when parallel lines or shared angles are present.
+  \item Set up and solve proportions using corresponding sides of similar triangles.
+  \item Find unknown lengths using a known scale factor between similar triangles.
+  \item Use properties of congruent triangles to determine unknown sides or angles.
+  \item Solve real-world similarity problems such as shadow/height and scale-model scenarios.
+\end{itemize}
+
+\section*{Example 1: Setting Up a Proportion}
+
+In \(\triangle ABC \sim \triangle DEF\), \(AB = 6\), \(BC = 9\), \(AC = 12\), and \(DE = 4\). What is the length of \(EF\)?
+
+\textbf{Step 1:} Identify corresponding sides. Since \(\triangle ABC \sim \triangle DEF\), side \(AB\) corresponds to \(DE\) and side \(BC\) corresponds to \(EF\).
+
+\textbf{Step 2:} Set up the proportion.
+\[
+\frac{AB}{DE} = \frac{BC}{EF} \implies \frac{6}{4} = \frac{9}{EF}
+\]
+
+\textbf{Step 3:} Cross-multiply and solve.
+\[
+6 \cdot EF = 4 \cdot 9 = 36 \implies EF = 6
+\]
+
+The length of \(EF\) is \(\boxed{6}\).
+
+\section*{Example 2: Parallel Line Creating Similar Triangles}
+
+In triangle \(PQR\), line segment \(ST\) is parallel to \(QR\), where \(S\) is on \(PQ\) and \(T\) is on \(PR\). If \(PS = 4\), \(SQ = 6\), and \(QR = 15\), what is the length of \(ST\)?
+
+\textbf{Step 1:} Since \(ST \parallel QR\), triangle \(PST\) is similar to triangle \(PQR\) by AA (the parallel lines create equal corresponding angles).
+
+\textbf{Step 2:} Find the scale factor. \(PQ = PS + SQ = 4 + 6 = 10\).
+\[
+\frac{PS}{PQ} = \frac{4}{10} = \frac{2}{5}
+\]
+
+\textbf{Step 3:} Corresponding sides are in the same ratio.
+\[
+\frac{ST}{QR} = \frac{2}{5} \implies \frac{ST}{15} = \frac{2}{5} \implies ST = 6
+\]
+
+The length of \(ST\) is \(\boxed{6}\).
+
+\section*{Example 3: Shadow Problem}
+
+A 6-foot-tall person casts a 4-foot shadow at the same time that a nearby tree casts a 22-foot shadow. How tall is the tree, in feet?
+
+\textbf{Step 1:} The sun hits both the person and the tree at the same angle, creating two similar right triangles (one for the person and one for the tree). The heights correspond, and the shadow lengths correspond.
+
+\textbf{Step 2:} Set up the proportion.
+\[
+\frac{\text{person's height}}{\text{person's shadow}} = \frac{\text{tree's height}}{\text{tree's shadow}}
+\]
+\[
+\frac{6}{4} = \frac{h}{22}
+\]
+
+\textbf{Step 3:} Cross-multiply and solve.
+\[
+4h = 6 \cdot 22 = 132 \implies h = 33
+\]
+
+The tree is \(\boxed{33}\) feet tall.
+
+\section*{Example 4: Finding the Scale Factor from Areas}
+
+Two similar triangles have areas of 18 square centimeters and 50 square centimeters. If the shorter triangle has a base of 6 cm, what is the base of the larger triangle?
+
+\textbf{Step 1:} The ratio of the areas of similar figures equals the square of the scale factor.
+\[
+\frac{A_1}{A_2} = \left(\frac{s_1}{s_2}\right)^2 \implies \frac{18}{50} = \left(\frac{s_1}{s_2}\right)^2
+\]
+
+\textbf{Step 2:} Take the square root to get the scale factor.
+\[
+\frac{s_1}{s_2} = \sqrt{\frac{18}{50}} = \sqrt{\frac{9}{25}} = \frac{3}{5}
+\]
+
+\textbf{Step 3:} Apply the scale factor to the base.
+\[
+\frac{6}{b} = \frac{3}{5} \implies 3b = 30 \implies b = 10
+\]
+
+The base of the larger triangle is \(\boxed{10}\) cm.
+
+\section*{Example 5: Using Congruence}
+
+Triangles \(ABC\) and \(DEF\) are congruent. If \(AB = 5\), \(BC = 7\), \(\angle B = 60^\circ\), and \(DE = 5\) and \(\angle E = 60^\circ\), what is the length of \(EF\)?
+
+\textbf{Step 1:} The congruence \(\triangle ABC \cong \triangle DEF\) means corresponding parts are equal. Vertex \(B\) corresponds to vertex \(E\) (both have the \(60^\circ\) angle), \(AB\) corresponds to \(DE\) (both equal 5), and \(BC\) corresponds to \(EF\).
+
+\textbf{Step 2:} Since corresponding sides of congruent triangles are equal:
+\[
+EF = BC = 7
+\]
+
+The length of \(EF\) is \(\boxed{7}\).
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item The most common way the SAT establishes similarity is through AA: shared angles plus parallel lines. Always look for parallel lines or right angles that give you two matching angle pairs.
+  \item When setting up proportions, write the similarity statement carefully and match corresponding sides. A mismatch flips the proportion and gives a wrong answer.
+  \item Shadow and scale-model problems are the standard real-world application of similar triangles. The setup is always the same: two proportional right triangles.
+  \item The ratio of areas of similar figures is the square of the scale factor. If you are given areas and need a length, take the square root of the area ratio to get the length ratio.
+\end{itemize}
+
+\newpage
+
+\section*{Practice Questions: Similar Triangles and Congruence}
+
+\subsection*{Part A: Basic Proportions}
+\begin{enumerate}
+  \item \(\triangle ABC \sim \triangle DEF\). If \(AB = 8\), \(DE = 12\), and \(BC = 10\), what is the length of \(EF\)?
+  \item \(\triangle PQR \sim \triangle STU\). If \(PQ = 5\), \(ST = 15\), and \(TU = 24\), what is the length of \(QR\)?
+  \item Two similar triangles have a scale factor of \(\frac{3}{7}\). If the longest side of the smaller triangle is 9, what is the longest side of the larger triangle?
+  \item \(\triangle JKL \sim \triangle MNO\). If \(JK = 14\), \(KL = 21\), \(JL = 28\), and \(MN = 6\), what is the length of \(NO\)?
+  \item The perimeters of two similar triangles are 30 and 45. If the shortest side of the smaller triangle is 8, what is the shortest side of the larger triangle?
+\end{enumerate}
+
+\subsection*{Part B: Identifying and Using Similarity}
+\begin{enumerate}
+  \item In triangle \(ABC\), \(DE\) is parallel to \(BC\) with \(D\) on \(AB\) and \(E\) on \(AC\). If \(AD = 3\), \(DB = 9\), and \(BC = 20\), what is the length of \(DE\)?
+  \item In triangle \(RST\), a line parallel to \(RS\) intersects \(RT\) at point \(X\) and \(ST\) at point \(Y\) so that \(TX = 6\) and \(XR = 10\). If \(TY = 9\), what is the length of \(YS\)?
+  \item Two triangles share an angle at vertex \(A\). In triangle \(ABD\), \(\angle ABD = 50^\circ\). In triangle \(ACE\), \(\angle ACE = 50^\circ\). Are triangles \(ABD\) and \(ACE\) similar? If so, by what criterion?
+  \item In triangle \(PQR\), \(M\) is the midpoint of \(PQ\) and \(N\) is the midpoint of \(PR\). If \(QR = 18\), what is the length of \(MN\)?
+  \item In triangle \(XYZ\), line \(WV\) is parallel to \(YZ\) with \(W\) on \(XY\) and \(V\) on \(XZ\). If \(XW = 5\), \(WY = 3\), and \(XV = 7.5\), what is the length of \(VZ\)?
+\end{enumerate}
+
+\subsection*{Part C: Area and Scale Factor}
+\begin{enumerate}
+  \item Two similar triangles have a scale factor of \(2:5\). If the area of the smaller triangle is 12 square units, what is the area of the larger triangle?
+  \item The areas of two similar triangles are 27 and 48 square centimeters. What is the ratio of their corresponding side lengths? Express your answer as a simplified fraction.
+  \item Two similar triangles have areas in the ratio \(9:25\). The perimeter of the larger triangle is 40. What is the perimeter of the smaller triangle?
+  \item \(\triangle ABC \sim \triangle DEF\) with a scale factor of \(\frac{1}{3}\) (from \(ABC\) to \(DEF\)). If the area of \(\triangle ABC\) is 8 square inches, what is the area of \(\triangle DEF\)?
+  \item Two similar triangles have corresponding heights of 4 and 10. If the area of the smaller triangle is 20 square centimeters, what is the area of the larger triangle?
+\end{enumerate}
+
+\subsection*{Part D: SAT-Style Applications}
+\begin{enumerate}
+  \item A 5-foot-tall child stands near a flagpole. The child's shadow is 3 feet long and the flagpole's shadow is 21 feet long. How tall, in feet, is the flagpole?
+  \item A scale model of a building uses a scale of 1 inch to 8 feet. If the model is 6.5 inches tall, what is the actual height of the building, in feet?
+  \item On a map, two cities are 4.5 inches apart. The map scale is 1 inch = 30 miles. A third city lies on the straight line between them, 2 inches from the first city on the map. What is the actual distance, in miles, from the third city to the second city?
+  \item A ramp rises from the ground to a loading dock. The ramp is 15 feet long and rises 3 feet vertically. A second, similar ramp is built that rises 5 feet vertically. What is the length, in feet, of the second ramp?
+  \item A triangular park has sides of 120 m, 160 m, and 200 m. A smaller triangular garden inside the park is similar to the park, and the garden's longest side is 50 m. What is the perimeter, in meters, of the garden?
+\end{enumerate}
+
+\subsection*{Part E: Congruence and Mixed Reasoning}
+\begin{enumerate}
+  \item Two triangles have sides 5, 12, and 13 and sides 5, 12, and 13 respectively. Are they congruent? If so, by what criterion?
+  \item A triangle has sides 7, 10, and \(x\). A congruent triangle has sides 7, \(y\), and 12. What is the value of \(x + y\)?
+  \item In \(\triangle ABC\) and \(\triangle DEF\), \(\angle A = \angle D\), \(\angle B = \angle E\), and \(AB = DE\). By which congruence criterion are the triangles congruent?
+  \item Two triangles each have angles of \(40^\circ\), \(60^\circ\), and \(80^\circ\). One has a side of length 10 opposite the \(80^\circ\) angle, and the other has a side of length 10 opposite the \(40^\circ\) angle. Are the triangles congruent?
+  \item \(\triangle PQR \sim \triangle STU\) with \(PQ = 9\), \(QR = 12\), \(PR = 15\), \(ST = 6\), and \(TU = 8\). What is the length of \(SU\)?
+\end{enumerate}
+
+\newpage
+
+\section*{Answer Key and Solutions: Similar Triangles and Congruence}
+
+\subsection*{Part A Solutions: Basic Proportions}
+\begin{enumerate}
+  \item \(AB\) corresponds to \(DE\), and \(BC\) corresponds to \(EF\).
+  \[
+  \frac{8}{12} = \frac{10}{EF} \implies 8 \cdot EF = 120 \implies EF = 15
+  \]
+  \(\boxed{15}\)
+
+  \item \(PQ\) corresponds to \(ST\), and \(QR\) corresponds to \(TU\).
+  \[
+  \frac{5}{15} = \frac{QR}{24} \implies 15 \cdot QR = 120 \implies QR = 8
+  \]
+  \(\boxed{8}\)
+
+  \item The scale factor from small to large is \(\frac{3}{7}\), so the large side is:
+  \[
+  9 \div \frac{3}{7} = 9 \cdot \frac{7}{3} = 21
+  \]
+  \(\boxed{21}\)
+
+  \item The scale factor from \(\triangle JKL\) to \(\triangle MNO\) is \(\frac{MN}{JK} = \frac{6}{14} = \frac{3}{7}\).
+  \[
+  NO = KL \cdot \frac{3}{7} = 21 \cdot \frac{3}{7} = 9
+  \]
+  \(\boxed{9}\)
+
+  \item Perimeters of similar triangles are in the same ratio as corresponding sides. The scale factor is \(\frac{30}{45} = \frac{2}{3}\).
+  \[
+  \frac{8}{s} = \frac{2}{3} \implies 2s = 24 \implies s = 12
+  \]
+  \(\boxed{12}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Identifying and Using Similarity}
+\begin{enumerate}
+  \item Since \(DE \parallel BC\), \(\triangle ADE \sim \triangle ABC\) by AA. The scale factor is:
+  \[
+  \frac{AD}{AB} = \frac{3}{3 + 9} = \frac{3}{12} = \frac{1}{4}
+  \]
+  \[
+  DE = BC \cdot \frac{1}{4} = 20 \cdot \frac{1}{4} = 5
+  \]
+  \(\boxed{5}\)
+
+  \item The parallel line creates similar triangles, so \(\frac{TX}{TR} = \frac{TY}{TS}\). We have \(TR = TX + XR = 6 + 10 = 16\) and \(TS = TY + YS\).
+  \[
+  \frac{6}{16} = \frac{9}{TS} \implies 6 \cdot TS = 144 \implies TS = 24
+  \]
+  \[
+  YS = TS - TY = 24 - 9 = 15
+  \]
+  \(\boxed{15}\)
+
+  \item Yes. The two triangles share \(\angle A\), and \(\angle ABD = \angle ACE = 50^\circ\). Two pairs of equal angles means they are similar by AA.
+
+  \(\boxed{\text{Yes, by AA}}\)
+
+  \item The segment connecting the midpoints of two sides of a triangle is parallel to the third side and half its length (the Triangle Midsegment Theorem).
+  \[
+  MN = \frac{1}{2} \cdot QR = \frac{1}{2} \cdot 18 = 9
+  \]
+  \(\boxed{9}\)
+
+  \item Since \(WV \parallel YZ\), \(\triangle XWV \sim \triangle XYZ\). Check the ratio: \(\frac{XW}{XY} = \frac{5}{5 + 3} = \frac{5}{8}\). Then:
+  \[
+  \frac{XV}{XZ} = \frac{5}{8} \implies \frac{7.5}{XZ} = \frac{5}{8} \implies XZ = 12
+  \]
+  \[
+  VZ = XZ - XV = 12 - 7.5 = 4.5
+  \]
+  \(\boxed{4.5}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Area and Scale Factor}
+\begin{enumerate}
+  \item The ratio of areas is the square of the scale factor: \(\left(\frac{2}{5}\right)^2 = \frac{4}{25}\).
+  \[
+  \frac{12}{A} = \frac{4}{25} \implies 4A = 300 \implies A = 75
+  \]
+  \(\boxed{75}\)
+
+  \item The ratio of areas is \(\frac{27}{48} = \frac{9}{16}\). The ratio of side lengths is the square root:
+  \[
+  \sqrt{\frac{9}{16}} = \frac{3}{4}
+  \]
+  \(\boxed{\dfrac{3}{4}}\)
+
+  \item The ratio of side lengths is \(\sqrt{\frac{9}{25}} = \frac{3}{5}\). Perimeters are in the same ratio as sides.
+  \[
+  \frac{P_{\text{small}}}{40} = \frac{3}{5} \implies P_{\text{small}} = 24
+  \]
+  \(\boxed{24}\)
+
+  \item The ratio of areas is the square of the scale factor: \(\left(\frac{1}{3}\right)^2 = \frac{1}{9}\).
+  \[
+  \frac{8}{A_{DEF}} = \frac{1}{9} \implies A_{DEF} = 72
+  \]
+  \(\boxed{72}\)
+
+  \item The scale factor (small to large) is \(\frac{4}{10} = \frac{2}{5}\). The area ratio is \(\left(\frac{2}{5}\right)^2 = \frac{4}{25}\).
+  \[
+  \frac{20}{A} = \frac{4}{25} \implies 4A = 500 \implies A = 125
+  \]
+  \(\boxed{125}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \item The child and the flagpole form similar right triangles with their shadows.
+  \[
+  \frac{5}{3} = \frac{h}{21} \implies 3h = 105 \implies h = 35
+  \]
+  The flagpole is \(\boxed{35}\) feet tall.
+
+  \item The scale is 1 inch = 8 feet.
+  \[
+  6.5 \times 8 = 52
+  \]
+  The building is \(\boxed{52}\) feet tall.
+
+  \item The distance between the first and second city on the map is 4.5 inches, and the third city is 2 inches from the first, so it is \(4.5 - 2 = 2.5\) inches from the second city on the map. Converting:
+  \[
+  2.5 \times 30 = 75
+  \]
+  The actual distance is \(\boxed{75}\) miles.
+
+  \item The two ramps form similar right triangles (same angle of incline). The scale factor is \(\frac{5}{3}\).
+  \[
+  \text{Length of second ramp} = 15 \cdot \frac{5}{3} = 25
+  \]
+  The second ramp is \(\boxed{25}\) feet long.
+
+  \item The scale factor from the park to the garden is \(\frac{50}{200} = \frac{1}{4}\). The perimeter of the park is \(120 + 160 + 200 = 480\) m.
+  \[
+  \text{Perimeter of garden} = 480 \cdot \frac{1}{4} = 120
+  \]
+  The perimeter of the garden is \(\boxed{120}\) meters.
+\end{enumerate}
+
+\subsection*{Part E Solutions: Congruence and Mixed Reasoning}
+\begin{enumerate}
+  \item Yes, the triangles are congruent by SSS, since all three pairs of corresponding sides are equal.
+
+  \(\boxed{\text{Yes, by SSS}}\)
+
+  \item Since the triangles are congruent, their side sets must be identical: \(\{7, 10, x\} = \{7, y, 12\}\). Matching up, \(x = 12\) and \(y = 10\). So \(x + y = 12 + 10 = 22\).
+
+  \(\boxed{22}\)
+
+  \item Two pairs of angles and the included side (the side between the two angles) are equal. This is ASA.
+
+  \(\boxed{\text{ASA}}\)
+
+  \item No. The triangles are similar (same angles) but not congruent. The side of length 10 is opposite different angles in the two triangles, so the triangles are different sizes.
+
+  \(\boxed{\text{No}}\)
+
+  \item The scale factor from \(\triangle PQR\) to \(\triangle STU\) is \(\frac{ST}{PQ} = \frac{6}{9} = \frac{2}{3}\). (We can verify: \(TU = 12 \cdot \frac{2}{3} = 8\), which checks out.)
+  \[
+  SU = PR \cdot \frac{2}{3} = 15 \cdot \frac{2}{3} = 10
+  \]
+  \(\boxed{10}\)
+\end{enumerate}
+
+\ReflectionPage{Unit 8, Topic 3}{https://www.scotchegg.co}
+
+\end{document}

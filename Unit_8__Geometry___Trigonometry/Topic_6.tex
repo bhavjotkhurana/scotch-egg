@@ -1,0 +1,399 @@
+\documentclass[14pt]{extarticle}
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 8: Geometry and Trigonometry} \\[6pt]
+    \Large \textbf{Topic 6: Circles}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+A \textbf{circle} is the set of all points in a plane that are a fixed distance (the \textbf{radius}, \(r\)) from a fixed point (the \textbf{center}). The \textbf{diameter} is twice the radius: \(d = 2r\). The \textbf{circumference} (perimeter) of a circle is:
+\[
+C = 2\pi r = \pi d
+\]
+The \textbf{area} of a circle is:
+\[
+A = \pi r^2
+\]
+
+An \textbf{arc} is a portion of the circumference. A \textbf{sector} is the ``pie slice'' region bounded by two radii and the arc between them. The \textbf{central angle} is the angle formed at the center by those two radii. The key idea is that arcs and sectors are proportional to their central angles. If a central angle measures \(\theta\) degrees, then:
+\[
+\text{Arc length} = \frac{\theta}{360} \cdot 2\pi r, \qquad \text{Sector area} = \frac{\theta}{360} \cdot \pi r^2
+\]
+Think of \(\dfrac{\theta}{360}\) as the fraction of the full circle that the arc or sector represents. A \(90^\circ\) central angle gives \(\dfrac{1}{4}\) of the circumference and \(\dfrac{1}{4}\) of the area, a \(180^\circ\) angle gives half, and so on.
+
+An \textbf{inscribed angle} is an angle formed by two chords that meet at a point on the circle. The \textbf{Inscribed Angle Theorem} states that an inscribed angle is exactly half the central angle that subtends (intercepts) the same arc:
+\[
+\text{Inscribed angle} = \frac{1}{2} \cdot \text{central angle}
+\]
+A useful special case: any inscribed angle that intercepts a semicircle (an arc of \(180^\circ\)) is a right angle. In other words, if a triangle is inscribed in a circle with one side being a diameter, the angle opposite that diameter is \(90^\circ\).
+
+The \textbf{standard form} of a circle's equation in the coordinate plane is:
+\[
+(x - h)^2 + (y - k)^2 = r^2
+\]
+where \((h, k)\) is the center and \(r\) is the radius. Be careful with signs: \((x - 3)^2 + (y + 5)^2 = 16\) has center \((3, -5)\) and radius \(4\). The SAT sometimes gives the equation in \textbf{general form}:
+\[
+x^2 + y^2 + Dx + Ey + F = 0
+\]
+To convert to standard form, complete the square for both \(x\) and \(y\).
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Calculate arc length and sector area using the central angle as a fraction of \(360^\circ\).
+  \item Use the Inscribed Angle Theorem to relate inscribed angles to central angles.
+  \item Write, interpret, and convert between standard form and general form of a circle equation.
+  \item Find the center and radius of a circle by completing the square.
+  \item Solve problems that combine circle properties with other geometry or algebra skills.
+\end{itemize}
+
+\section*{Example 1: Arc Length}
+
+A circle has a radius of 10 cm. What is the length of an arc intercepted by a central angle of \(72^\circ\)?
+
+\textbf{Step 1:} Find the fraction of the circle.
+\[
+\frac{72}{360} = \frac{1}{5}
+\]
+
+\textbf{Step 2:} Multiply by the full circumference.
+\[
+\text{Arc length} = \frac{1}{5} \cdot 2\pi(10) = \frac{20\pi}{5} = 4\pi
+\]
+
+The arc length is \(\boxed{4\pi}\) cm.
+
+\section*{Example 2: Sector Area}
+
+A pizza has a diameter of 16 inches. A slice is cut with a central angle of \(45^\circ\). What is the area of the slice?
+
+\textbf{Step 1:} The radius is \(\dfrac{16}{2} = 8\) inches. The fraction of the circle is:
+\[
+\frac{45}{360} = \frac{1}{8}
+\]
+
+\textbf{Step 2:} Multiply by the full area.
+\[
+\text{Sector area} = \frac{1}{8} \cdot \pi(8)^2 = \frac{64\pi}{8} = 8\pi
+\]
+
+The area of the slice is \(\boxed{8\pi}\) square inches.
+
+\section*{Example 3: Inscribed Angle}
+
+A central angle in a circle measures \(110^\circ\). What is the measure of the inscribed angle that intercepts the same arc?
+
+\textbf{Step 1:} The inscribed angle is half the central angle.
+\[
+\text{Inscribed angle} = \frac{110}{2} = 55^\circ
+\]
+
+The inscribed angle measures \(\boxed{55}\) degrees.
+
+\section*{Example 4: Standard Form of a Circle}
+
+What are the center and radius of the circle \((x + 2)^2 + (y - 7)^2 = 36\)?
+
+\textbf{Step 1:} Compare to \((x - h)^2 + (y - k)^2 = r^2\).
+\[
+(x - (-2))^2 + (y - 7)^2 = 6^2
+\]
+
+The center is \((-2, 7)\) and the radius is \(6\).
+
+Center: \(\boxed{(-2, 7)}\), Radius: \(\boxed{6}\)
+
+\section*{Example 5: Completing the Square}
+
+Write the equation \(x^2 + y^2 - 6x + 4y - 12 = 0\) in standard form and identify the center and radius.
+
+\textbf{Step 1:} Group \(x\)-terms and \(y\)-terms and move the constant.
+\[
+(x^2 - 6x) + (y^2 + 4y) = 12
+\]
+
+\textbf{Step 2:} Complete the square for each group. For \(x\): half of \(-6\) is \(-3\), and \((-3)^2 = 9\). For \(y\): half of \(4\) is \(2\), and \(2^2 = 4\).
+\[
+(x^2 - 6x + 9) + (y^2 + 4y + 4) = 12 + 9 + 4
+\]
+\[
+(x - 3)^2 + (y + 2)^2 = 25
+\]
+
+The center is \((3, -2)\) and the radius is \(5\).
+
+Center: \(\boxed{(3, -2)}\), Radius: \(\boxed{5}\)
+
+\section*{Example 6: Finding Arc Length from Inscribed Angle}
+
+In a circle with radius 12, an inscribed angle of \(30^\circ\) intercepts an arc. What is the length of that arc?
+
+\textbf{Step 1:} The central angle is twice the inscribed angle: \(2 \times 30 = 60^\circ\).
+
+\textbf{Step 2:} Calculate the arc length.
+\[
+\text{Arc length} = \frac{60}{360} \cdot 2\pi(12) = \frac{1}{6} \cdot 24\pi = 4\pi
+\]
+
+The arc length is \(\boxed{4\pi}\).
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Arc length and sector area both use the same fraction: \(\dfrac{\theta}{360}\). Multiply that fraction by the circumference for arc length, or by the total area for sector area.
+  \item An inscribed angle is always half the central angle that intercepts the same arc. If the SAT gives you an inscribed angle and asks for an arc, double the inscribed angle first to get the central angle, then use the central angle in the arc/sector formulas.
+  \item When completing the square for a circle equation, remember to add the same values to both sides. The most common error is forgetting to add the completing-the-square constant to the right side.
+  \item In the standard equation \((x - h)^2 + (y - k)^2 = r^2\), the right side is \(r^2\), not \(r\). If the equation says \(= 49\), the radius is 7, not 49.
+\end{itemize}
+
+\newpage
+
+\section*{Practice Questions: Circles}
+
+\subsection*{Part A: Circumference and Area}
+\begin{enumerate}
+  \item A circle has a radius of 9. What is the circumference? Express your answer in terms of \(\pi\).
+  \item A circle has a diameter of 20. What is the area? Express your answer in terms of \(\pi\).
+  \item The circumference of a circle is \(14\pi\). What is the radius?
+  \item The area of a circle is \(49\pi\). What is the diameter?
+  \item A circle has an area of \(36\pi\) square centimeters. What is its circumference, in centimeters? Express your answer in terms of \(\pi\).
+\end{enumerate}
+
+\subsection*{Part B: Arc Length and Sector Area}
+\begin{enumerate}
+  \item A circle has a radius of 15 and a central angle of \(120^\circ\). What is the arc length? Express your answer in terms of \(\pi\).
+  \item A circle has a radius of 6 and a central angle of \(90^\circ\). What is the area of the sector? Express your answer in terms of \(\pi\).
+  \item A sector of a circle with radius 8 has an area of \(16\pi\). What is the measure, in degrees, of the central angle?
+  \item An arc of a circle with radius 18 has a length of \(6\pi\). What is the measure, in degrees, of the central angle?
+  \item A sprinkler waters a circular sector with a radius of 20 feet and a central angle of \(150^\circ\). What is the area, in square feet, of the region being watered? Express your answer in terms of \(\pi\).
+\end{enumerate}
+
+\subsection*{Part C: Inscribed and Central Angles}
+\begin{enumerate}
+  \item A central angle in a circle measures \(84^\circ\). What is the measure, in degrees, of the inscribed angle that intercepts the same arc?
+  \item An inscribed angle in a circle measures \(35^\circ\). What is the measure, in degrees, of the central angle that intercepts the same arc?
+  \item A triangle is inscribed in a circle with one side being a diameter. If one of the other angles of the triangle measures \(28^\circ\), what is the measure, in degrees, of the third angle?
+  \item Two inscribed angles intercept the same arc. One measures \((3x + 5)^\circ\) and the other measures \((5x - 15)^\circ\). What is the value of \(x\)?
+  \item An inscribed angle intercepts an arc of \(140^\circ\). What is the measure, in degrees, of the inscribed angle?
+\end{enumerate}
+
+\subsection*{Part D: Circle Equations}
+\begin{enumerate}
+  \item What are the center and radius of the circle \((x - 4)^2 + (y + 1)^2 = 25\)?
+  \item Write the equation of a circle with center \((0, 3)\) and radius 7.
+  \item The equation of a circle is \(x^2 + y^2 + 10x - 2y + 17 = 0\). What are the center and radius?
+  \item The equation of a circle is \(x^2 + y^2 - 8x - 14y + 40 = 0\). What is the radius?
+  \item A circle has endpoints of a diameter at \((1, 5)\) and \((7, -3)\). Write the equation of the circle in standard form.
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \item A circular clock face has a radius of 6 inches. The minute hand sweeps through an angle of \(150^\circ\) in 25 minutes. What is the length, in inches, of the arc traced by the tip of the minute hand during that time? Express your answer in terms of \(\pi\).
+  \item A running track goes around a circular field with a diameter of 100 meters. A runner completes \(\dfrac{3}{4}\) of a full lap. How many meters has the runner traveled? Express your answer in terms of \(\pi\).
+  \item The equation of a circle is \(x^2 + y^2 + 6x - 10y + 18 = 0\). What is the area of the circle? Express your answer in terms of \(\pi\).
+  \item A sector with a central angle of \(60^\circ\) is cut from a circular piece of sheet metal with radius 12 inches. What is the perimeter of the sector (arc plus two radii), in inches? Express your answer in terms of \(\pi\).
+  \item In a circle with radius 10, a chord is drawn such that the central angle subtended by the chord is \(90^\circ\). What is the area of the region bounded by the chord and the minor arc? Express your answer in terms of \(\pi\). (Hint: subtract the area of the triangle from the area of the sector.)
+\end{enumerate}
+
+\newpage
+
+\section*{Answer Key and Solutions: Circles}
+
+\subsection*{Part A Solutions: Circumference and Area}
+\begin{enumerate}
+  \item \(C = 2\pi r = 2\pi(9) = 18\pi\).
+
+  \(\boxed{18\pi}\)
+
+  \item The radius is \(\dfrac{20}{2} = 10\). The area is \(\pi(10)^2 = 100\pi\).
+
+  \(\boxed{100\pi}\)
+
+  \item \(2\pi r = 14\pi \implies r = 7\).
+
+  \(\boxed{7}\)
+
+  \item \(\pi r^2 = 49\pi \implies r^2 = 49 \implies r = 7\). The diameter is \(2(7) = 14\).
+
+  \(\boxed{14}\)
+
+  \item From \(\pi r^2 = 36\pi\), we get \(r = 6\). The circumference is \(2\pi(6) = 12\pi\).
+
+  \(\boxed{12\pi}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Arc Length and Sector Area}
+\begin{enumerate}
+  \item Arc length \(= \dfrac{120}{360} \cdot 2\pi(15) = \dfrac{1}{3} \cdot 30\pi = 10\pi\).
+
+  \(\boxed{10\pi}\)
+
+  \item Sector area \(= \dfrac{90}{360} \cdot \pi(6)^2 = \dfrac{1}{4} \cdot 36\pi = 9\pi\).
+
+  \(\boxed{9\pi}\)
+
+  \item Set up the equation: \(\dfrac{\theta}{360} \cdot \pi(8)^2 = 16\pi\).
+  \[
+  \frac{\theta}{360} \cdot 64\pi = 16\pi \implies \frac{\theta}{360} = \frac{16}{64} = \frac{1}{4} \implies \theta = 90^\circ
+  \]
+
+  \(\boxed{90}\)
+
+  \item Set up the equation: \(\dfrac{\theta}{360} \cdot 2\pi(18) = 6\pi\).
+  \[
+  \frac{\theta}{360} \cdot 36\pi = 6\pi \implies \frac{\theta}{360} = \frac{6}{36} = \frac{1}{6} \implies \theta = 60^\circ
+  \]
+
+  \(\boxed{60}\)
+
+  \item Sector area \(= \dfrac{150}{360} \cdot \pi(20)^2 = \dfrac{5}{12} \cdot 400\pi = \dfrac{500\pi}{3}\).
+
+  \(\boxed{\dfrac{500\pi}{3}}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Inscribed and Central Angles}
+\begin{enumerate}
+  \item Inscribed angle \(= \dfrac{84}{2} = 42^\circ\).
+
+  \(\boxed{42}\)
+
+  \item Central angle \(= 2 \times 35 = 70^\circ\).
+
+  \(\boxed{70}\)
+
+  \item A triangle inscribed in a semicircle has a \(90^\circ\) angle opposite the diameter. The third angle is \(180 - 90 - 28 = 62^\circ\).
+
+  \(\boxed{62}\)
+
+  \item Two inscribed angles that intercept the same arc are equal.
+  \[
+  3x + 5 = 5x - 15 \implies 20 = 2x \implies x = 10
+  \]
+
+  \(\boxed{10}\)
+
+  \item The inscribed angle is half the intercepted arc: \(\dfrac{140}{2} = 70^\circ\).
+
+  \(\boxed{70}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Circle Equations}
+\begin{enumerate}
+  \item Comparing to \((x - h)^2 + (y - k)^2 = r^2\): center \((4, -1)\), radius \(\sqrt{25} = 5\).
+
+  Center: \(\boxed{(4, -1)}\), Radius: \(\boxed{5}\)
+
+  \item \((x - 0)^2 + (y - 3)^2 = 49\), which simplifies to \(x^2 + (y - 3)^2 = 49\).
+
+  \(\boxed{x^2 + (y - 3)^2 = 49}\)
+
+  \item Complete the square:
+  \[
+  (x^2 + 10x + 25) + (y^2 - 2y + 1) = -17 + 25 + 1
+  \]
+  \[
+  (x + 5)^2 + (y - 1)^2 = 9
+  \]
+  Center \((-5, 1)\), radius \(3\).
+
+  Center: \(\boxed{(-5, 1)}\), Radius: \(\boxed{3}\)
+
+  \item Complete the square:
+  \[
+  (x^2 - 8x + 16) + (y^2 - 14y + 49) = -40 + 16 + 49
+  \]
+  \[
+  (x - 4)^2 + (y - 7)^2 = 25
+  \]
+  Radius \(= 5\).
+
+  \(\boxed{5}\)
+
+  \item The center is the midpoint of the diameter: \(\left(\dfrac{1+7}{2}, \dfrac{5+(-3)}{2}\right) = (4, 1)\). The radius is half the diameter length:
+  \[
+  d = \sqrt{(7-1)^2 + (-3-5)^2} = \sqrt{36 + 64} = \sqrt{100} = 10
+  \]
+  So \(r = 5\). The equation is \((x - 4)^2 + (y - 1)^2 = 25\).
+
+  \(\boxed{(x - 4)^2 + (y - 1)^2 = 25}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \item Arc length \(= \dfrac{150}{360} \cdot 2\pi(6) = \dfrac{5}{12} \cdot 12\pi = 5\pi\).
+
+  \(\boxed{5\pi}\)
+
+  \item The full circumference is \(\pi d = 100\pi\). Three-quarters of a lap is:
+  \[
+  \frac{3}{4} \cdot 100\pi = 75\pi
+  \]
+
+  \(\boxed{75\pi}\)
+
+  \item Complete the square:
+  \[
+  (x^2 + 6x + 9) + (y^2 - 10y + 25) = -18 + 9 + 25
+  \]
+  \[
+  (x + 3)^2 + (y - 5)^2 = 16
+  \]
+  The radius is 4, so the area is \(\pi(4)^2 = 16\pi\).
+
+  \(\boxed{16\pi}\)
+
+  \item The arc length is \(\dfrac{60}{360} \cdot 2\pi(12) = \dfrac{1}{6} \cdot 24\pi = 4\pi\). The perimeter of the sector includes the arc and two radii:
+  \[
+  P = 4\pi + 12 + 12 = 4\pi + 24
+  \]
+
+  \(\boxed{4\pi + 24}\)
+
+  \item The sector area is \(\dfrac{90}{360} \cdot \pi(10)^2 = \dfrac{1}{4} \cdot 100\pi = 25\pi\). The triangle formed is a right isosceles triangle with legs equal to the radius (10), so its area is \(\dfrac{1}{2}(10)(10) = 50\). The region between the chord and the arc is:
+  \[
+  25\pi - 50
+  \]
+
+  \(\boxed{25\pi - 50}\)
+\end{enumerate}
+
+\ReflectionPage{Unit 8, Topic 6}{https://www.scotchegg.co}
+
+\end{document}

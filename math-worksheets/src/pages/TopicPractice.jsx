@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Seo from '@/components/Seo.jsx';
 import RichText from '@/components/math/RichText.jsx';
 import QuestionStepper from '@/components/questions/QuestionStepper.jsx';
@@ -18,7 +18,7 @@ export default function TopicPractice() {
   const unitMeta = getUnitBySlug(unitSlug);
   const { data: unitData, isLoading, isError } = useUnitData(unitSlug);
   const topic = findTopic(unitData, topicSlug);
-  const [tab, setTab] = useState('practice');
+  const [tab, setTab] = useState('learn');
   const { number: topicNumber, name: topicName } = splitTopicTitle(topic?.topicTitle ?? '');
 
   if (!unitMeta) {
@@ -138,6 +138,14 @@ export default function TopicPractice() {
                     </ul>
                   </div>
                 )}
+
+                <button
+                  type="button"
+                  onClick={() => setTab('practice')}
+                  className="mt-8 flex items-center gap-2 rounded-lg bg-brand-primary px-5 py-2.5 text-sm font-medium text-white hover:bg-brand-primary-dark"
+                >
+                  Try questions <ArrowRight className="h-4 w-4" />
+                </button>
               </section>
             )}
           </>

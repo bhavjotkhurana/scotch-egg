@@ -1,0 +1,375 @@
+\documentclass[14pt]{extarticle}
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 8: Geometry and Trigonometry} \\[6pt]
+    \Large \textbf{Topic 4: The Pythagorean Theorem and Special Right Triangles}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+The \textbf{Pythagorean Theorem} states that in any right triangle with legs \(a\) and \(b\) and hypotenuse \(c\):
+\[
+a^2 + b^2 = c^2
+\]
+The hypotenuse is always the longest side and is always opposite the right angle. This theorem lets you find any one side of a right triangle when the other two are known. It also works in reverse: if three sides satisfy \(a^2 + b^2 = c^2\), the triangle is a right triangle.
+
+Certain sets of whole numbers satisfy the Pythagorean Theorem and appear frequently on the SAT. These are called \textbf{Pythagorean triples}. The most common are:
+\[
+3\text{-}4\text{-}5, \quad 5\text{-}12\text{-}13, \quad 8\text{-}15\text{-}17, \quad 7\text{-}24\text{-}25
+\]
+Any constant multiple of a Pythagorean triple is also a triple. For example, \(3\text{-}4\text{-}5\) gives \(6\text{-}8\text{-}10\), \(9\text{-}12\text{-}15\), \(15\text{-}20\text{-}25\), and so on. Recognizing these triples saves time because you can identify the missing side by inspection instead of computing squares and square roots.
+
+Two families of right triangles have side ratios worth memorizing because the SAT provides them on the reference sheet and tests them often:
+
+A \textbf{45-45-90 triangle} (isosceles right triangle) has sides in the ratio \(1 : 1 : \sqrt{2}\). If each leg has length \(s\), the hypotenuse is \(s\sqrt{2}\). Conversely, if the hypotenuse is \(h\), each leg is \(\dfrac{h}{\sqrt{2}} = \dfrac{h\sqrt{2}}{2}\).
+
+A \textbf{30-60-90 triangle} has sides in the ratio \(1 : \sqrt{3} : 2\). The shortest side (opposite the \(30^\circ\) angle) has length \(s\), the side opposite the \(60^\circ\) angle has length \(s\sqrt{3}\), and the hypotenuse (opposite the \(90^\circ\) angle) has length \(2s\). The most common mistake is mixing up which side gets the \(\sqrt{3}\) factor. Remember: the \(\sqrt{3}\) side is the middle-length side, between the shortest side and the hypotenuse.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Use the Pythagorean Theorem to find a missing side of a right triangle.
+  \item Recognize common Pythagorean triples and their multiples to save computation time.
+  \item Apply the side ratios of 45-45-90 and 30-60-90 triangles to find missing sides.
+  \item Use the converse of the Pythagorean Theorem to determine whether a triangle is a right triangle.
+  \item Solve multi-step problems that combine the Pythagorean Theorem with area, perimeter, or other geometry concepts.
+\end{itemize}
+
+\section*{Example 1: Basic Pythagorean Theorem}
+
+A right triangle has legs of length 9 and 12. What is the length of the hypotenuse?
+
+\textbf{Step 1:} Apply the Pythagorean Theorem.
+\[
+c^2 = 9^2 + 12^2 = 81 + 144 = 225
+\]
+
+\textbf{Step 2:} Take the square root.
+\[
+c = \sqrt{225} = 15
+\]
+
+(You could also recognize this as the \(3\text{-}4\text{-}5\) triple scaled by 3: \(9\text{-}12\text{-}15\).)
+
+The hypotenuse is \(\boxed{15}\).
+
+\section*{Example 2: Finding a Leg}
+
+A right triangle has a hypotenuse of 26 and one leg of 10. What is the length of the other leg?
+
+\textbf{Step 1:} Let the unknown leg be \(a\).
+\[
+a^2 + 10^2 = 26^2 \implies a^2 + 100 = 676
+\]
+
+\textbf{Step 2:} Solve for \(a\).
+\[
+a^2 = 576 \implies a = 24
+\]
+
+(This is the \(5\text{-}12\text{-}13\) triple scaled by 2: \(10\text{-}24\text{-}26\).)
+
+The other leg is \(\boxed{24}\).
+
+\section*{Example 3: 45-45-90 Triangle}
+
+In a 45-45-90 triangle, the hypotenuse has length 10. What is the length of each leg?
+
+\textbf{Step 1:} In a 45-45-90 triangle, the hypotenuse is \(s\sqrt{2}\), where \(s\) is the leg length.
+\[
+s\sqrt{2} = 10 \implies s = \frac{10}{\sqrt{2}} = \frac{10\sqrt{2}}{2} = 5\sqrt{2}
+\]
+
+Each leg has length \(\boxed{5\sqrt{2}}\).
+
+\section*{Example 4: 30-60-90 Triangle}
+
+In a 30-60-90 triangle, the side opposite the \(30^\circ\) angle has length 7. What are the lengths of the other two sides?
+
+\textbf{Step 1:} The shortest side (opposite \(30^\circ\)) is \(s = 7\).
+
+\textbf{Step 2:} The side opposite \(60^\circ\) is \(s\sqrt{3} = 7\sqrt{3}\).
+
+\textbf{Step 3:} The hypotenuse is \(2s = 14\).
+
+The side opposite \(60^\circ\) is \(\boxed{7\sqrt{3}}\) and the hypotenuse is \(\boxed{14}\).
+
+\section*{Example 5: Converse of the Pythagorean Theorem}
+
+A triangle has sides of length 11, 60, and 61. Is it a right triangle?
+
+\textbf{Step 1:} Check whether the square of the longest side equals the sum of the squares of the other two.
+\[
+11^2 + 60^2 = 121 + 3600 = 3721
+\]
+\[
+61^2 = 3721
+\]
+
+Since \(11^2 + 60^2 = 61^2\), the triangle is a right triangle.
+
+\(\boxed{\text{Yes}}\)
+
+\section*{Example 6: Multi-Step Application}
+
+A rectangular room measures 8 feet by 15 feet. What is the length, in feet, of a diagonal of the room?
+
+\textbf{Step 1:} A diagonal of a rectangle divides it into two right triangles. The legs are the length and width of the room.
+
+\textbf{Step 2:} Apply the Pythagorean Theorem.
+\[
+d^2 = 8^2 + 15^2 = 64 + 225 = 289 \implies d = 17
+\]
+
+(This is the \(8\text{-}15\text{-}17\) Pythagorean triple.)
+
+The diagonal is \(\boxed{17}\) feet.
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Memorize the common Pythagorean triples (\(3\text{-}4\text{-}5\), \(5\text{-}12\text{-}13\), \(8\text{-}15\text{-}17\)) and watch for their multiples. Recognizing a triple instantly gives you the answer without any calculation.
+  \item In a 45-45-90 triangle, multiply a leg by \(\sqrt{2}\) to get the hypotenuse, or divide the hypotenuse by \(\sqrt{2}\) to get a leg. In a 30-60-90 triangle, the sides are \(s\), \(s\sqrt{3}\), and \(2s\), with the \(\sqrt{3}\) always on the middle side (opposite \(60^\circ\)).
+  \item The most common error with 30-60-90 triangles is applying the \(\sqrt{3}\) to the wrong side. The hypotenuse is always exactly twice the shortest side, never involving \(\sqrt{3}\).
+  \item When a problem gives you a rectangle, square, or equilateral triangle and asks for a diagonal or height, you are almost certainly using the Pythagorean Theorem or a special right triangle.
+\end{itemize}
+
+\newpage
+
+\section*{Practice Questions: The Pythagorean Theorem and Special Right Triangles}
+
+\subsection*{Part A: Pythagorean Theorem Basics}
+\begin{enumerate}
+  \item A right triangle has legs of length 5 and 12. What is the length of the hypotenuse?
+  \item A right triangle has a hypotenuse of 25 and one leg of 7. What is the length of the other leg?
+  \item A right triangle has legs of length 6 and 8. What is the length of the hypotenuse?
+  \item A right triangle has a hypotenuse of 20 and one leg of 16. What is the length of the other leg?
+  \item A right triangle has legs of length 15 and 20. What is the length of the hypotenuse?
+\end{enumerate}
+
+\subsection*{Part B: Special Right Triangles}
+\begin{enumerate}
+  \item In a 45-45-90 triangle, each leg has length 6. What is the length of the hypotenuse?
+  \item In a 45-45-90 triangle, the hypotenuse has length 14. What is the length of each leg? Express your answer in simplified radical form.
+  \item In a 30-60-90 triangle, the hypotenuse has length 18. What is the length of the side opposite the \(30^\circ\) angle?
+  \item In a 30-60-90 triangle, the side opposite the \(60^\circ\) angle has length \(5\sqrt{3}\). What is the length of the hypotenuse?
+  \item An equilateral triangle has side length 12. What is the height of the triangle? Express your answer in simplified radical form.
+\end{enumerate}
+
+\subsection*{Part C: Converse and Classification}
+\begin{enumerate}
+  \item A triangle has sides of length 9, 40, and 41. Is it a right triangle?
+  \item A triangle has sides of length 7, 10, and 13. Is it a right triangle?
+  \item A triangle has sides of length 20, 21, and 29. Is it a right triangle?
+  \item The lengths 14, 48, and 50 form a triangle. Is this triangle a right triangle?
+  \item A triangle has sides of length \(2k\), \(k^2 - 1\), and \(k^2 + 1\), where \(k > 1\). Show that these always form a right triangle by verifying the Pythagorean relationship. For \(k = 4\), what are the three side lengths?
+\end{enumerate}
+
+\subsection*{Part D: Multi-Step Problems}
+\begin{enumerate}
+  \item A right triangle has legs of length 9 and 40. What is the area of the triangle?
+  \item A square has a diagonal of length \(10\sqrt{2}\). What is the side length of the square?
+  \item A 12-foot ladder leans against a wall with its base 5 feet from the wall. How high up the wall does the ladder reach, in feet?
+  \item The two diagonals of a rhombus have lengths 10 and 24. What is the length of each side of the rhombus?
+  \item A right triangle has a hypotenuse of 50 and one leg of 30. What is the perimeter of the triangle?
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \item A cable runs from the top of a 45-foot utility pole to a point on the ground 28 feet from the base of the pole. What is the length of the cable, in feet?
+  \item A rectangular television screen has a width of 48 inches and a diagonal of 52 inches. What is the height of the screen, in inches?
+  \item A ramp in the shape of a 30-60-90 triangle rises to a platform that is 4 feet above the ground. What is the length, in feet, of the ramp (the hypotenuse)?
+  \item A square courtyard has an area of 200 square meters. A path runs diagonally from one corner to the opposite corner. What is the length of the path, in meters?
+  \item A ship sails 24 miles due north and then 10 miles due east. What is the shortest distance, in miles, between the ship's starting point and its final position?
+\end{enumerate}
+
+\newpage
+
+\section*{Answer Key and Solutions: The Pythagorean Theorem and Special Right Triangles}
+
+\subsection*{Part A Solutions: Pythagorean Theorem Basics}
+\begin{enumerate}
+  \item \(c^2 = 5^2 + 12^2 = 25 + 144 = 169\), so \(c = 13\). (This is the \(5\text{-}12\text{-}13\) triple.)
+
+  \(\boxed{13}\)
+
+  \item \(a^2 + 7^2 = 25^2 \implies a^2 = 625 - 49 = 576 \implies a = 24\). (This is the \(7\text{-}24\text{-}25\) triple.)
+
+  \(\boxed{24}\)
+
+  \item \(c^2 = 6^2 + 8^2 = 36 + 64 = 100\), so \(c = 10\). (This is the \(3\text{-}4\text{-}5\) triple scaled by 2.)
+
+  \(\boxed{10}\)
+
+  \item \(a^2 + 16^2 = 20^2 \implies a^2 = 400 - 256 = 144 \implies a = 12\). (This is the \(3\text{-}4\text{-}5\) triple scaled by 4: \(12\text{-}16\text{-}20\).)
+
+  \(\boxed{12}\)
+
+  \item \(c^2 = 15^2 + 20^2 = 225 + 400 = 625\), so \(c = 25\). (This is the \(3\text{-}4\text{-}5\) triple scaled by 5.)
+
+  \(\boxed{25}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Special Right Triangles}
+\begin{enumerate}
+  \item In a 45-45-90 triangle with leg \(s = 6\), the hypotenuse is \(s\sqrt{2} = 6\sqrt{2}\).
+
+  \(\boxed{6\sqrt{2}}\)
+
+  \item The hypotenuse is \(s\sqrt{2} = 14\), so \(s = \dfrac{14}{\sqrt{2}} = \dfrac{14\sqrt{2}}{2} = 7\sqrt{2}\).
+
+  \(\boxed{7\sqrt{2}}\)
+
+  \item In a 30-60-90 triangle, the hypotenuse is \(2s\), where \(s\) is the shortest side (opposite \(30^\circ\)).
+  \[
+  2s = 18 \implies s = 9
+  \]
+
+  \(\boxed{9}\)
+
+  \item The side opposite \(60^\circ\) is \(s\sqrt{3}\), so \(s\sqrt{3} = 5\sqrt{3}\), which gives \(s = 5\). The hypotenuse is \(2s = 10\).
+
+  \(\boxed{10}\)
+
+  \item The height of an equilateral triangle splits it into two 30-60-90 triangles. The base of each is \(\dfrac{12}{2} = 6\) (the side opposite \(30^\circ\)), and the height is the side opposite \(60^\circ\):
+  \[
+  h = 6\sqrt{3}
+  \]
+
+  \(\boxed{6\sqrt{3}}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Converse and Classification}
+\begin{enumerate}
+  \item Check: \(9^2 + 40^2 = 81 + 1600 = 1681\) and \(41^2 = 1681\). Since \(9^2 + 40^2 = 41^2\), it is a right triangle.
+
+  \(\boxed{\text{Yes}}\)
+
+  \item Check: \(7^2 + 10^2 = 49 + 100 = 149\) and \(13^2 = 169\). Since \(149 \neq 169\), it is not a right triangle.
+
+  \(\boxed{\text{No}}\)
+
+  \item Check: \(20^2 + 21^2 = 400 + 441 = 841\) and \(29^2 = 841\). Since \(20^2 + 21^2 = 29^2\), it is a right triangle.
+
+  \(\boxed{\text{Yes}}\)
+
+  \item Check: \(14^2 + 48^2 = 196 + 2304 = 2500\) and \(50^2 = 2500\). Since \(14^2 + 48^2 = 50^2\), it is a right triangle. (This is the \(7\text{-}24\text{-}25\) triple scaled by 2.)
+
+  \(\boxed{\text{Yes}}\)
+
+  \item We need to verify that \((2k)^2 + (k^2 - 1)^2 = (k^2 + 1)^2\).
+  \[
+  (2k)^2 + (k^2 - 1)^2 = 4k^2 + k^4 - 2k^2 + 1 = k^4 + 2k^2 + 1 = (k^2 + 1)^2
+  \]
+  The identity holds for all \(k > 1\), so these always form a right triangle. For \(k = 4\): the sides are \(2(4) = 8\), \(16 - 1 = 15\), and \(16 + 1 = 17\).
+
+  \(\boxed{8, 15, 17}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Multi-Step Problems}
+\begin{enumerate}
+  \item The area of a right triangle is \(\dfrac{1}{2} \cdot \text{leg}_1 \cdot \text{leg}_2 = \dfrac{1}{2}(9)(40) = 180\).
+
+  \(\boxed{180}\)
+
+  \item A square's diagonal and side are related by the 45-45-90 ratio: diagonal \(= s\sqrt{2}\). So \(s\sqrt{2} = 10\sqrt{2}\), which gives \(s = 10\).
+
+  \(\boxed{10}\)
+
+  \item The ladder, wall, and ground form a right triangle with hypotenuse 12 and one leg 5.
+  \[
+  h^2 + 5^2 = 12^2 \implies h^2 = 144 - 25 = 119 \implies h = \sqrt{119}
+  \]
+  Since \(\sqrt{119}\) is not a clean number, let us verify: this is not a standard Pythagorean triple. The ladder reaches \(\sqrt{119}\) feet up the wall. As a decimal, this is approximately \(10.9\) feet.
+
+  \(\boxed{\sqrt{119}}\)
+
+  \item The diagonals of a rhombus bisect each other at right angles. Each half-diagonal has length \(\dfrac{10}{2} = 5\) and \(\dfrac{24}{2} = 12\). Each side of the rhombus is the hypotenuse of a right triangle with legs 5 and 12.
+  \[
+  s^2 = 5^2 + 12^2 = 25 + 144 = 169 \implies s = 13
+  \]
+
+  \(\boxed{13}\)
+
+  \item First find the missing leg: \(a^2 + 30^2 = 50^2 \implies a^2 = 2500 - 900 = 1600 \implies a = 40\). (This is the \(3\text{-}4\text{-}5\) triple scaled by 10.)
+  \[
+  P = 30 + 40 + 50 = 120
+  \]
+
+  \(\boxed{120}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \item The pole, ground, and cable form a right triangle with legs 45 and 28.
+  \[
+  c^2 = 45^2 + 28^2 = 2025 + 784 = 2809 \implies c = 53
+  \]
+
+  The cable is \(\boxed{53}\) feet long.
+
+  \item Let the height be \(h\). Then \(48^2 + h^2 = 52^2\).
+  \[
+  h^2 = 2704 - 2304 = 400 \implies h = 20
+  \]
+
+  The height is \(\boxed{20}\) inches.
+
+  \item The platform height of 4 feet is the side opposite the \(30^\circ\) angle (the shortest side) in the 30-60-90 triangle. The hypotenuse is twice the shortest side.
+  \[
+  \text{ramp length} = 2 \times 4 = 8
+  \]
+
+  The ramp is \(\boxed{8}\) feet long.
+
+  \item The side length of the square is \(s = \sqrt{200} = 10\sqrt{2}\). The diagonal of a square is \(s\sqrt{2} = 10\sqrt{2} \cdot \sqrt{2} = 10 \cdot 2 = 20\).
+
+  \(\boxed{20}\)
+
+  \item The north and east directions are perpendicular, forming a right triangle with legs 24 and 10.
+  \[
+  d^2 = 24^2 + 10^2 = 576 + 100 = 676 \implies d = 26
+  \]
+
+  The shortest distance is \(\boxed{26}\) miles.
+\end{enumerate}
+
+\ReflectionPage{Unit 8, Topic 4}{https://www.scotchegg.co}
+
+\end{document}

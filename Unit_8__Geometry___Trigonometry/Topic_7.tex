@@ -1,0 +1,387 @@
+\documentclass[14pt]{extarticle}
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 8: Geometry and Trigonometry} \\[6pt]
+    \Large \textbf{Topic 7: Area, Perimeter, and Volume}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+This topic covers the area and perimeter formulas for common two-dimensional shapes, plus the surface area and volume formulas for three-dimensional solids. The SAT provides most of these formulas on the reference sheet, but you should know them well enough that you do not need to look them up under time pressure.
+
+\textbf{Two-dimensional shapes:}
+
+The \textbf{area of a rectangle} is \(A = lw\), and its \textbf{perimeter} is \(P = 2l + 2w\). A \textbf{square} with side \(s\) has area \(s^2\) and perimeter \(4s\).
+
+The \textbf{area of a triangle} is:
+\[
+A = \frac{1}{2}bh
+\]
+where \(b\) is the base and \(h\) is the height (the perpendicular distance from the base to the opposite vertex). Any side can serve as the base, as long as the height is measured perpendicular to it.
+
+The \textbf{area of a parallelogram} is \(A = bh\), where \(h\) is the perpendicular height, not the slant side. The \textbf{area of a trapezoid} is:
+\[
+A = \frac{1}{2}(b_1 + b_2)h
+\]
+where \(b_1\) and \(b_2\) are the two parallel sides (bases) and \(h\) is the perpendicular height between them.
+
+\textbf{Three-dimensional solids:}
+
+A \textbf{rectangular prism} (box) with length \(l\), width \(w\), and height \(h\) has volume \(V = lwh\) and surface area \(SA = 2(lw + lh + wh)\).
+
+A \textbf{cylinder} with radius \(r\) and height \(h\) has:
+\[
+V = \pi r^2 h, \qquad SA = 2\pi r^2 + 2\pi r h
+\]
+
+A \textbf{cone} with radius \(r\) and height \(h\) has:
+\[
+V = \frac{1}{3}\pi r^2 h
+\]
+The volume of a cone is exactly one-third the volume of a cylinder with the same base and height.
+
+A \textbf{sphere} with radius \(r\) has:
+\[
+V = \frac{4}{3}\pi r^3, \qquad SA = 4\pi r^2
+\]
+
+A \textbf{pyramid} with a rectangular base of area \(B\) and height \(h\) has:
+\[
+V = \frac{1}{3}Bh
+\]
+Like a cone, a pyramid's volume is one-third of the prism with the same base and height.
+
+On the SAT, volume problems often require you to solve for a dimension (radius, height, or side length) given the volume, rather than simply computing the volume from given dimensions. This means being comfortable rearranging these formulas.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Calculate area and perimeter of rectangles, triangles, parallelograms, and trapezoids.
+  \item Calculate the volume of prisms, cylinders, cones, spheres, and pyramids.
+  \item Solve for an unknown dimension given the area or volume.
+  \item Combine multiple shapes or solids (composite figures) to find total area or volume.
+  \item Apply area and volume formulas in word-problem contexts involving real-world measurements.
+\end{itemize}
+
+\section*{Example 1: Area of a Trapezoid}
+
+A trapezoid has parallel sides of length 8 and 14, and a height of 5. What is its area?
+
+\textbf{Step 1:} Apply the trapezoid area formula.
+\[
+A = \frac{1}{2}(b_1 + b_2)h = \frac{1}{2}(8 + 14)(5) = \frac{1}{2}(22)(5) = 55
+\]
+
+The area is \(\boxed{55}\).
+
+\section*{Example 2: Volume of a Cylinder}
+
+A cylindrical water tank has a radius of 4 feet and a height of 10 feet. What is the volume of the tank? Express your answer in terms of \(\pi\).
+
+\textbf{Step 1:} Apply the cylinder volume formula.
+\[
+V = \pi r^2 h = \pi(4)^2(10) = 160\pi
+\]
+
+The volume is \(\boxed{160\pi}\) cubic feet.
+
+\section*{Example 3: Solving for a Dimension}
+
+A cone has a volume of \(48\pi\) cubic centimeters and a radius of 4 cm. What is the height of the cone?
+
+\textbf{Step 1:} Substitute into the volume formula and solve for \(h\).
+\[
+\frac{1}{3}\pi r^2 h = 48\pi \implies \frac{1}{3}\pi(16)h = 48\pi
+\]
+\[
+\frac{16\pi h}{3} = 48\pi \implies 16h = 144 \implies h = 9
+\]
+
+The height is \(\boxed{9}\) cm.
+
+\section*{Example 4: Volume of a Sphere}
+
+A basketball has a diameter of 9.4 inches. What is the volume of the basketball, to the nearest cubic inch?
+
+\textbf{Step 1:} The radius is \(\dfrac{9.4}{2} = 4.7\) inches.
+
+\textbf{Step 2:} Apply the sphere volume formula.
+\[
+V = \frac{4}{3}\pi(4.7)^3 = \frac{4}{3}\pi(103.823) \approx \frac{4}{3}(326.01) \approx 434.68
+\]
+
+To the nearest cubic inch, the volume is \(\boxed{435}\).
+
+\section*{Example 5: Composite Figure}
+
+A rectangular room is 12 feet long, 10 feet wide, and 8 feet tall. What is the total surface area of the four walls (not including the floor or ceiling)?
+
+\textbf{Step 1:} The four walls consist of two pairs of rectangles. Two walls are \(12 \times 8\) and two walls are \(10 \times 8\).
+\[
+SA_{\text{walls}} = 2(12)(8) + 2(10)(8) = 192 + 160 = 352
+\]
+
+The total wall area is \(\boxed{352}\) square feet.
+
+\section*{Example 6: Working Backward from Volume}
+
+A rectangular prism has a volume of 360 cubic inches. Its length is 12 inches and its width is 6 inches. What is the height?
+
+\textbf{Step 1:} Substitute and solve.
+\[
+V = lwh \implies 360 = (12)(6)h \implies 360 = 72h \implies h = 5
+\]
+
+The height is \(\boxed{5}\) inches.
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Cones and pyramids have volume equal to \(\dfrac{1}{3}\) of the corresponding prism or cylinder with the same base and height. Remembering this ``one-third'' relationship prevents formula mix-ups.
+  \item When a problem gives you the volume or area and asks for a dimension, substitute everything you know into the formula and solve the resulting equation. This is algebra, not geometry, and it is where most errors happen.
+  \item For composite figures, break the shape into simpler pieces, compute each area or volume separately, and then add (or subtract, if one shape is removed from another).
+  \item The SAT reference sheet provides these formulas, but knowing them cold saves valuable time. In particular, memorize the sphere formulas \(V = \dfrac{4}{3}\pi r^3\) and \(SA = 4\pi r^2\), since looking them up costs the most time under pressure.
+\end{itemize}
+
+\newpage
+
+\section*{Practice Questions: Area, Perimeter, and Volume}
+
+\subsection*{Part A: Two-Dimensional Figures}
+\begin{enumerate}
+  \item A rectangle has a length of 15 and a width of 8. What is its perimeter?
+  \item A triangle has a base of 12 and a height of 9. What is its area?
+  \item A parallelogram has a base of 20 cm and a perpendicular height of 7 cm. What is its area, in square centimeters?
+  \item A trapezoid has parallel sides of length 6 and 10, and a height of 8. What is its area?
+  \item A square has a perimeter of 52. What is its area?
+\end{enumerate}
+
+\subsection*{Part B: Volume of Prisms and Cylinders}
+\begin{enumerate}
+  \item A rectangular prism has dimensions 5 cm by 8 cm by 12 cm. What is its volume, in cubic centimeters?
+  \item A cylinder has a radius of 3 inches and a height of 14 inches. What is its volume, in cubic inches? Express your answer in terms of \(\pi\).
+  \item A cube has a volume of 343 cubic feet. What is the length of one edge, in feet?
+  \item A cylindrical container has a diameter of 10 cm and a height of 20 cm. What is the volume, in cubic centimeters? Express your answer in terms of \(\pi\).
+  \item A rectangular prism has a volume of 600 cubic units. Its length is 15 and its height is 8. What is the width?
+\end{enumerate}
+
+\subsection*{Part C: Cones, Spheres, and Pyramids}
+\begin{enumerate}
+  \item A cone has a radius of 5 and a height of 12. What is its volume? Express your answer in terms of \(\pi\).
+  \item A sphere has a radius of 6. What is its volume? Express your answer in terms of \(\pi\).
+  \item A square pyramid has a base with side length 10 and a height of 9. What is its volume?
+  \item A sphere has a volume of \(\dfrac{256\pi}{3}\) cubic units. What is the radius?
+  \item A cone and a cylinder have the same radius and the same height. If the volume of the cylinder is \(150\pi\), what is the volume of the cone? Express your answer in terms of \(\pi\).
+\end{enumerate}
+
+\subsection*{Part D: Multi-Step and Composite Figures}
+\begin{enumerate}
+  \item A rectangular garden measures 20 m by 30 m. A path 2 m wide runs around the outside of the garden. What is the area, in square meters, of the path alone?
+  \item A cylinder has a radius of 5 and a height of 10. What is the total surface area? Express your answer in terms of \(\pi\).
+  \item A hemisphere (half of a sphere) has a radius of 3. What is its volume? Express your answer in terms of \(\pi\).
+  \item A rectangular box with no lid has dimensions 8 by 6 by 4. What is the total surface area of the five faces?
+  \item An ice cream cone is shaped like a cone with radius 3 cm and height 12 cm, topped with a hemisphere of ice cream with radius 3 cm. What is the total volume of ice cream that the cone can hold plus the hemisphere on top? Express your answer in terms of \(\pi\).
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \item A cylindrical grain silo has a diameter of 12 feet and a height of 30 feet. How many cubic feet of grain can the silo hold? Express your answer in terms of \(\pi\).
+  \item A spherical balloon has a radius of 5 inches. If the radius is doubled to 10 inches, by what factor does the volume increase?
+  \item A trapezoidal cross-section of a drainage ditch has parallel sides of 3 feet and 7 feet and a depth of 4 feet. If the ditch is 100 feet long, what is the volume of the ditch, in cubic feet?
+  \item A cone-shaped paper cup has a diameter of 8 cm and a height of 12 cm. What is the volume of the cup, in cubic centimeters? Express your answer in terms of \(\pi\).
+  \item A rectangular storage container is 2 feet long, 1.5 feet wide, and 1 foot tall. Water fills the container to a height of 0.8 feet. What is the volume, in cubic feet, of the water in the container?
+\end{enumerate}
+
+\newpage
+
+\section*{Answer Key and Solutions: Area, Perimeter, and Volume}
+
+\subsection*{Part A Solutions: Two-Dimensional Figures}
+\begin{enumerate}
+  \item \(P = 2(15) + 2(8) = 30 + 16 = 46\).
+
+  \(\boxed{46}\)
+
+  \item \(A = \dfrac{1}{2}(12)(9) = 54\).
+
+  \(\boxed{54}\)
+
+  \item \(A = bh = (20)(7) = 140\).
+
+  \(\boxed{140}\)
+
+  \item \(A = \dfrac{1}{2}(6 + 10)(8) = \dfrac{1}{2}(16)(8) = 64\).
+
+  \(\boxed{64}\)
+
+  \item The side length is \(\dfrac{52}{4} = 13\). The area is \(13^2 = 169\).
+
+  \(\boxed{169}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Volume of Prisms and Cylinders}
+\begin{enumerate}
+  \item \(V = (5)(8)(12) = 480\).
+
+  \(\boxed{480}\)
+
+  \item \(V = \pi(3)^2(14) = 126\pi\).
+
+  \(\boxed{126\pi}\)
+
+  \item \(s^3 = 343 \implies s = 7\).
+
+  \(\boxed{7}\)
+
+  \item The radius is \(\dfrac{10}{2} = 5\). Then \(V = \pi(5)^2(20) = 500\pi\).
+
+  \(\boxed{500\pi}\)
+
+  \item \(V = lwh \implies 600 = (15)(w)(8) \implies 600 = 120w \implies w = 5\).
+
+  \(\boxed{5}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Cones, Spheres, and Pyramids}
+\begin{enumerate}
+  \item \(V = \dfrac{1}{3}\pi(5)^2(12) = \dfrac{1}{3}(300\pi) = 100\pi\).
+
+  \(\boxed{100\pi}\)
+
+  \item \(V = \dfrac{4}{3}\pi(6)^3 = \dfrac{4}{3}\pi(216) = 288\pi\).
+
+  \(\boxed{288\pi}\)
+
+  \item The base area is \(10^2 = 100\). The volume is \(V = \dfrac{1}{3}(100)(9) = 300\).
+
+  \(\boxed{300}\)
+
+  \item Set up the equation: \(\dfrac{4}{3}\pi r^3 = \dfrac{256\pi}{3}\). Divide both sides by \(\pi\):
+  \[
+  \frac{4}{3}r^3 = \frac{256}{3} \implies 4r^3 = 256 \implies r^3 = 64 \implies r = 4
+  \]
+
+  \(\boxed{4}\)
+
+  \item The volume of the cone is \(\dfrac{1}{3}\) the volume of the cylinder: \(\dfrac{1}{3}(150\pi) = 50\pi\).
+
+  \(\boxed{50\pi}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Multi-Step and Composite Figures}
+\begin{enumerate}
+  \item The outer rectangle (garden plus path) measures \(20 + 2(2) = 24\) m by \(30 + 2(2) = 34\) m. The path area is the outer area minus the garden area:
+  \[
+  (24)(34) - (20)(30) = 816 - 600 = 216
+  \]
+
+  \(\boxed{216}\)
+
+  \item The total surface area is two circular bases plus the lateral surface:
+  \[
+  SA = 2\pi r^2 + 2\pi r h = 2\pi(25) + 2\pi(5)(10) = 50\pi + 100\pi = 150\pi
+  \]
+
+  \(\boxed{150\pi}\)
+
+  \item A hemisphere is half a sphere:
+  \[
+  V = \frac{1}{2} \cdot \frac{4}{3}\pi r^3 = \frac{2}{3}\pi(3)^3 = \frac{2}{3}\pi(27) = 18\pi
+  \]
+
+  \(\boxed{18\pi}\)
+
+  \item The box has five faces (no lid). The bottom is \(8 \times 6 = 48\). Two sides are \(8 \times 4 = 32\) each. Two ends are \(6 \times 4 = 24\) each.
+  \[
+  SA = 48 + 2(32) + 2(24) = 48 + 64 + 48 = 160
+  \]
+
+  \(\boxed{160}\)
+
+  \item Volume of the cone: \(\dfrac{1}{3}\pi(3)^2(12) = \dfrac{1}{3}(108\pi) = 36\pi\).
+
+  Volume of the hemisphere: \(\dfrac{2}{3}\pi(3)^3 = \dfrac{2}{3}(27\pi) = 18\pi\).
+
+  Total: \(36\pi + 18\pi = 54\pi\).
+
+  \(\boxed{54\pi}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \item The radius is \(\dfrac{12}{2} = 6\) feet.
+  \[
+  V = \pi(6)^2(30) = 1080\pi
+  \]
+
+  \(\boxed{1080\pi}\)
+
+  \item Original volume: \(V_1 = \dfrac{4}{3}\pi(5)^3 = \dfrac{500\pi}{3}\).
+
+  New volume: \(V_2 = \dfrac{4}{3}\pi(10)^3 = \dfrac{4000\pi}{3}\).
+
+  The factor is \(\dfrac{V_2}{V_1} = \dfrac{4000}{500} = 8\). (In general, doubling the radius multiplies the volume by \(2^3 = 8\).)
+
+  \(\boxed{8}\)
+
+  \item The cross-sectional area is a trapezoid: \(A = \dfrac{1}{2}(3 + 7)(4) = 20\) square feet. The volume is the cross-sectional area times the length:
+  \[
+  V = 20 \times 100 = 2000
+  \]
+
+  \(\boxed{2000}\)
+
+  \item The radius is \(\dfrac{8}{2} = 4\) cm.
+  \[
+  V = \frac{1}{3}\pi(4)^2(12) = \frac{1}{3}(192\pi) = 64\pi
+  \]
+
+  \(\boxed{64\pi}\)
+
+  \item The water fills a rectangular region \(2 \times 1.5 \times 0.8\):
+  \[
+  V = (2)(1.5)(0.8) = 2.4
+  \]
+
+  \(\boxed{2.4}\)
+\end{enumerate}
+
+\ReflectionPage{Unit 8, Topic 7}{https://www.scotchegg.co}
+
+\end{document}
