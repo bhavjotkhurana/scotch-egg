@@ -1,5 +1,6 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import logoImage from '@/assets/logo.png';
+import Logo from '@/components/Logo.jsx';
+import LogoIcon from '@/components/LogoIcon.jsx';
 
 const NAV_LINKS = [
   { to: '/', label: 'Practice', match: ['/', '/practice'] },
@@ -23,12 +24,9 @@ export default function Layout() {
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200 shadow-sm transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link to="/" className="flex items-center gap-3 group">
-              <img
-                src={logoImage}
-                alt="Scotch Egg"
-                className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
-              />
+            <Link to="/" className="flex flex-shrink-0 items-center gap-3 group">
+              <LogoIcon className="h-9 w-9 sm:hidden transition-transform duration-300 group-hover:scale-105" />
+              <Logo className="hidden h-10 w-auto sm:block transition-transform duration-300 group-hover:scale-105" />
               <span className="sr-only">Scotch Egg Home</span>
             </Link>
 
@@ -85,6 +83,8 @@ export default function Layout() {
               bhavjotskhurana@gmail.com
             </a>
           </div>
+
+          <Logo className="mx-auto mt-8 h-9 w-auto" />
         </div>
       </footer>
     </div>
