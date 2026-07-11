@@ -1,0 +1,357 @@
+\documentclass[14pt]{extarticle}
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 9: Multi-Step and Mixed Problems} \\[6pt]
+    \Large \textbf{Topic 4: Multi-Skill Geometry Word Problems}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+The hardest geometry questions on the SAT combine multiple geometry skills, or mix geometry with algebra, into a single multi-step problem. Rather than introducing new formulas, this topic trains you to recognize which tools to pull from your toolkit and how to chain them together.
+
+Common combinations include:
+
+\textbf{Pythagorean Theorem + Area:} Many problems ask for the area of a triangle or other shape, but first you need to find a missing dimension using the Pythagorean Theorem. For example, you might be given the hypotenuse and one leg of a right triangle and asked for the area, which requires finding the other leg first.
+
+\textbf{Similar Triangles + Trigonometry:} A problem might set up a proportion from similar triangles and then ask you to use a trig ratio to find an angle, or vice versa. Shadow and height problems often combine these.
+
+\textbf{Coordinate Geometry + Distance/Midpoint:} Problems on the coordinate plane might ask you to find the perimeter or area of a shape whose vertices are given as coordinates. This requires the distance formula \(d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\) and sometimes the midpoint formula.
+
+\textbf{Circles + Triangles:} A right triangle inscribed in a circle, or a triangle with a circumscribed or inscribed circle, combines triangle properties with circle properties (especially the inscribed angle theorem and the relationship between a diameter and a right angle).
+
+\textbf{Volume + Algebra:} A word problem might describe a container whose dimensions are given in terms of a variable, and ask you to find the variable given the volume. This turns a volume formula into an algebraic equation.
+
+The strategy for all of these is the same: read the problem carefully, identify what you know and what you need, figure out which intermediate quantity bridges the gap, and then apply the right formula or theorem at each step.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Identify which geometry tools (Pythagorean Theorem, trig ratios, similarity, area/volume formulas) a problem requires before beginning.
+  \item Use one formula's result as the input for the next step (chaining calculations).
+  \item Set up algebraic equations from geometric relationships and solve for unknowns.
+  \item Apply coordinate geometry (distance, midpoint, slope) to find areas and perimeters of shapes on the plane.
+  \item Combine circle and triangle properties in problems involving inscribed or circumscribed figures.
+\end{itemize}
+
+\section*{Example 1: Pythagorean Theorem + Area}
+
+A right triangle has a hypotenuse of 25 and one leg of 7. What is the area of the triangle?
+
+\textbf{Step 1:} Find the missing leg using the Pythagorean Theorem.
+\[
+a^2 + 7^2 = 25^2 \implies a^2 = 625 - 49 = 576 \implies a = 24
+\]
+
+\textbf{Step 2:} Calculate the area.
+\[
+A = \frac{1}{2}(7)(24) = 84
+\]
+
+The area is \(\boxed{84}\).
+
+\section*{Example 2: Coordinate Geometry Area}
+
+A triangle has vertices at \(A(1, 2)\), \(B(7, 2)\), and \(C(4, 8)\). What is the area of the triangle?
+
+\textbf{Step 1:} Notice that \(A\) and \(B\) have the same \(y\)-coordinate, so \(AB\) is a horizontal base. Its length is \(7 - 1 = 6\).
+
+\textbf{Step 2:} The height is the vertical distance from \(C\) to line \(AB\), which is \(8 - 2 = 6\).
+
+\textbf{Step 3:} Area \(= \dfrac{1}{2}(6)(6) = 18\).
+
+The area is \(\boxed{18}\).
+
+\section*{Example 3: Similar Triangles + Area Ratio}
+
+Two similar triangles have corresponding sides in the ratio \(3:5\). If the area of the smaller triangle is 27 square units, what is the area of the larger triangle?
+
+\textbf{Step 1:} The ratio of areas is the square of the ratio of sides.
+\[
+\frac{A_{\text{small}}}{A_{\text{large}}} = \left(\frac{3}{5}\right)^2 = \frac{9}{25}
+\]
+
+\textbf{Step 2:} Solve for the larger area.
+\[
+\frac{27}{A_{\text{large}}} = \frac{9}{25} \implies A_{\text{large}} = \frac{27 \times 25}{9} = 75
+\]
+
+The area of the larger triangle is \(\boxed{75}\).
+
+\section*{Example 4: Volume with Algebraic Dimensions}
+
+A rectangular box has a length of \((x + 2)\), a width of \(x\), and a height of 3. If the volume is 72 cubic units, what is the value of \(x\)?
+
+\textbf{Step 1:} Set up the volume equation.
+\[
+3 \cdot x \cdot (x + 2) = 72 \implies 3x^2 + 6x = 72
+\]
+
+\textbf{Step 2:} Simplify and solve.
+\[
+x^2 + 2x = 24 \implies x^2 + 2x - 24 = 0
+\]
+\[
+(x + 6)(x - 4) = 0
+\]
+Since \(x\) must be positive, \(x = 4\).
+
+The value of \(x\) is \(\boxed{4}\).
+
+\section*{Example 5: Circle + Right Triangle}
+
+A circle has a diameter of 10. A right triangle is inscribed in the circle with the hypotenuse as the diameter. If one leg of the triangle is 6, what is the area of the triangle?
+
+\textbf{Step 1:} The hypotenuse equals the diameter: 10. Find the other leg.
+\[
+a^2 + 6^2 = 10^2 \implies a^2 = 64 \implies a = 8
+\]
+
+\textbf{Step 2:} Area \(= \dfrac{1}{2}(6)(8) = 24\).
+
+The area is \(\boxed{24}\).
+
+\section*{Example 6: Trig + Perimeter}
+
+In a right triangle, one acute angle is \(30^\circ\) and the side opposite that angle is 5. What is the perimeter of the triangle?
+
+\textbf{Step 1:} In a 30-60-90 triangle, the side opposite \(30^\circ\) is the shortest side, \(s = 5\). The hypotenuse is \(2s = 10\), and the side opposite \(60^\circ\) is \(s\sqrt{3} = 5\sqrt{3}\).
+
+\textbf{Step 2:} Perimeter \(= 5 + 10 + 5\sqrt{3} = 15 + 5\sqrt{3}\).
+
+The perimeter is \(\boxed{15 + 5\sqrt{3}}\).
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Most multi-skill geometry problems have a clear two-step structure: use one tool to find an intermediate value, then use a second tool to answer the question. Identify the intermediate value before you start computing.
+  \item When coordinates are given, look for horizontal or vertical sides (equal \(x\)- or \(y\)-coordinates) to simplify distance and area calculations.
+  \item If a triangle is inscribed in a circle with one side as a diameter, the angle opposite the diameter is \(90^\circ\). This is the most common circle-triangle combination on the SAT.
+  \item When dimensions involve variables, set up the formula, substitute, and solve the resulting equation. These become algebra problems once the geometry setup is done.
+\end{itemize}
+
+\newpage
+
+\section*{Practice Questions: Multi-Skill Geometry Word Problems}
+
+\subsection*{Part A: Pythagorean Theorem Combined with Area or Perimeter}
+\begin{enumerate}
+  \item A right triangle has legs of length 11 and 60. What is the perimeter of the triangle?
+  \item An isosceles triangle has two equal sides of length 13 and a base of length 10. What is the area of the triangle?
+  \item A rectangle has a diagonal of length 17 and a width of 8. What is the area of the rectangle?
+  \item A rhombus has diagonals of length 16 and 30. What is its area?
+  \item A right triangle has a hypotenuse of 20 and one leg of 12. A square is drawn on the other leg. What is the area of the square?
+\end{enumerate}
+
+\subsection*{Part B: Coordinate Geometry Applications}
+\begin{enumerate}
+  \item A triangle has vertices at \((0, 0)\), \((8, 0)\), and \((3, 6)\). What is the area of the triangle?
+  \item A rectangle has vertices at \((1, 2)\), \((7, 2)\), \((7, 5)\), and \((1, 5)\). What is the length of a diagonal of the rectangle?
+  \item The endpoints of a diameter of a circle are \((2, -1)\) and \((8, 7)\). What is the area of the circle? Express your answer in terms of \(\pi\).
+  \item A line segment connects \((-3, 1)\) to \((5, 7)\). What is the length of the segment?
+  \item A parallelogram has vertices at \((0, 0)\), \((6, 0)\), \((8, 4)\), and \((2, 4)\). What is the area of the parallelogram?
+\end{enumerate}
+
+\subsection*{Part C: Combined Shape and Formula Problems}
+\begin{enumerate}
+  \item A cone has a slant height of 13 and a radius of 5. What is the volume of the cone? Express your answer in terms of \(\pi\).
+  \item An equilateral triangle has a perimeter of 36. What is its area? Express your answer in simplified radical form.
+  \item A cylinder has a volume of \(250\pi\) cubic cm. If its height equals its diameter, what is the radius, in centimeters?
+  \item A rectangular prism has a square base with side length \(s\) and a height of 8. If the total surface area is 160, what is \(s\)?
+  \item A sector of a circle has an arc length of \(6\pi\) and a radius of 9. What is the area of the sector? Express your answer in terms of \(\pi\).
+\end{enumerate}
+
+\subsection*{Part D: Multi-Concept Geometry Reasoning}
+\begin{enumerate}
+  \item A 30-60-90 triangle has a hypotenuse of 14. What is the area of the triangle? Express your answer in simplified radical form.
+  \item A circle is inscribed in a square. The area of the square is 64. What is the area of the circle? Express your answer in terms of \(\pi\).
+  \item A right triangle is inscribed in a circle of radius 10. The hypotenuse is a diameter of the circle and one leg is 12. What is the perimeter of the triangle?
+  \item Two similar rectangles have perimeters in the ratio \(2:5\). If the area of the smaller rectangle is 18 square units, what is the area of the larger rectangle?
+  \item A cylinder has a radius of 4 and a height of 9. A cone with the same base and height is removed from the cylinder. What is the volume of the remaining solid? Express your answer in terms of \(\pi\).
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \item A triangular garden has vertices at coordinates \((0, 0)\), \((10, 0)\), and \((6, 8)\). A fence costs \(\$12\) per meter. What is the total cost of fencing the garden, to the nearest dollar?
+  \item A water tank is a cylinder with radius 3 feet and height 8 feet. Water fills the tank to \(75\%\) of its capacity. What is the volume of water in the tank, in cubic feet? Express your answer in terms of \(\pi\).
+  \item A ramp forms a right triangle with the ground. The ramp makes a \(30^\circ\) angle with the ground and rises to a height of 6 feet. What is the horizontal distance, in feet, covered by the ramp? Express your answer in simplified radical form.
+  \item A rectangular box has a length twice its width and a height of 5. If the volume of the box is 640 cubic units, what is the width?
+  \item A park has the shape of a semicircle with a diameter of 40 meters. A path runs along the curved edge and the straight edge (diameter). What is the total length of the path, in meters? Express your answer in terms of \(\pi\).
+\end{enumerate}
+
+\newpage
+
+\section*{Answer Key and Solutions: Multi-Skill Geometry Word Problems}
+
+\subsection*{Part A Solutions: Pythagorean Theorem Combined with Area or Perimeter}
+\begin{enumerate}
+  \item First find the hypotenuse: \(c^2 = 11^2 + 60^2 = 121 + 3600 = 3721\), so \(c = 61\). Perimeter: \(11 + 60 + 61 = 132\).
+
+  \(\boxed{132}\)
+
+  \item The height bisects the base, creating two right triangles with legs \(h\) and 5 and hypotenuse 13. \(h^2 + 25 = 169 \implies h = 12\). Area: \(\dfrac{1}{2}(10)(12) = 60\).
+
+  \(\boxed{60}\)
+
+  \item Let the length be \(l\). Then \(l^2 + 8^2 = 17^2 \implies l^2 = 289 - 64 = 225 \implies l = 15\). Area: \(15 \times 8 = 120\).
+
+  \(\boxed{120}\)
+
+  \item The area of a rhombus is \(\dfrac{1}{2} d_1 d_2 = \dfrac{1}{2}(16)(30) = 240\).
+
+  \(\boxed{240}\)
+
+  \item The other leg: \(a^2 + 12^2 = 20^2 \implies a^2 = 256 \implies a = 16\). The square on that leg has area \(16^2 = 256\).
+
+  \(\boxed{256}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Coordinate Geometry Applications}
+\begin{enumerate}
+  \item The base along the \(x\)-axis has length 8. The height is the \(y\)-coordinate of the third vertex: 6. Area: \(\dfrac{1}{2}(8)(6) = 24\).
+
+  \(\boxed{24}\)
+
+  \item Length: \(7 - 1 = 6\). Width: \(5 - 2 = 3\). Diagonal: \(\sqrt{6^2 + 3^2} = \sqrt{36 + 9} = \sqrt{45} = 3\sqrt{5}\).
+
+  \(\boxed{3\sqrt{5}}\)
+
+  \item Diameter: \(\sqrt{(8-2)^2 + (7-(-1))^2} = \sqrt{36 + 64} = \sqrt{100} = 10\). Radius: 5. Area: \(\pi(5)^2 = 25\pi\).
+
+  \(\boxed{25\pi}\)
+
+  \item \(d = \sqrt{(5-(-3))^2 + (7-1)^2} = \sqrt{64 + 36} = \sqrt{100} = 10\).
+
+  \(\boxed{10}\)
+
+  \item The base is 6 (along the \(x\)-axis from \((0,0)\) to \((6,0)\)). The height is 4 (the \(y\)-coordinate of the upper vertices). Area: \(6 \times 4 = 24\).
+
+  \(\boxed{24}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Combined Shape and Formula Problems}
+\begin{enumerate}
+  \item First find the height using the slant height and radius: \(h^2 + 5^2 = 13^2 \implies h^2 = 144 \implies h = 12\). Volume: \(\dfrac{1}{3}\pi(5)^2(12) = 100\pi\).
+
+  \(\boxed{100\pi}\)
+
+  \item Each side is \(36 \div 3 = 12\). The height of an equilateral triangle with side \(s\) is \(\dfrac{s\sqrt{3}}{2} = 6\sqrt{3}\). Area: \(\dfrac{1}{2}(12)(6\sqrt{3}) = 36\sqrt{3}\).
+
+  \(\boxed{36\sqrt{3}}\)
+
+  \item The height equals the diameter: \(h = 2r\). Volume: \(\pi r^2(2r) = 2\pi r^3 = 250\pi\), so \(r^3 = 125\). Then \(r = 5\).
+
+  \(\boxed{5}\)
+
+  \item Surface area: two square bases plus four rectangular faces.
+  \[
+  2s^2 + 4(s)(8) = 160 \implies 2s^2 + 32s = 160 \implies s^2 + 16s - 80 = 0
+  \]
+  Factor: \((s + 20)(s - 4) = 0\). Since \(s > 0\), \(s = 4\).
+
+  (Check: \(2(16) + 4(4)(8) = 32 + 128 = 160\).)
+
+  \(\boxed{4}\)
+
+  \item First find the central angle. Arc length \(= \dfrac{\theta}{360} \cdot 2\pi(9) = 6\pi\). So \(\dfrac{\theta}{360} \cdot 18\pi = 6\pi\), giving \(\dfrac{\theta}{360} = \dfrac{1}{3}\), so \(\theta = 120^\circ\). Sector area: \(\dfrac{120}{360} \cdot \pi(9)^2 = \dfrac{1}{3}(81\pi) = 27\pi\).
+
+  \(\boxed{27\pi}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Multi-Concept Geometry Reasoning}
+\begin{enumerate}
+  \item The shortest side (opposite \(30^\circ\)) is \(\dfrac{14}{2} = 7\). The side opposite \(60^\circ\) is \(7\sqrt{3}\). Area: \(\dfrac{1}{2}(7)(7\sqrt{3}) = \dfrac{49\sqrt{3}}{2}\).
+
+  \(\boxed{\dfrac{49\sqrt{3}}{2}}\)
+
+  \item The side of the square is \(\sqrt{64} = 8\). The inscribed circle has diameter 8, so radius 4. Area: \(\pi(4)^2 = 16\pi\).
+
+  \(\boxed{16\pi}\)
+
+  \item The hypotenuse (diameter) is \(2 \times 10 = 20\). One leg is 12. The other leg: \(a^2 + 144 = 400 \implies a = 16\). Perimeter: \(12 + 16 + 20 = 48\).
+
+  \(\boxed{48}\)
+
+  \item The ratio of areas of similar figures is the square of the ratio of corresponding lengths. Perimeter ratio \(2:5\) means length ratio \(2:5\), so area ratio is \(4:25\).
+  \[
+  \frac{18}{A_{\text{large}}} = \frac{4}{25} \implies A_{\text{large}} = \frac{18 \times 25}{4} = 112.5
+  \]
+
+  \(\boxed{112.5}\)
+
+  \item Cylinder volume: \(\pi(4)^2(9) = 144\pi\). Cone volume: \(\dfrac{1}{3}(144\pi) = 48\pi\). Remaining: \(144\pi - 48\pi = 96\pi\).
+
+  \(\boxed{96\pi}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \item Find each side length.
+
+  Side 1: from \((0,0)\) to \((10,0)\): length \(= 10\).
+
+  Side 2: from \((10,0)\) to \((6,8)\): length \(= \sqrt{(6-10)^2 + (8-0)^2} = \sqrt{16 + 64} = \sqrt{80} = 4\sqrt{5}\).
+
+  Side 3: from \((6,8)\) to \((0,0)\): length \(= \sqrt{36 + 64} = \sqrt{100} = 10\).
+
+  Perimeter: \(10 + 4\sqrt{5} + 10 = 20 + 4\sqrt{5} \approx 20 + 8.944 = 28.944\).
+
+  Cost: \(28.944 \times 12 \approx 347.33\), which rounds to \(\$347\).
+
+  \(\boxed{\$347}\)
+
+  \item Full capacity: \(\pi(3)^2(8) = 72\pi\). At \(75\%\): \(0.75 \times 72\pi = 54\pi\).
+
+  \(\boxed{54\pi}\)
+
+  \item In the 30-60-90 triangle, the height (opposite \(30^\circ\)) is 6, so the shortest side is 6. The horizontal distance is opposite the \(60^\circ\) angle: \(6\sqrt{3}\).
+
+  \(\boxed{6\sqrt{3}}\)
+
+  \item Let the width be \(w\). Length is \(2w\). Volume: \(2w \cdot w \cdot 5 = 10w^2 = 640\). So \(w^2 = 64\) and \(w = 8\).
+
+  \(\boxed{8}\)
+
+  \item The curved edge is half the circumference: \(\dfrac{1}{2} \cdot \pi(40) = 20\pi\). The straight edge is the diameter: 40. Total path: \(20\pi + 40\).
+
+  \(\boxed{20\pi + 40}\)
+\end{enumerate}
+
+\ReflectionPage{Unit 9, Topic 4}{https://www.scotchegg.co}
+
+\end{document}

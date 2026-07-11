@@ -1,0 +1,368 @@
+\documentclass[14pt]{extarticle}
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 9: Multi-Step and Mixed Problems} \\[6pt]
+    \Large \textbf{Topic 5: Comprehensive Mixed Practice}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+This topic is a capstone for Units 1 through 8. Every question draws on at least two distinct skills from different units, mirroring the way the hardest SAT Math questions work. There are no new formulas or techniques here. Instead, the challenge is recognizing which tools to use when a problem does not announce its topic.
+
+On the real Digital SAT, the second math module (the harder one, if you performed well on the first) leans heavily on multi-concept problems. A question might look like a geometry problem at first glance but require setting up a system of equations to solve. Or it might appear to be a straightforward percent question but involve reading data from a table and then applying exponential reasoning. The following strategies will help:
+
+\textbf{Read the whole problem first.} Many students start computing after the first sentence. On multi-step problems, the last sentence often reframes what you need to find, which changes which calculation to do first.
+
+\textbf{Identify the math domains involved.} Ask yourself: is this algebra, geometry, data, or some combination? What formulas or theorems might apply? Narrowing the domain helps you retrieve the right tools.
+
+\textbf{Work in stages.} Find intermediate values one at a time. Label what you find at each step. Many errors on multi-concept problems come from losing track of what a number represents partway through.
+
+\textbf{Check your answer against the question.} After solving, re-read the final question. A common trap is solving for \(x\) when the problem asks for \(2x + 1\), or finding an area when the problem asks for a perimeter.
+
+The practice questions below are organized by difficulty rather than by topic. Parts A and B are moderate, Parts C and D are challenging, and Part E is SAT-hard.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Recognize which math domains and tools a multi-step problem requires, even when the topic is not stated.
+  \item Chain together results from different units (e.g., use algebra to find a dimension, then use geometry to find an area).
+  \item Translate complex word problems into equations or expressions before computing.
+  \item Verify that the final answer addresses what the question actually asks.
+\end{itemize}
+
+\section*{Example 1: Algebra + Geometry}
+
+A rectangle has a perimeter of 34. Its length is 3 more than its width. What is the area of the rectangle?
+
+\textbf{Step 1 (Algebra):} Let the width be \(w\). Then the length is \(w + 3\).
+\[
+2w + 2(w + 3) = 34 \implies 4w + 6 = 34 \implies 4w = 28 \implies w = 7
+\]
+So the length is \(l = 10\).
+
+\textbf{Step 2 (Geometry):} Area \(= 7 \times 10 = 70\).
+
+The area is \(\boxed{70}\).
+
+\section*{Example 2: Data + Percent}
+
+A store tracks daily sales for 5 days: \(\$400\), \(\$520\), \(\$480\), \(\$350\), and one missing day. The mean daily sales for the week was \(\$450\). If the store's weekly target is \(10\%\) more than the actual total sales, what is the weekly target?
+
+\textbf{Step 1 (Data/Mean):} Total sales \(= 5 \times 450 = 2250\). Sum of known days \(= 400 + 520 + 480 + 350 = 1750\). Missing day \(= 2250 - 1750 = 500\).
+
+\textbf{Step 2 (Percent):} The weekly target is \(2250 \times 1.10 = 2475\).
+
+The weekly target is \(\boxed{\$2{,}475}\).
+
+\section*{Example 3: Systems + Functions}
+
+A company's profit function is \(P(x) = -x^2 + 14x - 40\), where \(x\) is the price in dollars. At what price does the company break even (profit equals zero), and what price maximizes the profit?
+
+\textbf{Step 1 (Algebra --- solving a quadratic):} Set \(P(x) = 0\):
+\[
+-x^2 + 14x - 40 = 0 \implies x^2 - 14x + 40 = 0 \implies (x - 4)(x - 10) = 0
+\]
+Break-even prices: \(x = 4\) and \(x = 10\).
+
+\textbf{Step 2 (Functions --- vertex):} The vertex of \(P(x) = -(x^2 - 14x) - 40 = -(x - 7)^2 + 49 - 40 = -(x-7)^2 + 9\) is at \(x = 7\). Maximum profit is \(P(7) = 9\).
+
+Break-even at \(x = \boxed{4}\) and \(x = \boxed{10}\); maximum profit at \(x = \boxed{7}\).
+
+\section*{Example 4: Trigonometry + Area}
+
+In a right triangle, one acute angle is \(30^\circ\) and the hypotenuse is 12. What is the area of the triangle?
+
+\textbf{Step 1 (Trig / Special triangles):} The side opposite \(30^\circ\) is \(\frac{12}{2} = 6\). The side opposite \(60^\circ\) is \(6\sqrt{3}\).
+
+\textbf{Step 2 (Area):} Area \(= \frac{1}{2}(6)(6\sqrt{3}) = 18\sqrt{3}\).
+
+The area is \(\boxed{18\sqrt{3}}\).
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Multi-concept problems are not harder because the individual skills are harder. They are harder because you have to identify which skills to use and in what order.
+  \item Always re-read the final question after solving. Many points are lost by answering a question the problem did not ask.
+  \item If your answer comes out messy (ugly fractions, large decimals) on a problem that seems like it should be clean, re-check your setup before re-checking your arithmetic. A wrong equation produces a wrong answer no matter how carefully you compute.
+  \item When in doubt about where to start, assign a variable to the unknown and write an equation. Translating words to algebra is the single most valuable skill on the SAT.
+\end{itemize}
+
+\newpage
+
+\section*{Practice Questions: Comprehensive Mixed Practice}
+
+\subsection*{Part A: Moderate Multi-Step}
+\begin{enumerate}
+  \item A rectangular garden has a length that is 4 meters more than its width. The area of the garden is 96 square meters. What is the perimeter of the garden, in meters?
+  \item A store sells notebooks for \(\$3\) each and pens for \(\$1.50\) each. A student buys a total of 14 items and spends \(\$30\). How many notebooks did the student buy?
+  \item The mean of five numbers is 18. When a sixth number is added, the mean increases to 20. What is the sixth number?
+  \item A circle has a circumference of \(10\pi\). What is the area of a sector of this circle with a central angle of \(72^\circ\)? Express your answer in terms of \(\pi\).
+  \item A car travels 120 miles in 2 hours. It then travels an additional 90 miles at a speed that is \(25\%\) slower than its original speed. What is the total time for the entire trip, in hours?
+\end{enumerate}
+
+\subsection*{Part B: Moderate-to-Challenging}
+\begin{enumerate}
+  \item In a right triangle, the two legs are in the ratio \(3:4\) and the hypotenuse is 30. What is the area of the triangle?
+  \item A cylindrical tank has a radius of 5 feet. Water is poured in until the tank is filled to a height of \(h\) feet. If the volume of water is \(200\pi\) cubic feet, what is the value of \(h\)?
+  \item A population of 8{,}000 bacteria doubles every 3 hours. What is the population after 12 hours?
+  \item The function \(f(x) = x^2 - 6x + k\) has exactly one zero. What is the value of \(k\)?
+  \item A 20-foot ladder leans against a wall, making a \(60^\circ\) angle with the ground. How high up the wall does the ladder reach, in feet? Express your answer in simplified radical form.
+\end{enumerate}
+
+\subsection*{Part C: Challenging}
+\begin{enumerate}
+  \item A store buys an item for \(\$40\) and marks it up by \(50\%\). During a sale, the item is discounted by \(20\%\). Sales tax of \(8\%\) is then applied. What is the final price the customer pays?
+  \item A triangle has vertices at \((0, 0)\), \((12, 0)\), and \((4, 6)\). What is the perimeter of the triangle? Express your answer in simplified radical form.
+  \item In a class of 30 students, 18 study French, 12 study Spanish, and 5 study both. A student is selected at random. What is the probability that the student studies French or Spanish but not both? Express your answer as a simplified fraction.
+  \item The line \(y = 2x + b\) is tangent to the parabola \(y = x^2 + 3\). What is the value of \(b\)?
+  \item A cone has a volume equal to that of a cylinder with radius 6 and height 4. If the cone has a radius of 6, what is the height of the cone?
+\end{enumerate}
+
+\subsection*{Part D: Challenging-to-Hard}
+\begin{enumerate}
+  \item A rectangular prism has dimensions \(x\), \(x + 2\), and \(x + 4\). If the volume is 480, what is the value of \(x\)?
+  \item A chemist mixes a \(25\%\) acid solution with a \(55\%\) acid solution to get 30 liters of a \(35\%\) acid solution. She then adds pure water to reduce the concentration to \(28\%\). How many liters of water does she add?
+  \item Two similar triangles have areas of 32 and 72 square centimeters. The perimeter of the smaller triangle is 24 cm. What is the perimeter of the larger triangle?
+  \item A ball is dropped from a height of 100 feet. Each bounce reaches \(60\%\) of the previous height. After the third bounce, what height does the ball reach, in feet?
+  \item The function \(f(x) = ax^2 + bx + c\) has a vertex at \((2, -3)\) and passes through the point \((0, 5)\). What is the value of \(a\)?
+\end{enumerate}
+
+\subsection*{Part E: SAT-Hard}
+\begin{enumerate}
+  \item A survey of 400 employees found that \(65\%\) preferred remote work. The margin of error is \(\pm 4\%\). A company policy requires that more than \(60\%\) of employees support remote work before it can be adopted. Based on the survey, can the company conclude that the threshold is met? Answer yes or no, and give the lower bound of the confidence interval.
+  \item A right triangle has legs \(a\) and \(b\) with \(a + b = 14\) and hypotenuse \(c = 10\). What is the area of the triangle?
+  \item A car's value depreciates by \(15\%\) per year. A second car's value depreciates by \(\$2{,}000\) per year. Both cars are worth \(\$20{,}000\) now. After how many years will the first car be worth less than the second car? (Answer with the smallest whole number of years.)
+  \item A sector of a circle has a perimeter of 36 (the two radii plus the arc). If the central angle is \(90^\circ\), what is the radius of the circle? Round to the nearest tenth.
+  \item A rectangular box has a square base. The total surface area is 150 square units. If the height of the box equals twice the side length of the base, find the volume of the box.
+\end{enumerate}
+
+\newpage
+
+\section*{Answer Key and Solutions: Comprehensive Mixed Practice}
+
+\subsection*{Part A Solutions: Moderate Multi-Step}
+\begin{enumerate}
+  \item Let the width be \(w\). Then the length is \(w + 4\), and \(w(w + 4) = 96\).
+  \[
+  w^2 + 4w - 96 = 0 \implies (w + 12)(w - 8) = 0 \implies w = 8
+  \]
+  Length \(= 12\). Perimeter \(= 2(8 + 12) = 40\).
+
+  \(\boxed{40}\)
+
+  \item Let \(n\) = notebooks and \(p\) = pens. Then \(n + p = 14\) and \(3n + 1.5p = 30\). From the first equation, \(p = 14 - n\). Substitute:
+  \[
+  3n + 1.5(14 - n) = 30 \implies 3n + 21 - 1.5n = 30 \implies 1.5n = 9 \implies n = 6
+  \]
+
+  \(\boxed{6}\)
+
+  \item Sum of the original five: \(5 \times 18 = 90\). Sum of all six: \(6 \times 20 = 120\). Sixth number: \(120 - 90 = 30\).
+
+  \(\boxed{30}\)
+
+  \item From \(C = 2\pi r = 10\pi\), the radius is 5. Sector area:
+  \[
+  \frac{72}{360} \cdot \pi(5)^2 = \frac{1}{5} \cdot 25\pi = 5\pi
+  \]
+
+  \(\boxed{5\pi}\)
+
+  \item Original speed: \(\dfrac{120}{2} = 60\) mph. Reduced speed: \(60 \times 0.75 = 45\) mph. Time for second leg: \(\dfrac{90}{45} = 2\) hours. Total time: \(2 + 2 = 4\) hours.
+
+  \(\boxed{4}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Moderate-to-Challenging}
+\begin{enumerate}
+  \item Let the legs be \(3k\) and \(4k\). Then \((3k)^2 + (4k)^2 = 30^2\):
+  \[
+  9k^2 + 16k^2 = 900 \implies 25k^2 = 900 \implies k^2 = 36 \implies k = 6
+  \]
+  Legs: 18 and 24. Area: \(\dfrac{1}{2}(18)(24) = 216\).
+
+  \(\boxed{216}\)
+
+  \item \(\pi(5)^2 h = 200\pi \implies 25h = 200 \implies h = 8\).
+
+  \(\boxed{8}\)
+
+  \item In 12 hours, there are \(12 \div 3 = 4\) doubling periods. Population: \(8{,}000 \times 2^4 = 8{,}000 \times 16 = 128{,}000\).
+
+  \(\boxed{128{,}000}\)
+
+  \item A quadratic with exactly one zero has discriminant zero. For \(x^2 - 6x + k\): \(36 - 4k = 0 \implies k = 9\).
+
+  \(\boxed{9}\)
+
+  \item The height up the wall is opposite the \(60^\circ\) angle. \(\sin(60^\circ) = \dfrac{h}{20} \implies h = 20 \cdot \dfrac{\sqrt{3}}{2} = 10\sqrt{3}\).
+
+  \(\boxed{10\sqrt{3}}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Challenging}
+\begin{enumerate}
+  \item Markup: \(40 \times 1.50 = 60\). Discount: \(60 \times 0.80 = 48\). Tax: \(48 \times 1.08 = 51.84\).
+
+  \(\boxed{\$51.84}\)
+
+  \item Side 1 (bottom): from \((0,0)\) to \((12,0)\): length 12.
+
+  Side 2: from \((12,0)\) to \((4,6)\): \(\sqrt{(4-12)^2 + (6-0)^2} = \sqrt{64 + 36} = \sqrt{100} = 10\).
+
+  Side 3: from \((4,6)\) to \((0,0)\): \(\sqrt{16 + 36} = \sqrt{52} = 2\sqrt{13}\).
+
+  Perimeter: \(12 + 10 + 2\sqrt{13} = 22 + 2\sqrt{13}\).
+
+  \(\boxed{22 + 2\sqrt{13}}\)
+
+  \item Students studying French or Spanish (by inclusion-exclusion): \(18 + 12 - 5 = 25\). Students studying both: 5. Students studying one but not both: \(25 - 5 = 20\). Probability: \(\dfrac{20}{30} = \dfrac{2}{3}\).
+
+  \(\boxed{\dfrac{2}{3}}\)
+
+  \item Set \(2x + b = x^2 + 3\), giving \(x^2 - 2x + (3 - b) = 0\). For tangency, discriminant \(= 0\):
+  \[
+  4 - 4(3 - b) = 0 \implies 4 - 12 + 4b = 0 \implies 4b = 8 \implies b = 2
+  \]
+
+  \(\boxed{2}\)
+
+  \item Cylinder volume: \(\pi(6)^2(4) = 144\pi\). Cone volume: \(\dfrac{1}{3}\pi(6)^2 h = 12\pi h\). Set equal:
+  \[
+  12\pi h = 144\pi \implies h = 12
+  \]
+
+  \(\boxed{12}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Challenging-to-Hard}
+\begin{enumerate}
+  \item \(x(x+2)(x+4) = 480\). Try \(x = 6\): \(6 \times 8 \times 10 = 480\). Confirmed.
+
+  \(\boxed{6}\)
+
+  \item First, find how much of each solution is used. Let \(a\) = liters of \(25\%\) and \(b\) = liters of \(55\%\), with \(a + b = 30\) and \(0.25a + 0.55b = 0.35(30) = 10.5\).
+  \[
+  0.25(30 - b) + 0.55b = 10.5 \implies 7.5 + 0.30b = 10.5 \implies b = 10, \quad a = 20
+  \]
+  The 30-liter mixture has \(10.5\) liters of acid at \(35\%\). Now add \(w\) liters of water to reach \(28\%\):
+  \[
+  \frac{10.5}{30 + w} = 0.28 \implies 10.5 = 0.28(30 + w) = 8.4 + 0.28w
+  \]
+  \[
+  0.28w = 2.1 \implies w = 7.5
+  \]
+
+  \(\boxed{7.5}\)
+
+  \item Area ratio: \(\dfrac{32}{72} = \dfrac{4}{9}\). Side-length ratio: \(\sqrt{\dfrac{4}{9}} = \dfrac{2}{3}\). Perimeter ratio equals side-length ratio:
+  \[
+  \frac{24}{P} = \frac{2}{3} \implies P = 36
+  \]
+
+  \(\boxed{36}\)
+
+  \item After each bounce the ball reaches \(60\%\) of its previous height. After 3 bounces:
+  \[
+  100 \times (0.60)^3 = 100 \times 0.216 = 21.6
+  \]
+
+  \(\boxed{21.6}\)
+
+  \item Vertex form: \(f(x) = a(x - 2)^2 - 3\). Passes through \((0, 5)\):
+  \[
+  a(0 - 2)^2 - 3 = 5 \implies 4a = 8 \implies a = 2
+  \]
+
+  \(\boxed{2}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Hard}
+\begin{enumerate}
+  \item The confidence interval is \(65\% \pm 4\% = 61\%\) to \(69\%\). The lower bound is \(61\%\), which exceeds the \(60\%\) threshold. Yes, the company can conclude the threshold is met. The lower bound is \(61\%\).
+
+  \(\boxed{\text{Yes; lower bound is } 61\%}\)
+
+  \item We have \(a + b = 14\) and \(a^2 + b^2 = c^2 = 100\). Use the identity \((a+b)^2 = a^2 + 2ab + b^2\):
+  \[
+  196 = 100 + 2ab \implies 2ab = 96 \implies ab = 48
+  \]
+  Area \(= \dfrac{1}{2}ab = \dfrac{1}{2}(48) = 24\).
+
+  \(\boxed{24}\)
+
+  \item Car 1 after \(n\) years: \(20{,}000(0.85)^n\). Car 2 after \(n\) years: \(20{,}000 - 2{,}000n\).
+
+  Test \(n = 5\): Car 1 \(= 20{,}000(0.85)^5 = 20{,}000(0.4437) = 8{,}874\). Car 2 \(= 20{,}000 - 10{,}000 = 10{,}000\). Car 1 is less.
+
+  Test \(n = 4\): Car 1 \(= 20{,}000(0.85)^4 = 20{,}000(0.5220) = 10{,}441\). Car 2 \(= 20{,}000 - 8{,}000 = 12{,}000\). Car 1 is less.
+
+  Test \(n = 3\): Car 1 \(= 20{,}000(0.85)^3 = 20{,}000(0.6141) = 12{,}283\). Car 2 \(= 20{,}000 - 6{,}000 = 14{,}000\). Car 1 is less.
+
+  Test \(n = 2\): Car 1 \(= 20{,}000(0.85)^2 = 20{,}000(0.7225) = 14{,}450\). Car 2 \(= 20{,}000 - 4{,}000 = 16{,}000\). Car 1 is less.
+
+  Test \(n = 1\): Car 1 \(= 17{,}000\). Car 2 \(= 18{,}000\). Car 1 is less.
+
+  Car 1 is already less after Year 1. But at \(n = 0\) they are equal. So the smallest whole number of years is \(n = 1\).
+
+  \(\boxed{1}\)
+
+  \item The perimeter of the sector is \(2r + \text{arc length} = 36\). Arc length \(= \dfrac{90}{360} \cdot 2\pi r = \dfrac{\pi r}{2}\). So:
+  \[
+  2r + \frac{\pi r}{2} = 36 \implies r\left(2 + \frac{\pi}{2}\right) = 36 \implies r = \frac{36}{2 + \pi/2} = \frac{72}{4 + \pi}
+  \]
+  Using \(\pi \approx 3.1416\): \(r = \dfrac{72}{7.1416} \approx 10.1\).
+
+  \(\boxed{10.1}\)
+
+  \item Let the base side be \(s\) and the height be \(2s\). Surface area: two square bases plus four rectangular faces.
+  \[
+  2s^2 + 4(s)(2s) = 2s^2 + 8s^2 = 10s^2 = 150 \implies s^2 = 15 \implies s = \sqrt{15}
+  \]
+  Volume:
+  \[
+  s^2 \cdot 2s = 2s^3 = 2(\sqrt{15})^3 = 2 \cdot 15\sqrt{15} = 30\sqrt{15}
+  \]
+
+  \(\boxed{30\sqrt{15}}\)
+\end{enumerate}
+
+\ReflectionPage{Unit 9, Topic 5}{https://www.scotchegg.co}
+
+\end{document}

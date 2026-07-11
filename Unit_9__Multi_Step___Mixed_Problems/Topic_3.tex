@@ -1,0 +1,428 @@
+\documentclass[14pt]{extarticle}
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 9: Multi-Step and Mixed Problems} \\[6pt]
+    \Large \textbf{Topic 3: Data and Probability in Context}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+SAT questions about data analysis and probability rarely test a single skill in isolation. Instead, they embed statistical reasoning inside a real-world scenario and require you to combine reading data (from tables, descriptions, or summary statistics) with algebraic or proportional reasoning to reach an answer. This topic focuses on those multi-step combinations.
+
+\textbf{Mean, median, and weighted averages} are the most common statistical tools on the SAT. The \textbf{mean} (average) of a data set is the sum of all values divided by the number of values. A \textbf{weighted average} applies when groups of different sizes each have their own average, and you need the overall average:
+\[
+\text{Overall mean} = \frac{n_1 \cdot \bar{x}_1 + n_2 \cdot \bar{x}_2}{n_1 + n_2}
+\]
+A common SAT pattern gives you the mean of a group and asks what value must be added (or removed) to produce a new target mean. This requires setting up an equation with the unknown value.
+
+The \textbf{median} is the middle value when data is sorted. For an even count of values, the median is the average of the two middle values. SAT problems often provide data in a frequency table or grouped format, requiring you to count through frequencies to locate the median position.
+
+\textbf{Probability} on the SAT is almost always classical probability: favorable outcomes divided by total outcomes. Multi-step probability problems ask you to combine information from two-way tables, conditional statements, or sequential events. \textbf{Conditional probability} is the probability of an event given that another event has occurred:
+\[
+P(A \mid B) = \frac{P(A \text{ and } B)}{P(B)} = \frac{\text{number in both } A \text{ and } B}{\text{number in } B}
+\]
+
+\textbf{Expected value} and \textbf{interpreting statistical claims} (margin of error, sampling methods, correlation vs.\ causation) also appear. The SAT tests whether you can distinguish between a result that applies to the sample versus the population, and whether an observed association implies a causal relationship. Correlation does not imply causation; only a randomized controlled experiment can establish causation.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Solve for unknown values using mean and weighted-average equations.
+  \item Find the median from a frequency table or a described data set.
+  \item Calculate probabilities from two-way tables, including conditional probabilities.
+  \item Interpret margin of error, sampling bias, and the limits of statistical inference.
+  \item Combine data-reading with algebraic reasoning in multi-step problems.
+\end{itemize}
+
+\section*{Example 1: Finding a Missing Value from the Mean}
+
+Five test scores have a mean of 82. Four of the scores are 78, 85, 90, and 76. What is the fifth score?
+
+\textbf{Step 1:} The sum of all five scores is \(5 \times 82 = 410\).
+
+\textbf{Step 2:} The sum of the four known scores is \(78 + 85 + 90 + 76 = 329\).
+
+\textbf{Step 3:} The fifth score is \(410 - 329 = 81\).
+
+\(\boxed{81}\)
+
+\section*{Example 2: Weighted Average}
+
+A class of 20 students has a mean exam score of 74. Another class of 30 students has a mean exam score of 82. What is the combined mean for all 50 students?
+
+\textbf{Step 1:} Total points from class 1: \(20 \times 74 = 1480\). Total from class 2: \(30 \times 82 = 2460\).
+
+\textbf{Step 2:} Combined mean:
+\[
+\frac{1480 + 2460}{50} = \frac{3940}{50} = 78.8
+\]
+
+\(\boxed{78.8}\)
+
+\section*{Example 3: Median from a Frequency Table}
+
+A survey recorded the number of books read last month by 25 people. The results are shown below.
+
+\[
+\begin{array}{|c|c|}
+\hline
+\textbf{Books read} & \textbf{Frequency} \\
+\hline
+0 & 3 \\
+1 & 7 \\
+2 & 6 \\
+3 & 5 \\
+4 & 4 \\
+\hline
+\end{array}
+\]
+
+What is the median number of books read?
+
+\textbf{Step 1:} There are 25 data points, so the median is the 13th value when sorted.
+
+\textbf{Step 2:} Count through the frequencies: positions 1--3 are 0 books, positions 4--10 are 1 book, positions 11--16 are 2 books. The 13th value falls in the ``2 books'' group.
+
+\(\boxed{2}\)
+
+\section*{Example 4: Conditional Probability from a Two-Way Table}
+
+A survey of 200 students asked whether they preferred dogs or cats and whether they lived in a house or an apartment.
+
+\[
+\begin{array}{|c|c|c|c|}
+\hline
+ & \textbf{Dog} & \textbf{Cat} & \textbf{Total} \\
+\hline
+\textbf{House} & 70 & 30 & 100 \\
+\hline
+\textbf{Apartment} & 50 & 50 & 100 \\
+\hline
+\textbf{Total} & 120 & 80 & 200 \\
+\hline
+\end{array}
+\]
+
+What is the probability that a randomly selected student prefers dogs, given that the student lives in a house?
+
+\textbf{Step 1:} We want \(P(\text{Dog} \mid \text{House})\). Restrict to the ``House'' row: 100 students total, 70 prefer dogs.
+
+\textbf{Step 2:}
+\[
+P(\text{Dog} \mid \text{House}) = \frac{70}{100} = 0.70
+\]
+
+\(\boxed{0.70}\)
+
+\section*{Example 5: Interpreting a Statistical Study}
+
+A researcher surveys 500 randomly selected adults in a city and finds that \(62\%\) support a new park, with a margin of error of \(\pm 4\%\). Which of the following conclusions is supported?
+
+(a) Between \(58\%\) and \(66\%\) of all adults in the city likely support the new park.
+
+(b) Exactly \(62\%\) of all adults in the city support the new park.
+
+(c) The new park will be built.
+
+\textbf{Step 1:} The margin of error means we are confident the true proportion is between \(62 - 4 = 58\%\) and \(62 + 4 = 66\%\). This supports conclusion (a). Conclusion (b) is too precise, and (c) is a policy prediction, not a statistical conclusion.
+
+The supported conclusion is \(\boxed{(a)}\).
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item When a problem gives you a mean and asks for a missing value, use the equation \(\text{sum} = \text{mean} \times \text{count}\) and solve for the unknown. Do not average the known values and guess.
+  \item For weighted averages, never simply average the two group means unless the groups are the same size. Weight by group size.
+  \item In a two-way table, conditional probability restricts the denominator to the given condition's row or column total, not the grand total.
+  \item Margin of error defines a confidence interval. Results from a random sample can be generalized to the population, but results from a voluntary or convenience sample cannot. Correlation from an observational study does not establish causation.
+\end{itemize}
+
+\newpage
+
+\section*{Practice Questions: Data and Probability in Context}
+
+\subsection*{Part A: Mean and Median Calculations}
+\begin{enumerate}
+  \item Six quiz scores have a mean of 15. Five of the scores are 12, 18, 14, 16, and 13. What is the sixth score?
+  \item A student has test scores of 88, 92, 78, and 85. What score must the student earn on the fifth test to have an overall mean of 86?
+  \item A data set has values 3, 7, 7, 9, 10, 12, and \(x\), listed in order. The median is 9. What is the smallest possible value of \(x\)?
+  \item A company has 15 employees with a mean salary of \(\$52{,}000\) and 5 managers with a mean salary of \(\$78{,}000\). What is the mean salary for all 20 people?
+  \item The mean of 10 numbers is 24. When one number is removed, the mean of the remaining 9 numbers is 25. What number was removed?
+\end{enumerate}
+
+\subsection*{Part B: Frequency Tables and Data Interpretation}
+\begin{enumerate}
+  \item A teacher records quiz scores for 30 students as follows:
+
+  \[
+  \begin{array}{|c|c|}
+  \hline
+  \textbf{Score} & \textbf{Frequency} \\
+  \hline
+  5 & 4 \\
+  6 & 6 \\
+  7 & 8 \\
+  8 & 7 \\
+  9 & 3 \\
+  10 & 2 \\
+  \hline
+  \end{array}
+  \]
+
+  What is the median score?
+
+  \item Using the table above, what is the mean score? Round to the nearest tenth.
+
+  \item A data set of 20 values has a median of 15. If two values, 30 and 35, are added to the set, what could be the new median? Choose the most precise answer: less than 15, equal to 15, greater than 15, or cannot be determined.
+
+  \item The range of a data set is 18 and the smallest value is 7. If a new data point of 30 is added, what is the new range?
+
+  \item The standard deviation of a data set is 5. Every value in the data set is increased by 10. What is the new standard deviation?
+\end{enumerate}
+
+\subsection*{Part C: Probability and Two-Way Tables}
+\begin{enumerate}
+  \item A bag contains 5 red, 3 blue, and 2 green marbles. If one marble is drawn at random, what is the probability that it is not green?
+
+  \item A survey of 150 people asked about exercise habits and diet preferences:
+
+  \[
+  \begin{array}{|c|c|c|c|}
+  \hline
+   & \textbf{Exercises regularly} & \textbf{Does not exercise} & \textbf{Total} \\
+  \hline
+  \textbf{Vegetarian} & 28 & 12 & 40 \\
+  \hline
+  \textbf{Non-vegetarian} & 52 & 58 & 110 \\
+  \hline
+  \textbf{Total} & 80 & 70 & 150 \\
+  \hline
+  \end{array}
+  \]
+
+  What is the probability that a randomly selected person exercises regularly, given that the person is vegetarian?
+
+  \item Using the table above, what is the probability that a randomly selected person who exercises regularly is vegetarian? Express your answer as a simplified fraction.
+
+  \item A standard deck of 52 cards has 4 aces. Two cards are drawn without replacement. What is the probability that both cards are aces? Express your answer as a simplified fraction.
+
+  \item In a group of 60 students, 35 study math, 25 study science, and 10 study both. What is the probability that a randomly selected student studies math or science (or both)? Express your answer as a simplified fraction.
+\end{enumerate}
+
+\subsection*{Part D: Statistical Inference and Study Design}
+\begin{enumerate}
+  \item A researcher surveys 400 randomly selected voters and finds that \(54\%\) support a ballot measure, with a margin of error of \(\pm 3\%\). What is the confidence interval for the true proportion of voters who support the measure?
+
+  \item A study finds a correlation between hours of television watched per day and body mass index (BMI). A news article claims, ``Watching TV causes weight gain.'' Is this claim supported by the study? Explain briefly.
+
+  \item A company surveys its own employees and finds that \(90\%\) are satisfied with their jobs. Can this result be generalized to all workers in the industry? Explain briefly.
+
+  \item Two studies examine the effect of a tutoring program. Study A compares students who volunteered for tutoring with those who did not. Study B randomly assigns students to tutoring or no tutoring. Which study can establish a causal relationship between tutoring and improved scores?
+
+  \item A poll of 1{,}000 randomly selected adults finds that \(48\%\) favor a policy. The margin of error is \(\pm 3\%\). A politician claims, ``A majority of adults favor this policy.'' Is this claim supported? Explain briefly.
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \item A basketball player's scoring averages are shown below:
+
+  \[
+  \begin{array}{|c|c|c|}
+  \hline
+  \textbf{Game type} & \textbf{Games played} & \textbf{Mean points} \\
+  \hline
+  \text{Home} & 40 & 22.5 \\
+  \hline
+  \text{Away} & 42 & 18.0 \\
+  \hline
+  \end{array}
+  \]
+
+  What is the player's overall scoring average across all 82 games? Round to the nearest tenth.
+
+  \item A class of 24 students takes a test. The mean score is 72. The teacher decides to add 5 bonus points to every student's score. What is the new mean?
+
+  \item A jar contains only red and blue marbles. The probability of drawing a red marble is \(\dfrac{3}{8}\). If there are 24 marbles in the jar, how many are blue?
+
+  \item A survey of 300 shoppers found the following data on age group and preferred payment method:
+
+  \[
+  \begin{array}{|c|c|c|c|}
+  \hline
+   & \textbf{Cash} & \textbf{Card} & \textbf{Total} \\
+  \hline
+  \textbf{Under 30} & 30 & 90 & 120 \\
+  \hline
+  \textbf{30 and over} & 100 & 80 & 180 \\
+  \hline
+  \textbf{Total} & 130 & 170 & 300 \\
+  \hline
+  \end{array}
+  \]
+
+  What fraction of card users are under 30? Express your answer as a simplified fraction.
+
+  \item A researcher wants to estimate the average commute time for employees at a large company. She selects 50 employees at random and finds a mean commute of 34 minutes with a margin of error of \(\pm 4\) minutes. Based on this, which is a plausible value for the true mean commute time of all employees: 29 minutes, 36 minutes, or 40 minutes?
+\end{enumerate}
+
+\newpage
+
+\section*{Answer Key and Solutions: Data and Probability in Context}
+
+\subsection*{Part A Solutions: Mean and Median Calculations}
+\begin{enumerate}
+  \item Total sum needed: \(6 \times 15 = 90\). Sum of five known scores: \(12 + 18 + 14 + 16 + 13 = 73\). Sixth score: \(90 - 73 = 17\).
+
+  \(\boxed{17}\)
+
+  \item Total needed: \(5 \times 86 = 430\). Sum of four scores: \(88 + 92 + 78 + 85 = 343\). Fifth score: \(430 - 343 = 87\).
+
+  \(\boxed{87}\)
+
+  \item The values in order are \(3, 7, 7, 9, 10, 12, x\). The median of 7 values is the 4th value. If \(x \geq 9\), the 4th value is 9 (the current 4th position). We need the median to be 9, so \(x\) must be at least 9. The smallest possible value is \(x = 9\).
+
+  \(\boxed{9}\)
+
+  \item Total salary for employees: \(15 \times 52{,}000 = 780{,}000\). Total for managers: \(5 \times 78{,}000 = 390{,}000\). Combined mean:
+  \[
+  \frac{780{,}000 + 390{,}000}{20} = \frac{1{,}170{,}000}{20} = 58{,}500
+  \]
+
+  \(\boxed{\$58{,}500}\)
+
+  \item Total of 10 numbers: \(10 \times 24 = 240\). Total of remaining 9: \(9 \times 25 = 225\). Removed number: \(240 - 225 = 15\).
+
+  \(\boxed{15}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Frequency Tables and Data Interpretation}
+\begin{enumerate}
+  \item There are 30 students, so the median is the average of the 15th and 16th values. Cumulative frequencies: score 5 covers positions 1--4, score 6 covers 5--10, score 7 covers 11--18. Both the 15th and 16th values are 7.
+
+  \(\boxed{7}\)
+
+  \item Total sum: \(5(4) + 6(6) + 7(8) + 8(7) + 9(3) + 10(2) = 20 + 36 + 56 + 56 + 27 + 20 = 215\). Mean: \(\dfrac{215}{30} \approx 7.2\).
+
+  \(\boxed{7.2}\)
+
+  \item The original median is the average of the 10th and 11th values, which equals 15. Adding two values, 30 and 35, that are larger than the median does not change the ranks of the lower half of the data, so the new median (the average of the 11th and 12th values among the 22 values) depends on the original 11th and 12th values, information that is not given. The new median could equal 15 (if several original values equal 15) or could be greater than 15 (if the values just above the original median are strictly larger). Since neither outcome is guaranteed, the new median cannot be determined from the given information.
+
+  \(\boxed{\text{Cannot be determined}}\)
+
+  \item The original largest value is \(7 + 18 = 25\). Adding 30, the new range is \(30 - 7 = 23\).
+
+  \(\boxed{23}\)
+
+  \item Adding a constant to every value shifts the data but does not change the spread. The standard deviation remains 5.
+
+  \(\boxed{5}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Probability and Two-Way Tables}
+\begin{enumerate}
+  \item Total marbles: \(5 + 3 + 2 = 10\). Non-green: \(5 + 3 = 8\). Probability: \(\dfrac{8}{10} = \dfrac{4}{5}\).
+
+  \(\boxed{\dfrac{4}{5}}\)
+
+  \item \(P(\text{Exercises} \mid \text{Vegetarian}) = \dfrac{28}{40} = \dfrac{7}{10} = 0.70\).
+
+  \(\boxed{0.70}\)
+
+  \item \(P(\text{Vegetarian} \mid \text{Exercises}) = \dfrac{28}{80} = \dfrac{7}{20}\).
+
+  \(\boxed{\dfrac{7}{20}}\)
+
+  \item \(P(\text{both aces}) = \dfrac{4}{52} \times \dfrac{3}{51} = \dfrac{12}{2652} = \dfrac{1}{221}\).
+
+  \(\boxed{\dfrac{1}{221}}\)
+
+  \item By inclusion-exclusion: \(P(\text{Math or Science}) = \dfrac{35 + 25 - 10}{60} = \dfrac{50}{60} = \dfrac{5}{6}\).
+
+  \(\boxed{\dfrac{5}{6}}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Statistical Inference and Study Design}
+\begin{enumerate}
+  \item The confidence interval is \(54\% \pm 3\%\), which is \(51\%\) to \(57\%\).
+
+  \(\boxed{51\% \text{ to } 57\%}\)
+
+  \item No. The study found a correlation, not a causal relationship. An observational study cannot establish causation because there may be confounding variables (for example, people who watch more TV may also exercise less or have different diets). Only a randomized experiment can establish causation.
+
+  \(\boxed{\text{No, correlation does not imply causation.}}\)
+
+  \item No. The sample consists only of employees at one company, which is not representative of all workers in the industry. Additionally, employees may feel pressure to respond positively, introducing response bias.
+
+  \(\boxed{\text{No, the sample is not representative of the industry.}}\)
+
+  \item Study B (random assignment) can establish a causal relationship. Random assignment controls for confounding variables by distributing them equally across groups. Study A uses self-selected volunteers, so differences in outcomes could be due to pre-existing motivation or other factors.
+
+  \(\boxed{\text{Study B}}\)
+
+  \item The confidence interval is \(48\% \pm 3\% = 45\%\) to \(51\%\). Since the interval includes values below \(50\%\), we cannot conclude that a majority favors the policy. The claim is not supported.
+
+  \(\boxed{\text{No, the confidence interval includes values below 50\%.}}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \item Total points: \(40 \times 22.5 + 42 \times 18.0 = 900 + 756 = 1656\). Overall mean: \(\dfrac{1656}{82} \approx 20.2\).
+
+  \(\boxed{20.2}\)
+
+  \item Adding a constant to every score increases the mean by the same constant. New mean: \(72 + 5 = 77\).
+
+  \(\boxed{77}\)
+
+  \item Red marbles: \(\dfrac{3}{8} \times 24 = 9\). Blue marbles: \(24 - 9 = 15\).
+
+  \(\boxed{15}\)
+
+  \item Card users total: 170. Card users under 30: 90. Fraction: \(\dfrac{90}{170} = \dfrac{9}{17}\).
+
+  \(\boxed{\dfrac{9}{17}}\)
+
+  \item The confidence interval is \(34 \pm 4 = 30\) to \(38\) minutes. Of the three options, 36 is within this interval. 29 is below and 40 is above.
+
+  \(\boxed{36}\)
+\end{enumerate}
+
+\ReflectionPage{Unit 9, Topic 3}{https://www.scotchegg.co}
+
+\end{document}

@@ -7,7 +7,7 @@
 \usepackage{xcolor}
 \usepackage{helvet}
 \usepackage{enumitem}
-\usepackage{graphicx} % Required for inserting images
+\usepackage{lmodern}
 \makeatletter
 \IfFileExists{../common-things/reflectionpage.tex}{%
   \input{../common-things/reflectionpage.tex}%
@@ -36,12 +36,281 @@
 \raggedright
 \pagenumbering{gobble}
 
-\maketitle
+\begin{center}
+    \LARGE \textbf{Unit 10: Review and Test Strategy} \\[6pt]
+    \Large \textbf{Topic 1: Backsolving and Plugging In Answer Choices}
+\end{center}
 
-\section{Introduction}
+\vspace{1em}
 
+\section*{Concept Summary}
 
+\textbf{Backsolving} (also called ``working backward'' or ``plugging in answer choices'') is a strategy for problems where the answer is a specific number and the problem describes a condition that number must satisfy. Instead of setting up and solving an equation, you test candidate values to see which one works.
 
-\ReflectionPage{Unit 10, Topic 2}{https://www.scotchegg.co}
+On the Digital SAT, the free-response format means you do not have lettered answer choices to test. However, backsolving is still powerful in two situations:
+
+\begin{itemize}
+  \item \textbf{When you can guess a likely answer.} Many SAT answers are small integers or simple fractions. If a problem says ``find the positive integer \(x\) such that...,'' trying \(x = 1, 2, 3, \ldots\) is often faster than setting up a complicated equation.
+  \item \textbf{When the algebraic setup is messy.} Some equations (especially those with radicals, absolute values, or rational expressions) are faster to verify than to solve. If you suspect the answer is, say, 5, plugging in \(x = 5\) takes seconds.
+\end{itemize}
+
+The basic process is:
+
+\textbf{Step 1:} Read the problem and identify the unknown.
+
+\textbf{Step 2:} Estimate or guess a reasonable starting value.
+
+\textbf{Step 3:} Substitute that value into the conditions of the problem.
+
+\textbf{Step 4:} If it works, you are done. If not, adjust up or down based on whether the result was too large or too small.
+
+Backsolving works best on problems with a single unknown and a verifiable condition. It works poorly on ``find the expression'' problems or problems with multiple unknowns.
+
+A related technique is \textbf{plugging in your own answer and checking}. Even when you solve algebraically, substituting your answer back into the original problem is a fast way to catch errors. This verification step takes only a few seconds and can save you from careless mistakes.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Recognize when backsolving is more efficient than algebraic solving (single unknown, verifiable condition, likely integer answer).
+  \item Substitute a candidate value into all conditions of a problem systematically.
+  \item Use the direction of the error (too big vs.\ too small) to adjust the next guess efficiently.
+  \item Verify algebraically-obtained answers by plugging them back into the original problem.
+\end{itemize}
+
+\section*{Example 1: Simple Backsolving}
+
+A number \(x\) satisfies \(x^2 + 3x = 40\). Find the positive value of \(x\).
+
+\textbf{Algebraic approach:} \(x^2 + 3x - 40 = 0 \implies (x+8)(x-5) = 0 \implies x = 5\).
+
+\textbf{Backsolving approach:} Try \(x = 5\): \(25 + 15 = 40\). It works.
+
+Either way, \(\boxed{5}\).
+
+\section*{Example 2: Backsolving a Word Problem}
+
+A store sells pens for \(\$2\) each and notebooks for \(\$5\) each. Maria buys a total of 11 items and spends \(\$40\). How many notebooks did she buy?
+
+\textbf{Backsolving:} Try 6 notebooks: \(6 \times 5 = 30\), leaving \(40 - 30 = 10\) for pens, so \(10 \div 2 = 5\) pens. Total items: \(6 + 5 = 11\). It works.
+
+Maria bought \(\boxed{6}\) notebooks.
+
+\section*{Example 3: Backsolving a Radical Equation}
+
+\(\sqrt{2x + 1} = 5\). Find \(x\).
+
+\textbf{Backsolving:} Try \(x = 12\): \(\sqrt{24 + 1} = \sqrt{25} = 5\). It works.
+
+\(\boxed{12}\)
+
+\section*{Example 4: Using Backsolving to Check Algebra}
+
+Solve \(\dfrac{x + 3}{2} = \dfrac{2x - 1}{3}\).
+
+\textbf{Algebraic solution:} Cross-multiply: \(3(x + 3) = 2(2x - 1) \implies 3x + 9 = 4x - 2 \implies x = 11\).
+
+\textbf{Verification by backsolving:} Left side: \(\dfrac{11 + 3}{2} = 7\). Right side: \(\dfrac{22 - 1}{3} = 7\). Both sides equal 7. Confirmed.
+
+\(\boxed{11}\)
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Backsolving is fastest when the answer is likely a small integer and the condition is easy to check. If you find yourself setting up a complex equation for what looks like a simple problem, try plugging in values instead.
+  \item Even when you solve algebraically, a 5-second substitution check can catch sign errors and arithmetic mistakes. Build this habit.
+  \item On free-response questions, you do not have answer choices to test, but you can still estimate. Most SAT answers are ``nice'' numbers: integers, simple fractions, or multiples of \(\pi\). Use this to guide your guesses.
+  \item Know when \textit{not} to backsolve: if the problem asks for an expression, a general formula, or has infinitely many possible answers, algebraic methods are the way to go.
+\end{itemize}
+
+\newpage
+
+\section*{Practice Questions: Backsolving and Plugging In Answer Choices}
+
+\subsection*{Part A: Direct Backsolving}
+\begin{enumerate}
+  \item Find the positive value of \(x\) such that \(x^2 - 5x = 14\).
+  \item A number plus twice that number equals 36. What is the number?
+  \item Find the value of \(x\) such that \(\sqrt{3x + 4} = 7\).
+  \item Find the positive integer \(n\) such that \(n(n + 1) = 72\).
+  \item Find the value of \(x\) such that \(\dfrac{x}{3} + \dfrac{x}{4} = 7\).
+\end{enumerate}
+
+\subsection*{Part B: Backsolving Word Problems}
+\begin{enumerate}
+  \item An adult ticket costs \(\$8\) and a child ticket costs \(\$5\). A group buys 15 tickets for \(\$96\). How many adult tickets were purchased?
+  \item A rectangle's length is 5 more than its width, and the perimeter is 42. What is the width?
+  \item The sum of three consecutive even integers is 78. What is the largest of the three?
+  \item A student needs an average of 85 over four tests. Her first three scores are 80, 92, and 78. What minimum score does she need on the fourth test?
+  \item A baker makes cookies and brownies. Each cookie uses 2 eggs and each brownie uses 3 eggs. She uses 44 eggs total to make 18 items. How many brownies did she make?
+\end{enumerate}
+
+\subsection*{Part C: Checking Solutions by Substitution}
+\begin{enumerate}
+  \item Solve \(3(2x - 1) = 4x + 9\) and verify your answer by substitution.
+  \item Solve \(|2x - 7| = 11\). Find both solutions and verify each.
+  \item Solve \(\dfrac{5}{x - 2} = 3\) and verify.
+  \item Solve \(x^2 - 9x + 20 = 0\). Find both solutions and verify each.
+  \item Solve \(\sqrt{x + 5} = x - 1\) and verify. (Hint: check for extraneous solutions.)
+\end{enumerate}
+
+\subsection*{Part D: Strategic Decision-Making}
+\begin{enumerate}
+  \item For what positive integer \(x\) is \(x^3 - 6x^2 + 11x = 6\)?
+  \item A square and an equilateral triangle have the same perimeter. The side of the square is 9. What is the side of the triangle?
+  \item The product of two consecutive positive odd integers is 143. What is the larger integer?
+  \item A two-digit number has digits that sum to 11. If the digits are reversed, the new number is 27 more than the original. What is the original number?
+  \item Find the positive value of \(x\) such that \(\dfrac{x^2 + 2x}{x + 5} = 4\).
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \item A pool is being filled by two hoses. Hose A fills the pool in 6 hours alone, and Hose B fills it in 4 hours alone. How many hours will it take both hoses working together to fill the pool? Express your answer as a fraction.
+  \item A concert venue has floor seats at \(\$75\) and balcony seats at \(\$45\). Total ticket revenue is \(\$27{,}000\) from 500 tickets sold. How many floor seats were sold?
+  \item Find the value of \(x\) such that \(2^{x+1} = 32\).
+  \item A car and a truck start from the same point. The car travels north at 50 mph and the truck travels east at 40 mph. After how many hours are they exactly 100 miles apart? Express your answer as a simplified fraction.
+  \item For what positive value of \(k\) does the equation \(x^2 + kx + 9 = 0\) have exactly one solution?
+\end{enumerate}
+
+\newpage
+
+\section*{Answer Key and Solutions: Backsolving and Plugging In Answer Choices}
+
+\subsection*{Part A Solutions: Direct Backsolving}
+\begin{enumerate}
+  \item Try \(x = 7\): \(49 - 35 = 14\). It works. (Algebraically: \(x^2 - 5x - 14 = 0 \implies (x-7)(x+2) = 0\).)
+
+  \(\boxed{7}\)
+
+  \item Let the number be \(n\). Then \(n + 2n = 36 \implies 3n = 36 \implies n = 12\). Check: \(12 + 24 = 36\).
+
+  \(\boxed{12}\)
+
+  \item Try \(x = 15\): \(\sqrt{45 + 4} = \sqrt{49} = 7\). It works.
+
+  \(\boxed{15}\)
+
+  \item Try \(n = 8\): \(8 \times 9 = 72\). It works.
+
+  \(\boxed{8}\)
+
+  \item Multiply through by 12: \(4x + 3x = 84 \implies 7x = 84 \implies x = 12\). Check: \(\dfrac{12}{3} + \dfrac{12}{4} = 4 + 3 = 7\).
+
+  \(\boxed{12}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Backsolving Word Problems}
+\begin{enumerate}
+  \item Try 7 adult tickets: \(7 \times 8 = 56\), leaving \(96 - 56 = 40\) for child tickets: \(40 \div 5 = 8\). Total: \(7 + 8 = 15\). It works.
+
+  \(\boxed{7}\)
+
+  \item Try width \(= 8\): length \(= 13\), perimeter \(= 2(8 + 13) = 42\). It works.
+
+  \(\boxed{8}\)
+
+  \item Try 24, 26, 28: sum \(= 78\). It works. The largest is 28.
+
+  \(\boxed{28}\)
+
+  \item Total needed: \(4 \times 85 = 340\). Sum of first three: \(80 + 92 + 78 = 250\). Fourth score: \(340 - 250 = 90\). Check: \(\dfrac{250 + 90}{4} = 85\).
+
+  \(\boxed{90}\)
+
+  \item Try 8 brownies: \(8 \times 3 = 24\) eggs. Remaining items: \(18 - 8 = 10\) cookies using \(10 \times 2 = 20\) eggs. Total: \(24 + 20 = 44\). It works.
+
+  \(\boxed{8}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Checking Solutions by Substitution}
+\begin{enumerate}
+  \item \(6x - 3 = 4x + 9 \implies 2x = 12 \implies x = 6\). Check: \(3(12 - 1) = 3(11) = 33\) and \(4(6) + 9 = 33\). Confirmed.
+
+  \(\boxed{6}\)
+
+  \item Case 1: \(2x - 7 = 11 \implies x = 9\). Check: \(|18 - 7| = 11\). Confirmed.
+
+  Case 2: \(2x - 7 = -11 \implies x = -2\). Check: \(|-4 - 7| = |-11| = 11\). Confirmed.
+
+  \(\boxed{9 \text{ and } -2}\)
+
+  \item \(5 = 3(x - 2) \implies 5 = 3x - 6 \implies x = \dfrac{11}{3}\). Check: \(\dfrac{5}{11/3 - 2} = \dfrac{5}{5/3} = 3\). Confirmed.
+
+  \(\boxed{\dfrac{11}{3}}\)
+
+  \item \((x - 4)(x - 5) = 0 \implies x = 4\) or \(x = 5\). Check \(x = 4\): \(16 - 36 + 20 = 0\). Check \(x = 5\): \(25 - 45 + 20 = 0\). Both confirmed.
+
+  \(\boxed{4 \text{ and } 5}\)
+
+  \item Square both sides: \(x + 5 = (x - 1)^2 = x^2 - 2x + 1\). Rearrange: \(x^2 - 3x - 4 = 0 \implies (x - 4)(x + 1) = 0\). So \(x = 4\) or \(x = -1\).
+
+  Check \(x = 4\): \(\sqrt{9} = 3\) and \(4 - 1 = 3\). Confirmed.
+
+  Check \(x = -1\): \(\sqrt{4} = 2\) and \(-1 - 1 = -2\). Since \(2 \neq -2\), this is extraneous.
+
+  \(\boxed{4}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Strategic Decision-Making}
+\begin{enumerate}
+  \item Try \(x = 1\): \(1 - 6 + 11 = 6\). It works.
+
+  (The full factorization is \(x^3 - 6x^2 + 11x - 6 = (x-1)(x-2)(x-3)\), so \(x = 1, 2, 3\) all work. Check \(x = 2\): \(8 - 24 + 22 = 6\). Check \(x = 3\): \(27 - 54 + 33 = 6\). The problem asks for ``the positive integer,'' and all three satisfy the equation.)
+
+  \(\boxed{1, 2, \text{ and } 3}\)
+
+  \item Perimeter of square: \(4 \times 9 = 36\). Triangle perimeter: 36. Side of triangle: \(36 \div 3 = 12\).
+
+  \(\boxed{12}\)
+
+  \item Try \(11 \times 13 = 143\). It works. The larger integer is 13.
+
+  \(\boxed{13}\)
+
+  \item Let the tens digit be \(t\) and the units digit be \(u\). Then \(t + u = 11\) and \((10u + t) - (10t + u) = 27\), so \(9u - 9t = 27 \implies u - t = 3\). Adding: \(2u = 14 \implies u = 7, t = 4\). The original number is 47. Check: \(74 - 47 = 27\).
+
+  \(\boxed{47}\)
+
+  \item Try \(x = 4\): \(\dfrac{16 + 8}{9} = \dfrac{24}{9} = \dfrac{8}{3} \neq 4\). Try \(x = 5\): \(\dfrac{25 + 10}{10} = \dfrac{35}{10} = 3.5 \neq 4\). Try \(x = 10\): \(\dfrac{100 + 20}{15} = \dfrac{120}{15} = 8 \neq 4\).
+
+  Solve algebraically: \(x^2 + 2x = 4(x + 5) = 4x + 20\), so \(x^2 - 2x - 20 = 0\). By the quadratic formula: \(x = \dfrac{2 + \sqrt{4 + 80}}{2} = \dfrac{2 + \sqrt{84}}{2} = 1 + \sqrt{21}\). Check: not a clean integer, but the problem asks for the positive value. \(1 + \sqrt{21} \approx 5.58\).
+
+  \(\boxed{1 + \sqrt{21}}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \item Hose A fills \(\dfrac{1}{6}\) per hour, Hose B fills \(\dfrac{1}{4}\) per hour. Together:
+  \[
+  \frac{1}{6} + \frac{1}{4} = \frac{2}{12} + \frac{3}{12} = \frac{5}{12} \text{ per hour}
+  \]
+  Time: \(\dfrac{1}{5/12} = \dfrac{12}{5}\) hours.
+
+  \(\boxed{\dfrac{12}{5}}\)
+
+  \item Let \(f\) = floor seats, \(b = 500 - f\) = balcony seats.
+  \[
+  75f + 45(500 - f) = 27{,}000 \implies 75f + 22{,}500 - 45f = 27{,}000 \implies 30f = 4{,}500 \implies f = 150
+  \]
+
+  \(\boxed{150}\)
+
+  \item \(2^{x+1} = 32 = 2^5\), so \(x + 1 = 5 \implies x = 4\). Check: \(2^5 = 32\).
+
+  \(\boxed{4}\)
+
+  \item After \(t\) hours, the car is \(50t\) miles north and the truck is \(40t\) miles east. By the Pythagorean Theorem:
+  \[
+  (50t)^2 + (40t)^2 = 100^2 \implies 2500t^2 + 1600t^2 = 10{,}000
+  \]
+  \[
+  4100t^2 = 10{,}000 \implies t^2 = \frac{100}{41} \implies t = \frac{10}{\sqrt{41}} = \frac{10\sqrt{41}}{41}
+  \]
+
+  \(\boxed{\dfrac{10\sqrt{41}}{41}}\)
+
+  \item For exactly one solution, discriminant \(= 0\): \(k^2 - 36 = 0 \implies k = 6\) (taking the positive value).
+
+  \(\boxed{6}\)
+\end{enumerate}
+
+\ReflectionPage{Unit 10, Topic 1}{https://www.scotchegg.co}
 
 \end{document}

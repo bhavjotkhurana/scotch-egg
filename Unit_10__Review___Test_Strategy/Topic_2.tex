@@ -1,0 +1,297 @@
+\documentclass[14pt]{extarticle}
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 10: Review and Test Strategy} \\[6pt]
+    \Large \textbf{Topic 2: Picking Numbers for Variable Expressions}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+\textbf{Picking numbers} is a strategy for problems that ask about general relationships between variables rather than specific numeric answers. When a problem says ``for all values of \(x\)'' or asks which expression is equivalent to another, you can choose a convenient value for the variable, evaluate both sides, and see which option matches.
+
+This strategy is especially useful for:
+
+\begin{itemize}
+  \item \textbf{Equivalent expressions:} ``Which of the following is equivalent to \(\dfrac{x^2 - 4}{x + 2}\)?'' Pick \(x = 3\): original \(= \dfrac{9 - 4}{5} = 1\). Check whether each candidate also gives 1 when \(x = 3\).
+  \item \textbf{Percent and ratio problems with variables:} ``If the price of an item is increased by \(p\%\), then decreased by \(p\%\), the final price is what fraction of the original?'' Pick \(p = 20\) (or any convenient value) and compute.
+  \item \textbf{``Must be true'' questions:} ``If \(n\) is a positive even integer, which of the following must be odd?'' Test with \(n = 2\) and \(n = 4\) to rule out options.
+\end{itemize}
+
+\textbf{Rules for picking numbers well:}
+
+\begin{itemize}
+  \item \textbf{Avoid 0 and 1.} These are special cases that can make different expressions look equal. For instance, \(x\) and \(x^2\) are both 1 when \(x = 1\).
+  \item \textbf{Pick numbers that make the arithmetic easy.} For percent problems, 100 is a great starting value. For fractions, pick a common denominator.
+  \item \textbf{Respect constraints.} If the problem says \(x > 0\), do not pick \(x = -1\). If it says \(x\) is odd, pick an odd number.
+  \item \textbf{If two candidates match, try a second number.} Picking one number might not distinguish between two expressions. A second test usually resolves it.
+\end{itemize}
+
+On the Digital SAT's free-response format, picking numbers is most useful as a \textbf{verification tool}: solve the problem algebraically, then check your answer by substituting a chosen value into both the original expression and your answer.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Choose strategic test values that make arithmetic simple while avoiding special cases.
+  \item Evaluate algebraic expressions with substituted values to verify equivalence.
+  \item Use picked numbers to test general percent and ratio relationships.
+  \item Distinguish between ``must be true,'' ``could be true,'' and ``must be false'' by testing multiple values.
+\end{itemize}
+
+\section*{Example 1: Simplifying an Expression}
+
+Simplify \(\dfrac{x^2 - 9}{x - 3}\) for \(x \neq 3\).
+
+\textbf{Algebraic approach:} Factor the numerator: \(\dfrac{(x-3)(x+3)}{x-3} = x + 3\).
+
+\textbf{Verification by picking numbers:} Let \(x = 5\). Original: \(\dfrac{25 - 9}{2} = 8\). Simplified: \(5 + 3 = 8\). Matches.
+
+\(\boxed{x + 3}\)
+
+\section*{Example 2: Percent Problem with Variables}
+
+A shirt's price is \(d\) dollars. It is marked up by \(20\%\) and then discounted by \(10\%\). What is the final price in terms of \(d\)?
+
+\textbf{Picking numbers:} Let \(d = 100\). After \(20\%\) markup: \(120\). After \(10\%\) discount: \(120 \times 0.90 = 108\). So the final price is \(1.08d\).
+
+\textbf{Algebraic confirmation:} \(d \times 1.20 \times 0.90 = 1.08d\).
+
+\(\boxed{1.08d}\)
+
+\section*{Example 3: ``Must Be True'' Problem}
+
+If \(n\) is a positive integer, which expression must be even: \(2n + 1\), \(n^2 + n\), or \(n + 3\)?
+
+\textbf{Test \(n = 2\):} \(2(2) + 1 = 5\) (odd), \(4 + 2 = 6\) (even), \(2 + 3 = 5\) (odd).
+
+\textbf{Test \(n = 3\):} \(7\) (odd), \(9 + 3 = 12\) (even), \(6\) (even).
+
+Only \(n^2 + n = n(n+1)\) is even for both. This makes sense: \(n(n+1)\) is the product of consecutive integers, so one factor is always even.
+
+\(\boxed{n^2 + n}\)
+
+\section*{Example 4: Picking Numbers to Verify an Algebraic Result}
+
+Simplify \(\dfrac{2(x + 3) - 4}{2}\).
+
+\textbf{Algebraic:} \(\dfrac{2x + 6 - 4}{2} = \dfrac{2x + 2}{2} = x + 1\).
+
+\textbf{Check with \(x = 4\):} Original: \(\dfrac{2(7) - 4}{2} = \dfrac{10}{2} = 5\). Simplified: \(4 + 1 = 5\). Confirmed.
+
+\(\boxed{x + 1}\)
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Picking numbers turns abstract algebra problems into concrete arithmetic. It is the fastest way to check whether an algebraic simplification is correct.
+  \item Always avoid 0 and 1 unless the problem forces them. These values cause too many expressions to coincide.
+  \item For percent problems with no specific starting value, start with 100. It turns every percent directly into a dollar amount.
+  \item Picking numbers is a \textit{verification} strategy on free-response questions. You still need algebra to produce a candidate answer, but picking numbers confirms it in seconds.
+\end{itemize}
+
+\newpage
+
+\section*{Practice Questions: Picking Numbers for Variable Expressions}
+
+\subsection*{Part A: Expression Simplification}
+\begin{enumerate}
+  \item Simplify \(\dfrac{x^2 - 16}{x + 4}\) for \(x \neq -4\), then verify with \(x = 5\).
+  \item Simplify \(\dfrac{6x^2 + 12x}{6x}\) for \(x \neq 0\), then verify with \(x = 2\).
+  \item Which is equivalent to \((a + b)^2 - (a - b)^2\)? Simplify, then verify with \(a = 3, b = 1\).
+  \item Simplify \(\dfrac{x^2 - 5x + 6}{x - 2}\) for \(x \neq 2\), then verify with \(x = 4\).
+  \item Simplify \(\dfrac{3(2x - 4)}{6}\), then verify with \(x = 5\).
+\end{enumerate}
+
+\subsection*{Part B: Variable Percent and Ratio Problems}
+\begin{enumerate}
+  \item An item costs \(p\) dollars. After a \(30\%\) discount, what is the sale price in terms of \(p\)? Verify with \(p = 50\).
+  \item A population of \(N\) increases by \(25\%\) and then decreases by \(20\%\). What is the final population in terms of \(N\)?
+  \item An item's price is \(c\) dollars. It is marked up by \(m\%\). Express the new price in terms of \(c\) and \(m\).
+  \item An employee earns \(w\) dollars per week. After a \(10\%\) raise and then a \(5\%\) bonus on the new salary, what is the employee's new weekly pay in terms of \(w\)?
+  \item If the length of a rectangle is doubled and the width is tripled, by what factor does the area change? Verify with length 4 and width 3.
+\end{enumerate}
+
+\subsection*{Part C: ``Must Be True'' Reasoning}
+\begin{enumerate}
+  \item If \(n\) is a positive odd integer, is \(n^2\) always odd, always even, or could it be either? Verify with at least two values.
+  \item If \(a\) and \(b\) are both positive even integers, must \(a + b\) be even? Verify.
+  \item If \(x > 0\), is \(x^2\) always greater than \(x\)? Test with \(x = 3\) and \(x = 0.5\).
+  \item If \(n\) is a positive integer, must \(n^2 - n\) be even? Verify with \(n = 3\) and \(n = 4\).
+  \item If \(a < b\) and both are positive, must \(\dfrac{1}{a} > \dfrac{1}{b}\)? Verify.
+\end{enumerate}
+
+\subsection*{Part D: Picking Numbers to Build or Check Formulas}
+\begin{enumerate}
+  \item The average of \(3x\) and \(5x\) is what expression in terms of \(x\)? Verify with \(x = 4\).
+  \item A square has side length \(s + 2\). Express its area in terms of \(s\), then verify with \(s = 3\).
+  \item If \(f(x) = 2x + 1\), what is \(f(3x)\) in terms of \(x\)? Verify with \(x = 2\).
+  \item The perimeter of a rectangle with length \(2w\) and width \(w\) is what expression in terms of \(w\)? Verify with \(w = 5\).
+  \item If the radius of a circle is doubled from \(r\) to \(2r\), by what factor does the area increase? Verify with \(r = 3\).
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \item A car travels \(d\) miles in \(t\) hours. It then travels \(d\) more miles at twice the original speed. Express the total time for both legs in terms of \(d\) and \(t\). Verify with \(d = 100, t = 2\).
+  \item A worker can complete a job in \(h\) hours. After working for 3 hours, what fraction of the job remains? Verify with \(h = 10\).
+  \item The price of a stock drops by \(x\%\) on Monday and rises by \(x\%\) on Tuesday. Is the stock's value after Tuesday equal to, greater than, or less than its original value? Verify with \(x = 10\).
+  \item If \(a\) is a positive integer, is \(\dfrac{a^2 + a}{2}\) always an integer? Verify with \(a = 5\) and \(a = 6\).
+  \item A cube has edge length \(e\). If the edge length is increased by \(50\%\), by what percent does the volume increase? Verify with \(e = 2\).
+\end{enumerate}
+
+\newpage
+
+\section*{Answer Key and Solutions: Picking Numbers for Variable Expressions}
+
+\subsection*{Part A Solutions: Expression Simplification}
+\begin{enumerate}
+  \item \(\dfrac{x^2 - 16}{x + 4} = \dfrac{(x-4)(x+4)}{x+4} = x - 4\). Check: \(x = 5\) gives \(\dfrac{9}{9} = 1\) and \(5 - 4 = 1\).
+
+  \(\boxed{x - 4}\)
+
+  \item \(\dfrac{6x^2 + 12x}{6x} = \dfrac{6x(x + 2)}{6x} = x + 2\). Check: \(x = 2\) gives \(\dfrac{24 + 24}{12} = 4\) and \(2 + 2 = 4\).
+
+  \(\boxed{x + 2}\)
+
+  \item Expand: \((a+b)^2 - (a-b)^2 = (a^2 + 2ab + b^2) - (a^2 - 2ab + b^2) = 4ab\). Check: \(a=3, b=1\): \(16 - 4 = 12\) and \(4(3)(1) = 12\).
+
+  \(\boxed{4ab}\)
+
+  \item \(\dfrac{x^2 - 5x + 6}{x - 2} = \dfrac{(x-2)(x-3)}{x-2} = x - 3\). Check: \(x = 4\) gives \(\dfrac{2}{2} = 1\) and \(4 - 3 = 1\).
+
+  \(\boxed{x - 3}\)
+
+  \item \(\dfrac{3(2x - 4)}{6} = \dfrac{6x - 12}{6} = x - 2\). Check: \(x = 5\) gives \(\dfrac{3(6)}{6} = 3\) and \(5 - 2 = 3\).
+
+  \(\boxed{x - 2}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Variable Percent and Ratio Problems}
+\begin{enumerate}
+  \item Sale price \(= 0.70p\). Check: \(0.70(50) = 35\). A \(30\%\) discount on \(\$50\) is \(\$15\) off, giving \(\$35\).
+
+  \(\boxed{0.70p}\)
+
+  \item \(N \times 1.25 \times 0.80 = 1.00N = N\). The final population equals the original.
+
+  \(\boxed{N}\)
+
+  \item New price \(= c\left(1 + \dfrac{m}{100}\right)\).
+
+  \(\boxed{c\!\left(1 + \dfrac{m}{100}\right)}\)
+
+  \item \(w \times 1.10 \times 1.05 = 1.155w\). Check with \(w = 100\): \(100 \to 110 \to 115.50\). And \(1.155(100) = 115.50\).
+
+  \(\boxed{1.155w}\)
+
+  \item Original area: \(4 \times 3 = 12\). New area: \(8 \times 9 = 72\). Factor: \(72 \div 12 = 6\).
+
+  \(\boxed{6}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: ``Must Be True'' Reasoning}
+\begin{enumerate}
+  \item Test \(n = 3\): \(9\) (odd). Test \(n = 5\): \(25\) (odd). The square of an odd number is always odd (since odd \(\times\) odd \(=\) odd).
+
+  \(\boxed{\text{Always odd}}\)
+
+  \item Test \(a = 2, b = 4\): \(6\) (even). Test \(a = 6, b = 8\): \(14\) (even). Yes, even \(+\) even \(=\) even, always.
+
+  \(\boxed{\text{Yes, always even}}\)
+
+  \item Test \(x = 3\): \(9 > 3\), true. Test \(x = 0.5\): \(0.25 > 0.5\) is false. So no, \(x^2 > x\) is not always true for \(x > 0\). It fails for \(0 < x < 1\).
+
+  \(\boxed{\text{No, not always}}\)
+
+  \item Test \(n = 3\): \(9 - 3 = 6\) (even). Test \(n = 4\): \(16 - 4 = 12\) (even). \(n^2 - n = n(n - 1)\) is the product of consecutive integers, so one is always even.
+
+  \(\boxed{\text{Yes, always even}}\)
+
+  \item Test \(a = 2, b = 5\): \(\dfrac{1}{2} = 0.5 > \dfrac{1}{5} = 0.2\). Test \(a = 1, b = 3\): \(1 > \dfrac{1}{3}\). Yes, for positive values, a smaller denominator means a larger reciprocal.
+
+  \(\boxed{\text{Yes, always}}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Picking Numbers to Build or Check Formulas}
+\begin{enumerate}
+  \item Average: \(\dfrac{3x + 5x}{2} = 4x\). Check: \(x = 4\) gives \(\dfrac{12 + 20}{2} = 16\) and \(4(4) = 16\).
+
+  \(\boxed{4x}\)
+
+  \item Area \(= (s + 2)^2 = s^2 + 4s + 4\). Check: \(s = 3\) gives \(5^2 = 25\) and \(9 + 12 + 4 = 25\).
+
+  \(\boxed{s^2 + 4s + 4}\)
+
+  \item \(f(3x) = 2(3x) + 1 = 6x + 1\). Check: \(x = 2\) gives \(f(6) = 13\) and \(6(2) + 1 = 13\).
+
+  \(\boxed{6x + 1}\)
+
+  \item Perimeter \(= 2(2w) + 2(w) = 6w\). Check: \(w = 5\) gives \(2(10) + 2(5) = 30\) and \(6(5) = 30\).
+
+  \(\boxed{6w}\)
+
+  \item Original area: \(\pi r^2\). New area: \(\pi(2r)^2 = 4\pi r^2\). Factor: 4. Check: \(r = 3\) gives \(9\pi\) vs.\ \(36\pi\), ratio 4.
+
+  \(\boxed{4}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \item Original speed: \(\dfrac{d}{t}\). Second leg at twice the speed: \(\dfrac{2d}{t}\). Time for second leg: \(\dfrac{d}{2d/t} = \dfrac{t}{2}\). Total time: \(t + \dfrac{t}{2} = \dfrac{3t}{2}\). Check: \(d = 100, t = 2\), speed \(= 50\) mph. Second leg at 100 mph takes 1 hour. Total: 3 hours. \(\dfrac{3(2)}{2} = 3\). Confirmed.
+
+  \(\boxed{\dfrac{3t}{2}}\)
+
+  \item After 3 hours, fraction completed: \(\dfrac{3}{h}\). Fraction remaining: \(1 - \dfrac{3}{h} = \dfrac{h - 3}{h}\). Check: \(h = 10\) gives \(\dfrac{7}{10}\). After 3 hours of a 10-hour job, \(70\%\) remains.
+
+  \(\boxed{\dfrac{h - 3}{h}}\)
+
+  \item Pick \(x = 10\). Start at \(\$100\). After \(10\%\) drop: \(\$90\). After \(10\%\) rise: \(90 \times 1.10 = \$99\). The value is less than the original. In general: \((1 - x/100)(1 + x/100) = 1 - (x/100)^2 < 1\).
+
+  \(\boxed{\text{Less than the original}}\)
+
+  \item \(\dfrac{a^2 + a}{2} = \dfrac{a(a+1)}{2}\). Since \(a\) and \(a + 1\) are consecutive, one is even, so \(a(a+1)\) is always even, and dividing by 2 gives an integer. Check: \(a = 5\): \(\dfrac{30}{2} = 15\). \(a = 6\): \(\dfrac{42}{2} = 21\). Both integers.
+
+  \(\boxed{\text{Yes, always an integer}}\)
+
+  \item New edge: \(1.5e\). New volume: \((1.5e)^3 = 3.375e^3\). Original volume: \(e^3\). Factor: \(3.375\). Percent increase: \((3.375 - 1) \times 100 = 237.5\%\). Check: \(e = 2\): original \(= 8\), new \(= 27\), factor \(= 3.375\), increase \(= 237.5\%\).
+
+  \(\boxed{237.5\%}\)
+\end{enumerate}
+
+\ReflectionPage{Unit 10, Topic 2}{https://www.scotchegg.co}
+
+\end{document}

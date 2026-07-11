@@ -7,7 +7,7 @@
 \usepackage{xcolor}
 \usepackage{helvet}
 \usepackage{enumitem}
-\usepackage{graphicx} % Required for inserting images
+\usepackage{lmodern}
 \makeatletter
 \IfFileExists{../common-things/reflectionpage.tex}{%
   \input{../common-things/reflectionpage.tex}%
@@ -36,12 +36,364 @@
 \raggedright
 \pagenumbering{gobble}
 
-\maketitle
+\begin{center}
+    \LARGE \textbf{Unit 9: Multi-Step and Mixed Problems} \\[6pt]
+    \Large \textbf{Topic 1: Multi-Step Algebra and Percent Word Problems}
+\end{center}
 
-\section{Introduction}
+\vspace{1em}
 
+\section*{Concept Summary}
 
+Many SAT math questions are not about a single skill in isolation. Instead, they layer two or more concepts into a single problem, requiring you to recognize which tools to use and in what order. This topic focuses on problems that combine \textbf{algebraic manipulation} (solving equations, simplifying expressions, working with inequalities) with \textbf{percent and ratio reasoning} (percent change, markups, discounts, tax, tips, and successive percent changes).
 
-\ReflectionPage{Unit 9, Topic 2}{https://www.scotchegg.co}
+A \textbf{percent change} can be expressed as multiplication by a factor. A \(p\%\) increase multiplies by \((1 + p/100)\), and a \(p\%\) decrease multiplies by \((1 - p/100)\). For example, a \(20\%\) increase multiplies by \(1.20\), and a \(15\%\) decrease multiplies by \(0.85\). When multiple percent changes happen in sequence, multiply the factors together. A \(10\%\) increase followed by a \(10\%\) decrease is \(1.10 \times 0.90 = 0.99\), which is a net \(1\%\) decrease, not a return to the original value. This is a classic SAT trap.
+
+Percent-algebra hybrids typically look like word problems: a store marks up an item, then applies a discount; a population grows by a certain percent per year and you need to find when it reaches a target; a price after tax equals a given total and you need to find the pre-tax price. The algebraic component usually involves setting up and solving an equation or expression that models the situation.
+
+Another common pattern is \textbf{``percent of'' combined with systems of equations}. For instance, a mixture problem might tell you that a solution is \(30\%\) acid and you mix it with a solution that is \(50\%\) acid to get a certain volume at \(40\%\) acid. This requires both percent reasoning and a system of two equations (one for total volume, one for total acid).
+
+The key to these problems is translating the words carefully into algebra before you start solving. Write down what each variable represents, set up equations that match each sentence of the problem, and then solve.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Translate successive percent changes into multiplication factors and combine them.
+  \item Set up and solve equations involving markup, discount, tax, and tip in sequence.
+  \item Model mixture and concentration problems with systems of equations.
+  \item Work backward from a final value through percent changes to find an original value.
+  \item Combine ratio reasoning with algebraic solving in multi-step word problems.
+\end{itemize}
+
+\section*{Example 1: Successive Percent Changes}
+
+A store increases the price of a jacket by \(25\%\), then offers a \(20\%\) discount on the new price. If the original price was \(\$80\), what is the final price?
+
+\textbf{Step 1:} Apply the \(25\%\) increase.
+\[
+80 \times 1.25 = 100
+\]
+
+\textbf{Step 2:} Apply the \(20\%\) discount to the new price.
+\[
+100 \times 0.80 = 80
+\]
+
+The final price is \(\boxed{\$80}\).
+
+(Note: even though the percent increase and decrease are close in value, the final price returns to exactly \(\$80\) here only because \(1.25 \times 0.80 = 1.00\). This is not typical. A \(20\%\) increase followed by a \(20\%\) decrease gives \(1.20 \times 0.80 = 0.96\), a net \(4\%\) loss.)
+
+\section*{Example 2: Working Backward from a Final Price}
+
+After a \(15\%\) discount and then \(8\%\) sales tax on the discounted price, a customer pays \(\$91.80\) for a pair of shoes. What was the original price before the discount?
+
+\textbf{Step 1:} Let the original price be \(p\). The discounted price is \(0.85p\). After \(8\%\) tax, the customer pays:
+\[
+0.85p \times 1.08 = 0.918p
+\]
+
+\textbf{Step 2:} Set this equal to the amount paid.
+\[
+0.918p = 91.80 \implies p = \frac{91.80}{0.918} = 100
+\]
+
+The original price was \(\boxed{\$100}\).
+
+\section*{Example 3: Mixture Problem}
+
+A chemist has a \(40\%\) acid solution and a \(70\%\) acid solution. How many liters of each should be mixed to obtain 12 liters of a \(50\%\) acid solution?
+
+\textbf{Step 1:} Let \(x\) = liters of the \(40\%\) solution and \(y\) = liters of the \(70\%\) solution.
+\[
+x + y = 12 \quad \text{(total volume)}
+\]
+\[
+0.40x + 0.70y = 0.50(12) = 6 \quad \text{(total acid)}
+\]
+
+\textbf{Step 2:} From the first equation, \(x = 12 - y\). Substitute:
+\[
+0.40(12 - y) + 0.70y = 6 \implies 4.8 - 0.40y + 0.70y = 6
+\]
+\[
+0.30y = 1.2 \implies y = 4
+\]
+\[
+x = 12 - 4 = 8
+\]
+
+Use \(\boxed{8}\) liters of the \(40\%\) solution and \(\boxed{4}\) liters of the \(70\%\) solution.
+
+\section*{Example 4: Percent Increase with Algebraic Setup}
+
+The price of a stock increased by \(20\%\) in January and then decreased by \(k\%\) in February. The stock's price at the end of February was \(8\%\) more than its price at the beginning of January. What is the value of \(k\)?
+
+\textbf{Step 1:} Let the initial price be \(P\). After the January increase: \(1.20P\). After the February decrease:
+\[
+1.20P \times \left(1 - \frac{k}{100}\right)
+\]
+
+\textbf{Step 2:} The final price is \(1.08P\):
+\[
+1.20\left(1 - \frac{k}{100}\right) = 1.08
+\]
+\[
+1 - \frac{k}{100} = \frac{1.08}{1.20} = 0.90
+\]
+\[
+\frac{k}{100} = 0.10 \implies k = 10
+\]
+
+The value of \(k\) is \(\boxed{10}\).
+
+\section*{Example 5: Ratio and Percent Combined}
+
+In a class of 40 students, the ratio of boys to girls is \(3:5\). If 4 more boys join the class, what percent of the new class is boys?
+
+\textbf{Step 1:} Original boys: \(\dfrac{3}{8} \times 40 = 15\). Original girls: \(\dfrac{5}{8} \times 40 = 25\).
+
+\textbf{Step 2:} After 4 boys join: 19 boys, 25 girls, 44 students total.
+\[
+\frac{19}{44} \times 100 \approx 43.18\%
+\]
+
+Rounding to the nearest tenth, the answer is \(\boxed{43.2}\%\).
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Successive percent changes multiply as factors. Never add or subtract percent changes directly. A \(30\%\) increase followed by a \(30\%\) decrease is \(1.30 \times 0.70 = 0.91\), not \(1.00\).
+  \item To reverse a percent change, divide by the factor rather than subtracting the percent. If a price after a \(20\%\) increase is \(\$60\), the original is \(60 \div 1.20 = \$50\), not \(60 - 12 = \$48\).
+  \item Mixture problems always have two equations: one for the total quantity and one for the total amount of the substance (acid, salt, juice, etc.).
+  \item When a problem layers multiple operations (markup, then discount, then tax), write the entire chain as a single expression before computing. This reduces errors and makes it easier to solve for an unknown in the chain.
+\end{itemize}
+
+\newpage
+
+\section*{Practice Questions: Multi-Step Algebra and Percent Word Problems}
+
+\subsection*{Part A: Percent Change Fundamentals}
+\begin{enumerate}
+  \item A shirt originally costs \(\$60\). It is marked up by \(15\%\) and then discounted by \(10\%\). What is the final price?
+  \item A town's population increases by \(10\%\) one year and then decreases by \(10\%\) the following year. If the original population was 20{,}000, what is the population after two years?
+  \item An investment gains \(50\%\) in its first year and loses \(40\%\) in its second year. What is the net percent change over the two years?
+  \item After a \(25\%\) discount, a television costs \(\$450\). What was the original price?
+  \item A car's value decreases by \(12\%\) per year. If the car is worth \(\$22{,}000\) now, what will it be worth after 2 years, to the nearest dollar?
+\end{enumerate}
+
+\subsection*{Part B: Tax, Tip, and Multi-Layer Pricing}
+\begin{enumerate}
+  \item A meal costs \(\$45\) before tax. Sales tax is \(8\%\), and a \(20\%\) tip is added to the pre-tax amount. What is the total cost?
+  \item After a \(30\%\) discount and \(7\%\) sales tax on the discounted price, a pair of sneakers costs \(\$74.90\). What was the original price?
+  \item A store marks up wholesale goods by \(40\%\) and then offers a \(25\%\) employee discount. An employee buys an item whose wholesale cost is \(\$50\). What does the employee pay?
+  \item A \(15\%\) service charge is added to a hotel bill, and then a \(6\%\) tax is applied to the total (bill plus service charge). If the final amount is \(\$122.13\), what was the original hotel bill, to the nearest dollar?
+  \item A retailer buys an item for \(\$d\) and marks it up by \(m\%\). During a sale, the marked-up price is reduced by \(20\%\). Express the sale price in terms of \(d\) and \(m\).
+\end{enumerate}
+
+\subsection*{Part C: Mixture and Concentration Problems}
+\begin{enumerate}
+  \item A \(20\%\) salt solution is mixed with a \(60\%\) salt solution to produce 10 liters of a \(36\%\) salt solution. How many liters of the \(20\%\) solution are used?
+  \item A 50-ounce container holds a juice blend that is \(30\%\) real juice. How many ounces of pure juice must be added so that the mixture is \(50\%\) real juice?
+  \item A pharmacist mixes a \(10\%\) saline solution with a \(25\%\) saline solution. If she uses 6 liters of the \(10\%\) solution, how many liters of the \(25\%\) solution should she add to get a \(15\%\) mixture?
+  \item A 200-milliliter solution is \(45\%\) alcohol. How many milliliters of pure water must be added to reduce the concentration to \(30\%\) alcohol?
+  \item A coffee shop blends Brand A coffee at \(\$12\) per pound with Brand B coffee at \(\$8\) per pound to make 20 pounds of a blend costing \(\$9.50\) per pound. How many pounds of Brand A are used?
+\end{enumerate}
+
+\subsection*{Part D: Ratio and Percent Reasoning}
+\begin{enumerate}
+  \item In a jar, the ratio of red marbles to blue marbles is \(2:3\). There are 30 marbles in total. If 5 red marbles are added, what is the new ratio of red marbles to blue marbles?
+  \item A class has 28 students. \(75\%\) of the students passed an exam. How many more students would need to pass a re-test so that \(85\%\) of the original 28 students have passed?
+  \item A company's revenue increased by \(20\%\) from Year 1 to Year 2, and by \(15\%\) from Year 2 to Year 3. What was the overall percent increase from Year 1 to Year 3?
+  \item The ratio of men to women at a conference is \(5:4\). If there are 180 attendees, how many more men than women are there?
+  \item A survey of 500 people found that \(64\%\) preferred Product A. After a marketing campaign, a new survey of 600 people found that \(70\%\) preferred Product A. By how many people did the number of Product A supporters increase?
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Applications}
+\begin{enumerate}
+  \item An online retailer sells a product for \(\$p\). Shipping adds \(5\%\) of the product price, and sales tax of \(8\%\) is applied to the sum of the product price and shipping. If the total charged is \(\$68.04\), what is the value of \(p\)?
+  \item A savings account earns \(4\%\) interest compounded annually. If \(\$2{,}000\) is deposited, write an expression for the account balance after \(t\) years, and find the balance after 3 years to the nearest cent.
+  \item A factory produces 500 widgets per day. Due to upgrades, production increases by \(10\%\) each month. After 2 months, the factory also begins rejecting \(5\%\) of widgets for quality issues. How many acceptable widgets does the factory produce per day in the third month, rounded to the nearest whole number?
+  \item A store buys 80 units of a product at \(\$25\) each. It sells \(60\%\) of them at a \(40\%\) markup and the remaining units at a \(10\%\) discount. What is the store's total profit?
+  \item The price of a stock was \(\$P\) at the start of Monday. It rose \(a\%\) on Monday and fell \(b\%\) on Tuesday. The closing price on Tuesday was \(\$P\) again. Express \(b\) in terms of \(a\).
+\end{enumerate}
+
+\newpage
+
+\section*{Answer Key and Solutions: Multi-Step Algebra and Percent Word Problems}
+
+\subsection*{Part A Solutions: Percent Change Fundamentals}
+\begin{enumerate}
+  \item Apply the markup then the discount:
+  \[
+  60 \times 1.15 \times 0.90 = 60 \times 1.035 = 62.10
+  \]
+
+  \(\boxed{\$62.10}\)
+
+  \item \(20{,}000 \times 1.10 \times 0.90 = 20{,}000 \times 0.99 = 19{,}800\).
+
+  \(\boxed{19{,}800}\)
+
+  \item Let the initial value be 100. After Year 1: \(100 \times 1.50 = 150\). After Year 2: \(150 \times 0.60 = 90\). The net change is \(90 - 100 = -10\), a \(10\%\) decrease.
+
+  \(\boxed{-10\%}\)
+
+  \item The discounted price is \(0.75p = 450\), so \(p = 450 \div 0.75 = 600\).
+
+  \(\boxed{\$600}\)
+
+  \item After 2 years: \(22{,}000 \times (0.88)^2 = 22{,}000 \times 0.7744 = 17{,}036.80\).
+
+  \(\boxed{\$17{,}037}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Tax, Tip, and Multi-Layer Pricing}
+\begin{enumerate}
+  \item Tax: \(45 \times 0.08 = 3.60\). Tip: \(45 \times 0.20 = 9.00\). Total: \(45 + 3.60 + 9.00 = 57.60\).
+
+  \(\boxed{\$57.60}\)
+
+  \item Let the original price be \(p\). After discount and tax:
+  \[
+  0.70p \times 1.07 = 0.749p = 74.90 \implies p = \frac{74.90}{0.749} = 100
+  \]
+
+  \(\boxed{\$100}\)
+
+  \item Markup: \(50 \times 1.40 = 70\). Employee discount: \(70 \times 0.75 = 52.50\).
+
+  \(\boxed{\$52.50}\)
+
+  \item Let the original bill be \(b\). After service charge and tax:
+  \[
+  b \times 1.15 \times 1.06 = 1.219b = 122.13 \implies b = \frac{122.13}{1.219} = 100.19 \approx 100
+  \]
+
+  \(\boxed{\$100}\)
+
+  \item The marked-up price is \(d \times \left(1 + \dfrac{m}{100}\right)\). After a \(20\%\) reduction:
+  \[
+  \text{Sale price} = 0.80d\left(1 + \frac{m}{100}\right)
+  \]
+
+  \(\boxed{0.80d\!\left(1 + \dfrac{m}{100}\right)}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Mixture and Concentration Problems}
+\begin{enumerate}
+  \item Let \(x\) = liters of the \(20\%\) solution. Then \(10 - x\) liters of the \(60\%\) solution.
+  \[
+  0.20x + 0.60(10 - x) = 0.36(10) \implies 0.20x + 6 - 0.60x = 3.6
+  \]
+  \[
+  -0.40x = -2.4 \implies x = 6
+  \]
+
+  \(\boxed{6}\)
+
+  \item Let \(x\) = ounces of pure juice added. The container currently has \(0.30 \times 50 = 15\) ounces of real juice.
+  \[
+  \frac{15 + x}{50 + x} = 0.50 \implies 15 + x = 0.50(50 + x) = 25 + 0.50x
+  \]
+  \[
+  0.50x = 10 \implies x = 20
+  \]
+
+  \(\boxed{20}\)
+
+  \item Let \(y\) = liters of the \(25\%\) solution.
+  \[
+  0.10(6) + 0.25y = 0.15(6 + y) \implies 0.6 + 0.25y = 0.9 + 0.15y
+  \]
+  \[
+  0.10y = 0.3 \implies y = 3
+  \]
+
+  \(\boxed{3}\)
+
+  \item The amount of alcohol stays fixed at \(0.45 \times 200 = 90\) mL. Let \(w\) = mL of water added.
+  \[
+  \frac{90}{200 + w} = 0.30 \implies 90 = 0.30(200 + w) = 60 + 0.30w
+  \]
+  \[
+  0.30w = 30 \implies w = 100
+  \]
+
+  \(\boxed{100}\)
+
+  \item Let \(a\) = pounds of Brand A and \(b = 20 - a\) = pounds of Brand B.
+  \[
+  12a + 8(20 - a) = 9.50(20) \implies 12a + 160 - 8a = 190
+  \]
+  \[
+  4a = 30 \implies a = 7.5
+  \]
+
+  \(\boxed{7.5}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Ratio and Percent Reasoning}
+\begin{enumerate}
+  \item Red: \(\dfrac{2}{5} \times 30 = 12\). Blue: \(\dfrac{3}{5} \times 30 = 18\). After adding 5 red: 17 red and 18 blue. The new ratio is \(17:18\).
+
+  \(\boxed{17:18}\)
+
+  \item Originally passed: \(0.75 \times 28 = 21\). Target: \(0.85 \times 28 = 23.8\). Since the number must be a whole number, 24 students need to pass. Additional passes needed: \(24 - 21 = 3\).
+
+  \(\boxed{3}\)
+
+  \item Overall factor: \(1.20 \times 1.15 = 1.38\). The overall percent increase is \(38\%\).
+
+  \(\boxed{38}\)
+
+  \item Men: \(\dfrac{5}{9} \times 180 = 100\). Women: \(\dfrac{4}{9} \times 180 = 80\). Difference: \(100 - 80 = 20\).
+
+  \(\boxed{20}\)
+
+  \item Original supporters: \(0.64 \times 500 = 320\). New supporters: \(0.70 \times 600 = 420\). Increase: \(420 - 320 = 100\).
+
+  \(\boxed{100}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Applications}
+\begin{enumerate}
+  \item The product plus shipping is \(p + 0.05p = 1.05p\). After \(8\%\) tax:
+  \[
+  1.05p \times 1.08 = 1.134p = 68.04 \implies p = \frac{68.04}{1.134} = 60
+  \]
+
+  \(\boxed{60}\)
+
+  \item The balance after \(t\) years is \(2000(1.04)^t\). After 3 years:
+  \[
+  2000(1.04)^3 = 2000(1.124864) = 2249.73
+  \]
+
+  \(\boxed{\$2{,}249.73}\)
+
+  \item After 2 months of \(10\%\) increases, daily production is \(500 \times (1.10)^2 = 500 \times 1.21 = 605\). In the third month, \(5\%\) are rejected, so acceptable widgets are:
+  \[
+  605 \times 0.95 = 574.75 \approx 575
+  \]
+
+  \(\boxed{575}\)
+
+  \item Cost: \(80 \times 25 = \$2{,}000\). Revenue from \(60\%\) at markup: \(48 \times 25 \times 1.40 = 48 \times 35 = \$1{,}680\). Revenue from \(40\%\) at discount: \(32 \times 25 \times 0.90 = 32 \times 22.50 = \$720\). Total revenue: \(1{,}680 + 720 = \$2{,}400\). Profit: \(2{,}400 - 2{,}000 = \$400\).
+
+  \(\boxed{\$400}\)
+
+  \item After Monday: \(P \times \left(1 + \dfrac{a}{100}\right)\). After Tuesday:
+  \[
+  P\left(1 + \frac{a}{100}\right)\left(1 - \frac{b}{100}\right) = P
+  \]
+  \[
+  \left(1 + \frac{a}{100}\right)\left(1 - \frac{b}{100}\right) = 1 \implies 1 - \frac{b}{100} = \frac{1}{1 + a/100} = \frac{100}{100 + a}
+  \]
+  \[
+  \frac{b}{100} = 1 - \frac{100}{100 + a} = \frac{a}{100 + a} \implies b = \frac{100a}{100 + a}
+  \]
+
+  \(\boxed{b = \dfrac{100a}{100 + a}}\)
+\end{enumerate}
+
+\ReflectionPage{Unit 9, Topic 1}{https://www.scotchegg.co}
 
 \end{document}

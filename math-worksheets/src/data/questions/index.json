@@ -342,5 +342,61 @@
         "exampleCount": 6
       }
     ]
+  },
+  {
+    "unitSlug": "unit-9",
+    "unitDirectory": "Unit_9__Multi_Step___Mixed_Problems",
+    "unitTitle": "Unit 9: Multi-Step and Mixed Problems",
+    "topics": [
+      {
+        "topicSlug": "topic-1-multi-step-algebra-and-percent-word-problems",
+        "topicTitle": "Topic 1: Multi-Step Algebra and Percent Word Problems",
+        "questionCount": 25,
+        "exampleCount": 5
+      },
+      {
+        "topicSlug": "topic-2-combining-systems-functions-and-graphs",
+        "topicTitle": "Topic 2: Combining Systems, Functions, and Graphs",
+        "questionCount": 25,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-3-data-and-probability-in-context",
+        "topicTitle": "Topic 3: Data and Probability in Context",
+        "questionCount": 25,
+        "exampleCount": 5
+      },
+      {
+        "topicSlug": "topic-4-multi-skill-geometry-word-problems",
+        "topicTitle": "Topic 4: Multi-Skill Geometry Word Problems",
+        "questionCount": 25,
+        "exampleCount": 6
+      },
+      {
+        "topicSlug": "topic-5-comprehensive-mixed-practice",
+        "topicTitle": "Topic 5: Comprehensive Mixed Practice",
+        "questionCount": 25,
+        "exampleCount": 4
+      }
+    ]
+  },
+  {
+    "unitSlug": "unit-10",
+    "unitDirectory": "Unit_10__Review___Test_Strategy",
+    "unitTitle": "Unit 10: Review and Test Strategy",
+    "topics": [
+      {
+        "topicSlug": "topic-1-backsolving-and-plugging-in-answer-choices",
+        "topicTitle": "Topic 1: Backsolving and Plugging In Answer Choices",
+        "questionCount": 25,
+        "exampleCount": 4
+      },
+      {
+        "topicSlug": "topic-2-picking-numbers-for-variable-expressions",
+        "topicTitle": "Topic 2: Picking Numbers for Variable Expressions",
+        "questionCount": 25,
+        "exampleCount": 4
+      }
+    ]
   }
 ]

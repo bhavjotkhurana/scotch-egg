@@ -1,15 +1,15 @@
 [
   {
     "unitDirectory": "Unit_10__Review___Test_Strategy",
-    "unitTitle": "Unit_10__Review___Test_Strategy",
+    "unitTitle": "Unit 10: Review and Test Strategy",
     "topics": [
       {
         "file": "Topic_1.tex",
-        "title": "Topic_1"
+        "title": "Topic 1: Backsolving and Plugging In Answer Choices"
       },
       {
         "file": "Topic_2.tex",
-        "title": "Topic_2"
+        "title": "Topic 2: Picking Numbers for Variable Expressions"
       },
       {
         "file": "Topic_3.tex",
@@ -271,27 +271,27 @@
   },
   {
     "unitDirectory": "Unit_9__Multi_Step___Mixed_Problems",
-    "unitTitle": "Unit_9__Multi_Step___Mixed_Problems",
+    "unitTitle": "Unit 9: Multi-Step and Mixed Problems",
     "topics": [
       {
         "file": "Topic_1.tex",
-        "title": "Topic_1"
+        "title": "Topic 1: Multi-Step Algebra and Percent Word Problems"
       },
       {
         "file": "Topic_2.tex",
-        "title": "Topic_2"
+        "title": "Topic 2: Combining Systems, Functions, and Graphs"
       },
       {
         "file": "Topic_3.tex",
-        "title": "Topic_3"
+        "title": "Topic 3: Data and Probability in Context"
       },
       {
         "file": "Topic_4.tex",
-        "title": "Topic_4"
+        "title": "Topic 4: Multi-Skill Geometry Word Problems"
       },
       {
         "file": "Topic_5.tex",
-        "title": "Topic_5"
+        "title": "Topic 5: Comprehensive Mixed Practice"
       }
     ]
   }
