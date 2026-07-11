@@ -396,6 +396,30 @@
         "topicTitle": "Topic 2: Picking Numbers for Variable Expressions",
         "questionCount": 25,
         "exampleCount": 4
+      },
+      {
+        "topicSlug": "topic-3-calculator-strategy-desmos-on-the-digital-sat",
+        "topicTitle": "Topic 3: Calculator Strategy (Desmos on the Digital SAT)",
+        "questionCount": 25,
+        "exampleCount": 4
+      },
+      {
+        "topicSlug": "topic-4-pacing-and-the-two-pass-approach",
+        "topicTitle": "Topic 4: Pacing and the Two-Pass Approach",
+        "questionCount": 20,
+        "exampleCount": 3
+      },
+      {
+        "topicSlug": "topic-5-common-traps-and-careless-error-patterns",
+        "topicTitle": "Topic 5: Common Traps and Careless-Error Patterns",
+        "questionCount": 25,
+        "exampleCount": 5
+      },
+      {
+        "topicSlug": "topic-6-full-mixed-review",
+        "topicTitle": "Topic 6: Full Mixed Review",
+        "questionCount": 25,
+        "exampleCount": 0
       }
     ]
   }

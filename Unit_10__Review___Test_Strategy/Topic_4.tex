@@ -1,0 +1,250 @@
+\documentclass[14pt]{extarticle}
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 10: Review and Test Strategy} \\[6pt]
+    \Large \textbf{Topic 4: Pacing and the Two-Pass Approach}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+The Digital SAT Math section consists of two modules of 22 questions each, with 35 minutes per module. That gives you approximately \textbf{1 minute and 35 seconds per question} on average. Some questions take 30 seconds; others take 3 minutes. The key to strong performance is not spending equal time on every question but rather managing your time so that you attempt every question you are capable of answering correctly.
+
+\textbf{The Two-Pass Approach:}
+
+\textbf{Pass 1 (first 20--25 minutes):} Work through every question in order. If a question feels straightforward, solve it and move on. If a question looks time-consuming or confusing after 30 seconds of reading, \textbf{flag it and skip it}. Do not spend 4 minutes on one question while easier questions sit unanswered later in the module. The Digital SAT interface has a built-in flag/bookmark feature for exactly this purpose.
+
+\textbf{Pass 2 (remaining 10--15 minutes):} Return to every flagged question. With the easy points already secured, you can invest more time in the harder problems without anxiety. You may also find that a later question triggered an idea relevant to an earlier one.
+
+\textbf{Pacing benchmarks:} After 15 minutes, you should have completed roughly 10--12 questions. After 25 minutes, you should have at least a first-pass attempt on all 22 questions. If you are significantly behind these marks, you are spending too long on individual problems.
+
+\textbf{Adaptive difficulty:} The Digital SAT is adaptive. If you do well on Module 1, Module 2 will be harder but worth more toward your score. This means Module 2 questions are expected to take longer. Adjust your pacing accordingly: you might need a more aggressive skip threshold on Module 2.
+
+\textbf{Guessing strategy:} There is no penalty for wrong answers on the Digital SAT. Never leave a question blank. If you are running out of time, enter your best guess for every remaining question. For free-response questions, common ``default guesses'' include 0, 1, 2, or other small integers, since SAT answers tend to be simple values.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Classify questions into ``quick solve,'' ``medium effort,'' and ``skip for now'' within 15--20 seconds of reading.
+  \item Use the flag/bookmark feature systematically during Pass 1.
+  \item Monitor your pacing against time benchmarks (roughly half the questions done by the halfway mark).
+  \item Allocate remaining time to flagged questions in order of confidence, not in order of appearance.
+  \item Never leave a free-response answer blank; enter a reasonable guess.
+\end{itemize}
+
+\section*{Example 1: Quick-Solve Recognition}
+
+\textit{``If \(3x = 18\), what is \(x + 5\)?''}
+
+This is a 15-second question. Solve \(x = 6\), then \(x + 5 = 11\). Do not overthink it. Answer and move on.
+
+\(\boxed{11}\)
+
+\section*{Example 2: Medium-Effort Recognition}
+
+\textit{``A rectangle has a perimeter of 30 and an area of 50. What is the length of the longer side?''}
+
+This requires setting up a system (\(l + w = 15\), \(lw = 50\)) and solving a quadratic. It is doable in about 90 seconds. Solve on Pass 1 if you are on pace, or flag it if you are behind.
+
+\textbf{Solution:} \(l + w = 15\) and \(lw = 50\). Substituting \(w = 15 - l\): \(l(15 - l) = 50 \implies l^2 - 15l + 50 = 0 \implies (l - 5)(l - 10) = 0\). The longer side is 10.
+
+\(\boxed{10}\)
+
+\section*{Example 3: Skip-and-Return Recognition}
+
+\textit{``A function \(f\) satisfies \(f(x+2) = f(x) + 3\) for all \(x\). If \(f(1) = 4\), what is \(f(9)\)?''}
+
+This requires careful thought: how many steps of \(+2\) get from 1 to 9? If it is not immediately clear, flag it and return on Pass 2.
+
+\textbf{Solution:} From \(x = 1\) to \(x = 9\) is 4 steps of \(+2\). Each step adds 3 to the output, so \(f(9) = 4 + 4(3) = 16\).
+
+\(\boxed{16}\)
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item The Two-Pass strategy ensures you see every question and prioritize the ones you can solve confidently. Spending 5 minutes on one hard question while skipping two easy ones is the most common pacing mistake.
+  \item Use the 15-minute checkpoint: if you have not completed at least 10 questions, speed up your skip threshold.
+  \item On Pass 2, tackle flagged questions in order of confidence, not in the order they appear. Start with the one you feel best about.
+  \item Never leave a question blank. On free-response, guess a small integer if you have no idea. On the SAT, the most common answers are small positive numbers.
+\end{itemize}
+
+\newpage
+
+\section*{Practice Questions: Pacing and the Two-Pass Approach}
+
+The questions below are a timed mini-set. Set a timer for \textbf{14 minutes} and attempt all 20 questions. Use the Two-Pass approach: do a quick first pass, flag hard ones, then return. Track which questions you flagged and how long each pass took.
+
+\subsection*{Part A: Quick Solves (target: under 30 seconds each)}
+\begin{enumerate}
+  \item If \(4x = 28\), what is \(x\)?
+  \item What is \(15\%\) of 80?
+  \item A triangle has angles measuring \(45^\circ\), \(90^\circ\), and \(x^\circ\). What is \(x\)?
+  \item If \(f(x) = 3x - 2\), what is \(f(5)\)?
+  \item The mean of 3, 7, and \(x\) is 6. What is \(x\)?
+\end{enumerate}
+
+\subsection*{Part B: Medium Effort (target: 60--90 seconds each)}
+\begin{enumerate}
+  \item Solve the system: \(x + y = 10\) and \(2x - y = 5\).
+  \item A circle has an area of \(49\pi\). What is its circumference? Express your answer in terms of \(\pi\).
+  \item Simplify: \(\dfrac{x^2 - 4}{x + 2}\) for \(x \neq -2\).
+  \item A shirt costs \(\$40\) after a \(20\%\) discount. What was the original price?
+  \item The exterior angle of a triangle is \(120^\circ\). One remote interior angle is \(45^\circ\). What is the other remote interior angle, in degrees?
+\end{enumerate}
+
+\subsection*{Part C: Challenging (target: 90--120 seconds each)}
+\begin{enumerate}
+  \item A right triangle has a hypotenuse of 13 and one leg of 5. What is the area of the triangle?
+  \item For what value of \(k\) does \(x^2 - 8x + k = 0\) have exactly one solution?
+  \item A cylindrical can has a radius of 3 cm and a volume of \(108\pi\) cubic cm. What is the height, in cm?
+  \item The function \(f(x) = -2(x - 3)^2 + 18\) has a maximum value. What is it?
+  \item If \(\sin(\theta) = \dfrac{5}{13}\) and \(\theta\) is acute, what is \(\cos(\theta)\)?
+\end{enumerate}
+
+\subsection*{Part D: Hard (target: 2--3 minutes each)}
+\begin{enumerate}
+  \item A store marks up an item by \(60\%\) and then discounts it by \(25\%\). What is the net percent change from the original cost?
+  \item The line \(y = mx\) is tangent to \(y = x^2 + 1\). Find the positive value of \(m\).
+  \item In a 30-60-90 triangle, the side opposite the \(60^\circ\) angle is \(8\sqrt{3}\). What is the perimeter of the triangle?
+  \item A weighted average: 20 students scored a mean of 70 and 30 students scored a mean of 85. What is the overall mean?
+  \item Two similar triangles have areas in the ratio \(4:9\). If the perimeter of the larger triangle is 45, what is the perimeter of the smaller triangle?
+\end{enumerate}
+
+\newpage
+
+\section*{Answer Key and Solutions: Pacing and the Two-Pass Approach}
+
+\subsection*{Part A Solutions: Quick Solves}
+\begin{enumerate}
+  \item \(x = 7\).
+
+  \(\boxed{7}\)
+
+  \item \(0.15 \times 80 = 12\).
+
+  \(\boxed{12}\)
+
+  \item \(x = 180 - 45 - 90 = 45\).
+
+  \(\boxed{45}\)
+
+  \item \(f(5) = 15 - 2 = 13\).
+
+  \(\boxed{13}\)
+
+  \item \(\dfrac{3 + 7 + x}{3} = 6 \implies 10 + x = 18 \implies x = 8\).
+
+  \(\boxed{8}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Medium Effort}
+\begin{enumerate}
+  \item Add the equations: \(3x = 15 \implies x = 5\). Then \(y = 5\).
+
+  \(\boxed{(5, 5)}\)
+
+  \item \(\pi r^2 = 49\pi \implies r = 7\). Circumference \(= 2\pi(7) = 14\pi\).
+
+  \(\boxed{14\pi}\)
+
+  \item \(\dfrac{(x-2)(x+2)}{x+2} = x - 2\).
+
+  \(\boxed{x - 2}\)
+
+  \item \(0.80p = 40 \implies p = 50\).
+
+  \(\boxed{\$50}\)
+
+  \item The other remote interior angle is \(120 - 45 = 75^\circ\).
+
+  \(\boxed{75}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Challenging}
+\begin{enumerate}
+  \item Other leg: \(\sqrt{169 - 25} = 12\). Area: \(\dfrac{1}{2}(5)(12) = 30\).
+
+  \(\boxed{30}\)
+
+  \item Discriminant \(= 0\): \(64 - 4k = 0 \implies k = 16\).
+
+  \(\boxed{16}\)
+
+  \item \(\pi(9)(h) = 108\pi \implies 9h = 108 \implies h = 12\).
+
+  \(\boxed{12}\)
+
+  \item The maximum value is the \(k\) in vertex form: 18.
+
+  \(\boxed{18}\)
+
+  \item \(\cos(\theta) = \sqrt{1 - 25/169} = \sqrt{144/169} = \dfrac{12}{13}\).
+
+  \(\boxed{\dfrac{12}{13}}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Hard}
+\begin{enumerate}
+  \item Net factor: \(1.60 \times 0.75 = 1.20\). Net change: \(20\%\) increase.
+
+  \(\boxed{20\%}\)
+
+  \item Set \(mx = x^2 + 1\), giving \(x^2 - mx + 1 = 0\). For tangency, discriminant \(= 0\):
+  \[
+  m^2 - 4 = 0 \implies m = 2 \text{ (taking the positive value)}
+  \]
+
+  \(\boxed{2}\)
+
+  \item The side opposite \(60^\circ\) is \(s\sqrt{3} = 8\sqrt{3}\), so \(s = 8\). The shortest side is 8, the side opposite \(60^\circ\) is \(8\sqrt{3}\), and the hypotenuse is \(2(8) = 16\). Perimeter: \(8 + 8\sqrt{3} + 16 = 24 + 8\sqrt{3}\).
+
+  \(\boxed{24 + 8\sqrt{3}}\)
+
+  \item Weighted mean: \(\dfrac{20(70) + 30(85)}{50} = \dfrac{1400 + 2550}{50} = \dfrac{3950}{50} = 79\).
+
+  \(\boxed{79}\)
+
+  \item Side ratio: \(\sqrt{4/9} = 2/3\). Perimeter of smaller: \(45 \times \dfrac{2}{3} = 30\).
+
+  \(\boxed{30}\)
+\end{enumerate}
+
+\ReflectionPage{Unit 10, Topic 4}{https://www.scotchegg.co}
+
+\end{document}

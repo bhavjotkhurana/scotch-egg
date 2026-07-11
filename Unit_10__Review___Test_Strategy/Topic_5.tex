@@ -1,0 +1,321 @@
+\documentclass[14pt]{extarticle}
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 10: Review and Test Strategy} \\[6pt]
+    \Large \textbf{Topic 5: Common Traps and Careless-Error Patterns}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+The SAT is designed to reward careful thinking and punish rushed work. Many questions include \textbf{trap answers}: wrong values that you would get if you made a specific common error. Knowing these traps in advance helps you recognize and avoid them.
+
+\textbf{Trap 1: Answering the wrong question.} The problem asks for \(2x + 1\), but you solve for \(x\) and enter that. Always re-read the final question after solving.
+
+\textbf{Trap 2: Sign errors.} Distributing a negative, subtracting a quantity with multiple terms, or working with negative exponents are all common sources of sign mistakes. The antidote is to write out every step rather than doing multiple operations in your head.
+
+\textbf{Trap 3: Percent change confusion.} A \(20\%\) increase followed by a \(20\%\) decrease does \textit{not} return to the original value. The result is \(1.20 \times 0.80 = 0.96\), a \(4\%\) decrease. Similarly, to reverse a \(25\%\) increase, you divide by \(1.25\), not subtract \(25\%\).
+
+\textbf{Trap 4: Extraneous solutions.} Squaring both sides of an equation (as with radical equations) or multiplying by a variable expression can introduce solutions that do not satisfy the original equation. Always check your answers by substituting back.
+
+\textbf{Trap 5: Confusing radius and diameter.} Many problems give a diameter but the formula requires a radius, or vice versa. If a circle has a diameter of 10, the radius is 5, not 10.
+
+\textbf{Trap 6: Misreading the units.} A problem might give dimensions in inches but ask for the answer in feet, or give a rate in miles per hour but ask for minutes. Always check that your answer is in the units the question requests.
+
+\textbf{Trap 7: Assuming equal means identical.} If two angles are supplementary and one is \(x\), the other is \(180 - x\), not \(x\). If two quantities add to a total, knowing the total does not tell you the individual values without another equation.
+
+\textbf{Trap 8: Forgetting domain restrictions.} Division by zero and negative values under a square root are undefined. If a solution makes a denominator zero, it must be rejected.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Re-read the final question before entering an answer to avoid ``right work, wrong answer'' errors.
+  \item Write out distribution and subtraction steps explicitly to avoid sign errors.
+  \item Check solutions by substituting back into the original equation, especially for radical and rational equations.
+  \item Distinguish between radius and diameter, and verify units match the question.
+  \item Recognize percent-change traps, especially successive increase-decrease problems.
+\end{itemize}
+
+\section*{Example 1: Answering the Wrong Question}
+
+If \(3x - 6 = 15\), what is the value of \(x - 2\)?
+
+\textbf{Trap:} Solving gives \(3x = 21\), so \(x = 7\). The trap is entering 7. The question asks for \(x - 2 = 5\).
+
+\textbf{Shortcut:} Notice that \(3x - 6 = 3(x - 2)\), so \(3(x - 2) = 15\), which gives \(x - 2 = 5\) directly.
+
+\(\boxed{5}\)
+
+\section*{Example 2: Sign Error in Distribution}
+
+Expand and simplify: \(4 - 2(x - 3)\).
+
+\textbf{Trap:} Writing \(4 - 2x - 6 = -2x - 2\) (forgetting to distribute the negative to the \(-3\), giving \(-6\) instead of \(+6\)).
+
+\textbf{Correct:} \(4 - 2x + 6 = 10 - 2x\).
+
+\(\boxed{10 - 2x}\)
+
+\section*{Example 3: Extraneous Solution}
+
+Solve \(\sqrt{x + 5} = x - 1\).
+
+\textbf{Step 1:} Square both sides: \(x + 5 = x^2 - 2x + 1\), so \(x^2 - 3x - 4 = 0\), giving \((x - 4)(x + 1) = 0\) and \(x = 4\) or \(x = -1\).
+
+\textbf{Step 2:} Check \(x = 4\): \(\sqrt{9} = 3\) and \(4 - 1 = 3\). Valid.
+
+Check \(x = -1\): \(\sqrt{4} = 2\) and \(-1 - 1 = -2\). Since \(2 \neq -2\), this is extraneous.
+
+\textbf{Trap:} Entering both solutions. Only \(x = 4\) is valid.
+
+\(\boxed{4}\)
+
+\section*{Example 4: Radius vs.\ Diameter}
+
+A circle has a diameter of 14. What is its area?
+
+\textbf{Trap:} Using 14 as the radius: \(\pi(14)^2 = 196\pi\).
+
+\textbf{Correct:} Radius \(= 7\). Area \(= \pi(7)^2 = 49\pi\).
+
+\(\boxed{49\pi}\)
+
+\section*{Example 5: Percent Reversal}
+
+A price after a \(25\%\) increase is \(\$75\). What was the original price?
+
+\textbf{Trap:} Subtracting \(25\%\) of \(\$75\): \(75 - 18.75 = 56.25\).
+
+\textbf{Correct:} The original price times \(1.25\) gives \(75\). So original \(= 75 \div 1.25 = 60\).
+
+\(\boxed{\$60}\)
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item The number-one careless error on the SAT is answering the wrong question. The last line of the problem tells you what to find. Read it twice.
+  \item Sign errors are the number-two careless error. When distributing a negative or subtracting a grouped expression, write out every term explicitly.
+  \item Always check solutions of radical and rational equations by substituting back. The algebra may produce valid-looking answers that fail the original equation.
+  \item When a problem gives a diameter, halve it before using it in any formula. This trap catches even strong students under time pressure.
+\end{itemize}
+
+\newpage
+
+\section*{Practice Questions: Common Traps and Careless-Error Patterns}
+
+\subsection*{Part A: ``What Does the Question Actually Ask?''}
+\begin{enumerate}
+  \item If \(2x + 4 = 20\), what is the value of \(x + 2\)?
+  \item If \(5y = 30\), what is the value of \(10y - 3\)?
+  \item A rectangle has a length of 12 and a width of 5. The question asks for the perimeter, not the area. What is the perimeter?
+  \item If \(x^2 = 49\) and \(x > 0\), what is \(x + 1\)?
+  \item The sum of two numbers is 20 and their difference is 6. The question asks for the smaller number. What is it?
+\end{enumerate}
+
+\subsection*{Part B: Sign Errors and Distribution}
+\begin{enumerate}
+  \item Simplify: \(7 - 3(2x - 1)\).
+  \item Simplify: \(-(x^2 - 4x + 5)\).
+  \item Solve: \(5 - (2x + 3) = 8\).
+  \item Expand: \((x - 3)^2\). (The trap is writing \(x^2 - 9\) or \(x^2 + 9\).)
+  \item Simplify: \(2(3x + 4) - 3(2x - 1)\).
+\end{enumerate}
+
+\subsection*{Part C: Extraneous Solutions}
+\begin{enumerate}
+  \item Solve \(\sqrt{2x + 3} = x\) and check for extraneous solutions.
+  \item Solve \(\dfrac{x^2 - 4}{x - 2} = 5\) and check whether any solution must be excluded.
+  \item Solve \(\sqrt{x - 1} = x - 3\) and verify.
+  \item Solve \(\dfrac{6}{x + 1} = \dfrac{3}{x - 2}\) and check.
+  \item Solve \(|2x - 5| = x + 1\) and verify both potential solutions.
+\end{enumerate}
+
+\subsection*{Part D: Unit and Conversion Traps}
+\begin{enumerate}
+  \item A circle has a diameter of 10 inches. What is its area, in square inches? Express your answer in terms of \(\pi\).
+  \item A car travels at 60 miles per hour. How many miles does it travel in 40 minutes?
+  \item A rectangle has dimensions 2 feet by 18 inches. What is its area, in square inches?
+  \item A sphere has a diameter of 6 cm. What is its volume, in cubic cm? Express your answer in terms of \(\pi\).
+  \item A tank holds 5 gallons of water. If 1 gallon \(= 3.785\) liters, how many liters does the tank hold? Round to the nearest tenth.
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Trap Questions}
+\begin{enumerate}
+  \item A price increases by \(20\%\) and then decreases by \(20\%\). What is the net percent change?
+  \item If \(x^2 - 5x + 6 = 0\), what is the value of \(x^2 + x\) for the larger solution?
+  \item The area of a circle is \(36\pi\). What is the circumference? (Watch for the radius/diameter trap.) Express your answer in terms of \(\pi\).
+  \item Solve \(\sqrt{3x + 1} = x - 1\). Give all valid solutions.
+  \item A store discounts an item by \(30\%\), then takes an additional \(10\%\) off the sale price. What is the total percent discount from the original price?
+\end{enumerate}
+
+\newpage
+
+\section*{Answer Key and Solutions: Common Traps and Careless-Error Patterns}
+
+\subsection*{Part A Solutions: ``What Does the Question Actually Ask?''}
+\begin{enumerate}
+  \item \(2x + 4 = 20 \implies 2(x + 2) = 20 \implies x + 2 = 10\). (The trap is solving for \(x = 8\) and entering that.)
+
+  \(\boxed{10}\)
+
+  \item \(y = 6\). Then \(10(6) - 3 = 57\). (The trap is entering \(y = 6\).)
+
+  \(\boxed{57}\)
+
+  \item Perimeter \(= 2(12 + 5) = 34\). (The trap is computing area \(= 60\).)
+
+  \(\boxed{34}\)
+
+  \item \(x = 7\) (positive), so \(x + 1 = 8\). (The trap is entering 7, or forgetting \(x > 0\) and entering \(-7\).)
+
+  \(\boxed{8}\)
+
+  \item Let the numbers be \(a\) and \(b\) with \(a > b\). Then \(a + b = 20\) and \(a - b = 6\). Adding: \(2a = 26\), \(a = 13\), \(b = 7\). The smaller is 7. (The trap is entering 13.)
+
+  \(\boxed{7}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Sign Errors and Distribution}
+\begin{enumerate}
+  \item \(7 - 6x + 3 = 10 - 6x\). (The trap is writing \(7 - 6x - 3 = 4 - 6x\).)
+
+  \(\boxed{10 - 6x}\)
+
+  \item \(-x^2 + 4x - 5\). (The trap is forgetting to negate every term.)
+
+  \(\boxed{-x^2 + 4x - 5}\)
+
+  \item \(5 - 2x - 3 = 8 \implies 2 - 2x = 8 \implies -2x = 6 \implies x = -3\). (The trap: distributing as \(5 - 2x + 3 = 8\).)
+
+  \(\boxed{-3}\)
+
+  \item \((x-3)^2 = x^2 - 6x + 9\). (The trap is writing \(x^2 - 9\) or \(x^2 + 9\) or \(x^2 - 6x - 9\).)
+
+  \(\boxed{x^2 - 6x + 9}\)
+
+  \item \(6x + 8 - 6x + 3 = 11\). (The trap: distributing the \(-3\) incorrectly as \(-6x - 3\) instead of \(-6x + 3\).)
+
+  \(\boxed{11}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Extraneous Solutions}
+\begin{enumerate}
+  \item Square both sides: \(2x + 3 = x^2 \implies x^2 - 2x - 3 = 0 \implies (x-3)(x+1) = 0\).
+
+  Check \(x = 3\): \(\sqrt{9} = 3\). Valid.
+
+  Check \(x = -1\): \(\sqrt{1} = 1 \neq -1\). Extraneous.
+
+  \(\boxed{3}\)
+
+  \item For \(x \neq 2\): \(\dfrac{(x-2)(x+2)}{x-2} = x + 2 = 5\), so \(x = 3\). Since \(3 \neq 2\), no exclusion needed.
+
+  \(\boxed{3}\)
+
+  \item Square both sides: \(x - 1 = x^2 - 6x + 9 \implies x^2 - 7x + 10 = 0 \implies (x-2)(x-5) = 0\).
+
+  Check \(x = 2\): \(\sqrt{1} = 1\) and \(2 - 3 = -1\). Since \(1 \neq -1\), extraneous.
+
+  Check \(x = 5\): \(\sqrt{4} = 2\) and \(5 - 3 = 2\). Valid.
+
+  \(\boxed{5}\)
+
+  \item Cross-multiply: \(6(x - 2) = 3(x + 1) \implies 6x - 12 = 3x + 3 \implies 3x = 15 \implies x = 5\). Check denominators: \(5 + 1 = 6 \neq 0\) and \(5 - 2 = 3 \neq 0\). Valid.
+
+  \(\boxed{5}\)
+
+  \item Case 1: \(2x - 5 = x + 1 \implies x = 6\). Check: \(|7| = 7\) and \(6 + 1 = 7\). Valid.
+
+  Case 2: \(2x - 5 = -(x + 1) = -x - 1 \implies 3x = 4 \implies x = \dfrac{4}{3}\). Check: \(|8/3 - 5| = |-7/3| = 7/3\) and \(4/3 + 1 = 7/3\). Valid.
+
+  \(\boxed{6 \text{ and } \dfrac{4}{3}}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Unit and Conversion Traps}
+\begin{enumerate}
+  \item Radius \(= 5\). Area \(= \pi(5)^2 = 25\pi\). (Trap: using diameter 10 as radius, getting \(100\pi\).)
+
+  \(\boxed{25\pi}\)
+
+  \item 40 minutes \(= \dfrac{2}{3}\) hour. Distance \(= 60 \times \dfrac{2}{3} = 40\) miles. (Trap: computing \(60 \times 40 = 2400\).)
+
+  \(\boxed{40}\)
+
+  \item Convert feet to inches: 2 feet \(= 24\) inches. Area \(= 24 \times 18 = 432\) square inches. (Trap: mixing units, \(2 \times 18 = 36\).)
+
+  \(\boxed{432}\)
+
+  \item Radius \(= 3\). Volume \(= \dfrac{4}{3}\pi(3)^3 = 36\pi\). (Trap: using diameter 6 as radius, getting \(288\pi\).)
+
+  \(\boxed{36\pi}\)
+
+  \item \(5 \times 3.785 = 18.925 \approx 18.9\) liters.
+
+  \(\boxed{18.9}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Trap Questions}
+\begin{enumerate}
+  \item \(1.20 \times 0.80 = 0.96\). Net change: \(4\%\) decrease. (Trap: thinking it returns to the original.)
+
+  \(\boxed{-4\%}\)
+
+  \item Factor: \((x-2)(x-3) = 0\), so \(x = 2\) or \(x = 3\). The larger solution is \(x = 3\). Then \(x^2 + x = 9 + 3 = 12\). (Trap: entering \(x = 3\) or evaluating at \(x = 2\).)
+
+  \(\boxed{12}\)
+
+  \item \(\pi r^2 = 36\pi \implies r = 6\). Circumference \(= 2\pi(6) = 12\pi\). (Trap: using \(r = 36\) or \(d = 6\).)
+
+  \(\boxed{12\pi}\)
+
+  \item Square: \(3x + 1 = x^2 - 2x + 1 \implies x^2 - 5x = 0 \implies x(x-5) = 0\). So \(x = 0\) or \(x = 5\).
+
+  Check \(x = 0\): \(\sqrt{1} = 1\) and \(0 - 1 = -1\). Since \(1 \neq -1\), extraneous.
+
+  Check \(x = 5\): \(\sqrt{16} = 4\) and \(5 - 1 = 4\). Valid.
+
+  \(\boxed{5}\)
+
+  \item First discount: \(0.70\). Second discount: \(0.70 \times 0.90 = 0.63\). Total discount: \(1 - 0.63 = 0.37 = 37\%\). (Trap: adding \(30\% + 10\% = 40\%\).)
+
+  \(\boxed{37\%}\)
+\end{enumerate}
+
+\ReflectionPage{Unit 10, Topic 5}{https://www.scotchegg.co}
+
+\end{document}

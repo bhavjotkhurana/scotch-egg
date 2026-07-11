@@ -1,0 +1,314 @@
+\documentclass[14pt]{extarticle}
+% ---------- PACKAGES ----------
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\makeatletter
+\IfFileExists{../common-things/reflectionpage.tex}{%
+  \input{../common-things/reflectionpage.tex}%
+}{%
+  \IfFileExists{common-things/reflectionpage.tex}{%
+    \input{common-things/reflectionpage.tex}%
+  }{%
+    \PackageError{\jobname}{Missing reflectionpage.tex file}{%
+      Place reflectionpage.tex inside a common-things/ directory next to this unit\@.%
+    }%
+  }%
+}
+\makeatother
+% ---------- PAGE SETUP ----------
+\geometry{margin=1in}
+\setstretch{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{itemsep=0.75\baselineskip, topsep=0.5\baselineskip}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+\begin{document}
+\raggedright
+\pagenumbering{gobble}
+
+\begin{center}
+    \LARGE \textbf{Unit 10: Review and Test Strategy} \\[6pt]
+    \Large \textbf{Topic 3: Calculator Strategy (Desmos on the Digital SAT)}
+\end{center}
+
+\vspace{1em}
+
+\section*{Concept Summary}
+
+The Digital SAT provides a built-in \textbf{Desmos graphing calculator} for every math question in both modules. You can also bring your own approved calculator, but the Desmos tool is powerful and worth mastering because it can solve many problems faster than algebra.
+
+\textbf{Key Desmos capabilities for the SAT:}
+
+\textbf{Graphing equations:} Type any equation (e.g., \(y = 2x^2 - 3x + 1\)) and Desmos plots it instantly. You can graph two equations simultaneously and visually identify intersection points. Click on an intersection point and Desmos displays its coordinates.
+
+\textbf{Solving equations:} To solve \(2x + 5 = 13\), graph \(y = 2x + 5\) and \(y = 13\) and find the intersection. For a quadratic like \(x^2 - 5x + 6 = 0\), graph \(y = x^2 - 5x + 6\) and look for the \(x\)-intercepts (where the curve crosses \(y = 0\)). Click on the intercepts and Desmos gives you exact values.
+
+\textbf{Systems of equations:} Graph both equations and find the intersection point(s). This works for linear-linear, linear-quadratic, and even two quadratic equations.
+
+\textbf{Regression and data:} If a problem gives you a table of data, you can enter the points and use Desmos to fit a line or curve.
+
+\textbf{Sliders:} When an equation has a parameter (like \(y = ax + 2\) where \(a\) is unknown), Desmos offers a slider for \(a\). You can drag the slider to see how the graph changes. This is useful for ``for what value of \(k\) does...'' problems.
+
+\textbf{When to use Desmos vs.\ algebra:}
+
+Use Desmos when:
+\begin{itemize}
+  \item You need to find intersection points of two graphs.
+  \item You need roots of a quadratic or higher-degree polynomial.
+  \item A problem asks how many solutions a system has (graph both and count intersections).
+  \item You want to check your algebraic work quickly.
+  \item The algebra is messy and a visual approach is cleaner.
+\end{itemize}
+
+Use algebra when:
+\begin{itemize}
+  \item The problem asks for an exact symbolic answer (e.g., ``in terms of \(k\)'').
+  \item The arithmetic is straightforward (solving \(3x = 15\) does not need a graph).
+  \item The problem involves simplifying an expression rather than solving an equation.
+\end{itemize}
+
+\textbf{Common Desmos pitfalls:}
+
+Desmos sometimes displays approximate decimal coordinates for intersection points. If the SAT expects an exact answer like \(\dfrac{7}{3}\), you need to recognize that \(2.333...\) means \(\dfrac{7}{3}\).
+
+Zooming is important. If you graph a function and do not see an intersection or root, try zooming out. The default window may not show the part of the graph you need.
+
+\section*{Core Skills}
+\begin{itemize}
+  \item Use Desmos to find roots of equations by graphing and identifying \(x\)-intercepts.
+  \item Solve systems of equations by graphing both equations and reading intersection coordinates.
+  \item Use sliders to determine parameter values that produce specific graph behaviors (tangency, number of solutions).
+  \item Convert Desmos decimal output to exact fractions or radicals when the problem requires it.
+  \item Decide quickly whether Desmos or algebra is the faster approach for a given problem.
+\end{itemize}
+
+\section*{Example 1: Finding Roots with Desmos}
+
+Solve \(x^2 - 7x + 10 = 0\).
+
+\textbf{Desmos approach:} Graph \(y = x^2 - 7x + 10\). The parabola crosses the \(x\)-axis at \(x = 2\) and \(x = 5\). Click each intercept to confirm.
+
+\textbf{Algebra check:} \((x - 2)(x - 5) = 0\).
+
+\(\boxed{x = 2 \text{ and } x = 5}\)
+
+\section*{Example 2: Solving a System by Graphing}
+
+Find the intersection of \(y = x^2 - 1\) and \(y = 2x + 2\).
+
+\textbf{Desmos approach:} Graph both equations. The graphs intersect at two points. Click to read coordinates: \((-1, 0)\) and \((3, 8)\).
+
+\textbf{Algebra check:} \(x^2 - 1 = 2x + 2 \implies x^2 - 2x - 3 = 0 \implies (x-3)(x+1) = 0\).
+
+\(\boxed{(-1, 0) \text{ and } (3, 8)}\)
+
+\section*{Example 3: Using a Slider for a Parameter}
+
+For what value of \(k\) is the line \(y = 3x + k\) tangent to the parabola \(y = x^2\)?
+
+\textbf{Desmos approach:} Graph \(y = x^2\) and \(y = 3x + k\). Add a slider for \(k\). Drag the slider until the line just touches the parabola at exactly one point. The slider reads \(k = -2.25\), which is \(-\dfrac{9}{4}\).
+
+\textbf{Algebra check:} Set \(x^2 = 3x + k\), giving \(x^2 - 3x - k = 0\). Discriminant \(= 0\): \(9 + 4k = 0 \implies k = -\dfrac{9}{4}\).
+
+\(\boxed{-\dfrac{9}{4}}\)
+
+\section*{Example 4: Converting Desmos Decimals to Exact Answers}
+
+A Desmos intersection reads \((1.6667, 4.3333)\). The SAT asks for the coordinates as fractions. What are they?
+
+\textbf{Step 1:} Recognize the repeating decimals. \(1.6667 \approx 1.\overline{6} = \dfrac{5}{3}\) and \(4.3333 \approx 4.\overline{3} = \dfrac{13}{3}\).
+
+\(\boxed{\left(\dfrac{5}{3},\, \dfrac{13}{3}\right)}\)
+
+\section*{Key Takeaways}
+\begin{itemize}
+  \item Desmos is fastest for ``find the intersection'' and ``how many solutions'' problems. Graph both sides and read the answer directly.
+  \item For ``find the value of \(k\)'' problems, use a slider. Drag until the desired condition (tangency, specific intercept, etc.) is met.
+  \item Always be ready to convert Desmos decimals to exact values. Common conversions: \(0.\overline{3} = \frac{1}{3}\), \(0.\overline{6} = \frac{2}{3}\), \(0.25 = \frac{1}{4}\), \(0.1\overline{6} = \frac{1}{6}\).
+  \item Desmos is a checking tool even when you solve algebraically. A 10-second graph confirms your answer and catches errors.
+\end{itemize}
+
+\newpage
+
+\section*{Practice Questions: Calculator Strategy}
+
+\subsection*{Part A: Solving Equations with Desmos}
+\begin{enumerate}
+  \item Use graphing to find the solutions of \(x^2 + 2x - 15 = 0\).
+  \item Find the positive solution of \(x^3 = 27\).
+  \item Solve \(2^x = 16\).
+  \item Find the solutions of \(x^2 - 4x = 5\). (Hint: rewrite as \(x^2 - 4x - 5 = 0\) or graph \(y = x^2 - 4x\) and \(y = 5\).)
+  \item Find the value of \(x\) where \(\sqrt{x + 3} = 4\). Verify by graphing both sides.
+\end{enumerate}
+
+\subsection*{Part B: Solving Systems by Graphing}
+\begin{enumerate}
+  \item Find the intersection point of \(y = 3x - 4\) and \(y = -x + 8\).
+  \item Find both intersection points of \(y = x^2\) and \(y = x + 6\).
+  \item How many intersection points do \(y = x^2 + 1\) and \(y = 3\) have? What are the \(x\)-coordinates?
+  \item Find the intersection point(s) of \(y = |x - 2|\) and \(y = 3\). (Graph both in Desmos.)
+  \item The graphs of \(y = x^2 - 4x + 7\) and \(y = 2x - 1\) intersect at how many points? Find the coordinates.
+\end{enumerate}
+
+\subsection*{Part C: Slider and Parameter Problems}
+\begin{enumerate}
+  \item For what value of \(c\) does the line \(y = 2x + c\) pass through the point \((3, 10)\)?
+  \item For what value of \(k\) does \(y = x^2 + k\) pass through the point \((4, 20)\)?
+  \item For what value of \(a\) is the line \(y = ax - 1\) tangent to \(y = x^2\)? (There are two answers.)
+  \item The line \(y = x + b\) intersects \(y = x^2 - 2x\) at exactly one point. Find \(b\).
+  \item For what positive value of \(k\) does the equation \(x^2 - kx + 4 = 0\) have exactly one solution?
+\end{enumerate}
+
+\subsection*{Part D: Desmos Decimal-to-Exact Conversion}
+\begin{enumerate}
+  \item Desmos shows a root at \(x = 1.5\). What is this as a fraction?
+  \item Desmos shows an intersection at \(x = 0.8333...\). What is this as a fraction?
+  \item Desmos shows a \(y\)-coordinate of \(2.6667\). What is this as a fraction?
+  \item Desmos shows a root at \(x \approx 2.236\). This is likely what exact value?
+  \item Desmos shows a root at \(x \approx 1.414\). This is likely what exact value?
+\end{enumerate}
+
+\subsection*{Part E: SAT-Style Strategy Decisions}
+\begin{enumerate}
+  \item You need to solve \(3x + 7 = 22\). Should you use Desmos or mental math? Solve it.
+  \item You need to find how many solutions the system \(y = x^2 + 2\) and \(y = -x^2 + 6\) has. Which approach is faster: Desmos or discriminant analysis? Find the answer.
+  \item A problem asks you to simplify \(\dfrac{x^2 - 9}{x + 3}\). Can Desmos help? What should you do instead?
+  \item You solve a linear equation and get \(x = 7\). The original equation is \(\dfrac{2x + 1}{3} = 5\). Use Desmos (or substitution) to verify.
+  \item A system of two equations gives intersection points that Desmos displays as \((0.333..., 1.667...)\). Express the intersection as an exact ordered pair using fractions.
+\end{enumerate}
+
+\newpage
+
+\section*{Answer Key and Solutions: Calculator Strategy}
+
+\subsection*{Part A Solutions: Solving Equations with Desmos}
+\begin{enumerate}
+  \item Graph \(y = x^2 + 2x - 15\). The \(x\)-intercepts are at \(x = 3\) and \(x = -5\). (Factor: \((x+5)(x-3) = 0\).)
+
+  \(\boxed{x = 3 \text{ and } x = -5}\)
+
+  \item Graph \(y = x^3\) and \(y = 27\). Intersection at \(x = 3\).
+
+  \(\boxed{3}\)
+
+  \item Graph \(y = 2^x\) and \(y = 16\). Intersection at \(x = 4\). (Since \(2^4 = 16\).)
+
+  \(\boxed{4}\)
+
+  \item Graph \(y = x^2 - 4x\) and \(y = 5\). Intersections at \(x = 5\) and \(x = -1\). (Algebra: \(x^2 - 4x - 5 = 0 \implies (x-5)(x+1) = 0\).)
+
+  \(\boxed{x = 5 \text{ and } x = -1}\)
+
+  \item Graph \(y = \sqrt{x + 3}\) and \(y = 4\). Intersection at \(x = 13\). (Check: \(\sqrt{16} = 4\).)
+
+  \(\boxed{13}\)
+\end{enumerate}
+
+\subsection*{Part B Solutions: Solving Systems by Graphing}
+\begin{enumerate}
+  \item Graph both lines. Intersection at \(x\): \(3x - 4 = -x + 8 \implies 4x = 12 \implies x = 3\). Then \(y = 5\).
+
+  \(\boxed{(3, 5)}\)
+
+  \item Graph both. Set \(x^2 = x + 6 \implies x^2 - x - 6 = 0 \implies (x-3)(x+2) = 0\). Points: \((3, 9)\) and \((-2, 4)\).
+
+  \(\boxed{(3, 9) \text{ and } (-2, 4)}\)
+
+  \item Set \(x^2 + 1 = 3 \implies x^2 = 2 \implies x = \pm\sqrt{2}\). Two intersection points with \(x\)-coordinates \(\sqrt{2}\) and \(-\sqrt{2}\).
+
+  \(\boxed{2 \text{ points; } x = \sqrt{2} \text{ and } x = -\sqrt{2}}\)
+
+  \item Graph both. \(|x - 2| = 3\) gives \(x - 2 = 3\) or \(x - 2 = -3\), so \(x = 5\) or \(x = -1\). Points: \((5, 3)\) and \((-1, 3)\).
+
+  \(\boxed{(5, 3) \text{ and } (-1, 3)}\)
+
+  \item Set \(x^2 - 4x + 7 = 2x - 1 \implies x^2 - 6x + 8 = 0 \implies (x-2)(x-4) = 0\). Points: \((2, 3)\) and \((4, 7)\). Two intersection points.
+
+  \(\boxed{(2, 3) \text{ and } (4, 7)}\)
+\end{enumerate}
+
+\subsection*{Part C Solutions: Slider and Parameter Problems}
+\begin{enumerate}
+  \item Substitute \((3, 10)\): \(10 = 2(3) + c \implies c = 4\).
+
+  \(\boxed{4}\)
+
+  \item Substitute \((4, 20)\): \(20 = 16 + k \implies k = 4\).
+
+  \(\boxed{4}\)
+
+  \item Set \(ax - 1 = x^2\), giving \(x^2 - ax + 1 = 0\). For tangency, discriminant \(= 0\):
+  \[
+  a^2 - 4 = 0 \implies a = 2 \text{ or } a = -2
+  \]
+
+  \(\boxed{2 \text{ and } -2}\)
+
+  \item Set \(x + b = x^2 - 2x\), giving \(x^2 - 3x - b = 0\). For one intersection, discriminant \(= 0\): \(9 + 4b = 0 \implies b = -\dfrac{9}{4}\).
+
+  \(\boxed{-\dfrac{9}{4}}\)
+
+  \item Discriminant: \(k^2 - 16 = 0 \implies k = 4\) (positive value).
+
+  \(\boxed{4}\)
+\end{enumerate}
+
+\subsection*{Part D Solutions: Desmos Decimal-to-Exact Conversion}
+\begin{enumerate}
+  \item \(1.5 = \dfrac{3}{2}\).
+
+  \(\boxed{\dfrac{3}{2}}\)
+
+  \item \(0.8333... = 0.8\overline{3} = \dfrac{5}{6}\).
+
+  \(\boxed{\dfrac{5}{6}}\)
+
+  \item \(2.6667 \approx 2.\overline{6} = \dfrac{8}{3}\).
+
+  \(\boxed{\dfrac{8}{3}}\)
+
+  \item \(2.236 \approx \sqrt{5}\). (Since \(\sqrt{5} = 2.2360...\))
+
+  \(\boxed{\sqrt{5}}\)
+
+  \item \(1.414 \approx \sqrt{2}\). (Since \(\sqrt{2} = 1.4142...\))
+
+  \(\boxed{\sqrt{2}}\)
+\end{enumerate}
+
+\subsection*{Part E Solutions: SAT-Style Strategy Decisions}
+\begin{enumerate}
+  \item Mental math: \(3x = 15 \implies x = 5\). No calculator needed.
+
+  \(\boxed{5}\)
+
+  \item Desmos is faster: graph both parabolas and count intersections. Set \(x^2 + 2 = -x^2 + 6 \implies 2x^2 = 4 \implies x^2 = 2 \implies x = \pm\sqrt{2}\). Two solutions.
+
+  \(\boxed{2}\)
+
+  \item Desmos cannot simplify algebraic expressions. Factor: \(\dfrac{(x-3)(x+3)}{x+3} = x - 3\).
+
+  \(\boxed{x - 3}\)
+
+  \item Check: \(\dfrac{2(7) + 1}{3} = \dfrac{15}{3} = 5\). Confirmed.
+
+  \(\boxed{7 \text{ (verified)}}\)
+
+  \item \(0.333... = \dfrac{1}{3}\) and \(1.667... = 1.\overline{6} = \dfrac{5}{3}\).
+
+  \(\boxed{\left(\dfrac{1}{3},\, \dfrac{5}{3}\right)}\)
+\end{enumerate}
+
+\ReflectionPage{Unit 10, Topic 3}{https://www.scotchegg.co}
+
+\end{document}
