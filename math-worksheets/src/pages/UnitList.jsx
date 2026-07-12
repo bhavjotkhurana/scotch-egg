@@ -14,7 +14,7 @@ export default function UnitList() {
   return (
     <>
       <Seo
-        title="SAT Math Practice"
+        title="Math Practice & Tutoring"
         description="A free, interactive SAT Math question bank. Pick a topic and start practicing right in your browser, no downloads, no sign-up."
         keywords={['free SAT math practice', 'SAT math questions', 'interactive math practice']}
         structuredData={({ canonicalUrl }) => ({
