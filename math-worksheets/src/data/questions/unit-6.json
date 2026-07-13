@@ -9603,6 +9603,32 @@
           "type": "text",
           "value": [
             {
+              "text": "For ",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "inline-math",
+          "value": "y = x^2 - 4x + 3"
+        },
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": ", these features look like this:",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
               "text": "The vertex can be found from the formula:\n",
               "bold": false,
               "italic": false
@@ -9698,6 +9724,16 @@
         }
       ]
     ],
+    "conceptDiagram": {
+      "type": "parabola",
+      "a": 1,
+      "b": -4,
+      "c": 3,
+      "xMin": -1,
+      "xMax": 5,
+      "yMin": -2,
+      "yMax": 9
+    },
     "coreSkills": [
       [
         {
