@@ -5,6 +5,7 @@ import ParallelTransversal from './ParallelTransversal.jsx';
 import PolynomialCurve from './PolynomialCurve.jsx';
 import FunctionComparison from './FunctionComparison.jsx';
 import SystemsComparison from './SystemsComparison.jsx';
+import AngleReferenceFigure from './AngleReferenceFigure.jsx';
 
 const RENDERERS = {
   scatter: ScatterPlot,
@@ -14,6 +15,7 @@ const RENDERERS = {
   'polynomial-curve': PolynomialCurve,
   'function-comparison': FunctionComparison,
   'systems-comparison': SystemsComparison,
+  'angle-reference': AngleReferenceFigure,
 };
 
 export default function DiagramRenderer({ diagram }) {

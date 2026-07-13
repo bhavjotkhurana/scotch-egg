@@ -82,12 +82,36 @@
           "type": "text",
           "value": [
             {
+              "text": "The figure below numbers the eight angles formed: 1-4 at the top intersection, 5-8 at the bottom, each in top-left/top-right/bottom-left/bottom-right order.",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "Using that numbering: corresponding angles are 1 & 5, 2 & 6, 3 & 7, and 4 & 8. Alternate interior angles are 3 & 6 and 4 & 5. Consecutive interior angles are 3 & 5 and 4 & 6. Alternate exterior angles are 1 & 8 and 2 & 7.",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
               "text": "Perpendicular lines",
               "bold": true,
               "italic": false
             },
             {
-              "text": " intersect to form right angles (90°).  \nIf two lines are perpendicular, their slopes multiply to ",
+              "text": " intersect to form right angles (90°).\nIf two lines are perpendicular, their slopes multiply to ",
               "bold": false,
               "italic": false
             }
@@ -134,6 +158,12 @@
         }
       ]
     ],
+    "conceptDiagram": {
+      "type": "angle-reference",
+      "line1Label": "a",
+      "line2Label": "b",
+      "transversalLabel": "t"
+    },
     "coreSkills": [
       [
         {
