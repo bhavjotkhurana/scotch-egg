@@ -4,6 +4,7 @@ import AbstractCurve from './AbstractCurve.jsx';
 import ParallelTransversal from './ParallelTransversal.jsx';
 import PolynomialCurve from './PolynomialCurve.jsx';
 import FunctionComparison from './FunctionComparison.jsx';
+import SystemsComparison from './SystemsComparison.jsx';
 
 const RENDERERS = {
   scatter: ScatterPlot,
@@ -12,6 +13,7 @@ const RENDERERS = {
   'parallel-transversal': ParallelTransversal,
   'polynomial-curve': PolynomialCurve,
   'function-comparison': FunctionComparison,
+  'systems-comparison': SystemsComparison,
 };
 
 export default function DiagramRenderer({ diagram }) {
