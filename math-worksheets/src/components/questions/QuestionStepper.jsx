@@ -51,6 +51,9 @@ export default function QuestionStepper({ unitSlug, topicSlug, practiceParts }) 
     setIndex(Math.max(0, Math.min(total - 1, nextIndex)));
   }
 
+  const showDiagramAbovePrompt = !current.revealDiagramWithSolution;
+  const diagram = current.diagram || current.partDiagram;
+
   return (
     <div className="rounded-xl border border-gray-200 bg-white p-6">
       <div className="mb-4 flex items-center justify-between text-sm text-gray-500">
@@ -62,15 +65,7 @@ export default function QuestionStepper({ unitSlug, topicSlug, practiceParts }) 
         </span>
       </div>
 
-      {current.partIntro && (
-        <RichText segments={current.partIntro} className="mb-3 text-brand-neutral" />
-      )}
-
-      <DiagramRenderer diagram={current.diagram || current.partDiagram} />
-
-      <RichText segments={current.prompt} className="text-brand-neutral" />
-
-      <div className="mt-6 flex items-center justify-between border-t border-gray-100 pt-4">
+      <div className="flex items-center justify-between border-b border-gray-100 pb-4">
         <button
           type="button"
           onClick={() => goTo(index - 1)}
@@ -106,11 +101,22 @@ export default function QuestionStepper({ unitSlug, topicSlug, practiceParts }) 
         </button>
       </div>
 
+      <div className="mt-4">
+        {current.partIntro && (
+          <RichText segments={current.partIntro} className="mb-3 text-brand-neutral" />
+        )}
+
+        {showDiagramAbovePrompt && <DiagramRenderer diagram={diagram} />}
+
+        <RichText segments={current.prompt} className="text-brand-neutral" />
+      </div>
+
       {revealed && (
         <div className="mt-4 rounded-lg bg-brand-cream/60 p-4">
           <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-brand-primary-dark">
             Solution
           </p>
+          {!showDiagramAbovePrompt && <DiagramRenderer diagram={diagram} />}
           <RichText segments={current.solution} className="text-brand-neutral" />
         </div>
       )}

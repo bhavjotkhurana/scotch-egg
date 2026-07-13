@@ -158,6 +158,16 @@ function extractDiagram(text, label) {
   return { diagram, text: remaining };
 }
 
+// Marks a question whose whole point is to construct the diagram itself (e.g.
+// "draw a tree diagram for this situation") -- showing a part-level diagram
+// above the prompt would hand the student the answer before they've tried.
+// For these, the diagram should only appear once the solution is revealed.
+const DIAGRAM_AFTER_REVEAL_RE = /\\DiagramAfterReveal\b/;
+function extractDiagramAfterRevealFlag(text) {
+  if (!DIAGRAM_AFTER_REVEAL_RE.test(text)) return { revealDiagramWithSolution: false, text };
+  return { revealDiagramWithSolution: true, text: text.replace(DIAGRAM_AFTER_REVEAL_RE, '') };
+}
+
 function unescapeLatexText(str) {
   return str
     .replace(/\\%/g, '%')
@@ -338,7 +348,8 @@ function processPracticeAndSolutions(practiceContent, answerKeyContent, label) {
     const questions = [];
     for (let j = 0; j < qItems.length; j++) {
       const number = qCounterStart + j + 1;
-      const { diagram: itemDiagram, text: qRaw } = extractDiagram(qItems[j], `${partLabel} Q${number}`);
+      const { diagram: itemDiagram, text: qRawWithFlag } = extractDiagram(qItems[j], `${partLabel} Q${number}`);
+      const { revealDiagramWithSolution, text: qRaw } = extractDiagramAfterRevealFlag(qRawWithFlag);
       const sRaw = sItems[j];
       if (hasPlaceholder(qRaw) || hasPlaceholder(sRaw)) {
         exclusionLog.push(`${partLabel} Item ${number}: excluded (unresolved graph/diagram placeholder)`);
@@ -347,6 +358,7 @@ function processPracticeAndSolutions(practiceContent, answerKeyContent, label) {
       questions.push({
         number,
         ...(itemDiagram ? { diagram: itemDiagram } : {}),
+        ...(revealDiagramWithSolution ? { revealDiagramWithSolution } : {}),
         prompt: tokenizeRichText(qRaw, `${partLabel} Q${number}`),
         solution: tokenizeRichText(sRaw, `${partLabel} Q${number} solution`),
       });

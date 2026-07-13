@@ -7860,12 +7860,13 @@
         "questions": [
           {
             "number": 11,
+            "revealDiagramWithSolution": true,
             "prompt": [
               {
                 "type": "text",
                 "value": [
                   {
-                    "text": "Draw a tree diagram to represent the situation.",
+                    "text": "Draw a tree diagram to represent the situation. ",
                     "bold": false,
                     "italic": false
                   }
@@ -7877,7 +7878,35 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": "Tree description provided in the question prompt.",
+                    "text": "The tree branches first into Good (",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "0.90"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ") and Defective (",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "0.10"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "), then each of those branches into Pass and Fail using the given conditional probabilities, as shown above.",
                     "bold": false,
                     "italic": false
                   }
