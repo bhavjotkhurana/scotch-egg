@@ -2,12 +2,14 @@ import ScatterPlot from './ScatterPlot.jsx';
 import TreeDiagram from './TreeDiagram.jsx';
 import AbstractCurve from './AbstractCurve.jsx';
 import ParallelTransversal from './ParallelTransversal.jsx';
+import PolynomialCurve from './PolynomialCurve.jsx';
 
 const RENDERERS = {
   scatter: ScatterPlot,
   tree: TreeDiagram,
   curve: AbstractCurve,
   'parallel-transversal': ParallelTransversal,
+  'polynomial-curve': PolynomialCurve,
 };
 
 export default function DiagramRenderer({ diagram }) {

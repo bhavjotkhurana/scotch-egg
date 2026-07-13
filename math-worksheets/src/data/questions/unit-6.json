@@ -18266,40 +18266,33 @@
           },
           {
             "number": 24,
+            "diagram": {
+              "type": "polynomial-curve",
+              "shape": "cross-cross-touch",
+              "zeros": [
+                {
+                  "x": -2,
+                  "label": "-2",
+                  "behavior": "cross"
+                },
+                {
+                  "x": 0,
+                  "label": "0",
+                  "behavior": "cross"
+                },
+                {
+                  "x": 3,
+                  "label": "3",
+                  "behavior": "touch"
+                }
+              ]
+            },
             "prompt": [
               {
                 "type": "text",
                 "value": [
                   {
-                    "text": "A quartic graph has x-intercepts at ",
-                    "bold": false,
-                    "italic": false
-                  }
-                ]
-              },
-              {
-                "type": "inline-math",
-                "value": "x = -2, 0,"
-              },
-              {
-                "type": "text",
-                "value": [
-                  {
-                    "text": " and ",
-                    "bold": false,
-                    "italic": false
-                  }
-                ]
-              },
-              {
-                "type": "inline-math",
-                "value": "3"
-              },
-              {
-                "type": "text",
-                "value": [
-                  {
-                    "text": ", with both ends pointing up. List all zeros and describe the end behavior.",
+                    "text": "The graph of a quartic function is shown below. Identify all zeros, state whether each has odd or even multiplicity, and describe the end behavior.\n  ",
                     "bold": false,
                     "italic": false
                   }
@@ -18311,21 +18304,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": "(Graph described: quartic with x-intercepts at ",
-                    "bold": false,
-                    "italic": false
-                  }
-                ]
-              },
-              {
-                "type": "inline-math",
-                "value": "-2, 0, 3,"
-              },
-              {
-                "type": "text",
-                "value": [
-                  {
-                    "text": " both ends up.)\n\n  Zeros: ",
+                    "text": "Zeros: ",
                     "bold": false,
                     "italic": false
                   }
@@ -18339,7 +18318,49 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": "\n\n  If both ends are up, degree is even and leading coefficient positive.  \n  To get an even degree with those three distinct zeros, at least one zero must have even multiplicity.  \n  We cannot see multiplicities from text alone, so one valid possibility is:\n  ",
+                    "text": "\n\n  Reading the graph: it crosses straight through at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = -2"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " and ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = 0"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", so both have odd multiplicity. It touches and turns around at ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x = 3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", so that zero has even multiplicity.\n\n  A possible equation using the smallest multiplicities consistent with the graph:\n  ",
                     "bold": false,
                     "italic": false
                   }
@@ -18367,7 +18388,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": " gives even degree overall and both ends up.\n\n  ",
+                    "text": " gives the touch at ",
                     "bold": false,
                     "italic": false
                   }
@@ -18375,7 +18396,21 @@
               },
               {
                 "type": "inline-math",
-                "value": "\\boxed{\\text{Zeros: } x = -2,\\; 0,\\; 3 \\text{ (3 with even multiplicity). End behavior: both ends up}}"
+                "value": "x = 3"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", and the overall degree is even with a positive leading coefficient, matching both ends up.\n\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{\\text{Zeros: } x = -2 \\text{ (odd)},\\; 0 \\text{ (odd)},\\; 3 \\text{ (even)}. \\text{ End behavior: both ends up}}"
               }
             ]
           },

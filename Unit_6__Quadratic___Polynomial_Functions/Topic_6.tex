@@ -212,7 +212,18 @@ Expand:
   \item A cubic function has zeros at \(x = -1, 2,\) and \(4.\) Write a possible factored form of the function.
   \item The graph of a polynomial touches the x-axis at \(x = 3\) and crosses at \(x = -1.\) Write a possible factored form.
   \item A quartic polynomial has end behavior with both ends up and zeros at \(x = -2\) (multiplicity 2) and \(x = 4\) (multiplicity 2). Write a possible equation.
-  \item A quartic graph has x-intercepts at \(x = -2, 0,\) and \(3\), with both ends pointing up. List all zeros and describe the end behavior.
+  \item The graph of a quartic function is shown below. Identify all zeros, state whether each has odd or even multiplicity, and describe the end behavior.
+  \begin{diagramdata}
+  {
+    "type": "polynomial-curve",
+    "shape": "cross-cross-touch",
+    "zeros": [
+      {"x": -2, "label": "-2", "behavior": "cross"},
+      {"x": 0, "label": "0", "behavior": "cross"},
+      {"x": 3, "label": "3", "behavior": "touch"}
+    ]
+  }
+  \end{diagramdata}
   \item The graph of \(f(x)\) crosses the x-axis at \(x = -1\) and \(x = 4\), and touches at \(x = 2.\) Which of the following could be its factored form?  
   A) \((x + 1)(x - 2)(x - 4)\)  
   B) \((x + 1)(x - 2)^2(x - 4)\)  
@@ -499,19 +510,17 @@ Expand:
 
   \(\boxed{f(x) = (x + 2)^2(x - 4)^2}\)
 
-  \item (Graph described: quartic with x-intercepts at \(-2, 0, 3,\) both ends up.)
+  \item Zeros: \(-2, 0, 3.\)
 
-  Zeros: \(-2, 0, 3.\)
+  Reading the graph: it crosses straight through at \(x = -2\) and \(x = 0\), so both have odd multiplicity. It touches and turns around at \(x = 3\), so that zero has even multiplicity.
 
-  If both ends are up, degree is even and leading coefficient positive.  
-  To get an even degree with those three distinct zeros, at least one zero must have even multiplicity.  
-  We cannot see multiplicities from text alone, so one valid possibility is:
+  A possible equation using the smallest multiplicities consistent with the graph:
   \[
   f(x) = x(x + 2)(x - 3)^2
   \]
-  where \((x - 3)^2\) gives even degree overall and both ends up.
+  where \((x - 3)^2\) gives the touch at \(x = 3\), and the overall degree is even with a positive leading coefficient, matching both ends up.
 
-  \(\boxed{\text{Zeros: } x = -2,\; 0,\; 3 \text{ (3 with even multiplicity). End behavior: both ends up}}\)
+  \(\boxed{\text{Zeros: } x = -2 \text{ (odd)},\; 0 \text{ (odd)},\; 3 \text{ (even)}. \text{ End behavior: both ends up}}\)
 
   \item Crosses at \(x = -1\) and \(x = 4\), touches at \(x = 2\)
 
