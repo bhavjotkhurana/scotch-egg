@@ -61,7 +61,19 @@ An \textbf{exponential function} increases (or decreases) by a constant \emph{fa
 \end{cases}
 \]
 
-Early on, a linear function might appear to grow faster, but eventually an exponential function surpasses it because it compounds multiplicatively.
+Early on, a linear function might appear to grow faster, but eventually an exponential function surpasses it because it compounds multiplicatively. For example, \(y = 2x + 5\) starts out above \(y = 2^x\), but \(2^x\) overtakes it between \(x = 3\) and \(x = 4\):
+
+\begin{diagramdata}
+{
+  "type": "function-comparison",
+  "xMin": 0,
+  "xMax": 5,
+  "series": [
+    {"label": "y = 2x + 5 (linear)", "fn": "2*x+5", "color": "#1E3A2F", "dash": false},
+    {"label": "y = 2^x (exponential)", "fn": "Math.pow(2,x)", "color": "#B08840", "dash": true}
+  ]
+}
+\end{diagramdata}
 
 \subsection*{When to Use Each Model}
 \begin{itemize}

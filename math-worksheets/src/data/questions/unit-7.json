@@ -2985,7 +2985,77 @@
           "type": "text",
           "value": [
             {
-              "text": "Early on, a linear function might appear to grow faster, but eventually an exponential function surpasses it because it compounds multiplicatively.",
+              "text": "Early on, a linear function might appear to grow faster, but eventually an exponential function surpasses it because it compounds multiplicatively. For example, ",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "inline-math",
+          "value": "y = 2x + 5"
+        },
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": " starts out above ",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "inline-math",
+          "value": "y = 2^x"
+        },
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": ", but ",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "inline-math",
+          "value": "2^x"
+        },
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": " overtakes it between ",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "inline-math",
+          "value": "x = 3"
+        },
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": " and ",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "inline-math",
+          "value": "x = 4"
+        },
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": ":",
               "bold": false,
               "italic": false
             }
@@ -3106,6 +3176,25 @@
         }
       ]
     ],
+    "conceptDiagram": {
+      "type": "function-comparison",
+      "xMin": 0,
+      "xMax": 5,
+      "series": [
+        {
+          "label": "y = 2x + 5 (linear)",
+          "fn": "2*x+5",
+          "color": "#1E3A2F",
+          "dash": false
+        },
+        {
+          "label": "y = 2^x (exponential)",
+          "fn": "Math.pow(2,x)",
+          "color": "#B08840",
+          "dash": true
+        }
+      ]
+    },
     "coreSkills": [
       [
         {
