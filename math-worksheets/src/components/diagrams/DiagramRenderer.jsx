@@ -6,6 +6,7 @@ import PolynomialCurve from './PolynomialCurve.jsx';
 import FunctionComparison from './FunctionComparison.jsx';
 import SystemsComparison from './SystemsComparison.jsx';
 import AngleReferenceFigure from './AngleReferenceFigure.jsx';
+import RightTriangleFigure from './RightTriangleFigure.jsx';
 
 const RENDERERS = {
   scatter: ScatterPlot,
@@ -16,6 +17,7 @@ const RENDERERS = {
   'function-comparison': FunctionComparison,
   'systems-comparison': SystemsComparison,
   'angle-reference': AngleReferenceFigure,
+  'right-triangle': RightTriangleFigure,
 };
 
 export default function DiagramRenderer({ diagram }) {

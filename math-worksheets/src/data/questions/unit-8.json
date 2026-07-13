@@ -15676,6 +15676,9 @@
         }
       ]
     ],
+    "conceptDiagram": {
+      "type": "right-triangle"
+    },
     "coreSkills": [
       [
         {
