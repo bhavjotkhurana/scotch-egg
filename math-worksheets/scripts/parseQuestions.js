@@ -438,7 +438,18 @@ function processTopic(unit, topic) {
     if (!present) throw new Error(`${label}: missing required section "${name}"`);
   }
 
-  const conceptSummary = conceptChunks
+  // A diagram can sit anywhere in the Concept Summary prose (illustrating the
+  // topic's core idea, not a specific practice question) -- pull the first
+  // one found out of its chunk before paragraph-splitting the rest.
+  let conceptDiagram = null;
+  const conceptChunksNoDiagram = conceptChunks.map((chunk) => {
+    if (conceptDiagram) return chunk;
+    const { diagram, text } = extractDiagram(chunk.content, `${label} Concept Summary`);
+    if (diagram) conceptDiagram = diagram;
+    return { ...chunk, content: text };
+  });
+
+  const conceptSummary = conceptChunksNoDiagram
     .flatMap((chunk) => {
       const paragraphs = splitParagraphs(chunk.content).map((p) =>
         tokenizeRichText(p, `${label} Concept Summary`)
@@ -480,6 +491,7 @@ function processTopic(unit, topic) {
     topicSlug,
     topicTitle: topic.title,
     conceptSummary,
+    ...(conceptDiagram ? { conceptDiagram } : {}),
     coreSkills,
     examples,
     keyTakeaways,

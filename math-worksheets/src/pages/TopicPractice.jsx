@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Seo from '@/components/Seo.jsx';
 import RichText from '@/components/math/RichText.jsx';
 import QuestionStepper from '@/components/questions/QuestionStepper.jsx';
+import DiagramRenderer from '@/components/diagrams/DiagramRenderer.jsx';
 import { useUnitData, findTopic } from '@/data/questionsData.js';
 import { getUnitBySlug } from '@/data/questionsIndex.js';
 import { splitTopicTitle } from '@/data/titleFormat.js';
@@ -95,6 +96,12 @@ export default function TopicPractice() {
                     {topic.conceptSummary.map((paragraph, i) => (
                       <RichText key={i} segments={paragraph} />
                     ))}
+                  </div>
+                )}
+
+                {topic.conceptDiagram && (
+                  <div className="mt-4">
+                    <DiagramRenderer diagram={topic.conceptDiagram} />
                   </div>
                 )}
 

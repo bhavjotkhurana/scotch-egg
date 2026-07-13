@@ -3,6 +3,7 @@ import TreeDiagram from './TreeDiagram.jsx';
 import AbstractCurve from './AbstractCurve.jsx';
 import ParallelTransversal from './ParallelTransversal.jsx';
 import PolynomialCurve from './PolynomialCurve.jsx';
+import FunctionComparison from './FunctionComparison.jsx';
 
 const RENDERERS = {
   scatter: ScatterPlot,
@@ -10,6 +11,7 @@ const RENDERERS = {
   curve: AbstractCurve,
   'parallel-transversal': ParallelTransversal,
   'polynomial-curve': PolynomialCurve,
+  'function-comparison': FunctionComparison,
 };
 
 export default function DiagramRenderer({ diagram }) {
