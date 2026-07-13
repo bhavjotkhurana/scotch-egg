@@ -91,6 +91,18 @@ Set Y’s mean is higher and its SD much larger because of the outlier 20.
 
 Two bell-shaped curves are centered at the same mean; one is narrow, one is wide.
 
+\begin{diagramdata}
+{
+  "type": "function-comparison",
+  "xMin": -6,
+  "xMax": 6,
+  "series": [
+    {"label": "Narrow (small SD)", "fn": "Math.exp(-(x*x)/2)", "color": "#1E3A2F", "dash": false},
+    {"label": "Wide (large SD)", "fn": "Math.exp(-(x*x)/12.5)", "color": "#B08840", "dash": true}
+  ]
+}
+\end{diagramdata}
+
 The wider curve has greater SD because its values are more spread from the mean.
 
 \section*{Example 4: Scaling and Shifting}
@@ -145,8 +157,31 @@ Set B has higher SD because of greater temperature variation.
 \begin{enumerate}
   \setcounter{enumi}{10}
   \item Two bell curves have the same mean. Curve A is narrower, and Curve B is wider.
+  \begin{diagramdata}
+  {
+    "type": "function-comparison",
+    "xMin": -6,
+    "xMax": 6,
+    "series": [
+      {"label": "Curve A", "fn": "Math.exp(-(x*x)/2)", "color": "#1E3A2F", "dash": false},
+      {"label": "Curve B", "fn": "Math.exp(-(x*x)/12.5)", "color": "#B08840", "dash": true}
+    ]
+  }
+  \end{diagramdata}
   Which has the larger SD, and why?
-  \item A histogram shows that most data values are close to the mean. What does that say about SD?
+  \item A histogram shows that most data values are close to the mean.
+  \begin{diagramdata}
+  {
+    "type": "bar-chart",
+    "xLabel": "Value bin",
+    "yLabel": "Frequency",
+    "categories": ["10-20", "20-30", "30-40", "40-50", "50-60", "60-70", "70-80"],
+    "series": [
+      {"label": "Frequency", "color": "#1E3A2F", "values": [2, 5, 12, 20, 12, 5, 2]}
+    ]
+  }
+  \end{diagramdata}
+  What does that say about SD?
   \item Two data sets each have mean 50. One has SD = 2, the other SD = 10. Which is more consistent?
   \item If the SD of a sample is 0, what does that mean about the data?
   \item Why does the presence of an extreme value (outlier) increase the SD?

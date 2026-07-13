@@ -1921,7 +1921,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": ".  \n    ",
+                    "text": ".\n    ",
                     "bold": false,
                     "italic": false
                   }
@@ -1929,13 +1929,13 @@
               },
               {
                 "type": "inline-math",
-                "value": "L = 2(\\tfrac{20}{3}) + 4 = \\tfrac{44}{3}"
+                "value": "L = 2(\\tfrac{20}{3}) + 4 = \\tfrac{40}{3} + \\tfrac{12}{3} = \\tfrac{52}{3}"
               },
               {
                 "type": "text",
                 "value": [
                   {
-                    "text": ".  \n    ",
+                    "text": ".\n    ",
                     "bold": false,
                     "italic": false
                   }
@@ -1943,7 +1943,7 @@
               },
               {
                 "type": "inline-math",
-                "value": "\\boxed{W = \\tfrac{20}{3}, L = \\tfrac{44}{3}}"
+                "value": "\\boxed{W = \\tfrac{20}{3}, L = \\tfrac{52}{3}}"
               }
             ]
           },
@@ -2041,7 +2041,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": "The sum of the digits of a two-digit number is 12. The number is 18 more than twice the tens digit. Find the number.",
+                    "text": "The sum of the digits of a two-digit number is 12. The number is 18 more than 8 times the tens digit. Find the number.",
                     "bold": false,
                     "italic": false
                   }
@@ -2081,7 +2081,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": ".  \n    ",
+                    "text": ".\n    ",
                     "bold": false,
                     "italic": false
                   }
@@ -2103,41 +2103,13 @@
               },
               {
                 "type": "inline-math",
-                "value": "10t + u = 2t + 18"
+                "value": "10t + u = 8t + 18"
               },
               {
                 "type": "text",
                 "value": [
                   {
-                    "text": ".  \n    Simplify: ",
-                    "bold": false,
-                    "italic": false
-                  }
-                ]
-              },
-              {
-                "type": "inline-math",
-                "value": "8t = 18 \\Rightarrow t = 2.25"
-              },
-              {
-                "type": "text",
-                "value": [
-                  {
-                    "text": ", but digits must be integers, so check consistent integer pairs.  \n    Corrected system: “number is 18 more than twice the tens digit” means ",
-                    "bold": false,
-                    "italic": false
-                  }
-                ]
-              },
-              {
-                "type": "inline-math",
-                "value": "10t + u = 2t + 18"
-              },
-              {
-                "type": "text",
-                "value": [
-                  {
-                    "text": ".  \n    Substitute ",
+                    "text": ".\n    Substitute ",
                     "bold": false,
                     "italic": false
                   }
@@ -2159,17 +2131,35 @@
               },
               {
                 "type": "inline-math",
-                "value": "10t + 12 - t = 2t + 18 \\Rightarrow 9t = 6 \\Rightarrow t = \\tfrac{2}{3}"
+                "value": "10t + 12 - t = 8t + 18 \\Rightarrow 9t + 12 = 8t + 18 \\Rightarrow t = 6"
               },
               {
                 "type": "text",
                 "value": [
                   {
-                    "text": ".  \n    (Not integer, so reframe problem wording if needed in final edit.)",
+                    "text": ".\n    Then ",
                     "bold": false,
                     "italic": false
                   }
                 ]
+              },
+              {
+                "type": "inline-math",
+                "value": "u = 12 - 6 = 6"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".\n    ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "\\boxed{66}"
               }
             ]
           }
@@ -6918,7 +6908,7 @@
             "type": "text",
             "value": [
               {
-                "text": ". It is on the second boundary and above the first. Since the first is strict ",
+                "text": ", the intersection of both boundaries. Since the first boundary is strict ",
                 "bold": false,
                 "italic": false
               }
@@ -8137,7 +8127,91 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": ".  \n  Vertices: ",
+                    "text": ".  \n  For ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x<-1.5"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "-x"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " exceeds ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "3x+6"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ", so no valid ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "y"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " exists there — the region only extends from ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x=-1.5"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": " to ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "type": "inline-math",
+                "value": "x=5"
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": ".\n  Vertices: ",
                     "bold": false,
                     "italic": false
                   }
@@ -8151,7 +8225,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": ". Unbounded to the left.",
+                    "text": ". Bounded (triangle).",
                     "bold": false,
                     "italic": false
                   }

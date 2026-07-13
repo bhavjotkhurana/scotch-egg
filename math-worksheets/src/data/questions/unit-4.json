@@ -7799,7 +7799,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\nA two-level tree diagram: the first branch is rain vs. no rain with probabilities 0.3 and 0.7. From each, a branch for traffic jam with conditional probabilities 0.5 if rain and 0.2 if no rain.\n\nCompute ",
+                "text": "\nA two-level tree diagram: the first branch is rain vs. no rain with probabilities 0.3 and 0.7. From each, a branch for traffic jam with conditional probabilities 0.5 if rain and 0.2 if no rain.\n\n\n\nCompute ",
                 "bold": false,
                 "italic": false
               }
@@ -7833,7 +7833,41 @@
               }
             ]
           }
-        ]
+        ],
+        "diagram": {
+          "type": "tree",
+          "root": "Commute",
+          "branches": [
+            {
+              "label": "Rain",
+              "probability": 0.3,
+              "children": [
+                {
+                  "label": "Jam",
+                  "probability": 0.5
+                },
+                {
+                  "label": "No Jam",
+                  "probability": 0.5
+                }
+              ]
+            },
+            {
+              "label": "No Rain",
+              "probability": 0.7,
+              "children": [
+                {
+                  "label": "Jam",
+                  "probability": 0.2
+                },
+                {
+                  "label": "No Jam",
+                  "probability": 0.8
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "title": [
@@ -9944,13 +9978,32 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\nTwo bell-shaped curves are centered at the same mean; one is narrow, one is wide.\n\nThe wider curve has greater SD because its values are more spread from the mean.\n\n",
+                "text": "\n\nTwo bell-shaped curves are centered at the same mean; one is narrow, one is wide.\n\n\n\nThe wider curve has greater SD because its values are more spread from the mean.\n\n",
                 "bold": false,
                 "italic": false
               }
             ]
           }
-        ]
+        ],
+        "diagram": {
+          "type": "function-comparison",
+          "xMin": -6,
+          "xMax": 6,
+          "series": [
+            {
+              "label": "Narrow (small SD)",
+              "fn": "Math.exp(-(x*x)/2)",
+              "color": "#1E3A2F",
+              "dash": false
+            },
+            {
+              "label": "Wide (large SD)",
+              "fn": "Math.exp(-(x*x)/12.5)",
+              "color": "#B08840",
+              "dash": true
+            }
+          ]
+        }
       },
       {
         "title": [
@@ -10440,12 +10493,31 @@
         "questions": [
           {
             "number": 11,
+            "diagram": {
+              "type": "function-comparison",
+              "xMin": -6,
+              "xMax": 6,
+              "series": [
+                {
+                  "label": "Curve A",
+                  "fn": "Math.exp(-(x*x)/2)",
+                  "color": "#1E3A2F",
+                  "dash": false
+                },
+                {
+                  "label": "Curve B",
+                  "fn": "Math.exp(-(x*x)/12.5)",
+                  "color": "#B08840",
+                  "dash": true
+                }
+              ]
+            },
             "prompt": [
               {
                 "type": "text",
                 "value": [
                   {
-                    "text": "Two bell curves have the same mean. Curve A is narrower, and Curve B is wider.\n  Which has the larger SD, and why?",
+                    "text": "Two bell curves have the same mean. Curve A is narrower, and Curve B is wider.\n  \n  Which has the larger SD, and why?",
                     "bold": false,
                     "italic": false
                   }
@@ -10467,12 +10539,41 @@
           },
           {
             "number": 12,
+            "diagram": {
+              "type": "bar-chart",
+              "xLabel": "Value bin",
+              "yLabel": "Frequency",
+              "categories": [
+                "10-20",
+                "20-30",
+                "30-40",
+                "40-50",
+                "50-60",
+                "60-70",
+                "70-80"
+              ],
+              "series": [
+                {
+                  "label": "Frequency",
+                  "color": "#1E3A2F",
+                  "values": [
+                    2,
+                    5,
+                    12,
+                    20,
+                    12,
+                    5,
+                    2
+                  ]
+                }
+              ]
+            },
             "prompt": [
               {
                 "type": "text",
                 "value": [
                   {
-                    "text": "A histogram shows that most data values are close to the mean. What does that say about SD?",
+                    "text": "A histogram shows that most data values are close to the mean.\n  \n  What does that say about SD?",
                     "bold": false,
                     "italic": false
                   }
@@ -12916,7 +13017,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": " models GPA vs. absences. What does the slope mean here?\n  ",
+                    "text": " models test score vs. absences. What does the slope mean here?\n  ",
                     "bold": false,
                     "italic": false
                   }
@@ -12928,7 +13029,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": "Each additional absence decreases predicted GPA by 2 points.",
+                    "text": "Each additional absence decreases predicted test score by 2 points.",
                     "bold": false,
                     "italic": false
                   }

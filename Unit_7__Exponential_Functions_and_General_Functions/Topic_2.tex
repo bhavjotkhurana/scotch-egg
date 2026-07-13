@@ -124,7 +124,7 @@ Compute a few values:
 \begin{array}{c|ccccc}
 x & 0 & 2 & 4 & 6 & 8 \\ \hline
 L(x) & 100 & 140 & 180 & 220 & 260 \\
-E(x) & 100 & 132 & 174 & 229 & 301
+E(x) & 100 & 132 & 175 & 231 & 306
 \end{array}
 \]
 
@@ -232,6 +232,19 @@ Beyond that point, exponential dominates.
 
 \subsection*{Part D: Graph and Table Interpretation}
 A graph shows a straight line with constant slope and an exponential curve that starts below the line but rises faster, overtaking it around \(x = 5\).
+
+\begin{diagramdata}
+{
+  "type": "function-comparison",
+  "xMin": 0,
+  "xMax": 8,
+  "series": [
+    {"label": "L(x) = 100 + 20x (linear)", "fn": "100+20*x", "color": "#1E3A2F", "dash": false},
+    {"label": "E(x) = 100(1.15)^x (exponential)", "fn": "100*Math.pow(1.15,x)", "color": "#B08840", "dash": true}
+  ]
+}
+\end{diagramdata}
+
 \begin{enumerate}
   \setcounter{enumi}{15}
   \item Which graph shows a constant rate of change: the line or the curve?

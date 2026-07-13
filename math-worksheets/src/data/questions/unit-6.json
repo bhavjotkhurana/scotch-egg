@@ -7304,7 +7304,7 @@
           },
           {
             "type": "display-math",
-            "value": "t = 3 \\text{ or } -1.5."
+            "value": "t = 3 \\text{ or } -1."
           },
           {
             "type": "text",
@@ -15704,7 +15704,17 @@
           "type": "text",
           "value": [
             {
-              "text": " is a zero of the function.  \nThis is known as the **Factor Theorem**.",
+              "text": " is a zero of the function.  \nThis is known as the ",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "Factor Theorem",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": ".",
               "bold": false,
               "italic": false
             }
@@ -17791,7 +17801,7 @@
               },
               {
                 "type": "inline-math",
-                "value": "\\boxed{\\text{Touches at } x = 4, -2;\\; crosses at } x = 1}"
+                "value": "\\boxed{\\text{Touches at } x = 4, -2;\\ \\text{crosses at } x = 1}"
               }
             ]
           },

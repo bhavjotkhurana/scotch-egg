@@ -66,7 +66,17 @@
           "type": "text",
           "value": [
             {
-              "text": "Each law stems from basic multiplication and division principles. Understanding *why* they work helps prevent common errors—especially when simplifying or solving equations that include exponential terms.",
+              "text": "Each law stems from basic multiplication and division principles. Understanding ",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "why",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": " they work helps prevent common errors—especially when simplifying or solving equations that include exponential terms.",
               "bold": false,
               "italic": false
             }
@@ -4903,7 +4913,17 @@
           "type": "text",
           "value": [
             {
-              "text": "1. **Division by zero is undefined:**  \n   Any value that makes a denominator equal to zero must be excluded.\n   ",
+              "text": "1. ",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "Division by zero is undefined:",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "\n   Any value that makes a denominator equal to zero must be excluded.\n   ",
               "bold": false,
               "italic": false
             }
@@ -4919,7 +4939,17 @@
           "type": "text",
           "value": [
             {
-              "text": "2. **Even roots of negative numbers are undefined for real values:**  \n   For example, ",
+              "text": "2. ",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "Even roots of negative numbers are undefined for real values:",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "\n   For example, ",
               "bold": false,
               "italic": false
             }
@@ -4959,7 +4989,17 @@
           "type": "text",
           "value": [
             {
-              "text": "3. **Numerators do not affect the domain**, only denominators and even roots do.",
+              "text": "3. ",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "text": "Numerators do not affect the domain",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": ", only denominators and even roots do.",
               "bold": false,
               "italic": false
             }

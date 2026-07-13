@@ -91,6 +91,31 @@ Not equal, so Tea preference and Senior status are not independent.
 \section*{Example 3: Tree Diagram for a Multi Step Process}
 A two-level tree diagram: the first branch is rain vs. no rain with probabilities 0.3 and 0.7. From each, a branch for traffic jam with conditional probabilities 0.5 if rain and 0.2 if no rain.
 
+\begin{diagramdata}
+{
+  "type": "tree",
+  "root": "Commute",
+  "branches": [
+    {
+      "label": "Rain",
+      "probability": 0.3,
+      "children": [
+        {"label": "Jam", "probability": 0.5},
+        {"label": "No Jam", "probability": 0.5}
+      ]
+    },
+    {
+      "label": "No Rain",
+      "probability": 0.7,
+      "children": [
+        {"label": "Jam", "probability": 0.2},
+        {"label": "No Jam", "probability": 0.8}
+      ]
+    }
+  ]
+}
+\end{diagramdata}
+
 Compute \(P(\text{Jam})\):  
 \[
 P(\text{Jam})=P(\text{Jam}\mid \text{Rain})P(\text{Rain})+P(\text{Jam}\mid \text{NoRain})P(\text{NoRain})

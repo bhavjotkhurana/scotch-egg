@@ -2519,6 +2519,12 @@
           },
           {
             "number": 19,
+            "diagram": {
+              "type": "triangle-angles",
+              "angleA": "40°",
+              "angleB": "70°",
+              "angleC": "?"
+            },
             "prompt": [
               {
                 "type": "text",
@@ -2552,7 +2558,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": " Find the third angle.",
+                    "text": " Find the third angle.\n  ",
                     "bold": false,
                     "italic": false
                   }
@@ -20212,7 +20218,7 @@
             "type": "text",
             "value": [
               {
-                "text": ". What is the area of the slice?\n\n",
+                "text": ". What is the area of the slice?\n\n\n\n",
                 "bold": false,
                 "italic": false
               },
@@ -20294,7 +20300,12 @@
               }
             ]
           }
-        ]
+        ],
+        "diagram": {
+          "type": "circle-sector",
+          "angle": 45,
+          "label": "45°"
+        }
       },
       {
         "title": [
@@ -20328,7 +20339,7 @@
             "type": "text",
             "value": [
               {
-                "text": ". What is the measure of the inscribed angle that intercepts the same arc?\n\n",
+                "text": ". What is the measure of the inscribed angle that intercepts the same arc?\n\n\n\n",
                 "bold": false,
                 "italic": false
               },
@@ -20372,7 +20383,12 @@
               }
             ]
           }
-        ]
+        ],
+        "diagram": {
+          "type": "inscribed-angle",
+          "centralAngle": 110,
+          "inscribedAngle": 55
+        }
       },
       {
         "title": [
@@ -22926,6 +22942,12 @@
           },
           {
             "number": 5,
+            "diagram": {
+              "type": "circle-sector",
+              "angle": 90,
+              "label": "90°",
+              "showChord": true
+            },
             "prompt": [
               {
                 "type": "text",
@@ -22959,7 +22981,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": ". (Hint: subtract the area of the triangle from the area of the sector.)",
+                    "text": ". (Hint: subtract the area of the triangle from the area of the sector.)\n  ",
                     "bold": false,
                     "italic": false
                   }

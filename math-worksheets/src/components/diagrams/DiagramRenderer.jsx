@@ -12,6 +12,9 @@ import ParabolaFigure from './ParabolaFigure.jsx';
 import BarChart from './BarChart.jsx';
 import LineGraph from './LineGraph.jsx';
 import TrendLineScatter from './TrendLineScatter.jsx';
+import TriangleAngles from './TriangleAngles.jsx';
+import CircleSector from './CircleSector.jsx';
+import InscribedAngleFigure from './InscribedAngleFigure.jsx';
 
 const RENDERERS = {
   scatter: ScatterPlot,
@@ -28,6 +31,9 @@ const RENDERERS = {
   'bar-chart': BarChart,
   'line-graph': LineGraph,
   'trend-line': TrendLineScatter,
+  'triangle-angles': TriangleAngles,
+  'circle-sector': CircleSector,
+  'inscribed-angle': InscribedAngleFigure,
 };
 
 export default function DiagramRenderer({ diagram }) {

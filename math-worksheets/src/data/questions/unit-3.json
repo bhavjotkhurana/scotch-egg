@@ -960,7 +960,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": ". If there are 32 girls, how many boys are there?",
+                    "text": ". If there are 35 girls, how many boys are there?",
                     "bold": false,
                     "italic": false
                   }
@@ -970,17 +970,7 @@
             "solution": [
               {
                 "type": "inline-math",
-                "value": "3:5=\\dfrac{b}{32} \\Rightarrow 5b=96 \\Rightarrow b=19.2"
-              },
-              {
-                "type": "text",
-                "value": [
-                  {
-                    "text": ". Note: non-integer headcount; item yields a fractional result.",
-                    "bold": false,
-                    "italic": false
-                  }
-                ]
+                "value": "3:5=\\dfrac{b}{35} \\Rightarrow 5b=105 \\Rightarrow \\boxed{b=21}"
               }
             ]
           },
@@ -1356,7 +1346,7 @@
               },
               {
                 "type": "inline-math",
-                "value": "3:2"
+                "value": "5:2"
               },
               {
                 "type": "text",
@@ -1396,7 +1386,7 @@
               },
               {
                 "type": "inline-math",
-                "value": "\\dfrac{5k+40}{3k}=\\dfrac{3}{2}"
+                "value": "\\dfrac{5k+40}{3k}=\\dfrac{5}{2}"
               },
               {
                 "type": "text",
@@ -1410,13 +1400,13 @@
               },
               {
                 "type": "inline-math",
-                "value": "10k+80=9k"
+                "value": "10k+80=15k \\Rightarrow 5k=80 \\Rightarrow k=16"
               },
               {
                 "type": "text",
                 "value": [
                   {
-                    "text": " so ",
+                    "text": ".\n  ",
                     "bold": false,
                     "italic": false
                   }
@@ -1424,17 +1414,7 @@
               },
               {
                 "type": "inline-math",
-                "value": "k=-80"
-              },
-              {
-                "type": "text",
-                "value": [
-                  {
-                    "text": ".  \n  Note: negative parameter indicates inconsistency with the stated change. No positive solution under these conditions.",
-                    "bold": false,
-                    "italic": false
-                  }
-                ]
+                "value": "\\boxed{z=3k=48\\text{ g}}"
               }
             ]
           },
@@ -7465,7 +7445,7 @@
             "type": "text",
             "value": [
               {
-                "text": " and a mass of ",
+                "text": " and a density of ",
                 "bold": false,
                 "italic": false
               }
@@ -7479,7 +7459,7 @@
             "type": "text",
             "value": [
               {
-                "text": ".  \nMass ",
+                "text": ".\nMass ",
                 "bold": false,
                 "italic": false
               }

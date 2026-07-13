@@ -459,7 +459,7 @@
             "type": "text",
             "value": [
               {
-                "text": " → Growth (5% increase per unit).  \n(b) ",
+                "text": " → Growth (5% increase per unit).\n(b) ",
                 "bold": false,
                 "italic": false
               }
@@ -601,7 +601,7 @@
             "type": "text",
             "value": [
               {
-                "text": " so growth rate = 6% per time unit.  \nAfter 5 years:\n",
+                "text": " so growth rate = 6% per time unit.\nAfter 5 years:\n",
                 "bold": false,
                 "italic": false
               }
@@ -683,7 +683,7 @@
             "type": "text",
             "value": [
               {
-                "text": " is years after purchase.  \nEach year, it retains 85% of its previous value → 15% loss annually.  \nAfter 3 years:\n",
+                "text": " is years after purchase.  \nEach year, it retains 85% of its previous value → 15% loss annually.\nAfter 3 years:\n",
                 "bold": false,
                 "italic": false
               }
@@ -691,7 +691,7 @@
           },
           {
             "type": "display-math",
-            "value": "V = 30{,}000(0.85)^3 = 30{,}000(0.614) = 18{,}420."
+            "value": "V = 30{,}000(0.85)^3 = 30{,}000(0.614125) = 18{,}423.75."
           },
           {
             "type": "text",
@@ -705,7 +705,7 @@
           },
           {
             "type": "inline-math",
-            "value": "\\boxed{V = \\$18{,}420}"
+            "value": "\\boxed{V = \\$18{,}423.75}"
           },
           {
             "type": "text",
@@ -765,7 +765,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\nThe first model grows 3% each period; the second decays 3%.  \nIf ",
+                "text": "\n\nThe first model grows 3% each period; the second decays 3%.\nIf ",
                 "bold": false,
                 "italic": false
               }
@@ -3472,7 +3472,7 @@
           },
           {
             "type": "display-math",
-            "value": "\\begin{array}{c|ccccc}\nx & 0 & 2 & 4 & 6 & 8 \\\\ \\hline\nL(x) & 100 & 140 & 180 & 220 & 260 \\\\\nE(x) & 100 & 132 & 174 & 229 & 301\n\\end{array}"
+            "value": "\\begin{array}{c|ccccc}\nx & 0 & 2 & 4 & 6 & 8 \\\\ \\hline\nL(x) & 100 & 140 & 180 & 220 & 260 \\\\\nE(x) & 100 & 132 & 175 & 231 & 306\n\\end{array}"
           },
           {
             "type": "text",
@@ -5489,13 +5489,32 @@
             "type": "text",
             "value": [
               {
-                "text": ".\n",
+                "text": ".\n\n\n\n",
                 "bold": false,
                 "italic": false
               }
             ]
           }
         ],
+        "partDiagram": {
+          "type": "function-comparison",
+          "xMin": 0,
+          "xMax": 8,
+          "series": [
+            {
+              "label": "L(x) = 100 + 20x (linear)",
+              "fn": "100+20*x",
+              "color": "#1E3A2F",
+              "dash": false
+            },
+            {
+              "label": "E(x) = 100(1.15)^x (exponential)",
+              "fn": "100*Math.pow(1.15,x)",
+              "color": "#B08840",
+              "dash": true
+            }
+          ]
+        },
         "questions": [
           {
             "number": 16,
@@ -10112,7 +10131,7 @@
             "type": "text",
             "value": [
               {
-                "text": ").  \nRange: ",
+                "text": ").\nRange: for ",
                 "bold": false,
                 "italic": false
               }
@@ -10120,27 +10139,13 @@
           },
           {
             "type": "inline-math",
-            "value": "y \\ge 0"
+            "value": "x < 0"
           },
           {
             "type": "text",
             "value": [
               {
-                "text": " because ",
-                "bold": false,
-                "italic": false
-              }
-            ]
-          },
-          {
-            "type": "inline-math",
-            "value": "x^2 \\ge 0"
-          },
-          {
-            "type": "text",
-            "value": [
-              {
-                "text": " and ",
+                "text": ", ",
                 "bold": false,
                 "italic": false
               }
@@ -10154,7 +10159,7 @@
             "type": "text",
             "value": [
               {
-                "text": " can go below zero when ",
+                "text": " covers ",
                 "bold": false,
                 "italic": false
               }
@@ -10162,13 +10167,55 @@
           },
           {
             "type": "inline-math",
-            "value": "x < -2."
+            "value": "(-\\infty, 2)"
           },
           {
             "type": "text",
             "value": [
               {
-                "text": "\n\n",
+                "text": "; for ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "x \\ge 0"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": ", ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "x^2"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": " covers ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "[0, \\infty)"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": ". Together these two intervals cover every real number.\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -10176,7 +10223,7 @@
           },
           {
             "type": "display-math",
-            "value": "\\boxed{\\text{Domain: all real, Range: } y \\ge -2.}"
+            "value": "\\boxed{\\text{Domain: all real, Range: all real numbers.}}"
           },
           {
             "type": "text",
@@ -11045,18 +11092,6 @@
       {
         "partLabel": "C",
         "partTitle": "Part C: Range and Output Behavior",
-        "partIntro": [
-          {
-            "type": "text",
-            "value": [
-              {
-                "text": "\n(Include small graph sketches later as needed.)\n",
-                "bold": false,
-                "italic": false
-              }
-            ]
-          }
-        ],
         "questions": [
           {
             "number": 11,
