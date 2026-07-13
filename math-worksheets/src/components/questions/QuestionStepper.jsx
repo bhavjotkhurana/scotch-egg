@@ -77,18 +77,15 @@ export default function QuestionStepper({ unitSlug, topicSlug, practiceParts }) 
 
         <button
           type="button"
-          onClick={() => setRevealed((r) => !r)}
-          className="flex items-center gap-2 rounded-lg bg-brand-primary px-4 py-2 text-sm font-medium text-white hover:bg-brand-primary-dark"
+          onClick={() => toggleDone(index)}
+          className={`flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
+            done
+              ? 'bg-green-100 text-green-700'
+              : 'border border-gray-300 text-brand-neutral hover:bg-gray-100'
+          }`}
         >
-          {revealed ? (
-            <>
-              <EyeOff className="h-4 w-4" /> Hide solution
-            </>
-          ) : (
-            <>
-              <Eye className="h-4 w-4" /> Show solution
-            </>
-          )}
+          <Check className="h-4 w-4" />
+          {done ? 'Marked done' : 'Mark as done'}
         </button>
 
         <button
@@ -124,15 +121,18 @@ export default function QuestionStepper({ unitSlug, topicSlug, practiceParts }) 
       <div className="mt-4 flex justify-center">
         <button
           type="button"
-          onClick={() => toggleDone(index)}
-          className={`flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
-            done
-              ? 'bg-green-100 text-green-700'
-              : 'border border-gray-300 text-brand-neutral hover:bg-gray-100'
-          }`}
+          onClick={() => setRevealed((r) => !r)}
+          className="flex items-center gap-2 rounded-lg bg-brand-primary px-4 py-2 text-sm font-medium text-white hover:bg-brand-primary-dark"
         >
-          <Check className="h-4 w-4" />
-          {done ? 'Marked done' : 'Mark as done'}
+          {revealed ? (
+            <>
+              <EyeOff className="h-4 w-4" /> Hide solution
+            </>
+          ) : (
+            <>
+              <Eye className="h-4 w-4" /> Show solution
+            </>
+          )}
         </button>
       </div>
 
