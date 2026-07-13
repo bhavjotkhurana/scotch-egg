@@ -7,6 +7,7 @@ import FunctionComparison from './FunctionComparison.jsx';
 import SystemsComparison from './SystemsComparison.jsx';
 import AngleReferenceFigure from './AngleReferenceFigure.jsx';
 import RightTriangleFigure from './RightTriangleFigure.jsx';
+import CorrelationPanels from './CorrelationPanels.jsx';
 
 const RENDERERS = {
   scatter: ScatterPlot,
@@ -18,6 +19,7 @@ const RENDERERS = {
   'systems-comparison': SystemsComparison,
   'angle-reference': AngleReferenceFigure,
   'right-triangle': RightTriangleFigure,
+  'correlation-panels': CorrelationPanels,
 };
 
 export default function DiagramRenderer({ diagram }) {
