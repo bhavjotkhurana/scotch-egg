@@ -18290,6 +18290,15 @@
         "questions": [
           {
             "number": 21,
+            "diagram": {
+              "type": "curve",
+              "vertex": [
+                0,
+                0
+              ],
+              "vertexLabel": "(0, 0)",
+              "opensUpward": true
+            },
             "prompt": [
               {
                 "type": "text",
@@ -18323,7 +18332,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": ".  \n  The vertex of ",
+                    "text": ".\n  The vertex of ",
                     "bold": false,
                     "italic": false
                   }
@@ -18337,7 +18346,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": " is where?",
+                    "text": " is where?\n  ",
                     "bold": false,
                     "italic": false
                   }

@@ -1145,13 +1145,102 @@
             "type": "text",
             "value": [
               {
-                "text": "\nA scatterplot shows hours studied on the x-axis and SAT Math score on the y-axis, with a generally upward trend.\n\n",
+                "text": "\nA scatterplot shows hours studied on the x-axis and SAT Math score on the y-axis, with a generally upward trend.\n\n\n\n",
                 "bold": false,
                 "italic": false
               }
             ]
           }
         ],
+        "partDiagram": {
+          "type": "scatter",
+          "xLabel": "Hours studied",
+          "yLabel": "SAT Math score",
+          "points": [
+            [
+              1,
+              410
+            ],
+            [
+              2,
+              430
+            ],
+            [
+              3,
+              460
+            ],
+            [
+              4,
+              470
+            ],
+            [
+              5,
+              500
+            ],
+            [
+              6,
+              510
+            ],
+            [
+              7,
+              530
+            ],
+            [
+              8,
+              545
+            ],
+            [
+              9,
+              560
+            ],
+            [
+              10,
+              575
+            ],
+            [
+              11,
+              590
+            ],
+            [
+              12,
+              605
+            ],
+            [
+              13,
+              620
+            ],
+            [
+              14,
+              650
+            ],
+            [
+              15,
+              700
+            ],
+            [
+              16,
+              640
+            ],
+            [
+              17,
+              660
+            ],
+            [
+              18,
+              680
+            ],
+            [
+              19,
+              700
+            ]
+          ],
+          "outliers": [
+            [
+              20,
+              420
+            ]
+          ]
+        },
         "questions": [
           {
             "number": 16,
@@ -7727,14 +7816,75 @@
                 "italic": true
               },
               {
-                "text": "\n\n",
+                "text": "\n\n\n\n",
                 "bold": false,
                 "italic": false
               }
             ]
           }
         ],
+        "partDiagram": {
+          "type": "tree",
+          "root": "Item",
+          "branches": [
+            {
+              "label": "Good",
+              "probability": 0.9,
+              "children": [
+                {
+                  "label": "Pass",
+                  "probability": 0.95
+                },
+                {
+                  "label": "Fail",
+                  "probability": 0.05
+                }
+              ]
+            },
+            {
+              "label": "Defective",
+              "probability": 0.1,
+              "children": [
+                {
+                  "label": "Fail",
+                  "probability": 0.8
+                },
+                {
+                  "label": "Pass",
+                  "probability": 0.2
+                }
+              ]
+            }
+          ]
+        },
         "questions": [
+          {
+            "number": 11,
+            "prompt": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Draw a tree diagram to represent the situation.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ],
+            "solution": [
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "Tree description provided in the question prompt.",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
           {
             "number": 12,
             "prompt": [
@@ -8510,7 +8660,7 @@
         ]
       }
     ],
-    "questionCount": 24,
+    "questionCount": 25,
     "exampleCount": 6
   },
   {

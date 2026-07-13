@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Check, ChevronLeft, ChevronRight, Eye, EyeOff } from 'lucide-react';
 import RichText from '@/components/math/RichText.jsx';
+import DiagramRenderer from '@/components/diagrams/DiagramRenderer.jsx';
 import { useTopicProgress } from '@/hooks/useTopicProgress.js';
 
 export default function QuestionStepper({ unitSlug, topicSlug, practiceParts }) {
@@ -13,6 +14,7 @@ export default function QuestionStepper({ unitSlug, topicSlug, practiceParts }) 
           partLabel: part.partLabel,
           partTitle: part.partTitle,
           partIntro: part.partIntro,
+          partDiagram: part.partDiagram,
           ...question,
         });
       }
@@ -63,6 +65,8 @@ export default function QuestionStepper({ unitSlug, topicSlug, practiceParts }) 
       {current.partIntro && (
         <RichText segments={current.partIntro} className="mb-3 text-brand-neutral" />
       )}
+
+      <DiagramRenderer diagram={current.diagram || current.partDiagram} />
 
       <RichText segments={current.prompt} className="text-brand-neutral" />
 

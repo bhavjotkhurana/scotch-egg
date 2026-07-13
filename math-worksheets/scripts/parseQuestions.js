@@ -139,6 +139,25 @@ function hasPlaceholder(text) {
   return PLACEHOLDER_RE.test(text);
 }
 
+// A hand-authored diagram spec: a fenced JSON block that can sit inside a
+// part's intro text (shared by every question in that part, e.g. a scatterplot
+// or tree diagram used across several sub-questions) or inside a single
+// question's own text (a one-off figure specific to that item). Stripped out
+// before the surrounding prose is tokenized as rich text.
+const DIAGRAM_RE = /\\begin\{diagramdata\}([\s\S]*?)\\end\{diagramdata\}/;
+function extractDiagram(text, label) {
+  const match = text.match(DIAGRAM_RE);
+  if (!match) return { diagram: null, text };
+  let diagram;
+  try {
+    diagram = JSON.parse(match[1].trim());
+  } catch (e) {
+    throw new Error(`${label}: invalid diagramdata JSON (${e.message})`);
+  }
+  const remaining = text.slice(0, match.index) + text.slice(match.index + match[0].length);
+  return { diagram, text: remaining };
+}
+
 function unescapeLatexText(str) {
   return str
     .replace(/\\%/g, '%')
@@ -286,8 +305,11 @@ function processPracticeAndSolutions(practiceContent, answerKeyContent, label) {
 
     const qEnumIdx = qSub.content.search(/\\begin\{enumerate\}/);
     const sEnumIdx = sSub.content.search(/\\begin\{enumerate\}/);
-    const qPreText = qEnumIdx === -1 ? qSub.content : qSub.content.slice(0, qEnumIdx);
+    let qPreText = qEnumIdx === -1 ? qSub.content : qSub.content.slice(0, qEnumIdx);
     const sPreText = sEnumIdx === -1 ? sSub.content : sSub.content.slice(0, sEnumIdx);
+
+    const { diagram: partDiagram, text: qPreTextNoDiagram } = extractDiagram(qPreText, `${partLabel} intro`);
+    qPreText = qPreTextNoDiagram;
 
     const qEnumInner = findEnumerateBlock(qSub.content, `${partLabel} questions`);
     const sEnumInner = findEnumerateBlock(sSub.content, `${partLabel} solutions`);
@@ -315,15 +337,16 @@ function processPracticeAndSolutions(practiceContent, answerKeyContent, label) {
 
     const questions = [];
     for (let j = 0; j < qItems.length; j++) {
-      const qRaw = qItems[j];
-      const sRaw = sItems[j];
       const number = qCounterStart + j + 1;
+      const { diagram: itemDiagram, text: qRaw } = extractDiagram(qItems[j], `${partLabel} Q${number}`);
+      const sRaw = sItems[j];
       if (hasPlaceholder(qRaw) || hasPlaceholder(sRaw)) {
         exclusionLog.push(`${partLabel} Item ${number}: excluded (unresolved graph/diagram placeholder)`);
         continue;
       }
       questions.push({
         number,
+        ...(itemDiagram ? { diagram: itemDiagram } : {}),
         prompt: tokenizeRichText(qRaw, `${partLabel} Q${number}`),
         solution: tokenizeRichText(sRaw, `${partLabel} Q${number} solution`),
       });
@@ -338,6 +361,7 @@ function processPracticeAndSolutions(practiceContent, answerKeyContent, label) {
       partLabel: letter,
       partTitle: qSub.header,
       ...(partIntro ? { partIntro } : {}),
+      ...(partDiagram ? { partDiagram } : {}),
       questions,
     });
   }

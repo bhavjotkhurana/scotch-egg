@@ -2685,6 +2685,14 @@
         "questions": [
           {
             "number": 21,
+            "diagram": {
+              "type": "parallel-transversal",
+              "line1Label": "a",
+              "line2Label": "b",
+              "transversalLabel": "t",
+              "angle1Expression": "x + 25",
+              "angle2Expression": "3x - 15"
+            },
             "prompt": [
               {
                 "type": "text",
@@ -2769,6 +2777,16 @@
               {
                 "type": "inline-math",
                 "value": "x."
+              },
+              {
+                "type": "text",
+                "value": [
+                  {
+                    "text": "\n  ",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
               }
             ],
             "solution": [

@@ -170,9 +170,34 @@ P(\text{Heart}\mid \text{Face})=\frac{3}{12}=\frac{1}{4}.
 \subsection*{Part C: Tree Diagram Problems}
 \textit{Use this description: A machine produces 90\% good items and 10\% defective. A test identifies 95\% of good items as “pass” and 80\% of defective items as “fail.”}
 
+\begin{diagramdata}
+{
+  "type": "tree",
+  "root": "Item",
+  "branches": [
+    {
+      "label": "Good",
+      "probability": 0.90,
+      "children": [
+        {"label": "Pass", "probability": 0.95},
+        {"label": "Fail", "probability": 0.05}
+      ]
+    },
+    {
+      "label": "Defective",
+      "probability": 0.10,
+      "children": [
+        {"label": "Fail", "probability": 0.80},
+        {"label": "Pass", "probability": 0.20}
+      ]
+    }
+  ]
+}
+\end{diagramdata}
+
 \begin{enumerate}
   \setcounter{enumi}{10}
-  \item Draw a tree diagram to represent the situation. (Insert placeholder: "Tree diagram showing good/defective → pass/fail branches.")
+  \item Draw a tree diagram to represent the situation.
   \item Find \(P(\text{Pass})\).
   \item Find \(P(\text{Good}\mid \text{Pass})\).
   \item Find \(P(\text{Defective}\mid \text{Fail})\).
