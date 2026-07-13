@@ -135,134 +135,136 @@
         }
       ]
     ],
-    "conceptDiagram": {
-      "type": "correlation-panels",
-      "cases": [
-        {
-          "label": "Positive Correlation",
-          "points": [
-            [
-              1,
-              2
-            ],
-            [
-              2,
-              3
-            ],
-            [
-              3,
-              3
-            ],
-            [
-              4,
-              4
-            ],
-            [
-              5,
-              6
-            ],
-            [
-              6,
-              6
-            ],
-            [
-              7,
-              7
-            ],
-            [
-              8,
-              8.5
-            ],
-            [
-              9,
-              9
+    "conceptDiagrams": [
+      {
+        "type": "correlation-panels",
+        "cases": [
+          {
+            "label": "Positive Correlation",
+            "points": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                6,
+                6
+              ],
+              [
+                7,
+                7
+              ],
+              [
+                8,
+                8.5
+              ],
+              [
+                9,
+                9
+              ]
             ]
-          ]
-        },
-        {
-          "label": "Negative Correlation",
-          "points": [
-            [
-              1,
-              9
-            ],
-            [
-              2,
-              8.5
-            ],
-            [
-              3,
-              7
-            ],
-            [
-              4,
-              6
-            ],
-            [
-              5,
-              6
-            ],
-            [
-              6,
-              4
-            ],
-            [
-              7,
-              3
-            ],
-            [
-              8,
-              3
-            ],
-            [
-              9,
-              2
+          },
+          {
+            "label": "Negative Correlation",
+            "points": [
+              [
+                1,
+                9
+              ],
+              [
+                2,
+                8.5
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                6,
+                4
+              ],
+              [
+                7,
+                3
+              ],
+              [
+                8,
+                3
+              ],
+              [
+                9,
+                2
+              ]
             ]
-          ]
-        },
-        {
-          "label": "No Correlation",
-          "points": [
-            [
-              1,
-              5
-            ],
-            [
-              2,
-              2
-            ],
-            [
-              3,
-              8
-            ],
-            [
-              4,
-              4
-            ],
-            [
-              5,
-              7
-            ],
-            [
-              6,
-              3
-            ],
-            [
-              7,
-              6
-            ],
-            [
-              8,
-              1
-            ],
-            [
-              9,
-              9
+          },
+          {
+            "label": "No Correlation",
+            "points": [
+              [
+                1,
+                5
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                6,
+                3
+              ],
+              [
+                7,
+                6
+              ],
+              [
+                8,
+                1
+              ],
+              [
+                9,
+                9
+              ]
             ]
-          ]
-        }
-      ]
-    },
+          }
+        ]
+      }
+    ],
     "coreSkills": [
       [
         {
@@ -404,7 +406,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\nA bar graph shows the tallest bar at Science with 50 students, and the shortest bar at Art with 20 students.\n",
+                "text": "\n\nA bar graph shows the number of students choosing each subject.\n\n\n\nThe tallest bar is at Science with 50 students, and the shortest is at Art with 20 students.\n",
                 "bold": false,
                 "italic": false
               },
@@ -414,7 +416,7 @@
                 "italic": false
               },
               {
-                "text": " Which subject is most popular?  \n",
+                "text": " Which subject is most popular?\n",
                 "bold": false,
                 "italic": false
               },
@@ -430,7 +432,32 @@
               }
             ]
           }
-        ]
+        ],
+        "diagram": {
+          "type": "bar-chart",
+          "xLabel": "Subject",
+          "yLabel": "Students",
+          "categories": [
+            "Math",
+            "Science",
+            "English",
+            "History",
+            "Art"
+          ],
+          "series": [
+            {
+              "label": "Students",
+              "color": "#1E3A2F",
+              "values": [
+                45,
+                50,
+                35,
+                30,
+                20
+              ]
+            }
+          ]
+        }
       },
       {
         "title": [
@@ -450,7 +477,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\nA line graph shows a steady rise from January to July, peaking at 85°F, then declining.\n",
+                "text": "\n\nA line graph shows monthly temperatures.\n\n\n\nTemperature shows a steady rise from January to July, peaking at 85°F, then declining in August.\n",
                 "bold": false,
                 "italic": false
               },
@@ -460,7 +487,7 @@
                 "italic": false
               },
               {
-                "text": " During which months does temperature increase the fastest?  \n",
+                "text": " During which months does temperature increase the fastest?\n",
                 "bold": false,
                 "italic": false
               },
@@ -476,7 +503,38 @@
               }
             ]
           }
-        ]
+        ],
+        "diagram": {
+          "type": "line-graph",
+          "xLabel": "Month",
+          "yLabel": "Temperature (°F)",
+          "categories": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug"
+          ],
+          "series": [
+            {
+              "label": "Temperature",
+              "color": "#1E3A2F",
+              "values": [
+                40,
+                45,
+                50,
+                58,
+                68,
+                80,
+                85,
+                78
+              ]
+            }
+          ]
+        }
       },
       {
         "title": [
@@ -496,7 +554,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\nA scatterplot shows points roughly following an upward trend.\n",
+                "text": "\n\nA scatterplot shows points roughly following an upward trend.\n\n\n\n",
                 "bold": false,
                 "italic": false
               },
@@ -522,7 +580,96 @@
               }
             ]
           }
-        ]
+        ],
+        "diagram": {
+          "type": "scatter",
+          "xLabel": "Hours studied",
+          "yLabel": "SAT Math score",
+          "points": [
+            [
+              1,
+              410
+            ],
+            [
+              2,
+              430
+            ],
+            [
+              3,
+              460
+            ],
+            [
+              4,
+              470
+            ],
+            [
+              5,
+              500
+            ],
+            [
+              6,
+              510
+            ],
+            [
+              7,
+              530
+            ],
+            [
+              8,
+              545
+            ],
+            [
+              9,
+              560
+            ],
+            [
+              10,
+              575
+            ],
+            [
+              11,
+              590
+            ],
+            [
+              12,
+              605
+            ],
+            [
+              13,
+              620
+            ],
+            [
+              14,
+              650
+            ],
+            [
+              15,
+              700
+            ],
+            [
+              16,
+              640
+            ],
+            [
+              17,
+              660
+            ],
+            [
+              18,
+              680
+            ],
+            [
+              19,
+              700
+            ]
+          ],
+          "outliers": [
+            [
+              20,
+              420
+            ]
+          ]
+        }
       },
       {
         "title": [
@@ -542,7 +689,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\nIn the same scatterplot, one point shows a student who studied 20 hours but scored very low.  \nThis point is an ",
+                "text": "\n\nIn the same scatterplot, one point shows a student who studied 20 hours but scored very low.\nThis point is an ",
                 "bold": false,
                 "italic": false
               },
@@ -578,13 +725,44 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\nCorrelation does not imply causation.  \nEven if two variables move together, one does not necessarily cause the other (for example, ice cream sales and drowning incidents both increase in summer, but one does not cause the other).\n\n",
+                "text": "\n\nCorrelation does not imply causation.\n\n\n\nEven if two variables move together, one does not necessarily cause the other (for example, ice cream sales and drowning incidents both increase in summer, but one does not cause the other).\n\n",
                 "bold": false,
                 "italic": false
               }
             ]
           }
-        ]
+        ],
+        "diagram": {
+          "type": "line-graph",
+          "xLabel": "Month",
+          "yLabel": "Index (illustrative, not real data)",
+          "categories": [
+            "Jun",
+            "Jul",
+            "Aug"
+          ],
+          "series": [
+            {
+              "label": "Ice cream sales",
+              "color": "#1E3A2F",
+              "values": [
+                30,
+                55,
+                90
+              ]
+            },
+            {
+              "label": "Drowning incidents",
+              "color": "#B08840",
+              "values": [
+                35,
+                60,
+                85
+              ],
+              "dash": true
+            }
+          ]
+        }
       }
     ],
     "keyTakeaways": [
@@ -843,7 +1021,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\nThe line graph below shows a company's revenue (in millions of dollars) from 2018 to 2023.\n",
+                "text": "\nThe line graph below shows a company's revenue (in millions of dollars) from 2018 to 2023.\n\n\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -864,6 +1042,33 @@
             ]
           }
         ],
+        "partDiagram": {
+          "type": "line-graph",
+          "xLabel": "Year",
+          "yLabel": "Revenue ($M)",
+          "categories": [
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023"
+          ],
+          "series": [
+            {
+              "label": "Revenue",
+              "color": "#1E3A2F",
+              "values": [
+                1.2,
+                1.35,
+                1.5,
+                1.4,
+                1.8,
+                2.1
+              ]
+            }
+          ]
+        },
         "questions": [
           {
             "number": 6,
@@ -1108,7 +1313,7 @@
             "type": "text",
             "value": [
               {
-                "text": "\nThe bar graph below shows the number of students choosing each subject.\n",
+                "text": "\nThe bar graph below shows the number of students choosing each subject.\n\n\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -1129,6 +1334,31 @@
             ]
           }
         ],
+        "partDiagram": {
+          "type": "bar-chart",
+          "xLabel": "Subject",
+          "yLabel": "Students",
+          "categories": [
+            "Math",
+            "Science",
+            "English",
+            "History",
+            "Art"
+          ],
+          "series": [
+            {
+              "label": "Students",
+              "color": "#1E3A2F",
+              "values": [
+                45,
+                50,
+                35,
+                30,
+                20
+              ]
+            }
+          ]
+        },
         "questions": [
           {
             "number": 11,
@@ -1655,6 +1885,31 @@
         "questions": [
           {
             "number": 21,
+            "diagram": {
+              "type": "line-graph",
+              "xLabel": "Month",
+              "yLabel": "Temperature (°F)",
+              "categories": [
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul"
+              ],
+              "series": [
+                {
+                  "label": "Temperature",
+                  "color": "#1E3A2F",
+                  "values": [
+                    55,
+                    62,
+                    68,
+                    82,
+                    90
+                  ]
+                }
+              ]
+            },
             "prompt": [
               {
                 "type": "text",
@@ -1674,7 +1929,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": "\n  Which month-to-month period had the greatest rate of temperature increase?",
+                    "text": "\n  \n  Which month-to-month period had the greatest rate of temperature increase?",
                     "bold": false,
                     "italic": false
                   }
@@ -1724,12 +1979,71 @@
           },
           {
             "number": 22,
+            "diagram": {
+              "type": "scatter",
+              "xLabel": "Hours of sleep",
+              "yLabel": "Productivity score",
+              "points": [
+                [
+                  4,
+                  35
+                ],
+                [
+                  5,
+                  40
+                ],
+                [
+                  5,
+                  45
+                ],
+                [
+                  6,
+                  50
+                ],
+                [
+                  6,
+                  55
+                ],
+                [
+                  7,
+                  60
+                ],
+                [
+                  7,
+                  65
+                ],
+                [
+                  8,
+                  70
+                ],
+                [
+                  8,
+                  75
+                ],
+                [
+                  9,
+                  78
+                ],
+                [
+                  9,
+                  82
+                ],
+                [
+                  10,
+                  85
+                ],
+                [
+                  10,
+                  90
+                ]
+              ]
+            },
             "prompt": [
               {
                 "type": "text",
                 "value": [
                   {
-                    "text": "The scatterplot of hours of sleep vs. productivity shows points clustered around an upward trend. What kind of relationship exists between these variables?",
+                    "text": "The scatterplot of hours of sleep vs. productivity shows points clustered around an upward trend.\n  \n  What kind of relationship exists between these variables?",
                     "bold": false,
                     "italic": false
                   }
@@ -1755,12 +2069,37 @@
           },
           {
             "number": 23,
+            "diagram": {
+              "type": "bar-chart",
+              "xLabel": "Class period",
+              "yLabel": "Average score",
+              "categories": [
+                "Period 1",
+                "Period 2",
+                "Period 3",
+                "Period 4",
+                "Period 5"
+              ],
+              "series": [
+                {
+                  "label": "Average score",
+                  "color": "#1E3A2F",
+                  "values": [
+                    78,
+                    82,
+                    91,
+                    75,
+                    80
+                  ]
+                }
+              ]
+            },
             "prompt": [
               {
                 "type": "text",
                 "value": [
                   {
-                    "text": "In a bar graph showing average test scores by class period, the highest bar corresponds to Period 3. What does this indicate about that class?",
+                    "text": "In a bar graph showing average test scores by class period, the highest bar corresponds to Period 3.\n  \n  What does this indicate about that class?",
                     "bold": false,
                     "italic": false
                   }
@@ -1810,6 +2149,39 @@
           },
           {
             "number": 24,
+            "diagram": {
+              "type": "bar-chart",
+              "xLabel": "City",
+              "yLabel": "Rainfall (inches)",
+              "categories": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "series": [
+                {
+                  "label": "Last Year",
+                  "color": "#1E3A2F",
+                  "values": [
+                    40,
+                    30,
+                    50,
+                    25
+                  ]
+                },
+                {
+                  "label": "This Year",
+                  "color": "#B08840",
+                  "values": [
+                    35,
+                    32,
+                    38,
+                    20
+                  ]
+                }
+              ]
+            },
             "prompt": [
               {
                 "type": "text",
@@ -1829,7 +2201,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": "\n  Which city had the largest decrease compared to last year?",
+                    "text": "\n  \n  Which city had the largest decrease compared to last year?",
                     "bold": false,
                     "italic": false
                   }
@@ -1879,12 +2251,77 @@
           },
           {
             "number": 25,
+            "diagram": {
+              "type": "scatter",
+              "xLabel": "Study time (hours)",
+              "yLabel": "Test score",
+              "points": [
+                [
+                  2,
+                  55
+                ],
+                [
+                  3,
+                  58
+                ],
+                [
+                  4,
+                  62
+                ],
+                [
+                  5,
+                  65
+                ],
+                [
+                  6,
+                  68
+                ],
+                [
+                  7,
+                  72
+                ],
+                [
+                  8,
+                  75
+                ],
+                [
+                  9,
+                  78
+                ],
+                [
+                  10,
+                  80
+                ],
+                [
+                  11,
+                  83
+                ],
+                [
+                  12,
+                  85
+                ],
+                [
+                  13,
+                  88
+                ],
+                [
+                  14,
+                  90
+                ]
+              ],
+              "outliers": [
+                [
+                  20,
+                  50
+                ]
+              ]
+            },
             "prompt": [
               {
                 "type": "text",
                 "value": [
                   {
-                    "text": "On a scatterplot of study time vs. test scores, one student studied 20 hours but scored very low. What does this point represent?",
+                    "text": "On a scatterplot of study time vs. test scores, one student studied 20 hours but scored very low.\n  \n  What does this point represent?",
                     "bold": false,
                     "italic": false
                   }
@@ -10467,7 +10904,216 @@
             }
           ]
         }
+      ],
+      [
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": "For example, a trend line ",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "type": "inline-math",
+          "value": "\\hat{y} = 5x + 60"
+        },
+        {
+          "type": "text",
+          "value": [
+            {
+              "text": " fit through hours studied vs. test score looks like this:",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
       ]
+    ],
+    "conceptDiagrams": [
+      {
+        "type": "correlation-panels",
+        "cases": [
+          {
+            "label": "Positive Correlation",
+            "points": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                7,
+                7
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                9,
+                10
+              ]
+            ]
+          },
+          {
+            "label": "Negative Correlation",
+            "points": [
+              [
+                1,
+                10
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                6,
+                4
+              ],
+              [
+                7,
+                5
+              ],
+              [
+                8,
+                2
+              ],
+              [
+                9,
+                3
+              ]
+            ]
+          },
+          {
+            "label": "No Correlation",
+            "points": [
+              [
+                1,
+                5
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                6,
+                3
+              ],
+              [
+                7,
+                6
+              ],
+              [
+                8,
+                1
+              ],
+              [
+                9,
+                9
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "trend-line",
+        "xLabel": "Hours studied",
+        "yLabel": "Test score",
+        "xMin": 0,
+        "xMax": 10,
+        "yMin": 50,
+        "yMax": 120,
+        "slope": 5,
+        "intercept": 60,
+        "points": [
+          [
+            1,
+            62
+          ],
+          [
+            2,
+            74
+          ],
+          [
+            3,
+            70
+          ],
+          [
+            4,
+            85
+          ],
+          [
+            5,
+            80
+          ],
+          [
+            6,
+            95
+          ],
+          [
+            7,
+            92
+          ],
+          [
+            8,
+            105
+          ],
+          [
+            9,
+            100
+          ],
+          [
+            10,
+            115
+          ]
+        ]
+      }
     ],
     "coreSkills": [
       [
@@ -10538,13 +11184,60 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\nA scatterplot shows an upward trend between hours studied and test score.\nAs study hours increase, scores increase.\nThe trend line shows a positive slope.\n\n",
+                "text": "\n\nA scatterplot shows an upward trend between hours studied and test score.\n\n\n\nAs study hours increase, scores increase.\nThe trend line shows a positive slope.\n\n",
                 "bold": false,
                 "italic": false
               }
             ]
           }
-        ]
+        ],
+        "diagram": {
+          "type": "scatter",
+          "xLabel": "Hours studied",
+          "yLabel": "Test score",
+          "points": [
+            [
+              1,
+              60
+            ],
+            [
+              2,
+              65
+            ],
+            [
+              3,
+              68
+            ],
+            [
+              4,
+              72
+            ],
+            [
+              5,
+              78
+            ],
+            [
+              6,
+              80
+            ],
+            [
+              7,
+              85
+            ],
+            [
+              8,
+              90
+            ],
+            [
+              9,
+              92
+            ],
+            [
+              10,
+              95
+            ]
+          ]
+        }
       },
       {
         "title": [
@@ -10564,13 +11257,64 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\nA scatterplot shows a downward trend between absences and GPA.\nAs absences increase, GPA decreases.\nNegative slope, negative correlation.\n\n",
+                "text": "\n\nA scatterplot shows a downward trend between absences and GPA.\n\n\n\nAs absences increase, GPA decreases.\nNegative slope, negative correlation.\n\n",
                 "bold": false,
                 "italic": false
               }
             ]
           }
-        ]
+        ],
+        "diagram": {
+          "type": "scatter",
+          "xLabel": "Absences",
+          "yLabel": "GPA",
+          "points": [
+            [
+              0,
+              3.9
+            ],
+            [
+              1,
+              3.7
+            ],
+            [
+              2,
+              3.6
+            ],
+            [
+              3,
+              3.4
+            ],
+            [
+              4,
+              3.2
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              6,
+              2.8
+            ],
+            [
+              7,
+              2.6
+            ],
+            [
+              8,
+              2.4
+            ],
+            [
+              9,
+              2.2
+            ],
+            [
+              10,
+              2
+            ]
+          ]
+        }
       },
       {
         "title": [
@@ -10590,13 +11334,56 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\nA scatterplot shows a random scatter with no clear pattern.\nNo consistent relationship between the two variables.\n\n",
+                "text": "\n\nA scatterplot shows a random scatter with no clear pattern.\n\n\n\nNo consistent relationship between the two variables.\n\n",
                 "bold": false,
                 "italic": false
               }
             ]
           }
-        ]
+        ],
+        "diagram": {
+          "type": "scatter",
+          "xLabel": "Variable X",
+          "yLabel": "Variable Y",
+          "points": [
+            [
+              1,
+              50
+            ],
+            [
+              2,
+              20
+            ],
+            [
+              3,
+              80
+            ],
+            [
+              4,
+              40
+            ],
+            [
+              5,
+              70
+            ],
+            [
+              6,
+              30
+            ],
+            [
+              7,
+              60
+            ],
+            [
+              8,
+              10
+            ],
+            [
+              9,
+              90
+            ]
+          ]
+        }
       },
       {
         "title": [
@@ -10630,7 +11417,7 @@
             "type": "text",
             "value": [
               {
-                "text": ":  \n",
+                "text": ":\n\n\n\n",
                 "bold": false,
                 "italic": false
               }
@@ -10684,7 +11471,60 @@
               }
             ]
           }
-        ]
+        ],
+        "diagram": {
+          "type": "trend-line",
+          "xLabel": "Hours studied",
+          "yLabel": "Test score",
+          "xMin": 0,
+          "xMax": 10,
+          "yMin": 50,
+          "yMax": 120,
+          "slope": 5,
+          "intercept": 60,
+          "points": [
+            [
+              1,
+              62
+            ],
+            [
+              2,
+              74
+            ],
+            [
+              3,
+              70
+            ],
+            [
+              4,
+              85
+            ],
+            [
+              5,
+              80
+            ],
+            [
+              6,
+              95
+            ],
+            [
+              7,
+              92
+            ],
+            [
+              8,
+              105
+            ],
+            [
+              9,
+              100
+            ],
+            [
+              10,
+              115
+            ]
+          ]
+        }
       },
       {
         "title": [
@@ -10732,13 +11572,66 @@
             "type": "text",
             "value": [
               {
-                "text": ".\n\n",
+                "text": ".\n\n\n\n",
                 "bold": false,
                 "italic": false
               }
             ]
           }
-        ]
+        ],
+        "diagram": {
+          "type": "trend-line",
+          "xLabel": "Hours studied",
+          "yLabel": "Test score",
+          "xMin": 0,
+          "xMax": 10,
+          "yMin": 50,
+          "yMax": 120,
+          "slope": 5,
+          "intercept": 60,
+          "points": [
+            [
+              1,
+              62
+            ],
+            [
+              2,
+              74
+            ],
+            [
+              3,
+              70
+            ],
+            [
+              5,
+              80
+            ],
+            [
+              6,
+              95
+            ],
+            [
+              7,
+              92
+            ],
+            [
+              8,
+              105
+            ],
+            [
+              9,
+              100
+            ],
+            [
+              10,
+              115
+            ]
+          ],
+          "predictedPoint": [
+            4,
+            80
+          ]
+        }
       },
       {
         "title": [
@@ -10786,7 +11679,7 @@
             "type": "text",
             "value": [
               {
-                "text": " measures strength and direction of a linear relationship:  \n",
+                "text": " measures strength and direction of a linear relationship:\n",
                 "bold": false,
                 "italic": false
               }
@@ -10864,13 +11757,141 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\n",
+                "text": "\n\n\n\n",
                 "bold": false,
                 "italic": false
               }
             ]
           }
-        ]
+        ],
+        "diagram": {
+          "type": "correlation-panels",
+          "cases": [
+            {
+              "label": "r ≈ 1 (strong positive)",
+              "points": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  6,
+                  7
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  8,
+                  9
+                ],
+                [
+                  9,
+                  10
+                ]
+              ]
+            },
+            {
+              "label": "r ≈ -1 (strong negative)",
+              "points": [
+                [
+                  1,
+                  10
+                ],
+                [
+                  2,
+                  9
+                ],
+                [
+                  3,
+                  8
+                ],
+                [
+                  4,
+                  7
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  6,
+                  5
+                ],
+                [
+                  7,
+                  4
+                ],
+                [
+                  8,
+                  3
+                ],
+                [
+                  9,
+                  2
+                ]
+              ]
+            },
+            {
+              "label": "r ≈ 0 (no relationship)",
+              "points": [
+                [
+                  1,
+                  5
+                ],
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  8
+                ],
+                [
+                  4,
+                  4
+                ],
+                [
+                  5,
+                  7
+                ],
+                [
+                  6,
+                  3
+                ],
+                [
+                  7,
+                  6
+                ],
+                [
+                  8,
+                  1
+                ],
+                [
+                  9,
+                  9
+                ]
+              ]
+            }
+          ]
+        }
       },
       {
         "title": [
@@ -10890,13 +11911,44 @@
             "type": "text",
             "value": [
               {
-                "text": "\n\nEven with strong correlation, one variable may not cause the other.  \nExample: Ice cream sales and drownings both rise in summer—correlated due to a third factor (temperature).\n\n",
+                "text": "\n\nEven with strong correlation, one variable may not cause the other.\n\n\n\nExample: Ice cream sales and drownings both rise in summer—correlated due to a third factor (temperature).\n\n",
                 "bold": false,
                 "italic": false
               }
             ]
           }
-        ]
+        ],
+        "diagram": {
+          "type": "line-graph",
+          "xLabel": "Month",
+          "yLabel": "Index (illustrative, not real data)",
+          "categories": [
+            "Jun",
+            "Jul",
+            "Aug"
+          ],
+          "series": [
+            {
+              "label": "Ice cream sales",
+              "color": "#1E3A2F",
+              "values": [
+                30,
+                55,
+                90
+              ]
+            },
+            {
+              "label": "Drowning incidents",
+              "color": "#B08840",
+              "values": [
+                35,
+                60,
+                85
+              ],
+              "dash": true
+            }
+          ]
+        }
       }
     ],
     "keyTakeaways": [
@@ -11214,6 +12266,146 @@
       {
         "partLabel": "B",
         "partTitle": "Part B: Interpreting Scatterplots",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nThree scatterplots are shown below.\n\n\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
+        "partDiagram": {
+          "type": "correlation-panels",
+          "cases": [
+            {
+              "label": "Scatterplot 1",
+              "points": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  6
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  6,
+                  8
+                ],
+                [
+                  7,
+                  7
+                ],
+                [
+                  8,
+                  9
+                ],
+                [
+                  9,
+                  10
+                ]
+              ]
+            },
+            {
+              "label": "Scatterplot 2",
+              "points": [
+                [
+                  1,
+                  10
+                ],
+                [
+                  2,
+                  8
+                ],
+                [
+                  3,
+                  9
+                ],
+                [
+                  4,
+                  6
+                ],
+                [
+                  5,
+                  7
+                ],
+                [
+                  6,
+                  4
+                ],
+                [
+                  7,
+                  5
+                ],
+                [
+                  8,
+                  2
+                ],
+                [
+                  9,
+                  3
+                ]
+              ]
+            },
+            {
+              "label": "Scatterplot 3",
+              "points": [
+                [
+                  1,
+                  5
+                ],
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  8
+                ],
+                [
+                  4,
+                  4
+                ],
+                [
+                  5,
+                  7
+                ],
+                [
+                  6,
+                  3
+                ],
+                [
+                  7,
+                  6
+                ],
+                [
+                  8,
+                  1
+                ],
+                [
+                  9,
+                  9
+                ]
+              ]
+            }
+          ]
+        },
         "questions": [
           {
             "number": 6,
@@ -11383,6 +12575,85 @@
       {
         "partLabel": "C",
         "partTitle": "Part C: Interpreting Equations of Trend Lines",
+        "partIntro": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "\nQuestions 11-13 refer to the trend line ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "\\hat{y} = 4x + 20"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": ", shown below. Later questions in this part use their own trend lines.\n\n\n\n",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
+        "partDiagram": {
+          "type": "trend-line",
+          "xLabel": "x",
+          "yLabel": "y",
+          "xMin": 0,
+          "xMax": 10,
+          "yMin": 15,
+          "yMax": 70,
+          "slope": 4,
+          "intercept": 20,
+          "points": [
+            [
+              1,
+              22
+            ],
+            [
+              2,
+              30
+            ],
+            [
+              3,
+              35
+            ],
+            [
+              4,
+              33
+            ],
+            [
+              5,
+              45
+            ],
+            [
+              6,
+              40
+            ],
+            [
+              7,
+              50
+            ],
+            [
+              8,
+              55
+            ],
+            [
+              9,
+              52
+            ],
+            [
+              10,
+              65
+            ]
+          ]
+        },
         "questions": [
           {
             "number": 11,
@@ -11569,6 +12840,63 @@
           },
           {
             "number": 14,
+            "diagram": {
+              "type": "trend-line",
+              "xLabel": "Absences",
+              "yLabel": "Predicted score",
+              "xMin": 0,
+              "xMax": 20,
+              "yMin": 50,
+              "yMax": 105,
+              "slope": -2,
+              "intercept": 100,
+              "points": [
+                [
+                  0,
+                  98
+                ],
+                [
+                  2,
+                  97
+                ],
+                [
+                  4,
+                  90
+                ],
+                [
+                  6,
+                  88
+                ],
+                [
+                  8,
+                  85
+                ],
+                [
+                  10,
+                  78
+                ],
+                [
+                  12,
+                  75
+                ],
+                [
+                  14,
+                  72
+                ],
+                [
+                  16,
+                  68
+                ],
+                [
+                  18,
+                  62
+                ],
+                [
+                  20,
+                  58
+                ]
+              ]
+            },
             "prompt": [
               {
                 "type": "text",
@@ -11588,7 +12916,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": " models GPA vs. absences. What does the slope mean here?",
+                    "text": " models GPA vs. absences. What does the slope mean here?\n  ",
                     "bold": false,
                     "italic": false
                   }
@@ -11610,6 +12938,51 @@
           },
           {
             "number": 15,
+            "diagram": {
+              "type": "trend-line",
+              "xLabel": "x",
+              "yLabel": "y",
+              "xMin": 0,
+              "xMax": 8,
+              "yMin": 45,
+              "yMax": 100,
+              "slope": 6,
+              "intercept": 50,
+              "points": [
+                [
+                  1,
+                  54
+                ],
+                [
+                  2,
+                  63
+                ],
+                [
+                  3,
+                  68
+                ],
+                [
+                  4,
+                  75
+                ],
+                [
+                  5,
+                  82
+                ],
+                [
+                  6,
+                  86
+                ],
+                [
+                  7,
+                  92
+                ],
+                [
+                  8,
+                  96
+                ]
+              ]
+            },
             "prompt": [
               {
                 "type": "text",
@@ -11657,7 +13030,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": " increases by 3?",
+                    "text": " increases by 3?\n  ",
                     "bold": false,
                     "italic": false
                   }
@@ -11772,6 +13145,64 @@
           },
           {
             "number": 17,
+            "diagram": {
+              "type": "trend-line",
+              "xLabel": "x",
+              "yLabel": "y",
+              "xMin": 0,
+              "xMax": 10,
+              "yMin": 0,
+              "yMax": 11,
+              "slope": -1,
+              "intercept": 10,
+              "points": [
+                [
+                  0,
+                  10
+                ],
+                [
+                  1,
+                  9
+                ],
+                [
+                  2,
+                  8
+                ],
+                [
+                  3,
+                  7
+                ],
+                [
+                  4,
+                  6
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  6,
+                  4
+                ],
+                [
+                  7,
+                  3
+                ],
+                [
+                  8,
+                  2
+                ],
+                [
+                  9,
+                  1
+                ],
+                [
+                  10,
+                  0
+                ]
+              ]
+            },
+            "revealDiagramWithSolution": true,
             "prompt": [
               {
                 "type": "text",
@@ -11791,7 +13222,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": ", what does that tell you about the data?",
+                    "text": ", what does that tell you about the data?\n  \n  ",
                     "bold": false,
                     "italic": false
                   }
@@ -12006,6 +13437,55 @@
         "questions": [
           {
             "number": 21,
+            "diagram": {
+              "type": "trend-line",
+              "xLabel": "Hours studied",
+              "yLabel": "Test score",
+              "xMin": 0,
+              "xMax": 10,
+              "yMin": 40,
+              "yMax": 160,
+              "slope": 10,
+              "intercept": 50,
+              "points": [
+                [
+                  1,
+                  58
+                ],
+                [
+                  2,
+                  72
+                ],
+                [
+                  3,
+                  78
+                ],
+                [
+                  5,
+                  105
+                ],
+                [
+                  6,
+                  112
+                ],
+                [
+                  7,
+                  120
+                ],
+                [
+                  8,
+                  135
+                ],
+                [
+                  9,
+                  140
+                ],
+                [
+                  10,
+                  155
+                ]
+              ]
+            },
             "prompt": [
               {
                 "type": "text",
@@ -12053,7 +13533,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": ". Predict the score for a student who studies 4 hours.",
+                    "text": ". Predict the score for a student who studies 4 hours.\n  ",
                     "bold": false,
                     "italic": false
                   }
@@ -12079,6 +13559,67 @@
           },
           {
             "number": 22,
+            "diagram": {
+              "type": "trend-line",
+              "xLabel": "Absences",
+              "yLabel": "Test score",
+              "xMin": 0,
+              "xMax": 15,
+              "yMin": 30,
+              "yMax": 95,
+              "slope": -3,
+              "intercept": 90,
+              "points": [
+                [
+                  1,
+                  86
+                ],
+                [
+                  2,
+                  85
+                ],
+                [
+                  3,
+                  80
+                ],
+                [
+                  4,
+                  78
+                ],
+                [
+                  5,
+                  74
+                ],
+                [
+                  6,
+                  70
+                ],
+                [
+                  7,
+                  68
+                ],
+                [
+                  8,
+                  64
+                ],
+                [
+                  9,
+                  60
+                ],
+                [
+                  10,
+                  58
+                ],
+                [
+                  12,
+                  52
+                ],
+                [
+                  14,
+                  48
+                ]
+              ]
+            },
             "prompt": [
               {
                 "type": "text",
@@ -12098,7 +13639,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": " represents the relationship between number of absences and test score. Interpret the slope.",
+                    "text": " represents the relationship between number of absences and test score. Interpret the slope.\n  ",
                     "bold": false,
                     "italic": false
                   }
@@ -12120,6 +13661,93 @@
           },
           {
             "number": 23,
+            "diagram": {
+              "type": "correlation-panels",
+              "cases": [
+                {
+                  "label": "r = 0.9",
+                  "points": [
+                    [
+                      1,
+                      2
+                    ],
+                    [
+                      2,
+                      4
+                    ],
+                    [
+                      3,
+                      3
+                    ],
+                    [
+                      4,
+                      6
+                    ],
+                    [
+                      5,
+                      5
+                    ],
+                    [
+                      6,
+                      8
+                    ],
+                    [
+                      7,
+                      7
+                    ],
+                    [
+                      8,
+                      9
+                    ],
+                    [
+                      9,
+                      10
+                    ]
+                  ]
+                },
+                {
+                  "label": "r = -0.9",
+                  "points": [
+                    [
+                      1,
+                      10
+                    ],
+                    [
+                      2,
+                      8
+                    ],
+                    [
+                      3,
+                      9
+                    ],
+                    [
+                      4,
+                      6
+                    ],
+                    [
+                      5,
+                      7
+                    ],
+                    [
+                      6,
+                      4
+                    ],
+                    [
+                      7,
+                      5
+                    ],
+                    [
+                      8,
+                      2
+                    ],
+                    [
+                      9,
+                      3
+                    ]
+                  ]
+                }
+              ]
+            },
             "prompt": [
               {
                 "type": "text",
@@ -12153,7 +13781,7 @@
                 "type": "text",
                 "value": [
                   {
-                    "text": ". How do the relationships differ?",
+                    "text": ". How do the relationships differ?\n  ",
                     "bold": false,
                     "italic": false
                   }

@@ -19,7 +19,7 @@ function toSvgY(y) {
 
 export default function CorrelationPanels({ cases = [] }) {
   return (
-    <div className="grid grid-cols-3 gap-3">
+    <div className="grid gap-3" style={{ gridTemplateColumns: `repeat(${cases.length}, minmax(0, 1fr))` }}>
       {cases.map((c, i) => (
         <div key={i} className="flex flex-col items-center">
           <svg viewBox={`0 0 ${SIZE} ${SIZE}`} className="w-full">

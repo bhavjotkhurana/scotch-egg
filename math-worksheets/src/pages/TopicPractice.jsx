@@ -99,11 +99,11 @@ export default function TopicPractice() {
                   </div>
                 )}
 
-                {topic.conceptDiagram && (
-                  <div className="mt-4">
-                    <DiagramRenderer diagram={topic.conceptDiagram} />
+                {topic.conceptDiagrams?.map((diagram, i) => (
+                  <div key={i} className="mt-4">
+                    <DiagramRenderer diagram={diagram} />
                   </div>
-                )}
+                ))}
 
                 {topic.coreSkills.length > 0 && (
                   <div className="mt-6 rounded-lg bg-brand-cream/50 p-4">
@@ -127,6 +127,7 @@ export default function TopicPractice() {
                         <h3 className="mb-2 font-semibold text-brand-neutral">
                           <RichText segments={example.title} as="span" />
                         </h3>
+                        {example.diagram && <DiagramRenderer diagram={example.diagram} />}
                         <RichText segments={example.body} className="text-brand-neutral" />
                       </div>
                     ))}

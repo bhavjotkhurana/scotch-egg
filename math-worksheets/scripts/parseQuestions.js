@@ -158,6 +158,20 @@ function extractDiagram(text, label) {
   return { diagram, text: remaining };
 }
 
+// Concept Summary prose can illustrate more than one idea (e.g. a
+// correlation-type overview plus a separate trend-line example) -- repeatedly
+// applies extractDiagram until none remain, collecting all of them in order.
+function extractAllDiagrams(text, label) {
+  const diagrams = [];
+  let remaining = text;
+  for (;;) {
+    const { diagram, text: next } = extractDiagram(remaining, label);
+    if (!diagram) return { diagrams, text: remaining };
+    diagrams.push(diagram);
+    remaining = next;
+  }
+}
+
 // Marks a question whose whole point is to construct the diagram itself (e.g.
 // "draw a tree diagram for this situation") -- showing a part-level diagram
 // above the prompt would hand the student the answer before they've tried.
@@ -439,13 +453,14 @@ function processTopic(unit, topic) {
   }
 
   // A diagram can sit anywhere in the Concept Summary prose (illustrating the
-  // topic's core idea, not a specific practice question) -- pull the first
-  // one found out of its chunk before paragraph-splitting the rest.
-  let conceptDiagram = null;
+  // topic's core idea, not a specific practice question), and a topic can
+  // have more than one (e.g. a correlation overview plus a separate
+  // trend-line example) -- pull all of them out before paragraph-splitting
+  // the rest.
+  const conceptDiagrams = [];
   const conceptChunksNoDiagram = conceptChunks.map((chunk) => {
-    if (conceptDiagram) return chunk;
-    const { diagram, text } = extractDiagram(chunk.content, `${label} Concept Summary`);
-    if (diagram) conceptDiagram = diagram;
+    const { diagrams, text } = extractAllDiagrams(chunk.content, `${label} Concept Summary`);
+    conceptDiagrams.push(...diagrams);
     return { ...chunk, content: text };
   });
 
@@ -463,10 +478,14 @@ function processTopic(unit, topic) {
   const coreSkills = coreSkillsSection
     ? extractItems(coreSkillsSection.content).map((t) => tokenizeRichText(t, `${label} Core Skills`))
     : [];
-  const examples = exampleSections.map((sec) => ({
-    title: tokenizeRichText(sec.header, `${label} ${sec.header}`),
-    body: tokenizeRichText(sec.content, `${label} ${sec.header}`),
-  }));
+  const examples = exampleSections.map((sec) => {
+    const { diagram, text } = extractDiagram(sec.content, `${label} ${sec.header}`);
+    return {
+      title: tokenizeRichText(sec.header, `${label} ${sec.header}`),
+      body: tokenizeRichText(text, `${label} ${sec.header}`),
+      ...(diagram ? { diagram } : {}),
+    };
+  });
   const keyTakeaways = extractItems(keyTakeawaysSection.content).map((t) =>
     tokenizeRichText(t, `${label} Key Takeaways`)
   );
@@ -491,7 +510,7 @@ function processTopic(unit, topic) {
     topicSlug,
     topicTitle: topic.title,
     conceptSummary,
-    ...(conceptDiagram ? { conceptDiagram } : {}),
+    ...(conceptDiagrams.length > 0 ? { conceptDiagrams } : {}),
     coreSkills,
     examples,
     keyTakeaways,

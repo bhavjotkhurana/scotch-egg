@@ -158,12 +158,14 @@
         }
       ]
     ],
-    "conceptDiagram": {
-      "type": "angle-reference",
-      "line1Label": "a",
-      "line2Label": "b",
-      "transversalLabel": "t"
-    },
+    "conceptDiagrams": [
+      {
+        "type": "angle-reference",
+        "line1Label": "a",
+        "line2Label": "b",
+        "transversalLabel": "t"
+      }
+    ],
     "coreSkills": [
       [
         {
@@ -15929,9 +15931,11 @@
         }
       ]
     ],
-    "conceptDiagram": {
-      "type": "right-triangle"
-    },
+    "conceptDiagrams": [
+      {
+        "type": "right-triangle"
+      }
+    ],
     "coreSkills": [
       [
         {

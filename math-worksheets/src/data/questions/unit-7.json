@@ -3242,25 +3242,27 @@
         }
       ]
     ],
-    "conceptDiagram": {
-      "type": "function-comparison",
-      "xMin": 0,
-      "xMax": 5,
-      "series": [
-        {
-          "label": "y = 2x + 5 (linear)",
-          "fn": "2*x+5",
-          "color": "#1E3A2F",
-          "dash": false
-        },
-        {
-          "label": "y = 2^x (exponential)",
-          "fn": "Math.pow(2,x)",
-          "color": "#B08840",
-          "dash": true
-        }
-      ]
-    },
+    "conceptDiagrams": [
+      {
+        "type": "function-comparison",
+        "xMin": 0,
+        "xMax": 5,
+        "series": [
+          {
+            "label": "y = 2x + 5 (linear)",
+            "fn": "2*x+5",
+            "color": "#1E3A2F",
+            "dash": false
+          },
+          {
+            "label": "y = 2^x (exponential)",
+            "fn": "Math.pow(2,x)",
+            "color": "#B08840",
+            "dash": true
+          }
+        ]
+      }
+    ],
     "coreSkills": [
       [
         {
@@ -16359,31 +16361,33 @@
         }
       ]
     ],
-    "conceptDiagram": {
-      "type": "function-comparison",
-      "xMin": -3,
-      "xMax": 6,
-      "series": [
-        {
-          "label": "f(x) = x²",
-          "fn": "x*x",
-          "color": "#1E3A2F",
-          "dash": false
-        },
-        {
-          "label": "f(x - 3)",
-          "fn": "(x-3)*(x-3)",
-          "color": "#B08840",
-          "dash": true
-        },
-        {
-          "label": "-f(x)",
-          "fn": "-(x*x)",
-          "color": "#B0453E",
-          "dash": true
-        }
-      ]
-    },
+    "conceptDiagrams": [
+      {
+        "type": "function-comparison",
+        "xMin": -3,
+        "xMax": 6,
+        "series": [
+          {
+            "label": "f(x) = x²",
+            "fn": "x*x",
+            "color": "#1E3A2F",
+            "dash": false
+          },
+          {
+            "label": "f(x - 3)",
+            "fn": "(x-3)*(x-3)",
+            "color": "#B08840",
+            "dash": true
+          },
+          {
+            "label": "-f(x)",
+            "fn": "-(x*x)",
+            "color": "#B0453E",
+            "dash": true
+          }
+        ]
+      }
+    ],
     "coreSkills": [
       [
         {

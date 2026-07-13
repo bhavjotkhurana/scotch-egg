@@ -9911,16 +9911,18 @@
         }
       ]
     ],
-    "conceptDiagram": {
-      "type": "parabola",
-      "a": 1,
-      "b": -4,
-      "c": 3,
-      "xMin": -1,
-      "xMax": 5,
-      "yMin": -2,
-      "yMax": 9
-    },
+    "conceptDiagrams": [
+      {
+        "type": "parabola",
+        "a": 1,
+        "b": -4,
+        "c": 3,
+        "xMin": -1,
+        "xMax": 5,
+        "yMin": -2,
+        "yMax": 9
+      }
+    ],
     "coreSkills": [
       [
         {

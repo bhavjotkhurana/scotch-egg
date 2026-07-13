@@ -9,6 +9,9 @@ import AngleReferenceFigure from './AngleReferenceFigure.jsx';
 import RightTriangleFigure from './RightTriangleFigure.jsx';
 import CorrelationPanels from './CorrelationPanels.jsx';
 import ParabolaFigure from './ParabolaFigure.jsx';
+import BarChart from './BarChart.jsx';
+import LineGraph from './LineGraph.jsx';
+import TrendLineScatter from './TrendLineScatter.jsx';
 
 const RENDERERS = {
   scatter: ScatterPlot,
@@ -22,6 +25,9 @@ const RENDERERS = {
   'right-triangle': RightTriangleFigure,
   'correlation-panels': CorrelationPanels,
   parabola: ParabolaFigure,
+  'bar-chart': BarChart,
+  'line-graph': LineGraph,
+  'trend-line': TrendLineScatter,
 };
 
 export default function DiagramRenderer({ diagram }) {
