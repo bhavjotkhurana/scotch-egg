@@ -215,7 +215,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Simplifying Ratios",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Simplifying Ratios",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -292,7 +303,18 @@
         ]
       },
       {
-        "title": "Example 2: Finding an Equivalent Ratio",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Finding an Equivalent Ratio",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -373,7 +395,18 @@
         ]
       },
       {
-        "title": "Example 3: Solving a Proportion",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Solving a Proportion",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -454,7 +487,18 @@
         ]
       },
       {
-        "title": "Example 4: Interpreting Ratios in Context",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Interpreting Ratios in Context",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -1972,7 +2016,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Finding a Unit Rate",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Finding a Unit Rate",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -2073,7 +2128,18 @@
         ]
       },
       {
-        "title": "Example 2: Proportional or Not",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Proportional or Not",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -2130,7 +2196,18 @@
         ]
       },
       {
-        "title": "Example 3: From Table to Equation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: From Table to Equation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -2225,7 +2302,18 @@
         ]
       },
       {
-        "title": "Example 4: Graph Interpretation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Graph Interpretation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -2362,7 +2450,22 @@
         ]
       },
       {
-        "title": "Example 5: Context Prediction with \\(y = kx\\)",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Context Prediction with ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "y = kx"
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4278,7 +4381,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Percent Increase",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Percent Increase",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4317,7 +4431,18 @@
         ]
       },
       {
-        "title": "Example 2: Percent Decrease",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Percent Decrease",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4356,7 +4481,18 @@
         ]
       },
       {
-        "title": "Example 3: Forward Calculation With Factor",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Forward Calculation With Factor",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4399,7 +4535,18 @@
         ]
       },
       {
-        "title": "Example 4: Reverse Calculation After Decrease",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Reverse Calculation After Decrease",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4456,7 +4603,18 @@
         ]
       },
       {
-        "title": "Example 5: Tax or Markup",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Tax or Markup",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4485,7 +4643,18 @@
         ]
       },
       {
-        "title": "Example 6: Percent Error",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Percent Error",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5587,7 +5756,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Increase then Decrease",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Increase then Decrease",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5616,7 +5796,18 @@
         ]
       },
       {
-        "title": "Example 2: Decrease then Decrease",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Decrease then Decrease",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5645,7 +5836,18 @@
         ]
       },
       {
-        "title": "Example 3: Two Increases",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Two Increases",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5674,7 +5876,18 @@
         ]
       },
       {
-        "title": "Example 4: Repeated Change Model",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Repeated Change Model",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5731,7 +5944,18 @@
         ]
       },
       {
-        "title": "Example 5: Reverse After Two Changes",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Reverse After Two Changes",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5760,7 +5984,18 @@
         ]
       },
       {
-        "title": "Example 6: Not Additive",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Not Additive",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -7041,7 +7276,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Scale Drawing Conversion",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Scale Drawing Conversion",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -7070,7 +7316,18 @@
         ]
       },
       {
-        "title": "Example 2: Scale Factor Reduction",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Scale Factor Reduction",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -7099,7 +7356,18 @@
         ]
       },
       {
-        "title": "Example 3: Mixture Problem",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Mixture Problem",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -7166,7 +7434,18 @@
         ]
       },
       {
-        "title": "Example 4: Density Calculation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Density Calculation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -7223,7 +7502,18 @@
         ]
       },
       {
-        "title": "Example 5: Solving for Volume",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Solving for Volume",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -8839,7 +9129,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Direct Variation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Direct Variation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -8924,7 +9225,18 @@
         ]
       },
       {
-        "title": "Example 2: Inverse Variation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Inverse Variation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9009,7 +9321,18 @@
         ]
       },
       {
-        "title": "Example 3: Identifying Variation Type",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Identifying Variation Type",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9052,7 +9375,18 @@
         ]
       },
       {
-        "title": "Example 4: Using Direct Variation to Predict",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Using Direct Variation to Predict",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9123,7 +9457,18 @@
         ]
       },
       {
-        "title": "Example 5: Using Inverse Variation to Predict",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Using Inverse Variation to Predict",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9194,7 +9539,18 @@
         ]
       },
       {
-        "title": "Example 6: Real-World Context",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Real-World Context",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",

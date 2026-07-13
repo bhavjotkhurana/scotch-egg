@@ -124,7 +124,9 @@ export default function TopicPractice() {
                   <div className="mt-6 space-y-4">
                     {topic.examples.map((example, i) => (
                       <div key={i} className="rounded-lg border border-gray-200 p-4">
-                        <h3 className="mb-2 font-semibold text-brand-neutral">{example.title}</h3>
+                        <h3 className="mb-2 font-semibold text-brand-neutral">
+                          <RichText segments={example.title} as="span" />
+                        </h3>
                         <RichText segments={example.body} className="text-brand-neutral" />
                       </div>
                     ))}

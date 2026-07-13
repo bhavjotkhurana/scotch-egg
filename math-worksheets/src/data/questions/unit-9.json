@@ -382,7 +382,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Successive Percent Changes",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Successive Percent Changes",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -613,7 +624,18 @@
         ]
       },
       {
-        "title": "Example 2: Working Backward from a Final Price",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Working Backward from a Final Price",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -774,7 +796,18 @@
         ]
       },
       {
-        "title": "Example 3: Mixture Problem",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Mixture Problem",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -1047,7 +1080,18 @@
         ]
       },
       {
-        "title": "Example 4: Percent Increase with Algebraic Setup",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Percent Increase with Algebraic Setup",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -1264,7 +1308,18 @@
         ]
       },
       {
-        "title": "Example 5: Ratio and Percent Combined",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Ratio and Percent Combined",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4964,7 +5019,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Intersection of Two Linear Functions",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Intersection of Two Linear Functions",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5125,7 +5191,18 @@
         ]
       },
       {
-        "title": "Example 2: Line and Parabola System",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Line and Parabola System",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5258,7 +5335,18 @@
         ]
       },
       {
-        "title": "Example 3: Composite Functions",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Composite Functions",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5377,7 +5465,18 @@
         ]
       },
       {
-        "title": "Example 4: System with No Solution",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: System with No Solution",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5566,7 +5665,18 @@
         ]
       },
       {
-        "title": "Example 5: Graph Features from a Quadratic",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Graph Features from a Quadratic",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5717,7 +5827,18 @@
         ]
       },
       {
-        "title": "Example 6: System Solved by Substitution with a Quadratic",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: System Solved by Substitution with a Quadratic",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9444,7 +9565,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Finding a Missing Value from the Mean",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Finding a Missing Value from the Mean",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9545,7 +9677,18 @@
         ]
       },
       {
-        "title": "Example 2: Weighted Average",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Weighted Average",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9636,7 +9779,18 @@
         ]
       },
       {
-        "title": "Example 3: Median from a Frequency Table",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Median from a Frequency Table",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9699,7 +9853,18 @@
         ]
       },
       {
-        "title": "Example 4: Conditional Probability from a Two-Way Table",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Conditional Probability from a Two-Way Table",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9790,7 +9955,18 @@
         ]
       },
       {
-        "title": "Example 5: Interpreting a Statistical Study",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Interpreting a Statistical Study",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -11763,7 +11939,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Pythagorean Theorem + Area",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Pythagorean Theorem + Area",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -11840,7 +12027,18 @@
         ]
       },
       {
-        "title": "Example 2: Coordinate Geometry Area",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Coordinate Geometry Area",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -12067,7 +12265,18 @@
         ]
       },
       {
-        "title": "Example 3: Similar Triangles + Area Ratio",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Similar Triangles + Area Ratio",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -12158,7 +12367,18 @@
         ]
       },
       {
-        "title": "Example 4: Volume with Algebraic Dimensions",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Volume with Algebraic Dimensions",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -12333,7 +12553,18 @@
         ]
       },
       {
-        "title": "Example 5: Circle + Right Triangle",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Circle + Right Triangle",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -12410,7 +12641,18 @@
         ]
       },
       {
-        "title": "Example 6: Trig + Perimeter",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Trig + Perimeter",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -15336,7 +15578,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Algebra + Geometry",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Algebra + Geometry",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -15455,7 +15708,18 @@
         ]
       },
       {
-        "title": "Example 2: Data + Percent",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Data + Percent",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -15644,7 +15908,18 @@
         ]
       },
       {
-        "title": "Example 3: Systems + Functions",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Systems + Functions",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -15847,7 +16122,18 @@
         ]
       },
       {
-        "title": "Example 4: Trigonometry + Area",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Trigonometry + Area",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",

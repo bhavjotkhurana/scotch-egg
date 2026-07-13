@@ -287,7 +287,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Simple Backsolving",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Simple Backsolving",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -420,7 +431,18 @@
         ]
       },
       {
-        "title": "Example 2: Backsolving a Word Problem",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Backsolving a Word Problem",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -557,7 +579,18 @@
         ]
       },
       {
-        "title": "Example 3: Backsolving a Radical Equation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Backsolving a Radical Equation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -652,7 +685,18 @@
         ]
       },
       {
-        "title": "Example 4: Using Backsolving to Check Algebra",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Using Backsolving to Check Algebra",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3862,7 +3906,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Simplifying an Expression",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Simplifying an Expression",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3995,7 +4050,18 @@
         ]
       },
       {
-        "title": "Example 2: Percent Problem with Variables",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Percent Problem with Variables",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4198,7 +4264,18 @@
         ]
       },
       {
-        "title": "Example 3: ``Must Be True'' Problem",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: ``Must Be True'' Problem",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4415,7 +4492,18 @@
         ]
       },
       {
-        "title": "Example 4: Picking Numbers to Verify an Algebraic Result",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Picking Numbers to Verify an Algebraic Result",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -8762,7 +8850,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Finding Roots with Desmos",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Finding Roots with Desmos",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -8895,7 +8994,18 @@
         ]
       },
       {
-        "title": "Example 2: Solving a System by Graphing",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Solving a System by Graphing",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9014,7 +9124,18 @@
         ]
       },
       {
-        "title": "Example 3: Using a Slider for a Parameter",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Using a Slider for a Parameter",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9231,7 +9352,18 @@
         ]
       },
       {
-        "title": "Example 4: Converting Desmos Decimals to Exact Answers",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Converting Desmos Decimals to Exact Answers",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -11980,7 +12112,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Quick-Solve Recognition",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Quick-Solve Recognition",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -12047,7 +12190,18 @@
         ]
       },
       {
-        "title": "Example 2: Medium-Effort Recognition",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Medium-Effort Recognition",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -12180,7 +12334,18 @@
         ]
       },
       {
-        "title": "Example 3: Skip-and-Return Recognition",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Skip-and-Return Recognition",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -14301,7 +14466,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Answering the Wrong Question",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Answering the Wrong Question",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -14462,7 +14638,18 @@
         ]
       },
       {
-        "title": "Example 2: Sign Error in Distribution",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Sign Error in Distribution",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -14595,7 +14782,18 @@
         ]
       },
       {
-        "title": "Example 3: Extraneous Solution",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Extraneous Solution",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -14850,7 +15048,18 @@
         ]
       },
       {
-        "title": "Example 4: Radius vs.\\ Diameter",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Radius vs.\\ Diameter",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -14941,7 +15150,18 @@
         ]
       },
       {
-        "title": "Example 5: Percent Reversal",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Percent Reversal",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",

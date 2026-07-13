@@ -190,7 +190,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Solving by Substitution",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Solving by Substitution",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -371,7 +382,18 @@
         ]
       },
       {
-        "title": "Example 2: Substitution with Both Variables on One Side",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Substitution with Both Variables on One Side",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -2326,7 +2348,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Direct Elimination",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Direct Elimination",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -2469,7 +2502,18 @@
         ]
       },
       {
-        "title": "Example 2: Multiplying to Eliminate",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Multiplying to Eliminate",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -2612,7 +2656,18 @@
         ]
       },
       {
-        "title": "Example 3: Multiplying Both Equations",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Multiplying Both Equations",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4862,7 +4917,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: One Solution",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: One Solution",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4933,7 +4999,18 @@
         ]
       },
       {
-        "title": "Example 2: No Solution",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: No Solution",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5014,7 +5091,18 @@
         ]
       },
       {
-        "title": "Example 3: Infinitely Many Solutions",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Infinitely Many Solutions",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5067,7 +5155,18 @@
         ]
       },
       {
-        "title": "Example 4: Interpreting the Intersection in Context",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Interpreting the Intersection in Context",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6620,7 +6719,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Single Inequality",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Single Inequality",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6719,7 +6829,18 @@
         ]
       },
       {
-        "title": "Example 2: Two Inequalities",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Two Inequalities",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6832,7 +6953,18 @@
         ]
       },
       {
-        "title": "Example 3: With a Vertical or Horizontal Boundary",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: With a Vertical or Horizontal Boundary",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9756,7 +9888,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Cost and Revenue Break Even",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Cost and Revenue Break Even",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9889,7 +10032,18 @@
         ]
       },
       {
-        "title": "Example 2: Ticket Sales",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Ticket Sales",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -10050,7 +10204,18 @@
         ]
       },
       {
-        "title": "Example 3: Mixture by Concentration",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Mixture by Concentration",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -10197,7 +10362,18 @@
         ]
       },
       {
-        "title": "Example 4: Motion Toward Each Other",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Motion Toward Each Other",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -10330,7 +10506,18 @@
         ]
       },
       {
-        "title": "Example 5: Two trains with different departure times",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Two trains with different departure times",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",

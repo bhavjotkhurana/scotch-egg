@@ -414,7 +414,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Identifying Growth or Decay",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Identifying Growth or Decay",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -481,7 +492,18 @@
         ]
       },
       {
-        "title": "Example 2: Writing an Exponential Model",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Writing an Exponential Model",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -534,7 +556,18 @@
         ]
       },
       {
-        "title": "Example 3: Finding the Growth Rate",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Finding the Growth Rate",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -605,7 +638,18 @@
         ]
       },
       {
-        "title": "Example 4: Exponential Decay Model",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Exponential Decay Model",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -676,7 +720,18 @@
         ]
       },
       {
-        "title": "Example 5: Comparing Two Models",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Comparing Two Models",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -757,7 +812,18 @@
         ]
       },
       {
-        "title": "Example 6: Graph Behavior",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Graph Behavior",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3287,7 +3353,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Distinguishing Linear vs. Exponential",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Distinguishing Linear vs. Exponential",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3340,7 +3417,18 @@
         ]
       },
       {
-        "title": "Example 2: Comparing Growth Over Time",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Comparing Growth Over Time",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3421,7 +3509,18 @@
         ]
       },
       {
-        "title": "Example 3: Real-World Comparison",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Real-World Comparison",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3488,7 +3587,18 @@
         ]
       },
       {
-        "title": "Example 4: Identifying Model Type from Data",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Identifying Model Type from Data",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3531,7 +3641,18 @@
         ]
       },
       {
-        "title": "Example 5: Crossover Point (When They Are Equal)",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Crossover Point (When They Are Equal)",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6327,7 +6448,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Basic Evaluation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Basic Evaluation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6398,7 +6530,18 @@
         ]
       },
       {
-        "title": "Example 2: Substituting an Expression",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Substituting an Expression",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6469,7 +6612,18 @@
         ]
       },
       {
-        "title": "Example 3: Function in Context",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Function in Context",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6554,7 +6708,18 @@
         ]
       },
       {
-        "title": "Example 4: Evaluating a Quadratic Function",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Evaluating a Quadratic Function",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6625,7 +6790,18 @@
         ]
       },
       {
-        "title": "Example 5: Algebraic Substitution",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Algebraic Substitution",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6696,7 +6872,18 @@
         ]
       },
       {
-        "title": "Example 6: Working with Multiple Functions",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Working with Multiple Functions",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9430,7 +9617,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Rational Function Restriction",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Rational Function Restriction",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9553,7 +9751,18 @@
         ]
       },
       {
-        "title": "Example 2: Square Root Function",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Square Root Function",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9610,7 +9819,18 @@
         ]
       },
       {
-        "title": "Example 3: Combined Function Restriction",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Combined Function Restriction",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9681,7 +9901,18 @@
         ]
       },
       {
-        "title": "Example 4: Absolute Value Function",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Absolute Value Function",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9738,7 +9969,18 @@
         ]
       },
       {
-        "title": "Example 5: Quadratic Function",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Quadratic Function",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9823,7 +10065,18 @@
         ]
       },
       {
-        "title": "Example 6: Piecewise Function",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Piecewise Function",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -12689,7 +12942,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Function Composition",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Function Composition",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -12774,7 +13038,18 @@
         ]
       },
       {
-        "title": "Example 2: Composition with Quadratic Function",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Composition with Quadratic Function",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -12859,7 +13134,18 @@
         ]
       },
       {
-        "title": "Example 3: Finding an Inverse",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Finding an Inverse",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -13014,7 +13300,18 @@
         ]
       },
       {
-        "title": "Example 4: Verifying Inverses",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Verifying Inverses",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -13127,7 +13424,18 @@
         ]
       },
       {
-        "title": "Example 5: Nonlinear Inverse",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Nonlinear Inverse",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -13198,7 +13506,18 @@
         ]
       },
       {
-        "title": "Example 6: Graphical Idea (description only)",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Graphical Idea (description only)",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -16129,7 +16448,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Horizontal and Vertical Shifts",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Horizontal and Vertical Shifts",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -16210,7 +16540,18 @@
         ]
       },
       {
-        "title": "Example 2: Reflection",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Reflection",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -16239,7 +16580,18 @@
         ]
       },
       {
-        "title": "Example 3: Vertical Stretch",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Vertical Stretch",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -16278,7 +16630,18 @@
         ]
       },
       {
-        "title": "Example 4: Horizontal Stretch",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Horizontal Stretch",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -16307,7 +16670,18 @@
         ]
       },
       {
-        "title": "Example 5: Combined Transformation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Combined Transformation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -16428,7 +16802,18 @@
         ]
       },
       {
-        "title": "Example 6: SAT Context Example",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: SAT Context Example",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",

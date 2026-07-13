@@ -228,7 +228,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Parallel Lines and Transversal",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Parallel Lines and Transversal",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -313,7 +324,18 @@
         ]
       },
       {
-        "title": "Example 2: Supplementary Angles",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Supplementary Angles",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -370,7 +392,18 @@
         ]
       },
       {
-        "title": "Example 3: Perpendicular Lines",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Perpendicular Lines",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -455,7 +488,18 @@
         ]
       },
       {
-        "title": "Example 4: Slopes of Parallel and Perpendicular Lines",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Slopes of Parallel and Perpendicular Lines",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -546,7 +590,18 @@
         ]
       },
       {
-        "title": "Example 5: Angle Relationships at a Point",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Angle Relationships at a Point",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -617,7 +672,18 @@
         ]
       },
       {
-        "title": "Example 6: SAT-Style Interpretation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: SAT-Style Interpretation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3577,7 +3643,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Finding a Missing Angle",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Finding a Missing Angle",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3724,7 +3801,18 @@
         ]
       },
       {
-        "title": "Example 2: Algebraic Angle Expressions",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Algebraic Angle Expressions",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3923,7 +4011,18 @@
         ]
       },
       {
-        "title": "Example 3: Exterior Angle Theorem",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Exterior Angle Theorem",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4004,7 +4103,18 @@
         ]
       },
       {
-        "title": "Example 4: Algebraic Exterior Angle",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Algebraic Exterior Angle",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4207,7 +4317,18 @@
         ]
       },
       {
-        "title": "Example 5: Triangle Inequality",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Triangle Inequality",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4312,7 +4433,18 @@
         ]
       },
       {
-        "title": "Example 6: Side-Angle Relationship",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Side-Angle Relationship",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -7790,7 +7922,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Setting Up a Proportion",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Setting Up a Proportion",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -8045,7 +8188,18 @@
         ]
       },
       {
-        "title": "Example 2: Parallel Line Creating Similar Triangles",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Parallel Line Creating Similar Triangles",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -8356,7 +8510,18 @@
         ]
       },
       {
-        "title": "Example 3: Shadow Problem",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Shadow Problem",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -8457,7 +8622,18 @@
         ]
       },
       {
-        "title": "Example 4: Finding the Scale Factor from Areas",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Finding the Scale Factor from Areas",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -8558,7 +8734,18 @@
         ]
       },
       {
-        "title": "Example 5: Using Congruence",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Using Congruence",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -12378,7 +12565,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Basic Pythagorean Theorem",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Basic Pythagorean Theorem",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -12483,7 +12681,18 @@
         ]
       },
       {
-        "title": "Example 2: Finding a Leg",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Finding a Leg",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -12616,7 +12825,18 @@
         ]
       },
       {
-        "title": "Example 3: 45-45-90 Triangle",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: 45-45-90 Triangle",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -12697,7 +12917,18 @@
         ]
       },
       {
-        "title": "Example 4: 30-60-90 Triangle",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: 30-60-90 Triangle",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -12868,7 +13099,18 @@
         ]
       },
       {
-        "title": "Example 5: Converse of the Pythagorean Theorem",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Converse of the Pythagorean Theorem",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -12949,7 +13191,18 @@
         ]
       },
       {
-        "title": "Example 6: Multi-Step Application",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Multi-Step Application",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -15771,7 +16024,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Setting Up a Trig Ratio",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Setting Up a Trig Ratio",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -15876,7 +16140,18 @@
         ]
       },
       {
-        "title": "Example 2: Finding a Missing Side",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Finding a Missing Side",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -16009,7 +16284,18 @@
         ]
       },
       {
-        "title": "Example 3: Complementary Angle Relationship",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Complementary Angle Relationship",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -16156,7 +16442,18 @@
         ]
       },
       {
-        "title": "Example 4: Pythagorean Identity",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Pythagorean Identity",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -16317,7 +16614,18 @@
         ]
       },
       {
-        "title": "Example 5: Angle of Elevation Word Problem",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Angle of Elevation Word Problem",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -16422,7 +16730,36 @@
         ]
       },
       {
-        "title": "Example 6: Finding \\(\\tan(\\theta)\\) from \\(\\sin(\\theta)\\)",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Finding ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "\\tan(\\theta)"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": " from ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "\\sin(\\theta)"
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -19738,7 +20075,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Arc Length",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Arc Length",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -19829,7 +20177,18 @@
         ]
       },
       {
-        "title": "Example 2: Sector Area",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Sector Area",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -19934,7 +20293,18 @@
         ]
       },
       {
-        "title": "Example 3: Inscribed Angle",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Inscribed Angle",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -20001,7 +20371,18 @@
         ]
       },
       {
-        "title": "Example 4: Standard Form of a Circle",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Standard Form of a Circle",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -20124,7 +20505,18 @@
         ]
       },
       {
-        "title": "Example 5: Completing the Square",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Completing the Square",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -20411,7 +20803,18 @@
         ]
       },
       {
-        "title": "Example 6: Finding Arc Length from Inscribed Angle",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Finding Arc Length from Inscribed Angle",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -23351,7 +23754,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Area of a Trapezoid",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Area of a Trapezoid",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -23404,7 +23818,18 @@
         ]
       },
       {
-        "title": "Example 2: Volume of a Cylinder",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Volume of a Cylinder",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -23471,7 +23896,18 @@
         ]
       },
       {
-        "title": "Example 3: Solving for a Dimension",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Solving for a Dimension",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -23566,7 +24002,18 @@
         ]
       },
       {
-        "title": "Example 4: Volume of a Sphere",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Volume of a Sphere",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -23643,7 +24090,18 @@
         ]
       },
       {
-        "title": "Example 5: Composite Figure",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Composite Figure",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -23724,7 +24182,18 @@
         ]
       },
       {
-        "title": "Example 6: Working Backward from Volume",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Working Backward from Volume",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",

@@ -186,7 +186,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Simplifying an Expression",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Simplifying an Expression",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -301,7 +312,18 @@
         ]
       },
       {
-        "title": "Example 2: Solving a Simple Equation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Solving a Simple Equation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -1514,7 +1536,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: One-Step Equation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: One-Step Equation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -1657,7 +1690,18 @@
         ]
       },
       {
-        "title": "Example 2: Two-Step Equation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Two-Step Equation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3125,7 +3169,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Multi-Step Equation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Multi-Step Equation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3278,7 +3333,18 @@
         ]
       },
       {
-        "title": "Example 2: Fractional Equation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Fractional Equation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5072,7 +5138,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Solving a Simple Inequality",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Solving a Simple Inequality",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5197,7 +5274,18 @@
         ]
       },
       {
-        "title": "Example 2: Absolute Value Inequality",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Absolute Value Inequality",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6994,7 +7082,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Finding Slope from Two Points",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Finding Slope from Two Points",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -7161,7 +7260,18 @@
         ]
       },
       {
-        "title": "Example 2: Slope as a Rate of Change",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Slope as a Rate of Change",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",

@@ -1377,7 +1377,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Negative Exponent as Reciprocal",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Negative Exponent as Reciprocal",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -1454,7 +1465,18 @@
         ]
       },
       {
-        "title": "Example 2: Fractional Exponent as Root",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Fractional Exponent as Root",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -1531,7 +1553,18 @@
         ]
       },
       {
-        "title": "Example 3: Mixed Fractional Exponent",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Mixed Fractional Exponent",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -1608,7 +1641,18 @@
         ]
       },
       {
-        "title": "Example 4: Negative and Fractional Combined",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Negative and Fractional Combined",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -1675,7 +1719,18 @@
         ]
       },
       {
-        "title": "Example 5: Algebraic Expression with Mixed Exponents",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Algebraic Expression with Mixed Exponents",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -1742,7 +1797,18 @@
         ]
       },
       {
-        "title": "Example 6: Converting Between Radical and Exponential Form",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Converting Between Radical and Exponential Form",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3262,7 +3328,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Basic Common Factor Cancellation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Basic Common Factor Cancellation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3343,7 +3420,18 @@
         ]
       },
       {
-        "title": "Example 2: Factoring Before Cancelling",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Factoring Before Cancelling",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3424,7 +3512,18 @@
         ]
       },
       {
-        "title": "Example 3: Polynomial with Common Binomial Factor",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Polynomial with Common Binomial Factor",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3491,7 +3590,18 @@
         ]
       },
       {
-        "title": "Example 4: Quadratic Factorization",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Quadratic Factorization",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3572,7 +3682,18 @@
         ]
       },
       {
-        "title": "Example 5: Simplifying with Exponents",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Simplifying with Exponents",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3653,7 +3774,18 @@
         ]
       },
       {
-        "title": "Example 6: Complex Rational Expression",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Complex Rational Expression",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4911,7 +5043,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Denominator Restriction",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Denominator Restriction",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4992,7 +5135,18 @@
         ]
       },
       {
-        "title": "Example 2: Multiple Denominators",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Multiple Denominators",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5115,7 +5269,18 @@
         ]
       },
       {
-        "title": "Example 3: Even Root Restriction",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Even Root Restriction",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5182,7 +5347,18 @@
         ]
       },
       {
-        "title": "Example 4: Radical in a Denominator",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Radical in a Denominator",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5249,7 +5425,18 @@
         ]
       },
       {
-        "title": "Example 5: Rational Expression After Simplification",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Rational Expression After Simplification",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5358,7 +5545,18 @@
         ]
       },
       {
-        "title": "Example 6: Combined Root and Denominator",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Combined Root and Denominator",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",

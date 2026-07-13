@@ -366,7 +366,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Recognizing Forms",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Recognizing Forms",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -501,7 +512,18 @@
         ]
       },
       {
-        "title": "Example 2: Converting to Vertex Form",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Converting to Vertex Form",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -606,7 +628,18 @@
         ]
       },
       {
-        "title": "Example 3: Converting to Factored Form",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Converting to Factored Form",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -697,7 +730,18 @@
         ]
       },
       {
-        "title": "Example 4: Interpreting a Factored Equation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Interpreting a Factored Equation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -824,7 +868,18 @@
         ]
       },
       {
-        "title": "Example 5: Understanding Coefficient Effects",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Understanding Coefficient Effects",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3804,7 +3859,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Simple Factoring",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Simple Factoring",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -3927,7 +3993,18 @@
         ]
       },
       {
-        "title": "Example 2: Leading Coefficient Not 1",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Leading Coefficient Not 1",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4064,7 +4141,18 @@
         ]
       },
       {
-        "title": "Example 3: Difference of Squares",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Difference of Squares",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4131,7 +4219,18 @@
         ]
       },
       {
-        "title": "Example 4: Perfect Square Trinomial",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Perfect Square Trinomial",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4198,7 +4297,18 @@
         ]
       },
       {
-        "title": "Example 5: Factoring Out a Common Factor",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Factoring Out a Common Factor",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4265,7 +4375,18 @@
         ]
       },
       {
-        "title": "Example 6: Application Problem",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Application Problem",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6614,7 +6735,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Using the Formula Directly",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Using the Formula Directly",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6709,7 +6841,18 @@
         ]
       },
       {
-        "title": "Example 2: No Real Roots",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: No Real Roots",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6790,7 +6933,18 @@
         ]
       },
       {
-        "title": "Example 3: One Double Root",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: One Double Root",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6885,7 +7039,18 @@
         ]
       },
       {
-        "title": "Example 4: Simplifying with Square Roots",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Simplifying with Square Roots",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6980,7 +7145,18 @@
         ]
       },
       {
-        "title": "Example 5: Interpreting the Discriminant",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Interpreting the Discriminant",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -7047,7 +7223,18 @@
         ]
       },
       {
-        "title": "Example 6: SAT Application",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: SAT Application",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9798,7 +9985,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Finding Vertex and Intercepts",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Finding Vertex and Intercepts",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9927,7 +10125,18 @@
         ]
       },
       {
-        "title": "Example 2: Vertex Form and Transformations",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Vertex Form and Transformations",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -10052,7 +10261,18 @@
         ]
       },
       {
-        "title": "Example 3: Downward Opening Parabola",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Downward Opening Parabola",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -10199,7 +10419,18 @@
         ]
       },
       {
-        "title": "Example 4: Finding the Equation from a Graph",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Finding the Equation from a Graph",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -10322,7 +10553,18 @@
         ]
       },
       {
-        "title": "Example 5: Real-World Interpretation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Real-World Interpretation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -13353,7 +13595,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Adding Polynomials",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Adding Polynomials",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -13420,7 +13673,18 @@
         ]
       },
       {
-        "title": "Example 2: Subtracting Polynomials",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Subtracting Polynomials",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -13487,7 +13751,18 @@
         ]
       },
       {
-        "title": "Example 3: Multiplying Binomials (FOIL)",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Multiplying Binomials (FOIL)",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -13554,7 +13829,18 @@
         ]
       },
       {
-        "title": "Example 4: Difference of Squares",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Difference of Squares",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -13621,7 +13907,18 @@
         ]
       },
       {
-        "title": "Example 5: Squaring a Binomial",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Squaring a Binomial",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -13674,7 +13971,18 @@
         ]
       },
       {
-        "title": "Example 6: Area Application",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Area Application",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -15587,7 +15895,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Identifying Zeros from Factored Form",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Identifying Zeros from Factored Form",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -15664,7 +15983,18 @@
         ]
       },
       {
-        "title": "Example 2: Multiplicity of Zeros",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Multiplicity of Zeros",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -15779,7 +16109,18 @@
         ]
       },
       {
-        "title": "Example 3: Testing for Factors (Factor Theorem)",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Testing for Factors (Factor Theorem)",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -15944,7 +16285,18 @@
         ]
       },
       {
-        "title": "Example 4: End Behavior and Degree",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: End Behavior and Degree",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -16011,7 +16363,18 @@
         ]
       },
       {
-        "title": "Example 5: Building a Polynomial from Given Zeros",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Building a Polynomial from Given Zeros",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",

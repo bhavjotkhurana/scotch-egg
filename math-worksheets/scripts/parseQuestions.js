@@ -464,7 +464,7 @@ function processTopic(unit, topic) {
     ? extractItems(coreSkillsSection.content).map((t) => tokenizeRichText(t, `${label} Core Skills`))
     : [];
   const examples = exampleSections.map((sec) => ({
-    title: sec.header,
+    title: tokenizeRichText(sec.header, `${label} ${sec.header}`),
     body: tokenizeRichText(sec.content, `${label} ${sec.header}`),
   }));
   const keyTakeaways = extractItems(keyTakeawaysSection.content).map((t) =>

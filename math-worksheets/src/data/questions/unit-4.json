@@ -327,7 +327,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Reading a Table",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Reading a Table",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -376,7 +387,18 @@
         ]
       },
       {
-        "title": "Example 2: Interpreting a Bar Graph",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Interpreting a Bar Graph",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -411,7 +433,18 @@
         ]
       },
       {
-        "title": "Example 3: Interpreting a Line Graph",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Interpreting a Line Graph",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -446,7 +479,18 @@
         ]
       },
       {
-        "title": "Example 4: Reading a Scatterplot",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Reading a Scatterplot",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -481,7 +525,18 @@
         ]
       },
       {
-        "title": "Example 5: Identifying Outliers",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Identifying Outliers",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -506,7 +561,18 @@
         ]
       },
       {
-        "title": "Example 6: Misinterpretation Warning",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Misinterpretation Warning",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -2069,7 +2135,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: All Four Measures",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: All Four Measures",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -2126,7 +2203,18 @@
         ]
       },
       {
-        "title": "Example 2: Even Count Median",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Even Count Median",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -2197,7 +2285,18 @@
         ]
       },
       {
-        "title": "Example 3: Effect of an Outlier",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Effect of an Outlier",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -2254,7 +2353,18 @@
         ]
       },
       {
-        "title": "Example 4: From a Frequency Table",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: From a Frequency Table",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -2367,7 +2477,18 @@
         ]
       },
       {
-        "title": "Example 5: Shifts and Scales",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Shifts and Scales",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4147,7 +4268,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Simple Weighted Average",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Simple Weighted Average",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4176,7 +4308,18 @@
         ]
       },
       {
-        "title": "Example 2: Combining Groups",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Combining Groups",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4205,7 +4348,18 @@
         ]
       },
       {
-        "title": "Example 3: Weighted Average by Frequency",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Weighted Average by Frequency",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4248,7 +4402,18 @@
         ]
       },
       {
-        "title": "Example 4: Weighted Average by Percent",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Weighted Average by Percent",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -4277,7 +4442,18 @@
         ]
       },
       {
-        "title": "Example 5: SAT-Style Context",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: SAT-Style Context",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5100,7 +5276,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Basic Probability",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Basic Probability",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5129,7 +5316,18 @@
         ]
       },
       {
-        "title": "Example 2: Independent Events",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Independent Events",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5158,7 +5356,18 @@
         ]
       },
       {
-        "title": "Example 3: Dependent Events",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Dependent Events",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5187,7 +5396,18 @@
         ]
       },
       {
-        "title": "Example 4: “At Least One”",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: “At Least One”",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5216,7 +5436,18 @@
         ]
       },
       {
-        "title": "Example 5: “Or” Probabilities",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: “Or” Probabilities",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -5245,7 +5476,18 @@
         ]
       },
       {
-        "title": "Example 6: Compound Probability (Tree Diagram Idea)",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Compound Probability (Tree Diagram Idea)",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -6967,7 +7209,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: From a Two Way Table",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: From a Two Way Table",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -7038,7 +7291,18 @@
         ]
       },
       {
-        "title": "Example 2: Independence Check",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Independence Check",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -7081,7 +7345,18 @@
         ]
       },
       {
-        "title": "Example 3: Tree Diagram for a Multi Step Process",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Tree Diagram for a Multi Step Process",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -7124,7 +7399,18 @@
         ]
       },
       {
-        "title": "Example 4: Using the Multiplication Rule",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Using the Multiplication Rule",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -7153,7 +7439,18 @@
         ]
       },
       {
-        "title": "Example 5: Bayes Type Update",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Bayes Type Update",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -7182,7 +7479,18 @@
         ]
       },
       {
-        "title": "Example 6: SAT Style Card Context",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: SAT Style Card Context",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9074,7 +9382,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Comparing Variability",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Comparing Variability",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9117,7 +9436,18 @@
         ]
       },
       {
-        "title": "Example 2: Effect of Outliers",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Effect of Outliers",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9160,7 +9490,18 @@
         ]
       },
       {
-        "title": "Example 3: Graph Interpretation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: Graph Interpretation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9175,7 +9516,18 @@
         ]
       },
       {
-        "title": "Example 4: Scaling and Shifting",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Scaling and Shifting",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -9190,7 +9542,18 @@
         ]
       },
       {
-        "title": "Example 5: Real-World Context",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Real-World Context",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -10158,7 +10521,18 @@
     ],
     "examples": [
       {
-        "title": "Example 1: Positive Correlation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 1: Positive Correlation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -10173,7 +10547,18 @@
         ]
       },
       {
-        "title": "Example 2: Negative Correlation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 2: Negative Correlation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -10188,7 +10573,18 @@
         ]
       },
       {
-        "title": "Example 3: No Correlation",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 3: No Correlation",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -10203,7 +10599,18 @@
         ]
       },
       {
-        "title": "Example 4: Interpreting the Equation of a Trend Line",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 4: Interpreting the Equation of a Trend Line",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -10280,7 +10687,18 @@
         ]
       },
       {
-        "title": "Example 5: Making Predictions",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 5: Making Predictions",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -10323,7 +10741,32 @@
         ]
       },
       {
-        "title": "Example 6: Correlation Coefficient \\(r\\) (Conceptual)",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 6: Correlation Coefficient ",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          },
+          {
+            "type": "inline-math",
+            "value": "r"
+          },
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": " (Conceptual)",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
@@ -10430,7 +10873,18 @@
         ]
       },
       {
-        "title": "Example 7: Causation Reminder",
+        "title": [
+          {
+            "type": "text",
+            "value": [
+              {
+                "text": "Example 7: Causation Reminder",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ],
         "body": [
           {
             "type": "text",
