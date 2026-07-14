@@ -79,18 +79,20 @@ export default function TopicPractice() {
               ))}
             </div>
 
-            {tab === 'practice' && (
-              <section className="mt-6">
-                <QuestionStepper
-                  unitSlug={unitSlug}
-                  topicSlug={topicSlug}
-                  practiceParts={topic.practiceParts}
-                />
-              </section>
-            )}
+            {/* Both tabs stay mounted (visibility toggled via CSS, not
+                conditional rendering) so a single static snapshot of this
+                page -- e.g. the prerender step -- captures both the
+                concept summary and the actual practice questions, not just
+                whichever tab happened to be open by default. */}
+            <section className={tab === 'practice' ? 'mt-6' : 'mt-6 hidden'}>
+              <QuestionStepper
+                unitSlug={unitSlug}
+                topicSlug={topicSlug}
+                practiceParts={topic.practiceParts}
+              />
+            </section>
 
-            {tab === 'learn' && (
-              <section className="mt-6">
+            <section className={tab === 'learn' ? 'mt-6' : 'mt-6 hidden'}>
                 {topic.conceptSummary.length > 0 && (
                   <div className="space-y-3 text-brand-neutral">
                     {topic.conceptSummary.map((paragraph, i) => (
@@ -157,7 +159,6 @@ export default function TopicPractice() {
                   Try questions <ArrowRight className="h-4 w-4" />
                 </button>
               </section>
-            )}
           </>
         )}
       </div>
